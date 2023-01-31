@@ -11248,24 +11248,29 @@
         {
             "Address": 58137,
             "ByteSize": 3,
+            "Comment": "set character start address",
             "OperandType": 1
         },
         {
             "Address": 58140,
             "ByteSize": 4,
+            "Comment": "store",
             "OperandType": 1
         },
         {
             "Address": 58144,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "get value"
         },
         {
             "Address": 58145,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "check if it's 0"
         },
         {
             "Address": 58146,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "bail out if it is"
         },
         {
             "Address": 58147,
@@ -11274,28 +11279,34 @@
         {
             "Address": 58149,
             "ByteSize": 2,
+            "Comment": "jump if value is 1",
             "OperandType": 2
         },
         {
             "Address": 58151,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "store byte in B"
         },
         {
             "Address": 58152,
-            "ByteSize": 2
+            "ByteSize": 2,
+            "Comment": "mask bottom 3 buts"
         },
         {
             "Address": 58154,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "store in C"
         },
         {
             "Address": 58155,
             "ByteSize": 3,
+            "Comment": "write to IX offset below",
             "OperandType": 1
         },
         {
             "Address": 58158,
             "ByteSize": 3,
+            "Comment": "read character",
             "Flags": 2,
             "SMC": true
         },
@@ -11315,11 +11326,13 @@
         {
             "Address": 58167,
             "ByteSize": 3,
+            "Comment": "write to IX offset below",
             "OperandType": 1
         },
         {
             "Address": 58170,
             "ByteSize": 3,
+            "Comment": "read character",
             "Flags": 2,
             "SMC": true
         },
@@ -11334,11 +11347,13 @@
         },
         {
             "Address": 58177,
-            "ByteSize": 2
+            "ByteSize": 2,
+            "Comment": "mask top 5 bits"
         },
         {
             "Address": 58179,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "shift down 3"
         },
         {
             "Address": 58180,
@@ -11350,7 +11365,8 @@
         },
         {
             "Address": 58182,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "store in B"
         },
         {
             "Address": 58183,
@@ -11376,19 +11392,23 @@
         },
         {
             "Address": 58191,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "inc ptr"
         },
         {
             "Address": 58192,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "fetch another value"
         },
         {
             "Address": 58193,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "room data ptr"
         },
         {
             "Address": 58194,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "clear character count"
         },
         {
             "Address": 58195,
@@ -11401,7 +11421,8 @@
         },
         {
             "Address": 58199,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "convert to screen address with bit twiddling"
         },
         {
             "Address": 58200,
@@ -11479,7 +11500,8 @@
         },
         {
             "Address": 58230,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "pop count"
         },
         {
             "Address": 58231,
@@ -11488,11 +11510,13 @@
         },
         {
             "Address": 58233,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "restore room data ptr"
         },
         {
             "Address": 58234,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "inc pointer"
         },
         {
             "Address": 58235,
@@ -78778,12 +78802,12 @@
         {
             "Address": 16384,
             "LabelType": 0,
-            "Name": "ScreenPixels"
+            "Name": "ScreenPixels_1"
         },
         {
             "Address": 22528,
             "LabelType": 0,
-            "Name": "ScreenAttributes"
+            "Name": "ScreenAttributes_1"
         },
         {
             "Address": 23606,
@@ -81936,7 +81960,7 @@
         {
             "Address": 58144,
             "LabelType": 2,
-            "Name": "label_E320",
+            "Name": "ProcessRoomByte",
             "References": [
                 58189,
                 58235
@@ -81963,7 +81987,7 @@
         {
             "Address": 58191,
             "LabelType": 2,
-            "Name": "label_E34F",
+            "Name": "ClearRoomChars",
             "References": [
                 58149
             ]
@@ -81971,7 +81995,7 @@
         {
             "Address": 58195,
             "LabelType": 2,
-            "Name": "label_E353",
+            "Name": "CharClearLoop",
             "References": [
                 58231
             ]
