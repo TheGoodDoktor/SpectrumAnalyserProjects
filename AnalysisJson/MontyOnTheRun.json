@@ -1,4 +1,13 @@
 {
+    "CharacterMaps": [
+        {
+            "Address": 49152,
+            "CharacterSet": 56320,
+            "Height": 1,
+            "IgnoreCharacter": 0,
+            "Width": 8
+        }
+    ],
     "CharacterSets": [
         {
             "Address": 56320,
@@ -15167,6 +15176,10 @@
         }
     ],
     "CommentBlocks": [
+        {
+            "Address": 49152,
+            "Comment": "This room data starts off as 16 bytes:\n8 chaarcter numbers for the characters to use in the room - The high bit is ignored when drawing\n8 attributes to use when drawing those characters\nSo a character could be listed twice with 2 different attributes\n\nAfter the 16 bytes are various run lengths\nIf the byte value is 1 then the byte after it contains the number of character to clear (character value 0)\nOtherwise the byte mean:\nbits 0-2 : Character/Attribute index from above\nbits 3-7 : Number of charatcters to draw using that character/attribute combination\n\nThe room data is terminated by a byte value of 0"
+        },
         {
             "Address": 58137,
             "Comment": "IX points to start of room data\nHL points to room data + 16"
@@ -53013,7 +53026,7 @@
         },
         {
             "Address": 49168,
-            "Comment": " This is where the run length encoded screens are stored",
+            "Comment": "run length data starts here",
             "Reads": [
                 58001,
                 58144
@@ -53021,7 +53034,6 @@
         },
         {
             "Address": 49169,
-            "Comment": "for each byte:",
             "Reads": [
                 58001,
                 58144
@@ -53029,7 +53041,6 @@
         },
         {
             "Address": 49170,
-            "Comment": "bottom 3 bits = char/attr no - see above",
             "Reads": [
                 58001,
                 58144
@@ -53037,7 +53048,6 @@
         },
         {
             "Address": 49171,
-            "Comment": "top 5 bits - run length",
             "Reads": [
                 58001,
                 58192
@@ -53045,7 +53055,6 @@
         },
         {
             "Address": 49172,
-            "Comment": "if character code is 1 then the byte after signifies the number of clear characters",
             "Reads": [
                 58001,
                 58144
@@ -54416,6 +54425,7 @@
         },
         {
             "Address": 49390,
+            "Comment": "room data terminates here",
             "Reads": [
                 58144
             ]
@@ -79055,12 +79065,12 @@
         {
             "Address": 16384,
             "LabelType": 0,
-            "Name": "ScreenPixels"
+            "Name": "ScreenPixels_1"
         },
         {
             "Address": 22528,
             "LabelType": 0,
-            "Name": "ScreenAttributes"
+            "Name": "ScreenAttributes_1"
         },
         {
             "Address": 23606,
