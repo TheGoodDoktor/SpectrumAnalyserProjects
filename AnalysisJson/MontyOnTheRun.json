@@ -1005,7 +1005,8 @@
         },
         {
             "Address": 34824,
-            "ByteSize": 2
+            "ByteSize": 2,
+            "Comment": "clear 8 Bytes"
         },
         {
             "Address": 34826,
@@ -1387,6 +1388,37 @@
             "OperandType": 2
         },
         {
+            "Address": 35008,
+            "ByteSize": 1,
+            "Comment": "speed?"
+        },
+        {
+            "Address": 35009,
+            "ByteSize": 2
+        },
+        {
+            "Address": 35011,
+            "ByteSize": 1,
+            "Comment": " x velocity"
+        },
+        {
+            "Address": 35012,
+            "ByteSize": 1
+        },
+        {
+            "Address": 35013,
+            "ByteSize": 2,
+            "Comment": "y velocity"
+        },
+        {
+            "Address": 35015,
+            "ByteSize": 1
+        },
+        {
+            "Address": 35016,
+            "ByteSize": 1
+        },
+        {
             "Address": 35017,
             "ByteSize": 2
         },
@@ -1401,7 +1433,8 @@
         },
         {
             "Address": 35022,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": " x vel"
         },
         {
             "Address": 35023,
@@ -1409,7 +1442,8 @@
         },
         {
             "Address": 35024,
-            "ByteSize": 2
+            "ByteSize": 2,
+            "Comment": "y vel"
         },
         {
             "Address": 35026,
@@ -1434,7 +1468,8 @@
         },
         {
             "Address": 35033,
-            "ByteSize": 2
+            "ByteSize": 2,
+            "Comment": "x vel"
         },
         {
             "Address": 35035,
@@ -1442,7 +1477,8 @@
         },
         {
             "Address": 35036,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "y vel"
         },
         {
             "Address": 35037,
@@ -1471,7 +1507,8 @@
         },
         {
             "Address": 35046,
-            "ByteSize": 2
+            "ByteSize": 2,
+            "Comment": "x vel"
         },
         {
             "Address": 35048,
@@ -1479,7 +1516,8 @@
         },
         {
             "Address": 35049,
-            "ByteSize": 1
+            "ByteSize": 1,
+            "Comment": "y vel"
         },
         {
             "Address": 35050,
@@ -1491,7 +1529,8 @@
         },
         {
             "Address": 35052,
-            "ByteSize": 2
+            "ByteSize": 2,
+            "Comment": "x vel"
         },
         {
             "Address": 35054,
@@ -1499,7 +1538,8 @@
         },
         {
             "Address": 35055,
-            "ByteSize": 2
+            "ByteSize": 2,
+            "Comment": "y vel"
         },
         {
             "Address": 35057,
@@ -16166,6 +16206,14 @@
         }
     ],
     "CommentBlocks": [
+        {
+            "Address": 35004,
+            "Comment": "Set Entity Velocity\nHL: points to entoty velocity\nA: Direction?\nB: Speed?"
+        },
+        {
+            "Address": 35199,
+            "Comment": "32 bytes per room"
+        },
         {
             "Address": 38552,
             "Comment": "B: Y coord\nC: X Coord\nReturns address in HL"
@@ -38389,12 +38437,14 @@
         },
         {
             "Address": 35200,
+            "Comment": "+1 Entity 0 XPos",
             "Reads": [
                 34779
             ]
         },
         {
             "Address": 35201,
+            "Comment": "+2 Entity 0 YPos",
             "Reads": [
                 34784
             ]
@@ -38432,12 +38482,14 @@
         },
         {
             "Address": 35208,
+            "Comment": "+9 Entity 1 XPos",
             "Reads": [
                 34789
             ]
         },
         {
             "Address": 35209,
+            "Comment": "+10 Entity 1 YPos",
             "Reads": [
                 34794
             ]
@@ -38475,12 +38527,14 @@
         },
         {
             "Address": 35216,
+            "Comment": "+17 Entity 2 XPos",
             "Reads": [
                 34799
             ]
         },
         {
             "Address": 35217,
+            "Comment": "+18 Entity 2 YPos",
             "Reads": [
                 34804
             ]
@@ -38518,12 +38572,14 @@
         },
         {
             "Address": 35224,
+            "Comment": "+25 Entity 3 XPos",
             "Reads": [
                 34809
             ]
         },
         {
             "Address": 35225,
+            "Comment": "+26 Entity 3 YPos",
             "Reads": [
                 34814
             ]
@@ -38552,6 +38608,10 @@
             "Reads": [
                 34946
             ]
+        },
+        {
+            "Address": 35230,
+            "Comment": "+31"
         },
         {
             "Address": 35231,
@@ -56466,7 +56526,7 @@
         {
             "Address": 35004,
             "LabelType": 1,
-            "Name": "function_88BC",
+            "Name": "SetEntityVelocity",
             "References": [
                 34837,
                 34846,
@@ -56547,6 +56607,12 @@
             "References": [
                 34768
             ]
+        },
+        {
+            "Address": 35231,
+            "Global": true,
+            "LabelType": 0,
+            "Name": "data_899F"
         },
         {
             "Address": 36001,
