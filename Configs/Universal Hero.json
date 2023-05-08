@@ -1,26 +1,30 @@
 {
+    "128KGame": false,
     "Name": "Universal Hero",
     "Options": {
-        "NumberMode": 2,
-        "ShowScanlineIndicator": true,
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 40772
-            },
-            {
-                "Enabled": true,
-                "ViewAddress": 23437
+                "ViewAddress": 40804,
+                "ViewAddressBank": 3
             },
             {
                 "Enabled": false,
-                "ViewAddress": 0
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             },
             {
                 "Enabled": false,
-                "ViewAddress": 0
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
+            },
+            {
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             }
-        ]
+        ],
+        "WriteSnapshot": false
     },
-    "SnapshotFile": "./Games/Universal Hero.z80"
+    "SnapshotFile": "Universal Hero.z80"
 }

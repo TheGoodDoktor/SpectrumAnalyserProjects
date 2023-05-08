@@ -1,22 +1,27 @@
 {
+    "128KGame": false,
     "Name": "Batman",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 34458
-            },
-            {
-                "Enabled": true,
-                "ViewAddress": 60512
+                "ViewAddress": 34283,
+                "ViewAddressBank": 3
             },
             {
                 "Enabled": false,
-                "ViewAddress": 0
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             },
             {
                 "Enabled": false,
-                "ViewAddress": 0
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
+            },
+            {
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             }
         ],
         "WriteSnapshot": false

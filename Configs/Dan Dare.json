@@ -1,4 +1,30 @@
 {
+    "128KGame": false,
     "Name": "Dan Dare",
-    "SnapshotFile": "./Games/Dan Dare.z80"
+    "Options": {
+        "ViewConfigs": [
+            {
+                "Enabled": true,
+                "ViewAddress": 39319,
+                "ViewAddressBank": 3
+            },
+            {
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
+            },
+            {
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
+            },
+            {
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
+            }
+        ],
+        "WriteSnapshot": false
+    },
+    "SnapshotFile": "Dan Dare.z80"
 }
