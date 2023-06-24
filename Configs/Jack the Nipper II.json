@@ -1,25 +1,30 @@
 {
+    "128KGame": false,
     "Name": "Jack the Nipper II",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 44714
+                "ViewAddress": 49856,
+                "ViewAddressBank": 4
             },
             {
                 "Enabled": false,
-                "ViewAddress": 0
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             },
             {
                 "Enabled": false,
-                "ViewAddress": 0
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             },
             {
                 "Enabled": false,
-                "ViewAddress": 0
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             }
         ],
         "WriteSnapshot": false
     },
-    "SnapshotFile": "./Games/Jack the Nipper II.z80"
+    "SnapshotFile": "Jack the Nipper II.z80"
 }

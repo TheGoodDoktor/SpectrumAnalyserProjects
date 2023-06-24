@@ -233,6 +233,12 @@
                     "Name": "data_5C09"
                 },
                 {
+                    "Address": 12,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C0C"
+                },
+                {
                     "Address": 13,
                     "Global": true,
                     "LabelType": 0,
@@ -864,6 +870,11 @@
                 {
                     "Address": 972,
                     "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 974,
+                    "ByteSize": 3,
                     "OperandType": 2
                 },
                 {
@@ -1753,7 +1764,8 @@
                 },
                 {
                     "Address": 233,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 3
                 },
                 {
                     "Address": 235,
@@ -1803,11 +1815,13 @@
                 },
                 {
                     "Address": 252,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read collision char"
                 },
                 {
                     "Address": 253,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "check if collision is zero"
                 },
                 {
                     "Address": 254,
@@ -1816,15 +1830,18 @@
                 },
                 {
                     "Address": 256,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "point to collision square to the right"
                 },
                 {
                     "Address": 257,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read collision byte"
                 },
                 {
                     "Address": 258,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "check if collision is 0"
                 },
                 {
                     "Address": 259,
@@ -1837,7 +1854,8 @@
                 },
                 {
                     "Address": 262,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 264,
@@ -1846,15 +1864,18 @@
                 },
                 {
                     "Address": 266,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "point to collision square on right"
                 },
                 {
                     "Address": 267,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read collision square"
                 },
                 {
                     "Address": 268,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "check if it's 0"
                 },
                 {
                     "Address": 269,
@@ -1863,7 +1884,8 @@
                 },
                 {
                     "Address": 271,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "reset bit - grounded?"
                 },
                 {
                     "Address": 275,
@@ -1871,7 +1893,8 @@
                 },
                 {
                     "Address": 276,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set bit - grounded?"
                 },
                 {
                     "Address": 280,
@@ -3398,7 +3421,7 @@
                 {
                     "Address": 232,
                     "LabelType": 1,
-                    "Name": "function_88E8"
+                    "Name": "CheckPlayerFallCollision"
                 },
                 {
                     "Address": 271,
@@ -6021,6 +6044,45 @@
                     "ByteSize": 1
                 },
                 {
+                    "Address": 154,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 155,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 158,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 161,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 162,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 164,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 165,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 166,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 167,
+                    "ByteSize": 3,
+                    "OperandType": 2
+                },
+                {
                     "Address": 331,
                     "ByteSize": 3,
                     "OperandType": 1
@@ -8010,6 +8072,7 @@
                 {
                     "Address": 574,
                     "ByteSize": 3,
+                    "Comment": "backup sprite pointer",
                     "OperandType": 1
                 },
                 {
@@ -8020,6 +8083,7 @@
                 {
                     "Address": 580,
                     "ByteSize": 4,
+                    "Comment": "backup player position",
                     "OperandType": 1
                 },
                 {
@@ -17320,6 +17384,32 @@
             ],
             "DataInfo": [
                 {
+                    "Address": 919,
+                    "OperandType": 3
+                },
+                {
+                    "Address": 920,
+                    "OperandType": 3
+                },
+                {
+                    "Address": 921,
+                    "OperandType": 3
+                },
+                {
+                    "Address": 922,
+                    "OperandType": 3
+                },
+                {
+                    "Address": 930,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 932,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
                     "Address": 955,
                     "ByteSize": 2,
                     "DataType": 2
@@ -17363,19 +17453,25 @@
                     "Address": 919,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_AF97"
+                    "Name": "PlayerXPos_2"
+                },
+                {
+                    "Address": 920,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "PlayerYPos_2"
                 },
                 {
                     "Address": 921,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_AF99"
+                    "Name": "PlayerXPos"
                 },
                 {
                     "Address": 922,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_AF9A"
+                    "Name": "PlayerYPos"
                 },
                 {
                     "Address": 923,
@@ -17399,13 +17495,13 @@
                     "Address": 930,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_AFA2"
+                    "Name": "PlayerSpritePtr"
                 },
                 {
                     "Address": 932,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_AFA4"
+                    "Name": "PlayerSpritePtr_2"
                 },
                 {
                     "Address": 934,
@@ -17833,17 +17929,521 @@
             "PageId": 62
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 855,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 858,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 861,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 864,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 867,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 870,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 873,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 876,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 879,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 882,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 885,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 888,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 891,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 894,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 897,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 900,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 903,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 906,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 909,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 912,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 915,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 918,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 921,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 924,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 927,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 930,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 933,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 936,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 939,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 942,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 945,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 948,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 951,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 954,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 957,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 960,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 963,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 966,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 969,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 972,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 975,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 978,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 981,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 984,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 987,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 990,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 993,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 996,
+                    "ByteSize": 3,
+                    "DataType": 5
+                }
+            ],
             "LabelInfo": [
                 {
                     "Address": 855,
                     "Global": true,
                     "LabelType": 0,
                     "Name": "PlayerSpriteWalkRight_1"
+                },
+                {
+                    "Address": 927,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "PlayerSpriteWalkRight_2"
                 }
             ],
             "PageId": 63
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 263,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 266,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 269,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 272,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 275,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 278,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 281,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 284,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 287,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 290,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 293,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 296,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 299,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 302,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 305,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 308,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 311,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 314,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 317,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 320,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 323,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 326,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 329,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 332,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 335,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 338,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 341,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 344,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 347,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 350,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 353,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 356,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 359,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 362,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 365,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 368,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 371,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 374,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 377,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 380,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 383,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 386,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 389,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 392,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 395,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 398,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 401,
+                    "ByteSize": 3,
+                    "DataType": 5
+                },
+                {
+                    "Address": 404,
+                    "ByteSize": 3,
+                    "DataType": 5
+                }
+            ],
+            "LabelInfo": [
+                {
+                    "Address": 263,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "PlayerSpriteWalkLeft_1"
+                },
+                {
+                    "Address": 335,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "PlayerSpriteWalkLeft_2"
+                }
+            ],
             "PageId": 64
         },
         {
@@ -17868,6 +18468,14 @@
             "PageId": 71
         },
         {
+            "LabelInfo": [
+                {
+                    "Address": 0,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_E000"
+                }
+            ],
             "PageId": 72
         },
         {
