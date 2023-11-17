@@ -1,5 +1,32 @@
 {
+    "128KGame": false,
+    "Machine": "",
     "Name": "Cybernoid",
+    "Options": {
+        "ViewConfigs": [
+            {
+                "Enabled": true,
+                "ViewAddress": 42312,
+                "ViewAddressBank": 3
+            },
+            {
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
+            },
+            {
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
+            },
+            {
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
+            }
+        ]
+    },
+    "SnapshotFile": "Cybernoid.Z80",
     "SpriteConfigs": [
         {
             "BaseAddress": "0xec61",
@@ -8,6 +35,5 @@
             "Name": "Particles",
             "Width": 2
         }
-    ],
-    "Z80File": "Cybernoid.Z80"
+    ]
 }
