@@ -1,25 +1,30 @@
 {
+    "128KGame": false,
+    "Machine": "",
     "Name": "Saboteur",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 56936
+                "ViewAddress": 47405,
+                "ViewAddressBank": 3
             },
             {
                 "Enabled": false,
-                "ViewAddress": 0
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             },
             {
                 "Enabled": false,
-                "ViewAddress": 0
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             },
             {
                 "Enabled": false,
-                "ViewAddress": 0
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             }
-        ],
-        "WriteSnapshot": false
+        ]
     },
-    "SnapshotFile": "./Games/Saboteur.z80"
+    "SnapshotFile": "Saboteur.z80"
 }
