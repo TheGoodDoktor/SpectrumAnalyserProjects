@@ -1,3 +1,4 @@
+
 -- Addresses of where things are
 CharacterPixelsAddr = 0xF000
 CharacterAttribsAddr = 0xED00
@@ -45,13 +46,13 @@ function DrawScreenToView(graphicsView, screenNo,x,y)
 	end
 end
 
-BlockViewer = 
+ScreenViewer = 
 {
     name = "Screen Viewer",
     valueMin = 0;
     valueMax = 100;
 
-	screenNo = 5,
+	screenNo = 8,
 	
 	onAdd = function(self)
 		self.graphicsView = CreateZXGraphicsView(256,256)
@@ -74,21 +75,10 @@ BlockViewer =
 
 }
 
-function InitViewer()
-end
-
 -- Initialise the JN2 viewer
 print("JN2 Viewer Initialised")
 InitViewers();
-AddViewer(BlockViewer);
-
-
-
-
-
-
-
-
+AddViewer(ScreenViewer);
 
 
 
