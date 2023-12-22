@@ -78,8 +78,11 @@ ScreenViewer =
 
 -- Initialise the JN2 viewer
 print("JN2 Viewer Initialised")
-InitViewers();
 AddViewer(ScreenViewer);
+
+
+
+
 
 
 

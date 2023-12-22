@@ -1,13 +1,17 @@
 {
     "128KGame": false,
+    "LuaSourceFiles": [
+        "ViewerScript.lua",
+        "MapViewer.lua"
+    ],
     "Machine": "",
     "Name": "Jack the Nipper II",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 0,
-                "ViewAddressBank": -1
+                "ViewAddress": 34885,
+                "ViewAddressBank": 3
             },
             {
                 "Enabled": false,
