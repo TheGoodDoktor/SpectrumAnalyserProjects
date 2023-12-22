@@ -57,17 +57,18 @@ ScreenViewer =
 	onAdd = function(self)
 		self.graphicsView = CreateZXGraphicsView(256,256)
         ClearGraphicsView(self.graphicsView, 0)
+		DrawScreenToView(self.graphicsView,self.screenNo, 0, 0)
 	end,
 
-    onValueChanged = function(newValue)
-        -- TODO: code to update viewer
-    end,
-
 	onDrawUI = function(self)
-		ClearGraphicsView(self.graphicsView, 0)
+		local changed = false
 
-		--DrawBlockToView(self.graphicsView, self.blockNo, 0, 0)
-		DrawScreenToView(self.graphicsView,self.screenNo, 0, 0)
+		changed, self.screenNo = imgui.InputInt("screen number",self.screenNo)
+
+		if changed == true then
+			ClearGraphicsView(self.graphicsView, 0)
+			DrawScreenToView(self.graphicsView,self.screenNo, 0, 0)
+		end
 
 		-- Update and draw to screen
 		DrawGraphicsView(self.graphicsView)
@@ -79,6 +80,7 @@ ScreenViewer =
 print("JN2 Viewer Initialised")
 InitViewers();
 AddViewer(ScreenViewer);
+
 
 
 
