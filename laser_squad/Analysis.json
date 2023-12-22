@@ -33,6 +33,15 @@
             "Id": 9
         }
     ],
+    "CharacterMaps": [
+        {
+            "AddressRef": 3602841604,
+            "CharacterSetRef": 65535,
+            "Height": 50,
+            "IgnoreCharacter": 0,
+            "Width": 80
+        }
+    ],
     "Pages": [
         {
             "DataInfo": [
@@ -207,7 +216,23 @@
                     "OperandType": 2
                 }
             ],
+            "CommentBlocks": [
+                {
+                    "Address": 256,
+                    "Comment": "attribute value to write to attribute memory"
+                }
+            ],
             "DataInfo": [
+                {
+                    "Address": 256,
+                    "DataType": 10
+                },
+                {
+                    "Address": 258,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
                 {
                     "Address": 270,
                     "ByteSize": 2,
@@ -221,21 +246,25 @@
                 {
                     "Address": 537,
                     "ByteSize": 2,
+                    "Comment": "HL holds screen address of character square",
                     "DataType": 2
                 },
                 {
                     "Address": 539,
                     "ByteSize": 2,
+                    "Comment": "HL holds screen address of character square",
                     "DataType": 2
                 },
                 {
                     "Address": 541,
                     "ByteSize": 2,
+                    "Comment": "HL holds screen address of character square",
                     "DataType": 2
                 },
                 {
                     "Address": 543,
                     "ByteSize": 2,
+                    "Comment": "HL holds screen address of character square",
                     "DataType": 2
                 },
                 {
@@ -304,6 +333,30 @@
             ],
             "LabelInfo": [
                 {
+                    "Address": 93,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C5D"
+                },
+                {
+                    "Address": 95,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C5F"
+                },
+                {
+                    "Address": 97,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C61"
+                },
+                {
+                    "Address": 120,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C78"
+                },
+                {
                     "Address": 252,
                     "Global": true,
                     "LabelType": 0,
@@ -325,7 +378,7 @@
                     "Address": 256,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_5D00"
+                    "Name": "attributeValue"
                 },
                 {
                     "Address": 257,
@@ -337,7 +390,7 @@
                     "Address": 258,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_5D02"
+                    "Name": "curCharMapAddr"
                 },
                 {
                     "Address": 260,
@@ -978,11 +1031,13 @@
                 },
                 {
                     "Address": 243,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 245,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 247,
@@ -995,7 +1050,8 @@
                 },
                 {
                     "Address": 251,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write attributes"
                 },
                 {
                     "Address": 252,
@@ -1003,7 +1059,8 @@
                 },
                 {
                     "Address": 253,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write attribute"
                 },
                 {
                     "Address": 254,
@@ -1016,7 +1073,8 @@
                 },
                 {
                     "Address": 259,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write attribute"
                 },
                 {
                     "Address": 260,
@@ -1024,7 +1082,8 @@
                 },
                 {
                     "Address": 261,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write attribute"
                 },
                 {
                     "Address": 262,
@@ -1305,20 +1364,24 @@
                 },
                 {
                     "Address": 369,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "OperandType": 3
                 },
                 {
                     "Address": 370,
                     "ByteSize": 4,
+                    "Comment": "get the attribute lookup table base addr",
                     "OperandType": 1
                 },
                 {
                     "Address": 374,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "HL now points to address in attribute table"
                 },
                 {
                     "Address": 375,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "A now holds the attribute value"
                 },
                 {
                     "Address": 376,
@@ -1327,11 +1390,13 @@
                 },
                 {
                     "Address": 379,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "the next memory location is the tile index"
                 },
                 {
                     "Address": 380,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "get tile index (also from the attribute lookup table)"
                 },
                 {
                     "Address": 381,
@@ -1396,12 +1461,13 @@
                 },
                 {
                     "Address": 413,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "A holds the tile index from the level char map"
                 },
                 {
                     "Address": 414,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 3
                 },
                 {
                     "Address": 417,
@@ -2434,6 +2500,16 @@
                     "OperandType": 2
                 }
             ],
+            "CommentBlocks": [
+                {
+                    "Address": 248,
+                    "Comment": "Write attributes for the 4 characters"
+                },
+                {
+                    "Address": 366,
+                    "Comment": "Think #REG:A# holds tile index"
+                }
+            ],
             "LabelInfo": [
                 {
                     "Address": 44,
@@ -2495,7 +2571,7 @@
                 {
                     "Address": 366,
                     "LabelType": 1,
-                    "Name": "function_616E"
+                    "Name": "DrawTile"
                 },
                 {
                     "Address": 385,
@@ -2757,6 +2833,11 @@
                 },
                 {
                     "Address": 45,
+                    "ByteSize": 3,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 48,
                     "ByteSize": 3,
                     "OperandType": 2
                 },
@@ -8483,6 +8564,14 @@
                     "ByteSize": 1
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 790,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                }
+            ],
             "LabelInfo": [
                 {
                     "Address": 435,
@@ -8565,7 +8654,7 @@
                     "Address": 790,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_B716"
+                    "Name": "tileAttributesPtr"
                 },
                 {
                     "Address": 792,
@@ -8640,18 +8729,412 @@
             "PageId": 68
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 703,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 783,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 863,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 943,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 1023,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                }
+            ],
+            "LabelInfo": [
+                {
+                    "Address": 703,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_D6BF"
+                }
+            ],
             "PageId": 69
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 79,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 159,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 239,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 319,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 399,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 479,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 559,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 639,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 719,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 799,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 879,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 959,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                }
+            ],
             "PageId": 70
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 15,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 95,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 175,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 255,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 335,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 415,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 495,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 575,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 655,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 735,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 815,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 895,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 975,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                }
+            ],
             "PageId": 71
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 31,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 111,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 191,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 271,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 351,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 431,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 511,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 591,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 671,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 751,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 831,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 911,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 991,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                }
+            ],
             "PageId": 72
         },
         {
+            "CommentBlocks": [
+                {
+                    "Address": 607,
+                    "Comment": "This is a map tile lookup table. For each entry in the above character map it has an entry in this table. Each entry has an attribute and a tile block index.\nEach entry is 2 bytes. The first byte stores the attribute byte. The second byte stores the block index."
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 47,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 127,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 207,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 287,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 367,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 447,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 527,
+                    "ByteSize": 80,
+                    "CharSetAddressRef": 65535,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 685,
+                    "DataType": 10
+                },
+                {
+                    "Address": 735,
+                    "DataType": 10
+                },
+                {
+                    "Address": 741,
+                    "DataType": 10
+                }
+            ],
+            "LabelInfo": [
+                {
+                    "Address": 607,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "attributeMapData"
+                }
+            ],
             "PageId": 73
         },
         {
