@@ -97,6 +97,8 @@ function ScreenViewer:DrawUI()
 	changed, self.screenNo = imgui.InputInt("screen number",self.screenNo)
 	
 	changed2, self.showCurrentScreen = imgui.Checkbox("Show Current", self.showCurrentScreen)
+
+	DrawOtherGraphicsViewScaled(self.graphicsView,self.graphicsView,0,0,32,32)
 	
 	if self.showCurrentScreen == true then
 		self.screenNo = ReadByte(curRoomNumberAddr)
@@ -119,6 +121,9 @@ end
 -- Initialise the viewer
 print("Initialising Cybernoid Viewer")
 AddViewer(ScreenViewer);
+
+
+
 
 
 
