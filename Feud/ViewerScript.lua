@@ -39,8 +39,7 @@ TestViewer =
 		if imgui.Button("Save PNG") then
 			SaveGraphicsViewPNG(self.graphicsView, "FeudMap.png")
 		end
-		ClearGraphicsView(self.graphicsView, 0)
-		--DrawBlockToView(self.graphicsView, 0x53, 0, 0)
+		ClearGraphicsView(self.graphicsView, 0xff000000)
 		DrawMapToView(self.graphicsView,0,0)
 		DrawGraphicsView(self.graphicsView)
 	end
@@ -48,6 +47,7 @@ TestViewer =
 
 
 AddViewer(TestViewer)
+
 
 
 
