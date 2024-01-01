@@ -120,6 +120,33 @@ function DrawRoom(roomPtr)
 	end
 end
 
+-- this will format the room data in the code analysis
+function FormatRoomData(roomPtr)
+
+	SetDataItemTypeAndComment(roomPtr, EDataItemDisplayType.Pointer, "Room Update Function")
+	SetDataItemTypeAndComment(roomPtr + 2, EDataItemDisplayType.Pointer, "Room Init Function")
+	SetDataItemTypeAndComment(roomPtr + 4, EDataItemDisplayType.Pointer, "Left Room")
+	SetDataItemTypeAndComment(roomPtr + 6, EDataItemDisplayType.Pointer, "Right Room")
+	SetDataItemTypeAndComment(roomPtr + 8, EDataItemDisplayType.Pointer, "Up Room")
+	SetDataItemTypeAndComment(roomPtr + 10, EDataItemDisplayType.Pointer, "Down Room")
+
+	local commandPtr = roomPtr + 12
+
+	while true do
+		local commandCode = ReadByte(commandPtr)
+		if commandCode == CommandCode.Terminator then	-- check for termination code
+			SetDataItemComment(commandPtr, "Room data terminator")
+			break
+		end
+
+		commandPtr = commandPtr + 1
+		if CommandFuncs[commandCode] ~= nil and CommandFuncs[commandCode].formatAnalysis ~= nil then
+			commandPtr = CommandFuncs[commandCode].formatAnalysis(commandPtr)
+		end
+	end
+	
+end
+
 function DrawRoomGuiLog(roomPtr)
 
 	local roomUpdateFunction = ReadWord(roomPtr)
@@ -152,6 +179,10 @@ function DrawRoomGuiLog(roomPtr)
 	if downRoom ~= 0 and imgui.Button("go down") then
 		RoomViewer.roomPtr = downRoom
 		imgui.SameLine()
+	end
+
+	if imgui.Button("Format") then
+		FormatRoomData(roomPtr)
 	end
 
 	imgui.Text("");
@@ -225,6 +256,26 @@ RoomViewer =
 -- Initialise the template viewer
 print("Saboteur Room Viewer Initialised")
 AddViewer(RoomViewer);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

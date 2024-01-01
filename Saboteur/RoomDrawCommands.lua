@@ -9,10 +9,11 @@ CommandCode =
 	Clear = 4,
 	CopyCharMap = 5,
 	FillSquareRight = 6,
-	FillLineDown = 7,
-	FillLineUp = 8,
+	StairsDownRight = 7,
+	StairsDownLeft = 8,
 	FillSquareLeft = 9,
-	
+	DiagonalCharsRight = 10,
+	DiagonalCharsLeft = 11,
 	RectOfCharLines = 12,
 
 	WriteByteToMemory = 14,
@@ -41,6 +42,14 @@ CommandFuncs[CommandCode.DrawBarrelAt] =
 		imgui.SameLine()
         DrawLayerAddress(address)
 
+		return commandPtr + 2
+	end,
+
+	formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Draw Barrel At")		
+		SetDataItemTypeAndComment(commandPtr, EDataItemDisplayType.Pointer, "Destination")
+		
 		return commandPtr + 2
 	end
 }
@@ -74,6 +83,16 @@ CommandFuncs[CommandCode.VerticalLine] =
         DrawLayerAddress(address)
 
 		return commandPtr + 4
+	end,
+
+	formatAnalysis = function(commandPtr)
+        
+		--print("Formatting VerticalLine")
+		SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Draw Vertical Line")		
+		SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Length: " .. tostring(ReadByte(commandPtr)))
+		SetDataItemTypeAndComment(commandPtr + 1, EDataItemDisplayType.Decimal, "Value: " .. tostring(ReadByte(commandPtr + 1)))
+		SetDataItemTypeAndComment(commandPtr + 2, EDataItemDisplayType.Pointer, "Destination")
+		return commandPtr + 4
 	end
 }
 
@@ -104,6 +123,15 @@ CommandFuncs[CommandCode.HorizontalLine] =
 		imgui.SameLine()
         DrawLayerAddress(address)
 	
+		return commandPtr + 4
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Horizontal Line")		
+		SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Length: " .. tostring(ReadByte(commandPtr)))
+		SetDataItemTypeAndComment(commandPtr + 1, EDataItemDisplayType.Decimal, "Value: " .. tostring(ReadByte(commandPtr + 1)))
+		SetDataItemTypeAndComment(commandPtr + 2, EDataItemDisplayType.Pointer, "Destination")
 		return commandPtr + 4
 	end
 }
@@ -139,6 +167,17 @@ CommandFuncs[CommandCode.FillRect] =
         DrawLayerAddress(address)
 
 		return commandPtr + 5
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Fill Rect")		
+		SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Value: " .. tostring(ReadByte(commandPtr)))
+        SetDataItemTypeAndComment(commandPtr + 1, EDataItemDisplayType.Decimal, "Width: " .. tostring(ReadByte(commandPtr + 1)))
+		SetDataItemTypeAndComment(commandPtr + 2, EDataItemDisplayType.Decimal, "Height: " .. tostring(ReadByte(commandPtr + 2)))
+		SetDataItemTypeAndComment(commandPtr + 3, EDataItemDisplayType.Pointer, "Destination")
+		
+		return commandPtr + 5
 	end
 }
 
@@ -156,6 +195,13 @@ CommandFuncs[CommandCode.Clear] =
 
 		local value = ReadByte(commandPtr)
 		imgui.Text("Clear with char " .. tostring(value))
+		return commandPtr + 1
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Clear Background")		
+		SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Clear Value: " .. tostring(ReadByte(commandPtr)))
 		return commandPtr + 1
 	end
 }
@@ -197,6 +243,16 @@ CommandFuncs[CommandCode.CopyCharMap] =
         DrawLayerAddress(destAddress)
 		
 		return commandPtr + 6
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Copy CharMap")		
+        SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Width: " .. tostring(ReadByte(commandPtr + 0)))
+		SetDataItemTypeAndComment(commandPtr + 1, EDataItemDisplayType.Decimal, "Height: " .. tostring(ReadByte(commandPtr + 1)))
+		SetDataItemTypeAndComment(commandPtr + 2, EDataItemDisplayType.Pointer, "Src Address")
+		SetDataItemTypeAndComment(commandPtr + 4, EDataItemDisplayType.Pointer, "Dest Address")
+		return commandPtr + 6
 	end
 }
 
@@ -229,20 +285,33 @@ CommandFuncs[CommandCode.FillSquareRight] =
         DrawLayerAddress(address)
 
 		return commandPtr + 4
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Fill Square Right")		
+        SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Value: " .. tostring(ReadByte(commandPtr + 0)))
+		SetDataItemTypeAndComment(commandPtr + 1, EDataItemDisplayType.Decimal, "Size: " .. tostring(ReadByte(commandPtr + 1)))
+		SetDataItemTypeAndComment(commandPtr + 2, EDataItemDisplayType.Pointer, "Destination")
+		return commandPtr + 4
 	end
 }
 
 -- Command code 7
-CommandFuncs[CommandCode.FillLineDown] = 
+CommandFuncs[CommandCode.StairsDownRight] = 
 {
     draw = function(commandPtr)
         local value = ReadByte(commandPtr)
 		local size = ReadByte(commandPtr + 1)
 		local address = ReadWord(commandPtr + 2)
+		local xcount = 1
         -- Draw
         for y=0,size-1 do
             
-            WriteToLayer(address, value)
+			for x=0,xcount-1 do
+            	WriteToLayer(address + x, value)
+			end
+			xcount = xcount + 1
             address = address + 30
         end
 
@@ -254,26 +323,40 @@ CommandFuncs[CommandCode.FillLineDown] =
 		local value = ReadByte(commandPtr)
 		local size = ReadByte(commandPtr + 1)
 		local address = ReadWord(commandPtr + 2)
-		imgui.Text("Fill Line Down: length:" .. tostring(size) .. ", value:" .. tostring(value) .. " dest:" )
+	
+		imgui.Text("Stairs down right: height:" .. tostring(size) .. ", value:" .. tostring(value) .. " dest:" )
 		imgui.SameLine()
         DrawLayerAddress(address)
 
+		return commandPtr + 4
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Stairs Down Right")		
+        SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Value: " .. tostring(ReadByte(commandPtr + 0)))
+		SetDataItemTypeAndComment(commandPtr + 1, EDataItemDisplayType.Decimal, "Height: " .. tostring(ReadByte(commandPtr + 1)))
+		SetDataItemTypeAndComment(commandPtr + 2, EDataItemDisplayType.Pointer, "Destination")
 		return commandPtr + 4
 	end
 }
 
 -- Command code 8
-CommandFuncs[CommandCode.FillLineUp] = 
+CommandFuncs[CommandCode.StairsDownLeft] = 
 {
     draw = function(commandPtr)
         local value = ReadByte(commandPtr)
 		local size = ReadByte(commandPtr + 1)
 		local address = ReadWord(commandPtr + 2)
+		local xcount = 1
         -- Draw
         for y=0,size-1 do
             
-            WriteToLayer(address, value)
-            address = address - 30
+			for x=0,xcount-1 do
+            	WriteToLayer(address - x, value)
+			end
+			xcount = xcount + 1
+            address = address + 30
         end
         return commandPtr + 4
     end,
@@ -283,10 +366,19 @@ CommandFuncs[CommandCode.FillLineUp] =
 		local value = ReadByte(commandPtr)
 		local size = ReadByte(commandPtr + 1)
 		local address = ReadWord(commandPtr + 2)
-		imgui.Text("Fill Line Up: length:" .. tostring(size) .. ", value:" .. tostring(value) .. " dest:" )
+		imgui.Text("Stairs down left: length:" .. tostring(size) .. ", value:" .. tostring(value) .. " dest:" )
 		imgui.SameLine()
         DrawLayerAddress(address)
 
+		return commandPtr + 4
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Stairs Down Left")		
+        SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Value: " .. tostring(ReadByte(commandPtr + 0)))
+		SetDataItemTypeAndComment(commandPtr + 1, EDataItemDisplayType.Decimal, "Height: " .. tostring(ReadByte(commandPtr + 1)))
+		SetDataItemTypeAndComment(commandPtr + 2, EDataItemDisplayType.Pointer, "Destination")
 		return commandPtr + 4
 	end
 }
@@ -320,6 +412,96 @@ CommandFuncs[CommandCode.FillSquareLeft] =
         DrawLayerAddress(address)
 
 		return commandPtr + 4
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Fill Square Left")		
+        SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Value: " .. tostring(ReadByte(commandPtr + 0)))
+		SetDataItemTypeAndComment(commandPtr + 1, EDataItemDisplayType.Decimal, "Size: " .. tostring(ReadByte(commandPtr + 1)))
+		SetDataItemTypeAndComment(commandPtr + 2, EDataItemDisplayType.Pointer, "Destination")
+		return commandPtr + 4
+	end
+}
+
+-- command code 10
+CommandFuncs[CommandCode.DiagonalCharsRight] = 
+{
+    draw = function(commandPtr)
+        local value = ReadByte(commandPtr)
+		local size = ReadByte(commandPtr + 1)
+		local address = ReadWord(commandPtr + 2)
+        -- Draw
+        for y=0,size-1 do
+            
+            WriteToLayer(address, value)
+            address = address + 31
+        end
+
+		return commandPtr + 4
+   end,
+
+	guiLog = function(commandPtr)
+
+		local value = ReadByte(commandPtr)
+		local size = ReadByte(commandPtr + 1)
+		local address = ReadWord(commandPtr + 2)
+		imgui.Text("Diagonal line right: length:" .. tostring(size) .. ", value:" .. tostring(value) .. " dest:" )
+		imgui.SameLine()
+        DrawLayerAddress(address)
+
+		return commandPtr + 4
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Diagonal Line Right")		
+        SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Value: " .. tostring(ReadByte(commandPtr + 0)))
+		SetDataItemTypeAndComment(commandPtr + 1, EDataItemDisplayType.Decimal, "Height: " .. tostring(ReadByte(commandPtr + 1)))
+		SetDataItemTypeAndComment(commandPtr + 2, EDataItemDisplayType.Pointer, "Destination")
+
+		return commandPtr + 4
+	end
+}
+
+
+-- command code 11
+CommandFuncs[CommandCode.DiagonalCharsLeft] = 
+{
+    draw = function(commandPtr)
+        local value = ReadByte(commandPtr)
+		local size = ReadByte(commandPtr + 1)
+		local address = ReadWord(commandPtr + 2)
+        -- Draw
+        for y=0,size-1 do
+            
+            WriteToLayer(address, value)
+            address = address + 29
+        end
+
+		return commandPtr + 4
+   end,
+
+	guiLog = function(commandPtr)
+
+		local value = ReadByte(commandPtr)
+		local size = ReadByte(commandPtr + 1)
+		local address = ReadWord(commandPtr + 2)
+		imgui.Text("Diagonal line left: length:" .. tostring(size) .. ", value:" .. tostring(value) .. " dest:" )
+		imgui.SameLine()
+        DrawLayerAddress(address)
+
+		return commandPtr + 4
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Diagonal Line Left")		
+        SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Value: " .. tostring(ReadByte(commandPtr + 0)))
+		SetDataItemTypeAndComment(commandPtr + 1, EDataItemDisplayType.Decimal, "Height: " .. tostring(ReadByte(commandPtr + 1)))
+		SetDataItemTypeAndComment(commandPtr + 2, EDataItemDisplayType.Pointer, "Destination")
+
+		return commandPtr + 4
 	end
 }
 
@@ -350,7 +532,7 @@ CommandFuncs[CommandCode.RectOfCharLines] =
 		local srcAddress = ReadWord(commandPtr)
 		local hsize = ReadByte(commandPtr + 2)
 		local vsize = ReadByte(commandPtr + 3)
-		local destAddress = ReadWord(commandPtr + 3)
+		local destAddress = ReadWord(commandPtr + 4)
 		imgui.Text("Rect of Char Lines: " .. tostring(hsize) .. "x" .. tostring(vsize) .. ", src:")
 		DrawAddressLabel(srcAddress)
 		imgui.SameLine()
@@ -358,6 +540,17 @@ CommandFuncs[CommandCode.RectOfCharLines] =
 		imgui.SameLine()
         DrawLayerAddress(destAddress)
 
+		return commandPtr + 6
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Rect of Char Lines")	
+		SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Pointer, "Source")
+        SetDataItemTypeAndComment(commandPtr + 2, EDataItemDisplayType.Decimal, "Width: " .. tostring(ReadByte(commandPtr + 2)))
+		SetDataItemTypeAndComment(commandPtr + 3, EDataItemDisplayType.Decimal, "Height: " .. tostring(ReadByte(commandPtr + 3)))
+		SetDataItemTypeAndComment(commandPtr + 4, EDataItemDisplayType.Pointer, "Destination")
+	
 		return commandPtr + 6
 	end
 }
@@ -379,10 +572,40 @@ CommandFuncs[CommandCode.WriteByteToMemory] =
 		local destAddress = ReadWord(commandPtr + 1)
 		imgui.Text("Write Byte: " .. tostring(value) .. " to:")
 		imgui.SameLine()
-        DrawLayerAddress(address)
+        DrawLayerAddress(destAddress)
+		return commandPtr + 3
+	end,
+
+    formatAnalysis = function(commandPtr)
+
+        SetDataItemTypeAndComment(commandPtr - 1, EDataItemDisplayType.Decimal, "Command: Write Byte")	
+        SetDataItemTypeAndComment(commandPtr + 0, EDataItemDisplayType.Decimal, "Value: " .. tostring(ReadByte(commandPtr + 0)))
+		SetDataItemTypeAndComment(commandPtr + 1, EDataItemDisplayType.Pointer, "Destination")
+	
 		return commandPtr + 3
 	end
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
