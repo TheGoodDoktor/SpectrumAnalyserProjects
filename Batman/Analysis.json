@@ -255,6 +255,12 @@
                     "Name": "data_5C5F"
                 },
                 {
+                    "Address": 97,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C61"
+                },
+                {
                     "Address": 101,
                     "Global": true,
                     "LabelType": 0,
@@ -967,12 +973,12 @@
                 {
                     "Address": 791,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 4
                 },
                 {
                     "Address": 794,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 4
                 },
                 {
                     "Address": 797,
@@ -985,6 +991,7 @@
                 {
                     "Address": 799,
                     "ByteSize": 3,
+                    "Comment": "this draws the room blocks",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -998,15 +1005,18 @@
                 },
                 {
                     "Address": 804,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "old val in H"
                 },
                 {
                     "Address": 805,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "add 20 to L"
                 },
                 {
                     "Address": 806,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 3
                 },
                 {
                     "Address": 808,
@@ -1014,17 +1024,20 @@
                 },
                 {
                     "Address": 809,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 3
                 },
                 {
                     "Address": 811,
                     "ByteSize": 2,
+                    "Comment": "loop if less",
                     "OperandType": 2
                 },
                 {
                     "Address": 813,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Comment": "reset",
+                    "OperandType": 4
                 },
                 {
                     "Address": 816,
@@ -1036,7 +1049,9 @@
                 },
                 {
                     "Address": 818,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "add 42 to E",
+                    "OperandType": 3
                 },
                 {
                     "Address": 820,
@@ -1068,19 +1083,23 @@
                 },
                 {
                     "Address": 897,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult 2"
                 },
                 {
                     "Address": 898,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "*3"
                 },
                 {
                     "Address": 899,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "*6"
                 },
                 {
                     "Address": 900,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "put in BC"
                 },
                 {
                     "Address": 901,
@@ -1097,11 +1116,13 @@
                 },
                 {
                     "Address": 907,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch fist byte"
                 },
                 {
                     "Address": 908,
                     "ByteSize": 3,
+                    "Comment": "store",
                     "OperandType": 1
                 },
                 {
@@ -1110,11 +1131,13 @@
                 },
                 {
                     "Address": 912,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set border to black"
                 },
                 {
                     "Address": 914,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch first byte again"
                 },
                 {
                     "Address": 915,
@@ -1122,7 +1145,8 @@
                 },
                 {
                     "Address": 916,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch next 2 bytes and put in DE"
                 },
                 {
                     "Address": 917,
@@ -1148,7 +1172,8 @@
                 },
                 {
                     "Address": 927,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "copy next 3 bytes"
                 },
                 {
                     "Address": 929,
@@ -1330,6 +1355,18 @@
                 {
                     "Address": 574,
                     "Comment": "this appears to wait for the frame counter updated in the interrupt handler to reach 0"
+                },
+                {
+                    "Address": 824,
+                    "Comment": "each item is 6 bytes in size"
+                },
+                {
+                    "Address": 896,
+                    "Comment": "A : Attrbiute set no"
+                },
+                {
+                    "Address": 933,
+                    "Comment": "set screen attrbiutes"
                 }
             ],
             "DataInfo": [
@@ -1551,6 +1588,12 @@
                     "Name": "label_671D"
                 },
                 {
+                    "Address": 824,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_6738"
+                },
+                {
                     "Address": 890,
                     "LabelType": 1,
                     "Name": "function_677A"
@@ -1558,12 +1601,12 @@
                 {
                     "Address": 896,
                     "LabelType": 1,
-                    "Name": "function_6780"
+                    "Name": "SetRoomScreenAttributes"
                 },
                 {
                     "Address": 937,
                     "LabelType": 2,
-                    "Name": "label_67A9"
+                    "Name": "attrib_clear_loop"
                 },
                 {
                     "Address": 945,
@@ -5220,11 +5263,13 @@
                 {
                     "Address": 759,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 762,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -12133,6 +12178,12 @@
             ],
             "DataInfo": [
                 {
+                    "Address": 740,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
                     "Address": 780,
                     "DataType": 11,
                     "InstructionAddressRef": 2198601731
@@ -12329,7 +12380,13 @@
                     "Address": 742,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_82E6"
+                    "Name": "RoomColAttr"
+                },
+                {
+                    "Address": 743,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_82E7"
                 },
                 {
                     "Address": 746,
@@ -12615,7 +12672,8 @@
                 },
                 {
                     "Address": 64,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "get attrbiute"
                 },
                 {
                     "Address": 65,
@@ -12869,7 +12927,8 @@
                 },
                 {
                     "Address": 155,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "set screen attribute"
                 },
                 {
                     "Address": 156,
@@ -15018,6 +15077,7 @@
                 {
                     "Address": 122,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -15094,6 +15154,7 @@
                 {
                     "Address": 156,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -15212,6 +15273,7 @@
                 {
                     "Address": 196,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -15267,6 +15329,7 @@
                 {
                     "Address": 217,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -15280,6 +15343,7 @@
                 {
                     "Address": 222,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -15335,6 +15399,7 @@
                 {
                     "Address": 243,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -16238,7 +16303,8 @@
                 },
                 {
                     "Address": 651,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write to composite image"
                 },
                 {
                     "Address": 652,
@@ -17602,6 +17668,12 @@
                     "Name": "function_8950"
                 },
                 {
+                    "Address": 337,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "operand_8951"
+                },
+                {
                     "Address": 339,
                     "LabelType": 2,
                     "Name": "label_8953"
@@ -18622,7 +18694,8 @@
                 },
                 {
                     "Address": 270,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "put back in L"
                 },
                 {
                     "Address": 271,
@@ -19927,6 +20000,7 @@
                 {
                     "Address": 942,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -19941,6 +20015,7 @@
                 {
                     "Address": 950,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -20086,7 +20161,7 @@
                 {
                     "Address": 209,
                     "Comment": "course coordinates, seem to change by 4",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 210,
@@ -20782,6 +20857,7 @@
                 {
                     "Address": 21,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -65610,6 +65686,7 @@
                 {
                     "Address": 1002,
                     "ByteSize": 2,
+                    "Comment": "this draws the room blocks",
                     "DataType": 2
                 },
                 {
