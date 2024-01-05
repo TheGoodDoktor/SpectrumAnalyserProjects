@@ -12,25 +12,29 @@ ScreenViewer =
    	screenNo = 0,
     screenMin = 0,
     screenMax = 100,
+	firstRun = true,
 	
 	onAdd = function(self)
 		self.graphicsView = CreateZXGraphicsView(256,256)
         ClearGraphicsView(self.graphicsView, 0)
+		
 	end,
 
 	onDrawUI = function(self)
 
 		DrawIsoObjectsInfo()
 
+		DrawGameSprite(self.screenNo)
+
 		local changed = false
 
         -- Use ImGui widget for setting screen number to draw
-		changed, self.screenNo = imgui.InputInt("screen number",self.screenNo)
+		changed, self.screenNo = imgui.InputInt("spritenumber",self.screenNo)
 
-		if changed == true then
-			ClearGraphicsView(self.graphicsView, 0)
-			DrawScreenToView(self.graphicsView,self.screenNo, 0, 0)
-		end
+		--if changed == true then
+		--	ClearGraphicsView(self.graphicsView, 0)
+		--	DrawScreenToView(self.graphicsView,self.screenNo, 0, 0)
+		--end
 
 		-- Update and draw to screen
 		DrawGraphicsView(self.graphicsView)
@@ -41,6 +45,31 @@ ScreenViewer =
 -- Initialise the template viewer
 print("Template Viewer Initialised")
 AddViewer(ScreenViewer);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -17,6 +17,7 @@ function DrawIsoObject(address)
 	DrawAddressLabel(address)
 	imgui.SameLine()
 	imgui.Text("Sprite no: " .. tostring(spriteNo))
+	DrawGameSprite(spriteNo)
 end
 
 function DrawIsoObjectsInfo()
@@ -38,6 +39,31 @@ function DrawIsoObjectsInfo()
 		bPtr = ReadWord(bPtr)
 	end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
