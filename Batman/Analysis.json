@@ -859,6 +859,14 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 691,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 692,
+                    "ByteSize": 2
+                },
+                {
                     "Address": 694,
                     "ByteSize": 3,
                     "OperandType": 1
@@ -1383,6 +1391,14 @@
                     "DisplayType": 1
                 },
                 {
+                    "Address": 399,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 400,
+                    "DisplayType": 5
+                },
+                {
                     "Address": 510,
                     "DisplayType": 11
                 },
@@ -1426,13 +1442,13 @@
                     "Address": 399,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_658F"
+                    "Name": "CurrControls"
                 },
                 {
                     "Address": 400,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_6590"
+                    "Name": "LastDirControls"
                 },
                 {
                     "Address": 401,
@@ -7787,6 +7803,12 @@
             ],
             "DataInfo": [
                 {
+                    "Address": 264,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
                     "Address": 998,
                     "DataType": 11,
                     "InstructionAddressRef": 2011561986
@@ -9518,7 +9540,8 @@
                 },
                 {
                     "Address": 318,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "multiply A by 3"
                 },
                 {
                     "Address": 319,
@@ -9530,7 +9553,8 @@
                 },
                 {
                     "Address": 321,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "add low byte"
                 },
                 {
                     "Address": 323,
@@ -9585,7 +9609,7 @@
                 {
                     "Address": 362,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 365,
@@ -9601,7 +9625,9 @@
                 },
                 {
                     "Address": 368,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "mask bottom 4 bits",
+                    "OperandType": 5
                 },
                 {
                     "Address": 370,
@@ -9609,12 +9635,14 @@
                 },
                 {
                     "Address": 371,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write back"
                 },
                 {
                     "Address": 372,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Comment": "subtract from pointer to point at iso position",
+                    "OperandType": 7
                 },
                 {
                     "Address": 375,
@@ -9622,15 +9650,18 @@
                 },
                 {
                     "Address": 376,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch value"
                 },
                 {
                     "Address": 377,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "add vel"
                 },
                 {
                     "Address": 378,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "set new sw-ne position"
                 },
                 {
                     "Address": 379,
@@ -9638,15 +9669,18 @@
                 },
                 {
                     "Address": 380,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch value"
                 },
                 {
                     "Address": 381,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "add vel"
                 },
                 {
                     "Address": 382,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "set new se-nw position"
                 },
                 {
                     "Address": 383,
@@ -10507,6 +10541,46 @@
                     "OperandType": 2
                 }
             ],
+            "CommentBlocks": [
+                {
+                    "Address": 318,
+                    "Comment": "This fills B,C & A with data from a LUT\nA : direction\n0 : SW\n1 : ?\n2 : SE\n3 : ?\n4 : NE\n5 : ?\n6 : NW"
+                },
+                {
+                    "Address": 334,
+                    "Comment": "SW direction"
+                },
+                {
+                    "Address": 340,
+                    "Comment": "SE Direction"
+                },
+                {
+                    "Address": 346,
+                    "Comment": "NE Direction"
+                },
+                {
+                    "Address": 352,
+                    "Comment": "NW Direction"
+                },
+                {
+                    "Address": 358,
+                    "Comment": "A : Direction\nHL : Object Ptr"
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 334,
+                    "Comment": "sw-ne vel"
+                },
+                {
+                    "Address": 335,
+                    "Comment": "se-nw vel"
+                },
+                {
+                    "Address": 336,
+                    "Comment": "a"
+                }
+            ],
             "LabelInfo": [
                 {
                     "Address": 0,
@@ -10598,12 +10672,18 @@
                 {
                     "Address": 318,
                     "LabelType": 1,
-                    "Name": "function_7D3E"
+                    "Name": "GetIsoVelForDirection"
+                },
+                {
+                    "Address": 334,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "ISODirectionTable"
                 },
                 {
                     "Address": 358,
                     "LabelType": 1,
-                    "Name": "function_7D66"
+                    "Name": "ApplyVelToIsoObject"
                 },
                 {
                     "Address": 384,
@@ -11231,6 +11311,7 @@
                 {
                     "Address": 534,
                     "ByteSize": 3,
+                    "Comment": "get object iso ptr",
                     "OperandType": 1
                 },
                 {
@@ -11306,6 +11387,11 @@
                 {
                     "Address": 571,
                     "ByteSize": 1
+                },
+                {
+                    "Address": 572,
+                    "ByteSize": 2,
+                    "OperandType": 2
                 },
                 {
                     "Address": 586,
@@ -18855,6 +18941,11 @@
                     "Name": "label_8AC0"
                 },
                 {
+                    "Address": 709,
+                    "LabelType": 2,
+                    "Name": "label_8AC5"
+                },
+                {
                     "Address": 720,
                     "LabelType": 2,
                     "Name": "label_8AD0"
@@ -19610,7 +19701,8 @@
                 },
                 {
                     "Address": 220,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "skip pointer"
                 },
                 {
                     "Address": 221,
@@ -20805,7 +20897,7 @@
                 {
                     "Address": 679,
                     "ByteSize": 1,
-                    "Comment": "fetch value"
+                    "Comment": "fetch value sw-ne isometric position"
                 },
                 {
                     "Address": 680,
@@ -20818,7 +20910,7 @@
                 {
                     "Address": 682,
                     "ByteSize": 1,
-                    "Comment": "fetch"
+                    "Comment": "fetch value se-nw isometric position"
                 },
                 {
                     "Address": 683,
@@ -20827,11 +20919,14 @@
                 },
                 {
                     "Address": 684,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "add 128",
+                    "OperandType": 3
                 },
                 {
                     "Address": 686,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "put in C"
                 },
                 {
                     "Address": 687,
@@ -20839,7 +20934,8 @@
                 },
                 {
                     "Address": 688,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch next value"
                 },
                 {
                     "Address": 689,
@@ -21303,6 +21399,10 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 220,
+                    "Comment": "Iso object pointer is passed in"
+                },
+                {
                     "Address": 542,
                     "Comment": "this is a table LUT indexed by image type\nnot sure the difference between image types"
                 },
@@ -21477,15 +21577,40 @@
                     "DisplayType": 5
                 },
                 {
+                    "Address": 797,
+                    "Comment": "sw -> ne isometric position",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 798,
+                    "Comment": "se -> nw isometric position",
+                    "DisplayType": 11
+                },
+                {
                     "Address": 800,
                     "Comment": "sprite number",
-                    "DisplayType": 11
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 803,
+                    "Comment": "direction bits",
+                    "DisplayType": 5
                 },
                 {
                     "Address": 810,
                     "ByteSize": 2,
                     "DataType": 2,
                     "DisplayType": 1
+                },
+                {
+                    "Address": 812,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 814,
+                    "DisplayType": 5
                 },
                 {
                     "Address": 818,
@@ -21858,7 +21983,7 @@
                     "Address": 785,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8F11"
+                    "Name": "ControlDown"
                 },
                 {
                     "Address": 786,
@@ -21882,7 +22007,7 @@
                     "Address": 792,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8F18"
+                    "Name": "PlayerIsoObject"
                 },
                 {
                     "Address": 796,
@@ -22706,6 +22831,7 @@
                 {
                     "Address": 493,
                     "ByteSize": 2,
+                    "Comment": "jump if a is FF",
                     "OperandType": 2
                 },
                 {
@@ -22868,6 +22994,38 @@
                 {
                     "Address": 566,
                     "ByteSize": 1
+                },
+                {
+                    "Address": 567,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 570,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 571,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 572,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 574,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 576,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 578,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
                 },
                 {
                     "Address": 604,
@@ -23626,7 +23784,12 @@
                 {
                     "Address": 555,
                     "LabelType": 2,
-                    "Name": "label_922B"
+                    "Name": "move_player"
+                },
+                {
+                    "Address": 581,
+                    "LabelType": 2,
+                    "Name": "label_9245"
                 },
                 {
                     "Address": 604,
@@ -26092,7 +26255,8 @@
                 },
                 {
                     "Address": 134,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "*4"
                 },
                 {
                     "Address": 135,
@@ -26100,7 +26264,8 @@
                 },
                 {
                     "Address": 136,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "add low byte"
                 },
                 {
                     "Address": 138,
@@ -26121,12 +26286,14 @@
                 {
                     "Address": 143,
                     "ByteSize": 3,
+                    "Comment": "dest",
                     "OperandType": 1
                 },
                 {
                     "Address": 146,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Comment": "copy 4 bytes",
+                    "OperandType": 7
                 },
                 {
                     "Address": 149,
@@ -26771,7 +26938,7 @@
                 {
                     "Address": 443,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 446,
@@ -27011,7 +27178,8 @@
                 },
                 {
                     "Address": 521,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch sw-ne iso position"
                 },
                 {
                     "Address": 522,
@@ -27035,7 +27203,8 @@
                 },
                 {
                     "Address": 527,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch se-nw isometric position"
                 },
                 {
                     "Address": 528,
@@ -27144,6 +27313,59 @@
                 },
                 {
                     "Address": 558,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 560,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 561,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 562,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 563,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 564,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 565,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 566,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 567,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 569,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 570,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 571,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 573,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 574,
                     "ByteSize": 2,
                     "OperandType": 2
                 },
@@ -28116,6 +28338,10 @@
                     "ByteSize": 1
                 },
                 {
+                    "Address": 894,
+                    "ByteSize": 3
+                },
+                {
                     "Address": 897,
                     "ByteSize": 1
                 },
@@ -28366,6 +28592,18 @@
                 {
                     "Address": 102,
                     "Comment": "The data below is copied from the data above?\nTemplate & working copy?\nSeems to be related to sprite ordering"
+                },
+                {
+                    "Address": 131,
+                    "Comment": "A : value for LUT\nCopies a pair of pointers to 9869h - seems to be related to overlaps"
+                },
+                {
+                    "Address": 152,
+                    "Comment": "LUT of pointer pairs"
+                },
+                {
+                    "Address": 424,
+                    "Comment": "HL : ptr to iso object"
                 }
             ],
             "DataInfo": [
@@ -28480,6 +28718,66 @@
                     "ByteSize": 2,
                     "DataType": 2,
                     "DisplayType": 1
+                },
+                {
+                    "Address": 152,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 154,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 156,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 158,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 160,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 162,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 164,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 166,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 168,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 170,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
                 }
             ],
             "LabelInfo": [
@@ -28580,6 +28878,12 @@
                     "Address": 131,
                     "LabelType": 1,
                     "Name": "function_9883"
+                },
+                {
+                    "Address": 152,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_9898"
                 },
                 {
                     "Address": 172,
@@ -33023,6 +33327,14 @@
                     "DisplayType": 1
                 },
                 {
+                    "Address": 653,
+                    "Comment": "sw-ne iso pos"
+                },
+                {
+                    "Address": 654,
+                    "Comment": "se-nw iso pos"
+                },
+                {
                     "Address": 656,
                     "Comment": "sprite number",
                     "DisplayType": 11
@@ -33113,6 +33425,12 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 756,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
                     "Address": 758,
                     "ByteSize": 2,
                     "DataType": 2,
@@ -33178,6 +33496,12 @@
                     "Address": 836,
                     "Comment": "sprite number",
                     "DisplayType": 11
+                },
+                {
+                    "Address": 936,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
                 }
             ],
             "LabelInfo": [
@@ -33259,6 +33583,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_A2E2"
+                },
+                {
+                    "Address": 756,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_A2F4"
                 },
                 {
                     "Address": 758,
@@ -88803,11 +89133,13 @@
                 {
                     "Address": 986,
                     "ByteSize": 2,
+                    "Comment": "push dest",
                     "DataType": 2
                 },
                 {
                     "Address": 988,
                     "ByteSize": 2,
+                    "Comment": "push clear and count",
                     "DataType": 2
                 },
                 {
@@ -88838,6 +89170,7 @@
                 {
                     "Address": 1000,
                     "ByteSize": 2,
+                    "Comment": "push composited sprite image",
                     "DataType": 2
                 },
                 {
@@ -88848,7 +89181,7 @@
                 {
                     "Address": 1004,
                     "ByteSize": 2,
-                    "Comment": "draw background of composited sprite",
+                    "Comment": "draw foreground over composited sprite",
                     "DataType": 2
                 },
                 {
