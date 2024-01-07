@@ -6,79 +6,51 @@ function DrawScreenToView(graphicsView, screenNo, x, y)
     -- TODO: draw screen pixels to graphicsView
 end
 
-ScreenViewer = 
+CompositeSpriteAddress = 0xA000
+
+SpriteViewer = 
 {
-    name = "Screen Viewer",
+    name = "Sprite Viewer",
    	screenNo = 0,
     screenMin = 0,
     screenMax = 100,
 	firstRun = true,
 	
 	onAdd = function(self)
-		self.graphicsView = CreateZXGraphicsView(256,256)
-        ClearGraphicsView(self.graphicsView, 0)
+		--self.graphicsView = CreateZXGraphicsView(256,256)
+        --ClearGraphicsView(self.graphicsView, 0)
+		self.compositeSpriteView = CreateZXGraphicsView(48,42)
 		
 	end,
 
 	onDrawUI = function(self)
 
-		DrawIsoObjectsInfo()
+		--DrawIsoObjectsInfo()
 
-		DrawGameSprite(self.screenNo)
+		
 
 		local changed = false
 
         -- Use ImGui widget for setting screen number to draw
 		changed, self.screenNo = imgui.InputInt("spritenumber",self.screenNo)
+		DrawGameSprite(self.screenNo)
 
+		imgui.Text("Composite Sprite")
+		local spriteMem = GetMemPtr(CompositeSpriteAddress)
+		ClearGraphicsView(self.compositeSpriteView, 0)
+		DrawZXBitImageFineY(self.compositeSpriteView,spriteMem,0,0,6,42)
+		DrawGraphicsView(self.compositeSpriteView)
 		--if changed == true then
 		--	ClearGraphicsView(self.graphicsView, 0)
 		--	DrawScreenToView(self.graphicsView,self.screenNo, 0, 0)
 		--end
 
 		-- Update and draw to screen
-		DrawGraphicsView(self.graphicsView)
+		--DrawGraphicsView(self.graphicsView)
 	end,
 
 }
 
 -- Initialise the template viewer
-print("Template Viewer Initialised")
-AddViewer(ScreenViewer);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("Sprite Viewer Initialised")
+AddViewer(SpriteViewer);

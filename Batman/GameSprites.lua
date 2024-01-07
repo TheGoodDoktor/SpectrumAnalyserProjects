@@ -97,25 +97,3 @@ function CreateGameSprites()
 end
 
 CreateGameSprites()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
