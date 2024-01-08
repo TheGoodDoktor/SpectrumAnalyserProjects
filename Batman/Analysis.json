@@ -8762,6 +8762,116 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 755,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 758,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 759,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 761,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 764,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 766,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 767,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 768,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 771,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 772,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 773,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 776,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 777,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 778,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 781,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 782,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 783,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 878,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 881,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 882,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 883,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 885,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 886,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 888,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 889,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 890,
+                    "ByteSize": 1
+                },
+                {
                     "Address": 902,
                     "ByteSize": 1
                 },
@@ -9178,6 +9288,11 @@
                     "Address": 824,
                     "LabelType": 2,
                     "Name": "label_7B38"
+                },
+                {
+                    "Address": 878,
+                    "LabelType": 1,
+                    "Name": "function_7B6E"
                 },
                 {
                     "Address": 891,
@@ -21163,7 +21278,8 @@
                 },
                 {
                     "Address": 692,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 694,
@@ -22196,6 +22312,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_8F00"
+                },
+                {
+                    "Address": 769,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_8F01"
                 },
                 {
                     "Address": 772,
@@ -90085,7 +90207,6 @@
                 {
                     "Address": 996,
                     "ByteSize": 2,
-                    "Comment": "HL points into the table at #ADDR:0xA200#",
                     "DataType": 2
                 },
                 {
@@ -90096,6 +90217,7 @@
                 {
                     "Address": 1000,
                     "ByteSize": 2,
+                    "Comment": "check to see if sprite is in region of comp sprite",
                     "DataType": 2
                 },
                 {
@@ -90106,6 +90228,7 @@
                 {
                     "Address": 1004,
                     "ByteSize": 2,
+                    "Comment": "draw sprite",
                     "DataType": 2
                 },
                 {
