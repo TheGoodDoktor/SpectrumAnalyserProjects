@@ -8,6 +8,15 @@ end
 
 CompositeSpriteAddress = 0xA000
 
+function OnDrawScreenOverlay(screenOverlay)
+
+	--screenOverlay:setDrawCol(0xffffffff)
+	--screenOverlay:drawText(0,0,"hello")
+	--screenOverlay:drawRect(0,0,256,192)
+	--screenOverlay:setDrawCol(0xff00ffff)
+	--screenOverlay:drawLine(0,0,255,191)
+end
+
 SpriteViewer = 
 {
     name = "Sprite Viewer",
@@ -21,6 +30,7 @@ SpriteViewer =
         --ClearGraphicsView(self.graphicsView, 0)
 		self.compositeSpriteView = CreateZXGraphicsView(48,42)
 		
+		SetScreenDrawOverlayFunc(OnDrawScreenOverlay)
 	end,
 
 	onDrawUI = function(self)

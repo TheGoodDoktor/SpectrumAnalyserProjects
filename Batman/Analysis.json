@@ -11857,6 +11857,7 @@
                 {
                     "Address": 783,
                     "ByteSize": 3,
+                    "Comment": "put screen address in DE",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -34029,7 +34030,7 @@
                 },
                 {
                     "Address": 634,
-                    "DisplayType": 1
+                    "DisplayType": 5
                 },
                 {
                     "Address": 638,
@@ -34120,6 +34121,10 @@
                     "DisplayType": 1
                 },
                 {
+                    "Address": 706,
+                    "DisplayType": 5
+                },
+                {
                     "Address": 710,
                     "Comment": "sprite number",
                     "DisplayType": 11
@@ -34135,6 +34140,10 @@
                     "ByteSize": 2,
                     "DataType": 2,
                     "DisplayType": 1
+                },
+                {
+                    "Address": 724,
+                    "DisplayType": 5
                 },
                 {
                     "Address": 728,
@@ -34154,6 +34163,10 @@
                     "DisplayType": 1
                 },
                 {
+                    "Address": 742,
+                    "DisplayType": 5
+                },
+                {
                     "Address": 746,
                     "Comment": "sprite number",
                     "DisplayType": 11
@@ -34171,15 +34184,29 @@
                     "DisplayType": 1
                 },
                 {
+                    "Address": 760,
+                    "DisplayType": 5
+                },
+                {
                     "Address": 764,
                     "Comment": "sprite number",
                     "DisplayType": 11
+                },
+                {
+                    "Address": 774,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 776,
                     "ByteSize": 2,
                     "DataType": 2,
                     "DisplayType": 1
+                },
+                {
+                    "Address": 778,
+                    "DisplayType": 5
                 },
                 {
                     "Address": 782,
@@ -34216,6 +34243,10 @@
                     "DisplayType": 1
                 },
                 {
+                    "Address": 814,
+                    "DisplayType": 5
+                },
+                {
                     "Address": 818,
                     "Comment": "sprite number",
                     "DisplayType": 3
@@ -34233,9 +34264,45 @@
                     "DisplayType": 1
                 },
                 {
+                    "Address": 832,
+                    "DisplayType": 5
+                },
+                {
                     "Address": 836,
                     "Comment": "sprite number",
                     "DisplayType": 11
+                },
+                {
+                    "Address": 846,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 848,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 850,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 864,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 866,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 868,
+                    "DisplayType": 5
                 },
                 {
                     "Address": 882,
@@ -34254,6 +34321,22 @@
                     "DisplayType": 5
                 },
                 {
+                    "Address": 900,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 902,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 904,
+                    "DisplayType": 5
+                },
+                {
                     "Address": 918,
                     "ByteSize": 2,
                     "DataType": 2,
@@ -34264,6 +34347,10 @@
                     "ByteSize": 2,
                     "DataType": 2,
                     "DisplayType": 1
+                },
+                {
+                    "Address": 922,
+                    "DisplayType": 5
                 },
                 {
                     "Address": 936,
@@ -89998,6 +90085,7 @@
                 {
                     "Address": 996,
                     "ByteSize": 2,
+                    "Comment": "HL points into the table at #ADDR:0xA200#",
                     "DataType": 2
                 },
                 {
@@ -90008,7 +90096,6 @@
                 {
                     "Address": 1000,
                     "ByteSize": 2,
-                    "Comment": "check to see if sprite is in region of comp sprite",
                     "DataType": 2
                 },
                 {
@@ -90019,12 +90106,12 @@
                 {
                     "Address": 1004,
                     "ByteSize": 2,
-                    "Comment": "draw sprite",
                     "DataType": 2
                 },
                 {
                     "Address": 1006,
                     "ByteSize": 2,
+                    "Comment": "drawing gets called from here",
                     "DataType": 2
                 },
                 {
