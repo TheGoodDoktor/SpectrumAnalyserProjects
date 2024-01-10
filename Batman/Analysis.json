@@ -6699,6 +6699,12 @@
                     "Name": "label_7063"
                 },
                 {
+                    "Address": 108,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "Animation_706C"
+                },
+                {
                     "Address": 114,
                     "LabelType": 1,
                     "Name": "function_7072"
@@ -9988,7 +9994,8 @@
                 },
                 {
                     "Address": 291,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 293,
@@ -10168,11 +10175,13 @@
                 },
                 {
                     "Address": 384,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "animation frame"
                 },
                 {
                     "Address": 385,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "offset to the frame number"
                 },
                 {
                     "Address": 386,
@@ -10196,7 +10205,8 @@
                 },
                 {
                     "Address": 391,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "put sprite frame in A"
                 },
                 {
                     "Address": 392,
@@ -10204,11 +10214,13 @@
                 },
                 {
                     "Address": 393,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if not 0"
                 },
                 {
                     "Address": 394,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "otherwise reset to start of sequence"
                 },
                 {
                     "Address": 396,
@@ -10216,7 +10228,8 @@
                 },
                 {
                     "Address": 397,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch first item"
                 },
                 {
                     "Address": 398,
@@ -11023,6 +11036,10 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 291,
+                    "Comment": "this function pulls a value out of the LUT below"
+                },
+                {
                     "Address": 318,
                     "Comment": "This fills B,C & A with data from a LUT\nA : direction\n0 : SW\n1 : ?\n2 : SE\n3 : ?\n4 : NE\n5 : ?\n6 : NW"
                 },
@@ -11150,6 +11167,12 @@
                     "Name": "function_7D23"
                 },
                 {
+                    "Address": 302,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_7D2E"
+                },
+                {
                     "Address": 318,
                     "LabelType": 1,
                     "Name": "GetIsoVelForDirection"
@@ -11168,7 +11191,7 @@
                 {
                     "Address": 384,
                     "LabelType": 1,
-                    "Name": "function_7D80"
+                    "Name": "UpdateAnimFrame"
                 },
                 {
                     "Address": 424,
@@ -22253,6 +22276,10 @@
                     "Comment": "count"
                 },
                 {
+                    "Address": 784,
+                    "DisplayType": 5
+                },
+                {
                     "Address": 792,
                     "ByteSize": 2,
                     "DataType": 2,
@@ -22332,11 +22359,31 @@
                 {
                     "Address": 818,
                     "Comment": "sprite number",
-                    "DisplayType": 3
+                    "DisplayType": 4
                 },
                 {
                     "Address": 819,
                     "DisplayType": 5
+                },
+                {
+                    "Address": 829,
+                    "Comment": "frames"
+                },
+                {
+                    "Address": 833,
+                    "Comment": "end marker"
+                },
+                {
+                    "Address": 835,
+                    "Comment": "frames"
+                },
+                {
+                    "Address": 839,
+                    "Comment": "end marker"
+                },
+                {
+                    "Address": 853,
+                    "Comment": "end marker"
                 }
             ],
             "LabelInfo": [
@@ -22710,7 +22757,7 @@
                     "Address": 784,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8F10"
+                    "Name": "LastCtrlDir"
                 },
                 {
                     "Address": 785,
@@ -22806,19 +22853,19 @@
                     "Address": 828,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8F3C"
+                    "Name": "WalkFacingAnim"
                 },
                 {
                     "Address": 834,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8F42"
+                    "Name": "WalkFacingAwayAnim"
                 },
                 {
                     "Address": 840,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8F48"
+                    "Name": "Anim_8F48"
                 },
                 {
                     "Address": 854,
@@ -23224,6 +23271,7 @@
                 {
                     "Address": 261,
                     "ByteSize": 3,
+                    "Comment": "gets the direction, C is set if walking away",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -23243,6 +23291,7 @@
                 {
                     "Address": 269,
                     "ByteSize": 2,
+                    "Comment": "jump if value wasn't 0xff",
                     "OperandType": 2
                 },
                 {
@@ -23252,6 +23301,7 @@
                 {
                     "Address": 272,
                     "ByteSize": 3,
+                    "Comment": "reset anim frames",
                     "OperandType": 1
                 },
                 {
@@ -24559,7 +24609,7 @@
                 {
                     "Address": 299,
                     "LabelType": 2,
-                    "Name": "label_912B"
+                    "Name": "use_facing_anim"
                 },
                 {
                     "Address": 302,
@@ -90701,7 +90751,6 @@
                 {
                     "Address": 1002,
                     "ByteSize": 2,
-                    "Comment": "push top sprite pointer",
                     "DataType": 2
                 },
                 {
