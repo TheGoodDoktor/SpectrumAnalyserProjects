@@ -22272,17 +22272,26 @@
                 {
                     "Address": 797,
                     "Comment": "sw -> ne isometric position",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 798,
                     "Comment": "se -> nw isometric position",
-                    "DisplayType": 11
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 799,
+                    "Comment": "height?",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 800,
                     "Comment": "sprite number",
                     "DisplayType": 3
+                },
+                {
+                    "Address": 801,
+                    "DisplayType": 5
                 },
                 {
                     "Address": 803,
@@ -22306,9 +22315,28 @@
                     "DisplayType": 5
                 },
                 {
+                    "Address": 815,
+                    "Comment": "sw -> ne isometric position",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 816,
+                    "Comment": "se -> nw isometric position",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 817,
+                    "Comment": "height",
+                    "DisplayType": 3
+                },
+                {
                     "Address": 818,
                     "Comment": "sprite number",
                     "DisplayType": 3
+                },
+                {
+                    "Address": 819,
+                    "DisplayType": 5
                 }
             ],
             "LabelInfo": [
@@ -22712,7 +22740,7 @@
                     "Address": 792,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "PlayerIsoObject"
+                    "Name": "PlayerIsoObjectBottom"
                 },
                 {
                     "Address": 796,
@@ -22760,7 +22788,7 @@
                     "Address": 810,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8F2A"
+                    "Name": "PlayerIsoObjectTop"
                 },
                 {
                     "Address": 814,
@@ -23060,6 +23088,52 @@
                 {
                     "Address": 159,
                     "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 161,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 164,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 166,
+                    "ByteSize": 3,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 169,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 172,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 175,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 177,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 179,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 181,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 184,
+                    "ByteSize": 3,
                     "OperandType": 2
                 },
                 {
@@ -24508,6 +24582,11 @@
                     "Name": "label_9164"
                 },
                 {
+                    "Address": 375,
+                    "LabelType": 2,
+                    "Name": "label_9177"
+                },
+                {
                     "Address": 408,
                     "LabelType": 2,
                     "Name": "label_9198"
@@ -24773,6 +24852,10 @@
                 {
                     "Address": 77,
                     "ByteSize": 1
+                },
+                {
+                    "Address": 78,
+                    "ByteSize": 2
                 },
                 {
                     "Address": 80,
@@ -25143,6 +25226,39 @@
                 },
                 {
                     "Address": 262,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 264,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 267,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 268,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 270,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 271,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 274,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 275,
                     "ByteSize": 2,
                     "OperandType": 2
                 },
@@ -26900,6 +27016,12 @@
                     "Name": "data_9410"
                 },
                 {
+                    "Address": 17,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_9411"
+                },
+                {
                     "Address": 18,
                     "LabelType": 1,
                     "Name": "function_9412"
@@ -27459,15 +27581,18 @@
                 {
                     "Address": 172,
                     "ByteSize": 3,
-                    "OperandType": 7
+                    "Comment": "offset to next iso object",
+                    "OperandType": 3
                 },
                 {
                     "Address": 175,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "add to offset"
                 },
                 {
                     "Address": 176,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "push top sprite pointer"
                 },
                 {
                     "Address": 177,
@@ -27476,7 +27601,8 @@
                 {
                     "Address": 178,
                     "ByteSize": 3,
-                    "OperandType": 7
+                    "Comment": "copy 5 bytes",
+                    "OperandType": 3
                 },
                 {
                     "Address": 181,
@@ -27484,15 +27610,19 @@
                 },
                 {
                     "Address": 183,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "take height"
                 },
                 {
                     "Address": 184,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "sub 6",
+                    "OperandType": 3
                 },
                 {
                     "Address": 186,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "set in top"
                 },
                 {
                     "Address": 187,
@@ -27504,7 +27634,8 @@
                 },
                 {
                     "Address": 189,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "copy bottom sprite number to top"
                 },
                 {
                     "Address": 191,
@@ -30046,7 +30177,7 @@
                 {
                     "Address": 172,
                     "LabelType": 1,
-                    "Name": "function_98AC"
+                    "Name": "CopyBottomSpriteToTop"
                 },
                 {
                     "Address": 193,
@@ -90570,6 +90701,7 @@
                 {
                     "Address": 1002,
                     "ByteSize": 2,
+                    "Comment": "push top sprite pointer",
                     "DataType": 2
                 },
                 {

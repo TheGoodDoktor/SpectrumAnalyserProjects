@@ -8,21 +8,34 @@ end
 
 CompositeSpriteAddress = 0xA000
 
+-- iso coords seem to be 11 -> 69
 function DrawIsoObjectToScreen(screenOverlay,address)
 
 	local ptr1 = ReadWord(address)
 	local ptr2 = ReadWord(address + 2)
 
 	local bits = ReadByte(address + 4)
-	local isoSWNE = ReadByte(address + 5)
-	local isoSENW = ReadByte(address + 6)
+	local isoX = ReadByte(address + 5)
+	local isoY = ReadByte(address + 6)
 
 	local spriteNo = ReadByte(address + 8)
 
-	local y = isoSWNE - isoSENW	
-	local x = isoSENW/2 + isoSWNE/2
-	screenOverlay:drawCoord(x,y)
-	screenOverlay:drawText(x,y,tostring(isoSWNE) .. "," .. tostring(isoSENW))
+--	local y = isoX - isoY	
+--	local x = isoX/2 + isoY/2
+	local tileWidth = 8
+	local tileHeight = 4
+--	screenOverlay:drawCoord(x,y)
+--	screenOverlay:drawText(x,y,tostring(isoX) .. "," .. tostring(isoY))
+
+	local scrY = (isoX * tileWidth / 2) + (isoY * tileWidth / 2)
+	local scrX = (isoY * tileHeight / 2) - (isoX * tileHeight / 2)
+
+	scrX = (0 - scrX) + 128
+	--scrY = 256 - scrY
+	screenOverlay:drawCoord(scrX,scrY)
+	imgui.Text("Iso: " .. tostring(isoX) .. "," .. tostring(isoY))
+	imgui.SameLine()
+	imgui.Text("Screen: " .. tostring(scrX) .. "," .. tostring(scrY))
 
 end
 
