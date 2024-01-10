@@ -8,8 +8,36 @@ end
 
 CompositeSpriteAddress = 0xA000
 
+function DrawIsoObjectToScreen(screenOverlay,address)
+
+	local ptr1 = ReadWord(address)
+	local ptr2 = ReadWord(address + 2)
+
+	local bits = ReadByte(address + 4)
+	local isoSWNE = ReadByte(address + 5)
+	local isoSENW = ReadByte(address + 6)
+
+	local spriteNo = ReadByte(address + 8)
+
+	local y = isoSWNE - isoSENW	
+	local x = isoSENW/2 + isoSWNE/2
+	screenOverlay:drawCoord(x,y)
+	screenOverlay:drawText(x,y,tostring(isoSWNE) .. "," .. tostring(isoSENW))
+
+end
+
 function OnDrawScreenOverlay(screenOverlay)
 
+	local coord1 = ReadByte(0x8CD1)
+	local coord2 = ReadByte(0x8CD2)
+	local coord3 = ReadByte(0x8CD3)
+	local coord4 = ReadByte(0x8CD4)
+
+	DrawIsoObjectToScreen(screenOverlay,0x8f18)
+
+	--screenOverlay:setDrawCol(0xff00ffff)
+	--screenOverlay:drawCoord(coord1,192 - coord2)	
+	--screenOverlay:drawCoord(coord3,coord4)
 	--screenOverlay:setDrawCol(0xffffffff)
 	--screenOverlay:drawText(0,0,"hello")
 	--screenOverlay:drawRect(0,0,256,192)
@@ -30,6 +58,7 @@ SpriteViewer =
         --ClearGraphicsView(self.graphicsView, 0)
 		self.compositeSpriteView = CreateZXGraphicsView(48,42)
 		
+print("set")
 		SetScreenDrawOverlayFunc(OnDrawScreenOverlay)
 	end,
 
