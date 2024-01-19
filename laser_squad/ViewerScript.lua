@@ -121,7 +121,6 @@ BlockViewer =
 }
 -- Initialise the template viewer
 print("Laser Squad Viewer Initialised")
-InitViewers();
 AddViewer(MapViewer);
 AddViewer(BlockViewer);
 AddViewer(TileViewer);
