@@ -196,6 +196,12 @@
                     "Name": "ScreenAttributes_1"
                 },
                 {
+                    "Address": 768,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5B00"
+                },
+                {
                     "Address": 976,
                     "Global": true,
                     "LabelType": 0,
@@ -12755,6 +12761,7 @@
                     "Address": 780,
                     "ByteSize": 2,
                     "Flags": 2,
+                    "OperandType": 3,
                     "SMC": true
                 },
                 {
@@ -13705,7 +13712,7 @@
                 {
                     "Address": 746,
                     "LabelType": 1,
-                    "Name": "function_82EA"
+                    "Name": "BlitToScreen"
                 },
                 {
                     "Address": 781,
@@ -22530,21 +22537,22 @@
             "DataInfo": [
                 {
                     "Address": 209,
-                    "Comment": "course coordinates, seem to change by 4",
+                    "Comment": "Max X",
                     "DisplayType": 3
                 },
                 {
                     "Address": 210,
+                    "Comment": "Min X",
                     "DisplayType": 3
                 },
                 {
                     "Address": 211,
-                    "Comment": "some kind of X screen coord",
+                    "Comment": "Max Y",
                     "DisplayType": 3
                 },
                 {
                     "Address": 212,
-                    "Comment": "some kind of y screen coord",
+                    "Comment": "Min Y",
                     "DisplayType": 3
                 },
                 {
@@ -22825,19 +22833,13 @@
                     "Address": 209,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8CD1"
+                    "Name": "ViewExtentX"
                 },
                 {
                     "Address": 211,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8CD3"
-                },
-                {
-                    "Address": 212,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_8CD4"
+                    "Name": "ViewExtentY"
                 },
                 {
                     "Address": 213,
