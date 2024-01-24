@@ -2295,6 +2295,10 @@
                 {
                     "Address": 139,
                     "Comment": "Set zero flag if in victory room"
+                },
+                {
+                    "Address": 955,
+                    "Comment": "Colour schemes (11 in total)\nEach scheme has 6 attributes:\nAttrib0 (ink as border col), AttribL, AttribR, Attrib1, Attrib2, Attrib3"
                 }
             ],
             "DataInfo": [
@@ -2410,6 +2414,61 @@
                     "Address": 842,
                     "DataType": 11,
                     "InstructionAddressRef": 1934098434
+                },
+                {
+                    "Address": 955,
+                    "ByteSize": 6,
+                    "DataType": 10
+                },
+                {
+                    "Address": 961,
+                    "ByteSize": 6,
+                    "DataType": 10
+                },
+                {
+                    "Address": 967,
+                    "ByteSize": 6,
+                    "DataType": 10
+                },
+                {
+                    "Address": 973,
+                    "ByteSize": 6,
+                    "DataType": 10
+                },
+                {
+                    "Address": 979,
+                    "ByteSize": 6,
+                    "DataType": 10
+                },
+                {
+                    "Address": 985,
+                    "ByteSize": 6,
+                    "DataType": 10
+                },
+                {
+                    "Address": 991,
+                    "ByteSize": 6,
+                    "DataType": 10
+                },
+                {
+                    "Address": 997,
+                    "ByteSize": 6,
+                    "DataType": 10
+                },
+                {
+                    "Address": 1003,
+                    "ByteSize": 6,
+                    "DataType": 10
+                },
+                {
+                    "Address": 1009,
+                    "ByteSize": 6,
+                    "DataType": 10
+                },
+                {
+                    "Address": 1015,
+                    "ByteSize": 6,
+                    "DataType": 10
                 }
             ],
             "LabelInfo": [
@@ -2839,9 +2898,15 @@
                     "Name": "label_73A0"
                 },
                 {
+                    "Address": 955,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "AttribTable"
+                },
+                {
                     "Address": 1021,
                     "LabelType": 1,
-                    "Name": "function_73FD"
+                    "Name": "UpdateAttribs"
                 }
             ],
             "PageId": 44
@@ -2859,7 +2924,8 @@
                 },
                 {
                     "Address": 5,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 6"
                 },
                 {
                     "Address": 6,
@@ -2879,7 +2945,8 @@
                 },
                 {
                     "Address": 11,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 14,
@@ -2908,7 +2975,8 @@
                 },
                 {
                     "Address": 22,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "border"
                 },
                 {
                     "Address": 24,
@@ -3041,7 +3109,8 @@
                 },
                 {
                     "Address": 78,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 81,
@@ -3647,7 +3716,98 @@
                     "OperandType": 2
                 }
             ],
+            "CommentBlocks": [
+                {
+                    "Address": 4,
+                    "Comment": "Set current attribute set based on number in A"
+                }
+            ],
             "DataInfo": [
+                {
+                    "Address": 3,
+                    "Comment": "last byte sent to output port",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 58,
+                    "Comment": "left hand play area edge attribute",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 59,
+                    "Comment": "right hand play area edge",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 85,
+                    "ByteSize": 5,
+                    "DataType": 4
+                },
+                {
+                    "Address": 92,
+                    "ByteSize": 3,
+                    "DataType": 4
+                },
+                {
+                    "Address": 106,
+                    "ByteSize": 9,
+                    "DataType": 4
+                },
+                {
+                    "Address": 122,
+                    "ByteSize": 8,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 132,
+                    "ByteSize": 6,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 141,
+                    "ByteSize": 3,
+                    "DataType": 4
+                },
+                {
+                    "Address": 146,
+                    "DataType": 4
+                },
+                {
+                    "Address": 149,
+                    "DataType": 4
+                },
+                {
+                    "Address": 152,
+                    "DataType": 4
+                },
+                {
+                    "Address": 155,
+                    "DataType": 4
+                },
+                {
+                    "Address": 158,
+                    "DataType": 4
+                },
+                {
+                    "Address": 166,
+                    "ByteSize": 29,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 196,
+                    "ByteSize": 4,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 202,
+                    "ByteSize": 3,
+                    "DataType": 4,
+                    "Flags": 8
+                },
                 {
                     "Address": 769,
                     "ByteSize": 2,
@@ -3660,12 +3820,12 @@
                     "Address": 3,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_7403"
+                    "Name": "LastOut"
                 },
                 {
                     "Address": 4,
                     "LabelType": 1,
-                    "Name": "function_7404"
+                    "Name": "SetAttribs"
                 },
                 {
                     "Address": 50,
@@ -3676,23 +3836,29 @@
                     "Address": 58,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_743A"
+                    "Name": "AttribL"
                 },
                 {
                     "Address": 59,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_743B"
+                    "Name": "AttribR"
                 },
                 {
                     "Address": 60,
                     "LabelType": 1,
-                    "Name": "function_743C"
+                    "Name": "CharCodeToAddr"
                 },
                 {
                     "Address": 72,
                     "LabelType": 2,
                     "Name": "label_7448"
+                },
+                {
+                    "Address": 84,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "Strings2"
                 },
                 {
                     "Address": 305,
@@ -13279,6 +13445,12 @@
             ],
             "LabelInfo": [
                 {
+                    "Address": 11,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "operand_940B"
+                },
+                {
                     "Address": 24,
                     "Global": true,
                     "LabelType": 0,
@@ -13413,8 +13585,9 @@
                 },
                 {
                     "Address": 438,
-                    "LabelType": 2,
-                    "Name": "label_95B6"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "ApplyAttribs"
                 },
                 {
                     "Address": 489,
@@ -15778,6 +15951,12 @@
                     "Address": 88,
                     "LabelType": 2,
                     "Name": "label_9858"
+                },
+                {
+                    "Address": 97,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "operand_9861"
                 },
                 {
                     "Address": 99,
