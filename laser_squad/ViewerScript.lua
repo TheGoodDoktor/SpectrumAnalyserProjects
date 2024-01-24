@@ -1,6 +1,8 @@
 CharacterPixelsAddr = 0xe8df
 CharacterMapAddr = 0xd6bf
 TileLookupTableAddr = 0xe65f
+BaseStringTable = 0xac06
+FontPixelsAddr = 0xb239
 
 MapWidth = 80
 MapHeight = 50
@@ -23,6 +25,41 @@ function DrawBlockToView(graphicsView, blockIndex, attrib, x, y)
 			DrawCharacterToView(graphicsView, charIndex, attrib, x + (xp * 8), y+ (yp * 8))
 		end
 	end
+end
+
+-- Draw 8x8 font glyph to view
+function DrawFontGlyphToView(graphicsView, glyphIndex, attrib, x, y)
+
+	local charPixels = GetMemPtr(FontPixelsAddr + glyphIndex * 8)
+	DrawZXBitImage(graphicsView, charPixels, x, y, 1, 1, attrib)
+end
+
+-- Draw string to view
+function DrawStringToView(graphicsView, stringIndex, stringTableAddr, attrib, x, y)
+
+	-- skip strings until we get to the one we want 
+	local curStringPtr = stringTableAddr
+	for s=0,stringIndex do
+		repeat
+			local char = ReadByte(curStringPtr)
+			curStringPtr = curStringPtr + 1
+		until char == 0x7c -- "|" character
+	end
+
+	local xp = 0
+	local yp = 0
+	repeat
+		local char = ReadByte(curStringPtr)
+		if char == 0x2f then
+			yp = yp + 8
+			xp = 0
+		else
+			DrawFontGlyphToView(graphicsView, char - 32, 0xf, xp, yp)
+			xp = xp + 8
+		end
+		
+		curStringPtr = curStringPtr + 1
+	until char == 0x7c
 end
 
 -- Draw a map tile. Tile block index and attribute will be looked up via the tile lookup table.
@@ -69,7 +106,7 @@ MapViewer =
 TileViewer = 
 {
 	name = "Tile Viewer",
-	tileNo = 0,
+	tileNum = 0,
 	
 	onAdd = function(self)
 		self.graphicsView = CreateZXGraphicsView(256, 256)
@@ -80,11 +117,16 @@ TileViewer =
 		local changed = false
 
 		-- Use ImGui widget for setting tile number to draw
-		changed, self.tileNo = imgui.InputInt("tile number", self.tileNo)
+		changed, self.tileNum = imgui.InputInt("Tile Number", self.tileNum)
 
+
+		if self.tileNum < 0 then
+			self.tileNum = 0
+		end
+		
 		if changed == true then
 			ClearGraphicsView(self.graphicsView, 0)
-			DrawMapTileToView(self.graphicsView, self.tileNo, 0, 0)
+			DrawMapTileToView(self.graphicsView, self.tileNum, 0, 0)
 		end
 
 		-- Update and draw to screen
@@ -96,7 +138,7 @@ TileViewer =
 BlockViewer = 
 {
 	name = "Block Viewer",
-	blockNo = 0,
+	blockNum = 0,
 	
 	onAdd = function(self)
 		self.graphicsView = CreateZXGraphicsView(256, 256)
@@ -107,11 +149,15 @@ BlockViewer =
 		local changed = false
 
 		-- Use ImGui widget for setting block number to draw
-		changed, self.blockNo = imgui.InputInt("block number", self.blockNo)
+		changed, self.blockNum = imgui.InputInt("Block Number", self.blockNum)
+
+		if self.blockNum < 0 then
+			self.blockNum = 0
+		end
 
 		if changed == true then
 			ClearGraphicsView(self.graphicsView, 0)
-			DrawBlockToView(self.graphicsView, self.blockNo, 0x0f, 0, 0)
+			DrawBlockToView(self.graphicsView, self.blockNum, 0x0f, 0, 0)
 		end
 
 		-- Update and draw to screen
@@ -119,8 +165,43 @@ BlockViewer =
 	end,
 
 }
+
+StringViewer = 
+{
+	name = "String Viewer",
+	stringNum = 0,
+	
+	onAdd = function(self)
+		self.graphicsView = CreateZXGraphicsView(256, 256)
+		ClearGraphicsView(self.graphicsView, 0)
+	end,
+
+	onDrawUI = function(self)
+		local changed = false
+
+		-- Use ImGui widget for setting block number to draw
+		changed, self.stringNum = imgui.InputInt("String Number", self.stringNum)
+
+		if self.stringNum < 0 then
+			self.stringNum = 0
+		end
+
+		if changed == true then
+			ClearGraphicsView(self.graphicsView, 0)
+
+			DrawStringToView(self.graphicsView, self.stringNum, BaseStringTable,  0xf, 0, 0)
+			--DrawFontGlyphToView(self.graphicsView, self.stringNum, 0xf, 0, 0)
+		end
+
+		-- Update and draw to screen
+		DrawGraphicsView(self.graphicsView)
+	end,
+
+}
+
 -- Initialise the template viewer
 print("Laser Squad Viewer Initialised")
 AddViewer(MapViewer);
 AddViewer(BlockViewer);
 AddViewer(TileViewer);
+AddViewer(StringViewer);
