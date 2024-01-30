@@ -207,6 +207,12 @@
                     "Name": "data_5C38"
                 },
                 {
+                    "Address": 81,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C51"
+                },
+                {
                     "Address": 123,
                     "Global": true,
                     "LabelType": 0,
@@ -339,6 +345,98 @@
             "PageId": 78
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 818,
+                    "ByteSize": 2,
+                    "Comment": "{Make the necessary tests and return if needed. Also",
+                    "DataType": 2
+                },
+                {
+                    "Address": 826,
+                    "ByteSize": 2,
+                    "Comment": "{Make the necessary tests and return if needed. Also",
+                    "DataType": 2
+                },
+                {
+                    "Address": 828,
+                    "ByteSize": 2,
+                    "Comment": "{Make the necessary tests and return if needed. Also",
+                    "DataType": 2
+                },
+                {
+                    "Address": 830,
+                    "ByteSize": 2,
+                    "Comment": "Now scan the keyboard.",
+                    "DataType": 2
+                },
+                {
+                    "Address": 832,
+                    "ByteSize": 2,
+                    "Comment": "}",
+                    "DataType": 2
+                },
+                {
+                    "Address": 834,
+                    "ByteSize": 2,
+                    "Comment": "{Save the current values held in these registers.",
+                    "DataType": 2
+                },
+                {
+                    "Address": 836,
+                    "ByteSize": 2,
+                    "Comment": "}",
+                    "DataType": 2
+                },
+                {
+                    "Address": 838,
+                    "ByteSize": 2,
+                    "Comment": "the mode has changed (bit 3 of #SYSVAR(TV-FLAG) set).}",
+                    "DataType": 2
+                },
+                {
+                    "Address": 840,
+                    "ByteSize": 2,
+                    "Comment": "Call the actual subroutine.",
+                    "DataType": 2
+                },
+                {
+                    "Address": 842,
+                    "ByteSize": 2,
+                    "Comment": "}",
+                    "DataType": 2
+                },
+                {
+                    "Address": 844,
+                    "ByteSize": 2,
+                    "Comment": "Call the input subroutine indirectly via #R$15E6.",
+                    "DataType": 2
+                },
+                {
+                    "Address": 846,
+                    "ByteSize": 2,
+                    "Comment": "Return once a key has been pressed.",
+                    "DataType": 2
+                },
+                {
+                    "Address": 848,
+                    "ByteSize": 2,
+                    "Comment": "{Any event that leads to the error handling routine",
+                    "DataType": 2
+                },
+                {
+                    "Address": 850,
+                    "ByteSize": 2,
+                    "Comment": "machine stack.}",
+                    "DataType": 2
+                },
+                {
+                    "Address": 852,
+                    "ByteSize": 2,
+                    "Comment": "The #R$0F2C is called to allow the user to build up a\nBASIC line.",
+                    "DataType": 2
+                }
+            ],
             "PageId": 79
         },
         {

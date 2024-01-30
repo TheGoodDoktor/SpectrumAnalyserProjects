@@ -1,18 +1,13 @@
 {
-    "128KGame": false,
-    "LuaSourceFiles": [
-        "Viewer.lua",
-        "IsoObjects.lua",
-        "GameSprites.lua"
-    ],
+    "128KGame": true,
     "Machine": "",
-    "Name": "Batman",
+    "Name": "Rastan",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 33670,
-                "ViewAddressBank": 3
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             },
             {
                 "Enabled": false,
@@ -31,5 +26,5 @@
             }
         ]
     },
-    "SnapshotFile": "Batman.z80"
+    "SnapshotFile": "Rastan.z80"
 }
