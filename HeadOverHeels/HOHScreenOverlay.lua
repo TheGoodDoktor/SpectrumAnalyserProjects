@@ -1,5 +1,5 @@
-ViewXExtent = 0xA052
-ViewYExtent = 0xA054
+--ViewXExtent = 0xA052
+--ViewYExtent = 0xA054
 
 XOffset = 0x40
 YOffset = 0x48
@@ -10,10 +10,10 @@ function DrawViewExtents(screenOverlay)
 
 	YOffset = ReadByte(0x940B)	-- read from SMC
 
-	local MinX = (ReadByte(ViewXExtent + 1) - XOffset)	* 2
-	local MinY = ReadByte(ViewYExtent + 1) - YOffset
-	local MaxX = (ReadByte(ViewXExtent)	 - XOffset) * 2 
-	local MaxY = ReadByte(ViewYExtent) - YOffset
+	local MinX = (ReadByte(globals.ViewXExtent + 1) - XOffset)	* 2
+	local MinY = ReadByte(globals.ViewYExtent + 1) - YOffset
+	local MaxX = (ReadByte(globals.ViewXExtent)	 - XOffset) * 2 
+	local MaxY = ReadByte(globals.ViewYExtent) - YOffset
 
 	screenOverlay:drawCoord(MinX,MinY)
 	screenOverlay:drawCoord(MaxX,MaxY)
