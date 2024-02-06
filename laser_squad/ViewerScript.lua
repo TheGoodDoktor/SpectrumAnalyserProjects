@@ -1,7 +1,8 @@
 CharacterPixelsAddr = 0xe8df
 CharacterMapAddr = 0xd6bf
 TileLookupTableAddr = 0xe65f
-BaseStringTable = 0xac06
+--BaseStringTable = 0xac06
+BaseStringTable = 0xa64e
 FontPixelsAddr = 0xb239
 
 MapWidth = 80
@@ -14,7 +15,7 @@ function DrawCharacterToView(graphicsView, charIndex, attrib, x, y)
 	DrawZXBitImage(graphicsView, charPixels, x, y, 1, 1, attrib)
 end
 
--- Draw 2x2 block of 4 characters. Block is 16 pixels heigh and 16 pixels wide.
+-- Draw 2x2 block of 4 characters. Block is 16 pixels high and 16 pixels wide.
 function DrawBlockToView(graphicsView, blockIndex, attrib, x, y)
 
 	blockIndex = blockIndex * 4
@@ -34,31 +35,66 @@ function DrawFontGlyphToView(graphicsView, glyphIndex, attrib, x, y)
 	DrawZXBitImage(graphicsView, charPixels, x, y, 1, 1, attrib)
 end
 
--- Draw string to view
-function DrawStringToView(graphicsView, stringIndex, stringTableAddr, attrib, x, y)
+-- Draw UI Object to view
+function DrawUIObjectToView(graphicsView, objectIndex, UIObjDataAddr, attrib, x, y, numBytes)
 
 	-- skip strings until we get to the one we want 
-	local curStringPtr = stringTableAddr
-	for s=0,stringIndex do
+	local curPtr = UIObjDataAddr
+	for s=0,objectIndex do
 		repeat
-			local char = ReadByte(curStringPtr)
-			curStringPtr = curStringPtr + 1
+			local char = ReadByte(curPtr)
+			curPtr = curPtr + 1
 		until char == 0x7c -- "|" character
 	end
 
+	local drawVertical = false
 	local xp = 0
 	local yp = 0
+	local bytesProcessed = 0
+	local startPtr = curPtr
 	repeat
-		local char = ReadByte(curStringPtr)
-		if char == 0x2f then
+		local char = ReadByte(curPtr)
+		if char == 0x7c then
+			-- we have hit the terminating "|"" character
+			return
+		end
+		curPtr = curPtr + 1
+		if char > 0xf1 then
+			
+			if char == 0xf7 then
+				drawVertical = true
+			elseif char == 0xf8 then
+				drawVertical = false
+			-- change attribute colour
+			elseif char == 0xf6 then 
+				curPtr = curPtr + 1 -- skip
+			-- set cursor position
+			elseif char == 0xf5 then 
+				local ypos = ReadByte(curPtr)
+				yp = ypos * 8
+				curPtr = curPtr + 1
+				local xpos = ReadByte(curPtr)
+				xp = xpos * 8
+				curPtr = curPtr + 1
+			end
+		-- move down a row ALT
+		elseif char == 0x2f then
 			yp = yp + 8
 			xp = 0
 		else
 			DrawFontGlyphToView(graphicsView, char - 32, 0xf, xp, yp)
-			xp = xp + 8
+			if drawVertical then
+				yp = yp + 8
+			else
+				xp = xp + 8
+			end
 		end
 		
-		curStringPtr = curStringPtr + 1
+		bytesProcessed = curPtr - startPtr
+		if numBytes > 0 and bytesProcessed >= numBytes then
+			print(char)
+			return
+		end
 	until char == 0x7c
 end
 
@@ -166,31 +202,40 @@ BlockViewer =
 
 }
 
-StringViewer = 
+UIObjectViewer = 
 {
-	name = "String Viewer",
-	stringNum = 0,
+	name = "UI Object Viewer",
+	UIObjectNum = 0,
+	numBytesToDraw = 0,
 	
 	onAdd = function(self)
 		self.graphicsView = CreateZXGraphicsView(256, 256)
 		ClearGraphicsView(self.graphicsView, 0)
+		DrawUIObjectToView(self.graphicsView, self.UIObjectNum, BaseStringTable,  0xf, 0, 0, 0)
 	end,
 
 	onDrawUI = function(self)
-		local changed = false
+		local changedUIObjectNum = false
 
 		-- Use ImGui widget for setting block number to draw
-		changed, self.stringNum = imgui.InputInt("String Number", self.stringNum)
+		changedUIObjectNum, self.UIObjectNum = imgui.InputInt("UI Object Index", self.UIObjectNum)
 
-		if self.stringNum < 0 then
-			self.stringNum = 0
+		if self.UIObjectNum < 0 then
+			self.UIObjectNum = 0
 		end
 
-		if changed == true then
+		local changedNumBytes = false
+		changedNumBytes, self.numBytesToDraw = imgui.InputInt("Num Bytes To Draw", self.numBytesToDraw)
+
+		if self.numBytesToDraw < 0 then
+			self.numBytesToDraw = 0
+		end
+
+		if changedUIObjectNum == true or changedNumBytes == true then
 			ClearGraphicsView(self.graphicsView, 0)
 
-			DrawStringToView(self.graphicsView, self.stringNum, BaseStringTable,  0xf, 0, 0)
-			--DrawFontGlyphToView(self.graphicsView, self.stringNum, 0xf, 0, 0)
+			DrawUIObjectToView(self.graphicsView, self.UIObjectNum, BaseStringTable,  0xf, 0, 0, self.numBytesToDraw)
+			--DrawFontGlyphToView(self.graphicsView, self.UIObjectNum, 0xf, 0, 0)
 		end
 
 		-- Update and draw to screen
@@ -204,4 +249,4 @@ print("Laser Squad Viewer Initialised")
 AddViewer(MapViewer);
 AddViewer(BlockViewer);
 AddViewer(TileViewer);
-AddViewer(StringViewer);
+AddViewer(UIObjectViewer);
