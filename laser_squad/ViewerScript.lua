@@ -1,8 +1,8 @@
 CharacterPixelsAddr = 0xe8df
 CharacterMapAddr = 0xd6bf
 TileLookupTableAddr = 0xe65f
---BaseStringTable = 0xac06
-BaseStringTable = 0xa64e
+StringTable = 0xac05 -- this might be wrong
+UIObjectTable = 0xa64e
 FontPixelsAddr = 0xb239
 
 MapWidth = 80
@@ -35,6 +35,55 @@ function DrawFontGlyphToView(graphicsView, glyphIndex, attrib, x, y)
 	DrawZXBitImage(graphicsView, charPixels, x, y, 1, 1, attrib)
 end
 
+-- 2f move down row
+-- f5 set cursor pos
+-- f6 set colour
+-- f7 draw vertical
+-- f8 draw horiz
+
+function DrawStringToView(graphicsView, stringIndex, attrib, x, y)
+	-- skip strings until we get to the one we want 
+	local curPtr = StringTable
+	for s=0,stringIndex do
+		repeat
+			local char = ReadByte(curPtr)
+			curPtr = curPtr + 1
+		until char == 0x7c -- "|" character
+	end
+
+	addrHex = string.format("%04x", curPtr)
+	print("String Addr = "..addrHex)
+
+	local xp = 0
+	local yp = 0
+	repeat
+		local char = ReadByte(curPtr)
+		if char == 0x7c then
+			-- we have hit the terminating "|"" character
+			return
+		end
+		curPtr = curPtr + 1
+		if char > 0xf1 then
+			if char == 0xf6 then 
+				curPtr = curPtr + 1 -- skip
+			elseif char == 0xf5 then 
+				--local ypos = ReadByte(curPtr)
+				yp = ReadByte(curPtr) * 8
+				curPtr = curPtr + 1
+				--local xpos = ReadByte(curPtr)
+				xp = ReadByte(curPtr) * 8
+				curPtr = curPtr + 1
+			end
+		elseif char == 0x2f then
+			yp = yp + 8
+			xp = 0
+		else
+			DrawFontGlyphToView(graphicsView, char - 32, 0xf, xp + x, yp + y)
+			xp = xp + 8
+		end
+	until char == 0x7c
+end
+
 -- Draw UI Object to view
 function DrawUIObjectToView(graphicsView, objectIndex, UIObjDataAddr, attrib, x, y, numBytes)
 
@@ -46,6 +95,9 @@ function DrawUIObjectToView(graphicsView, objectIndex, UIObjDataAddr, attrib, x,
 			curPtr = curPtr + 1
 		until char == 0x7c -- "|" character
 	end
+
+	addrHex = string.format("%04x", curPtr)
+	print("Obj Addr = "..addrHex)
 
 	local drawVertical = false
 	local xp = 0
@@ -60,7 +112,6 @@ function DrawUIObjectToView(graphicsView, objectIndex, UIObjDataAddr, attrib, x,
 		end
 		curPtr = curPtr + 1
 		if char > 0xf1 then
-			
 			if char == 0xf7 then
 				drawVertical = true
 			elseif char == 0xf8 then
@@ -82,7 +133,9 @@ function DrawUIObjectToView(graphicsView, objectIndex, UIObjDataAddr, attrib, x,
 			yp = yp + 8
 			xp = 0
 		else
-			DrawFontGlyphToView(graphicsView, char - 32, 0xf, xp, yp)
+			DrawFontGlyphToView(graphicsView, char - 32, 0xf, xp + x, yp + y)
+			--DrawStringToView(graphicsView, char, 0xf, xp + x, yp + y)
+			--DrawUIObjectToView(graphicsView, char, StringTable, 0xf, xp + x, yp + y, 0)
 			if drawVertical then
 				yp = yp + 8
 			else
@@ -207,17 +260,28 @@ UIObjectViewer =
 	name = "UI Object Viewer",
 	UIObjectNum = 0,
 	numBytesToDraw = 0,
-	
+	stringNum = 0,
+
 	onAdd = function(self)
-		self.graphicsView = CreateZXGraphicsView(256, 256)
+		self.graphicsView = CreateZXGraphicsView(256, 512)
 		ClearGraphicsView(self.graphicsView, 0)
-		DrawUIObjectToView(self.graphicsView, self.UIObjectNum, BaseStringTable,  0xf, 0, 0, 0)
+		DrawStringToView(self.graphicsView, self.UIObjectNum, 0xf, 0, 0)
+		DrawUIObjectToView(self.graphicsView, self.UIObjectNum, UIObjectTable,  0xf, 0, 64, 0)
 	end,
 
 	onDrawUI = function(self)
+		local changedStringNum = false
+		changedStringNum, self.stringNum = imgui.InputInt("String Index", self.stringNum)
+
+		if self.stringNum < 0 then
+			self.stringNum = 0
+		end
+		if self.stringNum > 168 then
+			self.stringNum = 168
+		end
+
 		local changedUIObjectNum = false
 
-		-- Use ImGui widget for setting block number to draw
 		changedUIObjectNum, self.UIObjectNum = imgui.InputInt("UI Object Index", self.UIObjectNum)
 
 		if self.UIObjectNum < 0 then
@@ -231,13 +295,13 @@ UIObjectViewer =
 			self.numBytesToDraw = 0
 		end
 
-		if changedUIObjectNum == true or changedNumBytes == true then
+		if changedUIObjectNum == true or changedNumBytes == true or changedStringNum == true then
 			ClearGraphicsView(self.graphicsView, 0)
-
-			DrawUIObjectToView(self.graphicsView, self.UIObjectNum, BaseStringTable,  0xf, 0, 0, self.numBytesToDraw)
+			DrawStringToView(self.graphicsView, self.stringNum, 0xf, 0, 0)
+			DrawUIObjectToView(self.graphicsView, self.UIObjectNum, UIObjectTable,  0xf, 0, 64, self.numBytesToDraw)
 			--DrawFontGlyphToView(self.graphicsView, self.UIObjectNum, 0xf, 0, 0)
 		end
-
+		
 		-- Update and draw to screen
 		DrawGraphicsView(self.graphicsView)
 	end,
