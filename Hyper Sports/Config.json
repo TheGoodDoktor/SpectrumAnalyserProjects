@@ -1,21 +1,18 @@
 {
     "128KGame": false,
-    "LuaSourceFiles": [
-        "ViewerScript.lua"
-    ],
     "Machine": "",
-    "Name": "laser_squad",
+    "Name": "Hyper Sports",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 44135,
-                "ViewAddressBank": 3
+                "ViewAddress": 23578,
+                "ViewAddressBank": 2
             },
             {
-                "Enabled": true,
-                "ViewAddress": 27130,
-                "ViewAddressBank": 2
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             },
             {
                 "Enabled": false,
@@ -29,5 +26,5 @@
             }
         ]
     },
-    "SnapshotFile": "laser_squad.z80"
+    "SnapshotFile": "Hyper Sports.z80"
 }
