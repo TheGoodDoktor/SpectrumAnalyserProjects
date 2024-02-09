@@ -1,18 +1,13 @@
 {
-    "128KGame": false,
-    "LuaSourceFiles": [
-        "Viewer.lua",
-        "IsoObjects.lua",
-        "GameSprites.lua"
-    ],
+    "128KGame": true,
     "Machine": "",
-    "Name": "Batman",
+    "Name": "Amaurote128",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 31640,
-                "ViewAddressBank": 2
+                "ViewAddress": 37054,
+                "ViewAddressBank": 4
             },
             {
                 "Enabled": false,
@@ -31,5 +26,5 @@
             }
         ]
     },
-    "SnapshotFile": "Batman.z80"
+    "SnapshotFile": "Amaurote128K.z80"
 }

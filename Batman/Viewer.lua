@@ -41,12 +41,15 @@ end
 
 function OnDrawScreenOverlay(screenOverlay)
 
-	local coord1 = ReadByte(0x8CD1)
-	local coord2 = ReadByte(0x8CD2)
-	local coord3 = ReadByte(0x8CD3)
-	local coord4 = ReadByte(0x8CD4)
+	-- Draw view extents of composite sprite
+	local MaxX = ReadByte(0x8CD1)
+	local MinX = ReadByte(0x8CD2)
+	local MaxY = ReadByte(0x8CD3)
+	local MinY = ReadByte(0x8CD4)
 
-	DrawIsoObjectToScreen(screenOverlay,0x8f18)
+	screenOverlay:drawCoord((MinX - 64) * 2,MinY - 72)
+	screenOverlay:drawCoord((MaxX - 64) * 2,MaxY - 72)
+	--DrawIsoObjectToScreen(screenOverlay,0x8f18)
 
 	--screenOverlay:setDrawCol(0xff00ffff)
 	--screenOverlay:drawCoord(coord1,192 - coord2)	
