@@ -1,11 +1,15 @@
 CharacterPixelsAddr = 0xe8df
 CharacterMapAddr = 0xd6bf
-TileLookupTableAddr = 0xe65f
-StringTable = 0xac05 -- this might be wrong
-UIObjectTable = 0xa64e
 FontPixelsAddr = 0xb239
-CurDrawListBase = UIObjectTable
-CurDrawListCmd = UIObjectTable
+
+TileLookupTable = 0xe65f
+
+StringTable = 0xac05 -- this might be wrong
+CommandListTable = 0xa64e
+
+CurDrawListBase = CommandListTable
+CurDrawListCmd = CommandListTable
+
 MapWidth = 80
 MapHeight = 50
 
@@ -48,123 +52,170 @@ function DrawDoubleHeightFontGlyphToView(graphicsView, glyphIndex, attrib1, attr
 	end
 end
 
--- commands:
--- 2f move down row
--- f3 set single height font?
--- f4 ?
--- f5 set cursor pos
--- f6 set colour
--- f7 draw vertical
--- f8 draw horiz
--- f9 set single height font?
--- fa set double height font?
--- fb set string mode
+CommandListRenderer = 
+{
+	-- command related
+	treatAsText = false,
 
--- Draw UI Object to view (a UI Object should probably be considered a command/draw list?)
-function DrawUIObjectToView(graphicsView, objectIndex, UIObjDataAddr, isString, attrib, x, y, doubleHeight, numBytes)
-	-- skip strings until we get to the one we want 
-	local curPtr = UIObjDataAddr
-	for s=0,objectIndex do
-		repeat
-			local char = ReadByte(curPtr)
-			curPtr = curPtr + 1
-		until char == 0x7c -- "|" character
-	end
+	-- drawing state
+	xp = 0,
+	yp = 0,
+	
+	drawVertical = false,
+	attrib1 = 0xf,
+	attrib2 = 0xf,
+	lastSetXPosCmd = 0,
+	doubleHeight = false,
 
-	if isString == false then
-		addrHex = string.format("%04x", curPtr)
-		--print("Obj Addr = "..addrHex)
-		CurDrawListBase = curPtr
-	end
+	reset = function(self)
+		self.treatAsText = false
 
-	local drawVertical = false
-	local xp = 0
-	local yp = 0
-	local bytesProcessed = 0
-	local startPtr = curPtr
-	local curAttrib = attrib
-	local lastPosSetX = 0
-	local doubleHeightCmd = false
-	repeat
-		local char = ReadByte(curPtr)
-		if char == 0x7c then
-			-- we have hit the terminating "|"" character
-			return xp
+		-- reset drawing state
+		self.xp = 0
+		self.yp = 0
+		self.drawVertical = false
+		self.attrib1 = 0xf
+		self.attrib2 = 0xf
+		self.lastSetXPosCmd = 0
+		self.doubleHeight = false
+	end,
+
+	skipEntries = function(self, cmdPtr, numToSkip)
+		for s=0, numToSkip do
+			repeat
+				local char = ReadByte(cmdPtr)
+				cmdPtr = cmdPtr + 1
+			until char == 0x7c -- "|" character
 		end
-		curPtr = curPtr + 1
-		if char > 0xf1 then
-			-- single height font (think this might do more?)
-			if char == 0xf3 then
-				doubleHeightCmd = false
-			-- set cursor position
-			elseif char == 0xf5 then 
-				yp = ReadByte(curPtr) * 8
-				curPtr = curPtr + 1
-				xp = ReadByte(curPtr) * 8
-				lastPosSetX = xp
-				curPtr = curPtr + 1
-			-- change attribute colour
-			elseif char == 0xf6 then
-				curAttrib = ReadByte(curPtr)
-				curPtr = curPtr + 1
-				if doubleHeightCmd == true then
-					--curAttrib = ReadByte(curPtr)
-					curPtr = curPtr + 1
+		return cmdPtr
+	end,
+
+	processNextCommand = function(self, cmd, cmdPtr)
+		cmdPtr = cmdPtr + 1
+		local isCommand = true
+		if cmd > 0xf1 then
+			if cmd == 0xf3 then 
+				-- single height font (think this might do more?)
+				--self.doubleHeight = false
+			elseif cmd == 0xf4 then
+				-- ?
+			elseif cmd == 0xf5 then 
+				-- set cursor position
+				self.yp = ReadByte(cmdPtr) * 8
+				cmdPtr = cmdPtr + 1
+				local v = ReadByte(cmdPtr) * 8
+				self.xp = ReadByte(cmdPtr) * 8
+				self.lastSetXPosCmd = self.xp
+				cmdPtr = cmdPtr + 1
+			elseif cmd == 0xf6 then
+				-- change attribute colour
+				self.attrib1 = ReadByte(cmdPtr)
+				cmdPtr = cmdPtr + 1
+				if self.doubleHeight == true then
+					self.attrib2 = ReadByte(cmdPtr)
+					cmdPtr = cmdPtr + 1
 				end
-			-- draw vertically
-			elseif char == 0xf7 then
-				drawVertical = true
-			-- draw horizontally
-			elseif char == 0xf8 then
-				drawVertical = false
-			-- single height
-			elseif char == 0xf9 then
-				doubleHeightCmd = false
-			-- set double height font
-			elseif char == 0xfa then
-				doubleHeightCmd = true
-			-- set font glyph mode
-			elseif char == 0xfb then
-				isString = true
+			elseif cmd == 0xf7 then
+				-- draw vertically
+				self.drawVertical = true
+			elseif cmd == 0xf8 then
+				-- draw horizontally
+				self.drawVertical = false
+			elseif cmd == 0xf9 then
+				-- single height
+				self.doubleHeight = false
+			elseif cmd == 0xfa then
+				-- set double height font
+				self.doubleHeight = true
+			elseif cmd == 0xfb then
+				-- treat all following data as string/font data
+				self.treatAsText = true
 			end
-		-- move down a row
-		elseif char == 0x2f then
-			yp = yp + 8
-			xp = lastPosSetX
+		elseif cmd == 0x2f then
+			-- move down a row
+			if self.doubleHeight == true then
+				self.yp = self.yp + 16
+			else
+				self.yp = self.yp + 8
+			end
+			self.xp = self.lastSetXPosCmd
 		else
-			local spaceTook
-			if isString == true then
-				--print("dbl " .. tostring(doubleHeight))
-				if doubleHeight == true then
-					DrawDoubleHeightFontGlyphToView(graphicsView, char - 32, curAttrib, curAttrib, xp + x, yp + y)
-				else
-					DrawFontGlyphToView(graphicsView, char - 32, curAttrib, xp + x, yp + y)
-				end
-				spaceTook = 8
-			else
-				spaceTook = DrawUIObjectToView(graphicsView, char, StringTable, true, curAttrib, xp + x, yp + y, doubleHeightCmd, 0)
-			end
-			if drawVertical then
-				yp = yp + 8
-			else
-				xp = xp + spaceTook
-			end
+			-- not a command. byte will be treated as a string or character lookup
+			isCommand = false
 		end
+		return isCommand, cmdPtr
+	end,
+
+	render = function(self, graphicsView, cmdListIndex, cmdListTable, x, y, numBytes)
+		self:reset()
 		
-		bytesProcessed = curPtr - startPtr
-		if numBytes > 0 and bytesProcessed >= numBytes then
-			--print(char)
-			CurDrawListCmd = curPtr
-			return
+		local cmdPtr = self:skipEntries(cmdListTable, cmdListIndex)
+		local isCommand = nil
+
+		CurDrawListBase = cmdPtr
+
+		while true do
+			local cmd = ReadByte(cmdPtr)
+			if cmd == 0x7c then
+				break -- we have hit the terminating "|"" character
+			end
+
+			isCommand, cmdPtr = self:processNextCommand(cmd, cmdPtr)
+
+			if isCommand == false then
+				if self.treatAsText == true then
+					DrawFontGlyphToView(graphicsView, cmd - 32, self.attrib1, self.xp + x, self.yp + y)
+					if self.drawVertical == true then
+						self.yp = self.yp + 8
+					else
+						self.xp = self.xp + 8
+					end
+				else
+					self:drawStringInternal(graphicsView, cmd, StringTable, x, y)
+				end
+			end
+
+			bytesProcessed = cmdPtr - CurDrawListBase
+			if numBytes > 0 and bytesProcessed >= numBytes then
+				CurDrawListCmd = cmdPtr
+				return
+			end
 		end
-	until char == 0x7c
-	return xp
-end
+	end,
+
+	drawString = function(self, graphicsView, stringIndex, stringTableAddr, x, y)
+		self:reset()
+		self:drawStringInternal(graphicsView, stringIndex, stringTableAddr, x, y)
+	end,
+
+	drawStringInternal = function(self, graphicsView, stringIndex, stringTableAddr, x, y)
+		local cmdPtr = self:skipEntries(stringTableAddr, stringIndex)
+		local isCommand = nil
+		while true do
+			local cmd = ReadByte(cmdPtr)
+			
+			if cmd == 0x7c then
+				return -- we have hit the terminating "|"" character
+			end
+
+			isCommand, cmdPtr = self:processNextCommand(cmd, cmdPtr)
+
+			if isCommand == false then
+				if self.doubleHeight == true then
+					DrawDoubleHeightFontGlyphToView(graphicsView, cmd - 32, self.attrib1, self.attrib2, self.xp + x, self.yp + y)
+				else				
+					DrawFontGlyphToView(graphicsView, cmd - 32, self.attrib1, self.xp + x, self.yp + y)
+				end
+				self.xp = self.xp + 8
+			end
+		end
+	end,
+}
 
 -- Draw a map tile. Tile block index and attribute will be looked up via the tile lookup table.
 function DrawMapTileToView(graphicsView, tileIndex, x, y)
 
-	local mapTileTablePtr = TileLookupTableAddr + (tileIndex * 2)
+	local mapTileTablePtr = TileLookupTable + (tileIndex * 2)
 	local attrib = ReadByte(mapTileTablePtr)
 	local blockIndex = ReadByte(mapTileTablePtr + 1)
 
@@ -210,6 +261,7 @@ TileViewer =
 	onAdd = function(self)
 		self.graphicsView = CreateZXGraphicsView(256, 256)
 		ClearGraphicsView(self.graphicsView, 0)
+		DrawMapTileToView(self.graphicsView, self.tileNum, 0, 0)
 	end,
 
 	onDrawUI = function(self)
@@ -241,6 +293,7 @@ BlockViewer =
 	onAdd = function(self)
 		self.graphicsView = CreateZXGraphicsView(256, 256)
 		ClearGraphicsView(self.graphicsView, 0)
+		DrawBlockToView(self.graphicsView, self.blockNum, 0x0f, 0, 0)
 	end,
 
 	onDrawUI = function(self)
@@ -264,18 +317,18 @@ BlockViewer =
 
 }
 
-UIObjectViewer = 
+CommandListViewer = 
 {
-	name = "UI Object Viewer",
-	UIObjectNum = 0,
+	name = "Command List Viewer",
+	CmdListNum = 0,
 	numBytesToDraw = 0,
 	stringNum = 0,
 
 	onAdd = function(self)
 		self.graphicsView = CreateZXGraphicsView(256, 512)
 		ClearGraphicsView(self.graphicsView, 0)
-		DrawUIObjectToView(self.graphicsView, self.stringNum, StringTable, true,  0xf, 0, 0, false, 0)
-		DrawUIObjectToView(self.graphicsView, self.UIObjectNum, UIObjectTable, false,  0xf, 0, 64, false, 0)
+		CommandListRenderer:drawString(self.graphicsView, self.stringNum, StringTable, 0, 0)
+		CommandListRenderer:render(self.graphicsView, 0, CommandListTable, 0, 64, 0)
 	end,
 
 	onDrawUI = function(self)
@@ -289,15 +342,15 @@ UIObjectViewer =
 			self.stringNum = 168
 		end
 
-		local changedUIObjectNum = false
+		local changedCmdListNum = false
 
-		changedUIObjectNum, self.UIObjectNum = imgui.InputInt("UI Object Index", self.UIObjectNum)
+		changedCmdListNum, self.CmdListNum = imgui.InputInt("Cmd List Num", self.CmdListNum)
 
-		if self.UIObjectNum < 0 then
-			self.UIObjectNum = 0
+		if self.CmdListNum < 0 then
+			self.CmdListNum = 0
 		end
 
-		imgui.Text("Draw List Base")
+		imgui.Text("Draw List")
 		DrawAddressLabel(CurDrawListBase)
 
 		local changedNumBytes = false
@@ -311,10 +364,10 @@ UIObjectViewer =
 			DrawAddressLabel(CurDrawListCmd)
 		end
 
-		if changedUIObjectNum == true or changedNumBytes == true or changedStringNum == true then
+		if changedCmdListNum == true or changedNumBytes == true or changedStringNum == true then
 			ClearGraphicsView(self.graphicsView, 0)
-			DrawUIObjectToView(self.graphicsView, self.stringNum, StringTable, true,  0xf, 0, 0, false, 0)
-			DrawUIObjectToView(self.graphicsView, self.UIObjectNum, UIObjectTable, false,  0xf, 0, 64, false, self.numBytesToDraw)
+			CommandListRenderer:drawString(self.graphicsView, self.stringNum, StringTable, 0, 0)
+			CommandListRenderer:render(self.graphicsView, self.CmdListNum, CommandListTable, 0, 64, self.numBytesToDraw)
 		end
 		
 		-- Update and draw to screen
@@ -328,4 +381,4 @@ print("Laser Squad Viewer Initialised")
 AddViewer(MapViewer);
 AddViewer(BlockViewer);
 AddViewer(TileViewer);
-AddViewer(UIObjectViewer);
+AddViewer(CommandListViewer);
