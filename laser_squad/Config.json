@@ -1,7 +1,8 @@
 {
     "128KGame": false,
     "LuaSourceFiles": [
-        "ViewerScript.lua"
+        "ViewerScript.lua",
+        "CommandListViewer.lua"
     ],
     "Machine": "",
     "Name": "laser_squad",
@@ -9,11 +10,11 @@
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 25904,
+                "ViewAddress": 26108,
                 "ViewAddressBank": 2
             },
             {
-                "Enabled": true,
+                "Enabled": false,
                 "ViewAddress": 43882,
                 "ViewAddressBank": 3
             },

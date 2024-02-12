@@ -87,6 +87,60 @@
             "PageId": 37
         },
         {
+            "CodeInfo": [
+                {
+                    "Address": 772,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 775,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 777,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 778,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 781,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 783,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 784,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 787,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 789,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 790,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 793,
+                    "ByteSize": 1,
+                    "Flags": 8,
+                    "OperandType": 2
+                }
+            ],
             "DataInfo": [
                 {
                     "Address": 0,
@@ -246,28 +300,10 @@
                     "Name": "data_5B04"
                 },
                 {
-                    "Address": 773,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_5B05"
-                },
-                {
-                    "Address": 774,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_5B06"
-                },
-                {
                     "Address": 775,
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5B07"
-                },
-                {
-                    "Address": 776,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_5B08"
                 },
                 {
                     "Address": 777,
@@ -282,34 +318,26 @@
                     "Name": "data_5B0A"
                 },
                 {
-                    "Address": 779,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_5B0B"
-                },
-                {
-                    "Address": 780,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_5B0C"
-                },
-                {
                     "Address": 781,
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5B0D"
                 },
                 {
-                    "Address": 782,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_5B0E"
-                },
-                {
                     "Address": 783,
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5B0F"
+                },
+                {
+                    "Address": 790,
+                    "LabelType": 2,
+                    "Name": "label_5B16"
+                },
+                {
+                    "Address": 798,
+                    "LabelType": 2,
+                    "Name": "label_5B1E"
                 },
                 {
                     "Address": 889,
@@ -1219,6 +1247,10 @@
                     "Comment": "attribute value to write to attribute memory\n"
                 },
                 {
+                    "Address": 257,
+                    "Comment": "if using a double height font, this will be the font's second colour"
+                },
+                {
                     "Address": 260,
                     "Comment": "when looking up strings to display on the screen, this will hold the current character\n"
                 },
@@ -1228,7 +1260,7 @@
                 },
                 {
                     "Address": 265,
-                    "Comment": "This appears to be flags used in the text drawing routine.\nThe bits will be set depending on the value of the text metadata."
+                    "Comment": "This appears to be flags used in the text drawing routine.\nThe bits will be set depending on the value of the text metadata.\n#\nBit meanings:\n3 - Double height mode\n4 - Draw vertically"
                 },
                 {
                     "Address": 268,
@@ -1716,13 +1748,13 @@
                     "Address": 256,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "attributeValue"
+                    "Name": "attributeValue1"
                 },
                 {
                     "Address": 257,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_5D01"
+                    "Name": "attributeValue2"
                 },
                 {
                     "Address": 258,
@@ -6624,7 +6656,8 @@
                 },
                 {
                     "Address": 511,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "are we drawing vertically?"
                 },
                 {
                     "Address": 513,
@@ -6660,10 +6693,25 @@
                 },
                 {
                     "Address": 527,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "are we in double height mode?"
                 },
                 {
                     "Address": 529,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 530,
+                    "ByteSize": 1,
+                    "Comment": "if we are, move cursor down again"
+                },
+                {
+                    "Address": 531,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 534,
                     "ByteSize": 1
                 },
                 {
@@ -6787,7 +6835,8 @@
                 },
                 {
                     "Address": 620,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set string mode"
                 },
                 {
                     "Address": 622,
@@ -6804,7 +6853,8 @@
                 },
                 {
                     "Address": 626,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set vertical height font"
                 },
                 {
                     "Address": 628,
@@ -6821,7 +6871,8 @@
                 },
                 {
                     "Address": 632,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set single height font"
                 },
                 {
                     "Address": 634,
@@ -6838,7 +6889,8 @@
                 },
                 {
                     "Address": 638,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "clear vertical drawing flag"
                 },
                 {
                     "Address": 640,
@@ -6855,7 +6907,8 @@
                 },
                 {
                     "Address": 644,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set vertical drawing flag"
                 },
                 {
                     "Address": 646,
@@ -6886,7 +6939,8 @@
                 },
                 {
                     "Address": 657,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "get the attribute value"
                 },
                 {
                     "Address": 658,
@@ -6900,11 +6954,13 @@
                 },
                 {
                     "Address": 664,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "are we in double height mode?"
                 },
                 {
                     "Address": 666,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if not"
                 },
                 {
                     "Address": 667,
@@ -6913,6 +6969,7 @@
                 {
                     "Address": 668,
                     "ByteSize": 3,
+                    "Comment": "the following byte is also a colour value",
                     "OperandType": 1
                 },
                 {
@@ -6922,6 +6979,7 @@
                 {
                     "Address": 672,
                     "ByteSize": 3,
+                    "Comment": "set the second attrib colour",
                     "OperandType": 1
                 },
                 {
@@ -7809,7 +7867,7 @@
                 },
                 {
                     "Address": 644,
-                    "Comment": "F7 command.\nMove draw cursor down by a character square."
+                    "Comment": "F7 command.\nSet vertical drawing mode"
                 },
                 {
                     "Address": 650,
@@ -7989,7 +8047,7 @@
                 {
                     "Address": 508,
                     "LabelType": 1,
-                    "Name": "MoveDrawCursorDownIfCmdFlagBit4IsSet"
+                    "Name": "UpdateDrawCursor"
                 },
                 {
                     "Address": 520,
@@ -8164,12 +8222,12 @@
                 {
                     "Address": 862,
                     "LabelType": 1,
-                    "Name": "drawTextAndGui_675E"
+                    "Name": "DrawCommandList_1"
                 },
                 {
                     "Address": 876,
                     "LabelType": 1,
-                    "Name": "drawTextAndGui_676C"
+                    "Name": "DrawCommandList_2"
                 },
                 {
                     "Address": 884,
@@ -77757,6 +77815,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "charGfx_709"
+                },
+                {
+                    "Address": 777,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_FF09"
                 },
                 {
                     "Address": 783,
