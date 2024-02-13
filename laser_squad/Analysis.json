@@ -7429,7 +7429,9 @@
                 },
                 {
                     "Address": 866,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "reset flags and set only double height flag",
+                    "OperandType": 5
                 },
                 {
                     "Address": 868,
@@ -7457,7 +7459,8 @@
                 },
                 {
                     "Address": 880,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "reset draw command flags"
                 },
                 {
                     "Address": 882,
@@ -7884,6 +7887,10 @@
                 {
                     "Address": 707,
                     "Comment": "value is F3"
+                },
+                {
+                    "Address": 862,
+                    "Comment": "draw command list with double height flag set on by default"
                 }
             ],
             "DataInfo": [
@@ -8222,7 +8229,7 @@
                 {
                     "Address": 862,
                     "LabelType": 1,
-                    "Name": "DrawCommandList_1"
+                    "Name": "DrawCommandList_DblHeight"
                 },
                 {
                     "Address": 876,

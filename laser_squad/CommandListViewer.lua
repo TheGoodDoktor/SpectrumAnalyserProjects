@@ -65,6 +65,8 @@ CommandListRenderer =
 				if self.doubleHeight == true then
 					self.attrib2 = ReadByte(cmdPtr)
 					cmdPtr = cmdPtr + 1
+				else
+					self.attrib2 = self.attrib1
 				end
 			elseif cmd == 0xf7 then
 				-- draw vertically
@@ -97,9 +99,11 @@ CommandListRenderer =
 		return isCommand, cmdPtr
 	end,
 
-	render = function(self, graphicsView, cmdListIndex, cmdListTable, x, y, numBytes)
+	render = function(self, graphicsView, cmdListIndex, cmdListTable, x, y, doubleHeight, numBytes)
 		self:reset()
 		
+		self.doubleHeight = doubleHeight
+
 		local cmdPtr = self:skipEntries(cmdListTable, cmdListIndex)
 		local isCommand = nil
 
@@ -166,15 +170,16 @@ CommandListRenderer =
 CommandListViewer = 
 {
 	name = "Command List Viewer",
-	CmdListNum = 0,
+	cmdListNum = 0,
 	numBytesToDraw = 0,
 	stringNum = 0,
+	doubleHeight = false,
 
 	onAdd = function(self)
 		self.graphicsView = CreateZXGraphicsView(256, 512)
 		ClearGraphicsView(self.graphicsView, 0)
 		CommandListRenderer:drawString(self.graphicsView, self.stringNum, StringTable, 0, 0)
-		CommandListRenderer:render(self.graphicsView, 0, CommandListTable, 0, 64, 0)
+		CommandListRenderer:render(self.graphicsView, 0, CommandListTable, 0, 64, false, 0)
 	end,
 
 	onDrawUI = function(self)
@@ -188,13 +193,16 @@ CommandListViewer =
 			self.stringNum = 168
 		end
 
-		local changedCmdListNum = false
+		local changedcmdListNum = false
 
-		changedCmdListNum, self.CmdListNum = imgui.InputInt("Cmd List Num", self.CmdListNum)
+		changedcmdListNum, self.cmdListNum = imgui.InputInt("Cmd List Num", self.cmdListNum)
 
-		if self.CmdListNum < 0 then
-			self.CmdListNum = 0
+		if self.cmdListNum < 0 then
+			self.cmdListNum = 0
 		end
+
+		local dblHeightchanged = false
+		dblHeightchanged, self.doubleHeight = imgui.Checkbox("Double Height", self.doubleHeight)
 
 		imgui.Text("Draw List")
 		DrawAddressLabel(CurDrawListBase)
@@ -210,10 +218,10 @@ CommandListViewer =
 			DrawAddressLabel(CurDrawListCmd)
 		end
 
-		if changedCmdListNum == true or changedNumBytes == true or changedStringNum == true then
+		if changedcmdListNum == true or changedNumBytes == true or changedStringNum == true or dblHeightchanged == true then
 			ClearGraphicsView(self.graphicsView, 0)
 			CommandListRenderer:drawString(self.graphicsView, self.stringNum, StringTable, 0, 0)
-			CommandListRenderer:render(self.graphicsView, self.CmdListNum, CommandListTable, 0, 64, self.numBytesToDraw)
+			CommandListRenderer:render(self.graphicsView, self.cmdListNum, CommandListTable, 0, 64, self.doubleHeight, self.numBytesToDraw)
 		end
 		
 		-- Update and draw to screen
