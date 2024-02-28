@@ -1,21 +1,18 @@
 {
     "128KGame": false,
-    "LuaSourceFiles": [
-        "ViewerScript.lua"
-    ],
     "Machine": "",
-    "Name": "laser_squad",
+    "Name": "Zynaps",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 44135,
+                "ViewAddress": 34461,
                 "ViewAddressBank": 3
             },
             {
-                "Enabled": true,
-                "ViewAddress": 27130,
-                "ViewAddressBank": 2
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
             },
             {
                 "Enabled": false,
@@ -29,5 +26,5 @@
             }
         ]
     },
-    "SnapshotFile": "laser_squad.z80"
+    "SnapshotFile": "Zynaps.z80"
 }
