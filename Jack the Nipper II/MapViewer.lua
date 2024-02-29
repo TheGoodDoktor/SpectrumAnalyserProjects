@@ -31,6 +31,8 @@ function MapViewer:DrawUI()
 	if imgui.Button("Save PNG") then
 		SaveGraphicsViewPNG(self.graphicsView, "JN2Map.png")
 	end
+
+	imgui.Text("Max Block: " .. tostring(MaxBlock))
 --DrawScreenToView(self.graphicsView,0,0,0)
 --DrawGraphicsView(self.screenView)
 --DrawOtherGraphicsViewScaled(self.screenView,self.screenView,0,0,64,40)

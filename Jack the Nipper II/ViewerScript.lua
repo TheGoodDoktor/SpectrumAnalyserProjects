@@ -4,6 +4,7 @@ CharacterPixelsAddr = 0xF000
 CharacterAttribsAddr = 0xED00
 BlocksAddr = 0x7900
 ScreensBaseAddr = 0x5B00
+MaxBlock = 0
 
 -- Draw an individual character using its attribute
 function DrawCharacterToView(graphicsView, charNo, x, y)
@@ -40,6 +41,9 @@ function DrawScreenToView(graphicsView, screenNo,x,y)
 			-- Blocks above 0xCC are special (enenity placement most like)
 			if blockNo < 0xcc then
 				DrawBlockToView(graphicsView, blockNo, x + (xp * 32), y + (yp * 32))
+				if blockNo > MaxBlock then
+					MaxBlock = blockNo
+				end
 			end
 			screenAddr = screenAddr + 1
 		end
