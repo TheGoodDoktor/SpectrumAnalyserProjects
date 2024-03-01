@@ -86,8 +86,55 @@
     "DataTypes": {
         "Enums": null,
         "Flags": null,
-        "NextItemId": 1,
-        "Structs": null
+        "NextItemId": 2,
+        "Structs": [
+            {
+                "Members": [
+                    {
+                        "Name": "XPos",
+                        "Type": 0
+                    },
+                    {
+                        "Name": "YPos",
+                        "Type": 0
+                    },
+                    {
+                        "Name": "GameObject_2",
+                        "Type": 0
+                    },
+                    {
+                        "Name": "SpritePtr",
+                        "Type": 2
+                    },
+                    {
+                        "Name": "DirectionFlags",
+                        "Type": 0
+                    },
+                    {
+                        "Name": "GameObject_5",
+                        "Type": 0
+                    },
+                    {
+                        "Name": "AnimFrameNo",
+                        "Type": 0
+                    },
+                    {
+                        "Name": "GameObject_7",
+                        "Type": 0
+                    },
+                    {
+                        "Name": "Attribute",
+                        "Type": 0
+                    },
+                    {
+                        "Name": "GameObject_9",
+                        "Type": 0
+                    }
+                ],
+                "Name": "GameObject",
+                "TypeId": 1
+            }
+        ]
     },
     "Pages": [
         {
@@ -16222,6 +16269,10 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 226,
+                    "Comment": "This is where the list of game objects are\nThere are 10 and the list always starts with the player\n"
+                },
+                {
                     "Address": 566,
                     "Comment": "4 attributes per item"
                 }
@@ -16334,6 +16385,16 @@
                     "DisplayType": 1
                 },
                 {
+                    "Address": 231,
+                    "Comment": "direction flags 0-right, 1-left",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 233,
+                    "Comment": "anim frame",
+                    "DisplayType": 10
+                },
+                {
                     "Address": 235,
                     "Comment": "attribute"
                 },
@@ -16382,6 +16443,11 @@
                     "Comment": "sprite pointer",
                     "DataType": 2,
                     "DisplayType": 1
+                },
+                {
+                    "Address": 275,
+                    "Comment": "direction bits?",
+                    "DisplayType": 5
                 },
                 {
                     "Address": 276,
@@ -16819,13 +16885,13 @@
                     "Address": 114,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8872"
+                    "Name": "ScreenNumberBackup"
                 },
                 {
                     "Address": 115,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8873"
+                    "Name": "GameObjectsBackup"
                 },
                 {
                     "Address": 225,
@@ -16849,13 +16915,19 @@
                     "Address": 237,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_88ED"
+                    "Name": "GameObject_1"
                 },
                 {
                     "Address": 248,
                     "Global": true,
                     "LabelType": 0,
                     "Name": "object_88F8"
+                },
+                {
+                    "Address": 256,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_8900"
                 },
                 {
                     "Address": 259,
@@ -27549,7 +27621,8 @@
                 },
                 {
                     "Address": 373,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get player X pos"
                 },
                 {
                     "Address": 376,
@@ -27563,6 +27636,7 @@
                 {
                     "Address": 380,
                     "ByteSize": 3,
+                    "Comment": "backup screen state every 8 pixels walked",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -28993,7 +29067,7 @@
                 {
                     "Address": 383,
                     "LabelType": 2,
-                    "Name": "label_A17F"
+                    "Name": "skip_backup"
                 },
                 {
                     "Address": 404,
@@ -31830,7 +31904,7 @@
                 {
                     "Address": 189,
                     "ByteSize": 3,
-                    "Comment": "110 bytes",
+                    "Comment": "110 bytes - 11 * 10 byte objects",
                     "OperandType": 3
                 },
                 {
@@ -32089,7 +32163,7 @@
                 {
                     "Address": 314,
                     "ByteSize": 3,
-                    "Comment": "byte count",
+                    "Comment": "byte count - 10 objects of 11 bytes each",
                     "OperandType": 3
                 },
                 {
@@ -33345,7 +33419,7 @@
                 {
                     "Address": 177,
                     "LabelType": 1,
-                    "Name": "function_A8B1"
+                    "Name": "BackupScreenState"
                 },
                 {
                     "Address": 195,
@@ -33820,16 +33894,14 @@
                 },
                 {
                     "Address": 682,
-                    "ByteSize": 1,
+                    "ByteSize": 2,
                     "Comment": "output to beeper",
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 683,
-                    "ByteSize": 1,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 1
                 },
                 {
                     "Address": 684,
@@ -33867,11 +33939,6 @@
                     "Address": 682,
                     "DataType": 11,
                     "InstructionAddressRef": 2930376707
-                },
-                {
-                    "Address": 683,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2930442243
                 }
             ],
             "LabelInfo": [
@@ -42994,11 +43061,63 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 120,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 121,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 123,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 125,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 128,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 130,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
                     "Address": 132,
                     "ByteSize": 2
                 },
                 {
                     "Address": 134,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 136,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 137,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 139,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 141,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 144,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 146,
                     "ByteSize": 2,
                     "OperandType": 2
                 },
@@ -43009,6 +43128,49 @@
                 {
                     "Address": 150,
                     "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 152,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 153,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 155,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 157,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 160,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 162,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 165,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 168,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 171,
+                    "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -43665,6 +43827,7 @@
                 {
                     "Address": 593,
                     "ByteSize": 3,
+                    "Comment": "read current control device",
                     "OperandType": 1
                 },
                 {
@@ -43674,7 +43837,241 @@
                 {
                     "Address": 597,
                     "ByteSize": 3,
+                    "Comment": "jump if keyboard",
                     "OperandType": 2
+                },
+                {
+                    "Address": 600,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 602,
+                    "ByteSize": 2,
+                    "Comment": "jump if kempston",
+                    "OperandType": 2
+                },
+                {
+                    "Address": 604,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 606,
+                    "ByteSize": 3,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 609,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 612,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 614,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 616,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 618,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 620,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 622,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 624,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 626,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 628,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 630,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 632,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 634,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 636,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 638,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 640,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 642,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 643,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 645,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 646,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 648,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 650,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 651,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 652,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 655,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 657,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 659,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 661,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 663,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 665,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 667,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 669,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 671,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 673,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 674,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 677,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 679,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 681,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 683,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 685,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 686,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 688,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 689,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 691,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 693,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 695,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 697,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 698,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 700,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 701,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 703,
+                    "ByteSize": 1
                 },
                 {
                     "Address": 704,
@@ -43705,7 +44102,7 @@
                 {
                     "Address": 717,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 4
                 },
                 {
                     "Address": 720,
@@ -43726,7 +44123,8 @@
                 },
                 {
                     "Address": 728,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set left bit"
                 },
                 {
                     "Address": 730,
@@ -43744,12 +44142,13 @@
                 },
                 {
                     "Address": 736,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set right bit"
                 },
                 {
                     "Address": 738,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 4
                 },
                 {
                     "Address": 741,
@@ -43770,7 +44169,8 @@
                 },
                 {
                     "Address": 749,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set jump bit"
                 },
                 {
                     "Address": 751,
@@ -43779,7 +44179,7 @@
                 {
                     "Address": 752,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 4
                 },
                 {
                     "Address": 755,
@@ -43799,7 +44199,8 @@
                 },
                 {
                     "Address": 762,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set down bit"
                 },
                 {
                     "Address": 764,
@@ -43855,7 +44256,8 @@
                 },
                 {
                     "Address": 787,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "loop count 10 - 1 game objects"
                 },
                 {
                     "Address": 789,
@@ -43903,7 +44305,8 @@
                 {
                     "Address": 804,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Comment": "byte offset to next object",
+                    "OperandType": 3
                 },
                 {
                     "Address": 807,
@@ -44273,8 +44676,8 @@
                 {
                     "Address": 966,
                     "ByteSize": 3,
-                    "Comment": "object count",
-                    "OperandType": 3
+                    "Comment": "object count - there is a bug here. The intent is to set B to 10 but this sets C to 10 causing the loop to iterate 255 times!",
+                    "OperandType": 4
                 },
                 {
                     "Address": 969,
@@ -44304,11 +44707,13 @@
                 },
                 {
                     "Address": 980,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "is bit 5 set?"
                 },
                 {
                     "Address": 984,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if it's unset"
                 },
                 {
                     "Address": 985,
@@ -44338,19 +44743,23 @@
                 },
                 {
                     "Address": 995,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "fetch byte from object"
                 },
                 {
                     "Address": 998,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 4
                 },
                 {
                     "Address": 1000,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if value is >= D4h(212)"
                 },
                 {
                     "Address": 1001,
                     "ByteSize": 3,
+                    "Comment": "decrement some kind of counter",
                     "OperandType": 1
                 },
                 {
@@ -44368,11 +44777,13 @@
                 },
                 {
                     "Address": 1009,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if not 0"
                 },
                 {
                     "Address": 1010,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "reset counter"
                 },
                 {
                     "Address": 1012,
@@ -44386,13 +44797,20 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 1018,
+                    "ByteSize": 2
+                },
+                {
                     "Address": 1020,
                     "ByteSize": 2,
+                    "Comment": "jump if less than 7fh",
                     "OperandType": 2
                 },
                 {
                     "Address": 1022,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "set sprite pointer",
+                    "OperandType": 1
                 }
             ],
             "DataInfo": [
@@ -44451,9 +44869,24 @@
                     "Flags": 8
                 },
                 {
-                    "Address": 1019,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3287941124
+                    "Address": 574,
+                    "ByteSize": 12,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 586,
+                    "Comment": "current player control bits",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 587,
+                    "Comment": "Current control device (0 - keyboard, 1 - Kempston, 2 - Cursor, 3 - IF2 )",
+                    "DisplayType": 10
+                },
+                {
+                    "Address": 994,
+                    "DisplayType": 10
                 }
             ],
             "LabelInfo": [
@@ -44578,29 +45011,84 @@
                     "Address": 574,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_C23E"
+                    "Name": "GameOverText"
                 },
                 {
                     "Address": 586,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_C24A"
+                    "Name": "PlayerControls"
                 },
                 {
                     "Address": 587,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_C24B"
+                    "Name": "ControlDevice"
                 },
                 {
                     "Address": 588,
                     "LabelType": 1,
-                    "Name": "function_C24C"
+                    "Name": "ReadControls"
+                },
+                {
+                    "Address": 622,
+                    "LabelType": 2,
+                    "Name": "label_C26E"
+                },
+                {
+                    "Address": 628,
+                    "LabelType": 2,
+                    "Name": "label_C274"
+                },
+                {
+                    "Address": 634,
+                    "LabelType": 2,
+                    "Name": "label_C27A"
+                },
+                {
+                    "Address": 640,
+                    "LabelType": 2,
+                    "Name": "label_C280"
+                },
+                {
+                    "Address": 646,
+                    "LabelType": 2,
+                    "Name": "read_kempston"
+                },
+                {
+                    "Address": 652,
+                    "LabelType": 2,
+                    "Name": "label_C28C"
+                },
+                {
+                    "Address": 665,
+                    "LabelType": 2,
+                    "Name": "label_C299"
+                },
+                {
+                    "Address": 673,
+                    "LabelType": 2,
+                    "Name": "label_C2A1"
+                },
+                {
+                    "Address": 688,
+                    "LabelType": 2,
+                    "Name": "label_C2B0"
+                },
+                {
+                    "Address": 691,
+                    "LabelType": 2,
+                    "Name": "label_C2B3"
+                },
+                {
+                    "Address": 698,
+                    "LabelType": 2,
+                    "Name": "label_C2BA"
                 },
                 {
                     "Address": 704,
                     "LabelType": 2,
-                    "Name": "label_C2C0"
+                    "Name": "read_keyboard"
                 },
                 {
                     "Address": 717,
@@ -44635,12 +45123,12 @@
                 {
                     "Address": 789,
                     "LabelType": 2,
-                    "Name": "label_C315"
+                    "Name": "object_loop"
                 },
                 {
                     "Address": 797,
                     "LabelType": 2,
-                    "Name": "label_C31D"
+                    "Name": "exit_function"
                 },
                 {
                     "Address": 804,
@@ -44745,7 +45233,7 @@
                 {
                     "Address": 988,
                     "LabelType": 2,
-                    "Name": "label_C3DC"
+                    "Name": "delay_loop"
                 },
                 {
                     "Address": 994,
@@ -44774,6 +45262,16 @@
                 {
                     "Address": 7,
                     "ByteSize": 1
+                },
+                {
+                    "Address": 8,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 11,
+                    "ByteSize": 2,
+                    "OperandType": 2
                 }
             ],
             "DataInfo": [
@@ -46548,6 +47046,11 @@
                 }
             ],
             "LabelInfo": [
+                {
+                    "Address": 1,
+                    "LabelType": 2,
+                    "Name": "set_sprite_ptr"
+                },
                 {
                     "Address": 8,
                     "LabelType": 2,
