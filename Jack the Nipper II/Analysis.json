@@ -119,7 +119,7 @@
                         "Type": 0
                     },
                     {
-                        "Name": "GameObject_7",
+                        "Name": "Flags",
                         "Type": 0
                     },
                     {
@@ -13762,6 +13762,7 @@
                 {
                     "Address": 542,
                     "ByteSize": 3,
+                    "Comment": "check game over flag?",
                     "OperandType": 1
                 },
                 {
@@ -13771,6 +13772,7 @@
                 {
                     "Address": 546,
                     "ByteSize": 3,
+                    "Comment": "jump if not zero",
                     "OperandType": 2
                 },
                 {
@@ -13785,6 +13787,46 @@
                 {
                     "Address": 553,
                     "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 555,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 558,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 559,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 561,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 564,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 566,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 568,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 570,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 572,
+                    "ByteSize": 3,
                     "OperandType": 2
                 },
                 {
@@ -13933,7 +13975,8 @@
                 },
                 {
                     "Address": 647,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 649,
@@ -14193,11 +14236,13 @@
                 },
                 {
                     "Address": 771,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set x pos"
                 },
                 {
                     "Address": 775,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set y pos"
                 },
                 {
                     "Address": 779,
@@ -14206,6 +14251,7 @@
                 {
                     "Address": 783,
                     "ByteSize": 3,
+                    "Comment": "set sprite",
                     "OperandType": 1
                 },
                 {
@@ -14218,11 +14264,13 @@
                 },
                 {
                     "Address": 792,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set direction"
                 },
                 {
                     "Address": 796,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set attribute"
                 },
                 {
                     "Address": 800,
@@ -14250,11 +14298,13 @@
                 },
                 {
                     "Address": 811,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set x pos"
                 },
                 {
                     "Address": 815,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set y pos"
                 },
                 {
                     "Address": 819,
@@ -14267,7 +14317,9 @@
                 },
                 {
                     "Address": 823,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "start screen",
+                    "OperandType": 3
                 },
                 {
                     "Address": 825,
@@ -14277,6 +14329,7 @@
                 {
                     "Address": 827,
                     "ByteSize": 2,
+                    "Comment": "alternative start screen",
                     "OperandType": 3
                 },
                 {
@@ -15559,7 +15612,7 @@
                 {
                     "Address": 542,
                     "LabelType": 2,
-                    "Name": "label_861E"
+                    "Name": "check_game_over"
                 },
                 {
                     "Address": 575,
@@ -15579,12 +15632,12 @@
                 {
                     "Address": 634,
                     "LabelType": 2,
-                    "Name": "label_867A"
+                    "Name": "decrement_invul_timer"
                 },
                 {
                     "Address": 652,
                     "LabelType": 2,
-                    "Name": "label_868C"
+                    "Name": "cycle_invul_attrib"
                 },
                 {
                     "Address": 662,
@@ -16335,6 +16388,10 @@
                     "DataType": 2
                 },
                 {
+                    "Address": 47,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 65,
                     "ByteSize": 2,
                     "DataType": 2,
@@ -16442,6 +16499,10 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 109,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 110,
                     "ByteSize": 2,
                     "DataType": 2,
@@ -16450,160 +16511,727 @@
                 {
                     "Address": 226,
                     "Comment": "player X",
-                    "DisplayType": 3
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1
                 },
                 {
                     "Address": 227,
                     "Comment": "player y",
-                    "DisplayType": 3
+                    "DisplayType": 3,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 1
                 },
                 {
                     "Address": 228,
-                    "DisplayType": 5
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 2
                 },
                 {
                     "Address": 229,
                     "ByteSize": 2,
                     "Comment": "sprite ptr",
                     "DataType": 2,
-                    "DisplayType": 1
+                    "DisplayType": 1,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 3
                 },
                 {
                     "Address": 231,
                     "Comment": "direction flags 0-right, 1-left",
-                    "DisplayType": 5
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
+                },
+                {
+                    "Address": 232,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
                 },
                 {
                     "Address": 233,
                     "Comment": "anim frame",
-                    "DisplayType": 10
+                    "DisplayType": 10,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
+                },
+                {
+                    "Address": 234,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
                 },
                 {
                     "Address": 235,
-                    "Comment": "attribute"
+                    "Comment": "attribute",
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 236,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 10
+                },
+                {
+                    "Address": 237,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1
+                },
+                {
+                    "Address": 238,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 1
+                },
+                {
+                    "Address": 239,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 2
                 },
                 {
                     "Address": 240,
                     "ByteSize": 2,
                     "DataType": 2,
-                    "DisplayType": 1
+                    "DisplayType": 1,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 3
+                },
+                {
+                    "Address": 242,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
+                },
+                {
+                    "Address": 243,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
+                },
+                {
+                    "Address": 244,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
+                },
+                {
+                    "Address": 245,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 246,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 247,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 10
+                },
+                {
+                    "Address": 248,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1
+                },
+                {
+                    "Address": 249,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 1
+                },
+                {
+                    "Address": 250,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 2
                 },
                 {
                     "Address": 251,
                     "ByteSize": 2,
                     "DataType": 2,
-                    "DisplayType": 1
+                    "DisplayType": 1,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 3
+                },
+                {
+                    "Address": 253,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
+                },
+                {
+                    "Address": 254,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
+                },
+                {
+                    "Address": 255,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
+                },
+                {
+                    "Address": 256,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 257,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 258,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 10
+                },
+                {
+                    "Address": 259,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1
+                },
+                {
+                    "Address": 260,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 1
+                },
+                {
+                    "Address": 261,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 2
                 },
                 {
                     "Address": 262,
                     "ByteSize": 2,
                     "Comment": "sprite pointer",
                     "DataType": 2,
-                    "DisplayType": 1
+                    "DisplayType": 1,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 3
+                },
+                {
+                    "Address": 264,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
+                },
+                {
+                    "Address": 265,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
                 },
                 {
                     "Address": 266,
-                    "Comment": "anim frame"
+                    "Comment": "anim frame",
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
                 },
                 {
                     "Address": 267,
-                    "DataType": 5,
-                    "DisplayType": 6,
-                    "GraphicsSetRef": 3452816845
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 268,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 269,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 10
                 },
                 {
                     "Address": 270,
                     "Comment": "x coord",
-                    "DisplayType": 3
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1
                 },
                 {
                     "Address": 271,
                     "Comment": "y coord",
-                    "DisplayType": 3
+                    "DisplayType": 3,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 1
+                },
+                {
+                    "Address": 272,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 2
                 },
                 {
                     "Address": 273,
                     "ByteSize": 2,
                     "Comment": "sprite pointer",
                     "DataType": 2,
-                    "DisplayType": 1
+                    "DisplayType": 1,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 3
                 },
                 {
                     "Address": 275,
                     "Comment": "direction bits?",
-                    "DisplayType": 5
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
                 },
                 {
                     "Address": 276,
-                    "Comment": "set by block type"
+                    "Comment": "set by block type",
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
                 },
                 {
                     "Address": 277,
-                    "Comment": "anim frame no"
+                    "Comment": "anim frame no",
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
                 },
                 {
                     "Address": 278,
-                    "DataType": 5,
-                    "DisplayType": 6,
-                    "GraphicsSetRef": 3452816845
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 279,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 280,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 10
+                },
+                {
+                    "Address": 281,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1
+                },
+                {
+                    "Address": 282,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 1
+                },
+                {
+                    "Address": 283,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 2
                 },
                 {
                     "Address": 284,
                     "ByteSize": 2,
                     "DataType": 2,
-                    "DisplayType": 1
+                    "DisplayType": 1,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 3
+                },
+                {
+                    "Address": 286,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
+                },
+                {
+                    "Address": 287,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
                 },
                 {
                     "Address": 288,
-                    "Comment": "anim frame no"
+                    "Comment": "anim frame no",
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
                 },
                 {
                     "Address": 289,
-                    "DataType": 5,
-                    "DisplayType": 6,
-                    "GraphicsSetRef": 3452816845
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 290,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 291,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 10
+                },
+                {
+                    "Address": 292,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1
+                },
+                {
+                    "Address": 293,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 1
+                },
+                {
+                    "Address": 294,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 2
                 },
                 {
                     "Address": 295,
                     "ByteSize": 2,
                     "DataType": 2,
-                    "DisplayType": 1
+                    "DisplayType": 1,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 3
+                },
+                {
+                    "Address": 297,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
+                },
+                {
+                    "Address": 298,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
+                },
+                {
+                    "Address": 299,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
                 },
                 {
                     "Address": 300,
-                    "DataType": 5,
-                    "DisplayType": 6,
-                    "GraphicsSetRef": 3452816845
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 301,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 302,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 10
+                },
+                {
+                    "Address": 303,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1
+                },
+                {
+                    "Address": 304,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 1
+                },
+                {
+                    "Address": 305,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 2
                 },
                 {
                     "Address": 306,
                     "ByteSize": 2,
                     "DataType": 2,
-                    "DisplayType": 1
+                    "DisplayType": 1,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 3
+                },
+                {
+                    "Address": 308,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
+                },
+                {
+                    "Address": 309,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
+                },
+                {
+                    "Address": 310,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
                 },
                 {
                     "Address": 311,
-                    "DataType": 5,
-                    "DisplayType": 6,
-                    "GraphicsSetRef": 3452816845
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 312,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 313,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 10
+                },
+                {
+                    "Address": 314,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1
+                },
+                {
+                    "Address": 315,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 1
+                },
+                {
+                    "Address": 316,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 2
                 },
                 {
                     "Address": 317,
                     "ByteSize": 2,
                     "DataType": 2,
-                    "DisplayType": 1
+                    "DisplayType": 1,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 3
+                },
+                {
+                    "Address": 319,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
+                },
+                {
+                    "Address": 320,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
+                },
+                {
+                    "Address": 321,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
                 },
                 {
                     "Address": 322,
-                    "DataType": 5,
-                    "DisplayType": 6,
-                    "GraphicsSetRef": 3452816845
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 323,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 324,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 10
+                },
+                {
+                    "Address": 325,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1
+                },
+                {
+                    "Address": 326,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 1
+                },
+                {
+                    "Address": 327,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 2
                 },
                 {
                     "Address": 328,
                     "ByteSize": 2,
                     "DataType": 2,
-                    "DisplayType": 1
+                    "DisplayType": 1,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 3
+                },
+                {
+                    "Address": 330,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
+                },
+                {
+                    "Address": 331,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
+                },
+                {
+                    "Address": 332,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
+                },
+                {
+                    "Address": 333,
+                    "DisplayType": 5,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 334,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 335,
+                    "DisplayType": 11,
+                    "Flags": 64,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 10
                 },
                 {
                     "Address": 339,
@@ -16738,6 +17366,12 @@
                     "Name": "data_882C"
                 },
                 {
+                    "Address": 45,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_882D"
+                },
+                {
                     "Address": 46,
                     "Global": true,
                     "LabelType": 0,
@@ -16747,7 +17381,7 @@
                     "Address": 47,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_882F"
+                    "Name": "PlayerInvulnerableTimer"
                 },
                 {
                     "Address": 48,
@@ -16945,7 +17579,7 @@
                     "Address": 109,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_886D"
+                    "Name": "GameOverFlag"
                 },
                 {
                     "Address": 110,
@@ -16990,12 +17624,6 @@
                     "Name": "PlayerObject"
                 },
                 {
-                    "Address": 227,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "PlayerYPos"
-                },
-                {
                     "Address": 237,
                     "Global": true,
                     "LabelType": 0,
@@ -17005,55 +17633,49 @@
                     "Address": 248,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "object_88F8"
-                },
-                {
-                    "Address": 256,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_8900"
+                    "Name": "GameObject_2"
                 },
                 {
                     "Address": 259,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "object_8903"
+                    "Name": "GameObject_3"
                 },
                 {
                     "Address": 270,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "object_890E"
+                    "Name": "GameObject_4"
                 },
                 {
                     "Address": 281,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "object_8919"
+                    "Name": "GameObject_5"
                 },
                 {
                     "Address": 292,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8924"
+                    "Name": "GameObject_6"
                 },
                 {
                     "Address": 303,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_892F"
+                    "Name": "GameObject_7"
                 },
                 {
                     "Address": 314,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_893A"
+                    "Name": "GameObject_8"
                 },
                 {
                     "Address": 325,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8945"
+                    "Name": "GameObject_9"
                 },
                 {
                     "Address": 336,
@@ -17294,6 +17916,23 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 162,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 165,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 168,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 171,
+                    "ByteSize": 1
+                },
+                {
                     "Address": 172,
                     "ByteSize": 3,
                     "OperandType": 1
@@ -17313,15 +17952,18 @@
                 },
                 {
                     "Address": 180,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 182,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if screen isn't 56"
                 },
                 {
                     "Address": 183,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandType": 1
                 },
                 {
                     "Address": 187,
@@ -17348,6 +17990,328 @@
                     "Address": 204,
                     "ByteSize": 3,
                     "OperandType": 2
+                },
+                {
+                    "Address": 207,
+                    "ByteSize": 4,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 211,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 214,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 215,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 216,
+                    "ByteSize": 4
+                },
+                {
+                    "Address": 220,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 222,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 225,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 227,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 228,
+                    "ByteSize": 4
+                },
+                {
+                    "Address": 232,
+                    "ByteSize": 4
+                },
+                {
+                    "Address": 236,
+                    "ByteSize": 4
+                },
+                {
+                    "Address": 240,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 241,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 243,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 246,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 249,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 252,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 253,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 256,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 259,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 260,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 262,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 263,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 265,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 266,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 268,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 271,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 274,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 276,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 279,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 282,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 285,
+                    "ByteSize": 3,
+                    "OperandType": 3
+                },
+                {
+                    "Address": 288,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 290,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 292,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 295,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 298,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 301,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 303,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 305,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 308,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 310,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 313,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 314,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 315,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 318,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 321,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 322,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 324,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 327,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 328,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 331,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 334,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 335,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 338,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 361,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 364,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 365,
+                    "ByteSize": 3,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 368,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 369,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 370,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 372,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 373,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 376,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 377,
+                    "ByteSize": 3,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 380,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 381,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 382,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 384,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 385,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 386,
+                    "ByteSize": 1
                 },
                 {
                     "Address": 387,
@@ -17391,7 +18355,8 @@
                 },
                 {
                     "Address": 403,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "count"
                 },
                 {
                     "Address": 405,
@@ -17420,17 +18385,52 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 419,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 422,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 423,
+                    "ByteSize": 2,
+                    "Comment": "ot to next object if 0 returned in A",
+                    "OperandType": 2
+                },
+                {
+                    "Address": 425,
+                    "ByteSize": 1,
+                    "Comment": "object pointer int HL"
+                },
+                {
+                    "Address": 426,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 427,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 430,
+                    "ByteSize": 1
+                },
+                {
                     "Address": 431,
                     "ByteSize": 2
                 },
                 {
                     "Address": 433,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 3
                 },
                 {
                     "Address": 436,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "offset to next object"
                 },
                 {
                     "Address": 438,
@@ -17448,6 +18448,126 @@
                 },
                 {
                     "Address": 444,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 445,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 446,
+                    "ByteSize": 4,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 450,
+                    "ByteSize": 4
+                },
+                {
+                    "Address": 454,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 455,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 458,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 461,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 463,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 466,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 468,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 471,
+                    "ByteSize": 3,
+                    "Comment": "subtract player X"
+                },
+                {
+                    "Address": 474,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 476,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 478,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 479,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 480,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 483,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 486,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 488,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 491,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 493,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 496,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 499,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 501,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 503,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 505,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 506,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 507,
                     "ByteSize": 1
                 },
                 {
@@ -17604,6 +18724,12 @@
                     "OperandType": 1
                 }
             ],
+            "CommentBlocks": [
+                {
+                    "Address": 351,
+                    "Comment": "Array of screen attributes"
+                }
+            ],
             "LabelInfo": [
                 {
                     "Address": 31,
@@ -17644,9 +18770,24 @@
                     "Name": "label_8CCF"
                 },
                 {
+                    "Address": 236,
+                    "LabelType": 2,
+                    "Name": "label_8CEC"
+                },
+                {
                     "Address": 249,
                     "LabelType": 2,
                     "Name": "label_8CF9"
+                },
+                {
+                    "Address": 260,
+                    "LabelType": 2,
+                    "Name": "label_8D04"
+                },
+                {
+                    "Address": 310,
+                    "LabelType": 2,
+                    "Name": "label_8D36"
                 },
                 {
                     "Address": 315,
@@ -17654,9 +18795,37 @@
                     "Name": "label_8D3B"
                 },
                 {
+                    "Address": 339,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_8D53"
+                },
+                {
+                    "Address": 341,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_8D55"
+                },
+                {
+                    "Address": 351,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_8D5F"
+                },
+                {
                     "Address": 361,
                     "LabelType": 1,
                     "Name": "function_8D69"
+                },
+                {
+                    "Address": 370,
+                    "LabelType": 2,
+                    "Name": "label_8D72"
+                },
+                {
+                    "Address": 382,
+                    "LabelType": 2,
+                    "Name": "label_8D7E"
                 },
                 {
                     "Address": 387,
@@ -17671,12 +18840,52 @@
                 {
                     "Address": 409,
                     "LabelType": 2,
-                    "Name": "label_8D99"
+                    "Name": "object_loop"
                 },
                 {
                     "Address": 431,
                     "LabelType": 2,
-                    "Name": "label_8DAF"
+                    "Name": "next_object"
+                },
+                {
+                    "Address": 445,
+                    "LabelType": 1,
+                    "Name": "function_8DBD"
+                },
+                {
+                    "Address": 468,
+                    "LabelType": 2,
+                    "Name": "label_8DD4"
+                },
+                {
+                    "Address": 474,
+                    "LabelType": 2,
+                    "Name": "label_8DDA"
+                },
+                {
+                    "Address": 480,
+                    "LabelType": 2,
+                    "Name": "label_8DE0"
+                },
+                {
+                    "Address": 493,
+                    "LabelType": 2,
+                    "Name": "label_8DED"
+                },
+                {
+                    "Address": 499,
+                    "LabelType": 2,
+                    "Name": "label_8DF3"
+                },
+                {
+                    "Address": 506,
+                    "LabelType": 2,
+                    "Name": "label_8DFA"
+                },
+                {
+                    "Address": 605,
+                    "LabelType": 1,
+                    "Name": "function_8E5D"
                 },
                 {
                     "Address": 611,
@@ -18514,7 +19723,8 @@
                 {
                     "Address": 675,
                     "ByteSize": 4,
-                    "Comment": "test bit 6"
+                    "Comment": "test bit 6",
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 679,
@@ -18525,11 +19735,13 @@
                 {
                     "Address": 681,
                     "ByteSize": 3,
-                    "Comment": "get source sprite image ptr in HL"
+                    "Comment": "get source sprite image ptr in HL",
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 684,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 687,
@@ -18537,7 +19749,8 @@
                 },
                 {
                     "Address": 688,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 691,
@@ -18695,16 +19908,19 @@
                 {
                     "Address": 746,
                     "ByteSize": 3,
-                    "Comment": "base pointer"
+                    "Comment": "base pointer",
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 749,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 752,
                     "ByteSize": 3,
-                    "Comment": "frame no"
+                    "Comment": "frame no",
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 755,
@@ -18717,7 +19933,8 @@
                 {
                     "Address": 758,
                     "ByteSize": 3,
-                    "Comment": "write frame back"
+                    "Comment": "write frame back",
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 761,
@@ -19315,6 +20532,7 @@
                 {
                     "Address": 973,
                     "ByteSize": 2,
+                    "Comment": "loop count",
                     "OperandType": 3
                 },
                 {
@@ -19729,7 +20947,7 @@
                 {
                     "Address": 1003,
                     "LabelType": 2,
-                    "Name": "label_93EB"
+                    "Name": "exit_flame_char_loop"
                 },
                 {
                     "Address": 1014,
@@ -20349,6 +21567,12 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 281,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
                     "Address": 284,
                     "ByteSize": 1
                 },
@@ -20421,6 +21645,15 @@
                     "ByteSize": 1
                 },
                 {
+                    "Address": 312,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 315,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
                     "Address": 317,
                     "ByteSize": 3,
                     "Comment": "screen address of picked up item area",
@@ -20434,7 +21667,9 @@
                 {
                     "Address": 321,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Flags": 2,
+                    "OperandType": 1,
+                    "SMC": true
                 },
                 {
                     "Address": 324,
@@ -20542,7 +21777,9 @@
                 },
                 {
                     "Address": 354,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 356,
@@ -22439,6 +23676,31 @@
             ],
             "DataInfo": [
                 {
+                    "Address": 321,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2504065027
+                },
+                {
+                    "Address": 322,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2504065027
+                },
+                {
+                    "Address": 323,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2504065027
+                },
+                {
+                    "Address": 354,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2506227715
+                },
+                {
+                    "Address": 355,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2506227715
+                },
+                {
                     "Address": 463,
                     "ByteSize": 2,
                     "DataType": 2
@@ -22551,9 +23813,19 @@
                     "Name": "label_9535"
                 },
                 {
+                    "Address": 312,
+                    "LabelType": 1,
+                    "Name": "function_9538"
+                },
+                {
                     "Address": 317,
                     "LabelType": 1,
                     "Name": "DrawItemOnHUD"
+                },
+                {
+                    "Address": 320,
+                    "LabelType": 2,
+                    "Name": "label_9540"
                 },
                 {
                     "Address": 328,
@@ -23387,7 +24659,8 @@
                 },
                 {
                     "Address": 273,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "multiply by 3"
                 },
                 {
                     "Address": 274,
@@ -23408,11 +24681,13 @@
                 {
                     "Address": 279,
                     "ByteSize": 3,
+                    "Comment": "base",
                     "OperandType": 1
                 },
                 {
                     "Address": 282,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "add offset"
                 },
                 {
                     "Address": 283,
@@ -23648,7 +24923,8 @@
                 },
                 {
                     "Address": 386,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandType": 5
                 },
                 {
                     "Address": 390,
@@ -23750,7 +25026,8 @@
                 },
                 {
                     "Address": 449,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandType": 5
                 },
                 {
                     "Address": 453,
@@ -23966,7 +25243,8 @@
                 },
                 {
                     "Address": 569,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set xpos"
                 },
                 {
                     "Address": 573,
@@ -24089,7 +25367,8 @@
                 },
                 {
                     "Address": 644,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandType": 5
                 },
                 {
                     "Address": 648,
@@ -24097,11 +25376,13 @@
                 },
                 {
                     "Address": 652,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandType": 7
                 },
                 {
                     "Address": 656,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandType": 7
                 },
                 {
                     "Address": 660,
@@ -24202,7 +25483,8 @@
                 },
                 {
                     "Address": 710,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 4
                 },
                 {
                     "Address": 712,
@@ -24936,7 +26218,7 @@
                 },
                 {
                     "Address": 178,
-                    "Comment": "IX is object pointer\nA is screen block type"
+                    "Comment": "IX is object pointer\nDE pointer to ?\nA is screen block type"
                 },
                 {
                     "Address": 716,
@@ -24982,47 +26264,56 @@
                 {
                     "Address": 160,
                     "ByteSize": 2,
-                    "DataType": 2
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 162,
                     "ByteSize": 2,
-                    "DataType": 2
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 164,
                     "ByteSize": 2,
-                    "DataType": 2
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 166,
                     "ByteSize": 2,
-                    "DataType": 2
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 168,
                     "ByteSize": 2,
-                    "DataType": 2
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 170,
                     "ByteSize": 2,
-                    "DataType": 2
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 172,
                     "ByteSize": 2,
-                    "DataType": 2
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 174,
                     "ByteSize": 2,
-                    "DataType": 2
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 176,
                     "ByteSize": 2,
-                    "DataType": 2
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 671,
@@ -25254,7 +26545,7 @@
                 {
                     "Address": 705,
                     "LabelType": 1,
-                    "Name": "function_9AC1"
+                    "Name": "ResetScore"
                 },
                 {
                     "Address": 710,
@@ -25478,7 +26769,8 @@
                 },
                 {
                     "Address": 401,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 405,
@@ -25487,11 +26779,13 @@
                 },
                 {
                     "Address": 408,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 412,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if set"
                 },
                 {
                     "Address": 413,
@@ -25511,7 +26805,8 @@
                 },
                 {
                     "Address": 423,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 427,
@@ -25520,7 +26815,8 @@
                 },
                 {
                     "Address": 430,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 434,
@@ -25529,7 +26825,8 @@
                 },
                 {
                     "Address": 437,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 441,
@@ -25538,7 +26835,8 @@
                 },
                 {
                     "Address": 444,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 448,
@@ -25547,7 +26845,8 @@
                 },
                 {
                     "Address": 451,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 454,
@@ -25612,7 +26911,8 @@
                 },
                 {
                     "Address": 485,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 489,
@@ -25620,7 +26920,8 @@
                 },
                 {
                     "Address": 490,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 493,
@@ -25662,7 +26963,8 @@
                 },
                 {
                     "Address": 509,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 512,
@@ -25670,7 +26972,8 @@
                 },
                 {
                     "Address": 513,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 516,
@@ -27011,16 +28314,19 @@
                 },
                 {
                     "Address": 5,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 9,
                     "ByteSize": 2,
+                    "Comment": "jump if bit unset",
                     "OperandType": 2
                 },
                 {
                     "Address": 11,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 13,
@@ -27029,7 +28335,8 @@
                 },
                 {
                     "Address": 15,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 18,
@@ -27078,11 +28385,13 @@
                 {
                     "Address": 33,
                     "ByteSize": 3,
-                    "Comment": "x pos"
+                    "Comment": "x pos",
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 36,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 38,
@@ -27097,7 +28406,8 @@
                 {
                     "Address": 41,
                     "ByteSize": 3,
-                    "Comment": "ypos"
+                    "Comment": "ypos",
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 44,
@@ -31926,6 +33236,48 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 100,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 103,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 105,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 108,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 111,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 113,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 115,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 117,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 118,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 121,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
                     "Address": 123,
                     "ByteSize": 3
                 },
@@ -32154,7 +33506,8 @@
                 },
                 {
                     "Address": 218,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set invulnerable timer"
                 },
                 {
                     "Address": 220,
@@ -32332,6 +33685,7 @@
                 {
                     "Address": 306,
                     "ByteSize": 2,
+                    "Comment": "jump if no lives left",
                     "OperandType": 2
                 },
                 {
@@ -32428,6 +33782,7 @@
                 {
                     "Address": 356,
                     "ByteSize": 3,
+                    "Comment": "set game over flag?",
                     "OperandType": 1
                 },
                 {
@@ -33592,6 +34947,11 @@
                     "Name": "label_A85E"
                 },
                 {
+                    "Address": 118,
+                    "LabelType": 2,
+                    "Name": "label_A876"
+                },
+                {
                     "Address": 123,
                     "LabelType": 2,
                     "Name": "label_A87B"
@@ -33600,6 +34960,11 @@
                     "Address": 141,
                     "LabelType": 2,
                     "Name": "label_A88D"
+                },
+                {
+                    "Address": 144,
+                    "LabelType": 2,
+                    "Name": "label_A890"
                 },
                 {
                     "Address": 151,
@@ -33614,7 +34979,7 @@
                 {
                     "Address": 195,
                     "LabelType": 2,
-                    "Name": "label_A8C3"
+                    "Name": "player_overlaps_object"
                 },
                 {
                     "Address": 223,
@@ -33654,7 +35019,7 @@
                 {
                     "Address": 354,
                     "LabelType": 2,
-                    "Name": "label_A962"
+                    "Name": "set_game_over_flag"
                 },
                 {
                     "Address": 360,
@@ -34335,15 +35700,18 @@
                 },
                 {
                     "Address": 651,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 655,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if set"
                 },
                 {
                     "Address": 656,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 660,
@@ -34366,7 +35734,8 @@
                 },
                 {
                     "Address": 668,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 672,
@@ -34374,8 +35743,23 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 674,
+                    "ByteSize": 3,
+                    "OperandSubType": 1
+                },
+                {
+                    "Address": 677,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 679,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
                     "Address": 681,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 684,
@@ -34388,7 +35772,8 @@
                 },
                 {
                     "Address": 688,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 691,
@@ -34409,7 +35794,8 @@
                 },
                 {
                     "Address": 697,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 699,
@@ -34417,7 +35803,8 @@
                 },
                 {
                     "Address": 700,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 703,
@@ -34425,7 +35812,8 @@
                 },
                 {
                     "Address": 704,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 706,
@@ -34647,7 +36035,8 @@
                 },
                 {
                     "Address": 790,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "multiply by 8"
                 },
                 {
                     "Address": 791,
@@ -43358,6 +44747,7 @@
                 {
                     "Address": 487,
                     "ByteSize": 3,
+                    "Comment": "clear game over flag",
                     "OperandType": 1
                 },
                 {
@@ -43372,6 +44762,7 @@
                 {
                     "Address": 495,
                     "ByteSize": 3,
+                    "Comment": "go to 'game over' screen",
                     "OperandType": 1
                 },
                 {
@@ -43407,6 +44798,7 @@
                 {
                     "Address": 514,
                     "ByteSize": 3,
+                    "Comment": "draw 'game over' text",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -43505,7 +44897,7 @@
                 {
                     "Address": 560,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 4
                 },
                 {
                     "Address": 563,
@@ -43941,7 +45333,8 @@
                 },
                 {
                     "Address": 771,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return 0"
                 },
                 {
                     "Address": 772,
@@ -43995,7 +45388,7 @@
                 {
                     "Address": 794,
                     "ByteSize": 2,
-                    "Comment": "continue to next object if function returned 0",
+                    "Comment": "continue to next object if no intersection",
                     "OperandType": 2
                 },
                 {
@@ -44052,7 +45445,8 @@
                 },
                 {
                     "Address": 815,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 819,
@@ -44061,7 +45455,8 @@
                 },
                 {
                     "Address": 820,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 824,
@@ -44069,7 +45464,8 @@
                 },
                 {
                     "Address": 825,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 829,
@@ -44077,7 +45473,8 @@
                 },
                 {
                     "Address": 830,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 833,
@@ -44104,11 +45501,13 @@
                 },
                 {
                     "Address": 844,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "check if 0"
                 },
                 {
                     "Address": 845,
                     "ByteSize": 2,
+                    "Comment": "jump if 0",
                     "OperandType": 2
                 },
                 {
@@ -44122,12 +45521,12 @@
                 {
                     "Address": 849,
                     "ByteSize": 3,
-                    "Comment": "xpos"
+                    "Comment": "object xpos"
                 },
                 {
                     "Address": 852,
                     "ByteSize": 3,
-                    "Comment": "ypos"
+                    "Comment": "object ypos"
                 },
                 {
                     "Address": 855,
@@ -44144,7 +45543,8 @@
                 },
                 {
                     "Address": 862,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "add 4 to x pos"
                 },
                 {
                     "Address": 863,
@@ -44160,7 +45560,8 @@
                 },
                 {
                     "Address": 866,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get player X"
                 },
                 {
                     "Address": 869,
@@ -44169,11 +45570,13 @@
                 {
                     "Address": 870,
                     "ByteSize": 2,
+                    "Comment": "jump if player x < object x + 4",
                     "OperandType": 2
                 },
                 {
                     "Address": 872,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "subtract object x from player x"
                 },
                 {
                     "Address": 873,
@@ -44186,7 +45589,8 @@
                 },
                 {
                     "Address": 876,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "subtract object X"
                 },
                 {
                     "Address": 879,
@@ -44195,11 +45599,13 @@
                 {
                     "Address": 881,
                     "ByteSize": 2,
+                    "Comment": "jump if difference is less than 16",
                     "OperandType": 2
                 },
                 {
                     "Address": 883,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return 0 otherwise"
                 },
                 {
                     "Address": 884,
@@ -44207,11 +45613,14 @@
                 },
                 {
                     "Address": 885,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get player Y"
                 },
                 {
                     "Address": 888,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "add 12",
+                    "OperandType": 3
                 },
                 {
                     "Address": 890,
@@ -44219,7 +45628,8 @@
                 },
                 {
                     "Address": 891,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "object y"
                 },
                 {
                     "Address": 892,
@@ -44228,6 +45638,7 @@
                 {
                     "Address": 896,
                     "ByteSize": 2,
+                    "Comment": "jump if bit is 0",
                     "OperandType": 2
                 },
                 {
@@ -44246,6 +45657,7 @@
                 {
                     "Address": 906,
                     "ByteSize": 2,
+                    "Comment": "jump if bit is 0",
                     "OperandType": 2
                 },
                 {
@@ -44344,6 +45756,15 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 942,
+                    "ByteSize": 1,
+                    "Comment": "return 0"
+                },
+                {
+                    "Address": 943,
+                    "ByteSize": 1
+                },
+                {
                     "Address": 944,
                     "ByteSize": 1
                 },
@@ -44358,7 +45779,8 @@
                 },
                 {
                     "Address": 949,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return 0"
                 },
                 {
                     "Address": 950,
@@ -44379,7 +45801,8 @@
                 },
                 {
                     "Address": 956,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "return 2"
                 },
                 {
                     "Address": 958,
@@ -44467,7 +45890,8 @@
                 {
                     "Address": 995,
                     "ByteSize": 3,
-                    "Comment": "fetch byte from object"
+                    "Comment": "fetch byte from object",
+                    "OperandSubType": 1
                 },
                 {
                     "Address": 998,
@@ -44540,6 +45964,10 @@
                 {
                     "Address": 609,
                     "Comment": "read interface 2 controls"
+                },
+                {
+                    "Address": 814,
+                    "Comment": "IX : Player object\nIY : Other object\nReturn resut in A (0 - no intersection)"
                 }
             ],
             "DataInfo": [
@@ -44719,7 +46147,7 @@
                 {
                     "Address": 486,
                     "LabelType": 2,
-                    "Name": "label_C1E6"
+                    "Name": "handle_game_over"
                 },
                 {
                     "Address": 522,
@@ -44842,17 +46270,17 @@
                 {
                     "Address": 765,
                     "LabelType": 1,
-                    "Name": "function_C2FD"
+                    "Name": "CheckIfPlayerOverlapsObject"
                 },
                 {
                     "Address": 773,
                     "LabelType": 2,
-                    "Name": "label_C305"
+                    "Name": "check_objectoverlap"
                 },
                 {
                     "Address": 789,
                     "LabelType": 2,
-                    "Name": "object_loop"
+                    "Name": "overlap_object_loop"
                 },
                 {
                     "Address": 797,
@@ -44867,12 +46295,12 @@
                 {
                     "Address": 814,
                     "LabelType": 1,
-                    "Name": "function_C32E"
+                    "Name": "CheckPlayerObjectOverlap"
                 },
                 {
                     "Address": 847,
                     "LabelType": 2,
-                    "Name": "label_C34F"
+                    "Name": "return_0"
                 },
                 {
                     "Address": 849,
@@ -44897,7 +46325,7 @@
                 {
                     "Address": 885,
                     "LabelType": 2,
-                    "Name": "label_C375"
+                    "Name": "x_intersection"
                 },
                 {
                     "Address": 902,
