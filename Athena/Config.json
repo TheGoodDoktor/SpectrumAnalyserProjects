@@ -1,17 +1,12 @@
 {
-    "128KGame": false,
-    "LuaSourceFiles": [
-        "Viewer.lua",
-        "IsoObjects.lua",
-        "GameSprites.lua"
-    ],
+    "128KGame": true,
     "Machine": "",
-    "Name": "Batman",
+    "Name": "Athena",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 31640,
+                "ViewAddress": 61440,
                 "ViewAddressBank": 2
             },
             {
@@ -32,8 +27,8 @@
         ]
     },
     "Snapshot": {
-        "DisplayName": "Batman",
-        "FileName": "Batman.z80",
+        "DisplayName": "Athena",
+        "FileName": "Athena.Z80",
         "ListName": "Snapshot File",
         "Type": 0
     }

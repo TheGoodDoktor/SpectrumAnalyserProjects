@@ -33,6 +33,12 @@
             "Id": 9
         }
     ],
+    "DataTypes": {
+        "Enums": null,
+        "Flags": null,
+        "NextItemId": 2,
+        "Structs": null
+    },
     "Pages": [
         {
             "DataInfo": [
@@ -8739,7 +8745,9 @@
                 },
                 {
                     "Address": 998,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 1000,
@@ -8807,6 +8815,16 @@
                     "ByteSize": 2,
                     "DataType": 2,
                     "DisplayType": 1
+                },
+                {
+                    "Address": 998,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2011561986
+                },
+                {
+                    "Address": 999,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2011561986
                 }
             ],
             "LabelInfo": [
@@ -13157,7 +13175,9 @@
                 {
                     "Address": 780,
                     "ByteSize": 2,
-                    "OperandType": 3
+                    "Flags": 2,
+                    "OperandType": 3,
+                    "SMC": true
                 },
                 {
                     "Address": 782,
@@ -13898,6 +13918,16 @@
                 {
                     "Address": 741,
                     "DisplayType": 11
+                },
+                {
+                    "Address": 780,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2198601731
+                },
+                {
+                    "Address": 781,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2198601731
                 },
                 {
                     "Address": 794,
@@ -15467,7 +15497,9 @@
                 {
                     "Address": 637,
                     "ByteSize": 2,
-                    "OperandType": 2
+                    "Flags": 2,
+                    "OperandType": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 639,
@@ -16936,6 +16968,16 @@
                     "Address": 431,
                     "ByteSize": 2,
                     "DataType": 2
+                },
+                {
+                    "Address": 637,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2256338947
+                },
+                {
+                    "Address": 638,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2256338947
                 }
             ],
             "LabelInfo": [
@@ -18008,7 +18050,9 @@
                 },
                 {
                     "Address": 266,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 268,
@@ -18034,7 +18078,9 @@
                 },
                 {
                     "Address": 278,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 280,
@@ -18051,7 +18097,9 @@
                 },
                 {
                     "Address": 286,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 288,
@@ -19985,6 +20033,48 @@
                 }
             ],
             "DataInfo": [
+                {
+                    "Address": 266,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2299133955,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
+                },
+                {
+                    "Address": 267,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2299133955,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 278,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2299920387,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 279,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2299920387,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 286,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2300444675,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
+                },
+                {
+                    "Address": 287,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2300444675,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
+                },
                 {
                     "Address": 336,
                     "DataType": 11,
@@ -27669,7 +27759,9 @@
                 {
                     "Address": 972,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Flags": 2,
+                    "OperandType": 1,
+                    "SMC": true
                 },
                 {
                     "Address": 975,
@@ -27824,6 +27916,23 @@
                     "Address": 1022,
                     "ByteSize": 3,
                     "OperandType": 1
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 972,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2546728963
+                },
+                {
+                    "Address": 973,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2546728963
+                },
+                {
+                    "Address": 974,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2546728963
                 }
             ],
             "LabelInfo": [
@@ -28154,7 +28263,9 @@
                 {
                     "Address": 14,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Flags": 2,
+                    "OperandType": 1,
+                    "SMC": true
                 },
                 {
                     "Address": 17,
@@ -30712,6 +30823,21 @@
                     "InstructionAddressRef": 2550005763
                 },
                 {
+                    "Address": 14,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2551054339
+                },
+                {
+                    "Address": 15,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2551054339
+                },
+                {
+                    "Address": 16,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2551054339
+                },
+                {
                     "Address": 74,
                     "Comment": "byte count"
                 },
@@ -33104,7 +33230,9 @@
                 {
                     "Address": 771,
                     "ByteSize": 3,
-                    "OperandType": 2
+                    "Flags": 2,
+                    "OperandType": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 774,
@@ -33706,6 +33834,21 @@
                     "DataType": 5,
                     "DisplayType": 6,
                     "GraphicsSetRef": 3452816845
+                },
+                {
+                    "Address": 771,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2667773955
+                },
+                {
+                    "Address": 772,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2667773955
+                },
+                {
+                    "Address": 773,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2667773955
                 }
             ],
             "LabelInfo": [
