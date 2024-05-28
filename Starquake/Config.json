@@ -6,8 +6,8 @@
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 56300,
-                "ViewAddressBank": 4
+                "ViewAddress": 25393,
+                "ViewAddressBank": 2
             },
             {
                 "Enabled": false,
@@ -26,7 +26,12 @@
             }
         ]
     },
-    "SnapshotFile": "Starquake.z80",
+    "Snapshot": {
+        "DisplayName": "Starquake",
+        "FileName": "Starquake.z80",
+        "ListName": "Snapshot File",
+        "Type": 0
+    },
     "SpriteConfigs": [
         {
             "BaseAddress": "0xafc8",
