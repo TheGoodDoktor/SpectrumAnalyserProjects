@@ -33,6 +33,12 @@
             "Id": 9
         }
     ],
+    "DataTypes": {
+        "Enums": null,
+        "Flags": null,
+        "NextItemId": 2,
+        "Structs": null
+    },
     "Pages": [
         {
             "DataInfo": [
@@ -324,6 +330,7 @@
                 {
                     "Address": 660,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -340,6 +347,7 @@
                 {
                     "Address": 668,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -355,6 +363,7 @@
                 {
                     "Address": 674,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -369,6 +378,7 @@
                 {
                     "Address": 682,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -426,46 +436,55 @@
                 {
                     "Address": 755,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 758,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 761,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 776,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 779,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 782,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 803,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 806,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 809,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -476,16 +495,19 @@
                 {
                     "Address": 821,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 824,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 827,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -496,6 +518,7 @@
                 {
                     "Address": 843,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -544,6 +567,7 @@
                 {
                     "Address": 940,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -562,7 +586,8 @@
                 },
                 {
                     "Address": 951,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "increment current menu item"
                 },
                 {
                     "Address": 952,
@@ -571,6 +596,7 @@
                 {
                     "Address": 954,
                     "ByteSize": 3,
+                    "Comment": "set default colour - magenta",
                     "OperandType": 1
                 },
                 {
@@ -580,26 +606,31 @@
                 },
                 {
                     "Address": 960,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "check if it's this option"
                 },
                 {
                     "Address": 961,
                     "ByteSize": 2,
+                    "Comment": "jump if not",
                     "OperandType": 2
                 },
                 {
                     "Address": 963,
                     "ByteSize": 3,
+                    "Comment": "get flashing menu colour",
                     "OperandType": 1
                 },
                 {
                     "Address": 966,
                     "ByteSize": 3,
+                    "Comment": "set colour",
                     "OperandType": 1
                 },
                 {
                     "Address": 969,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -704,6 +735,7 @@
                 {
                     "Address": 1012,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -722,11 +754,19 @@
                 },
                 {
                     "Address": 1021,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "reset timer"
                 },
                 {
                     "Address": 1023,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "point HL to flash colour"
+                }
+            ],
+            "CommentBlocks": [
+                {
+                    "Address": 1015,
+                    "Comment": "Update selected menu item flashing colour"
                 }
             ],
             "DataInfo": [
@@ -824,19 +864,19 @@
                 {
                     "Address": 491,
                     "ByteSize": 2,
-                    "Comment": "Now scan the keyboard.",
+                    "Comment": "{Make the necessary tests and return if needed. Also",
                     "DataType": 2
                 },
                 {
                     "Address": 493,
                     "ByteSize": 2,
-                    "Comment": "}",
+                    "Comment": "{Make the necessary tests and return if needed. Also",
                     "DataType": 2
                 },
                 {
                     "Address": 495,
                     "ByteSize": 2,
-                    "Comment": "{Save the current values held in these registers.",
+                    "Comment": "Now scan the keyboard.",
                     "DataType": 2
                 },
                 {
@@ -854,31 +894,31 @@
                 {
                     "Address": 501,
                     "ByteSize": 2,
-                    "Comment": "{Save the current values held in these registers.",
+                    "Comment": "}",
                     "DataType": 2
                 },
                 {
                     "Address": 503,
                     "ByteSize": 2,
-                    "Comment": "(bit 1 of #SYSVAR(FLAGS) reset).}",
+                    "Comment": "{Save the current values held in these registers.",
                     "DataType": 2
                 },
                 {
                     "Address": 505,
                     "ByteSize": 2,
-                    "Comment": "on the machine stack.}",
+                    "Comment": "{Make the necessary tests and return if needed. Also",
                     "DataType": 2
                 },
                 {
                     "Address": 507,
                     "ByteSize": 2,
-                    "Comment": "{Save the position values and the destination address",
+                    "Comment": "(bit 1 of #SYSVAR(FLAGS) reset).}",
                     "DataType": 2
                 },
                 {
                     "Address": 509,
                     "ByteSize": 2,
-                    "Comment": "Print the character(s) and continue into #R$0ADC.",
+                    "Comment": "on the machine stack.}",
                     "DataType": 2
                 },
                 {
@@ -902,18 +942,19 @@
                 {
                     "Address": 517,
                     "ByteSize": 2,
-                    "Comment": "backup old number",
+                    "Comment": "{Save the current values held in these registers.",
                     "DataType": 2
                 },
                 {
                     "Address": 519,
                     "ByteSize": 2,
-                    "Comment": "#REGbc is saved.",
+                    "Comment": "}",
                     "DataType": 2
                 },
                 {
                     "Address": 521,
                     "ByteSize": 2,
+                    "Comment": "{Save the current values held in these registers.",
                     "DataType": 2
                 },
                 {
@@ -948,8 +989,109 @@
                 },
                 {
                     "Address": 600,
-                    "ByteSize": 2,
-                    "DataType": 2
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 601,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 602,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 603,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 604,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 605,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 606,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 607,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 608,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 609,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 610,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 611,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 612,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 613,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 614,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 615,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 616,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 617,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 618,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 619,
+                    "Comment": "left",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 620,
+                    "Comment": "right",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 621,
+                    "Comment": "down",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 622,
+                    "Comment": "up",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 623,
+                    "Comment": "fire",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 624,
+                    "Comment": "pause",
+                    "DisplayType": 11
                 },
                 {
                     "Address": 625,
@@ -1053,6 +1195,19 @@
                 {
                     "Address": 943,
                     "DataType": 4
+                },
+                {
+                    "Address": 972,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 973,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 974,
+                    "Comment": "terminator",
+                    "DisplayType": 11
                 }
             ],
             "LabelInfo": [
@@ -1470,15 +1625,65 @@
                     "Name": "KeyItemRoomLocations"
                 },
                 {
-                    "Address": 600,
+                    "Address": 594,
+                    "Comment": "first 2 sets aren't used (0 & kempston)",
+                    "Global": true,
                     "LabelType": 0,
-                    "Name": "data_5E58"
+                    "Name": "ControlKeysBaseAddr"
+                },
+                {
+                    "Address": 600,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "ControlSelection"
+                },
+                {
+                    "Address": 601,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "FlashingMenuColour"
+                },
+                {
+                    "Address": 602,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "MenuFlashTimer"
                 },
                 {
                     "Address": 603,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_5E5B"
+                    "Name": "CurrentMenuItemNo"
+                },
+                {
+                    "Address": 604,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "CursorKeys"
+                },
+                {
+                    "Address": 609,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "SinclairKeys"
+                },
+                {
+                    "Address": 614,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "DefaultKeys"
+                },
+                {
+                    "Address": 619,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "DefinedKeys"
+                },
+                {
+                    "Address": 624,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "PauseKey"
                 },
                 {
                     "Address": 641,
@@ -1514,18 +1719,17 @@
                 {
                     "Address": 948,
                     "LabelType": 1,
-                    "Name": "function_5FB4"
+                    "Name": "SetSelectableMenuItemColour"
                 },
                 {
                     "Address": 969,
                     "LabelType": 2,
-                    "Name": "label_5FC9"
+                    "Name": "skip_flashing_colour"
                 },
                 {
                     "Address": 973,
-                    "Global": true,
                     "LabelType": 0,
-                    "Name": "data_5FCD"
+                    "Name": "menu_colour_fixup"
                 },
                 {
                     "Address": 976,
@@ -1564,7 +1768,8 @@
             "CodeInfo": [
                 {
                     "Address": 0,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "toggle flash colour"
                 },
                 {
                     "Address": 2,
@@ -1572,11 +1777,13 @@
                 },
                 {
                     "Address": 3,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write flash colour"
                 },
                 {
                     "Address": 4,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "compare to white"
                 },
                 {
                     "Address": 6,
@@ -1595,7 +1802,8 @@
                 {
                     "Address": 12,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Comment": "set coordinates",
+                    "OperandType": 7
                 },
                 {
                     "Address": 15,
@@ -1605,11 +1813,13 @@
                 {
                     "Address": 17,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 20,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -1629,11 +1839,13 @@
                 {
                     "Address": 30,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 33,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -1643,6 +1855,7 @@
                 {
                     "Address": 38,
                     "ByteSize": 3,
+                    "Comment": "no key pressed",
                     "OperandType": 2
                 },
                 {
@@ -1666,7 +1879,8 @@
                 },
                 {
                     "Address": 50,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "6 to define keys"
                 },
                 {
                     "Address": 52,
@@ -1754,6 +1968,7 @@
                 {
                     "Address": 90,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -1768,16 +1983,19 @@
                 {
                     "Address": 98,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 101,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 153,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -1792,6 +2010,7 @@
                 {
                     "Address": 159,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -2213,11 +2432,13 @@
                 {
                     "Address": 589,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 599,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -2366,11 +2587,13 @@
                 {
                     "Address": 661,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 664,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -2402,7 +2625,8 @@
                 },
                 {
                     "Address": 680,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check if 1 (kempston?)"
                 },
                 {
                     "Address": 682,
@@ -2420,11 +2644,13 @@
                 },
                 {
                     "Address": 687,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "store control selection in C"
                 },
                 {
                     "Address": 688,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "multiply by 4"
                 },
                 {
                     "Address": 689,
@@ -2432,11 +2658,13 @@
                 },
                 {
                     "Address": 690,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 5"
                 },
                 {
                     "Address": 691,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "put in DE"
                 },
                 {
                     "Address": 693,
@@ -2449,7 +2677,8 @@
                 },
                 {
                     "Address": 697,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "offset"
                 },
                 {
                     "Address": 698,
@@ -2457,15 +2686,18 @@
                 },
                 {
                     "Address": 700,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "backup key address"
                 },
                 {
                     "Address": 701,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "backup loop counter"
                 },
                 {
                     "Address": 702,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -2479,15 +2711,18 @@
                 },
                 {
                     "Address": 709,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "restore loop counter"
                 },
                 {
                     "Address": 710,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "restore key address"
                 },
                 {
                     "Address": 711,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "increment key address"
                 },
                 {
                     "Address": 712,
@@ -2502,6 +2737,7 @@
                 {
                     "Address": 717,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -2515,7 +2751,8 @@
                 },
                 {
                     "Address": 777,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read key"
                 },
                 {
                     "Address": 778,
@@ -2532,16 +2769,19 @@
                 },
                 {
                     "Address": 785,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "check ascii"
                 },
                 {
                     "Address": 786,
                     "ByteSize": 2,
+                    "Comment": "key matches",
                     "OperandType": 2
                 },
                 {
                     "Address": 788,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "point to next item"
                 },
                 {
                     "Address": 789,
@@ -2593,7 +2833,8 @@
                 },
                 {
                     "Address": 808,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 2"
                 },
                 {
                     "Address": 809,
@@ -2605,11 +2846,13 @@
                 },
                 {
                     "Address": 812,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "add offset"
                 },
                 {
                     "Address": 813,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read 2 bytes into DE"
                 },
                 {
                     "Address": 814,
@@ -2625,7 +2868,8 @@
                 },
                 {
                     "Address": 817,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "modify control code"
                 },
                 {
                     "Address": 819,
@@ -3119,13 +3363,53 @@
                     "Address": 173,
                     "ByteSize": 27,
                     "DataType": 4
+                },
+                {
+                    "Address": 668,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 763,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 765,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 767,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 769,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 771,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 773,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
                 }
             ],
             "LabelInfo": [
                 {
                     "Address": 33,
                     "LabelType": 2,
-                    "Name": "label_6021"
+                    "Name": "skip_menu_corner_update"
                 },
                 {
                     "Address": 68,
@@ -3296,17 +3580,18 @@
                     "Address": 668,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_629C"
+                    "Name": "ControlCounter"
                 },
                 {
                     "Address": 669,
-                    "LabelType": 2,
-                    "Name": "label_629D"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "StartGame"
                 },
                 {
                     "Address": 687,
                     "LabelType": 2,
-                    "Name": "label_62AF"
+                    "Name": "not_kempston"
                 },
                 {
                     "Address": 700,
@@ -3317,6 +3602,18 @@
                     "Address": 720,
                     "LabelType": 2,
                     "Name": "label_62D0"
+                },
+                {
+                    "Address": 723,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_62D3"
+                },
+                {
+                    "Address": 763,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "ControlCodePtrs"
                 },
                 {
                     "Address": 775,
@@ -4370,6 +4667,7 @@
                 {
                     "Address": 536,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -4537,6 +4835,7 @@
                 {
                     "Address": 601,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -21189,6 +21488,38 @@
             "PageId": 49
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 266,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 7
+                },
+                {
+                    "Address": 267,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 278,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 8
+                },
+                {
+                    "Address": 279,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 9
+                },
+                {
+                    "Address": 286,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 5
+                },
+                {
+                    "Address": 287,
+                    "PaletteNo": 1,
+                    "StructByteOffset": 6
+                }
+            ],
             "PageId": 50
         },
         {
@@ -55177,6 +55508,7 @@
                 {
                     "Address": 335,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -55214,11 +55546,14 @@
                 {
                     "Address": 355,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 358,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 360,
@@ -56640,6 +56975,18 @@
                 {
                     "Address": 1022,
                     "ByteSize": 2
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 358,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3311796228
+                },
+                {
+                    "Address": 359,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3311796228
                 }
             ],
             "LabelInfo": [
@@ -63084,6 +63431,7 @@
                 {
                     "Address": 975,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -66983,7 +67331,9 @@
                 {
                     "Address": 513,
                     "ByteSize": 4,
-                    "OperandType": 1
+                    "Flags": 2,
+                    "OperandType": 1,
+                    "SMC": true
                 },
                 {
                     "Address": 517,
@@ -67922,6 +68272,7 @@
                 {
                     "Address": 923,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -67931,6 +68282,7 @@
                 {
                     "Address": 927,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -68068,6 +68420,26 @@
                 }
             ],
             "DataInfo": [
+                {
+                    "Address": 513,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3657498628
+                },
+                {
+                    "Address": 514,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3657498628
+                },
+                {
+                    "Address": 515,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3657498628
+                },
+                {
+                    "Address": 516,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3657498628
+                },
                 {
                     "Address": 577,
                     "DataType": 11,
@@ -76102,6 +76474,7 @@
                     "Address": 674,
                     "ByteSize": 3,
                     "Comment": "draw if bit set",
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
