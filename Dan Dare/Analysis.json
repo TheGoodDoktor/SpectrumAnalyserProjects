@@ -482,6 +482,10 @@
                     "DisplayType": 5
                 },
                 {
+                    "Address": 729,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 976,
                     "ByteSize": 2,
                     "DataType": 2
@@ -781,7 +785,7 @@
                     "Address": 729,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_62D9"
+                    "Name": "TitleScreenCounter"
                 },
                 {
                     "Address": 730,
@@ -835,7 +839,7 @@
                     "Address": 739,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_62E3"
+                    "Name": "ControlSelection"
                 },
                 {
                     "Address": 748,
@@ -902,6 +906,7 @@
                 {
                     "Address": 206,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -911,7 +916,8 @@
                 },
                 {
                     "Address": 212,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 214,
@@ -926,6 +932,7 @@
                 {
                     "Address": 219,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -941,6 +948,7 @@
                 {
                     "Address": 227,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -951,11 +959,12 @@
                 {
                     "Address": 233,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 236,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "high score counter"
                 },
                 {
                     "Address": 238,
@@ -964,21 +973,25 @@
                 {
                     "Address": 240,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 243,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 246,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 249,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -988,11 +1001,13 @@
                 {
                     "Address": 253,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Comment": "offset to next item",
+                    "OperandType": 7
                 },
                 {
                     "Address": 256,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "go to next item"
                 },
                 {
                     "Address": 257,
@@ -1004,7 +1019,8 @@
                 },
                 {
                     "Address": 259,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "dec counter"
                 },
                 {
                     "Address": 260,
@@ -1014,6 +1030,7 @@
                 {
                     "Address": 262,
                     "ByteSize": 3,
+                    "Comment": "update title screen counter",
                     "OperandType": 1
                 },
                 {
@@ -1027,7 +1044,8 @@
                 },
                 {
                     "Address": 269,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 271,
@@ -1041,11 +1059,14 @@
                 },
                 {
                     "Address": 276,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "write 15 lines",
+                    "OperandType": 7
                 },
                 {
                     "Address": 278,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "wait 2 frames?"
                 },
                 {
                     "Address": 279,
@@ -1053,11 +1074,15 @@
                 },
                 {
                     "Address": 280,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "loop count - 30 attributes",
+                    "OperandType": 3
                 },
                 {
                     "Address": 282,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "mask ink colour",
+                    "OperandType": 5
                 },
                 {
                     "Address": 284,
@@ -1065,11 +1090,14 @@
                 },
                 {
                     "Address": 286,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set bright bit",
+                    "OperandType": 5
                 },
                 {
                     "Address": 288,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write attribute"
                 },
                 {
                     "Address": 289,
@@ -1090,7 +1118,8 @@
                 },
                 {
                     "Address": 294,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "inc attribute val"
                 },
                 {
                     "Address": 295,
@@ -1107,7 +1136,8 @@
                 },
                 {
                     "Address": 300,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "read keyboard"
                 },
                 {
                     "Address": 302,
@@ -1121,12 +1151,14 @@
                 {
                     "Address": 305,
                     "ByteSize": 3,
+                    "Comment": "1 pressed",
                     "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 308,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 311,
@@ -1136,7 +1168,8 @@
                 },
                 {
                     "Address": 314,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "reset title screen counter"
                 },
                 {
                     "Address": 315,
@@ -1162,15 +1195,19 @@
                 },
                 {
                     "Address": 325,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 328,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "control config no"
                 },
                 {
                     "Address": 330,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "offset to next attribute",
+                    "OperandType": 3
                 },
                 {
                     "Address": 333,
@@ -1192,11 +1229,13 @@
                 {
                     "Address": 341,
                     "ByteSize": 2,
+                    "Comment": "not the selection",
                     "OperandType": 2
                 },
                 {
                     "Address": 343,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "selection so cycle ink colour"
                 },
                 {
                     "Address": 344,
@@ -1204,11 +1243,13 @@
                 },
                 {
                     "Address": 345,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 347,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write attribute"
                 },
                 {
                     "Address": 348,
@@ -1225,7 +1266,8 @@
                 },
                 {
                     "Address": 352,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "inc config no"
                 },
                 {
                     "Address": 353,
@@ -1246,7 +1288,8 @@
                 },
                 {
                     "Address": 360,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "read keyboard"
                 },
                 {
                     "Address": 362,
@@ -1263,7 +1306,8 @@
                 },
                 {
                     "Address": 368,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "read keyboard"
                 },
                 {
                     "Address": 370,
@@ -1271,16 +1315,77 @@
                 },
                 {
                     "Address": 371,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 373,
                     "ByteSize": 3,
+                    "Comment": "no key pressed - loop",
+                    "OperandType": 2
+                },
+                {
+                    "Address": 376,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 378,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 380,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 382,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 384,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 385,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 386,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 388,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 389,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 390,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 392,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 394,
+                    "ByteSize": 3,
+                    "Comment": "set control selection",
+                    "OperandType": 1
+                },
+                {
+                    "Address": 397,
+                    "ByteSize": 2,
                     "OperandType": 2
                 },
                 {
                     "Address": 399,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -2441,7 +2546,7 @@
                 {
                     "Address": 206,
                     "LabelType": 2,
-                    "Name": "label_98CE"
+                    "Name": "enter_pressed"
                 },
                 {
                     "Address": 224,
@@ -2451,47 +2556,47 @@
                 {
                     "Address": 238,
                     "LabelType": 2,
-                    "Name": "label_98EE"
+                    "Name": "highscore_display_loop"
                 },
                 {
                     "Address": 262,
                     "LabelType": 2,
-                    "Name": "label_9906"
+                    "Name": "update_menu_screen"
                 },
                 {
                     "Address": 280,
                     "LabelType": 2,
-                    "Name": "label_9918"
+                    "Name": "attrib_loop_outer"
                 },
                 {
                     "Address": 288,
                     "LabelType": 2,
-                    "Name": "label_9920"
+                    "Name": "attribute_write_loop"
                 },
                 {
                     "Address": 318,
                     "LabelType": 2,
-                    "Name": "label_993E"
+                    "Name": "key_release_loop"
                 },
                 {
                     "Address": 325,
                     "LabelType": 2,
-                    "Name": "label_9945"
+                    "Name": "options_screen_loop"
                 },
                 {
                     "Address": 333,
                     "LabelType": 2,
-                    "Name": "label_994D"
+                    "Name": "control_config_highlight_loop"
                 },
                 {
                     "Address": 347,
                     "LabelType": 2,
-                    "Name": "label_995B"
+                    "Name": "skip_notselected"
                 },
                 {
                     "Address": 380,
                     "LabelType": 2,
-                    "Name": "label_997C"
+                    "Name": "number_key_check_loop"
                 },
                 {
                     "Address": 385,
@@ -7338,9 +7443,7 @@
                 },
                 {
                     "Address": 254,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 256,
@@ -7369,9 +7472,7 @@
                 },
                 {
                     "Address": 265,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 267,
@@ -8476,26 +8577,6 @@
                     "Address": 1,
                     "DataType": 11,
                     "InstructionAddressRef": 2818506755
-                },
-                {
-                    "Address": 254,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2835218435
-                },
-                {
-                    "Address": 255,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2835218435
-                },
-                {
-                    "Address": 265,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2835939331
-                },
-                {
-                    "Address": 266,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2835939331
                 }
             ],
             "LabelInfo": [
@@ -9792,9 +9873,7 @@
                 {
                     "Address": 827,
                     "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 1,
-                    "SMC": true
+                    "OperandType": 1
                 },
                 {
                     "Address": 830,
@@ -9820,9 +9899,7 @@
                 {
                     "Address": 837,
                     "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 1,
-                    "SMC": true
+                    "OperandType": 1
                 },
                 {
                     "Address": 840,
@@ -10257,38 +10334,6 @@
                     "ByteSize": 2
                 }
             ],
-            "DataInfo": [
-                {
-                    "Address": 827,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2939879427
-                },
-                {
-                    "Address": 828,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2939879427
-                },
-                {
-                    "Address": 829,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2939879427
-                },
-                {
-                    "Address": 837,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2940534787
-                },
-                {
-                    "Address": 838,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2940534787
-                },
-                {
-                    "Address": 839,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2940534787
-                }
-            ],
             "LabelInfo": [
                 {
                     "Address": 100,
@@ -10486,21 +10531,9 @@
                     "Name": "function_AF34"
                 },
                 {
-                    "Address": 828,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "operand_AF3C"
-                },
-                {
                     "Address": 831,
                     "LabelType": 1,
                     "Name": "function_AF3F"
-                },
-                {
-                    "Address": 838,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "operand_AF46"
                 },
                 {
                     "Address": 841,
@@ -10768,9 +10801,7 @@
                 {
                     "Address": 86,
                     "ByteSize": 2,
-                    "Flags": 2,
-                    "OperandType": 2,
-                    "SMC": true
+                    "OperandType": 2
                 },
                 {
                     "Address": 98,
@@ -11012,9 +11043,7 @@
                 {
                     "Address": 174,
                     "ByteSize": 2,
-                    "Flags": 2,
-                    "OperandType": 2,
-                    "SMC": true
+                    "OperandType": 2
                 },
                 {
                     "Address": 176,
@@ -11618,9 +11647,7 @@
                 {
                     "Address": 383,
                     "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 1,
-                    "SMC": true
+                    "OperandType": 1
                 },
                 {
                     "Address": 386,
@@ -11736,9 +11763,7 @@
                 },
                 {
                     "Address": 430,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 432,
@@ -12553,9 +12578,7 @@
                 },
                 {
                     "Address": 746,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 748,
@@ -12913,7 +12936,8 @@
                 },
                 {
                     "Address": 929,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch item count"
                 },
                 {
                     "Address": 930,
@@ -12926,6 +12950,7 @@
                 {
                     "Address": 932,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -12952,6 +12977,7 @@
                 {
                     "Address": 941,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -12969,7 +12995,8 @@
                 },
                 {
                     "Address": 948,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "get draw offset"
                 },
                 {
                     "Address": 949,
@@ -12993,7 +13020,8 @@
                 },
                 {
                     "Address": 954,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check for terminator"
                 },
                 {
                     "Address": 956,
@@ -13033,11 +13061,13 @@
                 {
                     "Address": 967,
                     "ByteSize": 3,
+                    "Comment": "set low byte",
                     "OperandType": 1
                 },
                 {
                     "Address": 970,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "put char code in HL"
                 },
                 {
                     "Address": 971,
@@ -13045,7 +13075,8 @@
                 },
                 {
                     "Address": 973,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 8"
                 },
                 {
                     "Address": 974,
@@ -13057,7 +13088,8 @@
                 },
                 {
                     "Address": 976,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "add F7 to high byte as font lives at #ADDR:0xf700#"
                 },
                 {
                     "Address": 978,
@@ -13082,7 +13114,8 @@
                 },
                 {
                     "Address": 985,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 8"
                 },
                 {
                     "Address": 986,
@@ -13098,7 +13131,8 @@
                 },
                 {
                     "Address": 990,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "DE pointers to screen address"
                 },
                 {
                     "Address": 991,
@@ -13121,11 +13155,13 @@
                 },
                 {
                     "Address": 999,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "add attrib offset"
                 },
                 {
                     "Address": 1000,
                     "ByteSize": 3,
+                    "Comment": "set attribute address",
                     "OperandType": 1
                 },
                 {
@@ -13138,7 +13174,8 @@
                 },
                 {
                     "Address": 1005,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "increment position"
                 },
                 {
                     "Address": 1006,
@@ -13146,6 +13183,31 @@
                 },
                 {
                     "Address": 1007,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 1008,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 1009,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 1010,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 1011,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 1012,
+                    "ByteSize": 1,
+                    "Comment": "clear carry flag"
+                },
+                {
+                    "Address": 1013,
                     "ByteSize": 1
                 },
                 {
@@ -13173,62 +13235,17 @@
                     "SMC": true
                 }
             ],
+            "CommentBlocks": [
+                {
+                    "Address": 929,
+                    "Comment": "HL points to menu screen data"
+                },
+                {
+                    "Address": 963,
+                    "Comment": "A : Character Code\nDE : coords"
+                }
+            ],
             "DataInfo": [
-                {
-                    "Address": 86,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2958426115
-                },
-                {
-                    "Address": 87,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2958426115
-                },
-                {
-                    "Address": 174,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2964193283
-                },
-                {
-                    "Address": 175,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2964193283
-                },
-                {
-                    "Address": 383,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2977890307
-                },
-                {
-                    "Address": 384,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2977890307
-                },
-                {
-                    "Address": 385,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2977890307
-                },
-                {
-                    "Address": 430,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2980970499
-                },
-                {
-                    "Address": 431,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2980970499
-                },
-                {
-                    "Address": 746,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3001679875
-                },
-                {
-                    "Address": 747,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3001679875
-                },
                 {
                     "Address": 1018,
                     "DataType": 11,
@@ -13282,12 +13299,6 @@
                     "Name": "function_B050"
                 },
                 {
-                    "Address": 87,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "operand_B057"
-                },
-                {
                     "Address": 88,
                     "LabelType": 2,
                     "Name": "label_B058"
@@ -13336,12 +13347,6 @@
                     "Address": 168,
                     "LabelType": 1,
                     "Name": "function_B0A8"
-                },
-                {
-                    "Address": 175,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "operand_B0AF"
                 },
                 {
                     "Address": 176,
@@ -13442,12 +13447,6 @@
                     "Address": 428,
                     "LabelType": 2,
                     "Name": "label_B1AC"
-                },
-                {
-                    "Address": 431,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "operand_B1AF"
                 },
                 {
                     "Address": 432,
@@ -13580,12 +13579,6 @@
                     "Name": "function_B2E0"
                 },
                 {
-                    "Address": 747,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "operand_B2EB"
-                },
-                {
                     "Address": 797,
                     "LabelType": 1,
                     "Name": "function_B31D"
@@ -13628,7 +13621,7 @@
                 {
                     "Address": 913,
                     "LabelType": 1,
-                    "Name": "function_B391"
+                    "Name": "DrawHighScoreNumber"
                 },
                 {
                     "Address": 920,
@@ -13638,7 +13631,7 @@
                 {
                     "Address": 929,
                     "LabelType": 1,
-                    "Name": "function_B3A1"
+                    "Name": "DrawMenuScreen"
                 },
                 {
                     "Address": 931,
@@ -13648,23 +13641,23 @@
                 {
                     "Address": 939,
                     "LabelType": 1,
-                    "Name": "function_B3AB"
+                    "Name": "DrawHighScoreName"
                 },
                 {
                     "Address": 948,
                     "LabelType": 1,
-                    "Name": "function_B3B4"
+                    "Name": "DrawMenuScreenItem"
                 },
                 {
                     "Address": 952,
                     "LabelType": 2,
-                    "Name": "label_B3B8"
+                    "Name": "string_loop"
                 },
                 {
                     "Address": 963,
                     "Comment": "A contains character code",
                     "LabelType": 1,
-                    "Name": "function_B3C3"
+                    "Name": "DrawCharacterAt"
                 },
                 {
                     "Address": 1008,
@@ -13674,19 +13667,19 @@
                 {
                     "Address": 1014,
                     "LabelType": 1,
-                    "Name": "function_B3F6"
+                    "Name": "SetScreenAttribute"
                 },
                 {
                     "Address": 1019,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "operand_B3FB"
+                    "Name": "operand_AttrValueAddress"
                 },
                 {
                     "Address": 1022,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "operand_B3FE"
+                    "Name": "operand_AttrAddress"
                 }
             ],
             "PageId": 60
@@ -13751,6 +13744,7 @@
                 {
                     "Address": 20,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -13764,9 +13758,7 @@
                 },
                 {
                     "Address": 26,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 28,
@@ -14002,12 +13994,14 @@
                 {
                     "Address": 352,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Comment": "number of chars from screen start (1,6 in char coords)",
+                    "OperandType": 3
                 },
                 {
                     "Address": 355,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Comment": "clear area size B:Height C:Width in chars",
+                    "OperandType": 7
                 },
                 {
                     "Address": 358,
@@ -14017,16 +14011,18 @@
                 {
                     "Address": 360,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Comment": "number of chars from screen start (1,1 in char coords)",
+                    "OperandType": 3
                 },
                 {
                     "Address": 363,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 366,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "black attrib"
                 },
                 {
                     "Address": 367,
@@ -14036,11 +14032,13 @@
                 {
                     "Address": 370,
                     "ByteSize": 3,
+                    "Comment": "set attrib value",
                     "OperandType": 1
                 },
                 {
                     "Address": 373,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "pixel low byte"
                 },
                 {
                     "Address": 374,
@@ -14048,7 +14046,8 @@
                 },
                 {
                     "Address": 375,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 8"
                 },
                 {
                     "Address": 376,
@@ -14064,7 +14063,8 @@
                 },
                 {
                     "Address": 380,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "pixel high byte?"
                 },
                 {
                     "Address": 381,
@@ -14076,31 +14076,38 @@
                 },
                 {
                     "Address": 384,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "attrib high byte?"
                 },
                 {
                     "Address": 385,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "push width/height"
                 },
                 {
                     "Address": 386,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "push attrib address"
                 },
                 {
                     "Address": 387,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "push pixel address"
                 },
                 {
                     "Address": 388,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "loop count - 8 pixel lines"
                 },
                 {
                     "Address": 390,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "clear val"
                 },
                 {
                     "Address": 391,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "clear pixel line"
                 },
                 {
                     "Address": 392,
@@ -14113,7 +14120,8 @@
                 },
                 {
                     "Address": 395,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "dec 8 from high byte of pixel address"
                 },
                 {
                     "Address": 396,
@@ -14131,7 +14139,8 @@
                 },
                 {
                     "Address": 401,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "clear attribute"
                 },
                 {
                     "Address": 402,
@@ -14143,7 +14152,8 @@
                 },
                 {
                     "Address": 404,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "dec h char counter"
                 },
                 {
                     "Address": 405,
@@ -14152,23 +14162,28 @@
                 },
                 {
                     "Address": 407,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "restore pixel address"
                 },
                 {
                     "Address": 408,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "restore attrib address"
                 },
                 {
                     "Address": 409,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "restore counters"
                 },
                 {
                     "Address": 410,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "point pixel address to next line"
                 },
                 {
                     "Address": 411,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 413,
@@ -14193,11 +14208,13 @@
                 },
                 {
                     "Address": 420,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "point attrib address to next line"
                 },
                 {
                     "Address": 421,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "add 32 to address"
                 },
                 {
                     "Address": 423,
@@ -14209,7 +14226,8 @@
                 },
                 {
                     "Address": 425,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "add carry to high byte"
                 },
                 {
                     "Address": 427,
@@ -15321,16 +15339,6 @@
             ],
             "DataInfo": [
                 {
-                    "Address": 26,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3021602819
-                },
-                {
-                    "Address": 27,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3021602819
-                },
-                {
                     "Address": 399,
                     "DataType": 11,
                     "InstructionAddressRef": 3046047747
@@ -15455,12 +15463,12 @@
                 {
                     "Address": 350,
                     "LabelType": 1,
-                    "Name": "function_B55E"
+                    "Name": "ClearScreenRegion_White"
                 },
                 {
                     "Address": 360,
                     "LabelType": 1,
-                    "Name": "function_B568"
+                    "Name": "ClearScreenRegion_Black"
                 },
                 {
                     "Address": 370,
@@ -15470,7 +15478,7 @@
                 {
                     "Address": 385,
                     "LabelType": 2,
-                    "Name": "label_B581"
+                    "Name": "clear_loop_vertical"
                 },
                 {
                     "Address": 388,
@@ -15486,12 +15494,12 @@
                     "Address": 400,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "operand_B590"
+                    "Name": "operand_AttribValue"
                 },
                 {
                     "Address": 420,
                     "LabelType": 2,
-                    "Name": "label_B5A4"
+                    "Name": "skip_carry"
                 },
                 {
                     "Address": 431,
@@ -16145,9 +16153,7 @@
                 },
                 {
                     "Address": 196,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 198,
@@ -17307,16 +17313,6 @@
                     "Address": 0,
                     "DataType": 11,
                     "InstructionAddressRef": 3086942211
-                },
-                {
-                    "Address": 196,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3099852803
-                },
-                {
-                    "Address": 197,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3099852803
                 }
             ],
             "LabelInfo": [
@@ -18272,9 +18268,7 @@
                 },
                 {
                     "Address": 330,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 332,
@@ -19408,18 +19402,6 @@
                     "ByteSize": 4
                 }
             ],
-            "DataInfo": [
-                {
-                    "Address": 330,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3175743491
-                },
-                {
-                    "Address": 331,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3175743491
-                }
-            ],
             "LabelInfo": [
                 {
                     "Address": 21,
@@ -19970,12 +19952,355 @@
             "PageId": 65
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 99,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 101,
+                    "ByteSize": 12,
+                    "DataType": 4
+                },
+                {
+                    "Address": 113,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 200,
+                    "ByteSize": 20,
+                    "DataType": 4
+                },
+                {
+                    "Address": 220,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 221,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 222,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 223,
+                    "ByteSize": 20,
+                    "DataType": 4
+                },
+                {
+                    "Address": 243,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 244,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 245,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 246,
+                    "ByteSize": 20,
+                    "DataType": 4
+                },
+                {
+                    "Address": 266,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 267,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 268,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 269,
+                    "ByteSize": 20,
+                    "DataType": 4
+                },
+                {
+                    "Address": 289,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 290,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 291,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 292,
+                    "ByteSize": 20,
+                    "DataType": 4
+                },
+                {
+                    "Address": 312,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 313,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 314,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 315,
+                    "Comment": "number of items",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 316,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 318,
+                    "ByteSize": 24,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 342,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 343,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 345,
+                    "ByteSize": 24,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 369,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 370,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 372,
+                    "ByteSize": 28,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 400,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 401,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 403,
+                    "ByteSize": 20,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 423,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 424,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 426,
+                    "ByteSize": 18,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 444,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 445,
+                    "Comment": "number of items",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 446,
+                    "ByteSize": 2,
+                    "Comment": "number of chars from screen start",
+                    "DataType": 2,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 448,
+                    "ByteSize": 16,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 464,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 465,
+                    "ByteSize": 2,
+                    "Comment": "offset",
+                    "DataType": 2,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 467,
+                    "ByteSize": 26,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 493,
+                    "Comment": "teminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 494,
+                    "ByteSize": 2,
+                    "Comment": "offset",
+                    "DataType": 2,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 496,
+                    "ByteSize": 19,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 515,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 516,
+                    "ByteSize": 2,
+                    "Comment": "offset",
+                    "DataType": 2,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 518,
+                    "ByteSize": 21,
+                    "DataType": 4,
+                    "DisplayType": 11,
+                    "Flags": 8
+                },
+                {
+                    "Address": 539,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 540,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 542,
+                    "ByteSize": 25,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 567,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 568,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 570,
+                    "ByteSize": 25,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 595,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 596,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 598,
+                    "ByteSize": 24,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 622,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                }
+            ],
             "LabelInfo": [
                 {
                     "Address": 13,
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_C80D"
+                },
+                {
+                    "Address": 99,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "BestScoresItem"
+                },
+                {
+                    "Address": 200,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "HighScoreTable"
+                },
+                {
+                    "Address": 315,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "TitleScreenData"
+                },
+                {
+                    "Address": 445,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "OptionsScreenData"
                 }
             ],
             "PageId": 66
@@ -21513,6 +21838,18 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_FF00"
+                },
+                {
+                    "Address": 814,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_FF2E"
+                },
+                {
+                    "Address": 816,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_FF30"
                 },
                 {
                     "Address": 851,
