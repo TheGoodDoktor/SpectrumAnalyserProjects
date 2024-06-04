@@ -215,8 +215,9 @@
             "LabelInfo": [
                 {
                     "Address": 0,
+                    "Global": true,
                     "LabelType": 0,
-                    "Name": "KSTATE"
+                    "Name": "data_5C00"
                 },
                 {
                     "Address": 8,
@@ -2898,16 +2899,19 @@
                 {
                     "Address": 82,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 85,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 88,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -2918,46 +2922,51 @@
                 {
                     "Address": 94,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 97,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 100,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 103,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 106,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 109,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 112,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 115,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 118,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -3100,11 +3109,13 @@
                 {
                     "Address": 208,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 211,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -3123,6 +3134,7 @@
                 {
                     "Address": 221,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -4129,7 +4141,8 @@
                 },
                 {
                     "Address": 755,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 757,
@@ -4181,6 +4194,7 @@
                 {
                     "Address": 779,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -7804,6 +7818,7 @@
                 {
                     "Address": 173,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -15348,7 +15363,8 @@
                 },
                 {
                     "Address": 432,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "backup offset"
                 },
                 {
                     "Address": 433,
@@ -15357,7 +15373,8 @@
                 },
                 {
                     "Address": 437,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "add offset"
                 },
                 {
                     "Address": 439,
@@ -15366,7 +15383,8 @@
                 },
                 {
                     "Address": 442,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "add offset"
                 },
                 {
                     "Address": 443,
@@ -15374,7 +15392,8 @@
                 },
                 {
                     "Address": 444,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "restore offset"
                 },
                 {
                     "Address": 445,
@@ -15382,7 +15401,8 @@
                 },
                 {
                     "Address": 446,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 8"
                 },
                 {
                     "Address": 447,
@@ -15394,7 +15414,8 @@
                 },
                 {
                     "Address": 449,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "or in 40"
                 },
                 {
                     "Address": 451,
@@ -15450,7 +15471,8 @@
                 },
                 {
                     "Address": 467,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "multiply by 8"
                 },
                 {
                     "Address": 468,
@@ -15528,15 +15550,18 @@
                 },
                 {
                     "Address": 498,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "attribute memory high byte"
                 },
                 {
                     "Address": 500,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "set attrib high byte"
                 },
                 {
                     "Address": 501,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "add 8 to B"
                 },
                 {
                     "Address": 502,
@@ -15548,11 +15573,13 @@
                 },
                 {
                     "Address": 505,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch attribute"
                 },
                 {
                     "Address": 506,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write attribute"
                 },
                 {
                     "Address": 507,
@@ -16609,6 +16636,7 @@
                 {
                     "Address": 991,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -16871,13 +16899,14 @@
                 },
                 {
                     "Address": 431,
-                    "LabelType": 2,
-                    "Name": "label_B5AF"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "DrawRoom"
                 },
                 {
                     "Address": 459,
                     "LabelType": 2,
-                    "Name": "label_B5CB"
+                    "Name": "vertical_loop"
                 },
                 {
                     "Address": 461,
