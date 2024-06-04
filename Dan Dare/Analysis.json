@@ -488,6 +488,16 @@
                     "DisplayType": 1
                 },
                 {
+                    "Address": 727,
+                    "Comment": "80h - on title screen, FFh - in game, 00h - ??",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 728,
+                    "Comment": "updated by interrupt routine when in game",
+                    "DisplayType": 3
+                },
+                {
                     "Address": 729,
                     "DisplayType": 11
                 },
@@ -795,13 +805,13 @@
                     "Address": 727,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_62D7"
+                    "Name": "GameState"
                 },
                 {
                     "Address": 728,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_62D8"
+                    "Name": "GameFrameCounter"
                 },
                 {
                     "Address": 729,
@@ -4252,6 +4262,7 @@
                 {
                     "Address": 840,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -4321,6 +4332,7 @@
                 {
                     "Address": 881,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -4330,6 +4342,7 @@
                 {
                     "Address": 885,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -5846,6 +5859,7 @@
                 {
                     "Address": 56,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -6313,6 +6327,7 @@
                 {
                     "Address": 326,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -6322,6 +6337,7 @@
                 {
                     "Address": 332,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -15633,7 +15649,8 @@
                 },
                 {
                     "Address": 539,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "loop count"
                 },
                 {
                     "Address": 541,
@@ -15646,11 +15663,13 @@
                 },
                 {
                     "Address": 543,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "inc src"
                 },
                 {
                     "Address": 544,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "inc dest screen line"
                 },
                 {
                     "Address": 545,
@@ -15663,15 +15682,18 @@
                 },
                 {
                     "Address": 548,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "point DE to next char screen address"
                 },
                 {
                     "Address": 549,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if we're on the next line"
                 },
                 {
                     "Address": 550,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "sub 8 from high byte"
                 },
                 {
                     "Address": 551,
@@ -15742,6 +15764,7 @@
                 {
                     "Address": 576,
                     "ByteSize": 3,
+                    "Comment": "increment game frame counter",
                     "OperandType": 1
                 },
                 {
@@ -15763,11 +15786,13 @@
                 },
                 {
                     "Address": 588,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "check if zero"
                 },
                 {
                     "Address": 589,
                     "ByteSize": 2,
+                    "Comment": "jump if 0",
                     "OperandType": 2
                 },
                 {
@@ -15832,9 +15857,27 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 623,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 625,
+                    "ByteSize": 3,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 628,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 630,
+                    "ByteSize": 3,
+                    "OperandType": 2
+                },
+                {
                     "Address": 633,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 636,
@@ -15998,6 +16041,80 @@
                 {
                     "Address": 730,
                     "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 732,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 733,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 734,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 735,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 736,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 738,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 739,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 740,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 741,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 743,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 744,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 745,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 746,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 747,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 748,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 750,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 751,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 752,
+                    "ByteSize": 3,
                     "OperandType": 2
                 },
                 {
@@ -16446,6 +16563,7 @@
                 {
                     "Address": 967,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -16468,6 +16586,7 @@
                 {
                     "Address": 983,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -16562,6 +16681,12 @@
                 {
                     "Address": 1023,
                     "ByteSize": 2
+                }
+            ],
+            "CommentBlocks": [
+                {
+                    "Address": 538,
+                    "Comment": "HL : Source 8x8 image\nDE : Screen dest address\nUpon return DE points to next char screen address\n"
                 }
             ],
             "DataInfo": [
@@ -16776,7 +16901,6 @@
                 },
                 {
                     "Address": 538,
-                    "Comment": "HL - source address, DE - screen address",
                     "LabelType": 1,
                     "Name": "DrawCharacter"
                 },
@@ -16794,7 +16918,7 @@
                 {
                     "Address": 576,
                     "LabelType": 2,
-                    "Name": "label_B640"
+                    "Name": "no_scroll_text"
                 },
                 {
                     "Address": 584,
@@ -17579,6 +17703,7 @@
                 {
                     "Address": 275,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -17597,6 +17722,7 @@
                 {
                     "Address": 285,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -23176,6 +23302,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_FF30"
+                },
+                {
+                    "Address": 817,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_FF31"
                 },
                 {
                     "Address": 851,
