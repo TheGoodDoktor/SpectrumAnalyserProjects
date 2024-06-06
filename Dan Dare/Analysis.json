@@ -37,6 +37,7 @@
         {
             "AddressRef": 1543503874,
             "CharacterSetRef": 65535,
+            "FlagSet": 2,
             "Height": 24,
             "IgnoreCharacter": 0,
             "Stride": 32,
@@ -45,6 +46,7 @@
         {
             "AddressRef": 1593835522,
             "CharacterSetRef": 65535,
+            "FlagSet": -1,
             "Height": 24,
             "IgnoreCharacter": 0,
             "Stride": 32,
@@ -64,8 +66,39 @@
     ],
     "DataTypes": {
         "Enums": null,
-        "Flags": null,
-        "NextItemId": 2,
+        "Flags": [
+            {
+                "FlagBits": [
+                    {
+                        "Name": "Bit0"
+                    },
+                    {
+                        "Name": "Bit1"
+                    },
+                    {
+                        "Name": "Bit2"
+                    },
+                    {
+                        "Name": "Bit3"
+                    },
+                    {
+                        "Name": "Bit4"
+                    },
+                    {
+                        "Name": "Bit5"
+                    },
+                    {
+                        "Name": "Collidable"
+                    },
+                    {
+                        "Name": "Foreground"
+                    }
+                ],
+                "Name": "RoomCollisionFlags",
+                "TypeId": 2
+            }
+        ],
+        "NextItemId": 3,
         "Structs": null
     },
     "Pages": [
