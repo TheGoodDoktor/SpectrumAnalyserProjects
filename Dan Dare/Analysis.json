@@ -1167,7 +1167,7 @@
                     "Address": 722,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "RoomInstancesPtr"
+                    "Name": "RoomDefinitionsPtr"
                 },
                 {
                     "Address": 726,
@@ -1374,7 +1374,59 @@
             "CommentBlocks": [
                 {
                     "Address": 457,
-                    "Comment": "Another list of definitions with offsets to next one\nQuite a few of them seem to be empty (0 offset)"
+                    "Comment": "Room 0 Definition"
+                },
+                {
+                    "Address": 459,
+                    "Comment": "Room 1 Definition"
+                },
+                {
+                    "Address": 461,
+                    "Comment": "Room 2 Definition"
+                },
+                {
+                    "Address": 463,
+                    "Comment": "Room 3 Definition"
+                },
+                {
+                    "Address": 465,
+                    "Comment": "Room 4 Definition"
+                },
+                {
+                    "Address": 467,
+                    "Comment": "Room 5 Definition"
+                },
+                {
+                    "Address": 469,
+                    "Comment": "Room 6 Definition"
+                },
+                {
+                    "Address": 471,
+                    "Comment": "Room 7 Definition"
+                },
+                {
+                    "Address": 473,
+                    "Comment": "Room 8 Definition"
+                },
+                {
+                    "Address": 475,
+                    "Comment": "Room 9 Definition"
+                },
+                {
+                    "Address": 477,
+                    "Comment": "Room 10 Definition"
+                },
+                {
+                    "Address": 479,
+                    "Comment": "Room 11 Definition"
+                },
+                {
+                    "Address": 481,
+                    "Comment": "Room 12 Definition"
+                },
+                {
+                    "Address": 483,
+                    "Comment": "Room 13 Definition"
                 },
                 {
                     "Address": 485,
@@ -1382,922 +1434,1069 @@
                 },
                 {
                     "Address": 526,
-                    "Comment": "Room Definition"
+                    "Comment": "Room 15 Definition"
                 },
                 {
                     "Address": 555,
-                    "Comment": "Room Definition"
+                    "Comment": "Room 16 Definition"
                 },
                 {
                     "Address": 593,
-                    "Comment": "Room Definition"
+                    "Comment": "Room 17 Definition"
                 },
                 {
                     "Address": 628,
-                    "Comment": "Room Definition"
+                    "Comment": "Room 18 Definition"
                 },
                 {
                     "Address": 672,
-                    "Comment": "Room Definition"
+                    "Comment": "Room 19 Definition"
+                },
+                {
+                    "Address": 710,
+                    "Comment": "Room 20 Definition"
+                },
+                {
+                    "Address": 730,
+                    "Comment": "Room 21 Definition"
+                },
+                {
+                    "Address": 774,
+                    "Comment": "Room 22 Definition"
+                },
+                {
+                    "Address": 776,
+                    "Comment": "Room 23 Definition"
+                },
+                {
+                    "Address": 778,
+                    "Comment": "Room 24 Definition"
+                },
+                {
+                    "Address": 816,
+                    "Comment": "Room 25 Definition"
+                },
+                {
+                    "Address": 875,
+                    "Comment": "Room 26 Definition"
+                },
+                {
+                    "Address": 913,
+                    "Comment": "Room 27 Definition"
+                },
+                {
+                    "Address": 948,
+                    "Comment": "Room 28 Definition"
+                },
+                {
+                    "Address": 983,
+                    "Comment": "Room 29 Definition"
+                },
+                {
+                    "Address": 985,
+                    "Comment": "Room 30 Definition"
+                },
+                {
+                    "Address": 987,
+                    "Comment": "Room 31 Definition"
                 }
             ],
             "DataInfo": [
                 {
                     "Address": 457,
                     "ByteSize": 2,
-                    "Comment": "Room 0 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 459,
                     "ByteSize": 2,
-                    "Comment": "Room 1 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 461,
                     "ByteSize": 2,
-                    "Comment": "Room 2 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 463,
                     "ByteSize": 2,
-                    "Comment": "Room 3 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 465,
                     "ByteSize": 2,
-                    "Comment": "Room 4 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 467,
                     "ByteSize": 2,
-                    "Comment": "Room 5 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 469,
                     "ByteSize": 2,
-                    "Comment": "Room 6 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 471,
                     "ByteSize": 2,
-                    "Comment": "Room 7 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 473,
                     "ByteSize": 2,
-                    "Comment": "Room 8 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 475,
                     "ByteSize": 2,
-                    "Comment": "Room 9 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 477,
                     "ByteSize": 2,
-                    "Comment": "Room 10 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 479,
                     "ByteSize": 2,
-                    "Comment": "Room 11 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 481,
                     "ByteSize": 2,
-                    "Comment": "Room 12 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 483,
                     "ByteSize": 2,
-                    "Comment": "Room 13 size (0 bytes)",
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 485,
                     "ByteSize": 2,
-                    "Comment": "Room 14 size (39 bytes)",
+                    "Comment": "Room size (39 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 487,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 488,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 490,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 491,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 493,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 494,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 496,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 497,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 499,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 500,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 502,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 503,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 505,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 506,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 508,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 509,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 511,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 512,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 514,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 515,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 517,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 518,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 520,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 521,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 523,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 524,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 526,
                     "ByteSize": 2,
-                    "Comment": "Room 15 size (27 bytes)",
+                    "Comment": "Room size (27 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 528,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 529,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 531,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 532,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 534,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 535,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 537,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 538,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 540,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 541,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 543,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 544,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 546,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 547,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 549,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 550,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 552,
                     "Comment": "item number",
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 553,
                     "ByteSize": 2,
                     "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 555,
                     "ByteSize": 2,
-                    "Comment": "offset to next",
+                    "Comment": "Room size (36 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 557,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 558,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 560,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 561,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 563,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 564,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 566,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 567,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 569,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 570,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 572,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 573,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 575,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 576,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 578,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 579,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 581,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 582,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 584,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 585,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 587,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 588,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 590,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 591,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 593,
                     "ByteSize": 2,
-                    "Comment": "offset",
+                    "Comment": "Room size (33 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 595,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 596,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 598,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 599,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 601,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 602,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 604,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 605,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 607,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 608,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 610,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 611,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 613,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 614,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 616,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 617,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 619,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 620,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 622,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 623,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 625,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 626,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 628,
                     "ByteSize": 2,
-                    "Comment": "offset",
+                    "Comment": "Room size (42 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 630,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 631,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 633,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 634,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 636,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 637,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 639,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 640,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 642,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 643,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 645,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 646,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 648,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 649,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 651,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 652,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 654,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 655,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 657,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 658,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 660,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 661,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 663,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 664,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 666,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 667,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 669,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 670,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 672,
                     "ByteSize": 2,
-                    "Comment": "offset to next",
+                    "Comment": "Room size (36 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 674,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 675,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 677,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 678,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 680,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 681,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 683,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 684,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 686,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 687,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 689,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 690,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 692,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 693,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 695,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 696,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 698,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 699,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 701,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 702,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 704,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 705,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 707,
-                    "DisplayType": 11
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 708,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
                 },
                 {
                     "Address": 710,
+                    "Comment": "Room size (18 bytes)",
                     "DisplayType": 11
                 },
                 {
@@ -2308,87 +2507,1093 @@
                 },
                 {
                     "Address": 713,
-                    "DisplayType": 11
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
                 },
                 {
-                    "Address": 714,
-                    "ByteSize": 2,
-                    "DataType": 2,
-                    "DisplayType": 11
+                    "Address": 715,
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 716,
-                    "DisplayType": 11
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
                 },
                 {
-                    "Address": 717,
+                    "Address": 718,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 719,
                     "ByteSize": 2,
+                    "Comment": "char map offset",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 721,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 722,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 724,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 725,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 727,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 728,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
                 },
                 {
                     "Address": 730,
                     "ByteSize": 2,
+                    "Comment": "Room size (42 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
+                    "Address": 732,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 733,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 735,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 736,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 738,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 739,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 741,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 742,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 744,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 745,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 747,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 748,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 750,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 751,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 753,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 754,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 756,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 757,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 759,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 760,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 762,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 763,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 765,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 766,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 768,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 769,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 771,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 772,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
                     "Address": 774,
                     "ByteSize": 2,
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 776,
                     "ByteSize": 2,
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 778,
                     "ByteSize": 2,
+                    "Comment": "Room size (36 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
+                },
+                {
+                    "Address": 780,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 781,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 783,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 784,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 786,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 787,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 789,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 790,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 792,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 793,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 795,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 796,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 798,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 799,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 801,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 802,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 804,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 805,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 807,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 808,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 810,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 811,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 813,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 814,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
                 },
                 {
                     "Address": 816,
                     "ByteSize": 2,
+                    "Comment": "Room size (57 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
+                },
+                {
+                    "Address": 818,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 819,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 821,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 822,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 824,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 825,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 827,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 828,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 830,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 831,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 833,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 834,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 836,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 837,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 839,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 840,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 842,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 843,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 845,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 846,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 848,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 849,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 851,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 852,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 854,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 855,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 857,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 858,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 860,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 861,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 863,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 864,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 866,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 867,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 869,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 870,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 872,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 873,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
                 },
                 {
                     "Address": 875,
                     "ByteSize": 2,
+                    "Comment": "Room size (36 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
+                },
+                {
+                    "Address": 877,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 878,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 880,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 881,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 883,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 884,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 886,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 887,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 889,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 890,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 892,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 893,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 895,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 896,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 898,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 899,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 901,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 902,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 904,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 905,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 907,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 908,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 910,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 911,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
                 },
                 {
                     "Address": 913,
                     "ByteSize": 2,
+                    "Comment": "Room size (33 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
+                },
+                {
+                    "Address": 915,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 916,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 918,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 919,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 921,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 922,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 924,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 925,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 927,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 928,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 930,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 931,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 933,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 934,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 936,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 937,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 939,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 940,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 942,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 943,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 945,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 946,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
                 },
                 {
                     "Address": 948,
                     "ByteSize": 2,
+                    "Comment": "Room size (33 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
+                    "Address": 950,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 951,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 953,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 954,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 956,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 957,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 959,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 960,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 962,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 963,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 965,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 966,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 968,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 969,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 971,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 972,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 974,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 975,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 977,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 978,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
+                    "Address": 980,
+                    "Comment": "item number",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 981,
+                    "ByteSize": 2,
+                    "Comment": "char map offset",
+                    "DataType": 2,
+                    "DisplayType": 4
+                },
+                {
                     "Address": 983,
                     "ByteSize": 2,
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 985,
                     "ByteSize": 2,
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
                 {
                     "Address": 987,
                     "ByteSize": 2,
+                    "Comment": "Room size (0 bytes)",
                     "DataType": 2,
                     "DisplayType": 11
                 },
@@ -4336,6 +5541,7 @@
                 {
                     "Address": 850,
                     "ByteSize": 3,
+                    "Comment": "not sure what this screen is",
                     "OperandType": 1
                 },
                 {
@@ -4371,11 +5577,13 @@
                 {
                     "Address": 868,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Comment": "charmap offset",
+                    "OperandType": 7
                 },
                 {
                     "Address": 871,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "character value"
                 },
                 {
                     "Address": 873,
@@ -19446,7 +20654,7 @@
             "CommentBlocks": [
                 {
                     "Address": 797,
-                    "Comment": "A : item number\nreturns:\nBC : Size\nHL : item pointer after size"
+                    "Comment": "A : room instance number\nreturns:\nBC : Size\nHL : instance data pointer"
                 },
                 {
                     "Address": 805,
@@ -19454,7 +20662,7 @@
                 },
                 {
                     "Address": 818,
-                    "Comment": "A : item number\nreturns:\nBC : size of item\n\nHL : item pointer after the 2 bytes for size\n"
+                    "Comment": "A : room number\nreturns:\nBC : size of room definition\n\nHL : pointer to room definition data\n"
                 },
                 {
                     "Address": 826,
@@ -19894,12 +21102,12 @@
                 {
                     "Address": 797,
                     "LabelType": 1,
-                    "Name": "GetItemPtrAndSize"
+                    "Name": "GetRoomInstanceFromIndex"
                 },
                 {
                     "Address": 805,
                     "LabelType": 1,
-                    "Name": "GetItemPtrFromItemNo"
+                    "Name": "GetRoomInstancePtr"
                 },
                 {
                     "Address": 809,
@@ -19909,12 +21117,12 @@
                 {
                     "Address": 818,
                     "LabelType": 1,
-                    "Name": "GetRoomInstanceFromIndex"
+                    "Name": "GetRoomDefinitionFromIndex"
                 },
                 {
                     "Address": 826,
                     "LabelType": 1,
-                    "Name": "GetRoomInstancePtr"
+                    "Name": "GetRoomDefinitionPtr"
                 },
                 {
                     "Address": 832,
@@ -20024,7 +21232,8 @@
                 },
                 {
                     "Address": 8,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "width"
                 },
                 {
                     "Address": 9,
@@ -20032,7 +21241,8 @@
                 },
                 {
                     "Address": 10,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "height"
                 },
                 {
                     "Address": 11,
@@ -20040,11 +21250,13 @@
                 },
                 {
                     "Address": 12,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 14,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "offset to next line"
                 },
                 {
                     "Address": 15,
@@ -20057,7 +21269,8 @@
                 },
                 {
                     "Address": 19,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read character"
                 },
                 {
                     "Address": 20,
@@ -20102,11 +21315,13 @@
                 },
                 {
                     "Address": 33,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "pop counter"
                 },
                 {
                     "Address": 34,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "dec height counter"
                 },
                 {
                     "Address": 35,
@@ -20207,19 +21422,23 @@
                 {
                     "Address": 80,
                     "ByteSize": 3,
+                    "Comment": "dest ptr",
                     "OperandType": 1
                 },
                 {
                     "Address": 83,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "offset to next line"
                 },
                 {
                     "Address": 86,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "vertical counter & attribute"
                 },
                 {
                     "Address": 89,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "draw 4 horizontal attributes"
                 },
                 {
                     "Address": 90,
@@ -20415,7 +21634,8 @@
                 },
                 {
                     "Address": 174,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 177,
@@ -20425,7 +21645,7 @@
                 {
                     "Address": 180,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 183,
@@ -22379,7 +23599,8 @@
                 },
                 {
                     "Address": 925,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "get size"
                 },
                 {
                     "Address": 926,
@@ -22395,7 +23616,8 @@
                 },
                 {
                     "Address": 929,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "check if size is 0"
                 },
                 {
                     "Address": 930,
@@ -22408,11 +23630,13 @@
                 },
                 {
                     "Address": 933,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "get item type"
                 },
                 {
                     "Address": 934,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 4
                 },
                 {
                     "Address": 936,
@@ -22421,15 +23645,18 @@
                 {
                     "Address": 938,
                     "ByteSize": 2,
+                    "Comment": "jump if A >= Eh",
                     "OperandType": 2
                 },
                 {
                     "Address": 940,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "reset bit 0 of item type"
                 },
                 {
                     "Address": 942,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "inc to high byte of offset"
                 },
                 {
                     "Address": 943,
@@ -22437,7 +23664,8 @@
                 },
                 {
                     "Address": 944,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set bit 7"
                 },
                 {
                     "Address": 946,
@@ -22446,11 +23674,13 @@
                 {
                     "Address": 948,
                     "ByteSize": 2,
+                    "Comment": "jump if A < 8",
                     "OperandType": 2
                 },
                 {
                     "Address": 950,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "clear bit 7"
                 },
                 {
                     "Address": 952,
@@ -22471,7 +23701,8 @@
                 },
                 {
                     "Address": 957,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "decrement byte counter by 3 bytes (3 bytes per room item)"
                 },
                 {
                     "Address": 958,
@@ -22674,33 +23905,34 @@
                 {
                     "Address": 2,
                     "LabelType": 1,
-                    "Name": "function_B402"
+                    "Name": "DrawDansRocketGFX"
                 },
                 {
                     "Address": 8,
-                    "LabelType": 2,
-                    "Name": "label_B408"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "DrawCharMapGFX"
                 },
                 {
                     "Address": 18,
                     "LabelType": 2,
-                    "Name": "label_B412"
+                    "Name": "v_draw_loop"
                 },
                 {
                     "Address": 19,
                     "LabelType": 2,
-                    "Name": "label_B413"
+                    "Name": "h_draw_loop"
                 },
                 {
                     "Address": 27,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "operand_B41B"
+                    "Name": "operand_OffsetToNextLine"
                 },
                 {
                     "Address": 38,
                     "LabelType": 1,
-                    "Name": "function_B426"
+                    "Name": "DrawAmmoCounterBackground"
                 },
                 {
                     "Address": 46,
@@ -22721,7 +23953,7 @@
                 {
                     "Address": 89,
                     "LabelType": 2,
-                    "Name": "label_B459"
+                    "Name": "attrib_vloop"
                 },
                 {
                     "Address": 100,
@@ -22749,13 +23981,14 @@
                 },
                 {
                     "Address": 171,
-                    "LabelType": 2,
-                    "Name": "label_B4AB"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "DrawMekonGFX"
                 },
                 {
                     "Address": 180,
                     "LabelType": 1,
-                    "Name": "function_B4B4"
+                    "Name": "DrawPlanetsGFX"
                 },
                 {
                     "Address": 189,
@@ -23047,8 +24280,9 @@
                 },
                 {
                     "Address": 903,
-                    "LabelType": 2,
-                    "Name": "draw_gameTimer"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "DrawGameTimer"
                 },
                 {
                     "Address": 920,
@@ -23063,7 +24297,7 @@
                 {
                     "Address": 929,
                     "LabelType": 2,
-                    "Name": "label_B7A1"
+                    "Name": "room_item_loop"
                 },
                 {
                     "Address": 954,
@@ -23078,7 +24312,7 @@
                 {
                     "Address": 962,
                     "LabelType": 2,
-                    "Name": "label_B7C2"
+                    "Name": "go_to_next_room_def"
                 },
                 {
                     "Address": 966,
@@ -29284,8 +30518,46 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 669,
+                    "Comment": "width",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 670,
+                    "Comment": "height",
+                    "DisplayType": 11
+                },
+                {
                     "Address": 671,
-                    "Comment": "character code"
+                    "ByteSize": 8,
+                    "CharSetAddressRef": 4143972356,
+                    "Comment": "character code",
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 679,
+                    "ByteSize": 8,
+                    "CharSetAddressRef": 4143972356,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 687,
+                    "Comment": "width",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 688,
+                    "Comment": "height",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 689,
+                    "ByteSize": 9,
+                    "CharSetAddressRef": 4143972356,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
                 },
                 {
                     "Address": 698,
@@ -29316,6 +30588,66 @@
                     "ByteSize": 2,
                     "DataType": 2,
                     "DisplayType": 1
+                },
+                {
+                    "Address": 708,
+                    "Comment": "width",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 709,
+                    "Comment": "height",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 710,
+                    "ByteSize": 4,
+                    "CharSetAddressRef": 4143972356,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 714,
+                    "ByteSize": 4,
+                    "CharSetAddressRef": 4143972356,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 718,
+                    "ByteSize": 4,
+                    "CharSetAddressRef": 4143972356,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 722,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 723,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 724,
+                    "ByteSize": 4,
+                    "CharSetAddressRef": 4143972356,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 728,
+                    "ByteSize": 4,
+                    "CharSetAddressRef": 4143972356,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 732,
+                    "ByteSize": 4,
+                    "CharSetAddressRef": 4143972356,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
                 },
                 {
                     "Address": 743,
@@ -29591,19 +30923,31 @@
                     "Address": 669,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_C29D"
+                    "Name": "DansRocketGFX"
                 },
                 {
                     "Address": 687,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_C2AF"
+                    "Name": "DansAmmoCounterGFX"
                 },
                 {
                     "Address": 698,
                     "Global": true,
                     "LabelType": 0,
                     "Name": "FunctionPtrTable"
+                },
+                {
+                    "Address": 708,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "MekonGFX"
+                },
+                {
+                    "Address": 722,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "PlanetsGFX"
                 },
                 {
                     "Address": 743,
@@ -30415,6 +31759,12 @@
             "PageId": 65
         },
         {
+            "CommentBlocks": [
+                {
+                    "Address": 623,
+                    "Comment": "What is this?"
+                }
+            ],
             "DataInfo": [
                 {
                     "Address": 5,
@@ -30745,6 +32095,27 @@
                     "Address": 622,
                     "Comment": "terminator",
                     "DisplayType": 11
+                },
+                {
+                    "Address": 623,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 624,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 626,
+                    "ByteSize": 4,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 630,
+                    "Comment": "terminator",
+                    "DisplayType": 11
                 }
             ],
             "LabelInfo": [
@@ -30777,6 +32148,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "OptionsScreenData"
+                },
+                {
+                    "Address": 623,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "UnknownScreenData"
                 },
                 {
                     "Address": 631,
@@ -75733,6 +77110,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_FF31"
+                },
+                {
+                    "Address": 820,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_FF34"
                 },
                 {
                     "Address": 821,

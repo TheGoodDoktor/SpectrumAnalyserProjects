@@ -5,20 +5,23 @@ function FormatRoomMemory()
 	local roomAddress = globals.RoomDefinitions
 	local roomNo = 0
 
-	while roomNo < 16 do
+	while roomNo < 32 do
 		-- TODO: set data item to 16 bit decimal number
 		local roomSize = ReadWord(roomAddress)
-		SetDataItemComment(roomAddress, "Room " .. tostring(roomNo) .. " size (".. tostring(roomSize) .. " bytes)")
+		AddCommentBlock(roomAddress, "Room " .. tostring(roomNo) .. " Definition")
+		SetDataItemComment(roomAddress, "Room size (".. tostring(roomSize) .. " bytes)")
 		roomAddress = roomAddress + 2
 
 		while roomSize > 0 do
 
-			-- TODO: format item to byte
+			-- format item to byte
+			FormatMemory({StartAddress = roomAddress, DataType = EDataType.Byte, DisplayType = EDataItemDisplayType.Decimal})
 			SetDataItemComment(roomAddress, "item number")
 			local roomItem = ReadByte(roomAddress)
 			roomAddress = roomAddress + 1
 
-			-- TODO: format item to 16 but number
+			-- format item to 16 bit number
+			FormatMemory({StartAddress = roomAddress, DataType = EDataType.Word, ItemSize = 2, DisplayType = EDataItemDisplayType.Hex})
 			SetDataItemComment(roomAddress, "char map offset")
 			local itemPosition = ReadWord(roomAddress)
 			roomAddress = roomAddress + 2
