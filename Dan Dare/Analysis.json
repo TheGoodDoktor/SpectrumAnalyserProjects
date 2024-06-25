@@ -1161,7 +1161,7 @@
                     "Address": 720,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "ItemListPtr"
+                    "Name": "RoomInstancesPtr"
                 },
                 {
                     "Address": 722,
@@ -1284,22 +1284,77 @@
             "CommentBlocks": [
                 {
                     "Address": 512,
-                    "Comment": "These look like a list of variable length definitions (rooms?)\nThe first 2 bytes are offsets to the next definition"
+                    "Comment": "Room Instance 0 Definition"
+                },
+                {
+                    "Address": 650,
+                    "Comment": "Room Instance 1 Definition"
                 }
             ],
             "DataInfo": [
                 {
                     "Address": 512,
                     "ByteSize": 2,
-                    "Comment": "offset",
+                    "Comment": "Instance size (136 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 514,
+                    "ByteSize": 32,
+                    "CharSetAddressRef": 3841982468,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 548,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 618,
+                    "ByteSize": 32,
+                    "CharSetAddressRef": 3841982468,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
                 },
                 {
                     "Address": 650,
                     "ByteSize": 2,
+                    "Comment": "Instance size (50 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 652,
+                    "ByteSize": 2,
+                    "CharSetAddressRef": 3841982468,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 655,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 656,
+                    "ByteSize": 2,
+                    "CharSetAddressRef": 3992977412,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 660,
+                    "ByteSize": 2,
+                    "CharSetAddressRef": 3992977412,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
+                },
+                {
+                    "Address": 664,
+                    "ByteSize": 2,
+                    "CharSetAddressRef": 3992977412,
+                    "DataType": 6,
+                    "EmptyCharNo": 0
                 },
                 {
                     "Address": 702,
@@ -1313,7 +1368,7 @@
                     "Address": 512,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_6600"
+                    "Name": "RoomInstances"
                 },
                 {
                     "Address": 835,
@@ -1507,105 +1562,105 @@
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 459,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 461,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 463,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 465,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 467,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 469,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 471,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 473,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 475,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 477,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 479,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 481,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 483,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 485,
                     "ByteSize": 2,
                     "Comment": "Room size (39 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 487,
@@ -1768,7 +1823,7 @@
                     "ByteSize": 2,
                     "Comment": "Room size (27 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 528,
@@ -1883,7 +1938,7 @@
                     "ByteSize": 2,
                     "Comment": "Room size (36 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 557,
@@ -2034,7 +2089,7 @@
                     "ByteSize": 2,
                     "Comment": "Room size (33 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 595,
@@ -2173,7 +2228,7 @@
                     "ByteSize": 2,
                     "Comment": "Room size (42 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 630,
@@ -2348,7 +2403,7 @@
                     "ByteSize": 2,
                     "Comment": "Room size (36 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 674,
@@ -2496,14 +2551,15 @@
                 },
                 {
                     "Address": 710,
+                    "ByteSize": 2,
                     "Comment": "Room size (18 bytes)",
-                    "DisplayType": 11
+                    "DataType": 2,
+                    "DisplayType": 3
                 },
                 {
-                    "Address": 711,
-                    "ByteSize": 2,
-                    "DataType": 2,
-                    "DisplayType": 11
+                    "Address": 712,
+                    "Comment": "item number",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 713,
@@ -2577,7 +2633,7 @@
                     "ByteSize": 2,
                     "Comment": "Room size (42 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 732,
@@ -2752,21 +2808,21 @@
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 776,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 778,
                     "ByteSize": 2,
                     "Comment": "Room size (36 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 780,
@@ -2917,7 +2973,7 @@
                     "ByteSize": 2,
                     "Comment": "Room size (57 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 818,
@@ -3152,7 +3208,7 @@
                     "ByteSize": 2,
                     "Comment": "Room size (36 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 877,
@@ -3303,7 +3359,7 @@
                     "ByteSize": 2,
                     "Comment": "Room size (33 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 915,
@@ -3442,7 +3498,7 @@
                     "ByteSize": 2,
                     "Comment": "Room size (33 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 950,
@@ -3581,21 +3637,21 @@
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 985,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 987,
                     "ByteSize": 2,
                     "Comment": "Room size (0 bytes)",
                     "DataType": 2,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 989,
