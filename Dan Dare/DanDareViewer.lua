@@ -60,7 +60,10 @@ function FormatRoomItemMemory()
 	
 			if val == 0 then
 
-				-- TODO: format character map	
+				-- format character map	
+				FormatMemoryAsCharMap(charStartAddress,charLength,1,globals.BackgroundCharacters)
+				charLength = 0
+				charStartAddress = 0
 
 				local gapLength = ReadByte(instanceAddress)
 				instanceAddress = instanceAddress + 1
@@ -68,7 +71,7 @@ function FormatRoomItemMemory()
 	
 			else
 				if charLength == 0 then
-					charStartAddress = instanceAddress
+					charStartAddress = instanceAddress - 1
 				end
 	
 				charLength = charLength + 1
