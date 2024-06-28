@@ -5,7 +5,7 @@ function FormatRoomMemory()
 	local roomAddress = globals.RoomDefinitions
 	local roomNo = 0
 
-	while roomNo < 32 do
+	while roomNo < 256 do
 		-- TODO: set data item to 16 bit decimal number
 		local roomSize = ReadWord(roomAddress)
 		AddCommentBlock(roomAddress, "Room " .. tostring(roomNo) .. " Definition")
@@ -22,7 +22,7 @@ function FormatRoomMemory()
 			roomAddress = roomAddress + 1
 
 			-- format item to 16 bit number
-			FormatMemory({StartAddress = roomAddress, DataType = EDataType.Word, ItemSize = 2, DisplayType = EDataItemDisplayType.Hex})
+			FormatMemory({StartAddress = roomAddress, DataType = EDataType.Word, NoItems = 2, DisplayType = EDataItemDisplayType.Hex})
 			SetDataItemComment(roomAddress, "char map offset")
 			local itemPosition = ReadWord(roomAddress)
 			roomAddress = roomAddress + 2
@@ -40,7 +40,7 @@ function FormatRoomItemMemory()
 	local instanceAddress = globals.RoomInstances
 	local instanceNo = 0
 
-	while instanceNo < 2 do
+	while instanceNo < 20 do
 
 		local instanceSize = ReadWord(instanceAddress)
 
@@ -65,7 +65,11 @@ function FormatRoomItemMemory()
 				charLength = 0
 				charStartAddress = 0
 
+				-- TODO: format gap
+				FormatMemory({StartAddress = instanceAddress-1, DataType = EDataType.ByteArray, DisplayType = EDataItemDisplayType.Decimal, ItemSize = 2})
 				local gapLength = ReadByte(instanceAddress)
+				SetDataItemComment(instanceAddress-1, "space " .. tostring(gapLength) .. " chars")
+
 				instanceAddress = instanceAddress + 1
 				instanceSize = instanceSize - 1
 	
@@ -77,6 +81,12 @@ function FormatRoomItemMemory()
 				charLength = charLength + 1
 			end
 		end
+
+		-- do last chars
+		if charLength > 0 then
+			FormatMemoryAsCharMap(charStartAddress,charLength,1,globals.BackgroundCharacters)
+		end
+
 		instanceNo = instanceNo + 1
 		
 	end
