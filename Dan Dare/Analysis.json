@@ -823,6 +823,38 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 740,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 741,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 742,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 743,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 744,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 745,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 746,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 747,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 958,
                     "ByteSize": 2,
                     "DataType": 2
@@ -875,6 +907,7 @@
                 {
                     "Address": 978,
                     "ByteSize": 2,
+                    "Comment": "backup offset count",
                     "DataType": 2
                 },
                 {
@@ -940,7 +973,6 @@
                 {
                     "Address": 1004,
                     "ByteSize": 2,
-                    "Comment": "backup offset count",
                     "DataType": 2
                 },
                 {
@@ -5767,6 +5799,18 @@
             "PageId": 42
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 836,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 842,
+                    "ByteSize": 2,
+                    "DataType": 2
+                }
+            ],
             "PageId": 43
         },
         {
@@ -5792,6 +5836,18 @@
             "PageId": 44
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 669,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 675,
+                    "ByteSize": 2,
+                    "DataType": 2
+                }
+            ],
             "PageId": 45
         },
         {
@@ -33297,11 +33353,13 @@
                 {
                     "Address": 109,
                     "ByteSize": 3,
+                    "Comment": "char map offset",
                     "OperandType": 7
                 },
                 {
                     "Address": 112,
                     "ByteSize": 3,
+                    "Comment": "width & height",
                     "OperandType": 7
                 },
                 {
@@ -35329,6 +35387,7 @@
                 {
                     "Address": 18,
                     "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -35425,11 +35484,14 @@
                 },
                 {
                     "Address": 55,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "read player control bits"
                 },
                 {
                     "Address": 58,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check for jump or duck",
+                    "OperandType": 5
                 },
                 {
                     "Address": 60,
@@ -35480,15 +35542,19 @@
                 },
                 {
                     "Address": 81,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "read control bits"
                 },
                 {
                     "Address": 84,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check for jump",
+                    "OperandType": 5
                 },
                 {
                     "Address": 86,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if no jump"
                 },
                 {
                     "Address": 87,
@@ -35507,15 +35573,19 @@
                 },
                 {
                     "Address": 94,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "read control bits"
                 },
                 {
                     "Address": 97,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check for left/right",
+                    "OperandType": 5
                 },
                 {
                     "Address": 99,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if neither is pressed"
                 },
                 {
                     "Address": 100,
@@ -35532,15 +35602,19 @@
                 },
                 {
                     "Address": 106,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "read control bits"
                 },
                 {
                     "Address": 109,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check for duck",
+                    "OperandType": 5
                 },
                 {
                     "Address": 111,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if no jump"
                 },
                 {
                     "Address": 112,
@@ -44620,6 +44694,10 @@
                 {
                     "Address": 802,
                     "Comment": "A : animation index\nReturns:\nDE : ptr to animation sprite \nBC : ??"
+                },
+                {
+                    "Address": 831,
+                    "Comment": "A - animation index"
                 }
             ],
             "DataInfo": [
@@ -46029,11 +46107,14 @@
                 },
                 {
                     "Address": 361,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "screen width in chars",
+                    "OperandType": 3
                 },
                 {
                     "Address": 363,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "sub width to get offset to next line"
                 },
                 {
                     "Address": 364,
@@ -46060,7 +46141,8 @@
                 },
                 {
                     "Address": 373,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read character from room char map"
                 },
                 {
                     "Address": 374,
@@ -46098,7 +46180,8 @@
                 },
                 {
                     "Address": 386,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "offset both pointers to next line"
                 },
                 {
                     "Address": 387,
@@ -46437,7 +46520,8 @@
                 },
                 {
                     "Address": 504,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get player Y pixel position"
                 },
                 {
                     "Address": 507,
@@ -46449,7 +46533,8 @@
                 },
                 {
                     "Address": 510,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get player X char pos"
                 },
                 {
                     "Address": 513,
@@ -46459,7 +46544,8 @@
                 },
                 {
                     "Address": 516,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get player animation index"
                 },
                 {
                     "Address": 519,
@@ -47714,6 +47800,14 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 351,
+                    "Comment": "DE : offset to screen char map\nB : height in chars\nC : width in chars"
+                },
+                {
+                    "Address": 504,
+                    "Comment": "returns:\nA : ??"
+                },
+                {
                     "Address": 797,
                     "Comment": "A : room instance number\nreturns:\nBC : Size\nHL : instance data pointer"
                 },
@@ -47985,17 +48079,17 @@
                 {
                     "Address": 351,
                     "LabelType": 1,
-                    "Name": "function_B15F"
+                    "Name": "SetRoomForegroundBits"
                 },
                 {
                     "Address": 367,
                     "LabelType": 2,
-                    "Name": "label_B16F"
+                    "Name": "vertical_loop"
                 },
                 {
                     "Address": 371,
                     "LabelType": 2,
-                    "Name": "label_B173"
+                    "Name": "horizontal_loop"
                 },
                 {
                     "Address": 379,
@@ -48006,7 +48100,7 @@
                     "Address": 384,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "operand_B180"
+                    "Name": "operand_OffsetToNextLine"
                 },
                 {
                     "Address": 394,
@@ -50938,6 +51032,10 @@
                 {
                     "Address": 538,
                     "Comment": "HL : Source 8x8 image\nDE : Screen dest address\nUpon return DE points to next char screen address\n"
+                },
+                {
+                    "Address": 983,
+                    "Comment": "A : Room number"
                 }
             ],
             "DataInfo": [
@@ -51383,7 +51481,7 @@
                 {
                     "Address": 983,
                     "LabelType": 1,
-                    "Name": "function_B7D7"
+                    "Name": "DrawRoomInRoom"
                 },
                 {
                     "Address": 986,
@@ -51632,7 +51730,8 @@
                 },
                 {
                     "Address": 93,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 96,
@@ -51646,11 +51745,13 @@
                 {
                     "Address": 100,
                     "ByteSize": 3,
+                    "Comment": "jump if sign negative (ffh)",
                     "OperandType": 2
                 },
                 {
                     "Address": 103,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "check against room number"
                 },
                 {
                     "Address": 104,
@@ -51760,7 +51861,8 @@
                 },
                 {
                     "Address": 134,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "get room number from E"
                 },
                 {
                     "Address": 135,
@@ -51780,7 +51882,7 @@
                 {
                     "Address": 141,
                     "ByteSize": 2,
-                    "Comment": "terminator?",
+                    "Comment": "room within room",
                     "OperandType": 2
                 },
                 {
@@ -54005,7 +54107,7 @@
                 {
                     "Address": 134,
                     "LabelType": 2,
-                    "Name": "label_B886"
+                    "Name": "RoomItemOtherRoom"
                 },
                 {
                     "Address": 139,
@@ -55676,7 +55778,7 @@
                 {
                     "Address": 585,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 588,
@@ -57190,6 +57292,11 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 107,
+                    "Comment": "player control bits",
+                    "DisplayType": 5
+                },
+                {
                     "Address": 327,
                     "ByteSize": 2,
                     "DataType": 2,
@@ -57840,7 +57947,7 @@
                     "Address": 107,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_C06B"
+                    "Name": "PlayerControl"
                 },
                 {
                     "Address": 111,
@@ -58015,6 +58122,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "TopFrameChars"
+                },
+                {
+                    "Address": 749,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_C2ED"
                 },
                 {
                     "Address": 952,
