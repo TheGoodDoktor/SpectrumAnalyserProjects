@@ -271,6 +271,12 @@
                     "Name": "data_5C49"
                 },
                 {
+                    "Address": 77,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C4D"
+                },
+                {
                     "Address": 93,
                     "Global": true,
                     "LabelType": 0,
@@ -293,6 +299,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5C65"
+                },
+                {
+                    "Address": 114,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C72"
                 },
                 {
                     "Address": 116,
@@ -449,6 +461,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_60F4"
+                },
+                {
+                    "Address": 248,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_60F8"
                 },
                 {
                     "Address": 294,
@@ -9494,6 +9512,12 @@
                     "Address": 252,
                     "LabelType": 2,
                     "Name": "label_80FC"
+                },
+                {
+                    "Address": 253,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "operand_80FD"
                 },
                 {
                     "Address": 258,
@@ -38137,92 +38161,87 @@
                 {
                     "Address": 720,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 721,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "update frame counter",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 724,
-                    "ByteSize": 1,
+                    "ByteSize": 2,
                     "Flags": 2,
-                    "SMC": true
-                },
-                {
-                    "Address": 725,
-                    "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 728,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "left arrow",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 731,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "attribute value",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 733,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 736,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "right arrow",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 739,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 742,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 745,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 748,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 751,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
@@ -38234,91 +38253,93 @@
                 },
                 {
                     "Address": 755,
-                    "ByteSize": 1,
-                    "Flags": 2,
-                    "SMC": true
-                },
-                {
-                    "Address": 756,
-                    "ByteSize": 2,
+                    "ByteSize": 3,
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 758,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 761,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 764,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 767,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 770,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 773,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 776,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "delay?",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 778,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 780,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "read keyboard",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 782,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 783,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 785,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
@@ -38330,79 +38351,84 @@
                 },
                 {
                     "Address": 789,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 791,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 794,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 796,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 799,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 801,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 804,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 807,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 808,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 810,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 813,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 815,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
@@ -38414,68 +38440,71 @@
                 },
                 {
                     "Address": 819,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 822,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 824,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 825,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 827,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "left arrow location",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 830,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "right arrow location",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 833,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 836,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 839,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 841,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
@@ -38483,25 +38512,27 @@
                 {
                     "Address": 844,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 845,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 847,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 850,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
@@ -38514,87 +38545,93 @@
                 },
                 {
                     "Address": 854,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 856,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 859,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 861,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 864,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 865,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 868,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 870,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 871,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 873,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "right arrow attr address",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 876,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "left arrow attr address",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 879,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 881,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
@@ -38607,7 +38644,7 @@
                 },
                 {
                     "Address": 887,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
@@ -38615,83 +38652,92 @@
                 {
                     "Address": 890,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 891,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 892,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 893,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 894,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 897,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 899,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 900,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 903,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 905,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 908,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 909,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 912,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
@@ -38702,7 +38748,7 @@
                 },
                 {
                     "Address": 914,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
@@ -38722,74 +38768,65 @@
                 },
                 {
                     "Address": 919,
-                    "ByteSize": 1,
-                    "Flags": 2,
-                    "SMC": true
-                },
-                {
-                    "Address": 920,
-                    "ByteSize": 1,
-                    "Comment": "write attribute",
-                    "Flags": 2,
-                    "SMC": true
-                },
-                {
-                    "Address": 921,
                     "ByteSize": 3,
-                    "Comment": "offset to next line",
                     "Flags": 2,
-                    "OperandType": 3,
                     "SMC": true
                 },
                 {
                     "Address": 924,
                     "ByteSize": 1,
                     "Comment": "add offset",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 925,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 926,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 927,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 928,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 929,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 932,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 935,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
@@ -38815,8 +38852,8 @@
                 },
                 {
                     "Address": 944,
-                    "ByteSize": 1,
-                    "Flags": 2,
+                    "ByteSize": 3,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
@@ -38835,7 +38872,7 @@
                 },
                 {
                     "Address": 952,
-                    "ByteSize": 1,
+                    "ByteSize": 2,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
@@ -38843,13 +38880,15 @@
                 {
                     "Address": 955,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 957,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
@@ -38861,61 +38900,64 @@
                 },
                 {
                     "Address": 962,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 964,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 967,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 969,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 972,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "white text",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 974,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 977,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "cyan text",
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 979,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 982,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "SMC": true
                 },
@@ -38927,7 +38969,7 @@
                 },
                 {
                     "Address": 985,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
@@ -38935,67 +38977,74 @@
                 {
                     "Address": 988,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 989,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "5x5 chars",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 992,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 993,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "control icon attrib location",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 996,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 997,
                     "ByteSize": 1,
                     "Comment": "write control icon attribute",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 998,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 999,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 1001,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 1002,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "offset to next line",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 3,
                     "SMC": true
                 },
@@ -39003,25 +39052,27 @@
                     "Address": 1005,
                     "ByteSize": 1,
                     "Comment": "add offset",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 1006,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 1007,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 1010,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "text attr location",
                     "Flags": 2,
                     "OperandType": 1,
@@ -39029,42 +39080,30 @@
                 },
                 {
                     "Address": 1013,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "8x2 for text",
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 1016,
-                    "ByteSize": 1,
-                    "Flags": 2,
-                    "SMC": true
-                },
-                {
-                    "Address": 1017,
-                    "ByteSize": 1,
-                    "Comment": "write screen attribute",
-                    "Flags": 2,
-                    "SMC": true
-                },
-                {
-                    "Address": 1018,
-                    "ByteSize": 1,
-                    "Flags": 2,
-                    "SMC": true
-                },
-                {
-                    "Address": 1019,
-                    "ByteSize": 2,
+                    "ByteSize": 3,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
+                    "Address": 1019,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
+                    "SMC": true
+                },
+                {
                     "Address": 1021,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "offset to next line",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 3,
                     "SMC": true
                 }
@@ -39104,7 +39143,7 @@
                 {
                     "Address": 725,
                     "DataType": 11,
-                    "InstructionAddressRef": 3604283396
+                    "InstructionAddressRef": 3604217860
                 },
                 {
                     "Address": 726,
@@ -39259,12 +39298,12 @@
                 {
                     "Address": 756,
                     "DataType": 11,
-                    "InstructionAddressRef": 3606315012
+                    "InstructionAddressRef": 3606249476
                 },
                 {
                     "Address": 757,
                     "DataType": 11,
-                    "InstructionAddressRef": 3606315012
+                    "InstructionAddressRef": 3606249476
                 },
                 {
                     "Address": 758,
@@ -40079,12 +40118,12 @@
                 {
                     "Address": 920,
                     "DataType": 11,
-                    "InstructionAddressRef": 3617062916
+                    "InstructionAddressRef": 3616997380
                 },
                 {
                     "Address": 921,
                     "DataType": 11,
-                    "InstructionAddressRef": 3617128452
+                    "InstructionAddressRef": 3616997380
                 },
                 {
                     "Address": 922,
@@ -40564,12 +40603,12 @@
                 {
                     "Address": 1017,
                     "DataType": 11,
-                    "InstructionAddressRef": 3623419908
+                    "InstructionAddressRef": 3623354372
                 },
                 {
                     "Address": 1018,
                     "DataType": 11,
-                    "InstructionAddressRef": 3623485444
+                    "InstructionAddressRef": 3623354372
                 },
                 {
                     "Address": 1019,
@@ -40717,45 +40756,49 @@
                     "Address": 0,
                     "ByteSize": 1,
                     "Comment": "add offset to attr pointer",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 1,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 2,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 3,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 6,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 7,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 10,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
@@ -40817,7 +40860,7 @@
                     "Address": 29,
                     "ByteSize": 1,
                     "Comment": "loop count 40",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 3,
                     "SMC": true
                 },
@@ -40875,21 +40918,22 @@
                 },
                 {
                     "Address": 44,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 47,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "mask bottom 3 bits of a for pixel shift count",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 49,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "skip if 0",
                     "Flags": 2,
                     "OperandType": 2,
@@ -40897,7 +40941,7 @@
                 },
                 {
                     "Address": 52,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "last byte in buffer",
                     "Flags": 2,
                     "OperandType": 1,
@@ -40905,7 +40949,7 @@
                 },
                 {
                     "Address": 55,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "loop count",
                     "Flags": 2,
                     "OperandType": 3,
@@ -40913,7 +40957,7 @@
                 },
                 {
                     "Address": 57,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "rotate bits",
                     "Flags": 2,
                     "SMC": true
@@ -40921,66 +40965,70 @@
                 {
                     "Address": 59,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 60,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 62,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 63,
-                    "ByteSize": 3,
+                    "ByteSize": 2,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 66,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 69,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 71,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 74,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 77,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "set text cursor pos",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 80,
-                    "ByteSize": 4,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
@@ -40993,7 +41041,7 @@
                 },
                 {
                     "Address": 85,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "check for terminator",
                     "Flags": 2,
                     "SMC": true
@@ -41012,7 +41060,7 @@
                 },
                 {
                     "Address": 89,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
@@ -41020,25 +41068,27 @@
                 {
                     "Address": 92,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 93,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 94,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 97,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
@@ -41046,62 +41096,68 @@
                 {
                     "Address": 100,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 101,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 102,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 103,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 104,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 107,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 108,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 111,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 112,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 114,
-                    "ByteSize": 1,
+                    "ByteSize": 3,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
@@ -41115,7 +41171,7 @@
                 },
                 {
                     "Address": 121,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "character code",
                     "Flags": 2,
                     "OperandType": 2,
@@ -41124,7 +41180,7 @@
                 {
                     "Address": 124,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
@@ -41154,39 +41210,44 @@
                     "Address": 134,
                     "ByteSize": 1,
                     "Comment": "mult by 8",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 135,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 136,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 137,
                     "ByteSize": 1,
                     "Comment": "add to base",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 138,
                     "ByteSize": 1,
                     "Comment": "put in DE",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 139,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
@@ -41194,12 +41255,13 @@
                     "Address": 142,
                     "ByteSize": 1,
                     "Comment": "increment x pos?",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 143,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
@@ -41244,19 +41306,22 @@
                 {
                     "Address": 155,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 156,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 157,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
@@ -41274,60 +41339,66 @@
                 },
                 {
                     "Address": 162,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "loop count",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 164,
                     "ByteSize": 1,
                     "Comment": "read point pixel line",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 165,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 166,
                     "ByteSize": 1,
                     "Comment": "write screen pixel",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 167,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 168,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 170,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 266,
-                    "ByteSize": 4,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 270,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
@@ -41347,13 +41418,15 @@
                 {
                     "Address": 275,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 276,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
@@ -41370,13 +41443,13 @@
                 },
                 {
                     "Address": 280,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 282,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
@@ -41384,84 +41457,87 @@
                 {
                     "Address": 285,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 286,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 288,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 290,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 291,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 294,
-                    "ByteSize": 4,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 298,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 299,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 302,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 304,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 307,
-                    "ByteSize": 4,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 311,
-                    "ByteSize": 4,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 315,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
@@ -41475,57 +41551,63 @@
                 {
                     "Address": 321,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 322,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 323,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 325,
                     "ByteSize": 1,
                     "Comment": "mult by 4",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 326,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 327,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 330,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 331,
-                    "ByteSize": 4,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 335,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "SMC": true
                 },
@@ -41540,21 +41622,24 @@
                     "Address": 339,
                     "ByteSize": 1,
                     "Comment": "get src image",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 340,
                     "ByteSize": 1,
                     "Comment": "xor with dest",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 341,
                     "ByteSize": 1,
                     "Comment": "write to dest",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
@@ -41572,14 +41657,14 @@
                 },
                 {
                     "Address": 344,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 346,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "offset to next line of src",
                     "Flags": 2,
                     "SMC": true
@@ -41613,58 +41698,62 @@
                     "Address": 353,
                     "ByteSize": 1,
                     "Comment": "dec high byte of counter",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 354,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 357,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 358,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 361,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 363,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 366,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 369,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 372,
-                    "ByteSize": 3,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
@@ -41691,15 +41780,8 @@
                 },
                 {
                     "Address": 381,
-                    "ByteSize": 1,
-                    "Flags": 10,
-                    "OperandType": 2,
-                    "SMC": true
-                },
-                {
-                    "Address": 382,
-                    "ByteSize": 1,
-                    "Flags": 10,
+                    "ByteSize": 3,
+                    "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
                 },
@@ -41841,16 +41923,8 @@
                 },
                 {
                     "Address": 413,
-                    "ByteSize": 1,
+                    "ByteSize": 2,
                     "Comment": "add x coord",
-                    "Flags": 10,
-                    "OperandType": 2,
-                    "SMC": true
-                },
-                {
-                    "Address": 414,
-                    "ByteSize": 1,
-                    "Comment": "put in low byte of address",
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
@@ -41882,21 +41956,24 @@
                     "Address": 419,
                     "ByteSize": 1,
                     "Comment": "push dest ptr",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 420,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "horizontal char count",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 423,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "draw horizontal line to screen",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
@@ -41929,34 +42006,28 @@
                 },
                 {
                     "Address": 429,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 432,
-                    "ByteSize": 1,
-                    "Flags": 2,
-                    "SMC": true
-                },
-                {
-                    "Address": 433,
-                    "ByteSize": 1,
-                    "Comment": "pop vertical counter",
+                    "ByteSize": 2,
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 434,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 435,
-                    "ByteSize": 2,
-                    "Flags": 2,
+                    "ByteSize": 1,
+                    "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
@@ -41968,7 +42039,7 @@
                 },
                 {
                     "Address": 438,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "pointer to offscreen buffer",
                     "Flags": 2,
                     "OperandType": 1,
@@ -41976,7 +42047,7 @@
                 },
                 {
                     "Address": 441,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "x&y char coord (6,0)",
                     "Flags": 2,
                     "SMC": true
@@ -41998,54 +42069,57 @@
                 {
                     "Address": 449,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 450,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 451,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "set to NOP - don't skip byte",
-                    "Flags": 2,
+                    "Flags": 10,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 454,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "set h char count",
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 456,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 459,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 10,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 462,
-                    "ByteSize": 2,
+                    "ByteSize": 1,
                     "Comment": "restore h char count to 5",
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 464,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 1,
                     "SMC": true
@@ -42053,12 +42127,13 @@
                 {
                     "Address": 467,
                     "ByteSize": 1,
-                    "Flags": 2,
+                    "Flags": 10,
+                    "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 468,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Comment": "restore op code",
                     "Flags": 2,
                     "OperandType": 1,
@@ -43600,12 +43675,12 @@
                 {
                     "Address": 382,
                     "DataType": 11,
-                    "InstructionAddressRef": 3648913412
+                    "InstructionAddressRef": 3648847876
                 },
                 {
                     "Address": 383,
                     "DataType": 11,
-                    "InstructionAddressRef": 3648913412
+                    "InstructionAddressRef": 3648847876
                 },
                 {
                     "Address": 384,
@@ -43760,7 +43835,7 @@
                 {
                     "Address": 414,
                     "DataType": 11,
-                    "InstructionAddressRef": 3651010564
+                    "InstructionAddressRef": 3650945028
                 },
                 {
                     "Address": 415,
@@ -43855,7 +43930,7 @@
                 {
                     "Address": 433,
                     "DataType": 11,
-                    "InstructionAddressRef": 3652255748
+                    "InstructionAddressRef": 3652190212
                 },
                 {
                     "Address": 434,
@@ -44700,10 +44775,27 @@
                     "Name": "data_EA2D"
                 },
                 {
+                    "Address": 683,
+                    "LabelType": 2,
+                    "Name": "label_EAAB"
+                },
+                {
                     "Address": 908,
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_EB8C"
+                },
+                {
+                    "Address": 910,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_EB8E"
+                },
+                {
+                    "Address": 912,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_EB90"
                 }
             ],
             "PageId": 74
