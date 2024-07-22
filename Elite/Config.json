@@ -1,12 +1,15 @@
 {
     "128KGame": false,
+    "LuaSourceFiles": [
+        "EliteViewer.lua"
+    ],
     "Machine": "",
-    "Name": "Zynaps",
+    "Name": "Elite",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 35756,
+                "ViewAddress": 47847,
                 "ViewAddressBank": 3
             },
             {
@@ -27,9 +30,9 @@
         ]
     },
     "Snapshot": {
-        "DisplayName": "Zynaps",
-        "FileName": "Zynaps.z80",
+        "DisplayName": "Elite",
+        "FileName": "Elite.sna",
         "ListName": "Snapshot File",
-        "Type": 0
+        "Type": 1
     }
 }
