@@ -1,5 +1,47 @@
 -- Data Formatter
 
+TwoLetterTokens = 
+{
+	"AL",
+	"LE",
+	"XE",
+	"GE",
+	"ZA",
+	"CE",
+	"BI",
+	"SO",
+	"US",
+	"ES",
+	"AR",
+	"MA",
+	"IN",
+	"DI",
+	"RE",
+	"A?",
+	"ER",
+	"AT",
+	"EN",
+	"BE",
+	"RA",
+	"LA",
+	"VE",
+	"TI",
+	"ED",
+	"OR",
+	"QU",
+	"AN",
+	"TE",
+	"IS",
+	"RI",
+	"ON",
+}
+
+ControlCodes = 
+{
+	"Null",
+	"",
+}
+
 function SetAddressAscii(address)
 	FormatMemory({StartAddress = address, DataType = EDataType.Byte, DisplayType = EDataItemDisplayType.Ascii})
 end
@@ -8,12 +50,12 @@ function SetAddressDecimal(address)
 	FormatMemory({StartAddress = address, DataType = EDataType.Byte, DisplayType = EDataItemDisplayType.Decimal})
 end
 
-function FormatRecursiveTokens(address)
+function FormatRecursiveTokens(address, endAddress)
 	
 	local tokenNo = 0
 	local tokenStart = true
 
-	while address < 0x9E71 do
+	while address < endAddress do
 
 		local tokenByte = ReadByte(address)
 
@@ -43,7 +85,7 @@ function FormatRecursiveTokens(address)
 			SetDataItemComment(address, string.format("Recursive token %d",tokenByte)	)
 		elseif tokenByte < 160 then	-- Two-letter tokens
 			SetAddressDecimal(address)
-			SetDataItemComment(address, string.format("Two letter token %d",tokenByte - 128)	)
+			SetDataItemComment(address, string.format("\"%s\" - Two letter token %d",TwoLetterTokens[tokenByte - 127],tokenByte - 128)	)
 		else	-- Recursive tokens 0-95
 			SetAddressDecimal(address)
 			SetDataItemComment(address, string.format("Recursive token %d",tokenByte - 160)	)
@@ -69,8 +111,9 @@ BasicViewer =
         -- gets called every fram
         --imgui.Text("Data Formatter" .. tostring(self.name))
 
-		if imgui.Button("Process Recursive Tokens") then
-			FormatRecursiveTokens(globals.RecursiveTokens)
+		if imgui.Button("Process Recursive Tokens 2") then
+			FormatRecursiveTokens(globals.RecursiveTokens,0x9E71)
+			--FormatRecursiveTokens(globals.RecursiveTokens2,0x9965)
 		end
 
     end
