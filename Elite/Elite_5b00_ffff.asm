@@ -1664,23 +1664,23 @@ data_6159:
 	.db $00 
 data_6162:
 	.db $00 
-	.db $30 
+	.db $95 
 	.db $00 
-	.db $3F 
+	.db $2D 
 	.db $FF 
-	.db $63 
+	.db $77 
 	.db $00 
-	.db $75 
+	.db $5B 
 	.db $FF 
-	.db $AA 
+	.db $CE 
 	.db $00 
-	.db $9D 
+	.db $2D 
 	.db $FF 
-	.db $92 
+	.db $D8 
 	.db $00 
-	.db $E5 
+	.db $DB 
 	.db $00 
-	.db $49 
+	.db $13 
 	.db $00 
 	.db $00 
 	.db $C0 
@@ -5373,10 +5373,10 @@ ExtControlCode_JumpTable:
 data_7003:
 	.db $20 
 SentenceBuffer:
-	.text ''
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
 	.db $00 
 SentenceWorkspace:
-	.text ''
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
 data_7041:
 	.db $00 
 data_7042:
@@ -6745,7 +6745,6 @@ label_78DB:
 	LD   D,A
 	AND  $07
 	LD   C,$FF
-operand_78ED:
 	LD   B,A
 	LD   A,D
 	JR   Z,label_7902
@@ -6777,7 +6776,6 @@ label_7902:
 label_7915:
 	PUSH HL
 	LD   A,$FF
-operand_7917:
 label_7918:
 	LD   (HL),A
 	INC  L
@@ -6809,7 +6807,6 @@ label_7935:
 label_7937:
 	PUSH HL
 	LD   A,$FF
-operand_7939:
 label_793A:
 	LD   (HL),A
 	INC  L
@@ -6963,7 +6960,6 @@ label_7A20:
 	LD   A,(data_7ADE)
 	DEC  A
 	JR   Z,label_7A2B
-operand_7A25:
 	LD   (data_7ADE),A
 	JR   label_7A09
 label_7A2B:
@@ -8861,7 +8857,6 @@ function_8430:
 	LD   L,A
 	JR   NC,label_8440
 	LD   A,$BF
-operand_843B:
 	CP   H
 	JR   Z,label_845A
 	RET 
@@ -8879,7 +8874,6 @@ function_8445:
 	LD   L,A
 	JR   NC,label_8455
 	LD   A,$D0
-operand_8450:
 	CP   H
 	JR   Z,label_845A
 	RET 
@@ -9140,12 +9134,10 @@ function_85C4:
 	LD   (data_80E8),A
 	LD   (operand_8450),A
 	LD   A,$4F
-operand_85D7:
 	LD   (data_833F),A
 	LD   (operand_8129),A
 	LD   (data_8236),A
 	LD   A,$3F
-operand_85E2:
 	LD   (data_8338),A
 	LD   (operand_8122),A
 	LD   (data_822F),A
@@ -10758,7 +10750,6 @@ label_8F14:
 	LD   (operand_8F18),HL
 function_8F17:
 	CALL function_8F17
-operand_8F18:
 	LD   SP,(data_8F00)
 	JP   label_7C09
 function_8F21:
@@ -11052,7 +11043,6 @@ function_90AF:
 	LD   DE,(data_902C)
 label_90B6:
 	LD   C,$40
-operand_90B7:
 label_90B8:
 	LD   A,(HL)
 	AND  $18
@@ -15262,24 +15252,19 @@ label_A334:
 	JR   NZ,label_A36E
 function_A347:
 	LD   A,$BF
-operand_A348:
 	LD   (operand_A359),A
 	LD   A,$9F
-operand_A34D:
 	LD   (operand_A360),A
 	XOR  A
 	LD   (operand_A362),A
 label_A355:
 	CALL function_A465
 	AND  $BF
-operand_A359:
 	LD   (DE),A
 	INC  DE
 	CALL function_A465
 	AND  $9F
-operand_A360:
 	OR   $80
-operand_A362:
 	LD   (DE),A
 	INC  DE
 	CALL function_A465
@@ -16580,21 +16565,16 @@ label_AA4C:
 	PUSH BC
 	LD   A,(SystemSeed_1H)
 	CP   $00
-operand_AA51:
 	JR   C,label_AA68
 	CP   $00
-operand_AA55:
 	JR   NC,label_AA68
 	LD   A,(SystemSeed_0H)
 	CP   $00
-operand_AA5C:
 	JR   C,label_AA68
 	CP   $00
-operand_AA60:
 	JR   NC,label_AA68
 function_AA63:
 	CALL function_AA63
-operand_AA64:
 	JR   label_AA6B
 label_AA68:
 	CALL function_AD17
@@ -16647,7 +16627,6 @@ label_AAAB:
 	LD   C,$00
 	JR   Z,label_AABD
 	LD   B,$01
-operand_AAB6:
 label_AAB7:
 	SRL  A
 	RR   C
@@ -25259,89 +25238,89 @@ label_E206:
 label_E21F:
 	LD   C,A
 	JR   label_E1AC
-	.db $06 
-	.db $08 
-	.db $00 
-	.db $0E 
-	.db $1E 
-	.db $00 
-	.db $0E 
-	.db $01 
-	.db $00 
-	.db $10 
-	.db $32 
-	.db $00 
-	.db $24 
-	.db $1B 
-	.db $03 
-	.db $10 
-	.db $16 
-	.db $00 
-	.db $0A 
-	.db $2B 
-	.db $03 
-	.db $17 
-	.db $32 
-	.db $03 
-	.db $0A 
-	.db $2F 
-	.db $00 
-	.db $06 
-	.db $11 
-	.db $01 
-	.db $0D 
-	.db $05 
-	.db $02 
-	.db $15 
 	.db $12 
-	.db $03 
+	.db $05 
 	.db $02 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $0B 
-	.db $01 
-	.db $01 
-	.db $11 
-	.db $03 
-	.db $07 
-	.db $1A 
-	.db $03 
-	.db $10 
+	.db $04 
 	.db $16 
+	.db $00 
+	.db $04 
 	.db $03 
-	.db $0F 
-	.db $0B 
+	.db $01 
+	.db $30 
+	.db $25 
+	.db $00 
+	.db $2F 
+	.db $25 
 	.db $03 
+	.db $2E 
 	.db $0D 
-	.db $05 
+	.db $00 
+	.db $1A 
+	.db $2A 
 	.db $03 
-	.db $07 
-	.db $04 
-	.db $02 
-	.db $04 
+	.db $33 
+	.db $2E 
+	.db $03 
+	.db $39 
+	.db $25 
+	.db $00 
+	.db $0C 
+	.db $11 
+	.db $01 
+	.db $0A 
+	.db $0A 
+	.db $00 
+	.db $10 
+	.db $0A 
+	.db $03 
 	.db $16 
 	.db $00 
+	.db $01 
+	.db $0B 
+	.db $0A 
+	.db $01 
+	.db $04 
+	.db $0F 
+	.db $01 
+	.db $08 
+	.db $17 
+	.db $03 
+	.db $0E 
+	.db $10 
+	.db $03 
+	.db $03 
 	.db $05 
-	.db $19 
+	.db $03 
+	.db $03 
 	.db $00 
 	.db $01 
-	.db $17 
+	.db $10 
+	.db $07 
 	.db $00 
+	.db $07 
+	.db $0D 
+	.db $02 
 	.db $08 
+	.db $10 
+	.db $02 
+	.db $25 
+	.db $13 
+	.db $00 
+	.db $29 
+	.db $0F 
+	.db $00 
+	.db $2A 
 	.db $14 
 	.db $00 
-	.db $07 
-	.db $19 
-	.db $00 
-	.db $0D 
-	.db $27 
+	.db $1A 
+	.db $24 
 	.db $03 
-	.db $11 
-	.db $28 
-	.db $03 
-	.db $12 
+	.db $1F 
 	.db $25 
+	.db $03 
+	.db $1E 
+	.db $21 
 	.db $03 
 	.db $00 
 	.db $00 
@@ -25401,55 +25380,55 @@ data_E2AC:
 	.db $00 
 	.db $00 
 	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
 	.db $01 
-	.db $00 
 	.db $01 
-	.db $00 
 	.db $01 
-	.db $00 
 	.db $01 
-	.db $00 
-	.db $00 
-	.db $00 
 	.db $01 
 	.db $01 
 	.db $01 
 data_E2BC:
 	.db $7E 
-	.db $92 
+	.db $D8 
 	.db $81 
-	.db $75 
+	.db $5B 
 	.db $F3 
-	.db $30 
+	.db $95 
 	.db $81 
-	.db $E5 
+	.db $DB 
 	.db $7E 
-	.db $AA 
+	.db $CE 
 	.db $F3 
-	.db $3F 
+	.db $2D 
 	.db $F2 
-	.db $49 
+	.db $13 
 	.db $F2 
-	.db $9D 
+	.db $2D 
 	.db $F3 
-	.db $63 
+	.db $77 
+	.db $06 
+	.db $00 
+	.db $13 
+	.db $00 
+	.db $02 
+	.db $80 
 	.db $00 
 	.db $80 
-	.db $1C 
-	.db $00 
+	.db $13 
+	.db $80 
 	.db $05 
 	.db $00 
 	.db $00 
-	.db $80 
+	.db $00 
 	.db $0A 
-	.db $80 
-	.db $07 
 	.db $00 
-	.db $00 
-	.db $00 
-	.db $06 
-	.db $80 
-	.db $0C 
+	.db $0E 
 	.db $00 
 data_E2E0:
 	.db $02 
@@ -25457,14 +25436,14 @@ data_E2E0:
 data_E2E2:
 	.db $FD 
 data_E2E3:
-	.db $27 
+	.db $3A 
 	.db $00 
 data_E2E5:
-	.db $4D 
+	.db $3E 
 	.db $00 
 data_E2E7:
-	.db $12 
-	.db $02 
+	.db $E0 
+	.db $01 
 data_E2E9:
 	.db $00 
 data_E2EA:
@@ -25902,9 +25881,9 @@ label_E5C1:
 data_E5C8:
 	.db $00 
 data_E5C9:
-	.db $01 
+	.db $00 
 data_E5CA:
-	.db $01 
+	.db $00 
 label_E5CB:
 	PUSH IY
 	LD   A,(data_E2E0)
@@ -26392,20 +26371,20 @@ data_E917:
 data_E919:
 	.db $01 
 data_E91A:
-	.db $10 
+	.db $0A 
 	.db $00 
 data_E91C:
-	.db $01 
+	.db $07 
 	.db $80 
 data_E91E:
-	.db $03 
+	.db $0C 
 	.db $01 
 data_E920:
-	.db $21 
+	.db $14 
 data_E921:
-	.db $83 
+	.db $8E 
 data_E922:
-	.db $06 
+	.db $18 
 function_E923:
 	PUSH IX
 	PUSH IY
@@ -27831,11 +27810,11 @@ operand_F203:
 	DEC  D
 	RET  Z
 	LD   A,E
-	ADD  A,$55
+	ADD  A,$40
 data_F209:
 	LD   E,A
 	JR   NC,label_F211
-	RLC  C
+	RRC  C
 data_F20E:
 	JR   C,data_F224
 label_F211:
@@ -27853,7 +27832,7 @@ label_F211:
 	LD   H,A
 	JR   label_F202
 data_F224:
-	DEC  L
+	INC  L
 	JP   label_F211
 data_F228:
 	DEC  L
@@ -27870,7 +27849,7 @@ operand_F231:
 	DEC  D
 	RET  Z
 	LD   A,E
-	ADD  A,$66
+	ADD  A,$C0
 data_F237:
 	LD   E,A
 	JR   NC,label_F22C
@@ -27898,11 +27877,11 @@ operand_F252:
 	DEC  D
 	RET  Z
 	LD   A,E
-	ADD  A,$71
+	ADD  A,$22
 data_F258:
 	LD   E,A
 	JR   NC,label_F260
-	RLC  C
+	RRC  C
 data_F25D:
 	JR   C,data_F275
 label_F260:
@@ -27920,7 +27899,7 @@ label_F260:
 	LD   H,A
 	JP   label_F251
 data_F275:
-	DEC  L
+	INC  L
 	JP   label_F260
 label_F279:
 	RLC  C
@@ -27934,7 +27913,7 @@ operand_F27E:
 	DEC  D
 	RET  Z
 	LD   A,E
-	ADD  A,$40
+	ADD  A,$33
 data_F284:
 	LD   E,A
 	JR   NC,label_F279
@@ -29682,7 +29661,7 @@ InterruptHandler:
 	.db $56 
 	.db $C9 
 StackBackup:
-	.dw $FFDE
+	.dw $FFD2
 data_FF58:
 	.db $01 
 	.db $10 
@@ -29775,18 +29754,18 @@ data_FF58:
 	.db $00 
 	.db $3E 
 	.db $FF 
+	.db $00 
+	.db $FF 
 	.db $90 
 	.db $64 
+	.db $88 
+	.db $38 
 	.db $00 
-	.db $FF 
-	.db $96 
-	.db $00 
-	.db $FA 
-	.db $FF 
-	.db $08 
-	.db $20 
-	.db $33 
-	.db $97 
+	.db $06 
+	.db $9A 
+	.db $5F 
+	.db $D4 
+	.db $CB 
 InterruptStackTop:
 	.db $00 
 	.db $00 
@@ -29799,18 +29778,18 @@ InterruptStackTop:
 	.db $00 
 	.db $00 
 	.db $3C 
-	.db $6F 
+	.db $77 
 	.db $E4 
 	.dw $E9F7
-	.dw $0100
-	.dw $E9EE
-	.dw $E9C7
-	.dw $0004
-	.dw $E993
-	.dw $65FE
+	.dw $0102
+	.dw $E575
+	.dw $0019
+	.dw $EA06
+	.dw $E96D
+	.dw $6159
 	.dw $E2BC
-	.dw $E2AC
-	.dw $0D18
+	.dw $E2AD
+	.dw $0C0A
 	.dw $6490
 	.dw $6159
 	.dw $E19A
