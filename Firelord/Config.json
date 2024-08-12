@@ -1,0 +1,51 @@
+{
+    "128KGame": false,
+    "Machine": "",
+    "Name": "Firelord",
+    "Options": {
+        "ViewConfigs": [
+            {
+                "Enabled": true,
+                "ViewAddress": 49484,
+                "ViewAddressBank": 4
+            },
+            {
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
+            },
+            {
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
+            },
+            {
+                "Enabled": false,
+                "ViewAddress": 0,
+                "ViewAddressBank": -1
+            }
+        ]
+    },
+    "Snapshot": {
+        "DisplayName": "Firelord",
+        "FileName": "Firelord.z80",
+        "ListName": "Snapshot File",
+        "Type": 0
+    },
+    "SpriteConfigs": [
+        {
+            "BaseAddress": "0xb240",
+            "Count": 32,
+            "Height": 1,
+            "Name": "Firelord_Font",
+            "Width": 1
+        },
+        {
+            "BaseAddress": "0xb3b0",
+            "Count": 52,
+            "Height": 2,
+            "Name": "Firelord_Sprites",
+            "Width": 3
+        }
+    ]
+}
