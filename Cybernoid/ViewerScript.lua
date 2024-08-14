@@ -83,7 +83,7 @@ function ScreenViewer:Init()
 	ClearGraphicsView(self.graphicsView, 0)
 	DrawScreenToView(self,self.graphicsView,self.screenNo, 0, 0)
 	print("Cybernoid Viewer Initialised")
-	self.blockView = CreateZXGraphicsView(16,16);
+	self.blockView = CreateZXGraphicsView(16,16 * 170);
 end
 
 function ScreenViewer:Update()
@@ -121,12 +121,14 @@ function ScreenViewer:DrawUI()
 	DrawGraphicsView(self.blockView)
 
 	if imgui.Button("Export Blocks") then
-		for blockNo = 0,10 do
-			ClearGraphicsView(self.blockView,0)
-			DrawBlockToView(self.blockView,blockNo,0,0)
-			SaveGraphicsView2222(self.blockView,string.format("block%d.bin",blockNo))
+		ClearGraphicsView(self.blockView,0)
+		for blockNo = 0,170 do
+			DrawBlockToView(self.blockView,blockNo,0,blockNo * 16)
 		end
+		SaveGraphicsView2222(self.blockView,string.format("blocks.bin",blockNo))
 	end
+--ClearGraphicsView(self.blockView,0)
+--DrawBlockToView(self.blockView,10,0,0)
 end
 
 
