@@ -10,7 +10,7 @@
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 26241,
+                "ViewAddress": 31105,
                 "ViewAddressBank": 2
             },
             {
@@ -44,5 +44,19 @@
             "Name": "Particles",
             "Width": 2
         }
+    ],
+    "StubOutFunctions": [
+        "DrawCharacter",
+        "DrawStringAt",
+        "DrawBackgroundBlockPixels",
+        "GetKeyPressedAscii",
+        "ReadKeyboardControls",
+        "PlayTitleTuneLoop",
+        "ClearScreen",
+        "ClearGameplayScreenRegion",
+        "CheckForKeyPress",
+        "GetPressedKeyAscii",
+        "ScrollTitleBars",
+        "InitialiseProgram"
     ]
 }
