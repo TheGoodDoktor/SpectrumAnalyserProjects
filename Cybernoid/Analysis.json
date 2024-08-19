@@ -3667,7 +3667,7 @@
                 {
                     "Address": 352,
                     "ByteSize": 3,
-                    "Flags": 8,
+                    "Flags": 40,
                     "OperandType": 2
                 },
                 {
@@ -33306,7 +33306,8 @@
                 {
                     "Address": 518,
                     "ByteSize": 3,
-                    "Comment": "E is >= 170",
+                    "Comment": "Xpos (E) is >= 170",
+                    "Flags": 32,
                     "OperandType": 2
                 },
                 {
@@ -67712,12 +67713,12 @@
             "CodeInfo": [
                 {
                     "Address": 824,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "OperandType": 2
                 },
                 {
                     "Address": 827,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "OperandType": 2
                 },
                 {
@@ -70932,6 +70933,26 @@
                     "DataType": 5,
                     "DisplayType": 6,
                     "GraphicsSetRef": 4010868740
+                },
+                {
+                    "Address": 825,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4013424644
+                },
+                {
+                    "Address": 826,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4013424644
+                },
+                {
+                    "Address": 828,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4013621252
+                },
+                {
+                    "Address": 829,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4013621252
                 }
             ],
             "LabelInfo": [
@@ -71692,9 +71713,7 @@
                 {
                     "Address": 249,
                     "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 7,
-                    "SMC": true
+                    "OperandType": 7
                 },
                 {
                     "Address": 252,
@@ -71761,9 +71780,7 @@
                 },
                 {
                     "Address": 273,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 275,
@@ -72257,31 +72274,6 @@
                     "Address": 1,
                     "DataType": 11,
                     "InstructionAddressRef": 4026466308
-                },
-                {
-                    "Address": 249,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4042850308
-                },
-                {
-                    "Address": 250,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4042850308
-                },
-                {
-                    "Address": 251,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4042850308
-                },
-                {
-                    "Address": 273,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4044423172
-                },
-                {
-                    "Address": 274,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4044423172
                 }
             ],
             "LabelInfo": [
@@ -73171,11 +73163,13 @@
                 {
                     "Address": 1010,
                     "ByteSize": 2,
+                    "Comment": "old cordinates",
                     "DataType": 2
                 },
                 {
                     "Address": 1012,
                     "ByteSize": 2,
+                    "Comment": "old image pointer",
                     "DataType": 2
                 },
                 {
