@@ -125,7 +125,7 @@ function ScreenViewer:DrawUI()
 		for blockNo = 0,170 do
 			DrawBlockToView(self.blockView,blockNo,0,blockNo * 16)
 		end
-		SaveGraphicsView2222(self.blockView,string.format("blocks.bin",blockNo))
+		SaveGraphicsView2222(self.blockView,string.format("blocks.ag2",blockNo))
 	end
 --ClearGraphicsView(self.blockView,0)
 --DrawBlockToView(self.blockView,10,0,0)

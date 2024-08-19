@@ -2399,8 +2399,8 @@
             "DataInfo": [
                 {
                     "Address": 490,
-                    "Comment": "some kind of timer?",
-                    "DisplayType": 11
+                    "Comment": "updated every game loop, reset on entering screen",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 541,
@@ -2684,7 +2684,7 @@
                     "Address": 490,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "FrameCounter"
+                    "Name": "ScreenFrameCounter"
                 },
                 {
                     "Address": 491,
@@ -8565,6 +8565,7 @@
                 {
                     "Address": 549,
                     "ByteSize": 3,
+                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -9602,6 +9603,10 @@
                 {
                     "Address": 104,
                     "Comment": "terminator"
+                },
+                {
+                    "Address": 282,
+                    "DisplayType": 3
                 },
                 {
                     "Address": 284,
@@ -36183,6 +36188,7 @@
                     "Address": 343,
                     "ByteSize": 3,
                     "Comment": "put base block ptr in BD",
+                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -67706,23 +67712,12 @@
             "CodeInfo": [
                 {
                     "Address": 824,
-                    "ByteSize": 1,
+                    "ByteSize": 3,
                     "OperandType": 2
                 },
                 {
                     "Address": 827,
-                    "ByteSize": 1,
-                    "OperandType": 2
-                },
-                {
-                    "Address": 828,
-                    "ByteSize": 1,
-                    "Flags": 1
-                },
-                {
-                    "Address": 829,
-                    "ByteSize": 1,
-                    "Flags": 9,
+                    "ByteSize": 3,
                     "OperandType": 2
                 },
                 {
@@ -70937,16 +70932,6 @@
                     "DataType": 5,
                     "DisplayType": 6,
                     "GraphicsSetRef": 4010868740
-                },
-                {
-                    "Address": 825,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4013424644
-                },
-                {
-                    "Address": 826,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4013424644
                 }
             ],
             "LabelInfo": [
@@ -71707,7 +71692,9 @@
                 {
                     "Address": 249,
                     "ByteSize": 3,
-                    "OperandType": 7
+                    "Flags": 2,
+                    "OperandType": 7,
+                    "SMC": true
                 },
                 {
                     "Address": 252,
@@ -71774,7 +71761,9 @@
                 },
                 {
                     "Address": 273,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 275,
@@ -72268,6 +72257,31 @@
                     "Address": 1,
                     "DataType": 11,
                     "InstructionAddressRef": 4026466308
+                },
+                {
+                    "Address": 249,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4042850308
+                },
+                {
+                    "Address": 250,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4042850308
+                },
+                {
+                    "Address": 251,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4042850308
+                },
+                {
+                    "Address": 273,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4044423172
+                },
+                {
+                    "Address": 274,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4044423172
                 }
             ],
             "LabelInfo": [
@@ -73157,7 +73171,6 @@
                 {
                     "Address": 1010,
                     "ByteSize": 2,
-                    "Comment": "transfer to IX",
                     "DataType": 2
                 },
                 {
