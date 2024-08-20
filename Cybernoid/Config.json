@@ -10,8 +10,8 @@
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 26105,
-                "ViewAddressBank": 2
+                "ViewAddress": 60513,
+                "ViewAddressBank": 4
             },
             {
                 "Enabled": false,
@@ -60,6 +60,8 @@
         "InitialiseProgram",
         "DrawMovingSpriteXOR",
         "DrawHUD",
-        "CheckForResetKeyCombo"
+        "CheckForResetKeyCombo",
+        "CheckDebugKeyCombo",
+        "DrawBlockXOR"
     ]
 }

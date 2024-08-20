@@ -6,10 +6,16 @@ blocksAddress = 0xD479
 blockAttribAddress = 0xE9B9
 curRoomNumberAddr = 0x744B
 spritesAddress = 0xC6F9
+particlesAddress = 0xEC61
 
 function DrawSpriteToView(graphicsView, spriteNo, x, y)
 	local spritePixels = GetMemPtr(spritesAddress + (spriteNo * 48))
 	DrawZXBitImage(graphicsView, spritePixels, x, y, 3, 2, 0x47)
+end
+
+function DrawParticleToView(graphicsView, particleNo, x, y)
+	local spritePixels = GetMemPtr(particlesAddress + (particleNo * 16))
+	DrawZXBitImage(graphicsView, spritePixels, x, y, 2, 1, 0x47)
 end
 
 function DrawBlockToView(graphicsView, blockNo, x, y)
@@ -91,6 +97,7 @@ function ScreenViewer:Init()
 	print("Cybernoid Viewer Initialised")
 	self.blockView = CreateZXGraphicsView(16,16 * 170);
 	self.spriteView = CreateZXGraphicsView(24,16 * 72);
+	self.particleView = CreateZXGraphicsView(16,8 * 44)
 end
 
 function ScreenViewer:Update()
@@ -128,6 +135,8 @@ function ScreenViewer:DrawUI()
 	DrawGraphicsView(self.blockView)
 	imgui.SameLine()
 	DrawGraphicsView(self.spriteView)
+	imgui.SameLine()
+	DrawGraphicsView(self.particleView)
 
 	if imgui.Button("Export Graphics") then
 		ClearGraphicsView(self.blockView,0)
@@ -138,9 +147,14 @@ function ScreenViewer:DrawUI()
 		for spriteNo = 0,71 do
 			DrawSpriteToView(self.spriteView,spriteNo,0,spriteNo * 16)
 		end
+		ClearGraphicsView(self.particleView,0)
+		for particleNo = 0,43 do
+			DrawParticleToView(self.particleView,particleNo,0,particleNo * 8)
+		end
 
 		SaveGraphicsView2222(self.blockView,"blocks.ag2")
 		SaveGraphicsView2222(self.spriteView,"sprites.ag2")
+		SaveGraphicsView2222(self.particleView,"particles.ag2")
 	end
 --ClearGraphicsView(self.blockView,0)
 --DrawBlockToView(self.blockView,10,0,0)

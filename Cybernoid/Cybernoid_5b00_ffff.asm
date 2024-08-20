@@ -15,33 +15,32 @@ data_5AC0: 	.equ $5AC0
 
 .org $5B00
 BackgroundAttributes:
-	.db $47,$45,$45,$45,$47,$47,$47,$45,$45,$45,$45,$45,$45,$45,$47,$05,$45,$45,$45,$45,$45,$45,$45,$47,$05,$45,$45,$45,$45,$45,$45,$47 
-	.db $45,$47,$47,$00,$00,$47,$45,$44,$45,$45,$45,$45,$45,$45,$47,$47,$46,$47,$47,$47,$47,$47,$47,$47,$43,$03,$00,$00,$00,$05,$45,$45 
-	.db $45,$47,$47,$46,$46,$07,$44,$04,$43,$43,$43,$43,$43,$43,$07,$46,$06,$47,$47,$43,$03,$47,$47,$07,$03,$42,$00,$04,$44,$05,$45,$45 
-	.db $47,$45,$45,$45,$45,$07,$05,$45,$45,$45,$45,$45,$45,$45,$07,$05,$45,$45,$45,$45,$45,$45,$45,$07,$05,$45,$45,$45,$45,$45,$45,$47 
-	.db $43,$43,$43,$42,$43,$42,$43,$42,$43,$42,$43,$43,$43,$43,$46,$06,$47,$45,$45,$07,$47,$46,$47,$45,$45,$07,$46,$06,$43,$42,$43,$43 
-	.db $42,$43,$42,$43,$42,$43,$43,$43,$42,$43,$42,$43,$42,$43,$46,$06,$47,$05,$05,$07,$06,$06,$47,$05,$05,$07,$46,$06,$42,$43,$42,$43 
-	.db $43,$42,$47,$45,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$47,$45,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$43,$43,$43,$42 
-	.db $42,$43,$47,$05,$06,$06,$06,$06,$06,$06,$06,$06,$06,$06,$47,$45,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$42,$43,$42,$43 
-	.db $43,$42,$46,$06,$00,$00,$47,$07,$00,$00,$47,$07,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$45,$46,$46,$47,$45,$43,$43,$43,$43 
-	.db $42,$43,$46,$06,$00,$00,$47,$07,$00,$00,$47,$07,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$45,$06,$06,$47,$05,$42,$43,$42,$43 
-	.db $43,$42,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$43,$42,$43,$43,$43,$43,$43,$43 
-data_5C48:
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
 data_5C5D:
 data_5C5F:
-	.db $43,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$42,$43,$42,$43,$42,$43,$42,$43 
-	.db $43,$42,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$43,$43,$43,$42,$43,$43,$43,$42 
-	.db $42,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$42,$43,$42,$43,$42,$43,$42,$43 
-	.db $43,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$43,$42,$43,$43,$43,$43,$43,$43 
-	.db $42,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$43,$43,$42,$43,$42,$43,$42,$43 
-	.db $43,$42,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$45,$46,$46,$47,$45,$43,$43,$43,$42 
-	.db $42,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$45,$06,$06,$47,$05,$42,$43,$42,$43 
-	.db $43,$42,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$07,$46,$06,$43,$42,$43,$42 
-	.db $42,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$07,$46,$06,$42,$43,$43,$43 
-	.db $43,$42,$46,$06,$00,$00,$00,$00,$47,$46,$00,$00,$00,$42,$43,$42,$43,$00,$00,$00,$00,$00,$42,$43,$00,$00,$47,$45,$46,$46,$46,$46 
-	.db $43,$43,$46,$06,$00,$00,$00,$00,$46,$06,$43,$42,$42,$43,$42,$43,$42,$43,$00,$00,$43,$42,$43,$42,$43,$42,$47,$05,$06,$06,$06,$06 
-	.db $43,$43,$46,$06,$00,$00,$00,$00,$46,$06,$43,$43,$43,$42,$43,$42,$43,$42,$43,$42,$43,$43,$43,$42,$43,$42,$43,$43,$43,$43,$43,$42 
-	.db $42,$43,$46,$06,$00,$00,$00,$00,$46,$06,$42,$43,$42,$43,$42,$43,$43,$43,$42,$43,$42,$43,$43,$43,$42,$43,$42,$43,$42,$43,$42,$43 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -303,26 +302,26 @@ CollisionMap:
 	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
 	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
 	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $01,$01,$02,$01,$03,$01,$04,$01,$05,$01,$01,$01,$01,$01,$15,$01,$16,$01,$17,$01,$18,$01,$16,$01,$17,$01,$15,$01,$02,$01,$01,$01 
-	.db $01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01 
-	.db $02,$01,$48,$01,$14,$01,$14,$01,$14,$01,$14,$01,$14,$01,$13,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$15,$01,$01,$01,$02,$01 
-	.db $01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01 
-	.db $03,$01,$15,$01,$00,$00,$1D,$01,$00,$00,$1F,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$10,$01,$14,$01,$4B,$01,$01,$01,$01,$01 
-	.db $01,$01,$01,$01,$00,$00,$01,$01,$00,$00,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01 
-	.db $04,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$15,$01,$02,$01,$01,$01,$01,$01,$01,$01 
-	.db $01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01 
-	.db $05,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$15,$01,$01,$01,$03,$01,$01,$01,$02,$01 
-	.db $01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01 
-	.db $01,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$15,$01,$04,$01,$01,$01,$01,$01,$01,$01 
-	.db $01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01 
-	.db $02,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$12,$01,$14,$01,$49,$01,$01,$01,$02,$01 
-	.db $01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01 
-	.db $03,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$1D,$01,$15,$01,$03,$01,$04,$01 
-	.db $01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01 
-	.db $04,$01,$15,$01,$00,$00,$00,$00,$96,$01,$00,$00,$00,$01,$81,$01,$01,$00,$00,$00,$00,$00,$0E,$01,$00,$00,$4A,$01,$14,$01,$14,$01 
-	.db $01,$01,$01,$01,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01 
-	.db $01,$01,$15,$01,$00,$00,$00,$00,$15,$01,$01,$01,$02,$01,$03,$01,$04,$01,$05,$01,$01,$01,$04,$01,$03,$01,$01,$01,$01,$01,$02,$01 
-	.db $01,$01,$01,$01,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -580,38 +579,38 @@ CollisionMap:
 	.db $00 
 	.db $00 
 YValuePixAddrLUT_H:
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
+	.db $40 
+	.db $41 
+	.db $42 
+	.db $43 
+	.db $44 
+	.db $45 
+	.db $46 
+	.db $47 
+	.db $40 
+	.db $41 
+	.db $42 
+	.db $43 
+	.db $44 
+	.db $45 
+	.db $46 
+	.db $47 
+	.db $40 
+	.db $41 
+	.db $42 
+	.db $43 
+	.db $44 
+	.db $45 
+	.db $46 
+	.db $47 
+	.db $40 
+	.db $41 
+	.db $42 
+	.db $43 
+	.db $44 
+	.db $45 
+	.db $46 
+	.db $47 
 	.db $40 
 	.db $41 
 	.db $42 
@@ -845,30 +844,30 @@ YValuePixAddrLUT_L:
 	.db $00 
 	.db $00 
 	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
+	.db $20 
+	.db $20 
+	.db $20 
+	.db $20 
+	.db $20 
+	.db $20 
+	.db $20 
+	.db $20 
+	.db $40 
+	.db $40 
+	.db $40 
+	.db $40 
+	.db $40 
+	.db $40 
+	.db $40 
+	.db $40 
+	.db $60 
+	.db $60 
+	.db $60 
+	.db $60 
+	.db $60 
+	.db $60 
+	.db $60 
+	.db $60 
 	.db $80 
 	.db $80 
 	.db $80 
@@ -1190,29 +1189,29 @@ past_frame2:
 	CALL function_7E27
 	CALL function_79FE
 	CALL CheckForResetKeyCombo
-	CALL function_65EB
+	CALL CheckDebugKeyCombo
 	JP   main_game_loop
 ScreenFrameCounter:
-	.db 173 			; updated every game loop, reset on entering screen
+	.db 36 			; updated every game loop, reset on entering screen
 ; this check for a key combination and does something
-function_65EB:
+CheckDebugKeyCombo_Stubbed:
 	LD   A,$FE
-	IN   A,($FE)
-	AND  $01
+	IN   A,($FE)			; Shift -> V
+	AND  $01			; check shift
 	RET  NZ
 	LD   A,$7F
-	IN   A,($FE)
-	AND  $02
+	IN   A,($FE)			; Space, Sym, M, N, B
+	AND  $02			; check Symbol shift
 	RET  NZ
 	LD   BC,$01F4
 	CALL ReadWriteAddressRange
-label_65FF:
+wait_key_release:
 	CALL CheckForKeyPress
-	JR   NZ,label_65FF
-label_6604:
+	JR   NZ,wait_key_release
+wait_key_pressed:
 	CALL GetPressedKeyAscii
 	OR   A
-	JR   Z,label_6604
+	JR   Z,wait_key_pressed
 	RET 
 CheckForResetKeyCombo_Stubbed:
 	LD   A,$F7
@@ -1347,7 +1346,7 @@ label_66A1:
 	POP  HL
 	RET 
 RNGValue:
-	.dw $413B
+	.dw $528B
 ClearScreen_Stubbed:
 	LD   C,$00
 	LD   HL,data_5AC0+63
@@ -1593,9 +1592,9 @@ CollisionOverlapSizes:
 	.db $01 
 	.db $01 
 data_67FE:
-	.db $00 
+	.db $08 
 data_67FF:
-	.db $00 
+	.db $10 
 	.db $08 
 	.db $10 
 ; do a collision check
@@ -1607,18 +1606,18 @@ CheckCollisionOverlap:
 	LD   A,E			; entity A X
 	SUB  C			; entity B X
 operand_6804:
-	SUB  $04
+	SUB  $08
 operand_6806:
-	CP   $F5			; return if A < Operand value (SMC)
+	CP   $F1			; return if A < Operand value (SMC)
 	LD   A,$00
 	RET  C
 ; check for Y intersection
 	LD   A,D			; entity A Y
 	SUB  B			; entity B Y
 operand_680D:
-	SUB  $08
+	SUB  $10
 operand_680F:
-	CP   $E9
+	CP   $E1
 	LD   A,$00
 	RET  C			; return if A < operand value
 	INC  A
@@ -1631,28 +1630,28 @@ ReadKeyboardControls_Stubbed:
 	LD   C,$FE
 read_left:
 	INC  HL
-	LD   B,$F7
+	LD   B,$DF
 	IN   A,(C)
-	AND  $10
+	AND  $02
 	JR   NZ,read_right
 	LD   (HL),D			; set key as down
 read_right:
 	INC  HL
-	LD   B,$EF
+	LD   B,$DF
 	IN   A,(C)
-	AND  $04
+	AND  $01
 	JR   NZ,read_up
 	LD   (HL),D			; set key as down
 read_up:
 	INC  HL
-	LD   B,$EF
+	LD   B,$FB
 	IN   A,(C)
-	AND  $08
+	AND  $01
 	JR   NZ,read_fire
 	LD   (HL),D			; set key as down
 read_fire:
 	INC  HL
-	LD   B,$EF
+	LD   B,$FD
 	IN   A,(C)
 	AND  $01
 	RET  NZ
@@ -1807,21 +1806,21 @@ draw_player_sprite:
 	LD   (PreviousPlayerSpritePtr),HL
 	JP   label_6A0A
 PlayerXPosition:
-	.db $11 
+	.db $00 
 PlayerYPosition:
-	.db $20 
+	.db $A0 
 PlayerFacingDirection:
-	.db $FF 
+	.db $01 
 PlayerYVel:
 	.db $02 
 PreviousPlayerSpritePtr:
-	.dw PlayerSpriteL_1
+	.dw BlankSprite_0
 PlayerMoving:
 	.db $00 			; 0: still 1: moving
 data_6970:
-	.db $11 
+	.db $00 
 data_6971:
-	.db $20 
+	.db $9E 
 CheckCollisionRightOfObject:
 	PUSH BC
 	PUSH DE
@@ -1946,8 +1945,8 @@ exit_func_2:
 	POP  BC
 	RET 
 data_6A08:
-	.db $11 
-	.db $B0 
+	.db $00 
+	.db $A0 
 label_6A0A:
 	LD   A,(data_6AEE)
 	OR   A
@@ -2069,16 +2068,16 @@ data_6AEE:
 data_6AEF:
 	.dw BlankSprite_0
 data_6AF1:
-	.dw $9020
+	.dw $9E00
 data_6AF3:
 	.db $00 
 MaceSpritePointer:
 	.dw BlankSprite_0
 MaceCoords:
-	.db 0 
-	.db 0 
+	.db 9 
+	.db 96 
 MaceAngle:
-	.db $00 
+	.db $12 
 MaceRotationalOffsetTable:
 	.db $00 			; x offset
 	.db $E0 			; y offset
@@ -2447,23 +2446,23 @@ label_6CF5:
 	ADD  IX,DE
 	JR   label_6CAC
 data_6CFC:
+	.db $68 
+	.db $90 
+	.db $08 
+	.db $10 
+	.db $46 
+	.db $39 
+	.db $10 
+	.db $79 
+	.db $70 
+	.db $90 
+	.db $08 
+	.db $10 
+	.db $00 
+	.db $39 
+	.db $10 
+	.db $79 
 	.db $FF 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -2809,150 +2808,150 @@ exit_function:
 	RET 
 ; each item is 6 bytes long
 ActiveDebris:
-	.db $02 			; graphic number
-	.db $0A 			; x
-	.db $60 			; y
-	.db $FD 			; x vel
-	.db $04 			; y vel
-	.db $43 			; attribute
-	.db $02 			; graphic number
-	.db $2C 
-	.db $75 
-	.db $FF 
-	.db $04 
-	.db $43 
-	.db $02 
-	.db $46 
-	.db $95 
-	.db $02 
-	.db $02 
-	.db $42 
-	.db $02 
-	.db $3A 
-	.db $7E 
-	.db $00 
-	.db $04 
-	.db $42 
-	.db $02 
-	.db $3A 
-	.db $61 
-	.db $00 
-	.db $00 
-	.db $43 
-	.db $03 
-	.db $3A 
-	.db $98 
-	.db $FF 
-	.db $F9 
-	.db $43 
-	.db $00 
-	.db $53 
-	.db $B1 
+	.db $00 			; graphic number
+	.db $70 			; x
+	.db $AE 			; y
+	.db $00 			; x vel
+	.db $0A 			; y vel
+	.db $47 			; attribute
+	.db $00 			; graphic number
+	.db $77 
+	.db $A5 
 	.db $01 
-	.db $0E 
-	.db $43 
-	.db $02 
-	.db $4E 
-	.db $9D 
-	.db $02 
-	.db $05 
-	.db $42 
-	.db $02 
-	.db $32 
-	.db $8E 
-	.db $FE 
-	.db $FF 
-	.db $43 
-	.db $03 
-	.db $35 
-	.db $6B 
-	.db $FF 
-	.db $F9 
-	.db $42 
-	.db $02 
-	.db $28 
-	.db $B3 
-	.db $FE 
-	.db $07 
-	.db $43 
-	.db $03 
-	.db $22 
-	.db $4A 
-	.db $FE 
-	.db $FF 
-	.db $42 
-	.db $03 
-	.db $37 
-	.db $95 
-	.db $FF 
-	.db $00 
-	.db $43 
-	.db $02 
-	.db $73 
-	.db $AB 
-	.db $03 
-	.db $0A 
-	.db $42 
-	.db $00 
-	.db $0A 
-	.db $B0 
-	.db $FD 
-	.db $0A 
-	.db $43 
-	.db $03 
-	.db $2A 
-	.db $AC 
-	.db $FE 
 	.db $06 
-	.db $42 
-	.db $03 
-	.db $3A 
-	.db $5C 
+	.db $47 
 	.db $00 
-	.db $03 
-	.db $42 
-	.db $03 
-	.db $41 
-	.db $60 
-	.db $01 
-	.db $FB 
-	.db $42 
-	.db $02 
-	.db $3C 
-	.db $85 
-	.db $01 
-	.db $F7 
-	.db $42 
-	.db $02 
-	.db $39 
+	.db $76 
 	.db $90 
-	.db $FF 
-	.db $F8 
-	.db $43 
+	.db $02 
 	.db $00 
-	.db $26 
-	.db $B6 
-	.db $FF 
-	.db $0C 
-	.db $42 
+	.db $45 
 	.db $00 
-	.db $3A 
-	.db $B6 
+	.db $76 
+	.db $85 
+	.db $02 
+	.db $F5 
+	.db $45 
 	.db $00 
-	.db $0A 
-	.db $42 
+	.db $25 
+	.db $B1 
+	.db $FD 
+	.db $0E 
+	.db $47 
 	.db $00 
-	.db $16 
+	.db $70 
 	.db $B3 
-	.db $FE 
-	.db $0B 
-	.db $43 
 	.db $00 
 	.db $08 
+	.db $47 
+	.db $00 
+	.db $50 
+	.db $B6 
+	.db $FD 
+	.db $09 
+	.db $45 
+	.db $00 
+	.db $56 
 	.db $B1 
-	.db $FE 
-	.db $0E 
-	.db $42 
+	.db $FD 
+	.db $08 
+	.db $45 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -3345,7 +3344,7 @@ exit_interrupt_handler:
 	EI  
 	RETI
 FrameTimer:
-	.db 0 
+	.db 255 
 data_711B:
 	.db $00 
 RoomPointersLUT:
@@ -3488,7 +3487,7 @@ data_7128:
 	.db $91 
 	.db $77 
 PlayerDeathTimer:			; player dies when this hits 0
-	.dw $05A7
+	.dw $0001
 HandlePlayerOffScreen:
 	LD   A,E			; x value?
 	CP   120
@@ -3903,17 +3902,17 @@ data_7413:
 	.db $02 
 	.db $1C 
 	.db $8E 
-	.db $1C 
+	.db $1E 
 	.db $8E 
 	.db $02 
 	.db $79 
 	.db $98 
-	.db $79 
+	.db $7D 
 	.db $98 
 	.db $02 
 	.db $A3 
 	.db $75 
-	.db $A5 
+	.db $A3 
 	.db $75 
 	.db $02 
 	.db $44 
@@ -3938,7 +3937,7 @@ label_7435:
 	ADD  IX,BC
 	JP   label_7435
 CurRoomNumber:
-	.db $06 
+	.db $0D 
 data_744C:
 	.db $06 
 ; get pointer from pointer tabel
@@ -4200,7 +4199,7 @@ label_7587:
 	CALL SpawnDebris
 	JP   label_7587
 data_75A3:
-	.db $38 			; X?
+	.db $FF 			; X?
 	.db $A0 			; Y?
 	.db $FF 
 	.db $20 
@@ -4913,7 +4912,7 @@ DrawPlayerLives:
 	LD   C,$46
 	JP   Draw3DigitNumber
 NoPlayerLives:
-	.db $04 
+	.db $00 
 ; Adds a score as Ascii to current score
 AddToCurrentScore:
 	PUSH AF
@@ -4949,9 +4948,9 @@ CurrentScoreString:
 	.db $30 
 	.db $30 
 	.db $30 
-	.db $30 
-	.db $30 
-	.db $30 
+	.db $37 
+	.db $37 
+	.db $35 
 ScoreAscii_25:
 	.db $30 
 	.db $30 
@@ -5131,7 +5130,7 @@ data_79BE:
 	.db $17 
 	.db $FF 
 data_79D3:
-	.db $00 
+	.db $0F 
 function_79D4:
 	PUSH AF
 	PUSH BC
@@ -5182,7 +5181,7 @@ function_79FE:
 	LD   (data_79D3),A
 	JP   DrawTimeoutGauge
 data_7A1B:
-	.dw $0048
+	.dw $0157
 data_7A1D:
 	.dw $01F4
 function_7A1F:
@@ -5373,8 +5372,8 @@ label_7B27:
 	CALL function_74EF
 	JR   label_7AF2
 data_7B36:
-	.db $25 
-	.db $A6 
+	.db $79 
+	.db $7E 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -5481,12 +5480,12 @@ WeaponTable:
 	.db $05 
 ; Seeker
 	.db $53,$45,$45,$4B,$45,$52,$20,$20,$20,$20,$20 
-	.db $04 			; current ammo
+	.db $05 			; current ammo
 	.dw WeaponFunc_Seeker
 	.db $05 			; start ammo
 	.db $05 
 SelectedWeapon:
-	.db $04 
+	.db $00 
 	.db $00 
 ResetWeaponsToDefaultAmmo:
 	LD   DE,$0010
@@ -5723,25 +5722,25 @@ BombGoUpYVelTable:
 	.db $00 
 ; each entity is 7 bytes
 BombEntityList:
-	.db 0 			; bomb 0
-	.db 0 
+	.db 118 			; bomb 0
+	.db 148 
 	.db 0 			; life countdown - 0 if free
-	.dw START
-	.db $00 			; x vel
+	.dw BombGoDownYVelTable
+	.db $02 			; x vel
 	.db $00 			; bomb graphic
 ; bomb 1
-	.db 0 
-	.db 0 
+	.db 122 
+	.db 160 
 	.db 0 			; life
-	.dw START
-	.db $00 
+	.dw BombGoDownYVelTable
+	.db $02 
 	.db $00 
 ; bomb 2
-	.db 0 
-	.db 0 
+	.db 122 
+	.db 160 
 	.db 0 			; life
-	.dw START
-	.db $00 
+	.dw BombGoDownYVelTable
+	.db $02 
 	.db $00 			; x vel
 ; bomb 3
 	.db 0 
@@ -6228,19 +6227,19 @@ label_809E:
 	INC  D
 	JP   function_6C9A
 data_80B1:
-	.db $78 
-	.db $83 
+	.db $01 
+	.db $02 
 data_80B3:
 	.db $00 
+	.db $01 
+	.db $C8 
+	.db $80 
+	.db $C8 
 	.db $FF 
 	.db $01 
-	.db $00 
+	.db $8F 
 	.db $01 
-	.db $28 
-	.db $15 
-	.db $50 
-	.db $49 
-	.db $D4 
+	.db $08 
 ; A contains sprite type
 ; D : Y pos
 ; E : X pos
@@ -6285,7 +6284,7 @@ sprite_draw_loop:
 	DEC  H
 	LD   H,(HL)
 operand_80EE:
-	OR   %00001110
+	OR   %00010100
 	LD   L,A
 	INC  C
 	LD   A,(DE)			; read pixel line
@@ -6303,7 +6302,7 @@ operand_80EE:
 	DEC  H
 	LD   H,(HL)
 operand_8101:
-	OR   %00001110
+	OR   %00010100
 	LD   L,A
 	INC  C
 	LD   A,(DE)			; read pixel line
@@ -6586,7 +6585,7 @@ HighlightSelectedControlDevice:
 data_830A:
 	.db $01 
 MenuAtribCycleCounter:
-	.db $A3 
+	.db $19 
 define_keys:
 	CALL ClearScreen
 	CALL DrawTitleScreenGraphics
@@ -6642,7 +6641,7 @@ label_8375:
 	CALL DrawStringAt
 	POP  BC
 	DJNZ define_key_loop
-	LD   BC,data_C350
+	LD   BC,$C350
 	CALL ReadWriteAddressRange
 	CALL ReadWriteAddressRange
 	LD   HL,DefinedKeys
@@ -6672,7 +6671,7 @@ label_83B1:
 	CALL NullFunction_EF42_1
 	JP   EnterTitleScreen
 data_83C1:
-	.db $30 
+	.db $41 
 	.db $7A 
 	.db $FF 
 	.db $FF 
@@ -6697,10 +6696,10 @@ txt_SYMBOL_SHIFT:
 	.db $F4 
 	.db $FF 			; terminator
 DefinedKeys:
-	.db $35 			; left
-	.db $38 			; right
-	.db $37 			; up
-	.db $30 			; fire
+	.db $4F 			; left
+	.db $50 			; right
+	.db $51 			; up
+	.db $41 			; fire
 	.db $00 
 CheatKeys:
 	.db $59 
@@ -6926,44 +6925,44 @@ label_858D:
 	RET 
 ; Not sure about this but looks like the label is supposed to be 0 on spectrum 48k
 MachineType:
-	.db $01 
+	.db $00 
 data_859A:
 	.db $00 
 SFXToPlay:
-	.db $00 
+	.db $FF 
 data_859C:
-	.db $00 
-	.db $00 
+	.db $90 
+	.db $01 
 data_859E:
-	.db $00 
+	.db $70 
 data_859F:
-	.db $00 
+	.db $08 
 data_85A0:
-	.db $00 
+	.db $50 
 data_85A1:
-	.db $00 
+	.db $06 
 data_85A2:
 	.db $00 
 data_85A3:
 	.db $00 
 data_85A4:
-	.db $00 
+	.db $14 
 data_85A5:
-	.db $00 
+	.db $03 
 data_85A6:
-	.db $00 
+	.db $01 
 data_85A7:
-	.db $00 
+	.db $A0 
 data_85A8:
-	.db $00 
+	.db $62 
 data_85A9:
 	.db $00 
 data_85AA:
-	.dw $0000
+	.dw $85A7
 data_85AC:
-	.dw $0000
+	.dw $85A7
 data_85AE:
-	.dw $0000
+	.dw $4514
 function_85B0:
 	PUSH HL
 	LD   HL,SFXToPlay
@@ -7341,29 +7340,29 @@ go_to_next_item:
 	ADD  IX,DE			; add 10 to IX
 	JP   animated_block_loop
 AnimatedBlockState_0:
-	.db $18 			; 0 - x pos
-	.db $40 			; 1 - y pos
-	.dw AnimBlockSequence_0			; 2 & 3 - Block Sequence Base Ptr
-	.dw $8861			; 4 & 5 - Block Sequence Current Ptr
-	.dw BackgroundBlock_29			; 6 & 7 - block address
-	.db $03 			; 8 - frame count
-	.db $01 			; 9 - frame counter
+	.db $00 			; 0 - x pos
+	.db $00 			; 1 - y pos
+	.dw START			; 2 & 3 - Block Sequence Base Ptr
+	.dw START			; 4 & 5 - Block Sequence Current Ptr
+	.dw START			; 6 & 7 - block address
+	.db $00 			; 8 - frame count
+	.db $00 			; 9 - frame counter
 AnimatedBlockState_1:
-	.db $28 
-	.db $40 
-	.dw AnimBlockSequence_2
-	.dw $8869
-	.dw BackgroundBlock_31
-	.db $03 
-	.db $01 
+	.db $00 
+	.db $00 
+	.dw START
+	.dw START
+	.dw START
+	.db $00 
+	.db $00 
 AnimatedBlockState_2:
-	.db $60 
-	.db $90 
-	.dw AnimBlockSequence_0
-	.dw $8861
-	.dw BackgroundBlock_29
-	.db $03 
-	.db $01 
+	.db $00 
+	.db $00 
+	.dw START
+	.dw START
+	.dw START
+	.db $00 
+	.db $00 
 AnimatedBlockState_3:
 	.db $00 
 	.db $00 
@@ -7602,45 +7601,45 @@ ExplosionSpriteSetLUT:
 	.db $09 
 ExplosionList:
 	.db $00 			; life
-	.db $00 			; x?
-	.db $00 			; y?
-	.dw START			; sprite
+	.db $02 			; x?
+	.db $AE 			; y?
+	.dw MovingSprite_2			; sprite
 	.db $00 
+	.db $07 
+	.db $93 
+	.dw MovingSprite_3
 	.db $00 
+	.db $FB 
+	.db $95 
+	.dw MovingSprite_3
 	.db $00 
-	.dw START
+	.db $FE 
+	.db $9D 
+	.dw MovingSprite_2
 	.db $00 
+	.db $FE 
+	.db $A2 
+	.dw MovingSprite_2
 	.db $00 
+	.db $FB 
+	.db $AB 
+	.dw MovingSprite_3
 	.db $00 
-	.dw START
+	.db $04 
+	.db $A0 
+	.dw BlankSprite_0
 	.db $00 
+	.db $07 
+	.db $9E 
+	.dw MovingSprite_3
 	.db $00 
+	.db $F9 
+	.db $A2 
+	.dw MovingSprite_1
 	.db $00 
-	.dw START
-	.db $00 
-	.db $00 
-	.db $00 
-	.dw START
-	.db $00 
-	.db $00 
-	.db $00 
-	.dw START
-	.db $00 
-	.db $00 
-	.db $00 
-	.dw START
-	.db $00 
-	.db $00 
-	.db $00 
-	.dw START
-	.db $00 
-	.db $00 
-	.db $00 
-	.dw START
-	.db $00 
-	.db $00 
-	.db $00 
-	.dw START
+	.db $FB 
+	.db $A3 
+	.dw MovingSprite_3
 	.db $FF 
 function_89A1:
 	PUSH AF
@@ -7704,15 +7703,15 @@ process_item_1:
 ; Each Item is 5 bytes in size
 data_8A0B:
 	.db $00 
+	.db $F8 
+	.db $90 
+	.db $10 
+	.db $20 
 	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
+	.db $F8 
+	.db $90 
+	.db $10 
+	.db $20 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -7820,9 +7819,9 @@ label_8A6C:
 	CALL WriteAttrib2x2
 	JP   label_8A6C
 data_8A96:
-	.db $00 
-	.db $00 
-	.db $00 
+	.db $70 
+	.db $90 
+	.db $39 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -7933,41 +7932,41 @@ FadingParticleLUT:
 	.db $06 
 	.db $09 
 FadingParticles:
-	.db $4D 			; x positiom
-	.db $93 			; y position
+	.db $00 			; x positiom
+	.db $84 			; y position
 	.db $00 			; definition index
-	.db $61 
-	.db $8E 
 	.db $00 
-	.db $66 
-	.db $8C 
+	.db $84 
 	.db $00 
-	.db $6B 
-	.db $8B 
+	.db $00 
+	.db $84 
+	.db $00 
+	.db $00 
+	.db $84 
+	.db $00 
+	.db $6C 
+	.db $80 
+	.db $00 
+	.db $78 
+	.db $9A 
 	.db $00 
 	.db $70 
-	.db $8A 
+	.db $86 
 	.db $00 
+	.db $68 
+	.db $7B 
+	.db $00 
+	.db $60 
 	.db $75 
-	.db $88 
 	.db $00 
-	.db $48 
-	.db $94 
+	.db $6C 
+	.db $80 
 	.db $00 
-	.db $52 
-	.db $91 
+	.db $64 
+	.db $77 
 	.db $00 
-	.db $57 
-	.db $90 
-	.db $00 
-	.db $5C 
-	.db $8F 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
+	.db $68 
+	.db $7B 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -8125,118 +8124,118 @@ apply_velocity:
 	RET 
 ; each projectile is 14 bytes
 ActiveProjectiles:
-	.db 0 			; 0 - X pos
-	.db 0 			; 1 - Y pos
-	.db 0 			; 2 - life
-	.db $00 			; 3
-	.db $00 			; 4
+	.db 75 			; 0 - X pos
+	.db 132 			; 1 - Y pos
+	.db 75 			; 2 - life
+	.db $01 			; 3
+	.db $FF 			; 4
 	.db $00 			; 5 - Y velocity
-	.db $00 			; 6 - X velocity
-	.db $00 			; 7
+	.db $FF 			; 6 - X velocity
+	.db $2B 			; 7
 	.db $00 			; 8 - gets added to previous value
-	.db $00 			; 9
-	.db 0 			; 0Ah - graphic set
-	.db $00 			; 0Bh - 
-	.db $00 			; 0Ch - Attribute 
-	.db 0 			; 0Dh - total life
+	.db $57 			; 9
+	.db 5 			; 0Ah - graphic set
+	.db $02 			; 0Bh - 
+	.db $42 			; 0Ch - Attribute 
+	.db 87 			; 0Dh - total life
+	.db $51 
+	.db $84 
+	.db $51 
+	.db $01 
+	.db $FF 
 	.db $00 
+	.db $FF 
+	.db $2B 
 	.db $00 
+	.db $57 
+	.db $05 
+	.db $02 
+	.db $42 
+	.db $57 
 	.db $00 
+	.db $84 
 	.db $00 
+	.db $01 
+	.db $FF 
 	.db $00 
+	.db $FF 
+	.db $2B 
 	.db $00 
+	.db $57 
+	.db $05 
+	.db $02 
+	.db $42 
+	.db $57 
 	.db $00 
+	.db $84 
 	.db $00 
+	.db $01 
+	.db $FF 
 	.db $00 
+	.db $FF 
+	.db $2B 
 	.db $00 
+	.db $57 
+	.db $05 
+	.db $02 
+	.db $42 
+	.db $57 
 	.db $00 
+	.db $84 
 	.db $00 
+	.db $01 
+	.db $FF 
 	.db $00 
+	.db $FF 
+	.db $2B 
 	.db $00 
+	.db $57 
+	.db $05 
+	.db $02 
+	.db $42 
+	.db $57 
 	.db $00 
+	.db $84 
 	.db $00 
+	.db $01 
+	.db $FF 
 	.db $00 
+	.db $FF 
+	.db $2B 
 	.db $00 
+	.db $57 
+	.db $05 
+	.db $02 
+	.db $42 
+	.db $57 
 	.db $00 
+	.db $84 
 	.db $00 
+	.db $01 
+	.db $FF 
 	.db $00 
+	.db $FF 
+	.db $2B 
 	.db $00 
+	.db $57 
+	.db $05 
+	.db $02 
+	.db $42 
+	.db $57 
 	.db $00 
+	.db $84 
 	.db $00 
+	.db $01 
+	.db $FF 
 	.db $00 
+	.db $FF 
+	.db $2B 
 	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
+	.db $57 
+	.db $05 
+	.db $02 
+	.db $42 
+	.db $57 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -8504,7 +8503,7 @@ routine_8E0F_1:
 ; Every frame it takes the block type and uses it to perform an action
 ; e.g firing a bullet
 ActionPointList:
-	.db $FF 
+	.db $58 
 	.db $80 
 	.db $FF 
 	.db $00 
@@ -8542,36 +8541,36 @@ AddDynamicHazard:
 	POP  HL
 	RET 
 DynamicHazardListPtr:
-	.dw DynamicHazardList
+	.dw $8E4A
 DynamicHazardList:
-	.db $FF 
-	.db 83 			; x
+	.db $03 
+	.db 77 			; x
 	.db 136 			; y
 	.db $03 
-	.db $0F 
-	.db $88 
-	.db $03 
-	.db $1D 
-	.db $88 
-	.db $03 
-	.db $3D 
+	.db $53 
 	.db $88 
 	.db $FF 
-	.db $42 
-	.db $80 
+	.db $0D 
+	.db $88 
 	.db $FF 
-	.db $4A 
-	.db $87 
+	.db $4D 
+	.db $88 
 	.db $FF 
-	.db $45 
-	.db $03 
-	.db $FC 
-	.db $33 
-	.db $45 
-	.db $03 
-	.db $FC 
-	.db $33 
-	.db $45 
+	.db $3B 
+	.db $88 
+	.db $FF 
+	.db $55 
+	.db $88 
+	.db $FF 
+	.db $19 
+	.db $88 
+	.db $FF 
+	.db $2B 
+	.db $88 
+	.db $FF 
+	.db $4B 
+	.db $88 
+	.db $FF 
 	.db $8A 
 	.db $ED 
 	.db $11 
@@ -8996,17 +8995,17 @@ FreeUpDownEnemyPointer:
 ; each item is 11 bytes
 UpDownMovingEnemyList:
 	.db $FF 			; x pos
-	.db $00 			; y pos
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 			; x pos
-	.db $00 			; y pos
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
+	.db $3B 			; y pos
+	.db $3E 
+	.db $39 
+	.db $DC 
+	.db $38 			; x pos
+	.db $72 			; y pos
+	.db $42 
+	.db $B9 
+	.db $DC 
+	.db $01 
+	.db $FF 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -10043,7 +10042,7 @@ function_9855:
 	CALL function_96D8
 	JP   label_9803
 data_9879:
-	.db $FF 
+	.db $68 
 	.db $90 
 	.db $70 
 	.db $90 
@@ -10614,7 +10613,7 @@ data_9BD4:
 data_9BD5:
 	.db $FF 
 data_9BD6:
-	.dw $9CE5
+	.dw data_9C7E
 function_9BD8:
 	LD   A,(data_9BD5)
 	CP   $FF
@@ -10678,7 +10677,7 @@ label_9C49:
 	LD   A,(data_9C55)
 	JP   label_9A2C
 data_9C55:
-	.db $0D 
+	.db $0F 
 data_9C56:
 	.dw data_9C5E
 	.dw data_9C66
@@ -12059,7 +12058,7 @@ y_loop:
 	DEC  H
 	LD   H,(HL)
 XPos_operand_A265:
-	OR   %00000100
+	OR   %00000001
 	LD   L,A
 	INC  C
 	LD   A,(DE)			; read pixel line
@@ -12084,7 +12083,7 @@ XPos_operand_A265:
 	DEC  H			;  point HL to YValuePixAddrLUT_H
 	LD   H,(HL)
 XPos_operand_A27E:
-	OR   %00000100
+	OR   %00000001
 	LD   L,A
 	INC  C
 	LD   A,(DE)			; read pixel line
@@ -12109,7 +12108,7 @@ XPos_operand_A27E:
 	POP  AF
 	RET 
 DrawImagePtr:
-	.dw PlayerSpriteL_1
+	.dw MovingSprite_2
 label_A29C:
 	LD   H,L			; multiply by 192 by mutipling by 128 & 64 and adding results
 	LD   L,$00
@@ -12205,7 +12204,7 @@ label_A32C:
 	DEC  H			; YValuePixAddrLUT_H
 	LD   H,(HL)
 operand_A332:
-	OR   $00
+	OR   $1E
 	LD   L,A
 	INC  C
 	LD   A,(DE)
@@ -12223,7 +12222,7 @@ operand_A33D:
 	LD   A,(DE)
 	XOR  (HL)
 operand_A342:
-	LD   (HL),A			; write
+	NOP 			; write
 	INC  DE
 	EXX 
 	LD   H,$64			; YValuePixAddrLUT_L
@@ -12232,7 +12231,7 @@ operand_A342:
 	DEC  H			; YValuePixAddrLUT_H
 	LD   H,(HL)
 operand_A34B:
-	OR   $00
+	OR   $1E
 	LD   L,A
 	INC  C			; inc Y
 	LD   A,(DE)
@@ -12250,7 +12249,7 @@ operand_A356:
 	LD   A,(DE)
 	XOR  (HL)
 operand_A35B:
-	LD   (HL),A			; write
+	NOP 			; write
 	INC  DE
 	EXX 
 	DJNZ label_A32C
@@ -12366,8 +12365,8 @@ operand_A411:
 	LD   A,(DE)
 	XOR  (HL)
 data_A417:
-	LD   (HL),A
-	INC  L
+	NOP 
+	NOP 
 	INC  DE
 	LD   A,(DE)
 	XOR  (HL)
@@ -12393,8 +12392,8 @@ operand_A42A:
 	LD   A,(DE)
 	XOR  (HL)
 data_A430:
-	LD   (HL),A
-	INC  L
+	NOP 
+	NOP 
 	INC  DE
 	LD   A,(DE)
 	XOR  (HL)
@@ -12585,7 +12584,7 @@ label_A508:
 	DEC  H			; point HL to high byte LUT at YValuePixAddrLUT_H
 	LD   H,(HL)
 operand_A50E:
-	OR   %00011000
+	OR   %00011100
 	LD   L,A
 	INC  C
 	LD   A,(DE)			; read pixel
@@ -12604,7 +12603,7 @@ operand_A50E:
 	DEC  H
 	LD   H,(HL)
 operand_A522:
-	OR   $18
+	OR   $0E
 	LD   L,A
 	INC  C
 	LD   A,(DE)
@@ -12674,7 +12673,7 @@ BackgroundBlockDrawLoop:
 	DEC  H			; go to previous page YValuePixAddrLUT_H
 	LD   H,(HL)			; get high byte
 operand_A56D:
-	OR   %00011110			; mask low byte
+	OR   %00011001			; mask low byte
 	LD   L,A			; put low byte into display pointer
 	INC  C			; inc vertical line
 	LD   A,(DE)			; read pixel line
@@ -26159,16 +26158,20 @@ ParticleSprite_43:
 	.db $00 
 	.db $00 
 NullFunction_EF38:
-	JP   label_EFE5
+	RET 
+	.db $E5 
+	.db $EF 
 NullFunction_EF3B:
-	JP   label_EF93
+	RET 
+	.db $93 
+	.db $EF 
 	.db $1E 
 	.db $01 
 	.db $3E 
 	.db $01 
 ; this function appears to be 'RET'ed' out
 NullFunction_EF42_1:
-	LD   C,A
+	RET 
 	CALL function_EFC1
 	LD   A,(HL)
 	CP   $09
@@ -26378,7 +26381,7 @@ label_F0F3:
 	LD   (IX+$20),E
 	JP   label_F033
 label_F0F9:
-	LD   HL,$A902
+	LD   HL,$4C32
 	LD   C,L
 	LD   B,H
 	ADD  HL,HL
@@ -26395,7 +26398,7 @@ label_F0F9:
 	LD   (label_F111+1),A
 	JP   label_F02D
 label_F111:
-	LD   A,$0A
+	LD   A,$0D
 label_F113:
 	ADD  A,(IX+$18)
 label_F116:
@@ -26520,38 +26523,38 @@ label_F1EF:
 	LD   (IX+$04),E
 	RET 
 data_F1F6:
-	.db $1B 
-	.db $01 
+	.db $C2 
+	.db $00 
 data_F1F8:
-	.db $50 
-	.db $03 
+	.db $C2 
+	.db $00 
 data_F1FA:
-	.db $0B 
-	.db $01 
+	.db $C2 
+	.db $00 
 data_F1FC:
-	.db $06 
+	.db $3B 
 data_F1FD:
-	.db $30 
+	.db $38 
 data_F1FE:
-	.db $0B 
+	.db $00 
 data_F1FF:
 	.db $00 
 data_F200:
-	.db $02 
+	.db $00 
 	.db $64 
 	.db $00 
 data_F203:
 	.db $0A 
 data_F204:
-	.db $0B 
-	.db $01 
-data_F206:
-	.db $06 
+	.db $C2 
 	.db $00 
+data_F206:
+	.db $B9 
+	.db $04 
 	.db $0A 
 	.db $00 
 data_F20A:
-	.db $0A 
+	.db $C4 
 	.db $F4 
 	.db $04 
 	.db $00 
@@ -26560,44 +26563,44 @@ data_F20A:
 	.db $12 
 	.db $00 
 data_F212:
-	.db $0A 
+	.db $BE 
 	.db $F4 
 data_F214:
-	.db $01 
-	.db $02 
 	.db $00 
 	.db $00 
-	.db $3A 
+	.db $00 
+	.db $00 
+	.db $18 
 	.db $F4 
-	.db $71 
+	.db $ED 
 	.db $F4 
 	.db $00 
 	.db $00 
 	.db $00 
 	.db $00 
-	.db $37 
+	.db $18 
 	.db $F4 
-	.db $71 
+	.db $ED 
 	.db $F4 
 data_F224:
-	.db $0A 
-	.db $07 
-	.db $3E 
-	.db $F7 
-	.db $91 
-	.db $F5 
-	.db $6F 
-	.db $F5 
-	.db $07 
+	.db $00 
+	.db $00 
+	.db $D7 
+	.db $FA 
+	.db $C5 
+	.db $FA 
+	.db $BB 
+	.db $FA 
+	.db $00 
 	.db $00 
 	.db $08 
 	.db $36 
 	.db $FE 
 	.db $F1 
-	.db $11 
+	.db $13 
 	.db $00 
-	.db $18 
-	.db $40 
+	.db $00 
+	.db $5E 
 	.db $00 
 data_F237:
 	.db $00 
@@ -26606,7 +26609,7 @@ data_F237:
 	.db $00 
 	.db $18 
 	.db $F4 
-	.db $71 
+	.db $ED 
 	.db $F4 
 	.db $00 
 	.db $00 
@@ -26614,18 +26617,18 @@ data_F237:
 	.db $00 
 	.db $18 
 	.db $F4 
-	.db $71 
+	.db $ED 
 	.db $F4 
 data_F247:
-	.db $0A 
-	.db $07 
-	.db $5A 
-	.db $F6 
-	.db $3E 
-	.db $F6 
-	.db $3E 
-	.db $F6 
-	.db $07 
+	.db $00 
+	.db $00 
+	.db $D7 
+	.db $FA 
+	.db $CB 
+	.db $FA 
+	.db $CB 
+	.db $FA 
+	.db $00 
 	.db $00 
 	.db $10 
 	.db $2D 
@@ -26633,36 +26636,36 @@ data_F247:
 	.db $F1 
 	.db $13 
 	.db $00 
-	.db $0E 
-	.db $2D 
+	.db $00 
+	.db $5E 
 	.db $00 
 data_F25A:
-	.db $04 
 	.db $00 
-	.db $06 
 	.db $00 
-	.db $81 
+	.db $00 
+	.db $00 
+	.db $18 
 	.db $F4 
-	.db $0A 
+	.db $ED 
 	.db $F4 
 	.db $00 
 	.db $00 
 	.db $00 
 	.db $00 
-	.db $7B 
+	.db $18 
 	.db $F4 
-	.db $0A 
+	.db $ED 
 	.db $F4 
 data_F26A:
-	.db $0A 
-	.db $01 
-	.db $34 
-	.db $FB 
-	.db $22 
-	.db $FB 
-	.db $22 
-	.db $FB 
-	.db $37 
+	.db $00 
+	.db $00 
+	.db $D7 
+	.db $FA 
+	.db $CB 
+	.db $FA 
+	.db $CB 
+	.db $FA 
+	.db $00 
 	.db $00 
 	.db $20 
 	.db $1B 
@@ -26671,7 +26674,7 @@ data_F26A:
 	.db $13 
 	.db $00 
 	.db $00 
-	.db $41 
+	.db $5E 
 	.db $00 
 	.db $2A 
 	.db $00 
@@ -29095,17 +29098,17 @@ label_FC3B:
 label_FC40:
 	JP   PlayTitleTuneLoop			; loop back
 data_FC43:
-	.db $07 
+	.db $00 
 data_FC44:
-	.db $17 
+	.db $10 
 data_FC45:
-	.db $49 
+	.db $62 
 data_FC46:
-	.db $4A 
+	.db $63 
 data_FC47:
-	.dw $FD08
+	.dw $FD26
 data_FC49:
-	.db $09 
+	.db $02 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -29984,42 +29987,42 @@ data_FEFE:
 	.db $40 
 	.db $40 
 	.dw $4040
-	.dw $007E
-	.dw $4200
-	.dw $5A66
-	.dw $4242
-	.dw $57E0
-	.dw $0DF3
-	.dw $0BCE
-	.dw $50D3
-	.dw $0BCE
-	.dw $50D4
-	.dw $F25C
-	.dw $F206
-	.dw $F1B8
-	.dw $F25C
-	.dw $F206
-	.dw $F25C
-	.dw $F206
-	.dw $F1B8
-	.dw $7109
-	.dw $55E6
-	.dw $C8D9
+	.dw $7103
+	.dw $0001
+	.dw $0001
+	.dw $C719
+	.dw $0012
+	.dw $FEBB
+	.dw $7418
+	.dw $6CFC
+	.dw $57B8
+	.dw $ED30
+	.dw $01B0
+	.dw $08A8
+	.dw $0D09
+	.dw $7103
+	.dw $50A3
+	.dw $7103
+	.dw $54A1
+	.dw $D089
+	.dw $7103
+	.dw $54A1
+	.dw $D089
 data_FFE0:
-	.dw $00BE
-	.dw $F25C
-	.dw $F206
-	.dw $F1B8
-	.dw $7109
-	.dw $55E6
-	.dw $C8D9
-	.dw $00BE
-	.dw $F9BB
-	.dw $6CFC			; old cordinates
-	.dw $A03E			; old image pointer
+	.dw $00AD
+	.dw $0044
+	.dw $64C0
+	.dw $63C0
+	.dw $0020
+	.dw $1014
+	.dw $4444
+	.dw $20B3
+	.dw $C561			; push character address
+	.dw $4242
+	.dw $82E4
 data_FFF6:
-	.dw $0048
-	.dw $0000
-	.dw $0047
-	.dw $6938
-	.dw $658A
+	.dw $141A
+	.dw $4EA3
+	.dw $FBCE
+	.dw $81C5
+	.dw $6551

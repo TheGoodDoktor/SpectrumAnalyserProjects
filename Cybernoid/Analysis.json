@@ -1142,11 +1142,13 @@
                 },
                 {
                     "Address": 493,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Shift -> V"
                 },
                 {
                     "Address": 495,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check shift"
                 },
                 {
                     "Address": 497,
@@ -1159,11 +1161,13 @@
                 },
                 {
                     "Address": 500,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Space, Sym, M, N, B"
                 },
                 {
                     "Address": 502,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check Symbol shift"
                 },
                 {
                     "Address": 504,
@@ -2691,17 +2695,17 @@
                 {
                     "Address": 491,
                     "LabelType": 1,
-                    "Name": "function_65EB"
+                    "Name": "CheckDebugKeyCombo"
                 },
                 {
                     "Address": 511,
                     "LabelType": 2,
-                    "Name": "label_65FF"
+                    "Name": "wait_key_release"
                 },
                 {
                     "Address": 516,
                     "LabelType": 2,
-                    "Name": "label_6604"
+                    "Name": "wait_key_pressed"
                 },
                 {
                     "Address": 523,
@@ -3663,7 +3667,7 @@
                 {
                     "Address": 352,
                     "ByteSize": 3,
-                    "Flags": 40,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -18101,7 +18105,7 @@
                 {
                     "Address": 896,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 899,
@@ -21012,7 +21016,7 @@
                 {
                     "Address": 1013,
                     "ByteSize": 3,
-                    "Comment": "get block pointer"
+                    "Comment": "get old image pointer"
                 },
                 {
                     "Address": 1016,
@@ -21026,7 +21030,8 @@
                 },
                 {
                     "Address": 1022,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "store back new image pointer"
                 }
             ],
             "CommentBlocks": [
@@ -33303,7 +33308,6 @@
                     "Address": 518,
                     "ByteSize": 3,
                     "Comment": "Xpos (E) is >= 170",
-                    "Flags": 32,
                     "OperandType": 2
                 },
                 {
@@ -35756,11 +35760,13 @@
                 },
                 {
                     "Address": 222,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "previous image ptr"
                 },
                 {
                     "Address": 223,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "screen coords - previous"
                 },
                 {
                     "Address": 224,
@@ -35810,7 +35816,8 @@
                 },
                 {
                     "Address": 239,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "x coord"
                 },
                 {
                     "Address": 240,
@@ -35829,7 +35836,7 @@
                 {
                     "Address": 244,
                     "ByteSize": 3,
-                    "Comment": "store",
+                    "Comment": "store previous X",
                     "OperandType": 1
                 },
                 {
@@ -35842,7 +35849,8 @@
                 },
                 {
                     "Address": 249,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "previous coords"
                 },
                 {
                     "Address": 250,
@@ -35865,6 +35873,7 @@
                 {
                     "Address": 255,
                     "ByteSize": 3,
+                    "Comment": "x char coords",
                     "OperandType": 1
                 },
                 {
@@ -35873,7 +35882,8 @@
                 },
                 {
                     "Address": 259,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "previous image ptr"
                 },
                 {
                     "Address": 260,
@@ -35897,7 +35907,8 @@
                 },
                 {
                     "Address": 266,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "y coord"
                 },
                 {
                     "Address": 267,
@@ -35916,7 +35927,7 @@
                     "Address": 270,
                     "ByteSize": 2,
                     "Flags": 2,
-                    "OperandType": 5,
+                    "OperandType": 7,
                     "SMC": true
                 },
                 {
@@ -36000,6 +36011,7 @@
                     "Address": 290,
                     "ByteSize": 2,
                     "Flags": 2,
+                    "OperandType": 7,
                     "SMC": true
                 },
                 {
@@ -36012,11 +36024,13 @@
                 },
                 {
                     "Address": 294,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read image pixel"
                 },
                 {
                     "Address": 295,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "XOR with background"
                 },
                 {
                     "Address": 296,
@@ -36033,15 +36047,18 @@
                 },
                 {
                     "Address": 299,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read image pixel line"
                 },
                 {
                     "Address": 300,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "XOR with background"
                 },
                 {
                     "Address": 301,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write pixel line"
                 },
                 {
                     "Address": 302,
@@ -36505,6 +36522,14 @@
                     "Comment": "A: Block No\nD : Y pixel pos\nE : X (2x pixels 0-128)"
                 },
                 {
+                    "Address": 264,
+                    "Comment": "Erase old 16 pixel line"
+                },
+                {
+                    "Address": 283,
+                    "Comment": "Write new 16 pixel line"
+                },
+                {
                     "Address": 313,
                     "Comment": "Get address of block\nA : Block number\nAddress is returned in HL"
                 },
@@ -36772,19 +36797,19 @@
                 {
                     "Address": 264,
                     "LabelType": 2,
-                    "Name": "label_A508"
+                    "Name": "block_xor_Vloop"
                 },
                 {
                     "Address": 270,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "operand_A50E"
+                    "Name": "PreviousXCoord_op"
                 },
                 {
                     "Address": 290,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "operand_A522"
+                    "Name": "NextXCoord_op"
                 },
                 {
                     "Address": 313,
@@ -67710,12 +67735,12 @@
             "CodeInfo": [
                 {
                     "Address": 824,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "OperandType": 2
                 },
                 {
                     "Address": 827,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "OperandType": 2
                 },
                 {
@@ -70930,6 +70955,26 @@
                     "DataType": 5,
                     "DisplayType": 6,
                     "GraphicsSetRef": 4010868740
+                },
+                {
+                    "Address": 825,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4013424644
+                },
+                {
+                    "Address": 826,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4013424644
+                },
+                {
+                    "Address": 828,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4013621252
+                },
+                {
+                    "Address": 829,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4013621252
                 }
             ],
             "LabelInfo": [
@@ -71690,9 +71735,7 @@
                 {
                     "Address": 249,
                     "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 7,
-                    "SMC": true
+                    "OperandType": 7
                 },
                 {
                     "Address": 252,
@@ -71759,9 +71802,7 @@
                 },
                 {
                     "Address": 273,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 275,
@@ -72255,31 +72296,6 @@
                     "Address": 1,
                     "DataType": 11,
                     "InstructionAddressRef": 4026466308
-                },
-                {
-                    "Address": 249,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4042850308
-                },
-                {
-                    "Address": 250,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4042850308
-                },
-                {
-                    "Address": 251,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4042850308
-                },
-                {
-                    "Address": 273,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4044423172
-                },
-                {
-                    "Address": 274,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4044423172
                 }
             ],
             "LabelInfo": [
@@ -73164,18 +73180,18 @@
                 {
                     "Address": 1008,
                     "ByteSize": 2,
+                    "Comment": "push attrib address",
                     "DataType": 2
                 },
                 {
                     "Address": 1010,
                     "ByteSize": 2,
-                    "Comment": "old cordinates",
+                    "Comment": "transfer to IX",
                     "DataType": 2
                 },
                 {
                     "Address": 1012,
                     "ByteSize": 2,
-                    "Comment": "old image pointer",
                     "DataType": 2
                 },
                 {
