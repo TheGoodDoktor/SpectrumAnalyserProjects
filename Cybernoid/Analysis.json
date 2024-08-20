@@ -881,6 +881,7 @@
                 {
                     "Address": 362,
                     "ByteSize": 3,
+                    "Comment": "limit us to 30 fps?",
                     "OperandType": 1
                 },
                 {
@@ -905,6 +906,7 @@
                 {
                     "Address": 373,
                     "ByteSize": 3,
+                    "Comment": "reset frame timer",
                     "OperandType": 1
                 },
                 {
@@ -2705,12 +2707,6 @@
                     "Address": 523,
                     "LabelType": 1,
                     "Name": "CheckForResetKeyCombo"
-                },
-                {
-                    "Address": 530,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_6612"
                 },
                 {
                     "Address": 533,
@@ -33322,7 +33318,7 @@
                 {
                     "Address": 524,
                     "ByteSize": 3,
-                    "Comment": "C is >= 170",
+                    "Comment": "Old XPos (C) is >= 170",
                     "OperandType": 2
                 },
                 {
@@ -33696,7 +33692,8 @@
                 },
                 {
                     "Address": 636,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": " point HL to #ADDR:0x6300#"
                 },
                 {
                     "Address": 637,
@@ -34944,13 +34941,13 @@
                     "Address": 613,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "operand_A265"
+                    "Name": "XPos_operand_A265"
                 },
                 {
                     "Address": 638,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "operand_A27E"
+                    "Name": "XPos_operand_A27E"
                 },
                 {
                     "Address": 666,
@@ -67713,12 +67710,12 @@
             "CodeInfo": [
                 {
                     "Address": 824,
-                    "ByteSize": 1,
+                    "ByteSize": 3,
                     "OperandType": 2
                 },
                 {
                     "Address": 827,
-                    "ByteSize": 1,
+                    "ByteSize": 3,
                     "OperandType": 2
                 },
                 {
@@ -70933,26 +70930,6 @@
                     "DataType": 5,
                     "DisplayType": 6,
                     "GraphicsSetRef": 4010868740
-                },
-                {
-                    "Address": 825,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4013424644
-                },
-                {
-                    "Address": 826,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4013424644
-                },
-                {
-                    "Address": 828,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4013621252
-                },
-                {
-                    "Address": 829,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4013621252
                 }
             ],
             "LabelInfo": [
@@ -71713,7 +71690,9 @@
                 {
                     "Address": 249,
                     "ByteSize": 3,
-                    "OperandType": 7
+                    "Flags": 2,
+                    "OperandType": 7,
+                    "SMC": true
                 },
                 {
                     "Address": 252,
@@ -71780,7 +71759,9 @@
                 },
                 {
                     "Address": 273,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 275,
@@ -72274,6 +72255,31 @@
                     "Address": 1,
                     "DataType": 11,
                     "InstructionAddressRef": 4026466308
+                },
+                {
+                    "Address": 249,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4042850308
+                },
+                {
+                    "Address": 250,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4042850308
+                },
+                {
+                    "Address": 251,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4042850308
+                },
+                {
+                    "Address": 273,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4044423172
+                },
+                {
+                    "Address": 274,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4044423172
                 }
             ],
             "LabelInfo": [
