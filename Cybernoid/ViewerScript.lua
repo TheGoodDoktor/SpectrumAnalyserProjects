@@ -80,40 +80,56 @@ function DrawScreenToView(self, graphicsView, screenNo, x, y)
 	
 end
 
-ScreenViewer = ZXViewerBase:new( 
+AssetViewer = ZXViewerBase:new( 
 {
-    name = "Screen Viewer",
+    name = "Asset Viewer",
    	screenNo = 0,
   	screenMin = 0,
     screenMax = 100,
 	height = 192,
 	logicBlocks = {},
+	blockNo = 0,
+	spriteNo = 0,
+	particleNo = 0
 })
 
-function ScreenViewer:Init()
+function AssetViewer:Init()
 	
 	ClearGraphicsView(self.graphicsView, 0)
 	DrawScreenToView(self,self.graphicsView,self.screenNo, 0, 0)
 	print("Cybernoid Viewer Initialised")
-	self.blockView = CreateZXGraphicsView(16,16 * 170);
-	self.spriteView = CreateZXGraphicsView(24,16 * 72);
-	self.particleView = CreateZXGraphicsView(16,8 * 44)
+
+	self.blockView = CreateZXGraphicsView(16,16)
+	self.spriteView = CreateZXGraphicsView(24,16)
+	self.particleView = CreateZXGraphicsView(16,8)
 end
 
-function ScreenViewer:Update()
+function AssetViewer:Update()
 
 end
 
 -- this is called after the view is drawn
-function ScreenViewer:DrawUI()
+function AssetViewer:DrawUI()
 
+	self:DrawScreenViewer()
+	imgui.Separator()
+	self:DrawBlockViewer()
+	imgui.Separator()
+	self:DrawSpriteViewer()
+	imgui.Separator()
+	self:DrawParticleViewer()
+end
+
+function AssetViewer:DrawScreenViewer()
 	local changed,changed2 = false
 
+	imgui.Text("Screen Viewer")
+	
 	changed, self.screenNo = imgui.InputInt("screen number",self.screenNo)
 	
 	changed2, self.showCurrentScreen = imgui.Checkbox("Show Current", self.showCurrentScreen)
 
-	DrawOtherGraphicsViewScaled(self.graphicsView,self.graphicsView,0,0,32,32)
+	--DrawOtherGraphicsViewScaled(self.graphicsView,self.graphicsView,0,0,32,32)
 	
 	if self.showCurrentScreen == true then
 		self.screenNo = ReadByte(curRoomNumberAddr)
@@ -130,40 +146,44 @@ function ScreenViewer:DrawUI()
 		self:drawOverlayRect(logicBlock.xpos,logicBlock.ypos,16,16)
 		self:drawOverlayText(logicBlock.xpos + 2,logicBlock.ypos + 2, string.format("%X",logicBlock.blockType))
 	end
-
-	--DrawBlockToView(self.blockView,1,0,0)
-	DrawGraphicsView(self.blockView)
-	imgui.SameLine()
-	DrawGraphicsView(self.spriteView)
-	imgui.SameLine()
-	DrawGraphicsView(self.particleView)
-
-	if imgui.Button("Export Graphics") then
-		ClearGraphicsView(self.blockView,0)
-		for blockNo = 0,169 do
-			DrawBlockToView(self.blockView,blockNo,0,blockNo * 16)
-		end
-		ClearGraphicsView(self.spriteView,0)
-		for spriteNo = 0,71 do
-			DrawSpriteToView(self.spriteView,spriteNo,0,spriteNo * 16)
-		end
-		ClearGraphicsView(self.particleView,0)
-		for particleNo = 0,43 do
-			DrawParticleToView(self.particleView,particleNo,0,particleNo * 8)
-		end
-
-		SaveGraphicsView2222(self.blockView,"blocks.ag2")
-		SaveGraphicsView2222(self.spriteView,"sprites.ag2")
-		SaveGraphicsView2222(self.particleView,"particles.ag2")
-	end
---ClearGraphicsView(self.blockView,0)
---DrawBlockToView(self.blockView,10,0,0)
 end
 
+function AssetViewer:DrawBlockViewer()
+	local changed = false
+	imgui.Text("Block Viewer")
+	DrawGraphicsView(self.blockView)
+	changed, self.blockNo = imgui.InputInt("Block No",self.blockNo)
+	if changed == true then
+		ClearGraphicsView(self.blockView, 0)
+		DrawBlockToView(self.blockView,self.blockNo,0,0)
+	end
+end
+
+function AssetViewer:DrawSpriteViewer()
+	local changed = false
+	imgui.Text("Sprite Viewer")
+	DrawGraphicsView(self.spriteView)
+	changed, self.spriteNo = imgui.InputInt("Sprite No",self.spriteNo)
+	if changed == true then
+		ClearGraphicsView(self.spriteView, 0)
+		DrawSpriteToView(self.spriteView,self.spriteNo,0,0)
+	end
+end
+
+function AssetViewer:DrawParticleViewer()
+	local changed = false
+	imgui.Text("Particle Viewer")
+	DrawGraphicsView(self.particleView)
+	changed, self.particleNo = imgui.InputInt("Particle No",self.particleNo)
+	if changed == true then
+		ClearGraphicsView(self.particleView, 0)
+		DrawParticleToView(self.particleView,self.particleNo,0,0)
+	end
+end
 
 -- Initialise the viewer
 print("Initialising Cybernoid Viewer")
-AddViewer(ScreenViewer);
+AddViewer(AssetViewer);
 
 
 
