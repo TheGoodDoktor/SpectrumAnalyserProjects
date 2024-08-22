@@ -87,4 +87,11 @@ BlockViewer =
 
 }
 
+function TestFunction()
+	print(Z80.HL)
+	print(GetRegValue("HL"))
+end
+
+RegisterExecutionHandler(0xebc7, "TestFunction")
+
 AddViewer(BlockViewer);

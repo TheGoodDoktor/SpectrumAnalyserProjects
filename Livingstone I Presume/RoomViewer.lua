@@ -29,7 +29,7 @@ RoomViewer =
 	
 	onAdd = function(self)
 		self.graphicsView = CreateZXGraphicsView(256,256)
-        ClearGraphicsView(self.graphicsView, 0)
+		ClearGraphicsView(self.graphicsView, 0)
 	end,
 
 	onDrawUI = function(self)

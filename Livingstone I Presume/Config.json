@@ -2,7 +2,10 @@
     "128KGame": false,
     "LuaSourceFiles": [
         "SceneryViewer.lua",
-        "RoomViewer.lua"
+        "RoomViewer.lua",
+        "SpriteViewer.lua",
+        "Debug.lua",
+        "LivingstoneFormatter.lua"
     ],
     "Machine": "",
     "Name": "Livingstone I Presume",
@@ -10,17 +13,17 @@
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 60353,
-                "ViewAddressBank": 4
-            },
-            {
-                "Enabled": true,
-                "ViewAddress": 39528,
+                "ViewAddress": 39648,
                 "ViewAddressBank": 3
             },
             {
                 "Enabled": true,
-                "ViewAddress": 33554,
+                "ViewAddress": 62275,
+                "ViewAddressBank": 4
+            },
+            {
+                "Enabled": true,
+                "ViewAddress": 39648,
                 "ViewAddressBank": 3
             },
             {
