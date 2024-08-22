@@ -36,7 +36,7 @@ function DrawBlockToViewByIndex(graphicsView, blockNo, x, y)
 	local width = 1
 	local height = 1
 
-	local blockAddr = BlocksAddr
+	local blockAddr = BlocksAddr + 1
 	for b=0,blockNo do
 		width = ReadByte(blockAddr)
 		blockAddr = blockAddr + 1
@@ -47,6 +47,7 @@ function DrawBlockToViewByIndex(graphicsView, blockNo, x, y)
 		end
 	end
 
+	--print(string.format("addr %x, w %d h %d", blockAddr, width, height))
 	DrawBlockToView(graphicsView, blockAddr, width, height, x, y)
 end
 
@@ -58,7 +59,7 @@ BlockViewer =
 	blockMax = 145,
 	
 	onAdd = function(self)
-		self.graphicsView = CreateZXGraphicsView(256,256)
+		self.graphicsView = CreateZXGraphicsView(256,128)
 		ClearGraphicsView(self.graphicsView, 0)
 		DrawBlockToView(self.graphicsView, self.blockNum, 0, 0)
 	end,
@@ -83,6 +84,10 @@ BlockViewer =
 
 		-- Update and draw to screen
 		DrawGraphicsView(self.graphicsView)
+
+		if imgui.Button("Format Scenery Blocks") == true then
+			FormatSceneryBlocks();
+		end
 	end,
 
 }
