@@ -1,9 +1,11 @@
 BitmapDataAddr = 0x9AE0
+NumBitmaps = 134
 
--- Draw a sprite using sprite index
+CurBitmapAddr = BitmapDataAddr
+
+-- Draw a sprite using a sprite index
 function DrawSpriteToViewByIndex(graphicsView, spriteNo, x, y)
 	local widthChars = 1
-	local widthPixels = 0
 	local heightPixels = 1
 
 	local bitmapAddr = BitmapDataAddr
@@ -18,7 +20,6 @@ function DrawSpriteToViewByIndex(graphicsView, spriteNo, x, y)
 			widthChars = widthChars * 2
 		end
 		
-		
 		heightPixels = ReadByte(bitmapAddr)
 		bitmapAddr = bitmapAddr + 1
 		
@@ -27,28 +28,21 @@ function DrawSpriteToViewByIndex(graphicsView, spriteNo, x, y)
 		end
 	end
 
-	print("bitmapaddr= " .. bitmapAddr)
 	local charPixels = GetMemPtr(bitmapAddr)
-	print(widthChars)
-	--print(widthChars & 0x80)
-	--print(widthChars & 0x7f)
 	DrawZXBitImageFineY(graphicsView, charPixels, x, y, widthChars, heightPixels)
-
-	--DrawSpriteToView(graphicsView, bitmapAddr, width, height, x, y)
+	
+	CurBitmapAddr = bitmapAddr - 2
 end
 
--- todo draw address of sprite
--- todo zoom
--- todo colours
 SpriteViewer = 
 {
 	name = "Sprite Viewer",
 	spriteNum = 0,
 	spriteMin = 0,
-	spriteMax = 133,
+	spriteMax = NumBitmaps-1,
 	
 	onAdd = function(self)
-		self.graphicsView = CreateZXGraphicsView(256,256)
+		self.graphicsView = CreateZXGraphicsView(128,128)
 		ClearGraphicsView(self.graphicsView, 0)
 		--DrawSpriteToViewByIndex(self.graphicsView, self.spriteNum, 0, 0)
 	end,
@@ -66,6 +60,11 @@ SpriteViewer =
 			self.spriteNum = self.spriteMax
 		end
 
+		imgui.Text(string.format("Current bitmap address: 0x%x", CurBitmapAddr))
+		DrawAddressLabel(CurBitmapAddr)
+		
+		--imgui.Text("Current bitmap address: %x", CurBitmapAddr)
+
 		if changed == true then
 			ClearGraphicsView(self.graphicsView, 0)
 			DrawSpriteToViewByIndex(self.graphicsView, self.spriteNum, 0, 0)
@@ -73,6 +72,10 @@ SpriteViewer =
 
 		-- Update and draw to screen
 		DrawGraphicsView(self.graphicsView)
+		
+		if imgui.Button("Format Bitmap Memory") == true then
+			FormatBitmapData();
+		end
 	end,
 
 }
