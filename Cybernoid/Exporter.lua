@@ -32,9 +32,10 @@ Exporter =
 		
 	
 		if imgui.Button("Export Graphics") then
-			SaveGraphicsView2222(self.blockView,"blocks.ag2")
-			SaveGraphicsView2222(self.spriteView,"sprites.ag2")
-			SaveGraphicsView2222(self.particleView,"particles.ag2")
+			SaveGraphicsView2222(self.blockView,"blocks.ag2", false)
+			SaveGraphicsView2222(self.spriteView,"sprites.ag2", true)
+			SaveGraphicsView2222(self.particleView,"particles.ag2", true)
+			SaveGraphicsViewBitmap(self.particleView,"particles.agb", true)
 		end
 
 		imgui.Text("Blocks")
