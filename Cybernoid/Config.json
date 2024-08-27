@@ -11,8 +11,8 @@
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 37332,
-                "ViewAddressBank": 3
+                "ViewAddress": 27520,
+                "ViewAddressBank": 2
             },
             {
                 "Enabled": false,
@@ -65,6 +65,12 @@
         "CheckDebugKeyCombo",
         "DrawBlockXOR",
         "DrawParticleSpriteXOR",
-        "DrawHUDWeaponInfo"
+        "DrawHUDWeaponInfo",
+        "HandlePlayerOffScreen",
+        "SetupGameScreen",
+        "DrawScore",
+        "DrawCollectedTreasureScore",
+        "DrawPlayerLives",
+        "DrawBullet"
     ]
 }
