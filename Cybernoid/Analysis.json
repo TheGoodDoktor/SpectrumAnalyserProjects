@@ -14768,6 +14768,10 @@
                     "Comment": "Draw a 3 digit number\nE : X pos\nD : Y pos\nA : Number\nC : Attrbiute"
                 },
                 {
+                    "Address": 543,
+                    "Comment": "DE : Bullet Coords"
+                },
+                {
                     "Address": 938,
                     "Comment": "This is a table for the weapons"
                 },
@@ -114027,7 +114031,9 @@
                 {
                     "Address": 249,
                     "ByteSize": 3,
-                    "OperandType": 7
+                    "Flags": 2,
+                    "OperandType": 7,
+                    "SMC": true
                 },
                 {
                     "Address": 252,
@@ -114094,7 +114100,9 @@
                 },
                 {
                     "Address": 273,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 275,
@@ -114588,6 +114596,31 @@
                     "Address": 1,
                     "DataType": 11,
                     "InstructionAddressRef": 4026466308
+                },
+                {
+                    "Address": 249,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4042850308
+                },
+                {
+                    "Address": 250,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4042850308
+                },
+                {
+                    "Address": 251,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4042850308
+                },
+                {
+                    "Address": 273,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4044423172
+                },
+                {
+                    "Address": 274,
+                    "DataType": 11,
+                    "InstructionAddressRef": 4044423172
                 }
             ],
             "LabelInfo": [
