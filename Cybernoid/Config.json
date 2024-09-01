@@ -3,7 +3,8 @@
     "LuaSourceFiles": [
         "ViewerScript.lua",
         "GameViewer.lua",
-        "Exporter.lua"
+        "Exporter.lua",
+        "Formatter.lua"
     ],
     "Machine": "",
     "Name": "Cybernoid",
@@ -11,7 +12,7 @@
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 37332,
+                "ViewAddress": 34780,
                 "ViewAddressBank": 3
             },
             {
@@ -65,6 +66,19 @@
         "CheckDebugKeyCombo",
         "DrawBlockXOR",
         "DrawParticleSpriteXOR",
-        "DrawHUDWeaponInfo"
+        "DrawHUDWeaponInfo",
+        "DoGameOver",
+        "EnterHighScore",
+        "HandlePlayerOffScreen",
+        "SetupGameScreen",
+        "DrawScore",
+        "DrawCollectedTreasureScore",
+        "DrawPlayerLives",
+        "Draw3DigitNumber",
+        "DrawNumberDigit",
+        "DrawBullet",
+        "UpdateWeaponSelection",
+        "UpdateDebris",
+        "UpdateAnimatedBlocks"
     ]
 }

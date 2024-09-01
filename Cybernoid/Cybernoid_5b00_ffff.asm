@@ -15,32 +15,33 @@ data_5AC0: 	.equ $5AC0
 
 .org $5B00
 BackgroundAttributes:
-	.db $47,$45,$45,$45,$45,$47,$05,$45,$45,$45,$45,$45,$45,$45,$47,$05,$45,$45,$45,$45,$45,$45,$45,$47,$05,$45,$45,$45,$45,$45,$45,$47 
+	.db $47,$45,$45,$45,$45,$47,$05,$45,$45,$45,$45,$47,$47,$47,$47,$05,$45,$45,$45,$45,$45,$45,$45,$47,$05,$45,$45,$45,$45,$45,$45,$47 
 	.db $45,$47,$47,$00,$00,$47,$45,$44,$45,$45,$45,$45,$45,$45,$47,$47,$46,$47,$47,$47,$47,$47,$47,$47,$43,$03,$00,$00,$00,$05,$45,$45 
 	.db $45,$47,$47,$46,$46,$07,$44,$04,$43,$43,$43,$43,$43,$43,$07,$46,$06,$47,$47,$43,$03,$47,$47,$07,$03,$42,$00,$04,$44,$05,$45,$45 
 	.db $47,$45,$45,$45,$45,$07,$05,$45,$45,$45,$45,$45,$45,$45,$07,$05,$45,$45,$45,$45,$45,$45,$45,$07,$05,$45,$45,$45,$45,$45,$45,$47 
-	.db $43,$43,$43,$42,$43,$42,$43,$42,$43,$43,$46,$06,$43,$42,$43,$43,$43,$42,$43,$42,$43,$42,$43,$42,$43,$43,$43,$42,$43,$42,$43,$42 
-	.db $42,$43,$42,$43,$43,$43,$42,$43,$42,$43,$46,$06,$43,$43,$42,$43,$42,$43,$42,$43,$43,$43,$42,$43,$42,$43,$42,$43,$42,$43,$43,$43 
-	.db $43,$42,$43,$42,$43,$42,$43,$42,$43,$42,$46,$06,$43,$42,$43,$42,$43,$42,$43,$42,$43,$42,$43,$42,$43,$42,$43,$42,$43,$42,$43,$42 
-	.db $42,$43,$43,$43,$42,$43,$42,$43,$42,$43,$46,$06,$42,$43,$00,$00,$42,$43,$00,$00,$00,$00,$42,$43,$00,$00,$00,$00,$00,$00,$42,$43 
-	.db $43,$42,$43,$42,$43,$42,$43,$42,$43,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $42,$43,$42,$43,$43,$43,$42,$43,$42,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $43,$42,$43,$42,$43,$43,$43,$43,$43,$42,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $43,$43,$43,$42,$43,$42,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$43,$43,$43,$42,$43,$42 
+	.db $42,$43,$42,$43,$42,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$42,$43,$42,$43,$42,$43 
+	.db $43,$42,$43,$43,$43,$42,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$43,$43,$43,$42,$43,$42 
+	.db $42,$43,$42,$43,$42,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$42,$43,$42,$43,$42,$43 
+	.db $43,$43,$47,$45,$46,$46,$47,$45,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$45,$46,$46,$47,$45,$43,$43 
+	.db $42,$43,$47,$05,$06,$06,$47,$45,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$45,$06,$06,$47,$05,$42,$43 
+	.db $43,$42,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$43,$42 
+data_5C48:
 data_5C5D:
 data_5C5F:
-	.db $42,$43,$43,$43,$42,$43,$42,$43,$42,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $43,$42,$43,$42,$43,$43,$43,$42,$43,$42,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $42,$43,$43,$43,$42,$43,$42,$43,$43,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$47,$45,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $06,$06,$06,$06,$06,$06,$06,$06,$06,$06,$47,$45,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$07,$07,$00,$00,$00,$00,$00,$00,$00 
-	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$07,$07,$00,$00,$00,$00,$00,$00,$00 
-	.db $00,$00,$44,$04,$00,$00,$44,$04,$00,$00,$44,$04,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$45,$04,$00,$00,$47,$45,$47,$45,$00,$00 
-	.db $00,$00,$44,$04,$00,$00,$44,$04,$00,$00,$44,$04,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$45,$04,$00,$00,$47,$45,$47,$45,$00,$00 
-	.db $00,$00,$44,$04,$44,$04,$44,$04,$44,$04,$44,$04,$00,$00,$00,$00,$00,$00,$00,$00,$42,$43,$45,$04,$42,$43,$47,$46,$06,$06,$00,$00 
-	.db $00,$00,$44,$04,$44,$04,$44,$04,$44,$04,$44,$04,$00,$00,$00,$00,$00,$00,$00,$00,$43,$42,$45,$04,$43,$42,$47,$46,$06,$06,$43,$42 
-	.db $43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$42,$43,$43,$42,$43,$42,$43,$42,$43,$42,$43,$42,$43,$43 
-	.db $42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$43,$42,$42,$43,$42,$43,$42,$43,$43,$43,$42,$43,$42,$43 
+	.db $42,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$42,$43 
+	.db $43,$42,$46,$06,$47,$07,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$43,$42 
+	.db $42,$43,$46,$06,$47,$07,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$46,$06,$42,$43 
+	.db $43,$42,$47,$45,$46,$46,$47,$45,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$45,$46,$46 
+	.db $43,$43,$47,$05,$06,$06,$47,$45,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$47,$45,$06,$06 
+	.db $43,$43,$43,$42,$43,$42,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $42,$43,$42,$43,$42,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $43,$42,$43,$43,$43,$42,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $43,$43,$42,$43,$42,$43,$46,$06,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $43,$42,$43,$42,$43,$43,$46,$06,$00,$00,$00,$00,$47,$07,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $42,$43,$43,$43,$42,$43,$46,$06,$00,$00,$00,$00,$47,$07,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $46,$46,$46,$46,$46,$46,$47,$45,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43 
+	.db $06,$06,$06,$06,$06,$06,$47,$05,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42,$42 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -302,25 +303,25 @@ CollisionMap:
 	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
 	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
 	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $01,$01,$02,$01,$04,$01,$03,$01,$01,$01,$15,$01,$04,$01,$01,$01,$02,$01,$03,$01,$04,$01,$05,$01,$01,$01,$02,$01,$03,$01,$04,$01 
-	.db $01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01 
-	.db $05,$01,$04,$01,$03,$01,$03,$01,$02,$01,$15,$01,$34,$01,$01,$01,$36,$01,$01,$01,$01,$01,$36,$01,$01,$01,$01,$01,$01,$01,$34,$01 
-	.db $01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$01,$01,$00,$00,$00,$00,$01,$01,$00,$00,$00,$00,$00,$00,$01,$01 
-	.db $02,$01,$03,$01,$04,$01,$05,$01,$01,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $03,$01,$04,$01,$01,$01,$01,$01,$02,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $03,$01,$04,$01,$01,$01,$02,$01,$04,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $14,$01,$14,$01,$14,$01,$14,$01,$14,$01,$13,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
-	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$94,$01,$01,$00,$00,$00,$00,$00,$00,$00 
-	.db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00 
-	.db $00,$00,$91,$01,$00,$00,$91,$01,$00,$00,$91,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$3C,$01,$00,$00,$46,$01,$46,$01,$00,$00 
-	.db $00,$00,$01,$01,$00,$00,$01,$01,$00,$00,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$00,$00,$01,$01,$01,$01,$00,$00 
-	.db $00,$00,$92,$01,$93,$01,$92,$01,$93,$01,$92,$01,$00,$00,$00,$00,$00,$00,$00,$00,$0E,$01,$3D,$01,$0C,$01,$4C,$01,$4D,$01,$00,$00 
-	.db $00,$00,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01 
-	.db $1B,$01,$1B,$01,$1B,$01,$1B,$01,$1B,$01,$1B,$01,$1B,$01,$1C,$01,$19,$01,$0C,$01,$02,$01,$02,$01,$03,$01,$04,$01,$05,$01,$01,$01 
+	.db $01,$01,$02,$01,$03,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$15,$01,$01,$01,$03,$01,$02,$01 
+	.db $01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01 
+	.db $02,$01,$01,$01,$02,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$15,$01,$01,$01,$02,$01,$03,$01 
+	.db $01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01 
+	.db $01,$01,$48,$01,$14,$01,$13,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$12,$01,$14,$01,$49,$01,$01,$01 
+	.db $01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01,$01,$01,$01,$01 
+	.db $02,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$15,$01,$02,$01 
+	.db $01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01 
+	.db $03,$01,$15,$01,$20,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$15,$01,$02,$01 
+	.db $01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01 
+	.db $04,$01,$4A,$01,$14,$01,$11,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$12,$01,$14,$01 
+	.db $01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$01,$01,$01,$01 
+	.db $01,$01,$02,$01,$03,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $04,$01,$01,$01,$03,$01,$15,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $03,$01,$04,$01,$01,$01,$15,$01,$00,$00,$00,$00,$22,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $01,$01,$01,$01,$01,$01,$01,$01,$00,$00,$00,$00,$01,$01,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 
+	.db $14,$01,$14,$01,$14,$01,$4B,$01,$19,$01,$1A,$01,$1B,$01,$1B,$01,$1B,$01,$1B,$01,$1B,$01,$1B,$01,$1B,$01,$1B,$01,$1B,$01,$1B,$01 
 	.db $01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01,$01 
 	.db $00 
 	.db $00 
@@ -1167,7 +1168,7 @@ update_game_frame:
 	CALL WeaponFiringLogic
 	CALL UpdateDebris
 	CALL UpdateAnimatedBlocks
-	CALL UpdateFlashingScoreBlocks
+	CALL UpdateFlashingBlocks
 	CALL UpdateBouncingBombsMovement
 	CALL UpdateBouncingBombsLife
 	CALL UpdateFadingParticles
@@ -1180,19 +1181,19 @@ update_game_frame:
 	CALL function_9267
 	CALL UpdateMissiles
 	CALL function_970F
-	CALL function_9BE2
+	CALL UpdateEnemySpawnLogic
 	CALL UpdateEnemyEntities
 	CALL UpdateItemMovement
-	CALL function_8066
+	CALL UpdateSeeker
 	CALL UpdateItemPickupBehaviour
 	CALL UpdatePlayerDeath
-	CALL function_7E27
-	CALL function_79FE
+	CALL UpdateMines
+	CALL UpdatePlayerLifeTimeout
 	CALL CheckForResetKeyCombo
 	CALL CheckDebugKeyCombo
 	JP   main_game_loop
 ScreenFrameCounter:
-	.db 117 			; updated every game loop, reset on entering screen
+	.db 222 			; updated every game loop, reset on entering screen
 ; this check for a key combination and does something
 CheckDebugKeyCombo_Stubbed:
 	LD   A,$FE
@@ -1229,7 +1230,7 @@ ChoseLevelText:
 	.db $0A 
 	.db $E0 
 	.db $45 
-	.db $57,$48,$49,$43,$48,$20,$4C,$45,$56,$45,$4C,$20,$3F 
+	.db "WHICH LEVEL \?"
 	.db $FF 
 ; Ascii code is returned in A
 GetPressedKeyAscii_Stubbed:
@@ -1305,7 +1306,7 @@ CheckForKeyPress_Stubbed:
 	RET 
 ; could this be a RNG?
 ; Maths seems a bit odd
-; Value gets passed in A
+; Range gets passed in A?
 ; A return a result
 GenerateRandomNumber:
 	PUSH HL
@@ -1346,7 +1347,7 @@ label_66A1:
 	POP  HL
 	RET 
 RNGValue:
-	.dw $487E
+	.dw $031E
 ClearScreen_Stubbed:
 	LD   C,$00
 	LD   HL,data_5AC0+63
@@ -1572,31 +1573,32 @@ SetupCollisionOverlapSizes:
 ; Each item is 4 bytes
 ; contains a list of sizes for overlap checks
 CollisionOverlapSizes:
-	.db $04 			; type 0
-	.db $08 
-	.db $04 
-	.db $08 
+	.db 4 			; type 0
+	.db 8 
+	.db 4 
+	.db 8 
 ; type 1
-	.db $08 
-	.db $10 
-	.db $08 
-	.db $10 
+	.db 8 
+	.db 16 
+	.db 8 
+	.db 16 
 ; type 2
-	.db $08 
-	.db $10 
-	.db $04 
-	.db $08 
+	.db 8 
+	.db 16 
+	.db 4 
+	.db 8 
 ; type 3
-	.db $08 
-	.db $10 
-	.db $01 
-	.db $01 
-data_67FE:
-	.db $10 
+	.db 8 
+	.db 16 
+	.db 1 
+	.db 1 
+; type 4
+CustomCollisionSize:
+	.db 16 
 data_67FF:
-	.db $20 
-	.db $08 
-	.db $10 
+	.db 32 
+	.db 8 
+	.db 16 
 ; do a collision check
 ; DE : entity A coords
 ; BC : entity B coords
@@ -1806,21 +1808,21 @@ draw_player_sprite:
 	LD   (PreviousPlayerSpritePtr),HL
 	JP   label_6A0A
 PlayerXPosition:
-	.db $00 
+	.db $2D 
 PlayerYPosition:
-	.db $A0 
+	.db $90 
 PlayerFacingDirection:
 	.db $01 
 PlayerYVel:
 	.db $02 
 PreviousPlayerSpritePtr:
-	.dw PlayerSpriteR_0
+	.dw PlayerSpriteR_1
 PlayerMoving:
 	.db $00 			; 0: still 1: moving
-data_6970:
-	.db $00 
+RoomStartPos:
+	.db 40 
 data_6971:
-	.db $A0 
+	.db 32 
 CheckCollisionRightOfObject:
 	PUSH BC
 	PUSH DE
@@ -1945,8 +1947,8 @@ exit_func_2:
 	POP  BC
 	RET 
 data_6A08:
-	.db $00 
-	.db $A0 
+	.db $2D 
+	.db $90 
 label_6A0A:
 	LD   A,(PlayerHasRearShooterUpgrade)
 	OR   A
@@ -2025,19 +2027,19 @@ label_6A87:
 	LD   A,$01
 	CALL SetupCollisionOverlapSizes
 	CALL CheckWeaponEnemyImpact
-	JR   Z,label_6AB1
+	JR   Z,check_mace_against_scenery
 	PUSH DE
 	LD   E,$21
 	CALL NullFunction_EF42_1
 	POP  DE
-label_6AB1:
+check_mace_against_scenery:
 	INC  E
 	INC  E
 	INC  D
 	INC  D
 	INC  D
 	INC  D
-	CALL function_6C9A
+	CALL CheckAgainstDestructibleScenery
 label_6ABA:
 	LD   C,$47
 	LD   A,(data_7E94)
@@ -2068,16 +2070,16 @@ PlayerHasRearShooterUpgrade:
 data_6AEF:
 	.dw BlankSprite_0
 data_6AF1:
-	.dw $A000
+	.dw $2028
 PlayerHasMace:
-	.db $00 
+	.db $01 
 MaceSpritePointer:
-	.dw BlankSprite_0
+	.dw MaceSprite_0
 MaceCoords:
-	.db 20 
-	.db 98 
+	.db 32 
+	.db 159 
 MaceAngle:
-	.db $00 
+	.db $10 
 MaceRotationalOffsetTable:
 	.db $00 			; x offset
 	.db $E0 			; y offset
@@ -2390,13 +2392,13 @@ GenerateRandomVelocity:
 	NEG  
 	LD   B,A
 	RET 
-function_6C9A:
+CheckAgainstDestructibleScenery:
 	PUSH AF
 	PUSH BC
 	PUSH DE
 	PUSH HL
 	PUSH IX
-	LD   B,D
+	LD   B,D			; put cooords into BC
 	LD   C,E
 	DEC  C
 	DEC  C
@@ -2404,34 +2406,34 @@ function_6C9A:
 	DEC  B
 	DEC  B
 	DEC  B
-	LD   IX,data_6CFC
+	LD   IX,DestructableScenery
 label_6CAC:
 	LD   A,(IX+$00)
-	CP   $FF
+	CP   $FF			; check for terminator
 	JR   Z,label_6CEE
 	LD   A,(IX+$04)
 	OR   A
-	JR   Z,label_6CF5
+	JR   Z,no_collision
 	LD   A,(IX+$02)
-	LD   (data_67FE),A
+	LD   (CustomCollisionSize),A
 	LD   A,(IX+$03)
 	LD   (data_67FF),A
 	LD   A,$04
 	CALL SetupCollisionOverlapSizes
-	LD   E,(IX+$00)
+	LD   E,(IX+$00)			; get item coords
 	LD   D,(IX+$01)
 	CALL CheckCollisionOverlap
 	OR   A
-	JR   Z,label_6CF5
+	JR   Z,no_collision			; no collision
 	LD   (IX+$04),$00
-	LD   BC,(data_67FE)
+	LD   BC,(CustomCollisionSize)
 	LD   A,$F8
 	ADD  A,C
 	LD   C,A
 	LD   A,$F0
 	ADD  A,B
 	LD   B,A
-	CALL function_6D4D
+	CALL ExplodeDestructibleScenery
 	LD   E,$1E
 	CALL NullFunction_EF42_1
 label_6CEE:
@@ -2441,144 +2443,145 @@ label_6CEE:
 	POP  BC
 	POP  AF
 	RET 
-label_6CF5:
-	LD   DE,$0008
+no_collision:
+	LD   DE,$0008			; offset to next item
 	ADD  IX,DE
 	JR   label_6CAC
-data_6CFC:
-	.db $68 
-	.db $90 
-	.db $08 
-	.db $10 
-	.db $46 
-	.db $39 
-	.db $10 
-	.db $79 
-	.db $70 
-	.db $90 
-	.db $08 
-	.db $10 
-	.db $46 
-	.db $39 
-	.db $10 
-	.db $79 
+; each item is 8 bytes
+DestructableScenery:
+	.db 88 			; X pos
+	.db 144 			; Y pos
+	.db 16 			; size x (double pixels)
+	.db 32 			; size y
+	.db $00 			; active?
+	.db 58 			; score sprite
+	.dw $7916
+	.db 255 			; x pos
+	.db 0 			; y pos
+	.db 0 
+	.db 0 
+	.db $00 
+	.db $00 
+	.dw START
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
 	.db $FF 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $FF 
-function_6D4D:
-	LD   E,(IX+$00)
+ExplodeDestructibleScenery:
+	LD   E,(IX+$00)			; get coords
 	LD   D,(IX+$01)
 	PUSH DE
 	LD   A,(IX+$05)
-	CALL function_8A3E
-	LD   E,(IX+$06)
+	CALL SpawnFlashingBlock
+	LD   E,(IX+$06)			; score to add
 	LD   D,(IX+$07)
 	CALL AddToCurrentScore
 	CALL DrawScore
 	POP  DE
-	LD   A,(IX+$02)
-	AND  $F8
+	LD   A,(IX+$02)			; width in pixels
+	AND  %11111000
 	RRCA
 	RRCA
 	RRCA
-	LD   B,A
-	LD   A,(IX+$03)
+	LD   B,A			; blocks wide
+	LD   A,(IX+$03)			; height in pixels?
 	AND  $F0
+	RRCA			; divide by 16
 	RRCA
 	RRCA
 	RRCA
-	RRCA
-	LD   C,A
-label_6D7A:
+	LD   C,A			; blocks high
+explode_block_vloop:
 	PUSH DE
 	PUSH BC
 	CALL GetCollisionMapAddress
-label_6D7F:
+explode_block_hloop:
 	LD   A,(HL)
 	OR   A
-	CALL NZ,function_6D96
+	CALL NZ,ExplodeBlock
 	INC  HL
 	INC  HL
-	LD   A,E
+	LD   A,E			; add 8 to x (block width)
 	ADD  A,$08
 	LD   E,A
-	DJNZ label_6D7F
+	DJNZ explode_block_hloop
 	POP  BC
 	POP  DE
-	LD   A,D
+	LD   A,D			; add 16 to Y
 	ADD  A,$10
 	LD   D,A
 	DEC  C
-	JR   NZ,label_6D7A
+	JR   NZ,explode_block_vloop
 	RET 
-function_6D96:
+; A: Block No
+; DE: Coords
+ExplodeBlock:
 	PUSH BC
 	PUSH DE
 	PUSH HL
 	LD   HL,BlankSprite_0
-	CALL DrawBlockXOR
+	CALL DrawBlockXOR			; erase block
 	CALL SpawnExplosion
 	LD   L,A
 	LD   H,$00
@@ -2650,75 +2653,73 @@ ClearBlockAttribsAndCollision:
 	POP  BC
 	POP  AF
 	RET 
-function_6E07:
+AddDestructibleScenery:
 	PUSH AF
 	PUSH BC
 	PUSH HL
-	LD   HL,data_6E52
-label_6E0D:
+	LD   HL,DestructibleSceneryInfo
+block_find_loop:
 	LD   C,A
-	LD   A,(HL)
-	CP   $FF
+	LD   A,(HL)			; read first byte - block no
+	CP   $FF			; terminator?
 	LD   A,C
-	JR   Z,label_6E1D
-	CP   (HL)
-	JR   Z,label_6E21
-	LD   BC,$0008
-	ADD  HL,BC
-	JR   label_6E0D
-label_6E1D:
+	JR   Z,not_found_exit
+	CP   (HL)			; matches block?
+	JR   Z,block_found
+	LD   BC,$0008			; offset
+	ADD  HL,BC			; go to next item
+	JR   block_find_loop
+not_found_exit:
 	POP  HL
 	POP  BC
 	POP  AF
 	RET 
-label_6E21:
-	LD   (IX+$04),A
+block_found:
+	LD   (IX+$04),A			; block no
 	INC  HL
-	LD   A,(HL)
+	LD   A,(HL)			; x offset
 	ADD  A,E
 	LD   (IX+$00),A
 	INC  HL
-	LD   A,(HL)
+	LD   A,(HL)			; y offset
 	ADD  A,D
 	LD   (IX+$01),A
 	INC  HL
-	LD   A,(HL)
+	LD   A,(HL)			; width
 	LD   (IX+$02),A
 	INC  HL
-	LD   A,(HL)
+	LD   A,(HL)			; height
 	LD   (IX+$03),A
 	INC  HL
 	LD   A,(HL)
-	LD   (IX+$05),A
+	LD   (IX+$05),A			; score flashing block
 	INC  HL
 	LD   A,(HL)
-	LD   (IX+$06),A
+	LD   (IX+$06),A			; score text
 	INC  HL
 	LD   A,(HL)
 	LD   (IX+$07),A
-	LD   BC,$0008
+	LD   BC,$0008			; go to next item
 	ADD  IX,BC
 	POP  HL
 	POP  BC
 	POP  AF
 	RET 
-data_6E52:
-	.db $27 
+DestructibleSceneryInfo:
+	.db 39 			; block no
+	.db $00 			; x offset
+	.db $00 			; y offset
+	.db 16 			; x size
+	.db 32 			; y size
+	.db 58 			; score block - '500'
+	.dw $7916			; score text
+	.db 35 			; block no
 	.db $00 
 	.db $00 
-	.db $10 
-	.db $20 
-	.db $3A 
-	.db $16 
-	.db $79 
-	.db $23 
-	.db $00 
-	.db $00 
-	.db $10 
-	.db $20 
-	.db $38 
-	.db $0A 
-	.db $79 
+	.db 16 
+	.db 32 
+	.db 56 			; '100'
+	.dw $790A
 	.db $2B 
 	.db $00 
 	.db $00 
@@ -2810,197 +2811,197 @@ exit_function:
 ; each item is 6 bytes long
 ActiveDebris:
 	.db $00 			; graphic number
-	.db $00 			; x
-	.db $00 			; y
-	.db $00 			; x vel
-	.db $00 			; y vel
-	.db $00 			; attribute
+	.db $0A 			; x
+	.db $B7 			; y
+	.db $FD 			; x vel
+	.db $0F 			; y vel
+	.db $47 			; attribute
 	.db $00 			; graphic number
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
+	.db $6C 
+	.db $AE 
+	.db $01 
+	.db $0C 
+	.db $47 
+	.db $00 
+	.db $65 
+	.db $B4 
+	.db $01 
+	.db $09 
+	.db $46 
+	.db $00 
+	.db $70 
+	.db $AE 
+	.db $01 
+	.db $0C 
+	.db $46 
+	.db $00 
+	.db $76 
+	.db $4D 
+	.db $03 
+	.db $FD 
+	.db $46 
+	.db $00 
+	.db $76 
+	.db $A7 
+	.db $03 
+	.db $06 
+	.db $46 
+	.db $00 
+	.db $41 
+	.db $B3 
+	.db $FD 
+	.db $08 
+	.db $46 
+	.db $00 
+	.db $38 
+	.db $B6 
+	.db $FD 
+	.db $09 
+	.db $46 
+	.db $00 
+	.db $1E 
+	.db $B1 
+	.db $FD 
+	.db $0D 
+	.db $06 
+	.db $00 
+	.db $76 
+	.db $B1 
+	.db $01 
+	.db $0D 
+	.db $06 
+	.db $00 
+	.db $4A 
+	.db $B7 
+	.db $FF 
+	.db $0F 
+	.db $00 
+	.db $00 
+	.db $72 
+	.db $B3 
+	.db $01 
+	.db $0A 
+	.db $00 
+	.db $00 
+	.db $40 
+	.db $B0 
+	.db $FE 
+	.db $0A 
+	.db $06 
+	.db $00 
+	.db $54 
+	.db $B6 
+	.db $FF 
+	.db $09 
+	.db $06 
+	.db $00 
+	.db $76 
+	.db $5F 
+	.db $03 
+	.db $F9 
+	.db $00 
+	.db $00 
+	.db $57 
+	.db $B2 
+	.db $FF 
+	.db $09 
+	.db $00 
+	.db $00 
+	.db $36 
+	.db $B1 
+	.db $FE 
+	.db $0A 
+	.db $06 
+	.db $00 
+	.db $4A 
+	.db $B5 
+	.db $FF 
+	.db $09 
+	.db $06 
+	.db $00 
+	.db $71 
+	.db $B5 
+	.db $01 
+	.db $0C 
+	.db $06 
+	.db $00 
+	.db $5C 
+	.db $B6 
+	.db $00 
+	.db $08 
+	.db $06 
+	.db $00 
+	.db $76 
+	.db $71 
+	.db $03 
+	.db $FF 
+	.db $47 
+	.db $00 
+	.db $46 
+	.db $B1 
+	.db $FF 
+	.db $0A 
+	.db $47 
+	.db $00 
+	.db $72 
+	.db $B3 
+	.db $02 
+	.db $07 
+	.db $46 
+	.db $00 
+	.db $46 
+	.db $B3 
+	.db $FF 
+	.db $0C 
+	.db $46 
+	.db $00 
+	.db $4D 
+	.db $B3 
+	.db $FF 
+	.db $0B 
+	.db $06 
+	.db $00 
+	.db $6C 
+	.db $B2 
+	.db $01 
+	.db $08 
+	.db $06 
+	.db $00 
+	.db $64 
+	.db $AD 
+	.db $00 
+	.db $0E 
+	.db $00 
+	.db $00 
+	.db $54 
+	.db $B4 
+	.db $FE 
+	.db $07 
+	.db $00 
+	.db $00 
+	.db $56 
+	.db $B7 
+	.db $FF 
+	.db $07 
+	.db $06 
+	.db $00 
+	.db $1E 
+	.db $B3 
+	.db $FD 
+	.db $0C 
+	.db $06 
+	.db $00 
+	.db $76 
+	.db $84 
+	.db $02 
+	.db $00 
+	.db $06 
+	.db $00 
+	.db $76 
+	.db $8D 
+	.db $02 
+	.db $01 
+	.db $06 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -3345,213 +3346,150 @@ exit_interrupt_handler:
 	EI  
 	RETI
 FrameTimer:
-	.db 0 
+	.db 1 
 data_711B:
-	.db $00 
+	.db $01 
 RoomPointersLUT:
-	.dw data_A5AA
-	.dw $A625
-	.dw $A682
-	.dw $A6D3
-	.dw $A742
-	.dw $A7BD
-data_7128:
-	.dw $A7C0
-	.dw $A82D
-	.dw $A8A9
-	.dw $A903
-	.dw $A971
-	.dw $A9CB
-	.dw $A9CE
-	.db $32 
-	.db $AA 
-	.db $A1 
-	.db $AA 
-	.db $19 
-	.db $AB 
-	.db $98 
-	.db $AB 
-	.db $03 
-	.db $AC 
-	.db $06 
-	.db $AC 
-	.db $95 
-	.db $AC 
-	.db $08 
-	.db $AD 
-	.db $83 
-	.db $AD 
-	.db $FB 
-	.db $AD 
-	.db $79 
-	.db $AE 
-	.db $D2 
-	.db $AE 
-	.db $40 
-	.db $AF 
-	.db $CD 
-	.db $AF 
-	.db $37 
-	.db $B0 
-	.db $C6 
-	.db $B0 
-	.db $45 
-	.db $B1 
-	.db $B8 
-	.db $B1 
-	.db $2D 
-	.db $B2 
-	.db $86 
-	.db $B2 
-	.db $DA 
-	.db $B2 
-	.db $5B 
-	.db $B3 
-	.db $D8 
-	.db $B3 
-	.db $4C 
-	.db $B4 
-	.db $C4 
-	.db $B4 
-	.db $22 
-	.db $B5 
-	.db $8F 
-	.db $B5 
-	.db $06 
-	.db $B6 
-	.db $99 
-	.db $B6 
-	.db $9C 
-	.db $B6 
-	.db $16 
-	.db $B7 
-	.db $8B 
-	.db $B7 
-	.db $DA 
-	.db $B7 
-	.db $11 
-	.db $B8 
-	.db $4F 
-	.db $B8 
-	.db $C0 
-	.db $B8 
-	.db $28 
-	.db $B9 
-	.db $91 
-	.db $B9 
-	.db $FF 
-	.db $B9 
-	.db $62 
-	.db $BA 
-	.db $C9 
-	.db $BA 
-	.db $1D 
-	.db $BB 
-	.db $86 
-	.db $BB 
-	.db $18 
-	.db $BC 
-	.db $76 
-	.db $BC 
-	.db $D7 
-	.db $BC 
-	.db $3D 
-	.db $BD 
-	.db $C9 
-	.db $BD 
-	.db $33 
-	.db $BE 
-	.db $B4 
-	.db $BE 
-	.db $16 
-	.db $BF 
-	.db $5E 
-	.db $BF 
-	.db $CC 
-	.db $BF 
-	.db $3C 
-	.db $C0 
-	.db $AB 
-	.db $C0 
-	.db $05 
-	.db $C1 
-	.db $A5 
-	.db $C1 
-	.db $45 
-	.db $C2 
-	.db $AC 
-	.db $C2 
-	.db $FD 
-	.db $C2 
-	.db $75 
-	.db $C3 
-	.db $91 
-	.db $77 
+	.dw room_0_data			; Room 0
+	.dw room_1_data			; Room 1
+	.dw room_2_data			; Room 2
+	.dw room_3_data			; Room 3
+	.dw room_4_data			; Room 4
+	.dw room_5_data			; Room 5
+	.dw room_6_data			; Room 6
+	.dw room_7_data			; Room 7
+	.dw room_8_data			; Room 8
+	.dw room_9_data			; Room 9
+	.dw room_10_data			; Room 10
+	.dw room_11_data			; Room 11
+	.dw room_12_data			; Room 12
+	.dw room_13_data			; Room 13
+	.dw room_14_data			; Room 14
+	.dw room_15_data			; Room 15
+	.dw room_16_data			; Room 16
+	.dw room_17_data			; Room 17
+	.dw room_18_data			; Room 18
+	.dw room_19_data			; Room 19
+	.dw room_20_data			; Room 20
+	.dw room_21_data			; Room 21
+	.dw room_22_data			; Room 22
+	.dw room_23_data			; Room 23
+	.dw room_24_data			; Room 24
+	.dw room_25_data			; Room 25
+	.dw room_26_data			; Room 26
+	.dw room_27_data			; Room 27
+	.dw room_28_data			; Room 28
+	.dw room_29_data			; Room 29
+	.dw room_30_data			; Room 30
+	.dw room_31_data			; Room 31
+	.dw room_32_data			; Room 32
+	.dw room_33_data			; Room 33
+	.dw room_34_data			; Room 34
+	.dw room_35_data			; Room 35
+	.dw room_36_data			; Room 36
+	.dw room_37_data			; Room 37
+	.dw room_38_data			; Room 38
+	.dw room_39_data			; Room 39
+	.dw room_40_data			; Room 40
+	.dw room_41_data			; Room 41
+	.dw room_42_data			; Room 42
+	.dw room_43_data			; Room 43
+	.dw room_44_data			; Room 44
+	.dw room_45_data			; Room 45
+	.dw room_46_data			; Room 46
+	.dw room_47_data			; Room 47
+	.dw room_48_data			; Room 48
+	.dw room_49_data			; Room 49
+	.dw room_50_data			; Room 50
+	.dw room_51_data			; Room 51
+	.dw room_52_data			; Room 52
+	.dw room_53_data			; Room 53
+	.dw room_54_data			; Room 54
+	.dw room_55_data			; Room 55
+	.dw room_56_data			; Room 56
+	.dw room_57_data			; Room 57
+	.dw room_58_data			; Room 58
+	.dw room_59_data			; Room 59
+	.dw room_60_data			; Room 60
+	.dw room_61_data			; Room 61
+	.dw room_62_data			; Room 62
+	.dw room_63_data			; Room 63
+	.dw room_64_data			; Room 64
+	.dw room_65_data			; Room 65
+	.dw room_66_data			; Room 66
+	.dw room_67_data			; Room 67
+	.dw room_68_data			; Room 68
+	.dw room_69_data			; Room 69
+	.dw room_70_data			; Room 70
+	.dw room_71_data			; Room 71
+	.dw room_72_data			; Room 72
+	.dw room_73_data			; Room 73
+	.dw room_74_data			; Room 74
 PlayerDeathTimer:			; player dies when this hits 0
-	.dw $03DD
-HandlePlayerOffScreen:
-	LD   A,E			; x value?
+	.dw $0474
+HandlePlayerOffScreen_Stubbed:
+	LD   A,E			; player X position
 	CP   120
-	JR   Z,label_71C6			; less than 120?
+	JR   Z,off_horizontal_edge			; less than 120?
 	OR   A
-	JR   Z,label_71C6			;  0
-	LD   A,(data_6971)
-	CP   D
-	JP   NZ,label_71D6
-	JP   label_71CD
-label_71C6:
-	LD   A,(data_6970)
-	CP   E
-	JP   NZ,label_71D6
-label_71CD:
+	JR   Z,off_horizontal_edge			;  0
+	LD   A,(data_6971)			; start Y pos
+	CP   D			; compare to player Y pos
+	JP   NZ,check_horizontal_room_movement
+	JP   block_entrance
+off_horizontal_edge:
+	LD   A,(RoomStartPos)			; start X pos
+	CP   E			; check X
+	JP   NZ,check_horizontal_room_movement
+block_entrance:
 	POP  HL
+	INC  HL			; skip instruction after ret
 	INC  HL
 	INC  HL
-	INC  HL
-	LD   A,$01
+	LD   A,$01			; clear zero flag blocking movement
 	OR   A
-	PUSH HL
+	PUSH HL			; push new return address
 	RET 
-label_71D6:
+check_horizontal_room_movement:
 	POP  HL
 	LD   A,(PlayerFacingDirection)
-	CP   $FF
-	LD   A,E
-	JR   Z,label_71E9
+	CP   $FF			; facing left?
+	LD   A,E			; player x pos
+	JR   Z,player_facing_left
 	CP   $78
-	JR   NZ,label_71F2
-	LD   A,$01
-	LD   E,$00
-	JR   label_720E
-label_71E9:
-	OR   A
-	JR   NZ,label_71F2
-	LD   A,$FF
-	LD   E,$78
-	JR   label_720E
-label_71F2:
+	JR   NZ,check_vertical_room_movement
+	LD   A,$01			; next room offset - moving right
+	LD   E,$00			; new x pos
+	JR   go_to_new_room
+player_facing_left:
+	OR   A			; x is zero?
+	JR   NZ,check_vertical_room_movement
+	LD   A,$FF			; next room offset - moving left
+	LD   E,$78			; new x pos
+	JR   go_to_new_room
+check_vertical_room_movement:
 	LD   A,(PlayerYVel)
-	CP   $FE
-	LD   A,D
-	JR   Z,label_7204
-	CP   $B0
-	RET  NZ
-	LD   A,(data_744C)
-	LD   D,$20
-	JR   label_720E
-label_7204:
+	CP   $FE			; moving up?
+	LD   A,D			; y pos
+	JR   Z,player_moving_up
+	CP   $B0			; bottom edge
+	RET  NZ			; not on bottom edge
+	LD   A,(VerticalRoomOffset)			; next room offset - moving down
+	LD   D,$20			; new ypos
+	JR   go_to_new_room
+player_moving_up:
 	CP   $20
 	RET  NZ
-	LD   A,(data_744C)
+	LD   A,(VerticalRoomOffset)
 	NEG  
 	LD   D,$B0
-label_720E:
+go_to_new_room:
 	LD   (PlayerXPosition),DE
-	LD   (data_6970),DE
+	LD   (RoomStartPos),DE
 	LD   DE,(CurRoomNumber)
-	ADD  A,E
+	ADD  A,E			; add room offset
 	LD   (CurRoomNumber),A
-SetupGameScreen:
+SetupGameScreen_Stubbed:
 	XOR  A
 	LD   (data_7E94),A
 	LD   (BoucingBombsTimeout),A
@@ -3559,9 +3497,9 @@ SetupGameScreen:
 	LD   (data_80B3),A
 	LD   A,$FF
 	LD   (data_9B47),A
-	LD   (data_9BD5),A
+	LD   (EnemySpawnerType),A
 	LD   A,$32
-	LD   (data_9BD4),A
+	LD   (EnemySpawnerTimerInitialVal),A
 	LD   HL,$0753
 	LD   (PlayerDeathTimer),HL
 	LD   HL,BlankSprite_0
@@ -3641,7 +3579,7 @@ label_72C2:
 	JP   block_loop
 finished_drawing_screen:
 	CALL ResetScreenItemLists
-	LD   IX,data_6CFC
+	LD   IX,DestructableScenery
 	LD   DE,$2000			; initial coordinates
 label_72D2:
 	CALL GetCollisionMapAddress
@@ -3654,13 +3592,13 @@ not_logical_block:
 	OR   A
 	CALL NZ,SetupBlockCollisionMap			; set collision if block not 0
 	CALL AddAnimatedBlock
-	CALL function_6E07
+	CALL AddDestructibleScenery
 	CALL AddItemToScreenList
 label_72EC:
 	CALL SpawnUpDownEnemyPair
 	CALL Spawn_F8h_To_FFh
-	CALL Spawn_ECh_To_F0h			; spawn sine wavey enemy
-	CALL function_A1D6
+	CALL SpawnEnemySpawner			; spawn sine wavey enemy
+	CALL SpawnWeaponUpgrade
 	LD   A,E
 	ADD  A,$08
 	LD   E,A
@@ -3678,7 +3616,7 @@ label_730E:
 	CALL StoreBackgroundAttributes
 	CALL function_9BD8
 	LD   A,$01
-	LD   (data_9BD3),A
+	LD   (EnemySpawnerTimer),A
 	LD   DE,(PlayerXPosition)
 	LD   (data_6AF1),DE
 	LD   B,D
@@ -3906,7 +3844,7 @@ ScreenItemLists:
 	.dw $8E1E
 	.db $02 
 	.dw MissileList
-	.dw $987D			; cuurent ptr?
+	.dw MissileList			; cuurent ptr?
 	.db $02 
 	.dw VolcanoList
 	.dw VolcanoList
@@ -3930,8 +3868,8 @@ reset_screen_list_loop:
 	ADD  IX,BC
 	JP   reset_screen_list_loop
 CurRoomNumber:
-	.db $0D 
-data_744C:
+	.db $0C 
+VerticalRoomOffset:
 	.db $06 
 ; get pointer from pointer tabel
 ; A: index
@@ -3968,9 +3906,9 @@ StartLevel:
 	LD   D,(HL)
 	INC  HL
 	LD   (PlayerXPosition),DE
-	LD   (data_6970),DE
+	LD   (RoomStartPos),DE
 	LD   A,(HL)			; byte 2 - ?
-	LD   (data_744C),A			; store
+	LD   (VerticalRoomOffset),A			; store
 	INC  HL
 	LD   A,(HL)			; byte 3 - room number
 	LD   (CurRoomNumber),A
@@ -3978,13 +3916,13 @@ StartLevel:
 	LD   E,(HL)			; bytes 4 & 5 - put in DE
 	INC  HL
 	LD   D,(HL)
-	LD   (data_7A1D),DE
-	LD   (data_7A1B),DE
+	LD   (PlayerLifeTimeoutInitialValue),DE
+	LD   (PlayerLifeTimeout),DE
 	INC  HL
 	LD   A,(HL)			; byte 6 - player direction
 	LD   (PlayerFacingDirection),A
 	XOR  A
-	LD   (data_79D3),A
+	LD   (PlayerTimeoutSegments),A
 	LD   (data_7643),A
 	LD   (PlayerHasRearShooterUpgrade),A
 	LD   (PlayerHasMace),A
@@ -4111,16 +4049,9 @@ DestructibleBlocks:
 	.db $53 
 	.db $0D 
 	.db $0A 
-	.db $09,$4C,$44,$09,$41,$2C,$45,$0D 
+	.db "\tLD\tA,E\r"
 	.db $0A 
-	.db $09,$41,$4E,$44,$09,$30,$31,$31,$31,$31,$31,$30,$30,$42,$0D 
-	.db $0A 
-	.db $09 
-	.db $52 
-	.db $52 
-	.db $43 
-	.db $41 
-	.db $0D 
+	.db "\tAND\t01111100B\r"
 	.db $0A 
 	.db $09 
 	.db $52 
@@ -4129,9 +4060,16 @@ DestructibleBlocks:
 	.db $41 
 	.db $0D 
 	.db $0A 
-	.db $09,$4C,$44,$09,$28,$24,$33,$2B,$31,$29,$2C,$41,$0D 
+	.db $09 
+	.db $52 
+	.db $52 
+	.db $43 
+	.db $41 
+	.db $0D 
 	.db $0A 
-	.db $09,$4C,$44,$09,$43,$2C,$44 
+	.db "\tLD\t($3+1),A\r"
+	.db $0A 
+	.db "\tLD\tC,D"
 	.db $FF 
 UpdateVolcanoes:
 	LD   HL,VolcanoList
@@ -4287,14 +4225,14 @@ label_7676:
 	CALL UpdateItemPickupBehaviour
 	POP  BC
 	DJNZ label_7676
-	LD   A,(data_79D3)
+	LD   A,(PlayerTimeoutSegments)
 	CP   $11
-	JP   NC,label_76BB
+	JP   NC,level_failed			; >=17
 	LD   HL,(CollectedTreasureScore)
 	LD   DE,$05DC
 	AND  A
 	SBC  HL,DE
-	JR   C,label_76BB
+	JR   C,level_failed
 	LD   HL,CollectedTreasureString+1
 	LD   DE,BonusScoreString
 	LD   BC,$0005
@@ -4311,7 +4249,7 @@ label_76B0:
 	OR   A
 	JP   Z,label_76B0
 	RET 
-label_76BB:
+level_failed:
 	LD   HL,LevelFailedString
 	CALL DrawStringAt
 label_76C1:
@@ -4328,19 +4266,19 @@ LevelCompleteString:
 	.db $DF 
 	.db $13 
 	.db $03 
-	.db $57,$45,$4C,$4C,$20,$44,$4F,$4E,$45,$20,$43,$59,$42,$45,$52,$4E,$4F,$49,$44,$20,$50,$49,$4C,$4F,$54,$21 
+	.db "WELL DONE CYBERNOID PILOT!"
 	.db $7A 
 	.db $E4 
-	.db $59,$4F,$55,$52,$20,$53,$4B,$49,$4C,$4C,$20,$48,$41,$53,$20,$45,$41,$52,$4E,$45,$44,$20,$41,$4E,$4F,$54,$48,$45,$52 
+	.db "YOUR SKILL HAS EARNED ANOTHER"
 	.db $7A 
 	.db $E3 
-	.db $43,$52,$41,$46,$54,$20,$41,$4E,$44,$20 
+	.db "CRAFT AND "
 	.db $DD 
 BonusScoreString:
-	.db $30,$30,$30,$30,$30,$30 
+	.db "000000"
 	.db $DC 
 	.db $20 
-	.db $42,$4F,$4E,$55,$53,$20,$50,$4F,$49,$4E,$54,$53,$2E 
+	.db "BONUS POINTS."
 	.db $FF 
 LevelFailedString:
 	.db $E6 
@@ -4350,92 +4288,93 @@ LevelFailedString:
 	.db $DF 
 	.db $13 
 	.db $03 
-	.db $59,$4F,$55,$20,$48,$41,$56,$45,$20,$46,$41,$49,$4C,$45,$44,$20,$54,$4F,$20,$52,$45,$54,$52,$45,$49,$56,$45 
+	.db "YOU HAVE FAILED TO RETREIVE"
 	.db $7A 
 	.db $E2 
-	.db $41,$20,$43,$41,$52,$47,$4F,$20,$56,$41,$4C,$55,$45,$20,$4F,$46,$20,$31,$35,$30,$30,$20,$57,$49,$54,$48,$49,$4E,$20,$54,$48,$45 
+	.db "A CARGO VALUE OF 1500 WITHIN THE"
 	.db $7A 
 	.db $E4 
-	.db $54,$49,$4D,$45,$20,$41,$4C,$4C,$4F,$43,$41,$54,$45,$44,$20,$2D,$20,$42,$41,$44,$20,$4C,$55,$43,$4B 
+	.db "TIME ALLOCATED - BAD LUCK"
 	.db $FF 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $0B 
-	.db $00 
-	.db $00 
-	.db $8B 
-	.db $00 
-	.db $00 
-	.db $8B 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $0A 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $09 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $06 
-	.db $07 
-	.db $08 
-	.db $00 
-	.db $88 
-	.db $89 
-	.db $8A 
-	.db $88 
-	.db $00 
-	.db $4C 
-	.db $4D 
-	.db $46 
-	.db $00 
-	.db $00 
-	.db $FF 
-	.db $05 
-	.db $14 
-	.db $9A 
-	.db $FF 
-	.db $04 
-	.db $9B 
-	.db $9C 
-	.db $FF 
-	.db $05 
-	.db $14 
-	.db $FF 
-	.db $30 
-	.db $00 
+room_74_data:
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 11 			; BackgroundBlock_11
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 139 			; BackgroundBlock_139
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 139 			; BackgroundBlock_139
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 10 			; BackgroundBlock_10
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 9 			; BackgroundBlock_9
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 6 			; BackgroundBlock_6
+	.db 7 			; BackgroundBlock_7
+	.db 8 			; BackgroundBlock_8
+	.db 0 			; BackgroundBlock_0
+	.db 136 			; BackgroundBlock_136
+	.db 137 			; BackgroundBlock_137
+	.db 138 			; BackgroundBlock_138
+	.db 136 			; BackgroundBlock_136
+	.db 0 			; BackgroundBlock_0
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 155 			; run block value BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db $FF 			; Block Run
+	.db 48 			; run length
+	.db 0 			; run block value BackgroundBlock_0
 	.db $E5 
 	.db $CD 
 	.db $44 
@@ -4598,7 +4537,7 @@ HUDPanel:
 	.db $D4 
 	.db $24 
 	.db $FF 
-DrawScore:
+DrawScore_Stubbed:
 	PUSH AF
 	PUSH BC
 	PUSH DE
@@ -4620,7 +4559,7 @@ draw_score_loop:
 	POP  BC
 	POP  AF
 	RET 
-DrawCollectedTreasureScore:
+DrawCollectedTreasureScore_Stubbed:
 	LD   HL,CharacterSet
 	LD   (operand_SetCharacterSet+1),HL
 	LD   C,$43
@@ -4634,14 +4573,15 @@ treasurescore_charloop:
 	INC  HL
 	DJNZ treasurescore_charloop
 	RET 
-DrawPlayerLives:
+DrawPlayerLives_Stubbed:
 	LD   A,(NoPlayerLives)
 	LD   DE,$0203
 	LD   C,$46
 	JP   Draw3DigitNumber
 NoPlayerLives:
-	.db $02 
+	.db $04 
 ; Adds a score as Ascii to current score
+; DE : pointer to Ascii score to add
 AddToCurrentScore:
 	PUSH AF
 	PUSH BC
@@ -4676,9 +4616,9 @@ CurrentScoreString:
 	.db $30 
 	.db $30 
 	.db $30 
-	.db $37 
-	.db $32 
 	.db $35 
+	.db $35 
+	.db $30 
 ScoreAscii_25:
 	.db $30 
 	.db $30 
@@ -4776,12 +4716,12 @@ CollectedTreasureString:
 	.db $30 
 	.db $30 
 	.db $30 
-	.db $30 
-	.db $30 
+	.db $31 
+	.db $34 
 	.db $30 
 	.db $FF 
 CollectedTreasureScore:
-	.dw $0000
+	.dw $008C
 	.db $00 
 	.db $00 
 ; Draw a 3 digit number
@@ -4789,7 +4729,7 @@ CollectedTreasureScore:
 ; D : Y pos
 ; A : Number
 ; C : Attrbiute
-Draw3DigitNumber:
+Draw3DigitNumber_Stubbed:
 	PUSH BC
 	PUSH HL
 	LD   HL,CharacterSet
@@ -4803,7 +4743,7 @@ Draw3DigitNumber:
 	POP  HL
 	POP  BC
 	RET 
-DrawNumberDigit:
+DrawNumberDigit_Stubbed:
 	LD   L,$00
 digit_loop:
 	SUB  B
@@ -4815,18 +4755,18 @@ label_7999:
 	PUSH AF
 	LD   A,B
 	CP   $64
-	JR   Z,exit_func_1_1
+	JR   Z,exit_func_1_1_1
 	LD   A,L
 	ADD  A,$30			; add number to Ascii for 0
 	CALL DrawCharacter
 	INC  E
-exit_func_1_1:
+exit_func_1_1_1:
 	POP  AF
 	RET 
 DrawTimeoutGauge:
 	LD   HL,data_79BE
 	CALL DrawStringAt
-	LD   A,(data_79D3)
+	LD   A,(PlayerTimeoutSegments)
 	OR   A
 	RET  Z
 	LD   E,$7B
@@ -4857,8 +4797,8 @@ data_79BE:
 	.db $DC 
 	.db $17 
 	.db $FF 
-data_79D3:
-	.db $05 
+PlayerTimeoutSegments:
+	.db 2 
 function_79D4:
 	PUSH AF
 	PUSH BC
@@ -4893,26 +4833,26 @@ data_79FA:
 	.db $CF 
 	.db $F3 
 	.db $FC 
-function_79FE:
-	LD   HL,(data_7A1B)
+UpdatePlayerLifeTimeout:
+	LD   HL,(PlayerLifeTimeout)
 	DEC  HL
-	LD   (data_7A1B),HL
+	LD   (PlayerLifeTimeout),HL
 	LD   A,L
-	OR   H
+	OR   H			; check for 0
 	RET  NZ
-	LD   HL,(data_7A1D)
-	LD   (data_7A1B),HL
-	LD   A,(data_79D3)
+	LD   HL,(PlayerLifeTimeoutInitialValue)
+	LD   (PlayerLifeTimeout),HL
+	LD   A,(PlayerTimeoutSegments)
 	CP   $11
 	RET  Z
 	INC  A
-	LD   (data_79D3),A
+	LD   (PlayerTimeoutSegments),A
 	JP   DrawTimeoutGauge
-data_7A1B:
-	.dw $00F7
-data_7A1D:
-	.dw $01F4
-function_7A1F:
+PlayerLifeTimeout:
+	.dw 89
+PlayerLifeTimeoutInitialValue:
+	.dw 500
+DrawBullet_Stubbed:
 	PUSH AF
 	PUSH BC
 	PUSH HL
@@ -5009,7 +4949,7 @@ label_7AAA:
 	LD   A,C
 	JP   function_7AB5
 data_7AB4:
-	.db 10 
+	.db 14 
 function_7AB5:
 	EX   AF,AF'
 	LD   A,E
@@ -5043,7 +4983,7 @@ label_7ABD:
 	LD   A,(HL)
 	OR   (HL)
 	POP  HL
-	JP   Z,function_7A1F			; chain other function
+	JP   Z,DrawBullet			; chain other function
 	INC  HL
 	INC  HL
 	LD   (HL),$00
@@ -5087,12 +5027,12 @@ next_bullet:
 	INC  HL
 	INC  HL
 	INC  HL
-	CALL function_7A1F
+	CALL DrawBullet
 	LD   E,C
-	CALL function_7A1F
+	CALL DrawBullet
 	JP   next_bullet
 bullet_impact:
-	CALL function_7A1F
+	CALL DrawBullet
 	DEC  HL
 	LD   (HL),$00
 	INC  HL
@@ -5100,8 +5040,8 @@ bullet_impact:
 	CALL CheckAgainstDestructibleBlocks
 	JR   next_bullet
 BulletList:
-	.db 0 			; xpos
-	.db 0 			; ypos
+	.db 114 			; xpos
+	.db 84 			; ypos
 	.db $00 			; xvel (0-inactive)
 	.db 0 			; xpos
 	.db 0 			; ypos
@@ -5121,7 +5061,7 @@ BulletList:
 	.db $FF 
 WeaponChangeButtonHeld:
 	.db $00 
-UpdateWeaponSelection:
+UpdateWeaponSelection_Stubbed:
 	LD   A,$F7
 	IN   A,($FE)			; read number key row
 	AND  $1F
@@ -5148,7 +5088,7 @@ number_key_check_loop:
 number_key_found:
 	LD   A,C			; C contains key index
 	LD   (SelectedWeapon),A			; set weapon
-DrawHUDWeaponInfo:
+DrawHUDWeaponInfo_Stubbed:
 	LD   C,$47
 	LD   A,(SelectedWeapon)
 	LD   HL,CharacterSet
@@ -5183,37 +5123,37 @@ draw_selected_weapon_charloop:
 	JP   Draw3DigitNumber			; tail call return
 ; This is a table for the weapons
 WeaponTable:
-	.db $42,$4F,$4D,$42,$53,$20,$20,$20,$20,$20,$20 			; name
-	.db 17 			; current ammo
+	.db "BOMBS      "			; name
+	.db 16 			; current ammo
 	.dw WeaponFunc_Bombs			; function
 	.db 20 
 	.db 20 
 ; Mines
-	.db $4D,$49,$4E,$45,$53,$20,$20,$20,$20,$20,$20 			; name text
+	.db "MINES      "			; name text
 	.db $14 			; current ammo
 	.dw WeaponFunc_Mines
 	.db $14 			; start ammo
 	.db $14 
 ; Shield
-	.db $53,$48,$49,$45,$4C,$44,$20,$20,$20,$20,$20 			; Shield
+	.db "SHIELD     "			; Shield
 	.db $01 			; current Ammo
 	.dw WeaponFunc_Shield
 	.db $01 			; start ammo
 	.db $01 
 ; Bounce
-	.db $42,$4F,$55,$4E,$43,$45,$20,$20,$20,$20,$20 
+	.db "BOUNCE     "
 	.db $05 			; current ammo
 	.dw WeaponFunc_Bounce
 	.db $05 			; start ammo
 	.db $05 
 ; Seeker
-	.db $53,$45,$45,$4B,$45,$52,$20,$20,$20,$20,$20 
-	.db $03 			; current ammo
+	.db "SEEKER     "
+	.db $05 			; current ammo
 	.dw WeaponFunc_Seeker
 	.db $05 			; start ammo
 	.db $05 
 SelectedWeapon:
-	.db $04 
+	.db $00 
 	.db $00 
 ResetWeaponsToDefaultAmmo:
 	LD   DE,$0010
@@ -5272,7 +5212,7 @@ weapon_function_finished:
 	LD   C,$47			; attrbiute
 	JP   Draw3DigitNumber
 WeaponFired:
-	.db $00 
+	.db $01 
 	.db $AF 
 	.db $32 
 	.db $54 
@@ -5405,7 +5345,7 @@ label_7D15:
 label_7D58:
 	XOR  A
 	LD   (IX+$02),A
-	CALL function_6C9A
+	CALL CheckAgainstDestructibleScenery
 	LD   A,$01
 	CALL SetupCollisionOverlapSizes
 	CALL function_74E2
@@ -5450,18 +5390,18 @@ BombGoUpYVelTable:
 	.db $00 
 ; each entity is 7 bytes
 BombEntityList:
-	.db 0 			; bomb 0
-	.db 0 
+	.db 89 			; bomb 0
+	.db 146 
 	.db 0 			; life countdown - 0 if free
-	.dw START
-	.db $00 			; x vel
+	.dw BombGoDownYVelTable
+	.db $02 			; x vel
 	.db $00 			; bomb graphic
 ; bomb 1
-	.db 0 
-	.db 0 
+	.db 97 
+	.db 178 
 	.db 0 			; life
-	.dw START
-	.db $00 
+	.dw BombGoDownYVelTable
+	.db $02 
 	.db $00 
 ; bomb 2
 	.db 0 
@@ -5509,18 +5449,18 @@ BombEntityList:
 	.db $FF 
 WeaponFunc_Mines:
 	LD   DE,(PlayerXPosition)
+	INC  D			; add 4 Y
 	INC  D
 	INC  D
 	INC  D
-	INC  D
-	INC  E
+	INC  E			; add 2 X
 	INC  E
 	XOR  A
 	CALL SetupCollisionOverlapSizes
-	LD   HL,$7E57
+	LD   HL,MinesList
 label_7DDF:
 	LD   A,(HL)
-	CP   $FF
+	CP   $FF			; check for terminator
 	JR   Z,label_7DF7
 	LD   C,A
 	INC  HL
@@ -5535,7 +5475,7 @@ label_7DDF:
 	JP   NZ,weapon_function_finished
 	JP   label_7DDF
 label_7DF7:
-	LD   HL,data_7E57
+	LD   HL,MinesList
 label_7DFA:
 	LD   A,(HL)
 	CP   $FF
@@ -5553,7 +5493,7 @@ label_7E0A:
 	LD   (HL),D
 	DEC  HL
 	LD   (HL),E
-	LD   A,$04
+	LD   A,$04			; mine sprite
 	CALL DrawParticleSpriteXOR
 	LD   (WeaponFired),A
 	LD   A,$03
@@ -5563,14 +5503,14 @@ label_7E0A:
 	CALL NullFunction_EF42_1
 	POP  DE
 	JP   weapon_function_finished
-function_7E27:
+UpdateMines:
 	LD   A,$02
 	CALL SetupCollisionOverlapSizes
 	LD   C,$47
-	LD   HL,data_7E57
-label_7E31:
+	LD   HL,MinesList
+mine_update_loop:
 	LD   A,(HL)
-	CP   $FF
+	CP   $FF			; terminator
 	RET  Z
 	LD   E,A
 	INC  HL
@@ -5579,18 +5519,26 @@ label_7E31:
 	LD   A,(HL)
 	INC  HL
 	OR   A
-	JP   Z,label_7E31
+	JP   Z,mine_update_loop
 	CALL WriteAttrib2x2
 	CALL CheckWeaponEnemyImpact
-	JP   Z,label_7E31
+	JP   Z,mine_update_loop
 	DEC  HL
 	LD   (HL),$00
 	INC  HL
 	LD   A,$04
 	CALL DrawParticleSpriteXOR
 	CALL SpawnFadingParticle
-	JP   label_7E31
-data_7E57:
+	JP   mine_update_loop
+MinesList:
+	.db $00 			; xpos
+	.db 0 			; ypos
+	.db $00 
+	.db 0 			; x pos
+	.db 0 			; y pos
+	.db $00 
+	.db 0 			; x pos
+	.db 0 			; y pos
 	.db $00 
 	.db $00 
 	.db $00 
@@ -5613,15 +5561,7 @@ data_7E57:
 	.db $00 
 	.db $00 
 	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $FF 
+	.db $FF 			; terminator
 WeaponFunc_Shield:
 	LD   A,(data_7E94)
 	OR   A
@@ -5828,7 +5768,7 @@ BouncingBombImpactEffect:
 	POP  HL
 	POP  DE
 	POP  BC
-	JP   function_6C9A
+	JP   CheckAgainstDestructibleScenery
 function_7FBF:
 	LD   A,B
 	NEG  
@@ -5849,7 +5789,7 @@ function_7FBF:
 	POP  HL
 	POP  DE
 	POP  BC
-	JP   function_6C9A
+	JP   CheckAgainstDestructibleScenery
 UpdateBouncingBombsLife:
 	LD   A,(BoucingBombsTimeout)			; check what?
 	OR   A
@@ -5879,12 +5819,12 @@ kill_bouncing_bombs_loop:
 BoucingBombsTimeout:
 	.db $00 
 WeaponFunc_Seeker:
-	LD   IX,data_80B1
+	LD   IX,SeekerState
 	LD   A,(IX+$02)
 	OR   A
-	JP   NZ,weapon_function_finished
+	JP   NZ,weapon_function_finished			; return if already active
 	LD   BC,$0008
-	LD   IY,data_6CFC
+	LD   IY,DestructableScenery
 label_8020:
 	LD   A,(IY+$00)
 	CP   $FF
@@ -5907,7 +5847,7 @@ label_8043:
 	LD   C,(IY+$00)
 	LD   B,(IY+$01)
 label_8049:
-	LD   HL,$C6F9
+	LD   HL,BlankSprite_0
 	LD   (IX+$0A),L
 	LD   (IX+$0B),H
 	LD   DE,(PlayerXPosition)
@@ -5917,11 +5857,11 @@ label_8049:
 	LD   E,$17
 	CALL NullFunction_EF42_1
 	JP   weapon_function_finished
-function_8066:
-	LD   IX,data_80B1
+UpdateSeeker:
+	LD   IX,SeekerState
 	LD   A,(IX+$02)
 	OR   A
-	RET  Z
+	RET  Z			; not active - return
 	LD   C,(IX+$00)
 	LD   B,(IX+$01)
 	LD   H,$05
@@ -5930,9 +5870,9 @@ label_8077:
 	JR   Z,label_809E
 	DEC  H
 	JR   NZ,label_8077
-	LD   L,(IX+$0A)
+	LD   L,(IX+$0A)			; sprite pointer
 	LD   H,(IX+$0B)
-	LD   A,$11
+	LD   A,$11			; seeker sprite
 	CALL DrawMovingSpriteXOR
 	INC  D
 	INC  D
@@ -5940,13 +5880,13 @@ label_8077:
 	INC  D
 	INC  E
 	INC  E
-	CALL SpawnFadingParticle
-	LD   (IX+$0A),L
+	CALL SpawnFadingParticle			; trail
+	LD   (IX+$0A),L			; sprite pointer
 	LD   (IX+$0B),H
 	LD   C,$47
 	JP   WriteSpriteAttrbiutes
 label_809E:
-	LD   L,(IX+$0A)
+	LD   L,(IX+$0A)			; sprite pointer
 	LD   H,(IX+$0B)
 	XOR  A
 	CALL DrawMovingSpriteXOR
@@ -5956,21 +5896,20 @@ label_809E:
 	INC  D
 	INC  D
 	INC  D
-	JP   function_6C9A
-data_80B1:
-	.db $69 
-	.db $25 
+	JP   CheckAgainstDestructibleScenery
+SeekerState:
+	.db 112 			; x
+	.db 144 			; y
 data_80B3:
-	.db $00 
+	.db $00 			; life
 	.db $FF 
 	.db $01 
-	.db $FF 
 	.db $00 
-	.db $2F 
-	.db $2B 
-	.db $5F 
-	.db $49 
-	.db $D4 
+	.db $01 
+	.db $38 
+	.db $10 
+	.db $70 
+	.dw MaceSprite_2			; sprite pointer
 ; A contains sprite type
 ; D : Y pos
 ; E : X pos
@@ -6015,7 +5954,7 @@ sprite_draw_loop:
 	DEC  H
 	LD   H,(HL)
 operand_80EE:
-	OR   %00000101
+	OR   %00001100
 	LD   L,A
 	INC  C
 	LD   A,(DE)			; read pixel line
@@ -6033,7 +5972,7 @@ operand_80EE:
 	DEC  H
 	LD   H,(HL)
 operand_8101:
-	OR   %00000101
+	OR   %00001100
 	LD   L,A
 	INC  C
 	LD   A,(DE)			; read pixel line
@@ -6251,54 +6190,54 @@ TitleScreenString:
 	.db $08 			; x
 	.db $E0 			; ctrl code - set character attribute
 	.db $45 
-	.db $42,$59,$20,$52,$41,$46,$46,$41,$45,$4C,$45,$20,$43,$45,$43,$43,$4F 
+	.db "BY RAFFAELE CECCO"
 	.db $DA 			; set text colour to magenta
 	.db $DF 			; ctrl code - set text cursor pos
 	.db $0B 			; y
 	.db $06 			; x
-	.db $4D,$55,$53,$49,$43,$20,$42,$59,$20,$44,$41,$56,$45,$20,$52,$4F,$47,$45,$52,$53 
+	.db "MUSIC BY DAVE ROGERS"
 	.db $DF 			; ctrl code - set text cursor pos
 	.db $0D 			; y
 	.db $09 			; x
 	.db $DA 			; set text colour to magenta
-	.db $31,$20 
+	.db "1 "
 	.db $DB 			; set text colour to green
-	.db $53,$54,$41,$52,$54,$20,$47,$41,$4D,$45 
+	.db "START GAME"
 	.db $79 			; move down one line
 	.db $F4 			; move back in X
 	.db $DA 			; magenta
-	.db $32,$20 
+	.db "2 "
 	.db $DB 			; green
-	.db $44,$45,$46,$49,$4E,$45,$20,$4B,$45,$59,$53 
+	.db "DEFINE KEYS"
 	.db $79 			; move down one line
 	.db $F3 			; move back in X
 	.db $DA 			; magenta
-	.db $33,$20 
+	.db "3 "
 	.db $DB 			; green
-	.db $4B,$45,$59,$42,$4F,$41,$52,$44 
+	.db "KEYBOARD"
 	.db $79 			; move down one line
 	.db $F6 			; move back in X
 	.db $DA 			; magenta
-	.db $34,$20 
+	.db "4 "
 	.db $DB 			; green
-	.db $49,$4E,$54,$45,$52,$46,$41,$43,$45,$20,$32 
+	.db "INTERFACE 2"
 	.db $79 			; move down one line
 	.db $F3 			; move back in X
 	.db $DA 			; magenta
-	.db $35,$20 
+	.db "5 "
 	.db $DB 			; green
-	.db $4B,$45,$4D,$50,$53,$54,$4F,$4E 
+	.db "KEMPSTON"
 	.db $79 			; move down one line
 	.db $F6 			; move back in X
 	.db $DA 			; magenta
-	.db $36,$20 
+	.db "6 "
 	.db $DB 			; green
-	.db $53,$4F,$55,$4E,$44,$20,$4F,$4E,$2F,$4F,$46,$46 
+	.db "SOUND ON/OFF"
 	.db $DF 			; set text cursor pos
 	.db $14 			; y
 	.db $04 			; x
 	.db $D9 			; red
-	.db $43,$59,$42,$45,$52,$4E,$4F,$49,$44,$20,$2A,$20,$31,$39,$38,$38,$20,$48,$45,$57,$53,$4F,$4E 
+	.db "CYBERNOID * 1988 HEWSON"
 	.db $FF 			; terminator
 HighlightSelectedControlDevice:
 	PUSH BC
@@ -6326,7 +6265,7 @@ HighlightSelectedControlDevice:
 data_830A:
 	.db $01 
 MenuAtribCycleCounter:
-	.db $2E 
+	.db $10 
 define_keys:
 	CALL ClearScreen
 	CALL DrawTitleScreenGraphics
@@ -6417,22 +6356,22 @@ data_83C1:
 	.db $FF 
 	.db $FF 
 txt_SPACE:
-	.db $53,$50,$41,$43,$45 
+	.db "SPACE"
 	.db $7A 			; go to next line
 	.db $FB 
 	.db $FF 			; terminator
 txt_ENTER:
-	.db $45,$4E,$54,$45,$52 
+	.db "ENTER"
 	.db $7A 			; go to next line
 	.db $FB 
 	.db $FF 			; terminator
 txt_CAPS_SHIFT:
-	.db $43,$41,$50,$53,$20,$53,$48,$49,$46,$54 
+	.db "CAPS SHIFT"
 	.db $7A 			; go to next line
 	.db $F6 
 	.db $FF 			; terminator
 txt_SYMBOL_SHIFT:
-	.db $53,$59,$4D,$42,$4F,$4C,$20,$53,$48,$49,$46,$54 
+	.db "SYMBOL SHIFT"
 	.db $7A 			; go to next line
 	.db $F4 
 	.db $FF 			; terminator
@@ -6455,20 +6394,20 @@ DefineKeysText:
 	.db $07 			; x
 	.db $E6 			; set font
 	.dw CharacterSet
-	.db $53,$45,$4C,$45,$43,$54,$20,$4B,$45,$59,$20,$46,$4F,$52,$2E,$2E,$2E,$2E 
+	.db "SELECT KEY FOR...."
 	.db $DC 
 	.db $7B 
 	.db $EE 
-	.db $4C,$45,$46,$54 
+	.db "LEFT"
 	.db $7A 
 	.db $FC 
-	.db $52,$49,$47,$48,$54 
+	.db "RIGHT"
 	.db $7A 
 	.db $FB 
-	.db $55,$50,$20,$20 
+	.db "UP  "
 	.db $7A 
 	.db $FC 
-	.db $46,$49,$52,$45 
+	.db "FIRE"
 	.db $70 
 	.db $04 
 	.db $E5 
@@ -6478,7 +6417,7 @@ DefineKeysText:
 	.db $14 			; y
 	.db $04 			; x
 	.db $D9 
-	.db $43,$59,$42,$45,$52,$4E,$4F,$49,$44,$20,$2A,$20,$31,$39,$38,$38,$20,$48,$45,$57,$53,$4F,$4E 
+	.db "CYBERNOID * 1988 HEWSON"
 	.db $FF 			; terminator
 DrawTitleScreenGraphics:
 	LD   DE,$0000
@@ -6675,9 +6614,9 @@ data_859C:
 	.db $90 
 	.db $01 
 data_859E:
-	.db $32 
+	.db $0F 
 data_859F:
-	.db $FE 
+	.db $01 
 data_85A0:
 	.db $00 
 data_85A1:
@@ -6689,11 +6628,11 @@ data_85A3:
 data_85A4:
 	.db $07 
 data_85A5:
-	.db $02 
+	.db $08 
 data_85A6:
 	.db $00 
 data_85A7:
-	.db $1E 
+	.db $2F 
 data_85A8:
 	.db $00 
 data_85A9:
@@ -6981,7 +6920,7 @@ block_lookup_loop:
 	LD   C,A			; store block type in C
 	LD   A,(HL)			; read byte (block type)
 	CP   $FF
-	JP   Z,exit_func_1_1_1			;  jump if it's a terminator
+	JP   Z,exit_func_1_1_1_1			;  jump if it's a terminator
 	LD   A,C			; put block type in A
 	CP   (HL)			; check for match
 	JR   Z,found_block_info
@@ -6992,7 +6931,7 @@ found_block_info:
 	LD   IX,AnimatedBlockState_0
 slot_find_loop:
 	BIT  7,(IX+$00)
-	JR   NZ,exit_func_1_1_1			; bit set - exit
+	JR   NZ,exit_func_1_1_1_1			; bit set - exit
 	EX   AF,AF'
 	LD   A,(IX+$01)			; get byte
 	OR   A			; check for 0
@@ -7022,7 +6961,7 @@ found_slot:
 	LD   A,(HL)
 	LD   (IX+$08),A
 	LD   (IX+$09),A
-exit_func_1_1_1:
+exit_func_1_1_1_1:
 	POP  IX
 	POP  HL
 	POP  DE
@@ -7081,20 +7020,20 @@ go_to_next_item:
 	ADD  IX,DE			; add 10 to IX
 	JP   animated_block_loop
 AnimatedBlockState_0:
-	.db $00 			; 0 - x pos
-	.db $00 			; 1 - y pos
-	.dw START			; 2 & 3 - Block Sequence Base Ptr
-	.dw START			; 4 & 5 - Block Sequence Current Ptr
-	.dw START			; 6 & 7 - block address
-	.db $00 			; 8 - frame count
+	.db $10 			; 0 - x pos
+	.db $60 			; 1 - y pos
+	.dw AnimBlockSequence_1			; 2 & 3 - Block Sequence Base Ptr
+	.dw $8865			; 4 & 5 - Block Sequence Current Ptr
+	.dw BackgroundBlock_32			; 6 & 7 - block address
+	.db $03 			; 8 - frame count
 	.db $00 			; 9 - frame counter
 AnimatedBlockState_1:
-	.db $00 
-	.db $00 
-	.dw START
-	.dw START
-	.dw START
-	.db $00 
+	.db $30 
+	.db $A0 
+	.dw AnimBlockSequence_3
+	.dw $886D
+	.dw BackgroundBlock_34
+	.db $03 
 	.db $00 
 AnimatedBlockState_2:
 	.db $00 
@@ -7225,7 +7164,7 @@ system_clear_loop:
 	POP  HL
 	JP   system_clear_loop
 SystemClearTable:
-	.dw data_7E57
+	.dw MinesList
 	.dw $001D
 	.dw BombEntityList
 	.dw $0037
@@ -7243,9 +7182,9 @@ SystemClearTable:
 	.dw $0031
 	.dw ActiveProjectiles
 	.dw $008B
-	.dw data_8A96
+	.dw FlashingBlocks
 	.dw $0027
-	.dw data_6CFC
+	.dw DestructableScenery
 	.dw $004F
 	.dw data_8A0B
 	.dw $0031
@@ -7342,21 +7281,21 @@ ExplosionSpriteSetLUT:
 	.db $09 
 ExplosionList:
 	.db $00 			; life
-	.db $00 			; x?
-	.db $00 			; y?
-	.dw START			; sprite
+	.db $58 			; x?
+	.db $90 			; y?
+	.dw BlankSprite_0			; sprite
 	.db $00 
+	.db $60 
+	.db $90 
+	.dw BlankSprite_0
 	.db $00 
+	.db $58 
+	.db $A0 
+	.dw BlankSprite_0
 	.db $00 
-	.dw START
-	.db $00 
-	.db $00 
-	.db $00 
-	.dw START
-	.db $00 
-	.db $00 
-	.db $00 
-	.dw START
+	.db $60 
+	.db $A0 
+	.dw BlankSprite_0
 	.db $00 
 	.db $00 
 	.db $00 
@@ -7396,7 +7335,7 @@ function_89A1:
 label_89B1:
 	LD   A,(IX+$00)
 	CP   $FF			; terminator
-	JR   Z,exit_func_1_1_1_1
+	JR   Z,exit_func_1_1_1_1_1
 	OR   A
 	JR   Z,found_slot_1
 	ADD  IX,DE
@@ -7408,7 +7347,7 @@ found_slot_1:
 	LD   (IX+$02),H
 	LD   (IX+$03),C
 	LD   (IX+$04),B
-exit_func_1_1_1_1:
+exit_func_1_1_1_1_1:
 	POP  IX
 	POP  HL
 	POP  DE
@@ -7494,12 +7433,12 @@ data_8A0B:
 	.db $00 
 	.db $00 
 	.db $FF 			; terminator
-function_8A3E:
+SpawnFlashingBlock:
 	PUSH AF
 	PUSH BC
 	PUSH DE
 	PUSH HL
-	LD   HL,data_8A96
+	LD   HL,FlashingBlocks
 	LD   C,A
 findslot_loop_8A46:
 	LD   A,(HL)
@@ -7529,8 +7468,8 @@ exit_func_3:
 	POP  BC
 	POP  AF
 	RET 
-UpdateFlashingScoreBlocks:
-	LD   HL,data_8A96
+UpdateFlashingBlocks:
+	LD   HL,FlashingBlocks
 label_8A6C:
 	LD   A,(HL)
 	CP   $FF
@@ -7561,10 +7500,10 @@ label_8A6C:
 	CALL WriteAttrib2x2
 	JP   label_8A6C
 ; 3 bytes per item
-data_8A96:
-	.db 0 			; X
-	.db 0 			; Y
-	.db 0 			; block
+FlashingBlocks:
+	.db 88 			; X
+	.db 144 			; Y
+	.db 58 			; block
 	.db $00 			; timeout
 	.db $00 
 	.db $00 
@@ -7675,71 +7614,71 @@ FadingParticleLUT:
 	.db $06 
 	.db $09 
 FadingParticles:
-	.db $00 			; x positiom
-	.db $84 			; y position
-	.db $00 			; definition index
+	.db $2D 			; x positiom
+	.db $B0 			; y position
+	.db $05 			; definition index
+	.db $29 
+	.db $AE 
+	.db $06 
+	.db $25 
+	.db $AA 
+	.db $07 
+	.db $22 
+	.db $A5 
+	.db $08 
+	.db $20 
+	.db $9F 
+	.db $09 
+	.db $3C 
+	.db $98 
 	.db $00 
-	.db $84 
+	.db $3A 
+	.db $9F 
+	.db $01 
+	.db $38 
+	.db $A5 
+	.db $02 
+	.db $35 
+	.db $AA 
+	.db $03 
+	.db $31 
+	.db $AE 
+	.db $04 
+	.db $1E 
+	.db $90 
 	.db $00 
+	.db $5D 
+	.db $A6 
 	.db $00 
+	.db $61 
+	.db $B2 
 	.db $00 
+	.db $4D 
+	.db $76 
 	.db $00 
+	.db $2D 
+	.db $5C 
 	.db $00 
+	.db $59 
+	.db $92 
 	.db $00 
+	.db $51 
+	.db $82 
 	.db $00 
+	.db $55 
+	.db $8E 
 	.db $00 
+	.db $41 
+	.db $63 
 	.db $00 
+	.db $45 
+	.db $68 
 	.db $00 
+	.db $49 
+	.db $6E 
 	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $00 
+	.db $22 
+	.db $61 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -7846,8 +7785,8 @@ label_8BDC:
 	JR   apply_velocity
 label_8BE8:
 	LD   (IX+$07),A
-	LD   D,(IX+$06)			; x velocity
-	LD   E,(IX+$05)			; y velocity
+	LD   D,(IX+$06)			; y velocity
+	LD   E,(IX+$05)			; x velocity
 apply_velocity:
 	LD   H,(IX+$00)			; get X
 	LD   L,(IX+$01)			; get Y
@@ -7867,76 +7806,76 @@ apply_velocity:
 	RET 
 ; each projectile is 14 bytes
 ActiveProjectiles:
-	.db 0 			; 0 - X pos
-	.db 132 			; 1 - Y pos
+	.db 37 			; 0 - X pos
+	.db 63 			; 1 - Y pos
 	.db 0 			; 2 - life
-	.db $01 			; 3
+	.db $FF 			; 3
 	.db $FF 			; 4
-	.db $00 			; 5 - Y velocity
-	.db $FF 			; 6 - X velocity
-	.db $2B 			; 7
-	.db $00 			; 8 - gets added to previous value
-	.db $57 			; 9
-	.db 5 			; 0Ah - graphic set
+	.db $FF 			; 5 - Y velocity
+	.db $00 			; 6 - X velocity
+	.db $28 			; 7
+	.db $33 			; 8 - gets added to previous value
+	.db $51 			; 9
+	.db 10 			; 0Ah - graphic set
 	.db $02 			; 0Bh - 
-	.db $42 			; 0Ch - Attribute 
-	.db 87 			; 0Dh - total life
-	.db $17 
-	.db $84 
-	.db $17 
-	.db $01 
-	.db $FF 
+	.db $44 			; 0Ch - Attribute 
+	.db 81 			; 0Dh - total life
+	.db $24 
+	.db $58 
 	.db $00 
 	.db $FF 
-	.db $2B 
+	.db $FF 
+	.db $FF 
 	.db $00 
-	.db $57 
-	.db $05 
+	.db $1C 
+	.db $34 
+	.db $38 
+	.db $0A 
 	.db $02 
-	.db $42 
-	.db $57 
+	.db $44 
+	.db $38 
+	.db $28 
+	.db $69 
 	.db $00 
-	.db $84 
-	.db $00 
-	.db $01 
+	.db $FF 
 	.db $FF 
 	.db $00 
 	.db $FF 
-	.db $2B 
-	.db $00 
-	.db $57 
-	.db $05 
+	.db $18 
+	.db $27 
+	.db $30 
+	.db $0A 
 	.db $02 
-	.db $42 
-	.db $57 
+	.db $44 
+	.db $30 
 	.db $00 
-	.db $84 
 	.db $00 
-	.db $01 
-	.db $FF 
 	.db $00 
-	.db $FF 
-	.db $2B 
 	.db $00 
-	.db $57 
-	.db $05 
-	.db $02 
-	.db $42 
-	.db $57 
 	.db $00 
-	.db $84 
 	.db $00 
-	.db $01 
-	.db $FF 
 	.db $00 
-	.db $FF 
-	.db $2B 
 	.db $00 
-	.db $57 
-	.db $05 
-	.db $02 
-	.db $42 
-	.db $57 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
+	.db $00 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -8146,7 +8085,7 @@ label_8D6C:
 	LD   L,A
 	JP   (HL)			; jump to routine
 data_8D7A:
-	.db $94 
+	.db $27 
 ; Each item is 5 bytes long
 ; Byte 0 is block type
 ; Bytes 3 & 4 - function pointer 
@@ -8247,7 +8186,7 @@ routine_8E0F_1:
 ; e.g firing a bullet
 ActionPointList:
 	.db $58 
-	.db $80 
+	.db $90 
 	.db $FF 
 	.db $00 
 	.db $30 
@@ -8284,35 +8223,35 @@ AddDynamicHazard:
 	POP  HL
 	RET 
 DynamicHazardListPtr:
-	.dw $8E47
+	.dw DynamicHazardList
 DynamicHazardList:
-	.db $03 
-	.db 25 			; x
-	.db 136 			; y
 	.db $FF 
-	.db $4D 
+	.db 44 			; x
+	.db 111 			; y
+	.db $FF 
+	.db $50 
+	.db $8C 
+	.db $FF 
+	.db $56 
+	.db $91 
+	.db $FF 
+	.db $31 
 	.db $88 
 	.db $FF 
-	.db $53 
+	.db $35 
 	.db $88 
 	.db $FF 
-	.db $4B 
+	.db $07 
 	.db $88 
 	.db $FF 
-	.db $1B 
+	.db $33 
 	.db $88 
 	.db $FF 
-	.db $36 
-	.db $B0 
-	.db $FF 
-	.db $19 
+	.db $57 
 	.db $88 
 	.db $FF 
-	.db $2B 
-	.db $88 
-	.db $FF 
-	.db $4B 
-	.db $88 
+	.db $3C 
+	.db $9B 
 	.db $FF 
 	.db $8A 
 	.db $ED 
@@ -8510,14 +8449,14 @@ label_8F58:
 	RET  NZ
 	LD   A,(NoPlayerLives)
 	OR   A
-	JP   Z,label_8F95
-	LD   HL,$0753
+	JP   Z,DoGameOver
+	LD   HL,1875
 	LD   (PlayerDeathTimer),HL
 	LD   A,$32
 	LD   (data_7E94),A
 	CALL ResetWeaponsToDefaultAmmo
 	CALL DrawHUDWeaponInfo
-	LD   DE,(data_6970)
+	LD   DE,(RoomStartPos)			; reset player position to room start position
 	LD   (PlayerXPosition),DE
 	LD   B,D
 	LD   C,E
@@ -8530,19 +8469,19 @@ GetReadyText:
 	.db $0A 			; x
 	.db $E0 			; set attrib
 	.db $46 			; attrib value
-	.db $47,$45,$54,$20,$52,$45,$41,$44,$59 
+	.db "GET READY"
 	.db $FF 			; terminator
 DisablePlayerUpdate:
 	.db $00 
-label_8F95:
+DoGameOver_Stubbed:
 	LD   E,$22
 	CALL NullFunction_EF42_1
 	LD   HL,CharacterSet
 	LD   (operand_SetCharacterSet+1),HL
 	LD   HL,GameOverText
-	LD   BC,$0945
-	LD   DE,$0E0B
-label_8FA9:
+	LD   BC,$0945			; loop count & attribute
+	LD   DE,$0E0B			; coordinates
+gameover_text_loop:
 	PUSH BC
 	LD   A,(HL)
 	CALL DrawCharacter
@@ -8551,18 +8490,18 @@ label_8FA9:
 	LD   BC,$2710
 	CALL ReadWriteAddressRange
 	POP  BC
-	DJNZ label_8FA9
+	DJNZ gameover_text_loop
 	CALL SetupYValuePixAddrLUT
 	LD   BC,START
 	LD   A,$07
-label_8FC1:
+delay_loop:
 	CALL ReadWriteAddressRange
 	DEC  A
-	JR   NZ,label_8FC1
-	CALL function_954F
+	JR   NZ,delay_loop
+	CALL EnterHighScore
 	JP   DisplayHighScores
 GameOverText:
-	.db $47,$41,$4D,$45,$20,$4F,$56,$45,$52 
+	.db "GAME OVER"
 ; Spawning type F0h-F7h
 SpawnUpDownEnemyPair:
 	CP   $F0
@@ -8866,8 +8805,8 @@ Spawn_F8h_To_FFh:
 	ADD  A,A
 	LD   L,A
 	LD   H,$00
-	LD   BC,data_91FE
-	ADD  HL,BC
+	LD   BC,data_91FE			; base
+	ADD  HL,BC			; add offset
 	LD   A,(HL)			; fetch first byte
 	ADD  A,E
 	LD   (IX+$00),A
@@ -8925,6 +8864,7 @@ data_91FE:
 	.db $00 
 	.db $04 
 	.db $02 
+; items are 7 bytes
 data_921E:
 	.db $FF 			; 0
 	.db $45 			; 1
@@ -9012,8 +8952,8 @@ label_9277:
 	ADD  IX,BC
 	JP   label_926B
 label_927F:
-	LD   E,(IX+$00)
-	LD   D,(IX+$01)
+	LD   E,(IX+$00)			; x
+	LD   D,(IX+$01)			; y
 	LD   A,(IX+$04)
 	OR   A
 	JP   NZ,label_9376
@@ -9307,21 +9247,21 @@ HighScoreTableTitleText:
 	.db $05 			; x
 	.db $E0 			; set attribute
 	.db $44 
-	.db $43,$59,$42,$45,$52,$4E,$4F,$49,$44,$20,$48,$41,$4C,$4C,$20,$4F,$46,$20,$46,$41,$4D,$45 
+	.db "CYBERNOID HALL OF FAME"
 	.db $FF 			; terminator
 	.db $00 
 HighScoresText:
-	.db $52,$41,$46,$46,$41,$45,$4C,$45,$20,$20,$30,$31,$35,$30,$30,$30 
-	.db $53,$55,$52,$59,$41,$4E,$49,$20,$20,$20,$30,$31,$30,$30,$30,$30 
-	.db $42,$4F,$4E,$4E,$49,$45,$20,$20,$20,$20,$30,$30,$35,$30,$30,$30 
-	.db $51,$55,$45,$45,$4E,$20,$20,$20,$20,$20,$30,$30,$32,$35,$30,$30 
-	.db $4E,$49,$43,$4B,$20,$42,$4F,$59,$20,$20,$30,$30,$31,$30,$30,$30 
-	.db $53,$41,$4E,$44,$52,$41,$20,$20,$20,$20,$30,$30,$31,$30,$30,$30 
-	.db $44,$41,$56,$49,$44,$2E,$50,$2E,$20,$20,$30,$30,$31,$30,$30,$30 
-	.db $53,$48,$41,$52,$4B,$59,$20,$20,$20,$20,$30,$30,$31,$30,$30,$30 
-	.db $45,$4D,$49,$4C,$59,$20,$20,$20,$20,$20,$30,$30,$31,$30,$30,$30 
-	.db $4F,$4E,$49,$4F,$4E,$20,$20,$20,$20,$20,$30,$30,$31,$30,$30,$30 
-data_953C:
+	.db "RAFFAELE  015000"
+	.db "SURYANI   010000"
+	.db "BONNIE    005000"
+	.db "QUEEN     002500"
+	.db "NICK BOY  001000"
+	.db "SANDRA    001000"
+	.db "DAVID.P.  001000"
+	.db "SHARKY    001000"
+	.db "EMILY     001000"
+	.db "ONION     001000"
+HighScoresTerminator:
 	.db $FF 			; terminator
 	.db $01 
 	.db $A8 
@@ -9341,60 +9281,61 @@ data_953C:
 	.db $02 
 	.db $00 
 	.db $00 
-function_954F:
+EnterHighScore_Stubbed:
 	LD   IX,HighScoresText
-label_9553:
-	BIT  7,(IX+$00)
-	JP   NZ,label_9648
+score_check_loop:
+	BIT  7,(IX+$00)			; check high bit of score
+	JP   NZ,label_9648			; bit is set
 	PUSH IX
-	LD   DE,$000A
-	ADD  IX,DE
+	LD   DE,10
+	ADD  IX,DE			; advance to score
 	LD   HL,CurrentScoreString
 	LD   B,$06
-label_9566:
+digit_check_loop:
 	LD   A,(IX+$00)
-	CP   (HL)
-	JP   Z,label_9637
-	JP   NC,label_963E
-	POP  HL
+	CP   (HL)			; compare digit with your score
+	JP   Z,check_next_digit
+	JP   NC,check_next_score
+; at this point we know we've got a high score
+	POP  HL			; put start of score entry in HL
 	PUSH HL
-	LD   A,$FF
+	LD   A,$FF			; check for terminator
 	LD   BC,$03E8
 	CPIR
 	LD   HL,$03E8
 	AND  A
-	SBC  HL,BC
-	PUSH HL
+	SBC  HL,BC			; calc amount to move down
+	PUSH HL			; put in BC
 	POP  BC
-	LD   DE,data_953C+15
-	LD   HL,HighScoresText+159
-	LDDR
-	LD   A,$FF
-	LD   (data_953C),A
-	POP  HL
+	LD   DE,HighScoresTerminator+15			; destination last back
+	LD   HL,HighScoresText+159			; source last byte
+	LDDR			; reverse copy scores down to make place for new entry
+	LD   A,$FF			; restore terminator
+	LD   (HighScoresTerminator),A
+	POP  HL			; get start of entry into HL
 	PUSH HL
 	LD   DE,$000A
 	ADD  HL,DE
 	EX   DE,HL
 	LD   HL,CurrentScoreString
 	LD   BC,$0006
-	LDIR
+	LDIR			; copy score into table
 	CALL ClearScreen
 	LD   E,$28
 	CALL NullFunction_EF42_1
-	LD   HL,data_96D0
-	LD   DE,data_96D0+1
+	LD   HL,HSNameEntryString			; reset name entry string
+	LD   DE,HSNameEntryString+1
 	LD   BC,$0007
-	LD   (HL),$20
-	LDIR
+	LD   (HL),$20			; space
+	LDIR			; clear with spaces
 	CALL DrawTitleScreenGraphics
 	LD   HL,EnterHighscoreText
 	CALL DrawStringAt
 	LD   DE,$0F0C
-	LD   HL,data_96D0
+	LD   HL,HSNameEntryString
 label_95C1:
-	LD   C,$44
-	LD   A,$3F
+	LD   C,$44			; attrib
+	LD   A,$3F			; character
 	CALL DrawCharacter
 label_95C8:
 	LD   BC,$03E8
@@ -9404,11 +9345,11 @@ loop_for_key_release_95CE:
 	CALL NZ,ScrollTitleBars
 	JR   NZ,loop_for_key_release_95CE
 	PUSH DE
-label_95D7:
+get_key_press:
 	CALL GetPressedKeyAscii
 	OR   A
 	CALL Z,ScrollTitleBars
-	JR   Z,label_95D7
+	JR   Z,get_key_press
 	POP  DE
 	CP   $0D
 	JR   Z,label_961F
@@ -9417,7 +9358,7 @@ label_95D7:
 	CP   $02
 	JR   NZ,label_9610
 	PUSH DE
-	JR   label_95D7
+	JR   get_key_press
 label_95F0:
 	LD   A,E
 	CP   $13
@@ -9450,7 +9391,7 @@ label_9610:
 	JR   label_95C1
 label_961F:
 	POP  DE
-	LD   HL,data_96D0
+	LD   HL,HSNameEntryString
 	LD   BC,$0008
 	LDIR
 label_9628:
@@ -9459,16 +9400,16 @@ label_9628:
 	JP   NZ,label_9628
 	CALL DisplayHighScores
 	JP   InitialiseProgram
-label_9637:
+check_next_digit:
 	INC  HL
 	INC  IX
 	DEC  B
-	JP   NZ,label_9566
-label_963E:
+	JP   NZ,digit_check_loop
+check_next_score:
 	POP  IX
-	LD   DE,$0010
+	LD   DE,$0010			; add offset to next score
 	ADD  IX,DE
-	JP   label_9553
+	JP   score_check_loop
 label_9648:
 	CALL CheckForKeyPress
 	JP   NZ,label_9648
@@ -9495,26 +9436,26 @@ EnterHighscoreText:
 	.db $46 
 	.db $E6 
 	.dw CharacterSet
-	.db $43,$4F,$4E,$47,$52,$41,$54,$55,$4C,$41,$54,$49,$4F,$4E,$53,$21 
+	.db "CONGRATULATIONS!"
 	.db $7A 
 	.db $ED 
 	.db $DB 
-	.db $50,$4C,$45,$41,$53,$45,$20,$45,$4E,$54,$45,$52,$20,$59,$4F,$55,$52,$20,$4E,$41,$4D,$45 
+	.db "PLEASE ENTER YOUR NAME"
 	.db $DF 
 	.db $0F 
 	.db $0C 
 	.db $DE 
-	.db $2D,$2D,$2D,$2D,$2D,$2D,$2D,$2D 
+	.db "--------"
 	.db $7B 
 	.db $F2 
 	.db $DC 
-	.db $50,$52,$45,$53,$53,$20,$43,$41,$50,$53,$20,$54,$4F,$20,$44,$45,$4C,$45,$54,$45 
+	.db "PRESS CAPS TO DELETE"
 	.db $7A 
 	.db $ED 
 	.db $DD 
-	.db $50,$52,$45,$53,$53,$20,$45,$4E,$54,$45,$52,$20,$54,$4F,$20,$45,$4E,$44 
+	.db "PRESS ENTER TO END"
 	.db $FF 
-data_96D0:
+HSNameEntryString:
 	.db $20 
 	.db $20 
 	.db $20 
@@ -9551,17 +9492,17 @@ label_96F3:
 	RET 
 function_970F:
 	LD   IX,data_979F
-label_9713:
+item_loop_9713:
 	LD   A,(IX+$00)
-	CP   $FF
-	RET  Z
+	CP   $FF			; terminator
+	RET  Z			; exit
 	LD   A,(IX+$02)
 	OR   A
 	JP   NZ,label_9728
-label_9720:
-	LD   BC,$0008
-	ADD  IX,BC
-	JP   label_9713
+next_item_9720:
+	LD   BC,$0008			; offset to next item
+	ADD  IX,BC			; add offset
+	JP   item_loop_9713
 label_9728:
 	LD   E,(IX+$00)
 	LD   D,(IX+$01)
@@ -9606,7 +9547,7 @@ label_9758:
 	LD   C,(IX+$06)
 	LD   B,(IX+$07)
 	CALL WriteObjectAttributes
-	JP   label_9720
+	JP   next_item_9720
 label_9787:
 	XOR  A
 	LD   (IX+$02),A
@@ -9619,7 +9560,7 @@ label_9787:
 	LD   BC,$180C
 	LD   A,$0F
 	CALL function_89A1
-	JP   label_9720
+	JP   next_item_9720
 ; each item is 8 bytes
 data_979F:
 	.db $00 
@@ -9787,7 +9728,7 @@ DownwardsMissileFunction:
 	CALL function_96D8
 	JP   label_9803
 MissileList:
-	.db 104 			; X
+	.db 255 			; X
 	.db 144 			; Y
 	.db 112 
 	.db 144 
@@ -9814,9 +9755,9 @@ function_988E:
 	PUSH IX
 	PUSH HL
 	LD   BC,$0008
-	LD   IX,data_6CFC
+	LD   IX,DestructableScenery
 label_989A:
-	LD   L,(IX+$00)
+	LD   L,(IX+$00)			; get coords
 	LD   H,(IX+$01)
 	AND  A
 	SBC  HL,DE
@@ -10283,7 +10224,7 @@ label_9B61:
 	LD   E,A
 	DJNZ label_9B51
 	RET 
-Spawn_ECh_To_F0h:
+SpawnEnemySpawner:
 	CP   $EC
 	RET  C			; return if less than ECh
 	CP   $F0
@@ -10293,17 +10234,17 @@ Spawn_ECh_To_F0h:
 	PUSH DE
 	PUSH HL
 	SUB  $EC			; subtract ECh to zero-base
-	LD   (data_9BD5),A			; enemy type?
+	LD   (EnemySpawnerType),A			; enemy type?
 	ADD  A,A			; multiply by 4 and put in HL
 	ADD  A,A
 	LD   L,A
 	LD   H,$00
-	LD   BC,data_9BBF			; base
+	LD   BC,EnemySpawnerTypes			; base
 	ADD  HL,BC			; add offset
 	LD   BC,$0004			; copy 4 bytes
 	LD   DE,FunctionPtr_9BCF
 	LDIR
-	LD   A,(data_9BD5)
+	LD   A,(EnemySpawnerType)
 	ADD  A,A			; mult by 2 and put in HL
 	LD   L,A
 	LD   H,$00
@@ -10328,25 +10269,28 @@ Spawn_ECh_To_F0h:
 	LD   H,(HL)
 	LD   L,A
 	LD   (data_9BD6),HL
-	LD   A,(data_9BD4)
+	LD   A,(EnemySpawnerTimerInitialVal)
 	SUB  $0A
-	LD   (data_9BD4),A
+	LD   (EnemySpawnerTimerInitialVal),A
 	POP  HL
 	POP  DE
 	POP  BC
 	POP  AF
 	RET 
 ; 4 byte structures
-data_9BBF:
+EnemySpawnerTypes:
 	.dw function_9AE7
 	.db $01 
 	.db $7F 
+; type 1
 	.dw function_9B48
 	.db $00 
 	.db $BE 
+; type 2
 	.dw function_9AC7
 	.db $01 
 	.db $F9 
+; type 3
 	.dw function_9B07
 	.db $00 
 	.db $11 
@@ -10356,31 +10300,31 @@ data_9BD1:
 	.db $00 
 data_9BD2:
 	.db $BE 
-data_9BD3:
-	.db $01 
-data_9BD4:
-	.db $32 
-data_9BD5:
+EnemySpawnerTimer:
+	.db 1 
+EnemySpawnerTimerInitialVal:
+	.db 50 
+EnemySpawnerType:
 	.db $FF 
 data_9BD6:
-	.dw $9D03
+	.dw $9CC3
 function_9BD8:
-	LD   A,(data_9BD5)
+	LD   A,(EnemySpawnerType)
 	CP   $FF
 	RET  Z
 	LD   HL,(FunctionPtr_9BCF)
 	JP   (HL)
-function_9BE2:
-	LD   A,(data_9BD5)
+UpdateEnemySpawnLogic:
+	LD   A,(EnemySpawnerType)
 	CP   $FF
 	RET  Z
-	LD   A,(data_9BD3)
+	LD   A,(EnemySpawnerTimer)
 	DEC  A
-	LD   (data_9BD3),A
+	LD   (EnemySpawnerTimer),A
 	OR   A
 	RET  NZ
-	LD   A,(data_9BD4)
-	LD   (data_9BD3),A
+	LD   A,(EnemySpawnerTimerInitialVal)
+	LD   (EnemySpawnerTimer),A
 	LD   A,(data_9B47)
 	CALL GenerateRandomNumber
 	LD   L,A
@@ -10393,7 +10337,7 @@ function_9BE2:
 	JR   Z,label_9C30
 	LD   D,(HL)
 	LD   E,A
-	LD   A,(data_9BD5)
+	LD   A,(EnemySpawnerType)
 	OR   A
 	LD   A,(PlayerXPosition)
 	JR   Z,label_9C24
@@ -10411,7 +10355,7 @@ label_9C24:
 label_9C30:
 	LD   E,(HL)
 	LD   D,A
-	LD   A,(data_9BD5)
+	LD   A,(EnemySpawnerType)
 	CP   $01
 	LD   A,(PlayerYPosition)
 	JP   Z,label_9C49
@@ -10434,40 +10378,25 @@ data_9C56:
 	.dw data_9C6E
 	.dw data_9C76
 data_9C5E:
-	.db $EC 
-	.db $9D 
-	.db $26 
-	.db $9E 
-	.db $51 
-	.db $9E 
-	.db $88 
-	.db $9E 
+	.dw $9DEC
+	.dw $9E26
+	.dw $9E51
+	.dw $9E88
 data_9C66:
 	.dw data_9C7E
-	.db $C3 
-	.db $9C 
-	.db $E5 
-	.db $9C 
-	.db $03 
-	.db $9D 
+	.dw $9CC3
+	.dw $9CE5
+	.dw $9D03
 data_9C6E:
-	.db $C7 
-	.db $9E 
-	.db $01 
-	.db $9F 
-	.db $2C 
-	.db $9F 
-	.db $63 
-	.db $9F 
+	.dw $9EC7
+	.dw $9F01
+	.dw $9F2C
+	.dw $9F63
 data_9C76:
-	.db $35 
-	.db $9D 
-	.db $7A 
-	.db $9D 
-	.db $9C 
-	.db $9D 
-	.db $BA 
-	.db $9D 
+	.dw $9D35
+	.dw $9D7A
+	.dw $9D9C
+	.dw $9DBA
 data_9C7E:
 	.db $E2 
 	.db $11 
@@ -11689,14 +11618,14 @@ ItemInfoData:
 	.db $A0 
 	.db $00 
 	.db $FF 
-function_A1D6:
+SpawnWeaponUpgrade:
 	CP   $E9
 	RET  C			; return if type is less than E9h
 	PUSH AF
 	PUSH BC
 	PUSH DE
 	PUSH HL
-	LD   HL,data_A1F6
+	LD   HL,WeaponUpgradeItems
 	LD   C,A
 label_A1E1:
 	LD   A,(HL)
@@ -11707,7 +11636,7 @@ label_A1E1:
 	CP   C
 	JR   NZ,label_A1E1
 	DEC  HL
-	LD   A,(HL)
+	LD   A,(HL)			; fetch item number
 	DEC  D
 	CALL SpawnItemInClearSpace
 exit_function_2:
@@ -11716,14 +11645,14 @@ exit_function_2:
 	POP  BC
 	POP  AF
 	RET 
-data_A1F6:
-	.db $E9 
-	.db $0A 
-	.db $EA 
-	.db $01 
-	.db $EB 
-	.db $0B 
-	.db $FF 
+WeaponUpgradeItems:
+	.db $E9 			; block id
+	.db 10 			; item number - ammo
+	.db $EA 			; block id
+	.db $01 			; item number - rear shooter
+	.db $EB 			; block id
+	.db 11 			; item number - mace
+	.db $FF 			; terminator
 ; Ths will both erase the old frame and draw the new frame
 ; A is moving sprite set
 ; HL points to old sprite
@@ -11803,7 +11732,7 @@ y_loop:
 	DEC  H
 	LD   H,(HL)
 XPos_operand_A265:
-	OR   %00000000
+	OR   %00001000
 	LD   L,A
 	INC  C
 	LD   A,(DE)			; read pixel line
@@ -11828,7 +11757,7 @@ XPos_operand_A265:
 	DEC  H			;  point HL to YValuePixAddrLUT_H
 	LD   H,(HL)
 XPos_operand_A27E:
-	OR   %00000000
+	OR   %00001000
 	LD   L,A
 	INC  C
 	LD   A,(DE)			; read pixel line
@@ -11853,7 +11782,7 @@ XPos_operand_A27E:
 	POP  AF
 	RET 
 DrawImagePtr:
-	.dw PlayerSpriteR_0
+	.dw MaceSprite_0
 label_A29C:
 	LD   H,L			; multiply by 192 by mutipling by 128 & 64 and adding results
 	LD   L,$00
@@ -11949,7 +11878,7 @@ label_A32C:
 	DEC  H			; YValuePixAddrLUT_H
 	LD   H,(HL)
 operand_A332:
-	OR   $1E
+	OR   $01
 	LD   L,A
 	INC  C
 	LD   A,(DE)
@@ -11967,7 +11896,7 @@ operand_A33D:
 	LD   A,(DE)
 	XOR  (HL)
 operand_A342:
-	NOP 			; write
+	LD   (HL),A			; write
 	INC  DE
 	EXX 
 	LD   H,$64			; YValuePixAddrLUT_L
@@ -11976,19 +11905,19 @@ operand_A342:
 	DEC  H			; YValuePixAddrLUT_H
 	LD   H,(HL)
 operand_A34B:
-	OR   $1E
+	OR   $00
 	LD   L,A
 	INC  C			; inc Y
 	LD   A,(DE)
 	XOR  (HL)
 operand_A351:
-	LD   (HL),A			; write
+	NOP 			; write
 	INC  L
 	INC  DE
 	LD   A,(DE)
 	XOR  (HL)
 operand_A356:
-	LD   (HL),A			; write
+	NOP 			; write
 	INC  L
 	INC  DE
 	LD   A,(DE)
@@ -12110,8 +12039,8 @@ operand_A411:
 	LD   A,(DE)
 	XOR  (HL)
 data_A417:
-	NOP 
-	NOP 
+	LD   (HL),A
+	INC  L
 	INC  DE
 	LD   A,(DE)
 	XOR  (HL)
@@ -12475,7616 +12404,7838 @@ DrawBackgroundBlockAttributes:
 	POP  BC
 	POP  AF
 	RET 
-data_A5AA:
-	.db $01,$02,$03,$04,$05,$01,$01,$15,$16,$17,$18,$16,$17,$15,$02,$01 
-	.db $02,$48,$FF,$05,$14,$13,$FF,$05,$00,$15,$01,$02,$03,$15,$00,$1D 
-	.db $00,$1F,$FF,$05,$00,$10,$14,$4B,$01,$01,$04,$15,$FF,$09,$00,$15 
-	.db $02,$01,$01,$01,$05,$15,$FF,$09,$00,$15,$01,$03,$01,$02,$01,$15 
-	.db $FF,$09,$00,$15,$04,$01,$01,$01,$02,$15,$FF,$09,$00,$12,$14,$49 
-	.db $01,$02,$03,$15,$FF,$0A,$00,$1D,$15,$03,$04,$04,$15,$00,$00,$96 
-	.db $0D,$80,$81,$82,$00,$0F,$0E,$0D,$4A,$14,$14,$01,$15,$00,$00,$15 
-	.db $01,$02,$03,$04,$05,$01,$04,$03,$01,$01,$02,$02,$03,$04,$05,$02 
-	.db $03,$04,$05,$15,$01,$01,$02,$03,$04,$05,$02,$FF,$08,$14,$13,$34 
-	.db $35,$34,$35,$34,$35,$34,$7C,$00,$4E,$4F,$FF,$0C,$00,$7E,$00,$50 
-	.db $51 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $7E 
-	.db $00 
-	.db $52 
-	.db $53 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $7D 
-	.db $FF 
-	.db $0F 
-	.db $00 
-	.db $7C 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $27 
-	.db $28 
-	.db $7E 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $23 
-	.db $24 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $29 
-	.db $2A 
-	.db $7D 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $25 
-	.db $26 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $7C 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $79 
-	.db $FF 
-	.db $05 
-	.db $78 
-	.db $79 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $36 
-	.db $35 
-	.db $34 
-	.db $35 
-	.db $35 
-	.db $34 
-	.db $15 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $FF 
-	.db $1D 
-	.db $00 
-	.db $FF 
-	.db $04 
-	.db $EC 
-	.db $FF 
-	.db $10 
-	.db $00 
-	.db $FF 
-	.db $06 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $0D 
-	.db $0E 
-	.db $0F 
-	.db $0D 
-	.db $0E 
-	.db $0F 
-	.db $0D 
-	.db $0E 
-	.db $0E 
-	.db $01 
-	.db $01 
-	.db $04 
-	.db $01 
-	.db $15 
-	.db $19 
-	.db $1A 
-	.db $FF 
-	.db $09 
-	.db $1B 
-	.db $02 
-	.db $03 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3C 
-	.db $FF 
-	.db $04 
-	.db $FA 
-	.db $FF 
-	.db $04 
-	.db $14 
-	.db $13 
-	.db $00 
-	.db $00 
-	.db $3B 
-	.db $F1 
-	.db $3B 
-	.db $00 
-	.db $3D 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $F6 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3C 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $10 
-	.db $FF 
-	.db $07 
-	.db $14 
-	.db $4B 
-	.db $04 
-	.db $05 
-	.db $0C 
-	.db $0D 
-	.db $0E 
-	.db $0D 
-	.db $0E 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $FF 
-	.db $0A 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $2B 
-	.db $2C 
-	.db $00 
-	.db $2B 
-	.db $2C 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $49 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $2D 
-	.db $00 
-	.db $00 
-	.db $2D 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $2E 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $E9 
-	.db $00 
-	.db $EA 
-	.db $2F 
-	.db $2E 
-	.db $15 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $15 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $02 
-	.db $4A 
-	.db $FF 
-	.db $06 
-	.db $14 
-	.db $49 
-	.db $2F 
-	.db $2E 
-	.db $48 
-	.db $14 
-	.db $4B 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $2E 
-	.db $2F 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $FF 
-	.db $A0 
-	.db $00 
-data_A7C0:
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $12 
-	.db $FF 
-	.db $08 
-	.db $14 
-	.db $49 
-	.db $03 
-	.db $02 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $4B 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $49 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $EB 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $03 
-	.db $4A 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $4B 
-	.db $01 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $ED 
-	.db $ED 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $7C 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $79 
-	.db $FF 
-	.db $05 
-	.db $78 
-	.db $79 
-	.db $15 
-	.db $03 
-	.db $01 
-	.db $7D 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3C 
-	.db $F6 
-	.db $3C 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $7D 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $3B 
-	.db $F6 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $7E 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $3D 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $7C 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3C 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $7D 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3C 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $7E 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $7D 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $E9 
-	.db $3D 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $7C 
-	.db $0C 
-	.db $80 
-	.db $81 
-	.db $82 
-	.db $10 
-	.db $FF 
-	.db $07 
-	.db $14 
-	.db $4B 
-	.db $02 
-	.db $01 
-	.db $7F 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $02 
-	.db $01 
-	.db $03 
-	.db $01 
-	.db $FF 
-	.db $10 
-	.db $14 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $47 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $7C 
-	.db $EE 
-	.db $EE 
-	.db $EE 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $7D 
-	.db $FF 
-	.db $0F 
-	.db $00 
-	.db $7E 
-	.db $FF 
-	.db $0F 
-	.db $00 
-	.db $7C 
-	.db $14 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $7D 
-	.db $01 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $E9 
-	.db $00 
-	.db $E9 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $7D 
-	.db $02 
-	.db $03 
-	.db $4A 
-	.db $FF 
-	.db $07 
-	.db $14 
-	.db $11 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $15 
-	.db $79 
-	.db $FF 
-	.db $07 
-	.db $78 
-	.db $79 
-	.db $11 
-	.db $01 
-	.db $48 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $00 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $15 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $85 
-	.db $83 
-	.db $84 
-	.db $86 
-	.db $00 
-	.db $15 
-	.db $7C 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $15 
-	.db $7C 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $15 
-	.db $7D 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $15 
-	.db $FF 
-	.db $05 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $88 
-	.db $89 
-	.db $8A 
-	.db $88 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $10 
-	.db $FF 
-	.db $06 
-	.db $14 
-	.db $4B 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $34 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $00 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $49 
-	.db $48 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $15 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $15 
-	.db $15 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $15 
-	.db $15 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $15 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $27 
-	.db $28 
-	.db $15 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $29 
-	.db $2A 
-	.db $15 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $4B 
-	.db $15 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $ED 
-	.db $ED 
-	.db $ED 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $FF 
-	.db $A0 
-	.db $00 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $03 
-	.db $02 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $48 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $49 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $20 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $04 
-	.db $4A 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $04 
-	.db $01 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $27 
-	.db $28 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $22 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $29 
-	.db $2A 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $4B 
-	.db $19 
-	.db $1A 
-	.db $FF 
-	.db $0A 
-	.db $1B 
-	.db $01 
-	.db $02 
-	.db $04 
-	.db $03 
-	.db $01 
-	.db $15 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $04 
-	.db $03 
-	.db $03 
-	.db $02 
-	.db $15 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $35 
-	.db $36 
-	.db $35 
-	.db $37 
-	.db $35 
-	.db $34 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $FF 
-	.db $05 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $15 
-	.db $00 
-	.db $94 
-	.db $95 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $91 
-	.db $00 
-	.db $91 
-	.db $00 
-	.db $91 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $00 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $0E 
-	.db $3D 
-	.db $0C 
-	.db $4C 
-	.db $4D 
-	.db $0D 
-	.db $FF 
-	.db $07 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $0C 
-	.db $02 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $05 
-	.db $78 
-	.db $79 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $34 
-	.db $34 
-	.db $12 
-	.db $14 
-	.db $13 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3C 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $3D 
-	.db $F1 
-	.db $3B 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3D 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3C 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $0C 
-	.db $0D 
-	.db $0C 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3D 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $02 
-	.db $04 
-	.db $05 
-	.db $0E 
-	.db $19 
-	.db $1A 
-	.db $1B 
-	.db $1B 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $48 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $4B 
-	.db $00 
-	.db $00 
-	.db $4A 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $49 
-	.db $03 
-	.db $03 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $02 
-	.db $02 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $03 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $2E 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $FA 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $4C 
-	.db $4D 
-	.db $00 
-	.db $46 
-	.db $4C 
-	.db $4D 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $4A 
-	.db $FF 
-	.db $0A 
-	.db $14 
-	.db $4B 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $04 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $8D 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $90 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $49 
-	.db $03 
-	.db $15 
-	.db $8D 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $FD 
-	.db $15 
-	.db $01 
-	.db $13 
-	.db $8F 
-	.db $8D 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $FD 
-	.db $15 
-	.db $02 
-	.db $00 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $FD 
-	.db $15 
-	.db $03 
-	.db $11 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $00 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $23 
-	.db $24 
-	.db $00 
-	.db $FD 
-	.db $15 
-	.db $04 
-	.db $15 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8D 
-	.db $4C 
-	.db $4D 
-	.db $00 
-	.db $25 
-	.db $26 
-	.db $00 
-	.db $FD 
-	.db $15 
-	.db $04 
-	.db $4A 
-	.db $FF 
-	.db $0D 
-	.db $14 
-	.db $4B 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $FF 
-	.db $A0 
-	.db $00 
-	.db $01 
-	.db $02 
-	.db $48 
-	.db $FF 
-	.db $0D 
-	.db $14 
-	.db $04 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3C 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $02 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $04 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $3C 
-	.db $F2 
-	.db $3B 
-	.db $F6 
-	.db $3C 
-	.db $F2 
-	.db $3B 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $04 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $04 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $10 
-	.db $FF 
-	.db $08 
-	.db $14 
-	.db $4B 
-	.db $01 
-	.db $02 
-	.db $FF 
-	.db $0D 
-	.db $14 
-	.db $49 
-	.db $01 
-	.db $02 
-	.db $00 
-	.db $00 
-	.db $47 
-	.db $47 
-	.db $47 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $05 
-	.db $01 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $A2 
-	.db $A3 
-	.db $00 
-	.db $23 
-	.db $24 
-	.db $00 
-	.db $15 
-	.db $05 
-	.db $04 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $A4 
-	.db $A5 
-	.db $00 
-	.db $25 
-	.db $26 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $10 
-	.db $FF 
-	.db $06 
-	.db $14 
-	.db $4B 
-	.db $03 
-	.db $03 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $05 
-	.db $04 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $48 
-	.db $FF 
-	.db $0B 
-	.db $14 
-	.db $02 
-	.db $01 
-	.db $03 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $4E 
-	.db $4F 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $03 
-	.db $48 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $00 
-	.db $50 
-	.db $51 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $52 
-	.db $53 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $8D 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $8D 
-	.db $E9 
-	.db $8D 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $00 
-	.db $00 
-	.db $04 
-	.db $4A 
-	.db $14 
-	.db $14 
-	.db $49 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $48 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $15 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $02 
-	.db $01 
-	.db $FF 
-	.db $06 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $FF 
-	.db $05 
-	.db $14 
-	.db $49 
-	.db $01 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $47 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $0A 
-	.db $00 
-	.db $15 
-	.db $05 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $A2 
-	.db $A3 
-	.db $46 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $09 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $00 
-	.db $00 
-	.db $E9 
-	.db $00 
-	.db $4E 
-	.db $4F 
-	.db $A4 
-	.db $A5 
-	.db $4E 
-	.db $4F 
-	.db $00 
-	.db $06 
-	.db $07 
-	.db $08 
-	.db $15 
-	.db $03 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $9A 
-	.db $FF 
-	.db $06 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $4B 
-	.db $04 
-	.db $05 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $02 
-	.db $05 
-	.db $04 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $02 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $05 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $03 
-	.db $01 
-	.db $48 
-	.db $FF 
-	.db $0D 
-	.db $14 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $FF 
-	.db $05 
-	.db $F8 
-	.db $00 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $FF 
-	.db $05 
-	.db $14 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $FE 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $FC 
-	.db $19 
-	.db $1A 
-	.db $1B 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $49 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $93 
-	.db $00 
-	.db $93 
-	.db $00 
-	.db $93 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $4A 
-	.db $FF 
-	.db $09 
-	.db $14 
-	.db $11 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $01 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $14 
-	.db $13 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $35 
-	.db $34 
-	.db $35 
-	.db $34 
-	.db $36 
-	.db $35 
-	.db $34 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $48 
-	.db $14 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $05 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $05 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $15 
-	.db $ED 
-	.db $ED 
-	.db $ED 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $9D 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $03 
-	.db $03 
-	.db $04 
-	.db $9F 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $02 
-	.db $78 
-	.db $78 
-	.db $79 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $49 
-	.db $01 
-	.db $01 
-	.db $79 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $02 
-	.db $9D 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $9D 
-	.db $03 
-	.db $03 
-	.db $9E 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $9E 
-	.db $01 
-	.db $04 
-	.db $9E 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $9F 
-	.db $01 
-	.db $04 
-	.db $9F 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $01 
-	.db $79 
-	.db $78 
-	.db $79 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $4B 
-	.db $04 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $9D 
-	.db $00 
-	.db $00 
-	.db $ED 
-	.db $ED 
-	.db $ED 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $F9 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $01 
-	.db $9D 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $F9 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $02 
-	.db $9E 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $F9 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $02 
-	.db $02 
-	.db $03 
-	.db $03 
-	.db $9E 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9B 
-	.db $9C 
-	.db $FF 
-	.db $04 
-	.db $14 
-	.db $04 
-	.db $9E 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $01 
-	.db $9E 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $91 
-	.db $00 
-	.db $91 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $02 
-	.db $9E 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $93 
-	.db $15 
-	.db $04 
-	.db $04 
-	.db $04 
-	.db $03 
-	.db $9F 
-	.db $00 
-	.db $A2 
-	.db $A3 
-	.db $10 
-	.db $FF 
-	.db $06 
-	.db $14 
-	.db $4B 
-	.db $04 
-	.db $04 
-	.db $04 
-	.db $01 
-	.db $15 
-	.db $EB 
-	.db $A4 
-	.db $A5 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $04 
-	.db $02 
-	.db $4A 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $4B 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $04 
-	.db $01 
-	.db $04 
-	.db $04 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $48 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $49 
-	.db $02 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $9E 
-	.db $03 
-	.db $EE 
-	.db $EE 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $9E 
-	.db $04 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $0C 
+room_0_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 72 			; BackgroundBlock_72
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 29 			; BackgroundBlock_29
+	.db 0 			; BackgroundBlock_0
+	.db 31 			; BackgroundBlock_31
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 29 			; BackgroundBlock_29
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 150 			; BackgroundBlock_150
+	.db 13 			; BackgroundBlock_13
+	.db 128 			; BackgroundBlock_128
+	.db 129 			; BackgroundBlock_129
+	.db 130 			; BackgroundBlock_130
+	.db 0 			; BackgroundBlock_0
+	.db 15 			; BackgroundBlock_15
+	.db 14 			; BackgroundBlock_14
+	.db 13 			; BackgroundBlock_13
+	.db 74 			; BackgroundBlock_74
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+room_1_data:
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db 124 			; BackgroundBlock_124
+	.db 0 			; BackgroundBlock_0
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 0 			; BackgroundBlock_0
+	.db 80 			; BackgroundBlock_80
+	.db 81 			; BackgroundBlock_81
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 0 			; BackgroundBlock_0
+	.db 82 			; BackgroundBlock_82
+	.db 83 			; BackgroundBlock_83
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db $FF 			; Block Run
+	.db 15 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 39 			; BackgroundBlock_39
+	.db 40 			; BackgroundBlock_40
+	.db 126 			; BackgroundBlock_126
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 35 			; BackgroundBlock_35
+	.db 36 			; BackgroundBlock_36
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 41 			; BackgroundBlock_41
+	.db 42 			; BackgroundBlock_42
+	.db 125 			; BackgroundBlock_125
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 37 			; BackgroundBlock_37
+	.db 38 			; BackgroundBlock_38
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 124 			; BackgroundBlock_124
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 121 			; BackgroundBlock_121
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 120 			; run block value BackgroundBlock_120
+	.db 121 			; BackgroundBlock_121
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+room_2_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 54 			; BackgroundBlock_54
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db $FF 			; Block Run
+	.db 29 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 236 			; run block value data_F1F8+1
+	.db $FF 			; Block Run
+	.db 16 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 15 			; BackgroundBlock_15
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 15 			; BackgroundBlock_15
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 14 			; BackgroundBlock_14
+room_3_data:
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 250 			; run block value data_F28E+299
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 241 			; data_F28E+11
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 246 			; data_F28E+171
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+room_4_data:
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 43 			; BackgroundBlock_43
+	.db 44 			; BackgroundBlock_44
+	.db 0 			; BackgroundBlock_0
+	.db 43 			; BackgroundBlock_43
+	.db 44 			; BackgroundBlock_44
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 45 			; BackgroundBlock_45
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 45 			; BackgroundBlock_45
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 233 			; label_F192+7
+	.db 0 			; BackgroundBlock_0
+	.db 234 			; label_F1B1+8
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+room_5_data:
+	.db $FF 			; Block Run
+	.db 160 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+room_6_data:
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 235 			; function_F1C9+16
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 74 			; BackgroundBlock_74
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+room_7_data:
+	.db 124 			; BackgroundBlock_124
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 121 			; BackgroundBlock_121
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 120 			; run block value BackgroundBlock_120
+	.db 121 			; BackgroundBlock_121
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 125 			; BackgroundBlock_125
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 246 			; data_F28E+171
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 125 			; BackgroundBlock_125
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 246 			; data_F28E+171
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 125 			; BackgroundBlock_125
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 233 			; label_F192+7
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 124 			; BackgroundBlock_124
+	.db 12 			; BackgroundBlock_12
+	.db 128 			; BackgroundBlock_128
+	.db 129 			; BackgroundBlock_129
+	.db 130 			; BackgroundBlock_130
+	.db 16 			; BackgroundBlock_16
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 127 			; BackgroundBlock_127
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+room_8_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 16 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 238 			; data_F237+2
+	.db 238 			; data_F237+2
+	.db 238 			; data_F237+2
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db $FF 			; Block Run
+	.db 15 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db $FF 			; Block Run
+	.db 15 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 233 			; label_F192+7
+	.db 0 			; BackgroundBlock_0
+	.db 233 			; label_F192+7
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+room_9_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 121 			; BackgroundBlock_121
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 120 			; run block value BackgroundBlock_120
+	.db 121 			; BackgroundBlock_121
+	.db 17 			; BackgroundBlock_17
+	.db 1 			; BackgroundBlock_1
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 133 			; BackgroundBlock_133
+	.db 131 			; BackgroundBlock_131
+	.db 132 			; BackgroundBlock_132
+	.db 134 			; BackgroundBlock_134
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 124 			; BackgroundBlock_124
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 124 			; BackgroundBlock_124
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 125 			; BackgroundBlock_125
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 136 			; BackgroundBlock_136
+	.db 137 			; BackgroundBlock_137
+	.db 138 			; BackgroundBlock_138
+	.db 136 			; BackgroundBlock_136
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+room_10_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 52 			; BackgroundBlock_52
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 39 			; BackgroundBlock_39
+	.db 40 			; BackgroundBlock_40
+	.db 21 			; BackgroundBlock_21
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 41 			; BackgroundBlock_41
+	.db 42 			; BackgroundBlock_42
+	.db 21 			; BackgroundBlock_21
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+room_11_data:
+	.db $FF 			; Block Run
+	.db 160 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+room_12_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 32 			; BackgroundBlock_32
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 74 			; BackgroundBlock_74
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 39 			; BackgroundBlock_39
+	.db 40 			; BackgroundBlock_40
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 34 			; BackgroundBlock_34
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 41 			; BackgroundBlock_41
+	.db 42 			; BackgroundBlock_42
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+room_13_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 53 			; BackgroundBlock_53
+	.db 55 			; BackgroundBlock_55
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 21 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 148 			; BackgroundBlock_148
+	.db 149 			; BackgroundBlock_149
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 14 			; BackgroundBlock_14
+	.db 61 			; BackgroundBlock_61
+	.db 12 			; BackgroundBlock_12
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 13 			; BackgroundBlock_13
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 12 			; BackgroundBlock_12
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+room_14_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 120 			; run block value BackgroundBlock_120
+	.db 121 			; BackgroundBlock_121
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 52 			; BackgroundBlock_52
+	.db 52 			; BackgroundBlock_52
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 241 			; data_F28E+11
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 12 			; BackgroundBlock_12
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 14 			; BackgroundBlock_14
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db 27 			; BackgroundBlock_27
+	.db 27 			; BackgroundBlock_27
+	.db 27 			; BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+room_15_data:
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 74 			; BackgroundBlock_74
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 46 			; BackgroundBlock_46
+	.db 0 			; BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 250 			; data_F28E+299
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+room_16_data:
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 141 			; BackgroundBlock_141
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 144 			; BackgroundBlock_144
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 141 			; BackgroundBlock_141
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 253 			; data_F28E+395
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 19 			; BackgroundBlock_19
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 253 			; data_F28E+395
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 253 			; data_F28E+395
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 17 			; BackgroundBlock_17
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 35 			; BackgroundBlock_35
+	.db 36 			; BackgroundBlock_36
+	.db 0 			; BackgroundBlock_0
+	.db 253 			; data_F28E+395
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 141 			; BackgroundBlock_141
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 0 			; BackgroundBlock_0
+	.db 37 			; BackgroundBlock_37
+	.db 38 			; BackgroundBlock_38
+	.db 0 			; BackgroundBlock_0
+	.db 253 			; data_F28E+395
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+room_17_data:
+	.db $FF 			; Block Run
+	.db 160 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+room_18_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 72 			; BackgroundBlock_72
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 242 			; data_F28E+43
+	.db 59 			; BackgroundBlock_59
+	.db 246 			; data_F28E+171
+	.db 60 			; BackgroundBlock_60
+	.db 242 			; data_F28E+43
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+room_19_data:
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db 0 			; BackgroundBlock_0
+	.db 35 			; BackgroundBlock_35
+	.db 36 			; BackgroundBlock_36
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db 0 			; BackgroundBlock_0
+	.db 37 			; BackgroundBlock_37
+	.db 38 			; BackgroundBlock_38
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+room_20_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 72 			; BackgroundBlock_72
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 80 			; BackgroundBlock_80
+	.db 81 			; BackgroundBlock_81
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 82 			; BackgroundBlock_82
+	.db 83 			; BackgroundBlock_83
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 233 			; label_F192+7
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 74 			; BackgroundBlock_74
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+room_21_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 11 			; BackgroundBlock_11
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 10 			; BackgroundBlock_10
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 9 			; BackgroundBlock_9
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 233 			; label_F192+7
+	.db 0 			; BackgroundBlock_0
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db 0 			; BackgroundBlock_0
+	.db 6 			; BackgroundBlock_6
+	.db 7 			; BackgroundBlock_7
+	.db 8 			; BackgroundBlock_8
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 155 			; run block value BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+room_22_data:
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 72 			; BackgroundBlock_72
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 248 			; run block value data_F28E+235
+	.db 0 			; BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 254 			; data_F28E+427
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 252 			; data_F28E+363
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db 27 			; BackgroundBlock_27
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 147 			; BackgroundBlock_147
+	.db 0 			; BackgroundBlock_0
+	.db 147 			; BackgroundBlock_147
+	.db 0 			; BackgroundBlock_0
+	.db 147 			; BackgroundBlock_147
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+room_23_data:
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db 54 			; BackgroundBlock_54
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+room_24_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 157 			; BackgroundBlock_157
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 159 			; BackgroundBlock_159
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 120 			; BackgroundBlock_120
+	.db 120 			; BackgroundBlock_120
+	.db 121 			; BackgroundBlock_121
+	.db 0 			; BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 121 			; BackgroundBlock_121
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 157 			; BackgroundBlock_157
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 157 			; BackgroundBlock_157
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 159 			; BackgroundBlock_159
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 159 			; BackgroundBlock_159
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 121 			; BackgroundBlock_121
+	.db 120 			; BackgroundBlock_120
+	.db 121 			; BackgroundBlock_121
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 157 			; BackgroundBlock_157
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+room_25_data:
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 249 			; data_F28E+267
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 157 			; BackgroundBlock_157
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 249 			; data_F28E+267
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 158 			; BackgroundBlock_158
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 249 			; data_F28E+267
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 4 			; BackgroundBlock_4
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 2 			; BackgroundBlock_2
+	.db 158 			; BackgroundBlock_158
+	.db 0 			; BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 159 			; BackgroundBlock_159
+	.db 0 			; BackgroundBlock_0
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db 16 			; BackgroundBlock_16
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 235 			; function_F1C9+16
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 74 			; BackgroundBlock_74
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+room_26_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 2 			; BackgroundBlock_2
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 3 			; BackgroundBlock_3
+	.db 238 			; data_F237+2
+	.db 238 			; data_F237+2
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 4 			; BackgroundBlock_4
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 12 			; run length
 data_B000:
-	.db $00 
-	.db $9E 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
 data_B008:
-	.db $10 
-	.db $14 
-	.db $4B 
-	.db $02 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $EA 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $01 
-	.db $03 
-	.db $4A 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $11 
-	.db $0C 
-	.db $0D 
-	.db $80 
-	.db $81 
-	.db $82 
-	.db $0E 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $02 
-	.db $01 
-	.db $01 
-	.db $04 
-	.db $48 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $FF 
-	.db $06 
-	.db $14 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $00 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $97 
-	.db $98 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $2F 
-	.db $2E 
-	.db $48 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $3C 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $15 
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 234 			; label_F1B1+8
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 74 			; BackgroundBlock_74
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 17 			; BackgroundBlock_17
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 128 			; BackgroundBlock_128
+	.db 129 			; BackgroundBlock_129
+	.db 130 			; BackgroundBlock_130
+	.db 14 			; BackgroundBlock_14
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+room_27_data:
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 0 			; BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 151 			; BackgroundBlock_151
+	.db 152 			; BackgroundBlock_152
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 21 			; BackgroundBlock_21
 data_B078:
-	.db $03 
-	.db $05 
-	.db $01 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $04 
-	.db $04 
-	.db $15 
-	.db $E9 
-	.db $EA 
-	.db $3D 
-	.db $00 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $4A 
-	.db $14 
-	.db $49 
-	.db $02 
-	.db $01 
-	.db $4A 
-	.db $FF 
-	.db $04 
-	.db $14 
-	.db $49 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $15 
-	.db $03 
-	.db $02 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $9D 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $FF 
-	.db $0C 
-	.db $14 
-	.db $13 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $14 
-	.db $14 
-	.db $11 
-	.db $2E 
-	.db $10 
-	.db $FF 
-	.db $04 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $2F 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $48 
-	.db $14 
-	.db $14 
-	.db $4B 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $2E 
-	.db $15 
-	.db $04 
-	.db $02 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $05 
-	.db $01 
-	.db $05 
-	.db $48 
-	.db $14 
-	.db $13 
-	.db $2F 
-	.db $12 
-	.db $FF 
-	.db $04 
-	.db $14 
-	.db $13 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $02 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $FF 
-	.db $06 
-	.db $FA 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $03 
-	.db $03 
-	.db $4A 
-	.db $FF 
-	.db $0A 
-	.db $14 
-	.db $4B 
-	.db $05 
-	.db $01 
-	.db $04 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $02 
-	.db $03 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $05 
-	.db $15 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $15 
-	.db $04 
-	.db $02 
-	.db $15 
-	.db $8E 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8E 
-	.db $8D 
-	.db $15 
-	.db $04 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $27 
-	.db $28 
-	.db $15 
-	.db $02 
-	.db $05 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $29 
-	.db $2A 
-	.db $15 
-	.db $03 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $4E 
-	.db $4F 
-	.db $15 
-	.db $04 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $4B 
-	.db $01 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $02 
-	.db $05 
-	.db $15 
-	.db $ED 
-	.db $ED 
-	.db $ED 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $48 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $00 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $00 
-	.db $05 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $0B 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $00 
-	.db $00 
-	.db $0A 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $02 
-	.db $4A 
-	.db $14 
-	.db $11 
-	.db $00 
-	.db $00 
-	.db $23 
-	.db $24 
-	.db $A2 
-	.db $A3 
-	.db $00 
-	.db $00 
-	.db $09 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $25 
-	.db $26 
-	.db $A4 
-	.db $A5 
-	.db $00 
-	.db $06 
-	.db $07 
-	.db $08 
-	.db $00 
-	.db $00 
-	.db $04 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $19 
-	.db $1A 
-	.db $1B 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $1A 
-	.db $FF 
-	.db $05 
-	.db $1B 
-	.db $01 
-	.db $02 
-	.db $04 
-	.db $03 
-	.db $15 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $FF 
-	.db $04 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $1D 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $1F 
-	.db $FF 
-	.db $1E 
-	.db $00 
-	.db $EC 
-	.db $EC 
-	.db $EC 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $23 
-	.db $24 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $25 
-	.db $26 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $4C 
-	.db $4D 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $E9 
-	.db $00 
-	.db $EA 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $FF 
-	.db $05 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $04 
-	.db $05 
-	.db $04 
-	.db $15 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $35 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $4E 
-	.db $4F 
-	.db $36 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $50 
-	.db $51 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $52 
-	.db $53 
-	.db $FF 
-	.db $2F 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $27 
-	.db $28 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $A2 
-	.db $A3 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $29 
-	.db $2A 
-	.db $46 
-	.db $4C 
-	.db $4D 
-	.db $46 
-	.db $A4 
-	.db $A5 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $19 
-	.db $1A 
-	.db $FF 
-	.db $08 
-	.db $1B 
-	.db $01 
-	.db $01 
-	.db $15 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $9E 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $34 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $9E 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $9F 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $00 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $94 
-	.db $95 
-	.db $15 
-	.db $02 
-	.db $00 
-	.db $00 
-	.db $96 
-	.db $00 
-	.db $91 
-	.db $00 
-	.db $91 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $93 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $0C 
-	.db $0D 
-	.db $0E 
-	.db $0D 
-	.db $0E 
-	.db $3D 
-	.db $0C 
-	.db $15 
-	.db $04 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $01 
-	.db $1C 
-	.db $19 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $3B 
-	.db $02 
-	.db $3B 
-	.db $04 
-	.db $3B 
-	.db $02 
-	.db $3B 
-	.db $04 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $35 
-	.db $4E 
-	.db $4F 
-	.db $35 
-	.db $3B 
-	.db $35 
-	.db $3B 
-	.db $35 
-	.db $3B 
-	.db $35 
-	.db $3D 
-	.db $34 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $50 
-	.db $51 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $47 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $52 
-	.db $53 
-	.db $00 
-	.db $47 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $47 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $47 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $E9 
-	.db $E9 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $46 
-	.db $00 
-	.db $46 
-	.db $00 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $19 
-	.db $1A 
-	.db $FF 
-	.db $07 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $49 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $00 
-	.db $15 
-	.db $05 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A2 
-	.db $A3 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $15 
-	.db $14 
-	.db $13 
-	.db $23 
-	.db $24 
-	.db $00 
-	.db $A4 
-	.db $A5 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $25 
-	.db $26 
-	.db $00 
-	.db $4E 
-	.db $4F 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $15 
-	.db $19 
-	.db $1A 
-	.db $FF 
-	.db $05 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $01 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $05 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $15 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $34 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $47 
-	.db $47 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $85 
-	.db $83 
-	.db $84 
-	.db $86 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $8B 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $00 
-	.db $8B 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $88 
-	.db $89 
-	.db $8A 
-	.db $88 
-	.db $00 
-	.db $4C 
-	.db $4D 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $02 
-	.db $9A 
-	.db $FF 
-	.db $0D 
-	.db $9B 
-	.db $9C 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $34 
-	.db $35 
-	.db $35 
-	.db $36 
-	.db $34 
-	.db $3C 
-	.db $35 
-	.db $3C 
-	.db $36 
-	.db $34 
-	.db $35 
-	.db $34 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $3B 
-	.db $F2 
-	.db $3D 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $EE 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $0F 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3C 
-	.db $FF 
-	.db $0F 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $EB 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $3D 
-	.db $00 
-	.db $3D 
-	.db $16 
-	.db $17 
-	.db $16 
-	.db $17 
-	.db $FF 
-	.db $10 
-	.db $14 
-	.db $01 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $04 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $34 
-	.db $35 
-	.db $35 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $34 
-	.db $34 
-	.db $EE 
-	.db $EE 
-	.db $EE 
-	.db $FF 
-	.db $1C 
-	.db $00 
-	.db $96 
-	.db $FF 
-	.db $0F 
-	.db $00 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A2 
-	.db $A3 
-	.db $00 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A4 
-	.db $A5 
-	.db $00 
-	.db $00 
-	.db $4E 
-	.db $4F 
-	.db $46 
-	.db $4E 
-	.db $4F 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $19 
-	.db $1A 
-	.db $FF 
-	.db $0A 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $1A 
-	.db $4B 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $04 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $FF 
-	.db $07 
-	.db $14 
-	.db $49 
-	.db $02 
-	.db $03 
-	.db $02 
-	.db $04 
-	.db $03 
-	.db $04 
-	.db $03 
-	.db $04 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $02 
-	.db $05 
-	.db $03 
-	.db $04 
-	.db $03 
-	.db $04 
-	.db $03 
-	.db $7B 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $15 
-	.db $FF 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $05 
-	.db $03 
-	.db $05 
-	.db $7C 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $04 
-	.db $02 
-	.db $02 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $7D 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $02 
-	.db $02 
-	.db $05 
-	.db $02 
-	.db $02 
-	.db $03 
-	.db $02 
-	.db $7F 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $12 
-	.db $FF 
-	.db $08 
-	.db $14 
-	.db $98 
-	.db $FF 
-	.db $0F 
-	.db $00 
-	.db $96 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $91 
-	.db $E9 
-	.db $91 
-	.db $E9 
-	.db $91 
-	.db $E9 
-	.db $91 
-	.db $E9 
-	.db $10 
-	.db $15 
-	.db $19 
-	.db $1A 
-	.db $1B 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $93 
-	.db $15 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7B 
-	.db $01 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $01 
-	.db $03 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7C 
-	.db $01 
-	.db $02 
-	.db $48 
-	.db $FF 
-	.db $05 
-	.db $14 
-	.db $49 
-	.db $04 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7D 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $2E 
-	.db $00 
-	.db $2E 
-	.db $00 
-	.db $2E 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7D 
-	.db $02 
-	.db $02 
-	.db $15 
-	.db $2F 
-	.db $E9 
-	.db $2F 
-	.db $E9 
-	.db $2F 
-	.db $15 
-	.db $02 
-	.db $05 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $4B 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $15 
-	.db $03 
-	.db $05 
-	.db $15 
-	.db $A0 
-	.db $A1 
-	.db $00 
-	.db $00 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $00 
-	.db $2E 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $14 
-	.db $13 
-	.db $A2 
-	.db $A3 
-	.db $00 
-	.db $00 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $EA 
-	.db $2F 
-	.db $EB 
-	.db $15 
-	.db $05 
-	.db $00 
-	.db $00 
-	.db $A4 
-	.db $A5 
-	.db $00 
-	.db $00 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $15 
-	.db $01 
-	.db $FF 
-	.db $0E 
-	.db $14 
-	.db $4B 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $03 
-	.db $04 
-	.db $FF 
-	.db $A0 
-	.db $00 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $3B 
-	.db $05 
-	.db $3B 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $A9 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $01 
-	.db $48 
-	.db $A8 
-	.db $3B 
-	.db $A8 
-	.db $3B 
-	.db $FF 
-	.db $05 
-	.db $A8 
-	.db $13 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $02 
-	.db $A9 
-	.db $47 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $00 
-	.db $4E 
-	.db $4F 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $03 
-	.db $A9 
-	.db $00 
-	.db $47 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $00 
-	.db $50 
-	.db $51 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $04 
-	.db $A9 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $47 
-	.db $00 
-	.db $00 
-	.db $52 
-	.db $53 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $05 
-	.db $A9 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $01 
-	.db $A9 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $27 
-	.db $28 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $02 
-	.db $A9 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $29 
-	.db $2A 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $03 
-	.db $A9 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $11 
-	.db $0C 
-	.db $0D 
-	.db $0E 
-	.db $0F 
-	.db $04 
-	.db $A9 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $01 
-	.db $34 
-	.db $35 
-	.db $A6 
-	.db $A7 
-	.db $34 
-	.db $A6 
-	.db $A7 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $34 
-	.db $35 
-	.db $37 
-	.db $34 
-	.db $15 
-	.db $01 
-	.db $00 
-	.db $00 
-	.db $47 
-	.db $47 
-	.db $00 
-	.db $47 
-	.db $47 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $4B 
-	.db $01 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $00 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $EB 
-	.db $46 
-	.db $46 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $0C 
-	.db $0D 
-	.db $4E 
-	.db $4F 
-	.db $0D 
-	.db $4E 
-	.db $4F 
-	.db $0E 
-	.db $0C 
-	.db $0D 
-	.db $0E 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $04 
-	.db $05 
-	.db $02 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $05 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $48 
-	.db $FF 
-	.db $0E 
-	.db $A8 
-	.db $03 
-	.db $A9 
-	.db $00 
-	.db $1D 
-	.db $1F 
-	.db $00 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $02 
-	.db $A9 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $FF 
-	.db $04 
-	.db $EC 
-	.db $01 
-	.db $A9 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $05 
-	.db $A9 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $04 
-	.db $A9 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $03 
-	.db $A9 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $7B 
-	.db $02 
-	.db $A9 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $7C 
-	.db $01 
-	.db $A9 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $7D 
-	.db $01 
-	.db $02 
-	.db $A9 
-	.db $19 
-	.db $1A 
-	.db $FF 
-	.db $0B 
-	.db $1B 
-	.db $A8 
-	.db $A8 
-	.db $13 
-	.db $FF 
-	.db $29 
-	.db $00 
-	.db $FF 
-	.db $04 
-	.db $EC 
-	.db $FF 
-	.db $21 
-	.db $00 
-	.db $EA 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $14 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $EB 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $19 
-	.db $1A 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $FF 
-	.db $05 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $1A 
-	.db $FF 
-	.db $08 
-	.db $1B 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A6 
-	.db $A7 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $47 
-	.db $47 
-	.db $FF 
-	.db $22 
-	.db $00 
-	.db $FF 
-	.db $04 
-	.db $EC 
-	.db $FF 
-	.db $38 
-	.db $00 
-	.db $0C 
-	.db $0D 
-	.db $0C 
-	.db $0D 
-	.db $0E 
-	.db $0C 
-	.db $0E 
-	.db $0E 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $0C 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $01 
-	.db $FF 
-	.db $05 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $12 
-	.db $FF 
-	.db $06 
-	.db $14 
-	.db $49 
-	.db $04 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $F8 
-	.db $2F 
-	.db $15 
-	.db $05 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $2F 
-	.db $2E 
-	.db $15 
-	.db $01 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $F8 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $15 
-	.db $02 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $15 
-	.db $04 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $F8 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $15 
-	.db $03 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $4C 
-	.db $4D 
-	.db $00 
-	.db $F8 
-	.db $00 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $15 
-	.db $01 
-	.db $0E 
-	.db $0C 
-	.db $10 
-	.db $FF 
-	.db $09 
-	.db $A8 
-	.db $49 
-	.db $2F 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $A9 
-	.db $04 
-	.db $05 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $02 
-	.db $04 
-	.db $05 
-	.db $A9 
-	.db $2E 
-	.db $15 
-	.db $02 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $04 
-	.db $48 
-	.db $FF 
-	.db $0E 
-	.db $A8 
-	.db $03 
-	.db $15 
-	.db $00 
-	.db $A6 
-	.db $A7 
-	.db $00 
-	.db $A6 
-	.db $A7 
-	.db $00 
-	.db $A6 
-	.db $A7 
-	.db $00 
-	.db $A6 
-	.db $A7 
-	.db $00 
-	.db $00 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $47 
-	.db $47 
-	.db $00 
-	.db $47 
-	.db $47 
-	.db $00 
-	.db $47 
-	.db $47 
-	.db $00 
-	.db $47 
-	.db $47 
-	.db $00 
-	.db $7B 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $7D 
-	.db $05 
-	.db $15 
-	.db $E9 
-	.db $EA 
-	.db $EB 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $7E 
-	.db $04 
-	.db $4A 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $7E 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $7D 
-	.db $02 
-	.db $48 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $7C 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $7D 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $03 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $7C 
-	.db $01 
-	.db $19 
-	.db $1A 
-	.db $1B 
-	.db $1B 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $1A 
-	.db $FF 
-	.db $04 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $7C 
-	.db $01 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $47 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $00 
-	.db $00 
-	.db $7D 
-	.db $02 
-	.db $14 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $00 
-	.db $00 
-	.db $7E 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $7C 
-	.db $04 
-	.db $03 
-	.db $05 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $7D 
-	.db $05 
-	.db $01 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $7E 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $7C 
-	.db $02 
-	.db $04 
-	.db $05 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $7D 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $04 
-	.db $ED 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $7E 
-	.db $04 
-	.db $01 
-	.db $A9 
-	.db $EF 
-	.db $EF 
-	.db $EF 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $A9 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $34 
-	.db $02 
-	.db $A9 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $03 
-	.db $A9 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $04 
-	.db $A9 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $05 
-	.db $A9 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $01 
-	.db $A9 
-	.db $00 
-	.db $23 
-	.db $24 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $02 
-	.db $A9 
-	.db $22 
-	.db $25 
-	.db $26 
-	.db $20 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $03 
-	.db $4A 
-	.db $FF 
-	.db $04 
-	.db $A8 
-	.db $11 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $A9 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $3B 
-	.db $05 
-	.db $3B 
-	.db $03 
-	.db $3B 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $34 
-	.db $36 
-	.db $34 
-	.db $35 
-	.db $3D 
-	.db $37 
-	.db $3B 
-	.db $35 
-	.db $3B 
-	.db $37 
-	.db $34 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $47 
-	.db $E9 
-	.db $3D 
-	.db $EA 
-	.db $3B 
-	.db $EB 
-	.db $00 
-	.db $12 
-	.db $A8 
-	.db $A8 
-	.db $49 
-	.db $01 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $47 
-	.db $00 
-	.db $3D 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $A9 
-	.db $02 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $47 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $A9 
-	.db $03 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $A9 
-	.db $04 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $A9 
-	.db $05 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $A9 
-	.db $01 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $A9 
-	.db $02 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $19 
-	.db $FF 
-	.db $04 
-	.db $ED 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $A9 
-	.db $02 
-	.db $01 
-	.db $A9 
-	.db $EF 
-	.db $EF 
-	.db $EF 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $9D 
-	.db $02 
-	.db $A9 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $9E 
-	.db $03 
-	.db $A9 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $9E 
-	.db $04 
-	.db $A9 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $9E 
-	.db $05 
-	.db $A9 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $27 
-	.db $28 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $9E 
-	.db $01 
-	.db $A9 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $29 
-	.db $2A 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $9E 
-	.db $02 
-	.db $4A 
-	.db $A8 
-	.db $A8 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $A8 
-	.db $A8 
-	.db $11 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $9F 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $A9 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $04 
-	.db $48 
-	.db $A8 
-	.db $A8 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $A8 
-	.db $A8 
-	.db $13 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $05 
-	.db $A9 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $9D 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $16 
-	.db $17 
-	.db $18 
-	.db $15 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $9E 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $12 
-	.db $FF 
-	.db $04 
-	.db $14 
-	.db $03 
-	.db $9E 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $04 
-	.db $9E 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $05 
-	.db $9E 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $01 
-	.db $9E 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $02 
-	.db $9E 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $03 
-	.db $9E 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $04 
-	.db $9E 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $05 
-	.db $9E 
-	.db $ED 
-	.db $ED 
-	.db $ED 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $01 
-	.db $FF 
-	.db $05 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $49 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $FF 
-	.db $06 
-	.db $FE 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $04 
-	.db $03 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $04 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $97 
-	.db $98 
-	.db $FF 
-	.db $0F 
-	.db $00 
-	.db $3C 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $91 
-	.db $00 
-	.db $91 
-	.db $00 
-	.db $00 
-	.db $3D 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $93 
-	.db $FF 
-	.db $05 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9B 
-	.db $9C 
-	.db $FF 
-	.db $07 
-	.db $14 
-	.db $01 
-	.db $03 
-	.db $02 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $A9 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $3B 
-	.db $34 
-	.db $A9 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $A9 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $A9 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $3B 
-	.db $00 
-	.db $A9 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $A9 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $05 
-	.db $01 
-	.db $A9 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $3B 
-	.db $F3 
-	.db $12 
-	.db $A8 
-	.db $A8 
-	.db $A8 
-	.db $13 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $02 
-	.db $A9 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3C 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $05 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $00 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $91 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A2 
-	.db $A3 
-	.db $3C 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $92 
-	.db $93 
-	.db $00 
-	.db $00 
-	.db $A4 
-	.db $A5 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $FF 
-	.db $04 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $11 
-	.db $3D 
-	.db $80 
-	.db $81 
-	.db $82 
-	.db $10 
-	.db $14 
-	.db $4B 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $05 
-	.db $A9 
-	.db $EF 
-	.db $EF 
-	.db $EF 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $7E 
-	.db $04 
-	.db $A9 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $7C 
-	.db $03 
-	.db $A9 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $7D 
-	.db $02 
-	.db $A9 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $7E 
-	.db $01 
-	.db $A9 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $7C 
-	.db $04 
-	.db $A9 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $7D 
-	.db $03 
-	.db $A9 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $7E 
-	.db $02 
-	.db $A9 
-	.db $46 
-	.db $4C 
-	.db $4D 
-	.db $00 
-	.db $46 
-	.db $00 
-	.db $4C 
-	.db $4D 
-	.db $46 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $7C 
-	.db $01 
-	.db $4A 
-	.db $FF 
-	.db $09 
-	.db $A8 
-	.db $11 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7E 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $A9 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7F 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $7B 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $8D 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $7C 
-	.db $02 
-	.db $05 
-	.db $01 
-	.db $9D 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $7D 
-	.db $03 
-	.db $02 
-	.db $03 
-	.db $9E 
-	.db $00 
-	.db $8D 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $7E 
-	.db $04 
-	.db $04 
-	.db $05 
-	.db $9E 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $7C 
-	.db $05 
-	.db $01 
-	.db $03 
-	.db $9E 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $7D 
-	.db $01 
-	.db $04 
-	.db $02 
-	.db $9E 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $7E 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $9F 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $7E 
-	.db $03 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $7C 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $04 
-	.db $ED 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $7D 
-	.db $05 
-	.db $01 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $A9 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $02 
-	.db $48 
-	.db $FF 
-	.db $07 
-	.db $14 
-	.db $13 
-	.db $34 
-	.db $36 
-	.db $A9 
-	.db $02 
-	.db $02 
-	.db $03 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $FD 
-	.db $A9 
-	.db $03 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $FD 
-	.db $A9 
-	.db $04 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $12 
-	.db $A8 
-	.db $A8 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $04 
-	.db $05 
-	.db $15 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $10 
-	.db $FF 
-	.db $05 
-	.db $A8 
-	.db $01 
-	.db $01 
-	.db $15 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $A9 
-	.db $01 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $A9 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $A9 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $A9 
-	.db $8D 
-	.db $E9 
-	.db $8D 
-	.db $E9 
-	.db $8D 
-	.db $E9 
-	.db $8D 
-	.db $E9 
-	.db $8D 
-	.db $00 
-	.db $A9 
-	.db $01 
-	.db $02 
-	.db $04 
-	.db $03 
-	.db $A9 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $9D 
-	.db $02 
-	.db $03 
-	.db $02 
-	.db $04 
-	.db $A9 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $9E 
-	.db $03 
-	.db $A8 
-	.db $A8 
-	.db $A8 
-	.db $13 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $9E 
-	.db $04 
-	.db $2E 
-	.db $EA 
-	.db $2E 
-	.db $EB 
-	.db $2E 
-	.db $2F 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $94 
-	.db $95 
-	.db $00 
-	.db $00 
-	.db $9F 
-	.db $05 
-	.db $91 
-	.db $8D 
-	.db $91 
-	.db $8D 
-	.db $91 
-	.db $2E 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $96 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A9 
-	.db $01 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $2F 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $99 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A9 
-	.db $02 
-	.db $FF 
-	.db $04 
-	.db $A8 
-	.db $9A 
-	.db $FF 
-	.db $04 
-	.db $9B 
-	.db $9C 
-	.db $FF 
-	.db $04 
-	.db $A8 
-	.db $4B 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $01 
-	.db $A9 
-	.db $EF 
-	.db $EF 
-	.db $EF 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $A9 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $A9 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $A9 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $9D 
-	.db $05 
-	.db $01 
-	.db $05 
-	.db $A9 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $9E 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $A9 
-	.db $A0 
-	.db $A1 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $9E 
-	.db $04 
-	.db $05 
-	.db $02 
-	.db $A9 
-	.db $A2 
-	.db $A3 
-	.db $00 
-	.db $23 
-	.db $24 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $9F 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $A9 
-	.db $A4 
-	.db $A5 
-	.db $00 
-	.db $25 
-	.db $26 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $4A 
-	.db $FF 
-	.db $08 
-	.db $A8 
-	.db $11 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $05 
-	.db $01 
-	.db $05 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $A9 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $A9 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $02 
-	.db $A9 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $2F 
-	.db $2E 
-	.db $15 
-	.db $03 
-	.db $05 
-	.db $03 
-	.db $A9 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $12 
-	.db $14 
-	.db $14 
-	.db $04 
-	.db $A9 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $05 
-	.db $A9 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $01 
-	.db $A9 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $03 
-	.db $A9 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $46 
-	.db $4C 
-	.db $4D 
-	.db $46 
-	.db $FF 
-	.db $05 
-	.db $00 
-	.db $03 
-	.db $A9 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $46 
-	.db $9A 
-	.db $FF 
-	.db $04 
-	.db $9B 
-	.db $9C 
-	.db $46 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $01 
-	.db $4A 
-	.db $A8 
-	.db $A8 
-	.db $A8 
-	.db $9A 
-	.db $FF 
-	.db $06 
-	.db $9B 
-	.db $9C 
-	.db $A8 
-	.db $A8 
-	.db $A8 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $03 
-	.db $02 
-	.db $15 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $34 
-	.db $36 
-	.db $34 
-	.db $35 
-	.db $37 
-	.db $36 
-	.db $34 
-	.db $FF 
-	.db $04 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $18 
-	.db $00 
-	.db $EC 
-	.db $EC 
-	.db $EC 
-	.db $FF 
-	.db $12 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $A2 
-	.db $A3 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $00 
-	.db $00 
-	.db $27 
-	.db $28 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $A4 
-	.db $A5 
-	.db $46 
-	.db $4C 
-	.db $4D 
-	.db $46 
-	.db $4C 
-	.db $4D 
-	.db $46 
-	.db $00 
-	.db $29 
-	.db $2A 
-	.db $00 
-	.db $00 
-	.db $FF 
-	.db $10 
-	.db $A8 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $34 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $35 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $35 
-	.db $00 
-	.db $12 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $FF 
-	.db $1C 
-	.db $00 
-	.db $FF 
-	.db $04 
-	.db $EC 
-	.db $FF 
-	.db $40 
-	.db $00 
-	.db $FF 
-	.db $04 
-	.db $A8 
-	.db $11 
-	.db $0D 
-	.db $0E 
-	.db $0C 
-	.db $0D 
-	.db $0C 
-	.db $10 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $A9 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $15 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $02 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7C 
-	.db $14 
-	.db $9A 
-	.db $FF 
-	.db $07 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $13 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7D 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $7E 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $7E 
-	.db $FF 
-	.db $0F 
-	.db $00 
-	.db $7D 
-	.db $FF 
-	.db $0F 
-	.db $00 
-	.db $7C 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $27 
-	.db $28 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $7E 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $29 
-	.db $2A 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $7D 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $11 
-	.db $0C 
-	.db $0D 
-	.db $0E 
-	.db $0F 
-	.db $0C 
-	.db $0E 
-	.db $0F 
-	.db $0C 
-	.db $0E 
-	.db $7C 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $7F 
-	.db $04 
-	.db $05 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $9D 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $00 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $9E 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $23 
-	.db $24 
-	.db $A2 
-	.db $A3 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $9E 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $25 
-	.db $26 
-	.db $A4 
-	.db $A5 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $9E 
-	.db $04 
-	.db $03 
-	.db $04 
-	.db $4A 
-	.db $FF 
-	.db $04 
+	.db 3 			; BackgroundBlock_3
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 233 			; label_F192+7
+	.db 234 			; label_F1B1+8
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 74 			; BackgroundBlock_74
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 157 			; BackgroundBlock_157
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+room_28_data:
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db 46 			; BackgroundBlock_46
+	.db 16 			; BackgroundBlock_16
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 47 			; BackgroundBlock_47
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 5 			; BackgroundBlock_5
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 47 			; BackgroundBlock_47
+	.db 18 			; BackgroundBlock_18
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 250 			; run block value data_F28E+299
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+room_29_data:
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 142 			; BackgroundBlock_142
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 142 			; BackgroundBlock_142
+	.db 141 			; BackgroundBlock_141
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 39 			; BackgroundBlock_39
+	.db 40 			; BackgroundBlock_40
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 41 			; BackgroundBlock_41
+	.db 42 			; BackgroundBlock_42
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+room_30_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db 0 			; BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db 0 			; BackgroundBlock_0
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 11 			; BackgroundBlock_11
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 10 			; BackgroundBlock_10
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 74 			; BackgroundBlock_74
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 35 			; BackgroundBlock_35
+	.db 36 			; BackgroundBlock_36
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 9 			; BackgroundBlock_9
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 37 			; BackgroundBlock_37
+	.db 38 			; BackgroundBlock_38
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db 0 			; BackgroundBlock_0
+	.db 6 			; BackgroundBlock_6
+	.db 7 			; BackgroundBlock_7
+	.db 8 			; BackgroundBlock_8
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db 27 			; BackgroundBlock_27
+	.db 27 			; BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+room_31_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 29 			; BackgroundBlock_29
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 31 			; BackgroundBlock_31
+	.db $FF 			; Block Run
+	.db 30 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 236 			; data_F1F8+1
+	.db 236 			; data_F1F8+1
+	.db 236 			; data_F1F8+1
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 35 			; BackgroundBlock_35
+	.db 36 			; BackgroundBlock_36
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 37 			; BackgroundBlock_37
+	.db 38 			; BackgroundBlock_38
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 233 			; label_F192+7
+	.db 0 			; BackgroundBlock_0
+	.db 234 			; label_F1B1+8
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+room_32_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db 54 			; BackgroundBlock_54
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 80 			; BackgroundBlock_80
+	.db 81 			; BackgroundBlock_81
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 82 			; BackgroundBlock_82
+	.db 83 			; BackgroundBlock_83
+	.db $FF 			; Block Run
+	.db 47 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 39 			; BackgroundBlock_39
+	.db 40 			; BackgroundBlock_40
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 41 			; BackgroundBlock_41
+	.db 42 			; BackgroundBlock_42
+	.db 70 			; BackgroundBlock_70
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 70 			; BackgroundBlock_70
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+room_33_data:
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 52 			; BackgroundBlock_52
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 159 			; BackgroundBlock_159
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 148 			; BackgroundBlock_148
+	.db 149 			; BackgroundBlock_149
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 150 			; BackgroundBlock_150
+	.db 0 			; BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 61 			; BackgroundBlock_61
+	.db 12 			; BackgroundBlock_12
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+room_34_data:
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 59 			; BackgroundBlock_59
+	.db 2 			; BackgroundBlock_2
+	.db 59 			; BackgroundBlock_59
+	.db 4 			; BackgroundBlock_4
+	.db 59 			; BackgroundBlock_59
+	.db 2 			; BackgroundBlock_2
+	.db 59 			; BackgroundBlock_59
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 53 			; BackgroundBlock_53
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db 53 			; BackgroundBlock_53
+	.db 59 			; BackgroundBlock_59
+	.db 53 			; BackgroundBlock_53
+	.db 59 			; BackgroundBlock_59
+	.db 53 			; BackgroundBlock_53
+	.db 59 			; BackgroundBlock_59
+	.db 53 			; BackgroundBlock_53
+	.db 61 			; BackgroundBlock_61
+	.db 52 			; BackgroundBlock_52
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 80 			; BackgroundBlock_80
+	.db 81 			; BackgroundBlock_81
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 82 			; BackgroundBlock_82
+	.db 83 			; BackgroundBlock_83
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 233 			; label_F192+7
+	.db 233 			; label_F192+7
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+room_35_data:
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 35 			; BackgroundBlock_35
+	.db 36 			; BackgroundBlock_36
+	.db 0 			; BackgroundBlock_0
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 37 			; BackgroundBlock_37
+	.db 38 			; BackgroundBlock_38
+	.db 0 			; BackgroundBlock_0
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+room_36_data:
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 52 			; BackgroundBlock_52
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 133 			; BackgroundBlock_133
+	.db 131 			; BackgroundBlock_131
+	.db 132 			; BackgroundBlock_132
+	.db 134 			; BackgroundBlock_134
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 139 			; BackgroundBlock_139
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 139 			; BackgroundBlock_139
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 136 			; BackgroundBlock_136
+	.db 137 			; BackgroundBlock_137
+	.db 138 			; BackgroundBlock_138
+	.db 136 			; BackgroundBlock_136
+	.db 0 			; BackgroundBlock_0
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 2 			; BackgroundBlock_2
+	.db 154 			; BackgroundBlock_154
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 155 			; run block value BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+room_37_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 52 			; BackgroundBlock_52
+	.db 60 			; BackgroundBlock_60
+	.db 53 			; BackgroundBlock_53
+	.db 60 			; BackgroundBlock_60
+	.db 54 			; BackgroundBlock_54
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 242 			; data_F28E+43
+	.db 61 			; BackgroundBlock_61
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 238 			; data_F237+2
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 15 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db $FF 			; Block Run
+	.db 15 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 235 			; function_F1C9+16
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db $FF 			; Block Run
+	.db 16 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+room_38_data:
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 53 			; BackgroundBlock_53
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 52 			; BackgroundBlock_52
+	.db 52 			; BackgroundBlock_52
+	.db 238 			; data_F237+2
+	.db 238 			; data_F237+2
+	.db 238 			; data_F237+2
+	.db $FF 			; Block Run
+	.db 28 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 150 			; BackgroundBlock_150
+	.db $FF 			; Block Run
+	.db 15 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db 70 			; BackgroundBlock_70
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db 75 			; BackgroundBlock_75
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+room_39_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 123 			; BackgroundBlock_123
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 1 			; run block value BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 3 			; BackgroundBlock_3
+	.db 5 			; BackgroundBlock_5
+	.db 124 			; BackgroundBlock_124
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 125 			; BackgroundBlock_125
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 127 			; BackgroundBlock_127
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 152 			; BackgroundBlock_152
+	.db $FF 			; Block Run
+	.db 15 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 150 			; BackgroundBlock_150
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 233 			; label_F192+7
+	.db 145 			; BackgroundBlock_145
+	.db 233 			; label_F192+7
+	.db 145 			; BackgroundBlock_145
+	.db 233 			; label_F192+7
+	.db 145 			; BackgroundBlock_145
+	.db 233 			; label_F192+7
+	.db 16 			; BackgroundBlock_16
+	.db 21 			; BackgroundBlock_21
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db 27 			; BackgroundBlock_27
+	.db 27 			; BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 21 			; BackgroundBlock_21
+room_40_data:
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 123 			; BackgroundBlock_123
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 72 			; BackgroundBlock_72
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 46 			; BackgroundBlock_46
+	.db 0 			; BackgroundBlock_0
+	.db 46 			; BackgroundBlock_46
+	.db 0 			; BackgroundBlock_0
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 47 			; BackgroundBlock_47
+	.db 233 			; label_F192+7
+	.db 47 			; BackgroundBlock_47
+	.db 233 			; label_F192+7
+	.db 47 			; BackgroundBlock_47
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 0 			; BackgroundBlock_0
+	.db 46 			; BackgroundBlock_46
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 234 			; label_F1B1+8
+	.db 47 			; BackgroundBlock_47
+	.db 235 			; function_F1C9+16
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+room_41_data:
+	.db $FF 			; Block Run
+	.db 160 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+room_42_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 59 			; BackgroundBlock_59
+	.db 5 			; BackgroundBlock_5
+	.db 59 			; BackgroundBlock_59
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 72 			; BackgroundBlock_72
+	.db 168 			; BackgroundBlock_168
+	.db 59 			; BackgroundBlock_59
+	.db 168 			; BackgroundBlock_168
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 19 			; BackgroundBlock_19
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db 71 			; BackgroundBlock_71
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 80 			; BackgroundBlock_80
+	.db 81 			; BackgroundBlock_81
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 82 			; BackgroundBlock_82
+	.db 83 			; BackgroundBlock_83
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 5 			; BackgroundBlock_5
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 39 			; BackgroundBlock_39
+	.db 40 			; BackgroundBlock_40
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 41 			; BackgroundBlock_41
+	.db 42 			; BackgroundBlock_42
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 15 			; BackgroundBlock_15
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+room_43_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 166 			; BackgroundBlock_166
+	.db 167 			; BackgroundBlock_167
+	.db 52 			; BackgroundBlock_52
+	.db 166 			; BackgroundBlock_166
+	.db 167 			; BackgroundBlock_167
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 55 			; BackgroundBlock_55
+	.db 52 			; BackgroundBlock_52
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 235 			; function_F1C9+16
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db 13 			; BackgroundBlock_13
+	.db 78 			; BackgroundBlock_78
+	.db 79 			; BackgroundBlock_79
+	.db 14 			; BackgroundBlock_14
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+room_44_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 72 			; BackgroundBlock_72
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 29 			; BackgroundBlock_29
+	.db 31 			; BackgroundBlock_31
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 236 			; run block value data_F1F8+1
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 5 			; BackgroundBlock_5
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 123 			; BackgroundBlock_123
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+room_45_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 41 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 236 			; run block value data_F1F8+1
+	.db $FF 			; Block Run
+	.db 33 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 234 			; label_F1B1+8
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 235 			; function_F1C9+16
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db 27 			; BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+room_46_data:
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 166 			; BackgroundBlock_166
+	.db 167 			; BackgroundBlock_167
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db $FF 			; Block Run
+	.db 34 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 236 			; run block value data_F1F8+1
+	.db $FF 			; Block Run
+	.db 56 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 12 			; BackgroundBlock_12
+	.db 14 			; BackgroundBlock_14
+	.db 14 			; BackgroundBlock_14
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 12 			; BackgroundBlock_12
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+room_47_data:
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 248 			; data_F28E+235
+	.db 47 			; BackgroundBlock_47
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 248 			; data_F28E+235
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 248 			; data_F28E+235
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 0 			; BackgroundBlock_0
+	.db 248 			; data_F28E+235
+	.db 0 			; BackgroundBlock_0
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 14 			; BackgroundBlock_14
+	.db 12 			; BackgroundBlock_12
+	.db 16 			; BackgroundBlock_16
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 73 			; BackgroundBlock_73
+	.db 47 			; BackgroundBlock_47
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 169 			; BackgroundBlock_169
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+room_48_data:
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 72 			; BackgroundBlock_72
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 166 			; BackgroundBlock_166
+	.db 167 			; BackgroundBlock_167
+	.db 0 			; BackgroundBlock_0
+	.db 166 			; BackgroundBlock_166
+	.db 167 			; BackgroundBlock_167
+	.db 0 			; BackgroundBlock_0
+	.db 166 			; BackgroundBlock_166
+	.db 167 			; BackgroundBlock_167
+	.db 0 			; BackgroundBlock_0
+	.db 166 			; BackgroundBlock_166
+	.db 167 			; BackgroundBlock_167
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 123 			; BackgroundBlock_123
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 233 			; label_F192+7
+	.db 234 			; label_F1B1+8
+	.db 235 			; function_F1C9+16
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 4 			; BackgroundBlock_4
+	.db 74 			; BackgroundBlock_74
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 2 			; BackgroundBlock_2
+	.db 72 			; BackgroundBlock_72
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+room_49_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 124 			; BackgroundBlock_124
+	.db 1 			; BackgroundBlock_1
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db 27 			; BackgroundBlock_27
+	.db 27 			; BackgroundBlock_27
+	.db 27 			; BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 124 			; BackgroundBlock_124
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 2 			; BackgroundBlock_2
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 237 			; run block value data_F214+5
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 4 			; BackgroundBlock_4
+room_50_data:
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db 239 			; data_F247+18
+	.db 239 			; data_F247+18
+	.db 239 			; data_F247+18
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 52 			; BackgroundBlock_52
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 5 			; BackgroundBlock_5
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 35 			; BackgroundBlock_35
+	.db 36 			; BackgroundBlock_36
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db 34 			; BackgroundBlock_34
+	.db 37 			; BackgroundBlock_37
+	.db 38 			; BackgroundBlock_38
+	.db 32 			; BackgroundBlock_32
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+room_51_data:
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 59 			; BackgroundBlock_59
+	.db 5 			; BackgroundBlock_5
+	.db 59 			; BackgroundBlock_59
+	.db 3 			; BackgroundBlock_3
+	.db 59 			; BackgroundBlock_59
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 52 			; BackgroundBlock_52
+	.db 54 			; BackgroundBlock_54
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 61 			; BackgroundBlock_61
+	.db 55 			; BackgroundBlock_55
+	.db 59 			; BackgroundBlock_59
+	.db 53 			; BackgroundBlock_53
+	.db 59 			; BackgroundBlock_59
+	.db 55 			; BackgroundBlock_55
+	.db 52 			; BackgroundBlock_52
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 233 			; label_F192+7
+	.db 61 			; BackgroundBlock_61
+	.db 234 			; label_F1B1+8
+	.db 59 			; BackgroundBlock_59
+	.db 235 			; function_F1C9+16
+	.db 0 			; BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 73 			; BackgroundBlock_73
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 2 			; BackgroundBlock_2
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 3 			; BackgroundBlock_3
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 5 			; BackgroundBlock_5
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 2 			; BackgroundBlock_2
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 25 			; BackgroundBlock_25
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 237 			; run block value data_F214+5
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 2 			; BackgroundBlock_2
+room_52_data:
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db 239 			; data_F247+18
+	.db 239 			; data_F247+18
+	.db 239 			; data_F247+18
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 157 			; BackgroundBlock_157
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 5 			; BackgroundBlock_5
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 39 			; BackgroundBlock_39
+	.db 40 			; BackgroundBlock_40
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 41 			; BackgroundBlock_41
+	.db 42 			; BackgroundBlock_42
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 2 			; BackgroundBlock_2
+	.db 74 			; BackgroundBlock_74
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 159 			; BackgroundBlock_159
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 4 			; BackgroundBlock_4
+	.db 72 			; BackgroundBlock_72
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+room_53_data:
+	.db 1 			; BackgroundBlock_1
+	.db 157 			; BackgroundBlock_157
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 22 			; BackgroundBlock_22
+	.db 23 			; BackgroundBlock_23
+	.db 24 			; BackgroundBlock_24
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 3 			; BackgroundBlock_3
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 5 			; BackgroundBlock_5
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 5 			; BackgroundBlock_5
+	.db 158 			; BackgroundBlock_158
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+room_54_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 254 			; run block value data_F28E+427
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 151 			; BackgroundBlock_151
+	.db 152 			; BackgroundBlock_152
+	.db $FF 			; Block Run
+	.db 15 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+room_55_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 59 			; BackgroundBlock_59
+	.db 52 			; BackgroundBlock_52
+	.db 169 			; BackgroundBlock_169
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 243 			; data_F28E+75
+	.db 18 			; BackgroundBlock_18
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 17 			; BackgroundBlock_17
+	.db 61 			; BackgroundBlock_61
+	.db 128 			; BackgroundBlock_128
+	.db 129 			; BackgroundBlock_129
+	.db 130 			; BackgroundBlock_130
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 75 			; BackgroundBlock_75
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+room_56_data:
+	.db 5 			; BackgroundBlock_5
+	.db 169 			; BackgroundBlock_169
+	.db 239 			; data_F247+18
+	.db 239 			; data_F247+18
+	.db 239 			; data_F247+18
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db 70 			; BackgroundBlock_70
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 70 			; BackgroundBlock_70
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 1 			; BackgroundBlock_1
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 17 			; BackgroundBlock_17
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 127 			; BackgroundBlock_127
+room_57_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 123 			; BackgroundBlock_123
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 157 			; BackgroundBlock_157
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 125 			; BackgroundBlock_125
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 158 			; BackgroundBlock_158
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 158 			; BackgroundBlock_158
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 159 			; BackgroundBlock_159
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 237 			; run block value data_F214+5
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 5 			; BackgroundBlock_5
+room_58_data:
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 72 			; BackgroundBlock_72
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 52 			; BackgroundBlock_52
+	.db 54 			; BackgroundBlock_54
+	.db 169 			; BackgroundBlock_169
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 253 			; data_F28E+395
+	.db 169 			; BackgroundBlock_169
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 253 			; data_F28E+395
+	.db 169 			; BackgroundBlock_169
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 16 			; BackgroundBlock_16
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+room_59_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db 141 			; BackgroundBlock_141
+	.db 233 			; label_F192+7
+	.db 141 			; BackgroundBlock_141
+	.db 233 			; label_F192+7
+	.db 141 			; BackgroundBlock_141
+	.db 233 			; label_F192+7
+	.db 141 			; BackgroundBlock_141
+	.db 233 			; label_F192+7
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 157 			; BackgroundBlock_157
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 3 			; BackgroundBlock_3
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 4 			; BackgroundBlock_4
+	.db 46 			; BackgroundBlock_46
+	.db 234 			; label_F1B1+8
+	.db 46 			; BackgroundBlock_46
+	.db 235 			; function_F1C9+16
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 148 			; BackgroundBlock_148
+	.db 149 			; BackgroundBlock_149
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 159 			; BackgroundBlock_159
+	.db 5 			; BackgroundBlock_5
+	.db 145 			; BackgroundBlock_145
+	.db 141 			; BackgroundBlock_141
+	.db 145 			; BackgroundBlock_145
+	.db 141 			; BackgroundBlock_141
+	.db 145 			; BackgroundBlock_145
+	.db 46 			; BackgroundBlock_46
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 150 			; BackgroundBlock_150
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 1 			; BackgroundBlock_1
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 47 			; BackgroundBlock_47
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 153 			; BackgroundBlock_153
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 2 			; BackgroundBlock_2
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 154 			; BackgroundBlock_154
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 155 			; run block value BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 75 			; BackgroundBlock_75
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+room_60_data:
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db 239 			; data_F247+18
+	.db 239 			; data_F247+18
+	.db 239 			; data_F247+18
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 157 			; BackgroundBlock_157
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 5 			; BackgroundBlock_5
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db 0 			; BackgroundBlock_0
+	.db 35 			; BackgroundBlock_35
+	.db 36 			; BackgroundBlock_36
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 159 			; BackgroundBlock_159
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db 0 			; BackgroundBlock_0
+	.db 37 			; BackgroundBlock_37
+	.db 38 			; BackgroundBlock_38
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 17 			; BackgroundBlock_17
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 5 			; BackgroundBlock_5
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+room_61_data:
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 169 			; BackgroundBlock_169
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 47 			; BackgroundBlock_47
+	.db 46 			; BackgroundBlock_46
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 5 			; BackgroundBlock_5
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db 5 			; BackgroundBlock_5
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 70 			; BackgroundBlock_70
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 3 			; BackgroundBlock_3
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 154 			; BackgroundBlock_154
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 155 			; run block value BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 74 			; BackgroundBlock_74
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 154 			; BackgroundBlock_154
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 155 			; run block value BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 168 			; BackgroundBlock_168
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+room_62_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 52 			; BackgroundBlock_52
+	.db 54 			; BackgroundBlock_54
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 55 			; BackgroundBlock_55
+	.db 54 			; BackgroundBlock_54
+	.db 52 			; BackgroundBlock_52
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 24 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 236 			; data_F1F8+1
+	.db 236 			; data_F1F8+1
+	.db 236 			; data_F1F8+1
+	.db $FF 			; Block Run
+	.db 18 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 39 			; BackgroundBlock_39
+	.db 40 			; BackgroundBlock_40
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db 70 			; BackgroundBlock_70
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 70 			; BackgroundBlock_70
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 41 			; BackgroundBlock_41
+	.db 42 			; BackgroundBlock_42
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 16 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+room_63_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 52 			; BackgroundBlock_52
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 53 			; BackgroundBlock_53
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 53 			; BackgroundBlock_53
+	.db 0 			; BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db $FF 			; Block Run
+	.db 28 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 236 			; run block value data_F1F8+1
+	.db $FF 			; Block Run
+	.db 64 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 17 			; BackgroundBlock_17
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 12 			; BackgroundBlock_12
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 169 			; BackgroundBlock_169
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+room_64_data:
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 155 			; run block value BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db 0 			; BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db 0 			; BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db $FF 			; Block Run
+	.db 15 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db $FF 			; Block Run
+	.db 15 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 39 			; BackgroundBlock_39
+	.db 40 			; BackgroundBlock_40
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 41 			; BackgroundBlock_41
+	.db 42 			; BackgroundBlock_42
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 15 			; BackgroundBlock_15
+	.db 12 			; BackgroundBlock_12
+	.db 14 			; BackgroundBlock_14
+	.db 15 			; BackgroundBlock_15
+	.db 12 			; BackgroundBlock_12
+	.db 14 			; BackgroundBlock_14
+	.db 124 			; BackgroundBlock_124
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 127 			; BackgroundBlock_127
+room_65_data:
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 157 			; BackgroundBlock_157
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db 35 			; BackgroundBlock_35
+	.db 36 			; BackgroundBlock_36
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 37 			; BackgroundBlock_37
+	.db 38 			; BackgroundBlock_38
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 4 			; run length
 data_BFFD:
-	.db $14 
+	.db 20 			; run block value BackgroundBlock_20
 data_BFFE:
-	.db $11 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $9E 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $15 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $9E 
-	.db $02 
-	.db $05 
-	.db $04 
-	.db $48 
-	.db $FF 
-	.db $04 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $9E 
-	.db $03 
-	.db $03 
-	.db $02 
-	.db $15 
-	.db $1D 
-	.db $00 
-	.db $00 
-	.db $1F 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $9E 
-	.db $04 
-	.db $01 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $9E 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $ED 
-	.db $ED 
-	.db $ED 
-	.db $9F 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $A9 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $12 
-	.db $FF 
-	.db $05 
-	.db $A8 
-	.db $05 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7B 
-	.db $1D 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $EC 
-	.db $EC 
-	.db $EC 
-	.db $7C 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $7D 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A2 
-	.db $A3 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $7D 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $A4 
-	.db $A5 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $FF 
-	.db $06 
-	.db $A8 
-	.db $9A 
-	.db $9B 
-	.db $9B 
-	.db $9B 
-	.db $9C 
-	.db $FF 
-	.db $05 
-	.db $A8 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $2B 
-	.db $2C 
-	.db $00 
-	.db $2B 
-	.db $2C 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $2D 
-	.db $00 
-	.db $00 
-	.db $2D 
-	.db $FF 
-	.db $11 
-	.db $00 
-	.db $FF 
-	.db $04 
-	.db $EC 
-	.db $FF 
-	.db $16 
-	.db $00 
-	.db $46 
-	.db $46 
-	.db $FF 
-	.db $0D 
-	.db $00 
-	.db $46 
-	.db $4C 
-	.db $4D 
-	.db $46 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $FF 
-	.db $04 
-	.db $14 
-	.db $9A 
-	.db $FF 
-	.db $04 
-	.db $9B 
-	.db $9C 
-	.db $FF 
-	.db $06 
-	.db $14 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $01 
-	.db $3B 
-	.db $03 
-	.db $3B 
-	.db $05 
-	.db $3B 
-	.db $02 
-	.db $3B 
-	.db $04 
-	.db $3B 
-	.db $A9 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $A8 
-	.db $3B 
-	.db $A8 
-	.db $3B 
-	.db $A8 
-	.db $3B 
-	.db $A8 
-	.db $3B 
-	.db $A8 
-	.db $3B 
-	.db $13 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $F1 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $F6 
-	.db $3D 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $02 
-	.db $00 
-	.db $EA 
-	.db $F1 
-	.db $3B 
-	.db $00 
-	.db $8D 
-	.db $F2 
-	.db $3B 
-	.db $00 
-	.db $EB 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $01 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $05 
-	.db $03 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $04 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $14 
-	.db $49 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $0D 
-	.db $3B 
-	.db $0D 
-	.db $3B 
-	.db $0F 
-	.db $3B 
-	.db $0C 
-	.db $3B 
-	.db $0E 
-	.db $0C 
-	.db $0E 
-	.db $15 
-	.db $04 
-	.db $01 
-	.db $7B 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $3B 
-	.db $34 
-	.db $3B 
-	.db $36 
-	.db $3B 
-	.db $34 
-	.db $3B 
-	.db $36 
-	.db $3B 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $7C 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $19 
-	.db $1A 
-	.db $1B 
-	.db $7D 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7E 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $8D 
-	.db $F5 
-	.db $3B 
-	.db $F2 
-	.db $8D 
-	.db $F5 
-	.db $3B 
-	.db $F2 
-	.db $8D 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7C 
-	.db $85 
-	.db $83 
-	.db $84 
-	.db $86 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3D 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $7D 
-	.db $87 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $46 
-	.db $00 
-	.db $7E 
-	.db $8B 
-	.db $00 
-	.db $00 
-	.db $8B 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3C 
-	.db $00 
-	.db $3B 
-	.db $10 
-	.db $14 
-	.db $14 
-	.db $7C 
-	.db $87 
-	.db $00 
-	.db $00 
-	.db $87 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $00 
-	.db $3B 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $7D 
-	.db $88 
-	.db $89 
-	.db $8A 
-	.db $88 
-	.db $0C 
-	.db $3B 
-	.db $0F 
-	.db $3B 
-	.db $0E 
-	.db $3B 
-	.db $0C 
-	.db $3B 
-	.db $15 
-	.db $05 
-	.db $02 
-	.db $7D 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $3B 
-	.db $03 
-	.db $3B 
-	.db $05 
-	.db $3B 
-	.db $02 
-	.db $3B 
-	.db $15 
-	.db $04 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $05 
-	.db $04 
-	.db $FF 
-	.db $06 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $1A 
-	.db $FF 
-	.db $05 
-	.db $1B 
-	.db $1C 
-	.db $19 
-	.db $FF 
-	.db $04 
-	.db $EE 
-	.db $47 
-	.db $47 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $47 
-	.db $47 
-	.db $FF 
-	.db $2B 
-	.db $00 
-	.db $A0 
-	.db $A1 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $11 
-	.db $23 
-	.db $24 
-	.db $A2 
-	.db $A3 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $15 
-	.db $25 
-	.db $26 
-	.db $A4 
-	.db $A5 
-	.db $00 
-	.db $46 
-	.db $EA 
-	.db $46 
-	.db $EB 
-	.db $00 
-	.db $00 
-	.db $00 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $4A 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $9A 
-	.db $FF 
-	.db $04 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $14 
-	.db $14 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $05 
-	.db $02 
-	.db $01 
-	.db $05 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $A9 
-	.db $05 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $FF 
-	.db $0A 
-	.db $A8 
-	.db $13 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $34 
-	.db $FF 
-	.db $04 
-	.db $EE 
-	.db $FF 
-	.db $04 
-	.db $00 
-	.db $30 
-	.db $31 
-	.db $FF 
-	.db $0E 
-	.db $00 
-	.db $32 
-	.db $33 
-	.db $FF 
-	.db $2E 
-	.db $00 
-	.db $27 
-	.db $28 
-	.db $FF 
-	.db $09 
-	.db $00 
-	.db $20 
-	.db $00 
-	.db $22 
-	.db $00 
-	.db $00 
-	.db $29 
-	.db $2A 
-	.db $FF 
-	.db $06 
-	.db $00 
-	.db $FF 
-	.db $0A 
-	.db $14 
-	.db $11 
-	.db $0C 
-	.db $0D 
-	.db $0E 
-	.db $0F 
-	.db $0C 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 72 			; BackgroundBlock_72
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db 29 			; BackgroundBlock_29
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 31 			; BackgroundBlock_31
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db 237 			; data_F214+5
+	.db 159 			; BackgroundBlock_159
+	.db 2 			; BackgroundBlock_2
+room_66_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 169 			; BackgroundBlock_169
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 123 			; BackgroundBlock_123
+	.db 29 			; BackgroundBlock_29
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 236 			; data_F1F8+1
+	.db 236 			; data_F1F8+1
+	.db 236 			; data_F1F8+1
+	.db 124 			; BackgroundBlock_124
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+room_67_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 155 			; BackgroundBlock_155
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 43 			; BackgroundBlock_43
+	.db 44 			; BackgroundBlock_44
+	.db 0 			; BackgroundBlock_0
+	.db 43 			; BackgroundBlock_43
+	.db 44 			; BackgroundBlock_44
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 45 			; BackgroundBlock_45
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 45 			; BackgroundBlock_45
+	.db $FF 			; Block Run
+	.db 17 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 236 			; run block value data_F1F8+1
+	.db $FF 			; Block Run
+	.db 22 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 70 			; BackgroundBlock_70
+	.db $FF 			; Block Run
+	.db 13 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 76 			; BackgroundBlock_76
+	.db 77 			; BackgroundBlock_77
+	.db 70 			; BackgroundBlock_70
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 155 			; run block value BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+room_68_data:
+	.db 1 			; BackgroundBlock_1
+	.db 59 			; BackgroundBlock_59
+	.db 3 			; BackgroundBlock_3
+	.db 59 			; BackgroundBlock_59
+	.db 5 			; BackgroundBlock_5
+	.db 59 			; BackgroundBlock_59
+	.db 2 			; BackgroundBlock_2
+	.db 59 			; BackgroundBlock_59
+	.db 4 			; BackgroundBlock_4
+	.db 59 			; BackgroundBlock_59
+	.db 169 			; BackgroundBlock_169
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 168 			; BackgroundBlock_168
+	.db 59 			; BackgroundBlock_59
+	.db 168 			; BackgroundBlock_168
+	.db 59 			; BackgroundBlock_59
+	.db 168 			; BackgroundBlock_168
+	.db 59 			; BackgroundBlock_59
+	.db 168 			; BackgroundBlock_168
+	.db 59 			; BackgroundBlock_59
+	.db 168 			; BackgroundBlock_168
+	.db 59 			; BackgroundBlock_59
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 241 			; data_F28E+11
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 246 			; data_F28E+171
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 0 			; BackgroundBlock_0
+	.db 234 			; label_F1B1+8
+	.db 241 			; data_F28E+11
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 242 			; data_F28E+43
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 235 			; function_F1C9+16
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db 3 			; BackgroundBlock_3
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 20 			; BackgroundBlock_20
+	.db 73 			; BackgroundBlock_73
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 13 			; BackgroundBlock_13
+	.db 59 			; BackgroundBlock_59
+	.db 13 			; BackgroundBlock_13
+	.db 59 			; BackgroundBlock_59
+	.db 15 			; BackgroundBlock_15
+	.db 59 			; BackgroundBlock_59
+	.db 12 			; BackgroundBlock_12
+	.db 59 			; BackgroundBlock_59
+	.db 14 			; BackgroundBlock_14
+	.db 12 			; BackgroundBlock_12
+	.db 14 			; BackgroundBlock_14
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+room_69_data:
+	.db 123 			; BackgroundBlock_123
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 59 			; BackgroundBlock_59
+	.db 52 			; BackgroundBlock_52
+	.db 59 			; BackgroundBlock_59
+	.db 54 			; BackgroundBlock_54
+	.db 59 			; BackgroundBlock_59
+	.db 52 			; BackgroundBlock_52
+	.db 59 			; BackgroundBlock_59
+	.db 54 			; BackgroundBlock_54
+	.db 59 			; BackgroundBlock_59
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 124 			; BackgroundBlock_124
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db 27 			; BackgroundBlock_27
+	.db 125 			; BackgroundBlock_125
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 245 			; data_F28E+139
+	.db 59 			; BackgroundBlock_59
+	.db 242 			; data_F28E+43
+	.db 141 			; BackgroundBlock_141
+	.db 245 			; data_F28E+139
+	.db 59 			; BackgroundBlock_59
+	.db 242 			; data_F28E+43
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 124 			; BackgroundBlock_124
+	.db 133 			; BackgroundBlock_133
+	.db 131 			; BackgroundBlock_131
+	.db 132 			; BackgroundBlock_132
+	.db 134 			; BackgroundBlock_134
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 61 			; BackgroundBlock_61
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 125 			; BackgroundBlock_125
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 0 			; BackgroundBlock_0
+	.db 126 			; BackgroundBlock_126
+	.db 139 			; BackgroundBlock_139
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 139 			; BackgroundBlock_139
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 60 			; BackgroundBlock_60
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 16 			; BackgroundBlock_16
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 124 			; BackgroundBlock_124
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 135 			; BackgroundBlock_135
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 0 			; BackgroundBlock_0
+	.db 59 			; BackgroundBlock_59
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 125 			; BackgroundBlock_125
+	.db 136 			; BackgroundBlock_136
+	.db 137 			; BackgroundBlock_137
+	.db 138 			; BackgroundBlock_138
+	.db 136 			; BackgroundBlock_136
+	.db 12 			; BackgroundBlock_12
+	.db 59 			; BackgroundBlock_59
+	.db 15 			; BackgroundBlock_15
+	.db 59 			; BackgroundBlock_59
+	.db 14 			; BackgroundBlock_14
+	.db 59 			; BackgroundBlock_59
+	.db 12 			; BackgroundBlock_12
+	.db 59 			; BackgroundBlock_59
+	.db 21 			; BackgroundBlock_21
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 125 			; BackgroundBlock_125
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 59 			; BackgroundBlock_59
+	.db 3 			; BackgroundBlock_3
+	.db 59 			; BackgroundBlock_59
+	.db 5 			; BackgroundBlock_5
+	.db 59 			; BackgroundBlock_59
+	.db 2 			; BackgroundBlock_2
+	.db 59 			; BackgroundBlock_59
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+room_70_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db 26 			; BackgroundBlock_26
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 27 			; run block value BackgroundBlock_27
+	.db 28 			; BackgroundBlock_28
+	.db 25 			; BackgroundBlock_25
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 238 			; run block value data_F237+2
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 71 			; BackgroundBlock_71
+	.db 71 			; BackgroundBlock_71
+	.db $FF 			; Block Run
+	.db 43 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 160 			; BackgroundBlock_160
+	.db 161 			; BackgroundBlock_161
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db 35 			; BackgroundBlock_35
+	.db 36 			; BackgroundBlock_36
+	.db 162 			; BackgroundBlock_162
+	.db 163 			; BackgroundBlock_163
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 21 			; BackgroundBlock_21
+	.db 37 			; BackgroundBlock_37
+	.db 38 			; BackgroundBlock_38
+	.db 164 			; BackgroundBlock_164
+	.db 165 			; BackgroundBlock_165
+	.db 0 			; BackgroundBlock_0
+	.db 70 			; BackgroundBlock_70
+	.db 234 			; label_F1B1+8
+	.db 70 			; BackgroundBlock_70
+	.db 235 			; function_F1C9+16
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 74 			; BackgroundBlock_74
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 155 			; run block value BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 5 			; BackgroundBlock_5
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+room_71_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 169 			; BackgroundBlock_169
+	.db 5 			; BackgroundBlock_5
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 19 			; BackgroundBlock_19
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 52 			; BackgroundBlock_52
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 238 			; run block value data_F237+2
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 48 			; BackgroundBlock_48
+	.db 49 			; BackgroundBlock_49
+	.db $FF 			; Block Run
+	.db 14 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 50 			; BackgroundBlock_50
+	.db 51 			; BackgroundBlock_51
+	.db $FF 			; Block Run
+	.db 46 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 39 			; BackgroundBlock_39
+	.db 40 			; BackgroundBlock_40
+	.db $FF 			; Block Run
+	.db 9 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 32 			; BackgroundBlock_32
+	.db 0 			; BackgroundBlock_0
+	.db 34 			; BackgroundBlock_34
+	.db 0 			; BackgroundBlock_0
+	.db 0 			; BackgroundBlock_0
+	.db 41 			; BackgroundBlock_41
+	.db 42 			; BackgroundBlock_42
+	.db $FF 			; Block Run
+	.db 6 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db 12 			; BackgroundBlock_12
+	.db 13 			; BackgroundBlock_13
+	.db 14 			; BackgroundBlock_14
+	.db 15 			; BackgroundBlock_15
+	.db 12 			; BackgroundBlock_12
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
 CharacterSet:
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $04 
-	.db $03 
-	.db $01 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $15 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $34 
-	.db $36 
-	.db $34 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $35 
-	.db $36 
-	.db $37 
-	.db $37 
-	.db $15 
-	.db $03 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $15 
-	.db $04 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $FF 
-	.db $0A 
-	.db $00 
-	.db $12 
-	.db $FF 
-	.db $05 
-	.db $14 
-	.db $97 
-	.db $98 
-	.db $FF 
-	.db $0F 
-	.db $00 
-	.db $91 
-	.db $FF 
-	.db $08 
-	.db $00 
-	.db $91 
-	.db $00 
-	.db $91 
-	.db $00 
-	.db $91 
-	.db $00 
-	.db $0C 
-	.db $92 
-	.db $0E 
-	.db $0E 
-	.db $80 
-	.db $81 
-	.db $82 
-	.db $0E 
-	.db $0D 
-	.db $0C 
-	.db $92 
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+room_72_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 52 			; BackgroundBlock_52
+	.db 54 			; BackgroundBlock_54
+	.db 52 			; BackgroundBlock_52
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 53 			; BackgroundBlock_53
+	.db 54 			; BackgroundBlock_54
+	.db 55 			; BackgroundBlock_55
+	.db 55 			; BackgroundBlock_55
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db $FF 			; Block Run
+	.db 10 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 18 			; BackgroundBlock_18
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 151 			; BackgroundBlock_151
+	.db 152 			; BackgroundBlock_152
+	.db $FF 			; Block Run
+	.db 15 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db $FF 			; Block Run
+	.db 8 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 12 			; BackgroundBlock_12
+	.db 146 			; BackgroundBlock_146
+	.db 14 			; BackgroundBlock_14
+	.db 14 			; BackgroundBlock_14
+	.db 128 			; BackgroundBlock_128
+	.db 129 			; BackgroundBlock_129
+	.db 130 			; BackgroundBlock_130
+	.db 14 			; BackgroundBlock_14
+	.db 13 			; BackgroundBlock_13
+	.db 12 			; BackgroundBlock_12
+	.db 146 			; BackgroundBlock_146
 data_C350:
-	.db $93 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $93 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $02 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $01 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $01 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $03 
-	.db $02 
-	.db $03 
-	.db $01 
-	.db $02 
-	.db $15 
-	.db $FF 
-	.db $0B 
-	.db $00 
-	.db $15 
-	.db $01 
-	.db $03 
-	.db $04 
-	.db $15 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $01 
-	.db $02 
-	.db $4A 
-	.db $FF 
-	.db $05 
-	.db $14 
-	.db $11 
-	.db $FF 
-	.db $05 
-	.db $8D 
-	.db $9D 
-	.db $03 
-	.db $03 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $15 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $8F 
-	.db $8D 
-	.db $9E 
-	.db $04 
-	.db $14 
-	.db $14 
-	.db $9A 
-	.db $9B 
-	.db $9B 
-	.db $9C 
-	.db $14 
-	.db $14 
-	.db $13 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $8D 
-	.db $00 
-	.db $9E 
-	.db $05 
-	.db $FF 
-	.db $0C 
-	.db $00 
-	.db $94 
-	.db $95 
-	.db $9F 
-	.db $01 
-	.db $91 
-	.db $00 
-	.db $91 
-	.db $00 
-	.db $91 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $93 
-	.db $00 
-	.db $15 
-	.db $02 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $93 
-	.db $92 
-	.db $FF 
-	.db $07 
-	.db $00 
-	.db $93 
-	.db $00 
-	.db $15 
-	.db $03 
-	.db $FF 
-	.db $05 
-	.db $A8 
-	.db $9A 
-	.db $9B 
-	.db $9B 
-	.db $9B 
-	.db $9C 
-	.db $FF 
-	.db $04 
-	.db $A8 
-	.db $4B 
-	.db $04 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $01 
-	.db $02 
-	.db $03 
-	.db $04 
-	.db $05 
-	.db $03 
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 2 			; BackgroundBlock_2
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 3 			; BackgroundBlock_3
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+room_73_data:
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 11 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 1 			; BackgroundBlock_1
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 21 			; BackgroundBlock_21
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 74 			; BackgroundBlock_74
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 20 			; run block value BackgroundBlock_20
+	.db 17 			; BackgroundBlock_17
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 141 			; run block value BackgroundBlock_141
+	.db 157 			; BackgroundBlock_157
+	.db 3 			; BackgroundBlock_3
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 21 			; BackgroundBlock_21
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 143 			; BackgroundBlock_143
+	.db 141 			; BackgroundBlock_141
+	.db 158 			; BackgroundBlock_158
+	.db 4 			; BackgroundBlock_4
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db 20 			; BackgroundBlock_20
+	.db 20 			; BackgroundBlock_20
+	.db 19 			; BackgroundBlock_19
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 141 			; BackgroundBlock_141
+	.db 0 			; BackgroundBlock_0
+	.db 158 			; BackgroundBlock_158
+	.db 5 			; BackgroundBlock_5
+	.db $FF 			; Block Run
+	.db 12 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 148 			; BackgroundBlock_148
+	.db 149 			; BackgroundBlock_149
+	.db 159 			; BackgroundBlock_159
+	.db 1 			; BackgroundBlock_1
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db 0 			; BackgroundBlock_0
+	.db 145 			; BackgroundBlock_145
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 147 			; BackgroundBlock_147
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 2 			; BackgroundBlock_2
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db 147 			; BackgroundBlock_147
+	.db 146 			; BackgroundBlock_146
+	.db $FF 			; Block Run
+	.db 7 			; run length
+	.db 0 			; run block value BackgroundBlock_0
+	.db 147 			; BackgroundBlock_147
+	.db 0 			; BackgroundBlock_0
+	.db 21 			; BackgroundBlock_21
+	.db 3 			; BackgroundBlock_3
+	.db $FF 			; Block Run
+	.db 5 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 154 			; BackgroundBlock_154
+	.db 155 			; BackgroundBlock_155
+	.db 155 			; BackgroundBlock_155
+	.db 155 			; BackgroundBlock_155
+	.db 156 			; BackgroundBlock_156
+	.db $FF 			; Block Run
+	.db 4 			; run length
+	.db 168 			; run block value BackgroundBlock_168
+	.db 75 			; BackgroundBlock_75
+	.db 4 			; BackgroundBlock_4
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 1 			; BackgroundBlock_1
+	.db 2 			; BackgroundBlock_2
+	.db 3 			; BackgroundBlock_3
+	.db 4 			; BackgroundBlock_4
+	.db 5 			; BackgroundBlock_5
+	.db 3 			; BackgroundBlock_3
 	.db $00 
 	.db $00 
 	.db $00 
@@ -28852,13 +29003,13 @@ data_FC43:
 data_FC44:
 	.db $10 
 data_FC45:
-	.db $A6 
+	.db $62 
 data_FC46:
-	.db $A6 
+	.db $62 
 data_FC47:
 	.dw data_FC4E
 data_FC49:
-	.db $00 
+	.db $06 
 	.db $00 
 	.db $00 
 	.db $00 
@@ -29738,41 +29889,41 @@ data_FEFE:
 	.db $40 
 	.dw $4040
 	.dw $7103
-	.dw $7103
 	.dw $0001
 	.dw $C719
 	.dw $0012
+	.dw $0300
+	.dw $7418
+	.dw $7103
+	.dw $0001
+	.dw $C719
+	.dw $0011
 	.dw $FEBB
 	.dw $7418
-	.dw $6CFC
-	.dw $53B7
-	.dw $ECE8
-	.dw $03AC
-	.dw $3524
-	.dw $0D09
-	.dw $6F82
-	.dw $57AD
-	.dw $D899
-	.dw $00B0
-	.dw $4DD5
+	.dw $0D08
 	.dw $7103
+	.dw $55EC
+	.dw $D419
+	.dw $00BE
+	.dw $F8BB
+	.dw $7418
 	.dw $57AD
-	.dw $7103
+	.dw $D8B9
 data_FFE0:
-	.dw $55A2
-	.dw $C7E3
-	.dw $03AE
-	.dw $4202
-	.dw $7103
-	.dw $8417
-	.dw $1787
-	.dw $679D
-	.dw $8417
-	.dw $67F6			; transfer to IX
+	.dw $00B0
+	.dw $F8BB
+	.dw $7418
+	.dw $57AD
+	.dw $AE31
+	.dw $54CA
+	.dw $D449
+	.dw $00B5
+	.dw $F8BB
+	.dw $7418
 	.dw $A03E
 data_FFF6:
-	.dw $8E47
-	.dw $8819
-	.dw $026A
-	.dw $7E2C
-	.dw $65E7
+	.dw $0059
+	.dw $0000
+	.dw $0047
+	.dw $0093
+	.dw $656A
