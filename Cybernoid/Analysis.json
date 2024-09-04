@@ -2900,16 +2900,12 @@
                 },
                 {
                     "Address": 4,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 6,
                     "ByteSize": 2,
-                    "Comment": "return if A < Operand value (SMC)",
-                    "Flags": 2,
-                    "SMC": true
+                    "Comment": "return if A < Operand value (SMC)"
                 },
                 {
                     "Address": 8,
@@ -2931,15 +2927,11 @@
                 },
                 {
                     "Address": 13,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 15,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 17,
@@ -4703,9 +4695,8 @@
                 {
                     "Address": 816,
                     "ByteSize": 3,
-                    "Flags": 10,
-                    "OperandType": 2,
-                    "SMC": true
+                    "Flags": 8,
+                    "OperandType": 2
                 },
                 {
                     "Address": 819,
@@ -5063,9 +5054,8 @@
                 {
                     "Address": 957,
                     "ByteSize": 3,
-                    "Flags": 10,
-                    "OperandType": 2,
-                    "SMC": true
+                    "Flags": 8,
+                    "OperandType": 2
                 },
                 {
                     "Address": 960,
@@ -5111,9 +5101,8 @@
                 {
                     "Address": 975,
                     "ByteSize": 3,
-                    "Flags": 10,
-                    "OperandType": 2,
-                    "SMC": true
+                    "Flags": 8,
+                    "OperandType": 2
                 },
                 {
                     "Address": 978,
@@ -5213,9 +5202,8 @@
                 {
                     "Address": 1019,
                     "ByteSize": 3,
-                    "Flags": 10,
-                    "OperandType": 2,
-                    "SMC": true
+                    "Flags": 8,
+                    "OperandType": 2
                 },
                 {
                     "Address": 1022,
@@ -5276,46 +5264,6 @@
                 {
                     "Address": 1,
                     "DisplayType": 3
-                },
-                {
-                    "Address": 4,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1745092610
-                },
-                {
-                    "Address": 5,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1745092610
-                },
-                {
-                    "Address": 6,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1745223682
-                },
-                {
-                    "Address": 7,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1745223682
-                },
-                {
-                    "Address": 13,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1745682434
-                },
-                {
-                    "Address": 14,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1745682434
-                },
-                {
-                    "Address": 15,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1745813506
-                },
-                {
-                    "Address": 16,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1745813506
                 },
                 {
                     "Address": 167,
@@ -5603,66 +5551,6 @@
                 {
                     "Address": 808,
                     "DisplayType": 11
-                },
-                {
-                    "Address": 816,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1798307842
-                },
-                {
-                    "Address": 817,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1798307842
-                },
-                {
-                    "Address": 818,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1798307842
-                },
-                {
-                    "Address": 957,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1807548418
-                },
-                {
-                    "Address": 958,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1807548418
-                },
-                {
-                    "Address": 959,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1807548418
-                },
-                {
-                    "Address": 975,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1808728066
-                },
-                {
-                    "Address": 976,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1808728066
-                },
-                {
-                    "Address": 977,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1808728066
-                },
-                {
-                    "Address": 1019,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1811611650
-                },
-                {
-                    "Address": 1020,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1811611650
-                },
-                {
-                    "Address": 1021,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1811611650
                 }
             ],
             "LabelInfo": [
@@ -6334,9 +6222,7 @@
                 {
                     "Address": 84,
                     "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 1,
-                    "SMC": true
+                    "OperandType": 1
                 },
                 {
                     "Address": 87,
@@ -7710,6 +7596,14 @@
                     "Comment": "each item is 8 bytes"
                 },
                 {
+                    "Address": 260,
+                    "Comment": "item 1"
+                },
+                {
+                    "Address": 268,
+                    "Comment": "item 2"
+                },
+                {
                     "Address": 406,
                     "Comment": "A: Block No\nDE: Coords"
                 },
@@ -7746,21 +7640,6 @@
                     "DisplayType": 1
                 },
                 {
-                    "Address": 84,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1817444354
-                },
-                {
-                    "Address": 85,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1817444354
-                },
-                {
-                    "Address": 86,
-                    "DataType": 11,
-                    "InstructionAddressRef": 1817444354
-                },
-                {
                     "Address": 252,
                     "Comment": "X pos",
                     "DisplayType": 3
@@ -7782,12 +7661,12 @@
                 },
                 {
                     "Address": 256,
-                    "Comment": "active?",
+                    "Comment": "block no",
                     "DisplayType": 11
                 },
                 {
                     "Address": 257,
-                    "Comment": "score sprite",
+                    "Comment": "score block",
                     "DisplayType": 3
                 },
                 {
@@ -7812,6 +7691,16 @@
                 },
                 {
                     "Address": 263,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 264,
+                    "Comment": "block no",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 265,
+                    "Comment": "score block",
                     "DisplayType": 3
                 },
                 {
@@ -9268,6 +9157,7 @@
                 {
                     "Address": 715,
                     "ByteSize": 4,
+                    "Comment": "initialise pointer to destructible scenery list",
                     "OperandType": 1
                 },
                 {
@@ -9288,17 +9178,19 @@
                 },
                 {
                     "Address": 726,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 728,
                     "ByteSize": 2,
+                    "Comment": "jump if less than 233",
                     "OperandType": 2
                 },
                 {
                     "Address": 730,
                     "ByteSize": 2,
-                    "Comment": "clear value"
+                    "Comment": "clear value in collision map"
                 },
                 {
                     "Address": 732,
@@ -10465,31 +10357,261 @@
                 },
                 {
                     "Address": 877,
-                    "Comment": "block type"
+                    "Comment": "block type",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 878,
-                    "Comment": "4 replacement collision values"
+                    "Comment": "4 replacement collision values",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 879,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 880,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 881,
+                    "DisplayType": 11
                 },
                 {
                     "Address": 882,
-                    "Comment": "block type"
+                    "Comment": "block type",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 883,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 884,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 885,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 886,
+                    "DisplayType": 11
                 },
                 {
                     "Address": 887,
-                    "Comment": "block type"
+                    "Comment": "block type",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 888,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 889,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 890,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 891,
+                    "DisplayType": 11
                 },
                 {
                     "Address": 892,
-                    "Comment": "block type"
+                    "Comment": "block type",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 893,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 894,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 895,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 896,
+                    "DisplayType": 11
                 },
                 {
                     "Address": 897,
-                    "Comment": "block type"
+                    "Comment": "block type",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 898,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 899,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 900,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 901,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 902,
+                    "Comment": "block type",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 903,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 904,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 905,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 906,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 907,
+                    "Comment": "block type",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 908,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 909,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 910,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 911,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 912,
+                    "Comment": "block type",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 913,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 914,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 915,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 916,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 917,
+                    "Comment": "block type",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 918,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 919,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 920,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 921,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 922,
+                    "Comment": "block type",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 923,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 924,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 925,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 926,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 927,
+                    "Comment": "block type",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 928,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 929,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 930,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 931,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 932,
+                    "Comment": "block type",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 933,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 934,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 935,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 936,
+                    "DisplayType": 11
                 },
                 {
                     "Address": 937,
-                    "Comment": "terminator"
+                    "Comment": "terminator",
+                    "DisplayType": 11
                 },
                 {
                     "Address": 1012,
@@ -10702,7 +10824,7 @@
                 {
                     "Address": 748,
                     "LabelType": 2,
-                    "Name": "label_72EC"
+                    "Name": "logical_blocks"
                 },
                 {
                     "Address": 782,
@@ -10728,7 +10850,7 @@
                     "Address": 877,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "BlockTypeLUT"
+                    "Name": "BlockDetailCollisionLUT"
                 },
                 {
                     "Address": 938,
@@ -12169,7 +12291,7 @@
                 {
                     "Address": 31,
                     "ByteSize": 2,
-                    "Comment": "cuurent ptr?",
+                    "Comment": "current ptr?",
                     "DataType": 2,
                     "DisplayType": 1
                 },
@@ -12864,12 +12986,12 @@
                     "Address": 19,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "ScreenItemLists"
+                    "Name": "ScreenEntityLists"
                 },
                 {
                     "Address": 46,
                     "LabelType": 1,
-                    "Name": "ResetScreenItemLists"
+                    "Name": "ResetScreenEntityLists"
                 },
                 {
                     "Address": 53,
@@ -16848,7 +16970,7 @@
                 {
                     "Address": 528,
                     "ByteSize": 2,
-                    "Comment": "mine sprite"
+                    "Comment": "mine particle"
                 },
                 {
                     "Address": 530,
@@ -18148,6 +18270,90 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 608,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 609,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 610,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 611,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 612,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 613,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 614,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 615,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 616,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 617,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 618,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 619,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 620,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 621,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 622,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 623,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 624,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 625,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 626,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 627,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 628,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 629,
                     "Comment": "terminator",
                     "DisplayType": 11
@@ -18996,9 +19202,7 @@
                 {
                     "Address": 238,
                     "ByteSize": 2,
-                    "Flags": 2,
-                    "OperandType": 5,
-                    "SMC": true
+                    "OperandType": 5
                 },
                 {
                     "Address": 240,
@@ -19077,9 +19281,7 @@
                 {
                     "Address": 257,
                     "ByteSize": 2,
-                    "Flags": 2,
-                    "OperandType": 5,
-                    "SMC": true
+                    "OperandType": 5
                 },
                 {
                     "Address": 259,
@@ -20459,26 +20661,6 @@
                     "Comment": "sprite pointer",
                     "DataType": 2,
                     "DisplayType": 1
-                },
-                {
-                    "Address": 238,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2163081219
-                },
-                {
-                    "Address": 239,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2163081219
-                },
-                {
-                    "Address": 257,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2164326403
-                },
-                {
-                    "Address": 258,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2164326403
                 },
                 {
                     "Address": 421,
@@ -26233,17 +26415,17 @@
                 {
                     "Address": 417,
                     "LabelType": 1,
-                    "Name": "function_89A1"
+                    "Name": "StartExplosionSpawner"
                 },
                 {
                     "Address": 433,
                     "LabelType": 2,
-                    "Name": "label_89B1"
+                    "Name": "find_exp_spawner_loop"
                 },
                 {
                     "Address": 448,
                     "LabelType": 2,
-                    "Name": "found_slot_1"
+                    "Name": "found_explosion_spawner"
                 },
                 {
                     "Address": 464,
@@ -26274,7 +26456,7 @@
                     "Address": 523,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8A0B"
+                    "Name": "ExplosionSpawners"
                 },
                 {
                     "Address": 574,
@@ -31322,7 +31504,8 @@
                 },
                 {
                     "Address": 755,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "position"
                 },
                 {
                     "Address": 758,
@@ -31330,15 +31513,18 @@
                 },
                 {
                     "Address": 761,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "block type?"
                 },
                 {
                     "Address": 764,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 767,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "previous sprite"
                 },
                 {
                     "Address": 770,
@@ -31346,11 +31532,13 @@
                 },
                 {
                     "Address": 773,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "vertical velocity"
                 },
                 {
                     "Address": 776,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "attribs?"
                 },
                 {
                     "Address": 779,
@@ -31395,7 +31583,7 @@
                 {
                     "Address": 800,
                     "ByteSize": 3,
-                    "Comment": "offset to next item",
+                    "Comment": "offset to next missile",
                     "OperandType": 7
                 },
                 {
@@ -31410,7 +31598,9 @@
                 },
                 {
                     "Address": 808,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "position",
+                    "Flags": 32
                 },
                 {
                     "Address": 811,
@@ -31426,7 +31616,8 @@
                 },
                 {
                     "Address": 816,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "previous sprite"
                 },
                 {
                     "Address": 819,
@@ -31434,11 +31625,13 @@
                 },
                 {
                     "Address": 822,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "vertical vel"
                 },
                 {
                     "Address": 825,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check if negative"
                 },
                 {
                     "Address": 827,
@@ -31504,7 +31697,8 @@
                 },
                 {
                     "Address": 859,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "apply velocity"
                 },
                 {
                     "Address": 860,
@@ -31512,7 +31706,8 @@
                 },
                 {
                     "Address": 861,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "set new y position"
                 },
                 {
                     "Address": 864,
@@ -31599,11 +31794,13 @@
                 },
                 {
                     "Address": 904,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "block 0"
                 },
                 {
                     "Address": 907,
                     "ByteSize": 3,
+                    "Comment": "erase",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -31920,6 +32117,17 @@
                 {
                     "Address": 727,
                     "DisplayType": 12
+                },
+                {
+                    "Address": 929,
+                    "Comment": "blockno",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 930,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
                 }
             ],
             "LabelInfo": [
@@ -32086,58 +32294,58 @@
                 {
                     "Address": 728,
                     "LabelType": 1,
-                    "Name": "function_96D8"
+                    "Name": "LaunchMissile"
                 },
                 {
                     "Address": 733,
                     "LabelType": 2,
-                    "Name": "label_96DD"
+                    "Name": "find_missile_loop"
                 },
                 {
                     "Address": 755,
                     "LabelType": 2,
-                    "Name": "label_96F3"
+                    "Name": "found_missile"
                 },
                 {
                     "Address": 783,
                     "LabelType": 1,
-                    "Name": "function_970F"
+                    "Name": "UpdateLaunchedMissiles"
                 },
                 {
                     "Address": 787,
                     "LabelType": 2,
-                    "Name": "item_loop_9713"
+                    "Name": "launched_missile_loop"
                 },
                 {
                     "Address": 800,
                     "LabelType": 2,
-                    "Name": "next_item_9720"
+                    "Name": "next_missile"
                 },
                 {
                     "Address": 808,
                     "LabelType": 2,
-                    "Name": "label_9728"
+                    "Name": "process_missile"
                 },
                 {
                     "Address": 844,
                     "LabelType": 2,
-                    "Name": "label_974C"
+                    "Name": "missile_negative_vel"
                 },
                 {
                     "Address": 856,
                     "LabelType": 2,
-                    "Name": "label_9758"
+                    "Name": "move_missile"
                 },
                 {
                     "Address": 903,
                     "LabelType": 2,
-                    "Name": "label_9787"
+                    "Name": "destroy_missile"
                 },
                 {
                     "Address": 927,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_979F"
+                    "Name": "LaunchedMissileList"
                 },
                 {
                     "Address": 1008,
@@ -32166,7 +32374,8 @@
                 },
                 {
                     "Address": 3,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "missile list pointer"
                 },
                 {
                     "Address": 4,
@@ -32176,6 +32385,7 @@
                 {
                     "Address": 7,
                     "ByteSize": 3,
+                    "Comment": "put in block value",
                     "OperandType": 1
                 },
                 {
@@ -32260,11 +32470,13 @@
                 },
                 {
                     "Address": 36,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "call missile function"
                 },
                 {
                     "Address": 49,
                     "ByteSize": 3,
+                    "Comment": "compare against player X",
                     "OperandType": 1
                 },
                 {
@@ -32306,11 +32518,13 @@
                 },
                 {
                     "Address": 71,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "velocity"
                 },
                 {
                     "Address": 73,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "attribs"
                 },
                 {
                     "Address": 76,
@@ -32372,11 +32586,13 @@
                 },
                 {
                     "Address": 107,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "velocity"
                 },
                 {
                     "Address": 109,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "attribs"
                 },
                 {
                     "Address": 112,
@@ -32412,7 +32628,8 @@
                 },
                 {
                     "Address": 147,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "offset to next one"
                 },
                 {
                     "Address": 150,
@@ -32430,11 +32647,13 @@
                 },
                 {
                     "Address": 160,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "clear carry"
                 },
                 {
                     "Address": 161,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check if coords are the same using 16 bit subtract"
                 },
                 {
                     "Address": 163,
@@ -32443,7 +32662,8 @@
                 },
                 {
                     "Address": 165,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "go to next"
                 },
                 {
                     "Address": 167,
@@ -32452,7 +32672,8 @@
                 },
                 {
                     "Address": 170,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set block no to 0"
                 },
                 {
                     "Address": 174,
@@ -32723,7 +32944,9 @@
                 },
                 {
                     "Address": 300,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "particle sprite",
+                    "OperandType": 7
                 },
                 {
                     "Address": 302,
@@ -32731,7 +32954,8 @@
                 },
                 {
                     "Address": 304,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "attrib?"
                 },
                 {
                     "Address": 306,
@@ -32980,7 +33204,8 @@
                 },
                 {
                     "Address": 420,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "blank sprite"
                 },
                 {
                     "Address": 423,
@@ -33944,6 +34169,10 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 121,
+                    "Comment": "Missiles that can launch\nJust a list of coords for unlaunched missiles"
+                },
+                {
                     "Address": 435,
                     "Comment": "list of items, each item is 12 bytes in size"
                 },
@@ -34033,11 +34262,82 @@
                 },
                 {
                     "Address": 123,
+                    "Comment": "X",
                     "DisplayType": 3
                 },
                 {
                     "Address": 124,
+                    "Comment": "Y",
                     "DisplayType": 3
+                },
+                {
+                    "Address": 125,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 126,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 127,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 128,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 129,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 130,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 131,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 132,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 133,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 134,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 135,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 136,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 137,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 138,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 139,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 140,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 141,
+                    "Comment": "terminator",
+                    "DisplayType": 11
                 },
                 {
                     "Address": 435,
@@ -34199,7 +34499,7 @@
                     "Address": 37,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_9825"
+                    "Name": "CurrentMissileType"
                 },
                 {
                     "Address": 38,
@@ -34228,17 +34528,17 @@
                 {
                     "Address": 142,
                     "LabelType": 1,
-                    "Name": "function_988E"
+                    "Name": "ClearDestructableSceneryAt"
                 },
                 {
                     "Address": 154,
                     "LabelType": 2,
-                    "Name": "label_989A"
+                    "Name": "destructable_scenery_loop"
                 },
                 {
                     "Address": 170,
                     "LabelType": 2,
-                    "Name": "label_98AA"
+                    "Name": "found_scenery"
                 },
                 {
                     "Address": 180,
@@ -36294,9 +36594,7 @@
                 {
                     "Address": 613,
                     "ByteSize": 2,
-                    "Flags": 2,
-                    "OperandType": 5,
-                    "SMC": true
+                    "OperandType": 5
                 },
                 {
                     "Address": 615,
@@ -36398,9 +36696,7 @@
                 {
                     "Address": 638,
                     "ByteSize": 2,
-                    "Flags": 2,
-                    "OperandType": 5,
-                    "SMC": true
+                    "OperandType": 5
                 },
                 {
                     "Address": 640,
@@ -37975,26 +38271,6 @@
                     "DisplayType": 11
                 },
                 {
-                    "Address": 613,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2724528131
-                },
-                {
-                    "Address": 614,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2724528131
-                },
-                {
-                    "Address": 638,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2726166531
-                },
-                {
-                    "Address": 639,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2726166531
-                },
-                {
                     "Address": 666,
                     "ByteSize": 2,
                     "DataType": 2,
@@ -39119,9 +39395,7 @@
                 {
                     "Address": 270,
                     "ByteSize": 2,
-                    "Flags": 2,
-                    "OperandType": 7,
-                    "SMC": true
+                    "OperandType": 7
                 },
                 {
                     "Address": 272,
@@ -39203,9 +39477,7 @@
                 {
                     "Address": 290,
                     "ByteSize": 2,
-                    "Flags": 2,
-                    "OperandType": 7,
-                    "SMC": true
+                    "OperandType": 7
                 },
                 {
                     "Address": 292,
@@ -39473,9 +39745,7 @@
                     "Address": 365,
                     "ByteSize": 2,
                     "Comment": "mask low byte",
-                    "Flags": 2,
-                    "OperandType": 5,
-                    "SMC": true
+                    "OperandType": 5
                 },
                 {
                     "Address": 367,
@@ -39745,36 +40015,6 @@
                     "Address": 1,
                     "DataType": 11,
                     "InstructionAddressRef": 2751397891
-                },
-                {
-                    "Address": 270,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2769158147
-                },
-                {
-                    "Address": 271,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2769158147
-                },
-                {
-                    "Address": 290,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2770468867
-                },
-                {
-                    "Address": 291,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2770468867
-                },
-                {
-                    "Address": 365,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2775384067
-                },
-                {
-                    "Address": 366,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2775384067
                 },
                 {
                     "Address": 426,
@@ -110096,22 +110336,16 @@
                 {
                     "Address": 824,
                     "ByteSize": 1,
-                    "Flags": 2,
-                    "OperandType": 2,
-                    "SMC": true
+                    "OperandType": 2
                 },
                 {
                     "Address": 827,
                     "ByteSize": 1,
-                    "Flags": 2,
-                    "OperandType": 2,
-                    "SMC": true
+                    "OperandType": 2
                 },
                 {
                     "Address": 834,
-                    "ByteSize": 1,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 1
                 },
                 {
                     "Address": 835,
@@ -113323,11 +113557,6 @@
                     "GraphicsSetRef": 4010868740
                 },
                 {
-                    "Address": 824,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4013424644
-                },
-                {
                     "Address": 825,
                     "DataType": 11,
                     "InstructionAddressRef": 4013424644
@@ -113338,11 +113567,6 @@
                     "InstructionAddressRef": 4013424644
                 },
                 {
-                    "Address": 827,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4013621252
-                },
-                {
                     "Address": 828,
                     "DataType": 11,
                     "InstructionAddressRef": 4013621252
@@ -113351,11 +113575,6 @@
                     "Address": 829,
                     "DataType": 11,
                     "InstructionAddressRef": 4013621252
-                },
-                {
-                    "Address": 834,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4014080004
                 }
             ],
             "LabelInfo": [
@@ -115398,9 +115617,7 @@
                 {
                     "Address": 509,
                     "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 2,
-                    "SMC": true
+                    "OperandType": 2
                 }
             ],
             "DataInfo": [
@@ -115409,21 +115626,6 @@
                     "ByteSize": 2,
                     "DataType": 2,
                     "DisplayType": 1
-                },
-                {
-                    "Address": 509,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4261216260
-                },
-                {
-                    "Address": 510,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4261216260
-                },
-                {
-                    "Address": 511,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4261216260
                 },
                 {
                     "Address": 948,
@@ -115578,7 +115780,7 @@
                 {
                     "Address": 1008,
                     "ByteSize": 2,
-                    "Comment": "push attrib address",
+                    "Comment": "push character address",
                     "DataType": 2
                 },
                 {

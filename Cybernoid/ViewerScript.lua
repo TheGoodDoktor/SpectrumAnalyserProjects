@@ -80,6 +80,8 @@ function DrawScreenToView(self, graphicsView, screenNo, x, y)
 	
 end
 
+
+
 AssetViewer = ZXViewerBase:new( 
 {
     name = "Asset Viewer",
@@ -90,7 +92,8 @@ AssetViewer = ZXViewerBase:new(
 	logicBlocks = {},
 	blockNo = 0,
 	spriteNo = 0,
-	particleNo = 0
+	particleNo = 0,
+	showBlockNumbers = false
 })
 
 function AssetViewer:Init()
@@ -120,14 +123,63 @@ function AssetViewer:DrawUI()
 	self:DrawParticleViewer()
 end
 
+function AssetViewer:DrawScreenBlockNumbers(screenNo, x, y)
+	local screenAddress = ReadWord(screenPtrTable + (screenNo * 2))
+
+	local xp = 0
+	local yp = 32
+	local finished = false
+
+	while finished == false do
+		local blockVal = ReadByte(screenAddress)
+		local blockRun = 1	-- default to block run of 1
+		screenAddress = screenAddress + 1
+	
+		-- process runlength
+		if blockVal == 0xff then
+			blockRun = ReadByte(screenAddress)
+			screenAddress = screenAddress + 1
+			blockVal = ReadByte(screenAddress)
+			screenAddress = screenAddress + 1
+		end
+
+		-- do block run
+		for blockCount=1,blockRun do
+
+			if blockVal ~= 0 then
+				self:drawOverlayRect(xp,yp,16,16)
+				self:drawOverlayText(xp + 2,yp + 2, string.format("%X",blockVal))
+			end
+			
+			-- go to next block position
+			xp = xp + 16	
+			if xp == 256 then	-- off screen edge ?
+
+				if yp == 176 then -- off screen bottom ?
+					finished = true	-- finish
+					break
+				end
+
+				-- go to next line
+				yp = yp + 16	
+				xp = 0
+			end
+
+		end
+	end
+	
+	
+end
+
 function AssetViewer:DrawScreenViewer()
-	local changed,changed2 = false
+	local changed,changedtemp = false
 
 	imgui.Text("Screen Viewer")
 	
 	changed, self.screenNo = imgui.InputInt("screen number",self.screenNo)
 	
-	changed2, self.showCurrentScreen = imgui.Checkbox("Show Current", self.showCurrentScreen)
+	changedtemp, self.showCurrentScreen = imgui.Checkbox("Show Current", self.showCurrentScreen)
+	changedtemp, self.showBlockNumbers = imgui.Checkbox("Show Block Numbers", self.showBlockNumbers)
 
 	--DrawOtherGraphicsViewScaled(self.graphicsView,self.graphicsView,0,0,32,32)
 	
@@ -142,9 +194,13 @@ function AssetViewer:DrawScreenViewer()
 	end
 
 	-- draw overlay graphics
-	for i,logicBlock in ipairs(self.logicBlocks) do
-		self:drawOverlayRect(logicBlock.xpos,logicBlock.ypos,16,16)
-		self:drawOverlayText(logicBlock.xpos + 2,logicBlock.ypos + 2, string.format("%X",logicBlock.blockType))
+	if self.showBlockNumbers == true then
+		self:DrawScreenBlockNumbers(self.screenNo,0,0)
+	else
+		for i,logicBlock in ipairs(self.logicBlocks) do
+			self:drawOverlayRect(logicBlock.xpos,logicBlock.ypos,16,16)
+			self:drawOverlayText(logicBlock.xpos + 2,logicBlock.ypos + 2, string.format("%X",logicBlock.blockType))
+		end
 	end
 end
 
@@ -166,7 +222,7 @@ function AssetViewer:DrawSpriteViewer()
 	changed, self.spriteNo = imgui.InputInt("Sprite No",self.spriteNo)
 	if changed == true then
 		ClearGraphicsView(self.spriteView, 0)
-		DrawSpriteToView(self.spriteView,self.spriteNo,0,0)
+		DrawSpriteToView(self.spriteView,self.spriteNo * 4,0,0)
 	end
 end
 
@@ -177,7 +233,7 @@ function AssetViewer:DrawParticleViewer()
 	changed, self.particleNo = imgui.InputInt("Particle No",self.particleNo)
 	if changed == true then
 		ClearGraphicsView(self.particleView, 0)
-		DrawParticleToView(self.particleView,self.particleNo,0,0)
+		DrawParticleToView(self.particleView,self.particleNo * 4,0,0)
 	end
 end
 

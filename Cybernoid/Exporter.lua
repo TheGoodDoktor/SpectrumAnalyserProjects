@@ -8,20 +8,20 @@ Exporter =
     onAdd = function(self)
         -- gets called when view is added
 		self.blockView = CreateZXGraphicsView(16,16 * 170);
-		self.spriteView = CreateZXGraphicsView(24,16 * 72);
-		self.particleView = CreateZXGraphicsView(16,8 * 44)
+		self.spriteView = CreateZXGraphicsView(24,16 * 18);
+		self.particleView = CreateZXGraphicsView(16,8 * 11)
 
 		ClearGraphicsView(self.blockView,0)
 		for blockNo = 0,169 do
 			DrawBlockToView(self.blockView,blockNo,0,blockNo * 16)
 		end
 		ClearGraphicsView(self.spriteView,0)
-		for spriteNo = 0,71 do
-			DrawSpriteToView(self.spriteView,spriteNo,0,spriteNo * 16)
+		for spriteNo = 0,17 do
+			DrawSpriteToView(self.spriteView,spriteNo * 4,0,spriteNo * 16)
 		end
 		ClearGraphicsView(self.particleView,0)
-		for particleNo = 0,43 do
-			DrawParticleToView(self.particleView,particleNo,0,particleNo * 8)
+		for particleNo = 0,10 do
+			DrawParticleToView(self.particleView,particleNo * 4,0,particleNo * 8)
 		end
     end,
 
@@ -33,9 +33,11 @@ Exporter =
 	
 		if imgui.Button("Export Graphics") then
 			SaveGraphicsView2222(self.blockView,"blocks.ag2", false)
+			SaveGraphicsViewPNG(self.blockView,"blocks.png")
 			SaveGraphicsView2222(self.spriteView,"sprites.ag2", true)
+			SaveGraphicsViewPNG(self.spriteView,"sprites.png")
 			SaveGraphicsView2222(self.particleView,"particles.ag2", true)
-			SaveGraphicsViewBitmap(self.particleView,"particles.agb", true)
+			--SaveGraphicsViewBitmap(self.particleView,"particles.agb", true)
 		end
 
 		imgui.Text("Blocks")
