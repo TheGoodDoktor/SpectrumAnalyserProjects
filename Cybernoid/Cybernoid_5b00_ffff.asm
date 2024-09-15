@@ -7435,24 +7435,24 @@ ExplosionSpawners:
 	.db $00
 	.db $00
 	.db $FF			; terminator
-SpawnFlashingBlock:
+SpawnFlashingBlock_Stubbed:
 	PUSH AF
 	PUSH BC
 	PUSH DE
 	PUSH HL
 	LD   HL,FlashingBlocks
 	LD   C,A
-findslot_loop_8A46:
+findflashingblock_loop:
 	LD   A,(HL)
 	CP   $FF			; terminator
-	JP   Z,exit_func_3			; exit on terminator
+	JP   Z,exit_spawn_flashing_block			; exit on terminator
 	INC  HL
 	INC  HL
 	INC  HL
 	LD   A,(HL)
 	INC  HL
 	OR   A			; check if empty
-	JR   NZ,findslot_loop_8A46
+	JR   NZ,findflashingblock_loop
 	DEC  HL
 	LD   (HL),$28
 	DEC  HL
@@ -7464,15 +7464,15 @@ findslot_loop_8A46:
 	LD   A,C
 	LD   HL,BlankSprite_0
 	CALL DrawBlockXOR
-exit_func_3:
+exit_spawn_flashing_block:
 	POP  HL
 	POP  DE
 	POP  BC
 	POP  AF
 	RET 
-UpdateFlashingBlocks:
+UpdateFlashingBlocks_Stubbed:
 	LD   HL,FlashingBlocks
-label_8A6C:
+flashing_block_loop:
 	LD   A,(HL)
 	CP   $FF
 	RET  Z			; exit on terminator
@@ -7485,7 +7485,7 @@ label_8A6C:
 	LD   A,(HL)			; life
 	INC  HL
 	OR   A
-	JP   Z,label_8A6C
+	JP   Z,flashing_block_loop
 	DEC  HL
 	DEC  (HL)			; decrement life
 	INC  HL
@@ -7500,7 +7500,7 @@ label_8A6C:
 	OR   %01000000
 	LD   C,A
 	CALL WriteAttrib2x2
-	JP   label_8A6C
+	JP   flashing_block_loop
 ; 3 bytes per item
 FlashingBlocks:
 	.db 0			; X
