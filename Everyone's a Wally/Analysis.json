@@ -51,6 +51,24 @@
             "Dynamic": false,
             "MaskInfo": 0,
             "PaletteNo": -1
+        },
+        {
+            "AddressRef": 3531341828,
+            "AttribsAddressRef": 65535,
+            "BitmapFormat": 0,
+            "ColourInfo": 0,
+            "Dynamic": false,
+            "MaskInfo": 0,
+            "PaletteNo": -1
+        },
+        {
+            "AddressRef": 3518758916,
+            "AttribsAddressRef": 65535,
+            "BitmapFormat": 0,
+            "ColourInfo": 0,
+            "Dynamic": false,
+            "MaskInfo": 0,
+            "PaletteNo": -1
         }
     ],
     "DataTypes": {
@@ -280,6 +298,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5C8C"
+                },
+                {
+                    "Address": 487,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5DE7"
                 }
             ],
             "PageId": 39
@@ -33720,7 +33744,8 @@
                 },
                 {
                     "Address": 13,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 16,
@@ -33810,7 +33835,8 @@
                 },
                 {
                     "Address": 44,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 47,
@@ -33843,7 +33869,8 @@
                 },
                 {
                     "Address": 61,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 64,
@@ -35963,7 +35990,7 @@
                 {
                     "Address": 507,
                     "LabelType": 1,
-                    "Name": "CopyShadowScreen"
+                    "Name": "CopyShadowScreenToPixelScreen"
                 },
                 {
                     "Address": 517,
@@ -37132,7 +37159,111 @@
             "PageId": 67
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 444,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 445,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 446,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 447,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 448,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 449,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 450,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 451,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 636,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 637,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 638,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 639,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 640,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 641,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 642,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 643,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                }
+            ],
             "LabelInfo": [
+                {
+                    "Address": 444,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_D1BC_1"
+                },
                 {
                     "Address": 996,
                     "Global": true,
@@ -55706,7 +55837,8 @@
                 },
                 {
                     "Address": 940,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 4"
                 },
                 {
                     "Address": 941,
@@ -55889,6 +56021,10 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 755,
+                    "Comment": "these are update functions for the rooms\nIndexed by room number"
+                },
+                {
                     "Address": 821,
                     "Comment": "This appear to update an object's position\nIX points to the object:\n0 - X pos\n1 - Y pos\n2 - X vel\n3 - Y vel\nBC points to ??\n"
                 }
@@ -55919,138 +56055,161 @@
                 {
                     "Address": 755,
                     "ByteSize": 2,
+                    "Comment": "0",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 757,
                     "ByteSize": 2,
+                    "Comment": "1",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 759,
                     "ByteSize": 2,
+                    "Comment": "2",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 761,
                     "ByteSize": 2,
+                    "Comment": "3",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 763,
                     "ByteSize": 2,
+                    "Comment": "4",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 765,
                     "ByteSize": 2,
+                    "Comment": "5",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 767,
                     "ByteSize": 2,
+                    "Comment": "6",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 769,
                     "ByteSize": 2,
+                    "Comment": "7",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 771,
                     "ByteSize": 2,
+                    "Comment": "8",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 773,
                     "ByteSize": 2,
+                    "Comment": "9",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 775,
                     "ByteSize": 2,
+                    "Comment": "10",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 777,
                     "ByteSize": 2,
+                    "Comment": "11",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 779,
                     "ByteSize": 2,
+                    "Comment": "12",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 781,
                     "ByteSize": 2,
+                    "Comment": "13",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 783,
                     "ByteSize": 2,
+                    "Comment": "14",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 785,
                     "ByteSize": 2,
+                    "Comment": "15",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 787,
                     "ByteSize": 2,
+                    "Comment": "16",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 789,
                     "ByteSize": 2,
+                    "Comment": "17",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 791,
                     "ByteSize": 2,
+                    "Comment": "18",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 793,
                     "ByteSize": 2,
+                    "Comment": "19",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 795,
                     "ByteSize": 2,
+                    "Comment": "20",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 797,
                     "ByteSize": 2,
+                    "Comment": "21",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 799,
                     "ByteSize": 2,
+                    "Comment": "22",
                     "DataType": 2,
                     "DisplayType": 2,
                     "StructByteOffset": 2
@@ -56058,60 +56217,70 @@
                 {
                     "Address": 801,
                     "ByteSize": 2,
+                    "Comment": "23",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 803,
                     "ByteSize": 2,
+                    "Comment": "24",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 805,
                     "ByteSize": 2,
+                    "Comment": "25",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 807,
                     "ByteSize": 2,
+                    "Comment": "26",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 809,
                     "ByteSize": 2,
+                    "Comment": "27",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 811,
                     "ByteSize": 2,
+                    "Comment": "28",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 813,
                     "ByteSize": 2,
+                    "Comment": "29",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 815,
                     "ByteSize": 2,
+                    "Comment": "30",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 817,
                     "ByteSize": 2,
+                    "Comment": "31",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 819,
                     "ByteSize": 2,
+                    "Comment": "32",
                     "DataType": 2,
                     "DisplayType": 2
                 },
@@ -56228,8 +56397,9 @@
                 },
                 {
                     "Address": 275,
-                    "LabelType": 2,
-                    "Name": "label_ED13"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "Room17_Update"
                 },
                 {
                     "Address": 294,
@@ -56382,7 +56552,7 @@
                     "Address": 755,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "ScreenUpdateFuncTableLUT"
+                    "Name": "RoomUpdateFuncTableLUT"
                 },
                 {
                     "Address": 821,
@@ -58244,7 +58414,7 @@
             "CommentBlocks": [
                 {
                     "Address": 820,
-                    "Comment": "THis screen has a monkey and a banana"
+                    "Comment": "This room has a monkey and a banana"
                 }
             ],
             "DataInfo": [
@@ -58521,7 +58691,7 @@
                 {
                     "Address": 587,
                     "LabelType": 1,
-                    "Name": "function_F24B"
+                    "Name": "Room2_Update"
                 },
                 {
                     "Address": 622,
@@ -58607,7 +58777,7 @@
                 {
                     "Address": 777,
                     "LabelType": 1,
-                    "Name": "function_F309"
+                    "Name": "Room15_Update"
                 },
                 {
                     "Address": 788,
@@ -58629,7 +58799,7 @@
                 {
                     "Address": 820,
                     "LabelType": 1,
-                    "Name": "Screen27_Update"
+                    "Name": "Room27_Update"
                 },
                 {
                     "Address": 845,
@@ -58645,7 +58815,7 @@
                 {
                     "Address": 893,
                     "LabelType": 1,
-                    "Name": "function_F37D"
+                    "Name": "Room30_Update"
                 },
                 {
                     "Address": 928,
@@ -58668,7 +58838,7 @@
                 {
                     "Address": 939,
                     "LabelType": 1,
-                    "Name": "function_F3AB"
+                    "Name": "Room31_Update"
                 },
                 {
                     "Address": 964,
@@ -60354,7 +60524,7 @@
                 {
                     "Address": 9,
                     "LabelType": 1,
-                    "Name": "function_F409"
+                    "Name": "Room14_Update"
                 },
                 {
                     "Address": 20,
@@ -60369,7 +60539,7 @@
                 {
                     "Address": 60,
                     "LabelType": 1,
-                    "Name": "function_F43C"
+                    "Name": "Room8_Update"
                 },
                 {
                     "Address": 113,
@@ -60395,7 +60565,7 @@
                 {
                     "Address": 157,
                     "LabelType": 1,
-                    "Name": "function_F49D"
+                    "Name": "Room10_Update"
                 },
                 {
                     "Address": 168,
@@ -60416,7 +60586,7 @@
                 {
                     "Address": 211,
                     "LabelType": 1,
-                    "Name": "function_F4D3"
+                    "Name": "Room16_Update"
                 },
                 {
                     "Address": 224,
@@ -60437,7 +60607,7 @@
                 {
                     "Address": 259,
                     "LabelType": 1,
-                    "Name": "function_F503"
+                    "Name": "Room4_Update"
                 },
                 {
                     "Address": 323,
@@ -60447,7 +60617,7 @@
                 {
                     "Address": 335,
                     "LabelType": 1,
-                    "Name": "function_F54F"
+                    "Name": "Room32_Update"
                 },
                 {
                     "Address": 348,
@@ -60463,7 +60633,7 @@
                 {
                     "Address": 370,
                     "LabelType": 1,
-                    "Name": "function_F572"
+                    "Name": "Room0_Update"
                 },
                 {
                     "Address": 376,
@@ -60514,7 +60684,7 @@
                 {
                     "Address": 497,
                     "LabelType": 1,
-                    "Name": "function_F5F1"
+                    "Name": "Room11_Update"
                 },
                 {
                     "Address": 506,
@@ -60579,7 +60749,7 @@
                 {
                     "Address": 628,
                     "LabelType": 1,
-                    "Name": "function_F674"
+                    "Name": "Room5_Update"
                 },
                 {
                     "Address": 639,
@@ -60611,7 +60781,7 @@
                 {
                     "Address": 748,
                     "LabelType": 1,
-                    "Name": "function_F6EC"
+                    "Name": "Room22_Update"
                 },
                 {
                     "Address": 767,
@@ -60642,7 +60812,7 @@
                 {
                     "Address": 838,
                     "LabelType": 1,
-                    "Name": "function_F746"
+                    "Name": "Room23_Update"
                 },
                 {
                     "Address": 849,
@@ -60657,7 +60827,7 @@
                 {
                     "Address": 883,
                     "LabelType": 1,
-                    "Name": "function_F773"
+                    "Name": "Room12_Update"
                 },
                 {
                     "Address": 909,
