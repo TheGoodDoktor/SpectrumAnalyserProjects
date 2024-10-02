@@ -26868,7 +26868,9 @@
                 },
                 {
                     "Address": 725,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "character x position",
+                    "Flags": 32
                 },
                 {
                     "Address": 728,
@@ -26948,7 +26950,9 @@
                 },
                 {
                     "Address": 771,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "off right screen edge",
+                    "OperandType": 7
                 },
                 {
                     "Address": 773,
@@ -26962,8 +26966,7 @@
                 {
                     "Address": 777,
                     "ByteSize": 3,
-                    "Comment": "character x pos",
-                    "Flags": 32
+                    "Comment": "character x pos"
                 },
                 {
                     "Address": 780,
@@ -27000,7 +27003,8 @@
                 },
                 {
                     "Address": 800,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 802,
@@ -27018,7 +27022,8 @@
                 },
                 {
                     "Address": 809,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 811,
@@ -27048,11 +27053,12 @@
                     "Address": 826,
                     "ByteSize": 3,
                     "Comment": "character x pos",
-                    "Flags": 32
+                    "OperandType": 7
                 },
                 {
                     "Address": 829,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 831,
@@ -28321,7 +28327,8 @@
                 },
                 {
                     "Address": 442,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "character screen number"
                 },
                 {
                     "Address": 445,
@@ -28651,19 +28658,23 @@
                 },
                 {
                     "Address": 605,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "character screen number"
                 },
                 {
                     "Address": 608,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "store previous screen number"
                 },
                 {
                     "Address": 611,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "next screen number?"
                 },
                 {
                     "Address": 614,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "set screen number"
                 },
                 {
                     "Address": 617,
@@ -28681,7 +28692,8 @@
                 },
                 {
                     "Address": 624,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "set character x pos"
                 },
                 {
                     "Address": 627,
@@ -28693,7 +28705,8 @@
                 },
                 {
                     "Address": 629,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "set character y pos"
                 },
                 {
                     "Address": 632,
@@ -28701,7 +28714,8 @@
                 },
                 {
                     "Address": 633,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "anim frame"
                 },
                 {
                     "Address": 636,
@@ -29064,19 +29078,77 @@
             "DataInfo": [
                 {
                     "Address": 784,
-                    "Comment": "xpos?"
+                    "Comment": "xpos?",
+                    "DisplayType": 3
                 },
                 {
                     "Address": 785,
-                    "Comment": " ypos?"
+                    "Comment": " ypos?",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 786,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 787,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 788,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 789,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 790,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 791,
+                    "DisplayType": 3
                 },
                 {
                     "Address": 792,
                     "DisplayType": 1
                 },
                 {
+                    "Address": 793,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 794,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 795,
+                    "DisplayType": 3
+                },
+                {
                     "Address": 796,
-                    "DisplayType": 1
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 797,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 798,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 799,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 800,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 801,
+                    "DisplayType": 3
                 },
                 {
                     "Address": 911,
@@ -29281,7 +29353,7 @@
                 {
                     "Address": 605,
                     "LabelType": 2,
-                    "Name": "label_AE5D"
+                    "Name": "NPCChangeScreen"
                 },
                 {
                     "Address": 650,
@@ -36099,6 +36171,10 @@
                     "Comment": "y positions"
                 },
                 {
+                    "Address": 118,
+                    "Comment": "screen number"
+                },
+                {
                     "Address": 133,
                     "Comment": "attributes"
                 },
@@ -36147,17 +36223,65 @@
                 {
                     "Address": 103,
                     "Comment": "wally animation frame",
-                    "DisplayType": 11
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 104,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 105,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 106,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 107,
+                    "DisplayType": 3
                 },
                 {
                     "Address": 108,
                     "Comment": "wally x pos",
-                    "DisplayType": 11
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 109,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 110,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 111,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 112,
+                    "DisplayType": 3
                 },
                 {
                     "Address": 113,
                     "Comment": "wally y pos",
-                    "DisplayType": 11
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 114,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 115,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 116,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 117,
+                    "DisplayType": 3
                 },
                 {
                     "Address": 118,
@@ -36174,6 +36298,7 @@
                 },
                 {
                     "Address": 121,
+                    "Comment": "screen number",
                     "DisplayType": 3
                 },
                 {
@@ -37263,6 +37388,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_D1BC_1"
+                },
+                {
+                    "Address": 636,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "charset_D27C"
                 },
                 {
                     "Address": 996,
@@ -62420,6 +62551,7 @@
                 {
                     "Address": 1014,
                     "ByteSize": 2,
+                    "Comment": "set return address",
                     "DataType": 2
                 },
                 {
