@@ -10,7 +10,9 @@ ExporterView =
     onAdd = function(self)
         -- gets called when view is added
 		self.screenView = CreateZXGraphicsView(256,19 * 8)
+		self.characterView = CreateZXGraphicsView(16,40 * 32)
         ClearGraphicsView(self.screenView, 0)
+		ClearGraphicsView(self.characterView, 0)
     end,
 
     onDrawUI = function(self)
@@ -22,6 +24,13 @@ ExporterView =
 				DrawScreenToView(self.screenView,screenNo,0,0)
 				SaveGraphicsViewPNG(self.screenView,string.format("WallyScreen_%d.png",screenNo))
 			end
+		end
+
+		if imgui.Button("Export Character Sprites") then
+			for charNo = 0,39 do
+				DrawCharacterToView(self.characterView,charNo,0,charNo * 32)
+			end
+			SaveGraphicsViewPNG(self.characterView,"Characters.png")
 		end
 
 		DrawGraphicsView(self.screenView)

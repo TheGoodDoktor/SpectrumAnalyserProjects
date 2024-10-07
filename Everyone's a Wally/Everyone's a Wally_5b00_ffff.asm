@@ -4,38 +4,11 @@
 ; ROM Labels
 
 ; Screen Memory Labels
+ScreenPixels: 	equ $4000
 ScreenAttributes_1: 	equ $5800
 
 	org $5B00
 ScreenBackground:
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
 	db $00
 	db $00
 	db $00
@@ -45,12 +18,44 @@ ScreenBackground:
 	db $FF
 	db $7F
 	db $FF
-	db $DF
-	db $DF
 	db $7F
 	db $FF
-	db $DF
-	db $DF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
 	db $7F
 	db $FF
 	db $7F
@@ -77,17 +82,17 @@ ScreenBackground:
 	db $FE
 	db $3F
 	db $FE
-	db $DF
-	db $DF
-	db $3F
-	db $FE
-	db $DF
-	db $DF
 	db $3F
 	db $FE
 	db $3F
 	db $FE
 	db $3F
+	db $FE
+	db $3F
+	db $FE
+	db $3F
+	db $FE
+	db $3F
 	db $00
 	db $00
 	db $00
@@ -109,49 +114,17 @@ ScreenBackground:
 	db $00
 	db $80
 	db $00
-	db $DF
-	db $DF
-	db $80
-	db $00
-	db $DF
-	db $DF
 	db $80
 	db $00
 	db $80
 	db $00
 	db $80
 	db $00
+	db $80
 	db $00
+	db $80
 	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
+	db $80
 	db $00
 	db $00
 	db $00
@@ -173,12 +146,44 @@ ScreenBackground:
 	db $7F
 	db $FF
 	db $7F
-	db $FB
-	db $FB
 	db $FF
 	db $7F
-	db $FB
-	db $FB
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
 	db $FF
 	db $7F
 	db $FF
@@ -205,17 +210,17 @@ ScreenBackground:
 	db $3F
 	db $FE
 	db $3F
-	db $FB
-	db $FB
-	db $FE
-	db $3F
-	db $FB
-	db $FB
 	db $FE
 	db $3F
 	db $FE
 	db $3F
 	db $FE
+	db $3F
+	db $FE
+	db $3F
+	db $FE
+	db $3F
+	db $FE
 	db $00
 	db $00
 	db $00
@@ -237,12 +242,12 @@ ScreenBackground:
 	db $80
 	db $00
 	db $80
-	db $FB
-	db $FB
 	db $00
 	db $80
-	db $FB
-	db $FB
+	db $00
+	db $80
+	db $00
+	db $80
 	db $00
 	db $80
 	db $00
@@ -269,10 +274,7 @@ ScreenBackground:
 	db $FF
 	db $7F
 	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
+data_5C09:
 	db $7F
 	db $FF
 data_5C0B:
@@ -281,10 +283,10 @@ data_5C0B:
 	db $7F
 	db $FF
 	db $7F
-	db $00
-	db $00
-	db $00
-	db $00
+	db $FF
+	db $7F
+	db $FF
+	db $7F
 	db $00
 	db $00
 data_5C16:
@@ -298,26 +300,26 @@ data_5C16:
 	db $00
 	db $00
 	db $00
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
 	db $00
 	db $00
 	db $00
 	db $00
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
+	db $FF
+	db $7F
 	db $00
 	db $00
 	db $00
@@ -331,26 +333,27 @@ data_5C3A:
 	db $00
 	db $00
 	db $00
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
 	db $00
 	db $00
 	db $00
 	db $00
+	db $FE
+	db $3F
+	db $FE
+	db $3F
+data_5C48:
+	db $FE
+	db $3F
+	db $FE
+	db $3F
+	db $FE
+	db $3F
+	db $FE
+	db $3F
+	db $FE
+	db $3F
+	db $FE
+	db $3F
 	db $00
 	db $00
 	db $00
@@ -366,6 +369,10 @@ data_5C5D:
 data_5C5F:
 	db $00
 	db $00
+	db $00
+	db $00
+	db $00
+	db $00
 	db $80
 	db $00
 	db $80
@@ -381,10 +388,6 @@ data_5C5F:
 	db $80
 	db $00
 	db $80
-	db $00
-	db $00
-	db $00
-	db $00
 	db $00
 	db $00
 	db $00
@@ -398,10 +401,11 @@ data_5C78:
 	db $00
 	db $00
 	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
+data_5C80:
+	db $00
+	db $00
+	db $00
+	db $00
 	db $7F
 	db $FF
 	db $7F
@@ -415,514 +419,6 @@ data_5C8C:
 	db $FF
 	db $7F
 	db $FF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
 	db $7F
 	db $FF
 	db $7F
@@ -955,6 +451,7 @@ data_5C8C:
 	db $FF
 	db $7F
 	db $FF
+data_5CB0:
 	db $7F
 	db $FF
 	db $7F
@@ -1266,6 +763,7 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
+data_5DE7:
 	db $00
 	db $00
 	db $00
@@ -1567,11 +1065,6 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $03
-	db $00
-	db $00
-	db $00
-	db $C0
 	db $00
 	db $00
 	db $00
@@ -1583,27 +1076,6 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $EF
-	db $0E
-	db $00
-	db $20
-	db $F0
 	db $00
 	db $00
 	db $00
@@ -1615,27 +1087,6 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $09
-	db $31
-	db $B0
-	db $F8
 	db $00
 	db $00
 	db $00
@@ -1647,27 +1098,226 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $BF
-	db $09
-	db $4A
-	db $20
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
 	db $FC
+	db $7C
+	db $79
+	db $9B
+	db $E0
+	db $7C
+	db $CD
+	db $F9
+	db $E6
+	db $6F
+	db $BE
 	db $00
 	db $00
 	db $00
@@ -1689,81 +1339,17 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
+	db $30
+	db $66
+	db $CD
+	db $DB
 	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $BF
-	db $0E
-	db $49
-	db $20
-	db $FC
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $7F
-	db $08
-	db $48
-	db $A0
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $7F
-	db $08
+	db $66
+	db $CC
+	db $63
+	db $36
+	db $6C
 	db $33
-	db $18
-	db $FE
 	db $00
 	db $00
 	db $00
@@ -1775,27 +1361,9 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $7F
 	db $00
 	db $00
 	db $00
-	db $FE
 	db $00
 	db $00
 	db $00
@@ -1803,100 +1371,478 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $7F
-	db $18
-	db $DA
-	db $00
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $7F
-	db $25
-	db $20
+	db $30
 	db $66
-	db $FE
+	db $CD
+	db $FB
+	db $00
+	db $66
+	db $CC
+	db $63
+	db $06
+	db $6C
+	db $33
 	db $00
 	db $00
 	db $00
 	db $00
 	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $30
+	db $7C
+	db $CD
+	db $BB
+	db $C0
+	db $7C
+	db $CC
+	db $63
+	db $07
+	db $EF
+	db $3E
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $30
+	db $66
+	db $CD
+	db $9B
+	db $00
+	db $66
+	db $CC
+	db $63
+	db $06
+	db $6C
+	db $38
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $30
+	db $66
+	db $CD
+	db $9B
+	db $00
+	db $66
+	db $CC
+	db $63
+	db $06
+	db $6C
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $36
+	db $66
+	db $CD
+	db $9B
+	db $00
+	db $66
+	db $CC
+	db $63
+	db $36
+	db $6C
+	db $36
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $36
+	db $7C
+	db $79
+	db $9B
+	db $E0
+	db $7C
+	db $78
+	db $61
+	db $E6
+	db $6F
+	db $B3
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $5E
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $5E
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $5E
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
 	db $00
 	db $00
 	db $00
@@ -1919,11 +1865,80 @@ data_5C8C:
 	db $DF
 	db $DF
 	db $DF
-	db $BF
-	db $25
-	db $B2
-	db $89
-	db $FC
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
 	db $00
 	db $00
 	db $00
@@ -1951,16 +1966,11 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $BF
-	db $25
-	db $22
-	db $8E
-	db $FC
 	db $00
 	db $00
 	db $00
 	db $00
-	db $00
+	db $2C
 	db $00
 	db $00
 	db $00
@@ -1983,379 +1993,118 @@ data_5C8C:
 	db $FB
 	db $FB
 	db $FB
-	db $DF
-	db $25
-	db $22
-	db $88
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $1F
+	db $FF
 	db $F8
 	db $00
 	db $00
 	db $00
 	db $00
 	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $EF
-	db $19
-	db $22
-	db $66
-	db $F0
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $03
-	db $00
-	db $00
-	db $00
-	db $C0
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
 	db $DF
 	db $DF
 	db $DF
@@ -2363,6 +2112,11 @@ data_5C8C:
 	db $DF
 	db $DF
 	db $7F
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
 	db $FF
 	db $FF
 	db $FE
@@ -2375,19 +2129,14 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
+	db $71
+	db $11
+	db $1E
 	db $00
 	db $00
 	db $00
-	db $FF
-	db $FF
-	db $FF
 	db $00
 	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
 	db $DF
 	db $DF
 	db $DF
@@ -2395,6 +2144,11 @@ data_5C8C:
 	db $DF
 	db $DF
 	db $60
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
 	db $00
 	db $00
 	db $06
@@ -2407,19 +2161,14 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
+	db $F7
+	db $B5
+	db $5F
 	db $00
 	db $00
 	db $00
-	db $FF
-	db $FF
-	db $FF
 	db $00
 	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
 	db $DF
 	db $DF
 	db $DF
@@ -2427,6 +2176,11 @@ data_5C8C:
 	db $DF
 	db $DF
 	db $5F
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
 	db $FF
 	db $FF
 	db $FA
@@ -2439,27 +2193,667 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
+	db $FB
+	db $B5
+	db $5F
 	db $00
 	db $00
 	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $B5
+	db $1F
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FD
+	db $B5
+	db $7F
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $71
+	db $B1
+	db $7E
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $1F
+	db $FF
+	db $F8
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $50
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $50
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $50
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $50
+	db $00
+	db $0C
+	db $00
+	db $00
+	db $00
+	db $0C
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $50
+	db $00
+	db $0C
+	db $00
+	db $00
+	db $00
+	db $0C
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $06
+	db $00
+	db $00
+	db $00
+	db $06
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $06
+	db $00
+	db $00
+	db $00
+	db $06
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $46
+	db $00
+	db $00
+	db $00
+	db $46
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $50
+	db $00
+	db $54
+	db $00
+	db $00
+	db $00
+	db $54
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $7F
+	db $FF
+	db $FF
+	db $FE
+	db $DF
+	db $50
+	db $00
+	db $3A
+	db $00
+	db $00
+	db $00
+	db $3A
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $60
+	db $00
+	db $00
+	db $06
+	db $DF
+	db $50
+	db $00
+	db $67
+	db $00
+	db $00
+	db $00
+	db $67
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $5F
+	db $FF
+	db $FF
+	db $FA
+	db $DF
+	db $50
+	db $00
+	db $6F
+	db $00
+	db $00
+	db $00
+	db $6F
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $50
+	db $00
+	db $00
+	db $0A
+	db $00
+	db $50
+	db $00
+	db $76
+	db $00
+	db $00
+	db $00
+	db $76
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $50
+	db $00
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $3C
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $50
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $50
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $20
 	db $81
-	db $04
-	db $11
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
 	db $00
 	db $00
 	db $50
+	db $FF
+	db $FF
+	db $0A
 	db $00
+	db $50
+	db $00
+	db $10
+	db $00
+	db $00
+	db $00
+	db $10
 	db $00
 	db $0A
 	db $00
@@ -2470,35 +2864,159 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
+	db $20
+	db $81
+	db $2C
+	db $00
+	db $20
+	db $20
+	db $64
+	db $C3
+	db $20
+	db $DF
+	db $50
+	db $80
+	db $01
+	db $0A
+	db $DF
+	db $50
+	db $00
+	db $28
+	db $00
+	db $00
+	db $00
+	db $28
+	db $00
+	db $0A
+	db $DF
 	db $00
 	db $00
 	db $00
 	db $00
-	db $D5
-	db $40
-	db $83
 	db $00
 	db $00
+	db $00
+	db $64
+	db $C3
+	db $2C
+	db $20
+	db $64
+	db $64
+	db $44
+	db $4A
+	db $64
+	db $DF
+	db $50
+	db $90
+	db $21
+	db $0A
+	db $DF
+	db $50
+	db $00
+	db $34
+	db $00
+	db $00
+	db $00
+	db $34
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $44
+	db $4A
+	db $2C
+	db $64
+	db $44
+	db $46
+	db $16
+	db $18
+	db $46
+	db $DF
+	db $50
+	db $A2
+	db $41
+	db $0A
+	db $DF
+	db $50
+	db $00
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $3C
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $16
+	db $18
+	db $2C
+	db $46
+	db $16
+	db $02
+	db $B2
+	db $10
+	db $02
+	db $00
+	db $50
+	db $84
+	db $05
+	db $0A
+	db $00
+	db $50
+	db $00
+	db $3E
+	db $00
+	db $00
+	db $00
+	db $3E
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $B2
+	db $10
+	db $2C
+	db $02
+	db $B2
+	db $10
+	db $D0
+	db $C6
+	db $10
 	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
+	db $50
+	db $88
+	db $09
+	db $0A
 	db $FB
 	db $50
 	db $00
+	db $7E
+	db $00
+	db $00
+	db $00
+	db $7E
 	db $00
 	db $0A
 	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
 	db $00
 	db $00
 	db $00
@@ -2507,23 +3025,27 @@ data_5C8C:
 	db $00
 	db $00
 	db $D0
-	db $14
+	db $C6
+	db $2C
+	db $10
+	db $D0
+	db $30
+	db $46
+	db $63
+	db $30
+	db $FB
+	db $50
+	db $92
 	db $11
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
+	db $0A
 	db $FB
 	db $50
 	db $00
+	db $7E
+	db $00
+	db $00
+	db $00
+	db $7E
 	db $00
 	db $0A
 	db $FB
@@ -2534,28 +3056,28 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
+	db $46
+	db $63
+	db $2C
+	db $30
+	db $46
+	db $00
+	db $0C
 	db $00
 	db $00
-	db $00
-	db $00
-	db $FF
-	db $FF
-	db $FF
-	db $00
-	db $00
 	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
+	db $50
+	db $A4
+	db $21
+	db $0A
 	db $FB
 	db $50
 	db $00
+	db $FF
+	db $00
+	db $00
+	db $00
+	db $FF
 	db $00
 	db $0A
 	db $FB
@@ -2566,349 +3088,371 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
+	db $0C
 	db $00
+	db $2C
 	db $00
+	db $0C
+	db $81
 	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $00
+	db $20
+	db $81
 	db $00
 	db $50
-	db $02
-	db $02
+	db $80
+	db $09
 	db $0A
 	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
-	db $FF
-	db $F7
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $7F
-	db $FF
-	db $FF
-	db $FE
-	db $DF
-	db $DF
 	db $50
-	db $24
-	db $24
-	db $0A
-	db $DF
 	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
-	db $FF
-	db $F7
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
+	db $E3
 	db $80
 	db $00
 	db $00
-	db $01
-	db $DF
-	db $DF
-	db $50
-	db $48
-	db $48
-	db $0A
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F7
-	db $FF
-	db $EF
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $BF
-	db $FF
-	db $FF
-	db $FD
-	db $DF
-	db $DF
-	db $50
-	db $10
-	db $10
-	db $0A
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F8
-	db $00
-	db $1F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $CF
-	db $FF
-	db $FF
-	db $F3
-	db $00
-	db $00
-	db $50
-	db $22
-	db $22
+	db $E3
+	db $80
 	db $0A
 	db $00
+	db $08
+	db $08
+	db $08
 	db $00
 	db $00
 	db $00
 	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $D0
-	db $00
-	db $00
-	db $0B
-	db $FB
-	db $FB
-	db $50
-	db $44
-	db $44
-	db $0A
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $D8
-	db $00
-	db $00
-	db $1B
-	db $FB
-	db $FB
-	db $50
-	db $88
-	db $88
-	db $0A
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $D8
-	db $00
-	db $00
-	db $1B
-	db $FB
-	db $FB
-	db $50
-	db $10
-	db $10
-	db $0A
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $00
-	db $00
-	db $00
-	db $3F
-	db $FC
-	db $00
-	db $00
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $00
-	db $00
-	db $50
-	db $00
-	db $00
-	db $0A
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $62
-	db $0F
 	db $81
 	db $00
-	db $DF
-	db $3F
-	db $FC
-	db $DF
-	db $DF
-	db $D8
+	db $2C
 	db $81
 	db $81
-	db $1B
-	db $DF
-	db $DF
-	db $50
-	db $00
-	db $00
-	db $0A
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $F0
-	db $0F
 	db $C3
 	db $20
+	db $64
+	db $C3
 	db $DF
-	db $3F
+	db $50
+	db $80
+	db $11
+	db $0A
+	db $DF
+	db $50
+	db $01
+	db $97
+	db $C0
+	db $00
+	db $01
+	db $97
+	db $C0
+	db $0A
+	db $DF
+	db $08
+	db $08
+	db $08
+	db $00
+	db $00
+	db $00
+	db $00
+	db $C3
+	db $20
+	db $2C
+	db $C3
+	db $C3
+	db $4A
+	db $64
+	db $44
+	db $4A
+	db $DF
+	db $50
+	db $80
+	db $21
+	db $0A
+	db $DF
+	db $50
+	db $01
+	db $4F
+	db $C0
+	db $00
+	db $01
+	db $4F
+	db $C0
+	db $0A
+	db $DF
+	db $18
+	db $18
+	db $18
+	db $00
+	db $00
+	db $00
+	db $00
+	db $4A
+	db $64
+	db $2C
+	db $4A
+	db $4A
+	db $18
+	db $46
+	db $16
+	db $18
+	db $DF
+	db $50
+	db $B8
+	db $41
+	db $0A
+	db $DF
+	db $50
+	db $03
+	db $BF
+	db $A0
+	db $00
+	db $03
+	db $BF
+	db $A0
+	db $0A
+	db $DF
+	db $1C
+	db $1C
+	db $1C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $18
+	db $46
+	db $2C
+	db $18
+	db $18
+	db $10
+	db $02
+	db $B2
+	db $10
+	db $00
+	db $50
+	db $B8
+	db $09
+	db $0A
+	db $00
+	db $50
+	db $03
+	db $FF
+	db $60
+	db $00
+	db $03
+	db $FF
+	db $60
+	db $0A
+	db $00
+	db $3C
+	db $3C
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $10
+	db $02
+	db $2C
+	db $10
+	db $10
+	db $C6
+	db $10
+	db $D0
+	db $C6
+	db $FB
+	db $50
+	db $B8
+	db $11
+	db $0A
+	db $FB
+	db $50
+	db $07
 	db $FC
+	db $E0
+	db $00
+	db $07
+	db $FC
+	db $E0
+	db $0A
+	db $FB
+	db $BB
+	db $BB
+	db $BB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $C6
+	db $10
+	db $2C
+	db $C6
+	db $C6
+	db $63
+	db $30
+	db $46
+	db $63
+	db $FB
+	db $50
+	db $B8
+	db $21
+	db $0A
+	db $FB
+	db $50
+	db $07
+	db $E3
+	db $C0
+	db $00
+	db $07
+	db $E3
+	db $C0
+	db $0A
+	db $FB
+	db $BB
+	db $BB
+	db $BB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $63
+	db $30
+	db $2C
+	db $63
+	db $63
+	db $00
+	db $00
+	db $0C
+	db $00
+	db $FB
+	db $50
+	db $B8
+	db $01
+	db $0A
+	db $FB
+	db $50
+	db $03
 	db $DF
+	db $00
+	db $00
+	db $03
 	db $DF
-	db $D8
-	db $BD
-	db $BD
-	db $1B
+	db $00
+	db $0A
+	db $FB
+	db $3C
+	db $3C
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $20
+	db $00
+	db $00
+	db $00
+	db $50
+	db $80
+	db $09
+	db $0A
+	db $00
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $00
+	db $3C
+	db $3C
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $20
+	db $81
+	db $2C
+	db $81
+	db $20
+	db $20
+	db $64
+	db $20
+	db $20
 	db $DF
+	db $50
+	db $88
+	db $11
+	db $0A
 	db $DF
 	db $50
 	db $00
 	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $DF
+	db $34
+	db $34
+	db $34
+	db $00
+	db $00
+	db $00
+	db $00
+	db $64
+	db $C3
+	db $2C
+	db $C3
+	db $64
+	db $64
+	db $44
+	db $64
+	db $64
+	db $DF
+	db $50
+	db $90
+	db $21
+	db $0A
+	db $DF
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $DF
+	db $34
+	db $34
+	db $34
+	db $00
+	db $00
+	db $00
+	db $00
+	db $44
+	db $4A
+	db $2C
+	db $4A
+	db $44
+	db $46
+	db $16
+	db $46
+	db $46
+	db $DF
+	db $50
+	db $A1
+	db $41
 	db $0A
 	db $DF
 	db $00
@@ -2920,481 +3464,167 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $00
-	db $00
-	db $F0
-	db $67
-	db $0F
-	db $4A
-	db $64
 	db $DF
-	db $30
-	db $0C
-	db $DF
-	db $DF
-	db $D8
-	db $AD
-	db $AD
-	db $1B
-	db $DF
-	db $DF
+	db $2C
+	db $2C
+	db $2C
 	db $00
 	db $00
 	db $00
 	db $00
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $67
-	db $0F
+	db $16
 	db $18
-	db $46
+	db $2C
+	db $18
+	db $16
+	db $02
+	db $B2
+	db $02
+	db $02
 	db $00
-	db $30
-	db $0C
-	db $00
-	db $00
-	db $D8
-	db $A5
-	db $A5
-	db $1B
-	db $00
+	db $50
+	db $82
+	db $09
+	db $0A
 	db $00
 	db $7F
 	db $FF
 	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
 	db $FE
 	db $00
+	db $2C
+	db $2C
+	db $2C
 	db $00
 	db $00
 	db $00
 	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $67
-	db $0F
-	db $10
-	db $02
-	db $FB
-	db $30
-	db $0C
-	db $FB
-	db $FB
-	db $D8
-	db $BD
-	db $BD
-	db $1B
-	db $FB
-	db $FB
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $67
-	db $0F
-	db $C6
-	db $10
-	db $FB
-	db $3F
-	db $FC
-	db $FB
-	db $FB
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $FB
-	db $FB
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $F0
-	db $0F
-	db $63
-	db $30
-	db $FB
-	db $3F
-	db $FC
-	db $FB
-	db $FB
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $FB
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $62
-	db $0F
-	db $00
-	db $00
-	db $00
-	db $3F
-	db $FC
-	db $00
-	db $00
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $20
-	db $81
-	db $DF
-	db $20
-	db $04
-	db $DF
-	db $DF
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $64
-	db $C3
-	db $DF
-	db $2F
-	db $F4
-	db $DF
-	db $DF
-	db $D8
-	db $FD
-	db $BD
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $18
-	db $18
-	db $18
-	db $18
-	db $18
-	db $18
-	db $18
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $44
-	db $4A
-	db $DF
-	db $2F
-	db $F4
-	db $DF
-	db $DF
-	db $D8
-	db $CD
-	db $AD
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $1C
-	db $1C
-	db $1C
-	db $1C
-	db $1C
-	db $1C
-	db $1C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $16
-	db $18
-	db $00
-	db $2F
-	db $F4
-	db $00
-	db $00
-	db $D8
-	db $A5
-	db $A5
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F8
-	db $00
-	db $1F
 	db $B2
 	db $10
+	db $2C
+	db $10
+	db $B2
+	db $10
+	db $D0
+	db $10
+	db $10
 	db $FB
-	db $2F
-	db $D4
+	db $50
+	db $84
+	db $11
+	db $0A
 	db $FB
-	db $FB
-	db $D8
-	db $A5
-	db $BD
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F7
 	db $FF
-	db $EF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FB
+	db $34
+	db $34
+	db $34
+	db $00
+	db $00
+	db $00
+	db $00
 	db $D0
 	db $C6
+	db $2C
+	db $C6
+	db $D0
+	db $30
+	db $46
+	db $30
+	db $30
 	db $FB
-	db $2F
-	db $D4
+	db $50
+	db $88
+	db $21
+	db $0A
 	db $FB
-	db $FB
-	db $D8
-	db $CD
-	db $81
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
 	db $FF
-	db $F7
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FB
+	db $34
+	db $34
+	db $34
+	db $00
+	db $00
+	db $00
+	db $00
 	db $46
 	db $63
-	db $FB
-	db $2F
-	db $F4
-	db $FB
-	db $FB
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
+	db $2C
+	db $63
+	db $46
 	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
-	db $FF
-	db $F7
 	db $0C
 	db $00
 	db $00
-	db $28
-	db $34
-	db $00
-	db $00
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $00
+	db $FB
+	db $50
+	db $80
+	db $01
+	db $0A
+	db $FB
 	db $00
 	db $00
 	db $00
 	db $00
 	db $00
 	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
 	db $3C
 	db $3C
 	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
 	db $00
 	db $00
 	db $00
 	db $00
-	db $EF
-	db $FF
-	db $F7
+	db $0C
 	db $00
+	db $2C
 	db $00
-	db $DF
-	db $2B
-	db $54
-	db $DF
-	db $DF
-	db $D8
+	db $0C
+	db $20
 	db $81
 	db $81
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $34
-	db $34
-	db $34
-	db $34
+	db $00
+	db $00
+	db $50
+	db $80
+	db $01
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
 	db $34
 	db $34
 	db $34
@@ -3402,287 +3632,31 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $EF
-	db $FF
-	db $F7
 	db $20
+	db $00
+	db $2C
+	db $81
 	db $20
-	db $DF
-	db $29
-	db $34
-	db $DF
-	db $DF
-	db $D8
-	db $BD
-	db $BD
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F7
-	db $FF
-	db $EF
 	db $64
-	db $64
-	db $DF
-	db $2B
-	db $54
-	db $DF
-	db $DF
-	db $D8
-	db $AD
-	db $AD
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F8
-	db $00
-	db $1F
-	db $46
-	db $46
-	db $00
-	db $28
-	db $54
-	db $00
-	db $00
-	db $D8
-	db $A5
-	db $A5
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $02
-	db $02
-	db $FB
-	db $2F
-	db $F4
-	db $FB
-	db $FB
-	db $D8
-	db $BD
-	db $BD
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $10
-	db $10
-	db $FB
-	db $20
-	db $04
-	db $FB
-	db $FB
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $30
-	db $30
-	db $FB
-	db $3F
-	db $FC
-	db $FB
-	db $FB
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $81
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
+	db $C3
 	db $C3
 	db $20
 	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $D8
-	db $BD
-	db $BD
-	db $1B
-	db $DF
+	db $50
+	db $88
+	db $11
+	db $0A
 	db $DF
 	db $DF
 	db $DF
 	db $DF
 	db $DF
 	db $DF
-	db $2C
-	db $2C
-	db $2C
-	db $2C
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
 	db $2C
 	db $2C
 	db $2C
@@ -3690,63 +3664,63 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $F0
-	db $00
-	db $0F
+	db $64
+	db $20
+	db $2C
+	db $C3
+	db $64
+	db $44
+	db $4A
 	db $4A
 	db $64
 	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $D8
-	db $AD
-	db $AD
-	db $1B
-	db $DF
+	db $50
+	db $90
+	db $21
+	db $0A
 	db $DF
 	db $DF
 	db $DF
 	db $DF
 	db $DF
 	db $DF
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $2C
+	db $2C
+	db $2C
 	db $00
 	db $00
 	db $00
 	db $00
-	db $F0
-	db $00
-	db $0F
+	db $44
+	db $64
+	db $2C
+	db $4A
+	db $44
+	db $16
+	db $18
 	db $18
 	db $46
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $D8
-	db $A5
-	db $A5
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $BB
-	db $BB
-	db $BB
-	db $BB
+	db $DF
+	db $50
+	db $A2
+	db $41
+	db $0A
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
 	db $BB
 	db $BB
 	db $BB
@@ -3754,84 +3728,116 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $F8
-	db $00
-	db $1F
+	db $16
+	db $46
+	db $5E
+	db $18
+	db $16
+	db $B2
+	db $10
 	db $10
 	db $02
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $D8
-	db $BD
-	db $BD
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
+	db $00
+	db $50
+	db $84
+	db $05
+	db $0A
 	db $00
 	db $00
 	db $00
 	db $00
-	db $F7
-	db $FF
-	db $EF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $BB
+	db $BB
+	db $BB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $B2
+	db $02
+	db $5E
+	db $10
+	db $B2
+	db $D0
+	db $C6
 	db $C6
 	db $10
 	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $FB
+	db $50
+	db $88
+	db $09
+	db $0A
 	db $FB
 	db $FB
 	db $FB
 	db $FB
 	db $FB
 	db $FB
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $3C
+	db $3C
+	db $3C
 	db $00
 	db $00
 	db $00
 	db $00
-	db $EF
-	db $FF
-	db $F7
+	db $D0
+	db $10
+	db $BF
+	db $C6
+	db $D0
+	db $46
+	db $63
 	db $63
 	db $30
 	db $FB
+	db $50
+	db $80
+	db $01
+	db $0A
 	db $FB
 	db $FB
 	db $FB
 	db $FB
-	db $D8
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $34
+	db $34
+	db $34
+	db $00
+	db $00
+	db $00
+	db $00
+	db $46
+	db $30
+	db $FF
+	db $63
+	db $46
+	db $0C
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $50
 	db $FF
 	db $FF
-	db $1B
+	db $0A
 	db $FB
 	db $FB
 	db $FB
@@ -3839,10 +3845,10 @@ data_5C8C:
 	db $FB
 	db $FB
 	db $FB
-	db $2C
-	db $2C
-	db $2C
-	db $2C
+	db $FB
+	db $FB
+	db $FB
+	db $FB
 	db $2C
 	db $2C
 	db $2C
@@ -3850,11 +3856,11 @@ data_5C8C:
 	db $00
 	db $00
 	db $00
-	db $EF
-	db $FF
-	db $F7
+	db $0C
 	db $00
 	db $00
+	db $00
+	db $0C
 	db $00
 	db $00
 	db $00
@@ -4112,514 +4118,6 @@ data_5C8C:
 	db $00
 	db $00
 ShadowScreen:
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $DF
-	db $DF
-	db $7F
-	db $FF
-	db $DF
-	db $DF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $DF
-	db $DF
-	db $3F
-	db $FE
-	db $DF
-	db $DF
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $DF
-	db $DF
-	db $80
-	db $00
-	db $DF
-	db $DF
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FB
-	db $FB
-	db $FF
-	db $7F
-	db $FB
-	db $FB
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FB
-	db $FB
-	db $FE
-	db $3F
-	db $FB
-	db $FB
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $FB
-	db $FB
-	db $00
-	db $80
-	db $FB
-	db $FB
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $7F
-	db $FF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $3F
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $80
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
 	db $00
 	db $00
 	db $00
@@ -5664,11 +5162,6 @@ ShadowScreen:
 	db $00
 	db $00
 	db $00
-	db $03
-	db $00
-	db $00
-	db $00
-	db $C0
 	db $00
 	db $00
 	db $00
@@ -5680,27 +5173,6 @@ ShadowScreen:
 	db $00
 	db $00
 	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $EF
-	db $0E
-	db $00
-	db $20
-	db $F0
 	db $00
 	db $00
 	db $00
@@ -5712,27 +5184,6 @@ ShadowScreen:
 	db $00
 	db $00
 	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $09
-	db $31
-	db $B0
-	db $F8
 	db $00
 	db $00
 	db $00
@@ -5744,3053 +5195,3346 @@ ShadowScreen:
 	db $00
 	db $00
 	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $BF
-	db $09
-	db $4A
-	db $20
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
 	db $FC
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $BF
-	db $0E
-	db $49
-	db $20
-	db $FC
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $7F
-	db $08
-	db $48
-	db $A0
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $7F
-	db $08
-	db $33
-	db $18
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $00
-	db $00
-	db $00
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $7F
-	db $18
-	db $DA
-	db $00
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $7F
-	db $25
-	db $20
-	db $66
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $BF
-	db $25
-	db $B2
-	db $89
-	db $FC
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $BF
-	db $25
-	db $22
-	db $8E
-	db $FC
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $DF
-	db $25
-	db $22
-	db $88
-	db $F8
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $EF
-	db $19
-	db $22
-	db $66
-	db $F0
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $03
-	db $00
-	db $00
-	db $00
-	db $C0
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $7F
-	db $FF
-	db $FF
-	db $FE
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $FF
-	db $FF
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $60
-	db $00
-	db $00
-	db $06
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $FF
-	db $FF
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $5F
-	db $FF
-	db $FF
-	db $FA
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $81
-	db $04
-	db $11
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $50
-	db $00
-	db $00
-	db $0A
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $D5
-	db $40
-	db $83
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $50
-	db $00
-	db $00
-	db $0A
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $D0
-	db $14
-	db $11
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $50
-	db $00
-	db $00
-	db $0A
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $FF
-	db $FF
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $50
-	db $00
-	db $00
-	db $0A
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $00
-	db $00
-	db $50
-	db $02
-	db $02
-	db $0A
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
-	db $FF
-	db $F7
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $7F
-	db $FF
-	db $FF
-	db $FE
-	db $DF
-	db $DF
-	db $50
-	db $24
-	db $24
-	db $0A
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
-	db $FF
-	db $F7
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $80
-	db $00
-	db $00
-	db $01
-	db $DF
-	db $DF
-	db $50
-	db $48
-	db $48
-	db $0A
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F7
-	db $FF
-	db $EF
-	db $00
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $BF
-	db $FF
-	db $FF
-	db $FD
-	db $DF
-	db $DF
-	db $50
-	db $10
-	db $10
-	db $0A
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F8
-	db $00
-	db $1F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $CF
-	db $FF
-	db $FF
-	db $F3
-	db $00
-	db $00
-	db $50
-	db $22
-	db $22
-	db $0A
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $D0
-	db $00
-	db $00
-	db $0B
-	db $FB
-	db $FB
-	db $50
-	db $44
-	db $44
-	db $0A
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $D8
-	db $00
-	db $00
-	db $1B
-	db $FB
-	db $FB
-	db $50
-	db $88
-	db $88
-	db $0A
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $00
-	db $00
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $D8
-	db $00
-	db $00
-	db $1B
-	db $FB
-	db $FB
-	db $50
-	db $10
-	db $10
-	db $0A
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $00
-	db $00
-	db $00
-	db $3F
-	db $FC
-	db $00
-	db $00
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $00
-	db $00
-	db $50
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $62
-	db $0F
-	db $81
-	db $00
-	db $DF
-	db $3F
-	db $FC
-	db $DF
-	db $DF
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $DF
-	db $DF
-	db $50
-	db $00
-	db $00
-	db $73
-	db $EF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $F0
-	db $0F
-	db $C3
-	db $20
-	db $DF
-	db $3F
-	db $FC
-	db $DF
-	db $DF
-	db $D8
-	db $BD
-	db $BD
-	db $1B
-	db $DF
-	db $DF
-	db $50
-	db $00
-	db $00
-	db $FF
-	db $FF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $67
-	db $0F
-	db $4A
-	db $64
-	db $DF
-	db $30
-	db $0C
-	db $DF
-	db $DF
-	db $D8
-	db $AD
-	db $AD
-	db $1B
-	db $DF
-	db $DF
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $EF
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $67
-	db $0F
-	db $18
-	db $46
-	db $00
-	db $30
-	db $0C
-	db $00
-	db $00
-	db $D8
-	db $A5
-	db $A5
-	db $1B
-	db $00
-	db $00
-	db $7F
-	db $FF
-	db $FB
-	db $C3
-	db $C0
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $67
-	db $0F
-	db $10
-	db $02
-	db $FB
-	db $30
-	db $0C
-	db $FB
-	db $FB
-	db $D8
-	db $BD
-	db $BD
-	db $1B
-	db $FB
-	db $FB
-	db $FF
-	db $FF
-	db $F8
-	db $18
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $67
-	db $0F
-	db $C6
-	db $10
-	db $FB
-	db $3F
-	db $FC
-	db $FB
-	db $FB
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $FB
-	db $FB
-	db $FF
-	db $FF
-	db $FF
-	db $6B
-	db $5B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $F0
-	db $0F
-	db $63
-	db $30
-	db $FB
-	db $3F
-	db $FC
-	db $FB
-	db $FB
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $FB
-	db $FB
-	db $00
-	db $00
-	db $00
-	db $7F
-	db $5B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $62
-	db $0F
-	db $00
-	db $00
-	db $00
-	db $3F
-	db $FC
-	db $00
-	db $00
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $1F
-	db $C0
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $20
-	db $81
-	db $DF
-	db $20
-	db $04
-	db $DF
-	db $DF
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $9F
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $08
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $64
-	db $C3
-	db $DF
-	db $2F
-	db $F4
-	db $DF
-	db $DF
-	db $D8
-	db $FD
-	db $BD
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $C0
-	db $1F
-	db $18
-	db $18
-	db $18
-	db $18
-	db $18
-	db $18
-	db $18
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $44
-	db $4A
-	db $DF
-	db $2F
-	db $F4
-	db $DF
-	db $DF
-	db $D8
-	db $CD
-	db $AD
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $9F
-	db $9F
-	db $1C
-	db $1C
-	db $1C
-	db $1C
-	db $1C
-	db $1C
-	db $1C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $16
-	db $18
-	db $00
-	db $2F
-	db $F4
-	db $00
-	db $00
-	db $D8
-	db $A5
-	db $A5
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $38
-	db $C0
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F8
-	db $00
-	db $1F
-	db $B2
-	db $10
-	db $FB
-	db $2F
-	db $D4
-	db $FB
-	db $FB
-	db $D8
-	db $A5
-	db $BD
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FA
-	db $77
-	db $6B
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F7
-	db $FF
-	db $EF
-	db $D0
-	db $C6
-	db $FB
-	db $2F
-	db $D4
-	db $FB
-	db $FB
-	db $D8
-	db $CD
-	db $81
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $F8
-	db $F7
-	db $6B
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
-	db $FF
-	db $F7
-	db $46
-	db $63
-	db $FB
-	db $2F
-	db $F4
-	db $FB
-	db $FB
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $F9
-	db $F8
-	db $AB
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
-	db $FF
-	db $F7
-	db $0C
-	db $00
-	db $00
-	db $28
-	db $34
-	db $00
-	db $00
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $03
-	db $FB
-	db $A0
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
-	db $FF
-	db $F7
-	db $00
-	db $00
-	db $DF
-	db $2B
-	db $54
-	db $DF
-	db $DF
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $D0
-	db $05
-	db $AF
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
-	db $FF
-	db $F7
-	db $20
-	db $20
-	db $DF
-	db $29
-	db $34
-	db $DF
-	db $DF
-	db $D8
-	db $BD
-	db $BD
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $D7
-	db $FD
-	db $AF
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F7
-	db $FF
-	db $EF
-	db $64
-	db $64
-	db $DF
-	db $2B
-	db $54
-	db $DF
-	db $DF
-	db $D8
-	db $AD
-	db $AD
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $D7
-	db $FB
-	db $CF
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F8
-	db $00
-	db $1F
-	db $46
-	db $46
-	db $00
-	db $28
-	db $54
-	db $00
-	db $00
-	db $D8
-	db $A5
-	db $A5
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $07
-	db $FA
-	db $80
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $02
-	db $02
-	db $FB
-	db $2F
-	db $F4
-	db $FB
-	db $FB
-	db $D8
-	db $BD
-	db $BD
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $F3
-	db $BD
-	db $1B
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $10
-	db $10
-	db $FB
-	db $20
-	db $04
-	db $FB
-	db $FB
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $F9
-	db $7F
-	db $3B
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $30
-	db $30
-	db $FB
-	db $3F
-	db $FC
-	db $FB
-	db $FB
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $F8
-	db $FE
-	db $BB
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F8
-	db $80
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $81
-	db $00
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DE
-	db $F9
-	db $9F
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $C3
-	db $20
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $D8
-	db $BD
-	db $BD
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DE
-	db $7D
-	db $9F
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $4A
-	db $64
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $D8
-	db $AD
-	db $AD
-	db $1B
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $DF
-	db $33
-	db $9F
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F0
-	db $00
-	db $0F
-	db $18
-	db $46
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $D8
-	db $A5
-	db $A5
-	db $1B
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $7B
-	db $C0
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $BB
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F8
-	db $00
-	db $1F
-	db $10
-	db $02
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $D8
-	db $BD
-	db $BD
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $F2
-	db $00
-	db $0B
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $3C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $F7
-	db $FF
-	db $EF
-	db $C6
-	db $10
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $D8
-	db $81
-	db $81
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $F7
-	db $79
-	db $EB
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $34
-	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
-	db $FF
-	db $F7
-	db $63
-	db $30
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $D8
-	db $FF
-	db $FF
-	db $1B
-	db $FB
-	db $FB
-	db $FB
-	db $FB
-	db $F7
-	db $69
-	db $AB
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $2C
-	db $00
-	db $00
-	db $00
-	db $00
-	db $EF
-	db $FF
-	db $F7
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $FE
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $AA
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $FF
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $55
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $80
-	db $40
-	db $C0
-	db $20
-	db $A0
-	db $60
-	db $E0
-	db $10
-	db $90
-	db $50
-	db $D0
-	db $30
-	db $B0
-	db $70
-	db $F0
-	db $08
-	db $88
-	db $48
-	db $C8
-	db $28
-	db $A8
-	db $68
-	db $E8
-	db $18
-	db $98
-	db $58
-	db $D8
-	db $38
-	db $B8
-	db $78
-	db $F8
-	db $04
-	db $84
-	db $44
-	db $C4
-	db $24
-	db $A4
-	db $64
-	db $E4
-	db $14
-	db $94
-	db $54
-	db $D4
-	db $34
-	db $B4
-	db $74
-	db $F4
-	db $0C
-	db $8C
-	db $4C
-	db $CC
-	db $2C
-	db $AC
-	db $6C
-	db $EC
-	db $1C
-	db $9C
-	db $5C
-	db $DC
-	db $3C
-	db $BC
 	db $7C
-	db $FC
-	db $02
-	db $82
-	db $42
-	db $C2
-	db $22
-	db $A2
-	db $62
-	db $E2
-	db $12
-	db $92
-	db $52
-	db $D2
-	db $32
-	db $B2
-	db $72
-	db $F2
-	db $0A
-	db $8A
-	db $4A
-	db $CA
-	db $2A
-	db $AA
-	db $6A
-	db $EA
-	db $1A
-	db $9A
-	db $5A
-	db $DA
-	db $3A
-	db $BA
-	db $7A
-	db $FA
-	db $06
-	db $86
-	db $46
-	db $C6
-	db $26
-	db $A6
-	db $66
-	db $E6
-	db $16
-	db $96
-	db $56
-	db $D6
-	db $36
-	db $B6
-	db $76
-	db $F6
-	db $0E
-	db $8E
-	db $4E
-	db $CE
-	db $2E
-	db $AE
-	db $6E
-	db $EE
-	db $1E
-	db $9E
-	db $5E
-	db $DE
-	db $3E
-	db $BE
-	db $7E
-	db $FE
-	db $01
-	db $81
-	db $41
-	db $C1
-	db $21
-	db $A1
-	db $61
-	db $E1
-	db $11
-	db $91
-	db $51
-	db $D1
-	db $31
-	db $B1
-	db $71
-	db $F1
-	db $09
-	db $89
-	db $49
-	db $C9
-	db $29
-	db $A9
-	db $69
-	db $E9
-	db $19
-	db $99
-	db $59
-	db $D9
-	db $39
-	db $B9
 	db $79
-	db $F9
-	db $05
-	db $85
-	db $45
-	db $C5
-	db $25
-	db $A5
-	db $65
-	db $E5
-	db $15
-	db $95
-	db $55
-	db $D5
-	db $35
-	db $B5
-	db $75
-	db $F5
-	db $0D
-	db $8D
-	db $4D
-	db $CD
-	db $2D
-	db $AD
-	db $6D
-	db $ED
-	db $1D
-	db $9D
-	db $5D
-	db $DD
-	db $3D
-	db $BD
-	db $7D
-	db $FD
-	db $03
-	db $83
-	db $43
-	db $C3
-	db $23
-	db $A3
-	db $63
-	db $E3
-	db $13
-	db $93
-	db $53
-	db $D3
-	db $33
-	db $B3
-	db $73
-	db $F3
-	db $0B
-	db $8B
-	db $4B
-	db $CB
-	db $2B
-	db $AB
-	db $6B
-	db $EB
-	db $1B
 	db $9B
-	db $5B
-	db $DB
-	db $3B
-	db $BB
-	db $7B
-	db $FB
-	db $07
-	db $87
-	db $47
-	db $C7
-	db $27
-	db $A7
-	db $67
-	db $E7
-	db $17
-	db $97
-	db $57
-	db $D7
-	db $37
-	db $B7
-	db $77
-	db $F7
-	db $0F
-	db $8F
-	db $4F
-	db $CF
-	db $2F
-	db $AF
+	db $E0
+	db $7C
+	db $CD
+	db $F9
+	db $E6
 	db $6F
+	db $BE
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $30
+	db $66
+	db $CD
+	db $DB
+	db $00
+	db $66
+	db $CC
+	db $63
+	db $36
+	db $6C
+	db $33
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $30
+	db $66
+	db $CD
+	db $FB
+	db $00
+	db $66
+	db $CC
+	db $63
+	db $06
+	db $6C
+	db $33
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $30
+	db $7C
+	db $CD
+	db $BB
+	db $C0
+	db $7C
+	db $CC
+	db $63
+	db $07
 	db $EF
-	db $1F
-	db $9F
-	db $5F
+	db $3E
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $30
+	db $66
+	db $CD
+	db $9B
+	db $00
+	db $66
+	db $CC
+	db $63
+	db $06
+	db $6C
+	db $38
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $30
+	db $66
+	db $CD
+	db $9B
+	db $00
+	db $66
+	db $CC
+	db $63
+	db $06
+	db $6C
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $36
+	db $66
+	db $CD
+	db $9B
+	db $00
+	db $66
+	db $CC
+	db $63
+	db $36
+	db $6C
+	db $36
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $36
+	db $7C
+	db $79
+	db $9B
+	db $E0
+	db $7C
+	db $78
+	db $61
+	db $E6
+	db $6F
+	db $B3
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $5E
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $5E
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $5E
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
 	db $DF
-	db $3F
-	db $BF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $1F
+	db $FF
+	db $F8
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
 	db $7F
 	db $FF
-	db $57
-	db $41
-	db $4C
-	db $4C
-	db $59
 	db $FF
-	db $57
-	db $49
-	db $4C
-	db $4D
-	db $41
 	db $FF
-	db $54
-	db $4F
-	db $4D
 	db $FF
-	db $44
-	db $49
-	db $43
-	db $4B
 	db $FF
-	db $48
-	db $41
-	db $52
-	db $52
-	db $59
+	db $FF
 	db $FF
 	db $FE
-	db $43
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $71
+	db $11
+	db $1E
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $60
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $06
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $F7
+	db $B5
+	db $5F
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $5F
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FA
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $B5
+	db $5F
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $B5
+	db $1F
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FD
+	db $B5
+	db $7F
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $71
+	db $B1
+	db $7E
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $1F
+	db $FF
+	db $F8
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $50
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $50
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $50
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $50
+	db $00
+	db $0C
+	db $00
+	db $00
+	db $00
+	db $0C
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $50
+	db $00
+	db $0C
+	db $00
+	db $00
+	db $00
+	db $0C
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $06
+	db $00
+	db $00
+	db $00
+	db $06
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $06
+	db $00
+	db $00
+	db $00
+	db $06
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $50
+	db $00
+	db $46
+	db $00
+	db $00
+	db $00
+	db $46
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $50
+	db $00
 	db $54
-	db $4F
-	db $44
-	db $41
-	db $59
-	db $27
-	db $53
+	db $00
+	db $00
+	db $00
+	db $54
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $7F
+	db $FF
+	db $FF
+	db $FE
+	db $DF
+	db $50
+	db $00
+	db $3A
+	db $00
+	db $00
+	db $00
+	db $3A
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $60
+	db $00
+	db $00
+	db $06
+	db $DF
+	db $50
+	db $00
+	db $67
+	db $00
+	db $00
+	db $00
+	db $67
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $5F
+	db $FF
+	db $FF
+	db $FA
+	db $DF
+	db $50
+	db $00
+	db $6F
+	db $00
+	db $00
+	db $00
+	db $6F
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $50
+	db $00
+	db $00
+	db $0A
+	db $00
+	db $50
+	db $00
+	db $76
+	db $00
+	db $00
+	db $00
+	db $76
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $50
+	db $00
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $3C
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $50
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $50
+	db $00
+	db $00
+	db $0A
+	db $FB
+	db $50
+	db $00
+	db $18
+	db $00
+	db $00
+	db $00
+	db $18
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
 	db $20
-	db $57
+	db $81
+	db $00
+	db $00
+	db $50
+	db $FF
+	db $FF
+	db $0A
+	db $00
+	db $50
+	db $00
+	db $10
+	db $00
+	db $00
+	db $00
+	db $10
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $20
+	db $81
+	db $2C
+	db $00
+	db $20
+	db $20
+	db $64
+	db $C3
+	db $20
+	db $DF
+	db $50
+	db $80
+	db $01
+	db $0A
+	db $DF
+	db $50
+	db $00
+	db $28
+	db $00
+	db $00
+	db $00
+	db $28
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $64
+	db $C3
+	db $2C
+	db $20
+	db $64
+	db $64
+	db $44
+	db $4A
+	db $64
+	db $DF
+	db $50
+	db $90
+	db $21
+	db $0A
+	db $DF
+	db $50
+	db $00
+	db $34
+	db $00
+	db $00
+	db $00
+	db $34
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $44
+	db $4A
+	db $2C
+	db $64
+	db $44
+	db $46
+	db $16
+	db $18
+	db $46
+	db $DF
+	db $50
+	db $A2
 	db $41
-	db $47
-	db $45
-	db $53
+	db $0A
+	db $DF
+	db $50
+	db $00
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $3C
+	db $00
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $16
+	db $18
+	db $2C
+	db $46
+	db $16
+	db $02
+	db $B2
+	db $10
+	db $02
+	db $00
+	db $50
+	db $84
+	db $05
+	db $0A
+	db $00
+	db $50
+	db $00
+	db $3E
+	db $00
+	db $00
+	db $00
+	db $3E
+	db $00
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $B2
+	db $10
+	db $2C
+	db $02
+	db $B2
+	db $10
+	db $D0
+	db $C6
+	db $10
+	db $FB
+	db $50
+	db $88
+	db $09
+	db $0A
+	db $FB
+	db $50
+	db $00
+	db $7E
+	db $00
+	db $00
+	db $00
+	db $7E
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $D0
+	db $C6
+	db $2C
+	db $10
+	db $D0
+	db $30
+	db $46
+	db $63
+	db $30
+	db $FB
+	db $50
+	db $92
+	db $11
+	db $0A
+	db $FB
+	db $50
+	db $00
+	db $7E
+	db $00
+	db $00
+	db $00
+	db $7E
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $46
+	db $63
+	db $2C
+	db $30
+	db $46
+	db $00
+	db $0C
+	db $00
+	db $00
+	db $FB
+	db $50
+	db $A4
+	db $21
+	db $0A
+	db $FB
+	db $50
+	db $00
+	db $FF
+	db $00
+	db $00
+	db $00
+	db $FF
+	db $00
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0C
+	db $00
+	db $2C
+	db $00
+	db $0C
+	db $81
+	db $00
+	db $20
+	db $81
+	db $00
+	db $50
+	db $80
+	db $09
+	db $0A
+	db $00
+	db $50
+	db $00
+	db $E3
+	db $80
+	db $00
+	db $00
+	db $E3
+	db $80
+	db $0A
+	db $00
+	db $08
+	db $08
+	db $08
+	db $00
+	db $00
+	db $00
+	db $00
+	db $81
+	db $00
+	db $2C
+	db $81
+	db $81
+	db $C3
+	db $20
+	db $64
+	db $C3
+	db $DF
+	db $50
+	db $80
+	db $11
+	db $0A
+	db $DF
+	db $50
+	db $01
+	db $97
+	db $C0
+	db $00
+	db $01
+	db $97
+	db $C0
+	db $0A
+	db $DF
+	db $08
+	db $08
+	db $08
+	db $00
+	db $00
+	db $00
+	db $00
+	db $C3
+	db $20
+	db $2C
+	db $C3
+	db $C3
+	db $4A
+	db $64
+	db $44
+	db $4A
+	db $DF
+	db $50
+	db $80
+	db $21
+	db $0A
+	db $DF
+	db $50
+	db $01
+	db $4F
+	db $C0
+	db $00
+	db $01
+	db $4F
+	db $C0
+	db $0A
+	db $DF
+	db $18
+	db $18
+	db $18
+	db $00
+	db $00
+	db $00
+	db $00
+	db $4A
+	db $64
+	db $2C
+	db $4A
+	db $4A
+	db $18
+	db $46
+	db $16
+	db $18
+	db $DF
+	db $50
+	db $B8
+	db $41
+	db $0A
+	db $DF
+	db $50
+	db $03
+	db $BF
+	db $A0
+	db $00
+	db $03
+	db $BF
+	db $A0
+	db $0A
+	db $DF
+	db $1C
+	db $1C
+	db $1C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $18
+	db $46
+	db $2C
+	db $18
+	db $18
+	db $10
+	db $02
+	db $B2
+	db $10
+	db $00
+	db $50
+	db $B8
+	db $09
+	db $0A
+	db $00
+	db $50
+	db $03
+	db $FF
+	db $60
+	db $00
+	db $03
+	db $FF
+	db $60
+	db $0A
+	db $00
+	db $3C
+	db $3C
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $10
+	db $02
+	db $2C
+	db $10
+	db $10
+	db $C6
+	db $10
+	db $D0
+	db $C6
+	db $FB
+	db $50
+	db $B8
+	db $11
+	db $0A
+	db $FB
+	db $50
+	db $07
+	db $FC
+	db $E0
+	db $00
+	db $07
+	db $FC
+	db $E0
+	db $0A
+	db $FB
+	db $BB
+	db $BB
+	db $BB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $C6
+	db $10
+	db $2C
+	db $C6
+	db $C6
+	db $63
+	db $30
+	db $46
+	db $63
+	db $FB
+	db $50
+	db $B8
+	db $21
+	db $0A
+	db $FB
+	db $50
+	db $07
+	db $E3
+	db $C0
+	db $00
+	db $07
+	db $E3
+	db $C0
+	db $0A
+	db $FB
+	db $BB
+	db $BB
+	db $BB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $63
+	db $30
+	db $2C
+	db $63
+	db $63
+	db $00
+	db $00
+	db $0C
+	db $00
+	db $FB
+	db $50
+	db $B8
+	db $01
+	db $0A
+	db $FB
+	db $50
+	db $03
+	db $DF
+	db $00
+	db $00
+	db $03
+	db $DF
+	db $00
+	db $0A
+	db $FB
+	db $3C
+	db $3C
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $20
+	db $00
+	db $00
+	db $00
+	db $50
+	db $80
+	db $09
+	db $0A
+	db $00
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $00
+	db $3C
+	db $3C
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $20
+	db $81
+	db $2C
+	db $81
+	db $20
+	db $20
+	db $64
+	db $20
+	db $20
+	db $DF
+	db $50
+	db $88
+	db $11
+	db $0A
+	db $DF
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $DF
+	db $34
+	db $34
+	db $34
+	db $00
+	db $00
+	db $00
+	db $00
+	db $64
+	db $C3
+	db $2C
+	db $C3
+	db $64
+	db $64
+	db $44
+	db $64
+	db $64
+	db $DF
+	db $50
+	db $90
+	db $21
+	db $0A
+	db $DF
+	db $50
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0A
+	db $DF
+	db $34
+	db $34
+	db $34
+	db $00
+	db $00
+	db $00
+	db $00
+	db $44
+	db $4A
+	db $2C
+	db $4A
+	db $44
+	db $46
+	db $16
+	db $46
+	db $46
+	db $DF
+	db $50
+	db $A1
+	db $41
+	db $0A
+	db $DF
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $DF
+	db $2C
+	db $2C
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $16
+	db $18
+	db $2C
+	db $18
+	db $16
+	db $02
+	db $B2
+	db $02
+	db $02
+	db $00
+	db $50
+	db $82
+	db $09
+	db $0A
+	db $00
+	db $7F
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FE
+	db $00
+	db $2C
+	db $2C
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $B2
+	db $10
+	db $2C
+	db $10
+	db $B2
+	db $10
+	db $D0
+	db $10
+	db $10
+	db $FB
+	db $50
+	db $84
+	db $11
+	db $0A
+	db $FB
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FB
+	db $34
+	db $34
+	db $34
+	db $00
+	db $00
+	db $00
+	db $00
+	db $D0
+	db $C6
+	db $2C
+	db $C6
+	db $D0
+	db $30
+	db $46
+	db $30
+	db $30
+	db $FB
+	db $50
+	db $88
+	db $21
+	db $0A
+	db $FB
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FB
+	db $34
+	db $34
+	db $34
+	db $00
+	db $00
+	db $00
+	db $00
+	db $46
+	db $63
+	db $2C
+	db $63
+	db $46
+	db $00
+	db $0C
+	db $00
+	db $00
+	db $FB
+	db $50
+	db $80
+	db $01
+	db $0A
+	db $FB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $3C
+	db $3C
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0C
+	db $00
+	db $2C
+	db $00
+	db $0C
+	db $20
+	db $81
+	db $81
+	db $00
+	db $00
+	db $50
+	db $80
+	db $01
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $34
+	db $34
+	db $34
+	db $00
+	db $00
+	db $00
+	db $00
+	db $20
+	db $00
+	db $2C
+	db $81
+	db $20
+	db $64
+	db $C3
+	db $C3
+	db $20
+	db $DF
+	db $50
+	db $88
+	db $11
+	db $0A
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $2C
+	db $2C
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $64
+	db $20
+	db $2C
+	db $C3
+	db $64
+	db $44
+	db $4A
+	db $4A
+	db $64
+	db $DF
+	db $50
+	db $90
+	db $21
+	db $0A
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $2C
+	db $2C
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $44
+	db $64
+	db $2C
+	db $4A
+	db $44
+	db $16
+	db $18
+	db $18
+	db $46
+	db $DF
+	db $50
+	db $A2
+	db $41
+	db $0A
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $DF
+	db $BB
+	db $BB
+	db $BB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $16
+	db $46
+	db $5E
+	db $18
+	db $16
+	db $B2
+	db $10
+	db $10
+	db $02
+	db $00
+	db $50
+	db $84
+	db $05
+	db $0A
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $BB
+	db $BB
+	db $BB
+	db $00
+	db $00
+	db $00
+	db $00
+	db $B2
+	db $02
+	db $5E
+	db $10
+	db $B2
+	db $D0
+	db $C6
+	db $C6
+	db $10
+	db $FB
+	db $50
+	db $88
+	db $09
+	db $0A
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $3C
+	db $3C
+	db $3C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $D0
+	db $10
+	db $BF
+	db $C6
+	db $D0
+	db $46
+	db $63
+	db $63
+	db $30
+	db $FB
+	db $50
+	db $80
+	db $01
+	db $0A
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $34
+	db $34
+	db $34
+	db $00
+	db $00
+	db $00
+	db $00
+	db $46
+	db $30
+	db $FF
+	db $63
+	db $46
+	db $0C
+	db $00
+	db $00
+	db $00
+	db $FB
+	db $50
+	db $FF
+	db $FF
+	db $0A
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $FB
+	db $2C
+	db $2C
+	db $2C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $0C
+	db $00
+	db $00
+	db $00
+	db $0C
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $FE
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $AA
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $FF
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $55
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+PixelLineFlipLUT:
+	db %00000000
+	db %10000000
+	db %01000000
+	db %11000000
+	db %00100000
+	db %10100000
+	db %01100000
+	db %11100000
+	db %00010000
+	db %10010000
+	db %01010000
+	db %11010000
+	db %00110000
+	db %10110000
+	db %01110000
+	db %11110000
+	db %00001000
+	db %10001000
+	db %01001000
+	db %11001000
+	db %00101000
+	db %10101000
+	db %01101000
+	db %11101000
+	db %00011000
+	db %10011000
+	db %01011000
+	db %11011000
+	db %00111000
+	db %10111000
+	db %01111000
+	db %11111000
+	db %00000100
+	db %10000100
+	db %01000100
+	db %11000100
+	db %00100100
+	db %10100100
+	db %01100100
+	db %11100100
+	db %00010100
+	db %10010100
+	db %01010100
+	db %11010100
+	db %00110100
+	db %10110100
+	db %01110100
+	db %11110100
+	db %00001100
+	db %10001100
+	db %01001100
+	db %11001100
+	db %00101100
+	db %10101100
+	db %01101100
+	db %11101100
+	db %00011100
+	db %10011100
+	db %01011100
+	db %11011100
+	db %00111100
+	db %10111100
+	db %01111100
+	db %11111100
+	db %00000010
+	db %10000010
+	db %01000010
+	db %11000010
+	db %00100010
+	db %10100010
+	db %01100010
+	db %11100010
+	db %00010010
+	db %10010010
+	db %01010010
+	db %11010010
+	db %00110010
+	db %10110010
+	db %01110010
+	db %11110010
+	db %00001010
+	db %10001010
+	db %01001010
+	db %11001010
+	db %00101010
+	db %10101010
+	db %01101010
+	db %11101010
+	db %00011010
+	db %10011010
+	db %01011010
+	db %11011010
+	db %00111010
+	db %10111010
+	db %01111010
+	db %11111010
+	db %00000110
+	db %10000110
+	db %01000110
+	db %11000110
+	db %00100110
+	db %10100110
+	db %01100110
+	db %11100110
+	db %00010110
+	db %10010110
+	db %01010110
+	db %11010110
+	db %00110110
+	db %10110110
+	db %01110110
+	db %11110110
+	db %00001110
+	db %10001110
+	db %01001110
+	db %11001110
+	db %00101110
+	db %10101110
+	db %01101110
+	db %11101110
+	db %00011110
+	db %10011110
+	db %01011110
+	db %11011110
+	db %00111110
+	db %10111110
+	db %01111110
+	db %11111110
+	db %00000001
+	db %10000001
+	db %01000001
+	db %11000001
+	db %00100001
+	db %10100001
+	db %01100001
+	db %11100001
+	db %00010001
+	db %10010001
+	db %01010001
+	db %11010001
+	db %00110001
+	db %10110001
+	db %01110001
+	db %11110001
+	db %00001001
+	db %10001001
+	db %01001001
+	db %11001001
+	db %00101001
+	db %10101001
+	db %01101001
+	db %11101001
+	db %00011001
+	db %10011001
+	db %01011001
+	db %11011001
+	db %00111001
+	db %10111001
+	db %01111001
+	db %11111001
+	db %00000101
+	db %10000101
+	db %01000101
+	db %11000101
+	db %00100101
+	db %10100101
+	db %01100101
+	db %11100101
+	db %00010101
+	db %10010101
+	db %01010101
+	db %11010101
+	db %00110101
+	db %10110101
+	db %01110101
+	db %11110101
+	db %00001101
+	db %10001101
+	db %01001101
+	db %11001101
+	db %00101101
+	db %10101101
+	db %01101101
+	db %11101101
+	db %00011101
+	db %10011101
+	db %01011101
+	db %11011101
+	db %00111101
+	db %10111101
+	db %01111101
+	db %11111101
+	db %00000011
+	db %10000011
+	db %01000011
+	db %11000011
+	db %00100011
+	db %10100011
+	db %01100011
+	db %11100011
+	db %00010011
+	db %10010011
+	db %01010011
+	db %11010011
+	db %00110011
+	db %10110011
+	db %01110011
+	db %11110011
+	db %00001011
+	db %10001011
+	db %01001011
+	db %11001011
+	db %00101011
+	db %10101011
+	db %01101011
+	db %11101011
+	db %00011011
+	db %10011011
+	db %01011011
+	db %11011011
+	db %00111011
+	db %10111011
+	db %01111011
+	db %11111011
+	db %00000111
+	db %10000111
+	db %01000111
+	db %11000111
+	db %00100111
+	db %10100111
+	db %01100111
+	db %11100111
+	db %00010111
+	db %10010111
+	db %01010111
+	db %11010111
+	db %00110111
+	db %10110111
+	db %01110111
+	db %11110111
+	db %00001111
+	db %10001111
+	db %01001111
+	db %11001111
+	db %00101111
+	db %10101111
+	db %01101111
+	db %11101111
+	db %00011111
+	db %10011111
+	db %01011111
+	db %11011111
+	db %00111111
+	db %10111111
+	db %01111111
+	db %11111111
+txt_WALLY:
+	db "WALLY"
+	db $FF
+txt_WILMA:
+	db "WILMA"
+	db $FF
+	db "TOM"
+	db $FF
+	db "DICK"
+	db $FF
+	db "HARRY"
+	db $FF
+data_7C1B:
+	db $FE
+	db $43
+	db "TODAY'S WAGES"
 	db $B8
 	db $04
 	db $FE
 	db $46
-	db $57
-	db $41
-	db $4C
-	db $4C
-	db $59
-	db $27
-	db $53
-	db $20
-	db $50
-	db $41
-	db $59
+	db "WALLY'S PAY"
 	db $BD
 	db $03
-	db $57
-	db $49
-	db $4C
-	db $4D
-	db $41
-	db $27
-	db $53
-	db $20
-	db $50
-	db $41
-	db $59
+	db "WILMA'S PAY"
 	db $BD
 	db $03
-	db $54
-	db $4F
-	db $4D
-	db $27
-	db $53
-	db $20
-	db $50
-	db $41
-	db $59
+	db "TOM'S PAY"
 	db $BF
 	db $03
-	db $44
-	db $49
-	db $43
-	db $4B
-	db $27
-	db $53
-	db $20
-	db $50
-	db $41
-	db $59
+	db "DICK'S PAY"
 	db $BE
 	db $03
-	db $48
-	db $41
-	db $52
-	db $52
-	db $59
-	db $27
-	db $53
-	db $20
-	db $50
-	db $41
-	db $59
+	db "HARRY'S PAY"
 	db $FE
 	db $43
 	db $BF
 	db $04
-	db $4F
-	db $56
-	db $45
-	db $52
-	db $41
-	db $4C
-	db $4C
+	db "OVERALL"
 	db $FF
+data_7C76:
 	db $FE
 	db $44
-	db $59
-	db $4F
-	db $55
-	db $20
-	db $43
-	db $4C
-	db $45
-	db $56
-	db $45
-	db $52
-	db $20
-	db $44
-	db $49
-	db $43
-	db $4B
-	db $20
-	db $20
-	db $28
-	db $50
-	db $4C
-	db $55
-	db $53
-	db $20
-	db $54
-	db $4F
-	db $4D
-	db $2C
+	db "YOU CLEVER DICK  (PLUS TOM,"
 	db $AD
 	db $03
-	db $48
-	db $41
-	db $52
-	db $52
-	db $59
-	db $2C
-	db $20
-	db $57
-	db $49
-	db $4C
-	db $4D
-	db $41
-	db $20
-	db $41
-	db $4E
-	db $44
-	db $20
-	db $57
-	db $41
-	db $4C
-	db $4C
-	db $59
-	db $29
-	db $2E
+	db "HARRY, WILMA AND WALLY)."
 	db $B0
 	db $03
-	db $59
-	db $4F
-	db $55
-	db $27
-	db $56
-	db $45
-	db $20
-	db $4F
-	db $50
-	db $45
-	db $4E
-	db $45
-	db $44
-	db $20
-	db $54
-	db $48
-	db $45
-	db $20
-	db $53
-	db $41
-	db $46
-	db $45
-	db $2E
+	db "YOU'VE OPENED THE SAFE."
 	db $B1
 	db $03
-	db $50
-	db $45
-	db $52
-	db $48
-	db $41
-	db $50
-	db $53
-	db $20
-	db $20
-	db $45
-	db $56
-	db $45
-	db $52
-	db $59
-	db $4F
-	db $4E
-	db $45
-	db $27
-	db $53
-	db $20
-	db $20
-	db $4E
-	db $4F
-	db $54
-	db $20
-	db $20
-	db $41
+	db "PERHAPS  EVERYONE'S  NOT  A"
 	db $AD
 	db $03
-	db $57
-	db $41
-	db $4C
-	db $4C
-	db $59
-	db $20
-	db $41
-	db $46
-	db $54
-	db $45
-	db $52
-	db $20
-	db $41
-	db $4C
-	db $4C
-	db $2E
+	db "WALLY AFTER ALL."
 	db $B8
 	db $03
-	db $54
-	db $48
-	db $45
-	db $20
-	db $47
-	db $41
-	db $4E
-	db $47
-	db $20
-	db $48
-	db $41
-	db $56
-	db $45
-	db $20
-	db $42
-	db $45
-	db $45
-	db $4E
-	db $20
-	db $50
-	db $41
-	db $49
-	db $44
-	db $20
-	db $41
-	db $4E
-	db $44
+	db "THE GANG HAVE BEEN PAID AND"
 	db $AD
 	db $03
-	db $41
-	db $52
-	db $45
-	db $20
-	db $4E
-	db $4F
-	db $57
-	db $20
-	db $4F
-	db $46
-	db $46
-	db $20
-	db $4F
-	db $4E
-	db $20
-	db $54
-	db $48
-	db $45
-	db $49
-	db $52
-	db $20
-	db $48
-	db $4F
-	db $4C
-	db $53
-	db $2E
+	db "ARE NOW OFF ON THEIR HOLS."
 	db $AE
 	db $03
-	db $53
-	db $45
-	db $45
-	db $20
-	db $59
-	db $4F
-	db $55
-	db $20
-	db $41
-	db $47
-	db $41
-	db $49
-	db $4E
-	db $20
-	db $53
-	db $4F
-	db $4D
-	db $45
-	db $54
-	db $49
-	db $4D
-	db $45
-	db $2E
+	db "SEE YOU AGAIN SOMETIME."
 	db $FF
 data_7D48:
 	db $FE
@@ -8801,17 +8545,18 @@ data_7D48:
 	db "EARNED"
 	db $CE
 	db $00
-	db ",  BUT  CAN\'T"
+	db ",  BUT  CAN'T"
 	db $AF
 	db $03
-	db "HAVE  IT  \'COS  THE  SAFE"
+	db "HAVE  IT  'COS  THE  SAFE"
 	db $AF
 	db $03
-	db "WASN\'T OPENED, AND THAT\'S"
+	db "WASN'T OPENED, AND THAT'S"
 	db $AF
 	db $03
 	db "WHERE THE MONEY IS."
 	db $FF
+ControlOptionsText:
 	db $FE
 	db $42
 	db "KEY:-"
@@ -8833,7 +8578,8 @@ data_7D48:
 	db "KEY:-"
 	db $FE
 	db $46
-	db "   3.KEYBOARDº"
+	db "   3.KEYBOARD"
+	db $BA
 	db $08
 	db $FE
 	db $45
@@ -8841,42 +8587,19 @@ data_7D48:
 	db $FF
 	db $FE
 	db $47
-	db $4B
-	db $45
-	db $59
-	db $3A
-	db $2D
+	db "KEY:-"
 	db $FF
 data_7E3F:
-	db $FB
-	db $DC
-	db $DF
+	db $FB			; set char set
+	dw CharacterSet
 	db $FE
 	db $44
-	db $43
-	db $48
-	db $41
-	db $52
-	db $41
-	db $43
-	db $54
-	db $45
-	db $52
-	db $3A
+	db "CHARACTER:"
 	db $BE
-	db $02
+	db $02			; down 2 lines
 	db $FE
-	db $47
-	db $45
-	db $4E
-	db $44
-	db $55
-	db $52
-	db $41
-	db $4E
-	db $43
-	db $45
-	db $3A
+	db $47			; attrib - white ink
+	db "ENDURANCE:"
 	db $AE
 	db $00
 	db $FE
@@ -8893,156 +8616,42 @@ data_7E68:
 	db $FB
 	dw CharacterSet
 	db $FE
-	db $42
+	db $42			; attrib
 	db $FD
 	db $20
 	db $5B
 	db $FF
+data_7E71:
 	db $FE
 	db $45
 	db $CD
 	db $0C
-	db $48
-	db $4F
-	db $20
-	db $48
-	db $55
-	db $4D
-	db $2C
-	db $20
-	db $54
-	db $49
-	db $4D
-	db $45
-	db $20
-	db $46
-	db $4F
-	db $52
-	db $20
-	db $41
-	db $20
-	db $42
-	db $55
-	db $4E
+	db "HO HUM, TIME FOR A BUN"
 	db $B4
 	db $04
-	db $4D
-	db $4F
-	db $52
-	db $4E
-	db $49
-	db $4E
-	db $47
-	db $20
-	db $54
-	db $45
-	db $41
-	db $20
-	db $42
-	db $52
-	db $45
-	db $41
-	db $4B
+	db "MORNING TEA BREAK"
 	db $FF
+data_7E9F:
 	db $FE
 	db $43
 	db $CA
 	db $0C
-	db $52
-	db $55
-	db $42
-	db $42
-	db $41
-	db $20
-	db $44
-	db $55
-	db $42
-	db $20
-	db $44
-	db $55
-	db $42
-	db $2C
-	db $20
-	db $54
-	db $49
-	db $4D
-	db $45
-	db $20
-	db $46
-	db $4F
-	db $52
-	db $20
-	db $47
-	db $52
-	db $55
-	db $42
+	db "RUBBA DUB DUB, TIME FOR GRUB"
 	db $B5
 	db $04
-	db $4C
-	db $55
-	db $4E
-	db $43
-	db $48
-	db $20
-	db $54
-	db $49
-	db $4D
-	db $45
+	db "LUNCH TIME"
 	db $FF
+data_7ECC:
 	db $FE
 	db $46
 	db $CA
 	db $0C
-	db $46
-	db $49
-	db $44
-	db $44
-	db $4C
-	db $45
-	db $20
-	db $44
-	db $45
-	db $45
-	db $20
-	db $44
-	db $45
-	db $45
-	db $2C
-	db $20
-	db $54
-	db $49
-	db $4D
-	db $45
-	db $20
-	db $46
-	db $4F
-	db $52
-	db $20
-	db $54
-	db $45
-	db $41
+	db "FIDDLE DEE DEE, TIME FOR TEA"
 	db $B1
 	db $04
-	db $41
-	db $46
-	db $54
-	db $45
-	db $52
-	db $4E
-	db $4F
-	db $4F
-	db $4E
-	db $20
-	db $54
-	db $45
-	db $41
-	db $20
-	db $42
-	db $52
-	db $45
-	db $41
-	db $4B
+	db "AFTERNOON TEA BREAK"
 	db $FF
+data_7F02:
 	db $FE
 	db $42
 	db $FB
@@ -9063,6 +8672,7 @@ data_7E68:
 	db $02
 	db $03
 	db $FF
+data_7F16:
 	db $FB
 	db $DC
 	db $DF
@@ -9072,400 +8682,76 @@ data_7E68:
 	db $04
 	db $20
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $54
-	db $4F
-	db $57
-	db $4E
-	db $20
-	db $53
-	db $51
-	db $55
-	db $41
-	db $52
-	db $45
+txt_THE_TOWN_SQUARE:
+	db "THE TOWN SQUARE"
 	db $FF
-	db $53
-	db $54
-	db $41
-	db $4D
-	db $50
-	db $20
-	db $53
-	db $54
-	db $52
-	db $45
-	db $45
-	db $54
+txt_STAMP_STREET:
+	db "STAMP STREET"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $50
-	db $4F
-	db $53
-	db $54
-	db $20
-	db $4F
-	db $46
-	db $46
-	db $49
-	db $43
-	db $45
+txt_THE_POST_OFFICE:
+	db "THE POST OFFICE"
 	db $FF
-	db $4D
-	db $41
-	db $52
-	db $4B
-	db $45
-	db $54
-	db $20
-	db $53
-	db $54
-	db $52
-	db $45
-	db $45
-	db $54
+	db "MARKET STREET"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $53
-	db $55
-	db $50
-	db $45
-	db $52
-	db $20
-	db $4D
-	db $41
-	db $52
-	db $4B
-	db $45
-	db $54
+	db "THE SUPER MARKET"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $50
-	db $41
-	db $52
-	db $4B
+	db "THE PARK"
 	db $FF
-	db $57
-	db $4F
-	db $42
-	db $42
-	db $4C
-	db $59
-	db $20
-	db $57
-	db $41
-	db $4C
-	db $4B
+	db "WOBBLY WALK"
 	db $FF
-	db $52
-	db $55
-	db $42
-	db $42
-	db $4C
-	db $45
-	db $20
-	db $52
-	db $4F
-	db $41
-	db $44
+	db "RUBBLE ROAD"
 	db $FF
-	db $57
-	db $41
-	db $4C
-	db $4C
-	db $20
-	db $53
-	db $54
-	db $52
-	db $45
-	db $45
-	db $54
+	db "WALL STREET"
 	db $FF
-	db $50
-	db $45
-	db $54
-	db $45
-	db $20
-	db $53
-	db $54
-	db $52
-	db $45
-	db $45
-	db $54
+	db "PETE STREET"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $57
-	db $4F
-	db $52
-	db $4B
-	db $20
-	db $53
-	db $48
-	db $45
-	db $44
+	db "THE WORK SHED"
 	db $FF
-	db $53
-	db $43
-	db $48
-	db $4F
-	db $4F
-	db $4C
-	db $20
-	db $4C
-	db $41
-	db $4E
-	db $45
+	db "SCHOOL LANE"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $53
-	db $43
-	db $48
-	db $4F
-	db $4F
-	db $4C
+	db "THE SCHOOL"
 	db $FF
-	db $42
-	db $41
-	db $4B
-	db $45
-	db $52
-	db $20
-	db $53
-	db $54
-	db $52
-	db $45
-	db $45
-	db $54
+	db "BAKER STREET"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $42
-	db $41
-	db $4B
-	db $45
-	db $52
-	db $53
+	db "THE BAKERS"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $50
-	db $55
-	db $42
+	db "THE PUB"
 	db $FF
-	db $4D
-	db $4F
-	db $54
-	db $4F
-	db $52
-	db $20
-	db $57
-	db $41
-	db $59
+	db "MOTOR WAY"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $4C
-	db $41
-	db $42
-	db $4F
-	db $52
-	db $41
-	db $54
-	db $4F
-	db $52
-	db $59
+	db "THE LABORATORY"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $47
-	db $41
-	db $52
-	db $41
-	db $47
-	db $45
+	db "THE GARAGE"
 	db $FF
-	db $52
-	db $45
-	db $46
-	db $45
-	db $52
-	db $45
-	db $4E
-	db $43
-	db $45
-	db $20
-	db $52
-	db $4F
-	db $41
-	db $44
+	db "REFERENCE ROAD"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $4C
-	db $49
-	db $42
-	db $52
-	db $41
-	db $52
-	db $59
+	db "THE LIBRARY"
 	db $FF
-	db $50
-	db $45
-	db $4E
-	db $4E
-	db $59
-	db $20
-	db $4C
-	db $41
-	db $4E
-	db $45
+	db "PENNY LANE"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $42
-	db $41
-	db $4E
-	db $4B
+	db "THE BANK"
 	db $FF
-	db $57
-	db $41
-	db $4C
-	db $4C
-	db $59
-	db $27
-	db $53
-	db $20
-	db $48
-	db $4F
-	db $55
-	db $53
-	db $45
+	db "WALLY'S HOUSE"
 	db $FF
-	db $4D
-	db $45
-	db $41
-	db $54
-	db $20
-	db $53
-	db $54
-	db $52
-	db $45
-	db $45
-	db $54
+	db "MEAT STREET"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $42
-	db $55
-	db $54
-	db $43
-	db $48
-	db $45
-	db $52
-	db $53
+	db "THE BUTCHERS"
 	db $FF
-	db $54
-	db $52
-	db $55
-	db $4E
-	db $4B
-	db $20
-	db $52
-	db $4F
-	db $41
-	db $44
+	db "TRUNK ROAD"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $5A
-	db $4F
-	db $4F
+	db "THE ZOO"
 	db $FF
-	db $52
-	db $41
-	db $49
-	db $4C
-	db $20
-	db $52
-	db $4F
-	db $41
-	db $44
+	db "RAIL ROAD"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $53
-	db $54
-	db $41
-	db $54
-	db $49
-	db $4F
-	db $4E
+	db "THE STATION"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $44
-	db $4F
-	db $43
-	db $4B
-	db $53
+	db "THE DOCKS"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $53
-	db $45
-	db $57
-	db $45
-	db $52
+	db "THE SEWER"
 	db $FF
-	db $54
-	db $48
-	db $45
-	db $20
-	db $43
-	db $41
-	db $56
-	db $45
+	db "THE CAVE"
 	db $FF
+data_80A9:
 	db $FF
 	db $00
 	db $00
@@ -9526,20 +8812,20 @@ data_7E68:
 	db $00
 	db $00
 	db $00
-label_80E5:
-	CALL function_B8ED
+function_80E5:
+	CALL ClearScreen
 	CALL function_B471
 label_80EB:
-	LD   HL,$7DC6
+	LD   HL,ControlOptionsText
 	LD   DE,$0003
 	CALL function_B8C4
-	LD   HL,$7E37
+	LD   HL,ControlOptionsText+113
 	LD   A,(ControlDevice)
 	LD   B,A
 	LD   A,$02
 	SUB  B
 	LD   B,A
-	ADD  A,A
+	ADD  A,A			; mult by 8
 	ADD  A,A
 	ADD  A,A
 	SUB  B
@@ -9548,12 +8834,12 @@ label_80EB:
 	CALL function_B8C4
 label_8109:
 	LD   A,$FF
-	LD   (data_B4E9),A
+	LD   (NumKeyBits),A
 	CALL label_B482
 	LD   A,(data_B55F)
 	OR   A
 	JR   NZ,label_8155
-	LD   A,(data_B4E9)
+	LD   A,(NumKeyBits)
 	BIT  0,A
 	JR   NZ,label_8123
 	CALL SetControlSinclair
@@ -9573,16 +8859,16 @@ label_8135:
 	JR   NZ,label_8109
 	RET 
 data_813A:
-	db $01
+	db $1C
 function_813B:
-	CALL function_B952
+	CALL DrawScreen
 	LD   BC,$0014
 label_8141:
 	PUSH BC
-	CALL function_EEA2
+	CALL DrawBackgroundToShadowScreen
 	CALL function_F578
-	CALL function_B9D6
-	CALL CopyShadowScreen
+	CALL DrawCharacters
+	CALL CopyShadowScreenToPixelScreen
 	POP  BC
 	DEC  BC
 	LD   A,B
@@ -9590,8 +8876,8 @@ label_8141:
 	JR   NZ,label_8141
 	RET 
 label_8155:
-	CALL function_BAD8
-	CALL function_B8ED
+	CALL SetupInitialGameState
+	CALL ClearScreen
 	CALL function_E3FD
 	CALL function_813B
 	LD   (data_813A),A
@@ -9601,20 +8887,21 @@ label_8164:
 	JR   Z,label_8175
 	LD   A,(IY+$0F)
 	LD   (data_813A),A
-	CALL function_B952
+	CALL DrawScreen
 label_8175:
 	CALL function_81AE
 	XOR  A
 	IN   A,($FE)
 	OR   $E0
 	CP   $FF
-	JP   NZ,label_80E5
+	JP   NZ,function_80E5
 	JR   label_8164
-label_8184:
-	DI  
-	LD   SP,$FC00
-	CALL label_80E5
-	CALL function_BAD8
+; This looks like the entry point to the program
+StartProgram:
+	DI  			; disable interrupts
+	LD   SP,ShadowScreenAttribs			; init stack
+	CALL function_80E5
+	CALL SetupInitialGameState
 	CALL function_E3FD
 	CALL function_813B
 label_8194:
@@ -9630,11 +8917,11 @@ label_8194:
 function_81AE:
 	CALL function_BAB4
 	CALL function_A92C
-	CALL function_EEC1
+	CALL DrawRoomAndItems
 	CALL function_F10E
 	CALL function_F814
-	CALL function_F277
-	CALL function_B9D6
+	CALL UpdateBaby
+	CALL DrawCharacters
 	RET 
 function_81C4:
 	LD   A,$FE
@@ -9646,27 +8933,28 @@ function_81C4:
 	BIT  0,A
 	RET  NZ
 	JP   function_81C4
-function_81D4:
+; This flips the character pointed at by IY to face the other direction
+FlipCharacterSprite:
 	EXX 
 	XOR  $01
 	LD   (IY-$3C),A
-	LD   E,(IY+$23)
+	LD   E,(IY+$23)			; get character sprite base pointer
 	LD   D,(IY+$28)
 	LD   BC,$0400
-label_81E3:
-	LD   A,(DE)
+sprite_flip_loop:
+	LD   A,(DE)			; get first pixel line
 	EX   AF,AF'
 	INC  DE
-	LD   A,(DE)
-	DEC  DE
-	LD   L,A
-	LD   H,$7B
-	LDI
+	LD   A,(DE)			; get second pixel line
+	DEC  DE			; point back to first byte
+	LD   L,A			; byte to flip
+	LD   H,$7B			; high byte of PixelLineFlipLUT
+	LDI			; use LUT to flip second byte and store over first
 	EX   AF,AF'
 	LD   H,$7B
 	LD   L,A
-	LDI
-	JP   PE,label_81E3
+	LDI			; use LUT to flip first byte & store over second
+	JP   PE,sprite_flip_loop
 	EXX 
 	RET 
 YPosScreenAddrLUT:
@@ -10609,56 +9897,56 @@ Beer_Masked:
 	db $7B
 	db $FF
 MaskedSprites2_0:
-	db $00,$07,$7F,$F0
-	db $00,$07,$67,$F0
-	db $00,$07,$47,$E0
-	db $10,$0F,$03,$E0
-	db $F8,$0F,$03,$E0
-	db $F8,$0F,$03,$C0
+	db $E0,$00,$0F,$FE
+	db $E0,$00,$0F,$E6
+	db $E0,$00,$07,$E2
+	db $F0,$08,$07,$C0
+	db $F0,$1F,$07,$C0
+	db $F0,$1F,$03,$C0
 	db $F8,$1F,$03,$C0
 	db $F8,$1F,$03,$C0
 	db $F8,$1F,$03,$C0
 	db $F0,$0F,$03,$C0
 	db $F0,$0F,$07,$E0
-	db $F0,$07,$06,$E0
-	db $E0,$03,$07,$70
-	db $E0,$01,$0E,$78
-	db $C0,$00,$0C,$1C
-	db $C1,$C0,$18,$06
-MaskedSprites2_1:
-	db $00,$07,$7F,$F0
-	db $00,$07,$77,$F0
-	db $00,$07,$63,$E0
-	db $08,$0F,$43,$E0
-	db $18,$0F,$03,$E0
-	db $F8,$0F,$03,$E0
-	db $F8,$0F,$03,$C0
-	db $F0,$1F,$03,$C0
-	db $F0,$1F,$07,$C0
-	db $F0,$1F,$07,$C0
-	db $F0,$0F,$07,$40
 	db $E0,$0F,$07,$60
 	db $C0,$07,$0E,$E0
-	db $80,$07,$1C,$70
-	db $01,$03,$38,$30
-	db $03,$83,$60,$08
+	db $80,$07,$1E,$70
+	db $00,$03,$38,$30
+	db $03,$83,$60,$18
+MaskedSprites2_1:
+	db $E0,$00,$0F,$FE
+	db $E0,$00,$0F,$EE
+	db $E0,$00,$07,$C6
+	db $F0,$10,$07,$C2
+	db $F0,$18,$07,$C0
+	db $F0,$1F,$07,$C0
+	db $F0,$1F,$03,$C0
+	db $F8,$0F,$03,$C0
+	db $F8,$0F,$03,$E0
+	db $F8,$0F,$03,$E0
+	db $F0,$0F,$02,$E0
+	db $F0,$07,$06,$E0
+	db $E0,$03,$07,$70
+	db $E0,$01,$0E,$38
+	db $C0,$80,$0C,$1C
+	db $C1,$C0,$10,$06
 MaskedSprites2_2:
-	db $FF,$8F,$00,$00
-	db $FF,$07,$00,$20
-	db $FC,$07,$00,$70
-	db $FC,$03,$01,$F0
-	db $F8,$03,$01,$F8
-	db $F8,$01,$03,$F8
-	db $F0,$01,$03,$FC
-	db $F0,$01,$06,$7C
-	db $F0,$01,$06,$F8
-	db $F0,$03,$06,$70
-	db $F0,$00,$07,$E0
-	db $E0,$00,$07,$C2
-	db $C0,$00,$0F,$0E
-	db $80,$00,$1F,$FC
+	db $F1,$FF,$00,$00
+	db $E0,$FF,$04,$00
+	db $E0,$3F,$0E,$00
+	db $C0,$3F,$0F,$80
+	db $C0,$1F,$1F,$80
+	db $80,$1F,$1F,$C0
+	db $80,$0F,$3F,$C0
+	db $80,$0F,$3E,$60
+	db $80,$0F,$1F,$60
+	db $C0,$0F,$0E,$60
+	db $00,$0F,$07,$E0
+	db $00,$07,$43,$E0
+	db $00,$03,$70,$F0
 	db $00,$01,$3F,$F8
-	db $00,$03,$7F,$F0
+	db $80,$00,$1F,$FC
+	db $C0,$00,$0F,$FE
 MaskedSprites2_3:
 	db $F0,$1F,$00,$00
 	db $E0,$03,$07,$C0
@@ -11663,493 +10951,493 @@ MaskedSprites_7:
 	db $FF,$FF,$00,$00
 	db $FF,$FF,$00,$00
 Wally_Masked_0:
-	db $F0,$00,$00,$00
-	db $E0,$00,$07,$3E
-	db $E0,$00,$0F,$FF
-	db $80,$00,$07,$FE
-	db $80,$00,$3C,$3C
+	db $00,$0F,$00,$00
+	db $00,$07,$7C,$E0
+	db $00,$07,$FF,$F0
+	db $00,$01,$7F,$E0
+	db $00,$01,$3C,$3C
 	db $80,$01,$01,$80
-	db $F0,$01,$06,$B4
-	db $F0,$01,$07,$F4
-	db $F0,$01,$01,$FC
-	db $FC,$01,$01,$F8
-	db $FC,$03,$00,$00
-	db $F8,$01,$01,$F8
-	db $F0,$00,$03,$8C
-	db $E0,$00,$07,$76
-	db $C0,$00,$0F,$76
-	db $C0,$00,$1F,$8A
-	db $80,$00,$3F,$BA
-	db $00,$00,$00,$5A
-	db $00,$00,$7F,$DA
-	db $00,$00,$7F,$BC
-	db $00,$00,$7F,$A8
-	db $00,$01,$3B,$D0
-	db $80,$03,$17,$F0
-	db $C0,$03,$0F,$E8
-	db $E0,$03,$0F,$88
-	db $E0,$03,$0F,$98
-	db $E0,$03,$07,$D8
-	db $F0,$01,$03,$38
-	db $80,$01,$07,$BC
-	db $00,$00,$20,$00
-	db $00,$00,$77,$9E
-	db $00,$00,$76,$9A
+	db $80,$0F,$2D,$60
+	db $80,$0F,$2F,$E0
+	db $80,$0F,$3F,$80
+	db $80,$3F,$1F,$80
+	db $C0,$3F,$00,$00
+	db $80,$1F,$1F,$80
+	db $00,$0F,$31,$C0
+	db $00,$07,$6E,$E0
+	db $00,$03,$6E,$F0
+	db $00,$03,$51,$F8
+	db $00,$01,$5D,$FC
+	db $00,$00,$5A,$00
+	db $00,$00,$5B,$FE
+	db $00,$00,$3D,$FE
+	db $00,$00,$15,$FE
+	db $80,$00,$0B,$DC
+	db $C0,$01,$0F,$E8
+	db $C0,$03,$17,$F0
+	db $C0,$07,$11,$F0
+	db $C0,$07,$19,$F0
+	db $C0,$07,$1B,$E0
+	db $80,$0F,$1C,$C0
+	db $80,$01,$3D,$E0
+	db $00,$00,$00,$04
+	db $00,$00,$79,$EE
+	db $00,$00,$59,$6E
 Wally_Masked_1:
-	db $E0,$00,$07,$3E
-	db $E0,$00,$0F,$FF
-	db $80,$00,$07,$FE
-	db $80,$00,$3C,$1C
+	db $00,$07,$7C,$E0
+	db $00,$07,$FF,$F0
+	db $00,$01,$7F,$E0
+	db $00,$01,$38,$3C
 	db $80,$01,$01,$80
-	db $F0,$01,$06,$B4
-	db $F0,$01,$07,$F4
-	db $F0,$01,$01,$FC
-	db $FC,$01,$01,$F8
-	db $FC,$03,$00,$00
-	db $FC,$01,$01,$F8
-	db $F8,$01,$01,$9C
-	db $F0,$00,$03,$6C
-	db $E0,$00,$06,$F6
-	db $80,$00,$0F,$0E
-	db $80,$00,$3F,$6E
-	db $00,$00,$01,$68
-	db $00,$00,$7F,$6E
-	db $00,$00,$7F,$6E
-	db $00,$00,$7E,$F6
-	db $00,$00,$3E,$AC
-	db $80,$01,$1F,$58
-	db $C0,$03,$0F,$F0
-	db $E0,$07,$07,$F0
-	db $F0,$03,$07,$E0
-	db $F0,$01,$03,$E8
-	db $F8,$01,$03,$EC
-	db $F8,$01,$01,$DC
-	db $E0,$01,$03,$E8
-	db $C0,$03,$08,$10
-	db $C0,$07,$1D,$E0
-	db $C0,$0F,$1D,$A0
-Wally_Masked_2:
-	db $E0,$00,$07,$3E
-	db $E0,$00,$0F,$FF
-	db $80,$00,$07,$FE
-	db $80,$00,$3C,$1C
-	db $80,$01,$01,$80
-	db $F0,$01,$06,$B4
-	db $F0,$01,$07,$F4
-	db $F0,$01,$01,$FC
-	db $FC,$01,$01,$F8
-	db $FC,$03,$00,$00
-	db $FC,$01,$01,$F8
-	db $F8,$01,$01,$9C
-	db $F0,$00,$03,$6C
-	db $E0,$00,$06,$F6
-	db $80,$00,$0E,$06
-	db $80,$00,$3F,$6E
-	db $00,$00,$02,$D0
-	db $00,$00,$7E,$DE
-	db $00,$00,$7E,$DE
-	db $00,$00,$7D,$EE
-	db $00,$00,$3D,$5C
-	db $80,$01,$1E,$B8
-	db $C0,$03,$0B,$F0
-	db $C0,$07,$13,$F0
-	db $C0,$07,$1B,$F0
-	db $C0,$03,$0D,$F0
-	db $E0,$03,$02,$F8
-	db $C0,$03,$0A,$70
-	db $C0,$03,$1D,$78
-	db $C0,$03,$1A,$00
-	db $C0,$03,$07,$78
-	db $F0,$03,$07,$68
-Wally_Masked_3:
-	db $F0,$00,$00,$00
-	db $E0,$00,$07,$3E
-	db $E0,$00,$0F,$FF
-	db $80,$00,$07,$FE
-	db $80,$00,$3C,$1C
-	db $80,$01,$01,$80
-	db $F0,$01,$06,$B4
-	db $F0,$01,$07,$F4
-	db $F0,$01,$01,$FC
-	db $FC,$01,$01,$F8
-	db $FC,$03,$00,$00
-	db $F8,$01,$01,$FC
-	db $F0,$00,$03,$9C
-	db $E0,$00,$07,$6E
-	db $C0,$00,$0E,$F6
-	db $C0,$00,$1F,$2E
-	db $80,$00,$3E,$DE
-	db $00,$00,$02,$D0
-	db $00,$00,$7D,$DE
-	db $00,$00,$7B,$BE
-	db $00,$00,$7A,$BC
-	db $00,$01,$3D,$78
-	db $80,$03,$1F,$F8
-	db $C0,$03,$07,$F8
-	db $E0,$03,$0B,$F8
-	db $E0,$03,$0D,$F8
-	db $E0,$03,$06,$F8
-	db $F0,$01,$03,$78
-	db $80,$01,$07,$3C
-	db $00,$00,$20,$80
-	db $00,$00,$75,$DE
-	db $00,$00,$75,$DA
-Wally_Masked_4:
-	db $E0,$00,$07,$3E
-	db $E0,$00,$0F,$FF
-	db $80,$00,$07,$FE
-	db $80,$00,$3C,$1C
-	db $80,$01,$01,$80
-	db $F0,$01,$06,$B4
-	db $F0,$01,$07,$F4
-	db $F0,$01,$01,$FC
-	db $FC,$01,$01,$F8
-	db $FC,$03,$00,$00
-	db $FC,$01,$01,$F8
-	db $F8,$01,$01,$9C
-	db $F0,$00,$03,$6C
-	db $E0,$00,$06,$F6
-	db $80,$00,$0E,$06
-	db $80,$00,$3F,$6E
-	db $00,$00,$02,$D0
-	db $00,$00,$7E,$DE
-	db $00,$00,$7E,$DE
-	db $00,$00,$7D,$EE
-	db $00,$00,$3D,$5C
-	db $80,$01,$1E,$B8
-	db $C0,$03,$0F,$F0
-	db $E0,$07,$07,$80
-	db $F0,$03,$07,$A0
-	db $F0,$01,$07,$E8
-	db $F0,$01,$01,$EC
-	db $F8,$01,$02,$1C
-	db $E0,$01,$02,$D0
-	db $C0,$07,$08,$E0
-	db $C0,$0F,$1D,$00
-	db $C0,$0F,$1D,$A0
-Wally_Masked_5:
-	db $E0,$00,$07,$3E
-	db $E0,$00,$0F,$FF
-	db $80,$00,$07,$FE
-	db $80,$00,$3C,$1C
-	db $80,$01,$01,$80
-	db $F0,$01,$06,$B4
-	db $F0,$01,$07,$F4
-	db $F0,$01,$01,$FC
-	db $FC,$01,$01,$F8
-	db $FC,$03,$00,$00
-	db $FC,$01,$01,$F8
-	db $F8,$01,$01,$9C
-	db $F0,$00,$03,$6C
-	db $E0,$00,$06,$F6
-	db $80,$00,$0F,$0E
-	db $80,$00,$3F,$6E
-	db $00,$00,$01,$68
-	db $00,$00,$7F,$6E
-	db $00,$00,$7E,$F6
-	db $00,$00,$7E,$AC
-	db $00,$01,$37,$58
-	db $80,$03,$17,$F0
-	db $C0,$03,$0F,$E0
-	db $C0,$03,$1F,$88
-	db $C0,$03,$1F,$38
-	db $C0,$03,$0F,$D8
-	db $E0,$03,$03,$E8
-	db $C0,$03,$08,$18
-	db $C0,$03,$1D,$E8
-	db $C0,$03,$1D,$A0
-	db $C0,$03,$02,$58
-	db $F0,$03,$07,$68
-Wally_Masked_6:
-	db $F0,$00,$00,$00
-	db $E0,$00,$07,$3E
-	db $E0,$00,$0F,$FF
-	db $80,$00,$07,$FE
-	db $80,$00,$3C,$3C
-	db $80,$01,$01,$80
-	db $F0,$01,$06,$B4
-	db $F0,$01,$07,$F4
-	db $F0,$01,$01,$FC
-	db $FC,$01,$01,$F8
-	db $FC,$03,$00,$00
-	db $F8,$01,$01,$F8
-	db $F0,$00,$03,$8C
-	db $E0,$00,$07,$76
-	db $C0,$00,$0F,$76
-	db $C0,$00,$1E,$AE
-	db $80,$00,$39,$DE
-	db $00,$00,$17,$A0
+	db $80,$0F,$2D,$60
+	db $80,$0F,$2F,$E0
+	db $80,$0F,$3F,$80
+	db $80,$3F,$1F,$80
+	db $C0,$3F,$00,$00
+	db $80,$3F,$1F,$80
+	db $80,$1F,$39,$80
+	db $00,$0F,$36,$C0
+	db $00,$07,$6F,$60
+	db $00,$01,$70,$F0
+	db $00,$01,$76,$FC
+	db $00,$00,$16,$80
+	db $00,$00,$76,$FE
+	db $00,$00,$76,$FE
 	db $00,$00,$6F,$7E
-	db $00,$00,$6C,$FC
-	db $00,$01,$73,$FC
-	db $00,$01,$3F,$F8
-	db $80,$01,$17,$F4
-	db $C0,$01,$0F,$EC
-	db $00,$00,$0F,$DC
-	db $00,$00,$DF,$3A
-	db $00,$00,$CE,$15
-	db $00,$80,$AC,$0E
-	db $01,$80,$70,$34
-	db $03,$81,$28,$38
-	db $83,$83,$10,$10
-	db $C7,$C7,$00,$00
-Wally_Masked_7:
-	db $F0,$00,$00,$00
-	db $E0,$00,$07,$3E
-	db $E0,$00,$0F,$FF
-	db $80,$00,$07,$FE
-	db $80,$00,$3C,$1C
+	db $00,$00,$35,$7C
+	db $80,$01,$1A,$F8
+	db $C0,$03,$0F,$F0
+	db $E0,$07,$0F,$E0
+	db $C0,$0F,$07,$E0
+	db $80,$0F,$17,$C0
+	db $80,$1F,$37,$C0
+	db $80,$1F,$3B,$80
+	db $80,$07,$17,$C0
+	db $C0,$03,$08,$10
+	db $E0,$03,$07,$B8
+	db $F0,$03,$05,$B8
+Wally_Masked_2:
+	db $00,$07,$7C,$E0
+	db $00,$07,$FF,$F0
+	db $00,$01,$7F,$E0
+	db $00,$01,$38,$3C
 	db $80,$01,$01,$80
-	db $F0,$01,$06,$B4
-	db $F0,$01,$07,$F4
-	db $F0,$01,$01,$FC
-	db $FC,$01,$01,$F8
-	db $FC,$01,$00,$00
-	db $F8,$01,$01,$FC
-	db $80,$00,$02,$1C
-	db $00,$00,$31,$EE
+	db $80,$0F,$2D,$60
+	db $80,$0F,$2F,$E0
+	db $80,$0F,$3F,$80
+	db $80,$3F,$1F,$80
+	db $C0,$3F,$00,$00
+	db $80,$3F,$1F,$80
+	db $80,$1F,$39,$80
+	db $00,$0F,$36,$C0
+	db $00,$07,$6F,$60
+	db $00,$01,$60,$70
+	db $00,$01,$76,$FC
+	db $00,$00,$0B,$40
+	db $00,$00,$7B,$7E
+	db $00,$00,$7B,$7E
+	db $00,$00,$77,$BE
+	db $00,$00,$3A,$BC
+	db $80,$01,$1D,$78
+	db $C0,$03,$0F,$D0
+	db $E0,$03,$0F,$C8
+	db $E0,$03,$0F,$D8
+	db $C0,$03,$0F,$B0
+	db $C0,$07,$1F,$40
+	db $C0,$03,$0E,$50
+	db $C0,$03,$1E,$B8
+	db $C0,$03,$00,$58
+	db $C0,$03,$1E,$E0
+	db $C0,$0F,$16,$E0
+Wally_Masked_3:
+	db $00,$0F,$00,$00
+	db $00,$07,$7C,$E0
+	db $00,$07,$FF,$F0
+	db $00,$01,$7F,$E0
+	db $00,$01,$38,$3C
+	db $80,$01,$01,$80
+	db $80,$0F,$2D,$60
+	db $80,$0F,$2F,$E0
+	db $80,$0F,$3F,$80
+	db $80,$3F,$1F,$80
+	db $C0,$3F,$00,$00
+	db $80,$1F,$3F,$80
+	db $00,$0F,$39,$C0
+	db $00,$07,$76,$E0
+	db $00,$03,$6F,$70
+	db $00,$03,$74,$F8
+	db $00,$01,$7B,$7C
+	db $00,$00,$0B,$40
+	db $00,$00,$7B,$BE
+	db $00,$00,$7D,$DE
+	db $00,$00,$3D,$5E
+	db $80,$00,$1E,$BC
+	db $C0,$01,$1F,$F8
+	db $C0,$03,$1F,$E0
+	db $C0,$07,$1F,$D0
+	db $C0,$07,$1F,$B0
+	db $C0,$07,$1F,$60
+	db $80,$0F,$1E,$C0
+	db $80,$01,$3C,$E0
+	db $00,$00,$01,$04
+	db $00,$00,$7B,$AE
+	db $00,$00,$5B,$AE
+Wally_Masked_4:
+	db $00,$07,$7C,$E0
+	db $00,$07,$FF,$F0
+	db $00,$01,$7F,$E0
+	db $00,$01,$38,$3C
+	db $80,$01,$01,$80
+	db $80,$0F,$2D,$60
+	db $80,$0F,$2F,$E0
+	db $80,$0F,$3F,$80
+	db $80,$3F,$1F,$80
+	db $C0,$3F,$00,$00
+	db $80,$3F,$1F,$80
+	db $80,$1F,$39,$80
+	db $00,$0F,$36,$C0
+	db $00,$07,$6F,$60
+	db $00,$01,$60,$70
+	db $00,$01,$76,$FC
+	db $00,$00,$0B,$40
+	db $00,$00,$7B,$7E
+	db $00,$00,$7B,$7E
+	db $00,$00,$77,$BE
+	db $00,$00,$3A,$BC
+	db $80,$01,$1D,$78
+	db $C0,$03,$0F,$F0
+	db $E0,$07,$01,$E0
+	db $C0,$0F,$05,$E0
+	db $80,$0F,$17,$E0
+	db $80,$0F,$37,$80
+	db $80,$1F,$38,$40
+	db $80,$07,$0B,$40
+	db $E0,$03,$07,$10
+	db $F0,$03,$00,$B8
+	db $F0,$03,$05,$B8
+Wally_Masked_5:
+	db $00,$07,$7C,$E0
+	db $00,$07,$FF,$F0
+	db $00,$01,$7F,$E0
+	db $00,$01,$38,$3C
+	db $80,$01,$01,$80
+	db $80,$0F,$2D,$60
+	db $80,$0F,$2F,$E0
+	db $80,$0F,$3F,$80
+	db $80,$3F,$1F,$80
+	db $C0,$3F,$00,$00
+	db $80,$3F,$1F,$80
+	db $80,$1F,$39,$80
+	db $00,$0F,$36,$C0
+	db $00,$07,$6F,$60
+	db $00,$01,$70,$F0
+	db $00,$01,$76,$FC
+	db $00,$00,$16,$80
+	db $00,$00,$76,$FE
+	db $00,$00,$6F,$7E
+	db $00,$00,$35,$7E
+	db $80,$00,$1A,$EC
+	db $C0,$01,$0F,$E8
+	db $C0,$03,$07,$F0
+	db $C0,$03,$11,$F8
+	db $C0,$03,$1C,$F8
+	db $C0,$03,$1B,$F0
+	db $C0,$07,$17,$C0
+	db $C0,$03,$18,$10
+	db $C0,$03,$17,$B8
+	db $C0,$03,$05,$B8
+	db $C0,$03,$1A,$40
+	db $C0,$0F,$16,$E0
+Wally_Masked_6:
+	db $00,$0F,$00,$00
+	db $00,$07,$7C,$E0
+	db $00,$07,$FF,$F0
+	db $00,$01,$7F,$E0
+	db $00,$01,$3C,$3C
+	db $80,$01,$01,$80
+	db $80,$0F,$2D,$60
+	db $80,$0F,$2F,$E0
+	db $80,$0F,$3F,$80
+	db $80,$3F,$1F,$80
+	db $C0,$3F,$00,$00
+	db $80,$1F,$1F,$80
+	db $00,$0F,$31,$C0
+	db $00,$07,$6E,$E0
+	db $00,$03,$6E,$F0
+	db $00,$03,$75,$78
+	db $00,$01,$7B,$9C
+	db $00,$00,$05,$E8
+	db $00,$00,$7E,$F6
+	db $00,$00,$3F,$36
+	db $80,$00,$3F,$CE
+	db $80,$00,$1F,$FC
+	db $80,$01,$2F,$E8
+	db $80,$03,$37,$F0
+	db $00,$00,$3B,$F0
+	db $00,$00,$5C,$FB
+	db $00,$00,$A8,$73
+	db $01,$00,$70,$35
+	db $01,$80,$2C,$0E
+	db $81,$C0,$1C,$14
+	db $C1,$C1,$08,$08
+	db $E3,$E3,$00,$00
+Wally_Masked_7:
+	db $00,$0F,$00,$00
+	db $00,$07,$7C,$E0
+	db $00,$07,$FF,$F0
+	db $00,$01,$7F,$E0
+	db $00,$01,$38,$3C
+	db $80,$01,$01,$80
+	db $80,$0F,$2D,$60
+	db $80,$0F,$2F,$E0
+	db $80,$0F,$3F,$80
+	db $80,$3F,$1F,$80
+	db $80,$3F,$00,$00
+	db $80,$1F,$3F,$80
+	db $00,$01,$38,$40
+	db $00,$00,$77,$8C
 	db $00,$00,$6F,$F6
-	db $00,$00,$6F,$EE
-	db $80,$00,$00,$0E
-	db $00,$00,$1F,$F0
+	db $00,$00,$77,$F6
+	db $00,$01,$70,$00
+	db $00,$00,$0F,$F8
 	db $00,$00,$7F,$FE
-	db $00,$00,$7B,$FE
-	db $00,$00,$37,$FC
-	db $00,$00,$17,$F8
-	db $00,$00,$CF,$E3
-	db $00,$00,$EF,$DA
-	db $00,$00,$CF,$3B
-	db $00,$00,$1E,$FB
-	db $00,$00,$DC,$18
-	db $01,$C0,$D8,$03
-	db $03,$F0,$50,$07
-	db $07,$F0,$C0,$03
+	db $00,$00,$7F,$DE
+	db $00,$00,$3F,$EC
+	db $00,$00,$1F,$E8
+	db $00,$00,$C7,$F3
+	db $00,$00,$5B,$F7
+	db $00,$00,$DC,$F3
+	db $00,$00,$DF,$78
+	db $00,$00,$18,$3B
+	db $03,$80,$C0,$1B
+	db $0F,$C0,$E0,$0A
+	db $0F,$E0,$C0,$03
 	db $1F,$F8,$00,$00
 	db $FF,$FF,$00,$00
 Wilma_Masked_0:
-	db $F0,$07,$03,$E0
-	db $E0,$03,$06,$B0
-	db $E0,$03,$0D,$F8
-	db $C0,$03,$0B,$98
-	db $C0,$03,$1F,$68
-	db $C0,$03,$0B,$60
-	db $C0,$0F,$1F,$40
-	db $C0,$07,$0B,$40
-	db $E0,$07,$0D,$70
-	db $E0,$07,$07,$60
-	db $E0,$0F,$07,$00
-	db $E0,$0F,$0E,$00
-	db $E0,$07,$06,$E0
-	db $E0,$07,$0E,$D0
-	db $C0,$07,$06,$D0
-	db $C0,$07,$1E,$D0
-	db $F8,$07,$02,$D0
-	db $F8,$07,$02,$E0
-	db $F0,$0F,$02,$C0
-	db $F0,$1F,$06,$C0
-	db $F0,$1F,$06,$C0
-	db $F0,$1F,$07,$40
-	db $E0,$1F,$06,$C0
-	db $E0,$1F,$0F,$40
-	db $C0,$0F,$0F,$80
-	db $C0,$0F,$1F,$E0
-	db $C0,$0F,$00,$00
-	db $C0,$0F,$1C,$E0
-	db $C0,$0F,$18,$60
-	db $83,$07,$10,$20
-	db $83,$83,$30,$30
-	db $83,$83,$28,$28
-Wilma_Masked_1:
-	db $F0,$07,$03,$E0
-	db $E0,$03,$07,$70
-	db $E0,$03,$0F,$F8
-	db $E0,$03,$0B,$98
-	db $C0,$03,$0F,$60
-	db $C0,$0F,$1F,$60
-	db $C0,$0F,$0F,$40
-	db $E0,$07,$0B,$40
-	db $E0,$07,$0F,$70
-	db $E0,$07,$07,$60
-	db $E0,$0F,$0F,$00
-	db $E0,$0F,$06,$00
-	db $E0,$07,$0E,$E0
-	db $C0,$07,$06,$D0
-	db $C0,$07,$1E,$D0
-	db $C0,$07,$00,$D0
-	db $F8,$07,$02,$D0
-	db $F8,$07,$02,$E0
-	db $F0,$0F,$02,$C0
-	db $F0,$1F,$06,$C0
-	db $F0,$0F,$06,$C0
-	db $F0,$0F,$07,$60
-	db $F0,$0F,$07,$60
-	db $F0,$0F,$03,$80
-	db $F8,$0F,$03,$E0
-	db $F8,$0F,$00,$00
-	db $E0,$0F,$03,$60
-	db $E0,$0F,$0B,$40
-	db $E0,$1F,$0B,$00
-	db $E0,$3F,$05,$00
-	db $F0,$1F,$05,$80
-	db $F0,$1F,$01,$40
-Wilma_Masked_2:
-	db $F0,$07,$03,$E0
-	db $E0,$03,$06,$B0
-	db $E0,$03,$0D,$F8
-	db $C0,$03,$0B,$98
-	db $C0,$03,$1F,$60
-	db $C0,$0F,$0B,$60
-	db $C0,$0F,$1F,$40
-	db $C0,$07,$0B,$40
-	db $E0,$07,$0D,$70
-	db $E0,$07,$07,$60
-	db $E0,$0F,$07,$00
-	db $E0,$0F,$0E,$00
-	db $C0,$07,$06,$E0
-	db $C0,$07,$1E,$D0
-	db $C0,$07,$00,$D0
-	db $F8,$07,$02,$D0
-	db $F8,$0F,$02,$E0
-	db $F0,$07,$03,$60
-	db $F0,$03,$07,$70
-	db $F0,$03,$07,$B8
-	db $F0,$03,$07,$D8
-	db $F0,$03,$07,$C0
-	db $F0,$0F,$03,$E0
-	db $F0,$0F,$03,$E0
-	db $F0,$0F,$07,$E0
-	db $F0,$0F,$00,$00
-	db $F0,$0F,$07,$60
-	db $F0,$0F,$06,$20
-	db $F0,$07,$06,$60
-	db $E0,$07,$04,$50
-	db $E0,$07,$0C,$00
-	db $E0,$FF,$0A,$00
-Wilma_Masked_3:
-	db $F0,$07,$03,$E0
-	db $E0,$03,$06,$B0
-	db $E0,$03,$0D,$F8
-	db $C0,$03,$0B,$98
-	db $C0,$03,$1F,$60
-	db $C0,$0F,$0B,$60
-	db $C0,$0F,$1F,$40
-	db $C0,$07,$0B,$40
-	db $E0,$07,$0D,$70
-	db $E0,$07,$07,$60
-	db $E0,$0F,$07,$00
-	db $E0,$0F,$0E,$00
-	db $C0,$07,$06,$E0
-	db $C0,$07,$1E,$D0
-	db $C0,$07,$00,$D0
-	db $F8,$07,$02,$D0
-	db $F8,$07,$02,$D0
-	db $F0,$03,$02,$E0
-	db $F0,$03,$07,$78
-	db $F0,$03,$07,$98
-	db $F0,$03,$07,$C0
-	db $F0,$1F,$07,$C0
-	db $E0,$1F,$07,$C0
-	db $C0,$0F,$0F,$C0
-	db $C0,$0F,$1F,$E0
-	db $C0,$0F,$00,$00
-	db $C0,$0F,$1C,$E0
-	db $C0,$0F,$18,$60
-	db $C3,$0F,$18,$60
-	db $83,$07,$10,$20
-	db $83,$83,$30,$30
-	db $83,$83,$28,$28
-Wilma_Masked_4:
-	db $F0,$07,$03,$E0
-	db $E0,$03,$06,$B0
-	db $E0,$03,$0D,$F8
-	db $C0,$03,$0B,$98
-	db $C0,$03,$1F,$60
-	db $C0,$0F,$0B,$60
-	db $C0,$0F,$1F,$40
-	db $C0,$07,$0B,$40
-	db $E0,$07,$0D,$70
-	db $E0,$07,$07,$60
-	db $E0,$0F,$07,$00
-	db $E0,$0F,$0E,$00
-	db $C0,$07,$06,$E0
-	db $C0,$07,$1E,$D0
-	db $C0,$07,$00,$D0
-	db $F8,$07,$02,$D0
-	db $F8,$0F,$02,$E0
-	db $F8,$0F,$03,$60
-	db $F0,$07,$03,$60
-	db $F0,$07,$07,$70
-	db $F0,$03,$07,$B0
-	db $F0,$03,$07,$D8
-	db $F0,$03,$07,$D8
-	db $F0,$03,$03,$E0
-	db $F8,$0F,$03,$E0
-	db $F8,$0F,$00,$00
-	db $E0,$0F,$01,$E0
-	db $E0,$0F,$0F,$80
-	db $E0,$3F,$04,$00
-	db $F0,$3F,$05,$00
-	db $F0,$1F,$01,$80
-	db $FC,$1F,$01,$40
-Wilma_Masked_5:
-	db $F0,$07,$03,$E0
-	db $E0,$03,$07,$70
-	db $E0,$03,$0F,$F8
-	db $E0,$03,$0B,$98
-	db $C0,$03,$0F,$60
-	db $C0,$0F,$1F,$60
-	db $C0,$0F,$0F,$40
-	db $E0,$07,$0B,$40
-	db $E0,$07,$0F,$70
-	db $E0,$07,$07,$60
-	db $E0,$0F,$0F,$00
-	db $E0,$0F,$06,$00
-	db $E0,$07,$0E,$E0
-	db $C0,$07,$06,$D0
-	db $C0,$07,$1E,$D0
-	db $C0,$07,$00,$D0
-	db $F8,$07,$02,$D0
-	db $F8,$07,$02,$E0
-	db $F0,$0F,$02,$C0
-	db $F0,$0F,$07,$60
-	db $F0,$07,$07,$60
-	db $F0,$07,$07,$B0
-	db $F0,$07,$03,$B0
-	db $F0,$07,$03,$C0
-	db $F0,$0F,$07,$E0
-	db $F0,$0F,$00,$00
-	db $F0,$0F,$07,$60
-	db $F0,$0F,$06,$20
-	db $F0,$07,$06,$60
-	db $E0,$07,$04,$50
-	db $E0,$07,$0C,$00
-	db $E0,$FF,$0A,$00
-Wilma_Masked_6:
-	db $F0,$07,$03,$E0
-	db $E0,$03,$06,$B0
-	db $E0,$03,$0D,$F8
-	db $C0,$03,$0B,$98
-	db $C0,$03,$1F,$68
-	db $C0,$03,$0B,$60
-	db $C0,$0F,$1F,$40
-	db $C0,$07,$0B,$40
-	db $E0,$07,$0D,$70
-	db $E0,$07,$07,$60
-	db $E0,$0F,$07,$00
-	db $E0,$0F,$0E,$00
-	db $E0,$07,$06,$E0
-	db $E0,$07,$0E,$D0
-	db $C0,$07,$06,$D0
-	db $C0,$07,$1E,$D0
-	db $F8,$07,$02,$D0
-	db $F0,$03,$02,$E0
-	db $F0,$03,$07,$78
-	db $F0,$03,$07,$98
-	db $F0,$03,$07,$C0
 	db $E0,$0F,$07,$C0
-	db $E0,$0F,$0F,$E0
-	db $C0,$07,$0F,$E0
+	db $C0,$07,$0D,$60
+	db $C0,$07,$1F,$B0
+	db $C0,$03,$19,$D0
+	db $C0,$03,$16,$F8
+	db $C0,$03,$06,$D0
+	db $F0,$03,$02,$F8
+	db $E0,$03,$02,$D0
+	db $E0,$07,$0E,$B0
+	db $E0,$07,$06,$E0
+	db $F0,$07,$00,$E0
+	db $F0,$07,$00,$70
+	db $E0,$07,$07,$60
+	db $E0,$07,$0B,$70
+	db $E0,$03,$0B,$60
+	db $E0,$03,$0B,$78
+	db $E0,$1F,$0B,$40
+	db $E0,$1F,$07,$40
+	db $F0,$0F,$03,$40
+	db $F8,$0F,$03,$60
+	db $F8,$0F,$03,$60
+	db $F8,$0F,$02,$E0
+	db $F8,$07,$03,$60
+	db $F8,$07,$02,$F0
+	db $F0,$03,$01,$F0
+	db $F0,$03,$07,$F8
+	db $F0,$03,$00,$00
+	db $F0,$03,$07,$38
+	db $F0,$03,$06,$18
+	db $E0,$C1,$04,$08
+	db $C1,$C1,$0C,$0C
+	db $C1,$C1,$14,$14
+Wilma_Masked_1:
+	db $E0,$0F,$07,$C0
+	db $C0,$07,$0E,$E0
 	db $C0,$07,$1F,$F0
+	db $C0,$07,$19,$D0
+	db $C0,$03,$06,$F0
+	db $F0,$03,$06,$F8
+	db $F0,$03,$02,$F0
+	db $E0,$07,$02,$D0
+	db $E0,$07,$0E,$F0
+	db $E0,$07,$06,$E0
+	db $F0,$07,$00,$F0
+	db $F0,$07,$00,$60
+	db $E0,$07,$07,$70
+	db $E0,$03,$0B,$60
+	db $E0,$03,$0B,$78
+	db $E0,$03,$0B,$00
+	db $E0,$1F,$0B,$40
+	db $E0,$1F,$07,$40
+	db $F0,$0F,$03,$40
+	db $F8,$0F,$03,$60
+	db $F0,$0F,$03,$60
+	db $F0,$0F,$06,$E0
+	db $F0,$0F,$06,$E0
+	db $F0,$0F,$01,$C0
+	db $F0,$1F,$07,$C0
+	db $F0,$1F,$00,$00
+	db $F0,$07,$06,$C0
+	db $F0,$07,$02,$D0
+	db $F8,$07,$00,$D0
+	db $FC,$07,$00,$A0
+	db $F8,$0F,$01,$A0
+	db $F8,$0F,$02,$80
+Wilma_Masked_2:
+	db $E0,$0F,$07,$C0
+	db $C0,$07,$0D,$60
+	db $C0,$07,$1F,$B0
+	db $C0,$03,$19,$D0
+	db $C0,$03,$06,$F8
+	db $F0,$03,$06,$D0
+	db $F0,$03,$02,$F8
+	db $E0,$03,$02,$D0
+	db $E0,$07,$0E,$B0
+	db $E0,$07,$06,$E0
+	db $F0,$07,$00,$E0
+	db $F0,$07,$00,$70
+	db $E0,$03,$07,$60
+	db $E0,$03,$0B,$78
+	db $E0,$03,$0B,$00
+	db $E0,$1F,$0B,$40
+	db $F0,$1F,$07,$40
+	db $E0,$0F,$06,$C0
+	db $C0,$0F,$0E,$E0
+	db $C0,$0F,$1D,$E0
+	db $C0,$0F,$1B,$E0
+	db $C0,$0F,$03,$E0
+	db $F0,$0F,$07,$C0
+	db $F0,$0F,$07,$C0
+	db $F0,$0F,$07,$E0
+	db $F0,$0F,$00,$00
+	db $F0,$0F,$06,$E0
+	db $F0,$0F,$04,$60
+	db $E0,$0F,$06,$60
+	db $E0,$07,$0A,$20
+	db $E0,$07,$00,$30
+	db $FF,$07,$00,$50
+Wilma_Masked_3:
+	db $E0,$0F,$07,$C0
+	db $C0,$07,$0D,$60
+	db $C0,$07,$1F,$B0
+	db $C0,$03,$19,$D0
+	db $C0,$03,$06,$F8
+	db $F0,$03,$06,$D0
+	db $F0,$03,$02,$F8
+	db $E0,$03,$02,$D0
+	db $E0,$07,$0E,$B0
+	db $E0,$07,$06,$E0
+	db $F0,$07,$00,$E0
+	db $F0,$07,$00,$70
+	db $E0,$03,$07,$60
+	db $E0,$03,$0B,$78
+	db $E0,$03,$0B,$00
+	db $E0,$1F,$0B,$40
+	db $E0,$1F,$0B,$40
+	db $C0,$0F,$07,$40
+	db $C0,$0F,$1E,$E0
+	db $C0,$0F,$19,$E0
+	db $C0,$0F,$03,$E0
+	db $F8,$0F,$03,$E0
+	db $F8,$07,$03,$E0
+	db $F0,$03,$03,$F0
+	db $F0,$03,$07,$F8
+	db $F0,$03,$00,$00
+	db $F0,$03,$07,$38
+	db $F0,$03,$06,$18
+	db $F0,$C3,$06,$18
+	db $E0,$C1,$04,$08
+	db $C1,$C1,$0C,$0C
+	db $C1,$C1,$14,$14
+Wilma_Masked_4:
+	db $E0,$0F,$07,$C0
+	db $C0,$07,$0D,$60
+	db $C0,$07,$1F,$B0
+	db $C0,$03,$19,$D0
+	db $C0,$03,$06,$F8
+	db $F0,$03,$06,$D0
+	db $F0,$03,$02,$F8
+	db $E0,$03,$02,$D0
+	db $E0,$07,$0E,$B0
+	db $E0,$07,$06,$E0
+	db $F0,$07,$00,$E0
+	db $F0,$07,$00,$70
+	db $E0,$03,$07,$60
+	db $E0,$03,$0B,$78
+	db $E0,$03,$0B,$00
+	db $E0,$1F,$0B,$40
+	db $F0,$1F,$07,$40
+	db $F0,$1F,$06,$C0
+	db $E0,$0F,$06,$C0
+	db $E0,$0F,$0E,$E0
+	db $C0,$0F,$0D,$E0
+	db $C0,$0F,$1B,$E0
+	db $C0,$0F,$1B,$E0
+	db $C0,$0F,$07,$C0
+	db $F0,$1F,$07,$C0
+	db $F0,$1F,$00,$00
+	db $F0,$07,$07,$80
+	db $F0,$07,$01,$F0
+	db $FC,$07,$00,$20
+	db $FC,$0F,$00,$A0
+	db $F8,$0F,$01,$80
+	db $F8,$3F,$02,$80
+Wilma_Masked_5:
+	db $E0,$0F,$07,$C0
+	db $C0,$07,$0E,$E0
+	db $C0,$07,$1F,$F0
+	db $C0,$07,$19,$D0
+	db $C0,$03,$06,$F0
+	db $F0,$03,$06,$F8
+	db $F0,$03,$02,$F0
+	db $E0,$07,$02,$D0
+	db $E0,$07,$0E,$F0
+	db $E0,$07,$06,$E0
+	db $F0,$07,$00,$F0
+	db $F0,$07,$00,$60
+	db $E0,$07,$07,$70
+	db $E0,$03,$0B,$60
+	db $E0,$03,$0B,$78
+	db $E0,$03,$0B,$00
+	db $E0,$1F,$0B,$40
+	db $E0,$1F,$07,$40
+	db $F0,$0F,$03,$40
+	db $F0,$0F,$06,$E0
+	db $E0,$0F,$06,$E0
+	db $E0,$0F,$0D,$E0
+	db $E0,$0F,$0D,$C0
+	db $E0,$0F,$03,$C0
+	db $F0,$0F,$07,$E0
+	db $F0,$0F,$00,$00
+	db $F0,$0F,$06,$E0
+	db $F0,$0F,$04,$60
+	db $E0,$0F,$06,$60
+	db $E0,$07,$0A,$20
+	db $E0,$07,$00,$30
+	db $FF,$07,$00,$50
+Wilma_Masked_6:
+	db $E0,$0F,$07,$C0
+	db $C0,$07,$0D,$60
+	db $C0,$07,$1F,$B0
+	db $C0,$03,$19,$D0
+	db $C0,$03,$16,$F8
+	db $C0,$03,$06,$D0
+	db $F0,$03,$02,$F8
+	db $E0,$03,$02,$D0
+	db $E0,$07,$0E,$B0
+	db $E0,$07,$06,$E0
+	db $F0,$07,$00,$E0
+	db $F0,$07,$00,$70
+	db $E0,$07,$07,$60
+	db $E0,$07,$0B,$70
+	db $E0,$03,$0B,$60
+	db $E0,$03,$0B,$78
+	db $E0,$1F,$0B,$40
+	db $C0,$0F,$07,$40
+	db $C0,$0F,$1E,$E0
+	db $C0,$0F,$19,$E0
+	db $C0,$0F,$03,$E0
+	db $F0,$07,$03,$E0
+	db $F0,$07,$07,$F0
+	db $E0,$03,$07,$F0
+	db $E0,$03,$0F,$F8
 	db $C0,$03,$03,$C0
 	db $80,$01,$1C,$38
 	db $01,$80,$38,$1C
@@ -12158,300 +11446,300 @@ Wilma_Masked_6:
 	db $1F,$F8,$00,$00
 	db $FF,$FF,$00,$00
 Wilma_Masked_7:
-	db $F0,$07,$03,$E0
-	db $E0,$03,$06,$B0
-	db $E0,$03,$0D,$F8
-	db $C0,$03,$0B,$98
-	db $C0,$03,$1F,$68
-	db $C0,$03,$0B,$60
-	db $C0,$0F,$1F,$40
-	db $C0,$07,$0B,$40
-	db $E0,$07,$0D,$70
-	db $E0,$07,$07,$60
-	db $E0,$0F,$0F,$00
-	db $E0,$0F,$06,$00
-	db $E0,$07,$0E,$E0
-	db $C0,$07,$06,$D0
-	db $C0,$07,$1E,$60
-	db $C0,$07,$01,$70
-	db $F8,$01,$03,$B8
-	db $F8,$01,$03,$DC
-	db $F0,$01,$03,$8C
-	db $F0,$01,$07,$C0
-	db $E0,$1F,$07,$C0
-	db $E0,$0F,$0F,$C0
-	db $C0,$07,$0F,$E0
-	db $00,$07,$1F,$F0
-	db $00,$07,$5F,$10
-	db $00,$07,$EE,$60
-	db $00,$0F,$00,$20
-	db $FF,$0F,$00,$60
-	db $FF,$0F,$00,$60
-	db $FF,$0F,$00,$20
-	db $FF,$8F,$00,$00
+	db $E0,$0F,$07,$C0
+	db $C0,$07,$0D,$60
+	db $C0,$07,$1F,$B0
+	db $C0,$03,$19,$D0
+	db $C0,$03,$16,$F8
+	db $C0,$03,$06,$D0
+	db $F0,$03,$02,$F8
+	db $E0,$03,$02,$D0
+	db $E0,$07,$0E,$B0
+	db $E0,$07,$06,$E0
+	db $F0,$07,$00,$F0
+	db $F0,$07,$00,$60
+	db $E0,$07,$07,$70
+	db $E0,$03,$0B,$60
+	db $E0,$03,$06,$78
+	db $E0,$03,$0E,$80
+	db $80,$1F,$1D,$C0
+	db $80,$1F,$3B,$C0
+	db $80,$0F,$31,$C0
+	db $80,$0F,$03,$E0
+	db $F8,$07,$03,$E0
+	db $F0,$07,$03,$F0
+	db $E0,$03,$07,$F0
+	db $E0,$00,$0F,$F8
+	db $E0,$00,$08,$FA
+	db $E0,$00,$06,$77
+	db $F0,$00,$04,$00
+	db $F0,$FF,$06,$00
+	db $F0,$FF,$06,$00
+	db $F0,$FF,$04,$00
+	db $F1,$FF,$00,$00
 	db $FF,$FF,$00,$00
 Tom_Masked_0:
-	db $FF,$80,$00,$00
-	db $FF,$00,$00,$2A
-	db $FE,$00,$00,$7E
-	db $FE,$00,$00,$C3
-	db $FC,$00,$00,$BC
-	db $FC,$00,$01,$7E
-	db $FC,$00,$01,$58
-	db $F0,$00,$00,$6F
-	db $E0,$00,$07,$BC
-	db $C0,$01,$0C,$D8
-	db $C0,$01,$1B,$6C
-	db $C0,$01,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$1B,$20
-	db $E0,$1F,$0B,$40
-	db $C0,$1F,$03,$00
-	db $C0,$0F,$1B,$40
-	db $C0,$0F,$1B,$60
-	db $C0,$07,$0B,$A0
-	db $C0,$07,$13,$B0
-	db $C0,$07,$1C,$70
-	db $C1,$07,$1C,$30
-	db $C1,$07,$1C,$70
-	db $81,$03,$10,$20
-	db $81,$03,$3C,$78
-	db $81,$03,$10,$20
-	db $C3,$87,$18,$30
-	db $80,$01,$18,$30
-	db $80,$01,$3A,$74
-	db $80,$01,$26,$4C
+	db $01,$FF,$00,$00
+	db $00,$FF,$54,$00
+	db $00,$7F,$7E,$00
+	db $00,$7F,$C3,$00
+	db $00,$3F,$3D,$00
+	db $00,$3F,$7E,$80
+	db $00,$3F,$1A,$80
+	db $00,$0F,$F6,$00
+	db $00,$07,$3D,$E0
+	db $80,$03,$1B,$30
+	db $80,$03,$36,$D8
+	db $80,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$04,$D8
+	db $F8,$07,$02,$D0
+	db $F8,$03,$00,$C0
+	db $F0,$03,$02,$D8
+	db $F0,$03,$06,$D8
+	db $E0,$03,$05,$D0
+	db $E0,$03,$0D,$C8
+	db $E0,$03,$0E,$38
+	db $E0,$83,$0C,$38
+	db $E0,$83,$0E,$38
+	db $C0,$81,$04,$08
+	db $C0,$81,$1E,$3C
+	db $C0,$81,$04,$08
+	db $E1,$C3,$0C,$18
+	db $80,$01,$0C,$18
+	db $80,$01,$2E,$5C
+	db $80,$01,$32,$64
 Tom_Masked_1:
-	db $FF,$00,$00,$2A
-	db $FE,$00,$00,$7E
-	db $FE,$00,$00,$C3
-	db $FC,$00,$00,$BC
-	db $FC,$00,$01,$7E
-	db $FC,$00,$01,$58
-	db $F0,$00,$00,$6F
-	db $E0,$00,$07,$BC
-	db $C0,$01,$0C,$D8
-	db $C0,$01,$1B,$6C
-	db $C0,$01,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$1B,$A0
-	db $C0,$0F,$1B,$A0
-	db $C0,$0F,$0B,$A0
-	db $C0,$0F,$01,$C0
-	db $C0,$0F,$1E,$E0
-	db $C0,$03,$1F,$60
-	db $C0,$03,$0F,$38
-	db $E0,$03,$07,$98
-	db $F0,$03,$03,$C0
-	db $F8,$1F,$01,$C0
+	db $00,$FF,$54,$00
+	db $00,$7F,$7E,$00
+	db $00,$7F,$C3,$00
+	db $00,$3F,$3D,$00
+	db $00,$3F,$7E,$80
+	db $00,$3F,$1A,$80
+	db $00,$0F,$F6,$00
+	db $00,$07,$3D,$E0
+	db $80,$03,$1B,$30
+	db $80,$03,$36,$D8
+	db $80,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$05,$D8
+	db $F0,$03,$05,$D8
+	db $F0,$03,$05,$D0
+	db $F0,$03,$03,$80
+	db $F0,$03,$07,$78
+	db $C0,$03,$06,$F8
+	db $C0,$03,$1C,$F0
+	db $C0,$07,$19,$E0
+	db $C0,$0F,$03,$C0
+	db $F8,$1F,$03,$80
 	db $F8,$1F,$03,$C0
-	db $E0,$1F,$03,$80
-	db $E0,$1F,$0D,$80
-	db $E0,$1F,$0B,$C0
-	db $80,$1F,$0D,$00
-	db $80,$3F,$39,$80
-	db $80,$07,$39,$80
-	db $80,$07,$1B,$D0
-	db $C0,$07,$0A,$70
+	db $F8,$07,$01,$C0
+	db $F8,$07,$01,$B0
+	db $F8,$07,$03,$D0
+	db $F8,$01,$00,$B0
+	db $FC,$01,$01,$9C
+	db $E0,$01,$01,$9C
+	db $E0,$01,$0B,$D8
+	db $E0,$03,$0E,$50
 Tom_Masked_2:
-	db $FF,$00,$00,$2A
-	db $FE,$00,$00,$7E
-	db $FE,$00,$00,$C3
-	db $FC,$00,$00,$BC
-	db $FC,$00,$01,$7E
-	db $FC,$00,$01,$58
-	db $F0,$00,$00,$6F
-	db $E0,$00,$07,$BC
-	db $C0,$01,$0C,$D8
-	db $C0,$01,$1B,$6C
-	db $C0,$01,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$17,$C0
-	db $C0,$0F,$1B,$C0
-	db $C0,$03,$1D,$E0
-	db $C0,$00,$0E,$F8
-	db $C0,$00,$00,$3F
-	db $C0,$00,$1F,$8B
-	db $C0,$00,$1F,$80
-	db $C0,$0F,$0F,$40
-	db $E0,$0F,$0F,$60
-	db $E0,$07,$07,$60
-	db $F0,$07,$07,$70
-	db $F0,$07,$03,$30
-	db $F0,$07,$06,$60
-	db $C0,$0F,$06,$E0
-	db $C0,$03,$1F,$40
-	db $C0,$03,$08,$E8
-	db $E0,$03,$0C,$B8
-	db $C0,$03,$0C,$00
-	db $C0,$3F,$1E,$80
-	db $C0,$3F,$13,$80
+	db $00,$FF,$54,$00
+	db $00,$7F,$7E,$00
+	db $00,$7F,$C3,$00
+	db $00,$3F,$3D,$00
+	db $00,$3F,$7E,$80
+	db $00,$3F,$1A,$80
+	db $00,$0F,$F6,$00
+	db $00,$07,$3D,$E0
+	db $80,$03,$1B,$30
+	db $80,$03,$36,$D8
+	db $80,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$03,$E8
+	db $F0,$03,$03,$D8
+	db $C0,$03,$07,$B8
+	db $00,$03,$1F,$70
+	db $00,$03,$FC,$00
+	db $00,$03,$D1,$F8
+	db $00,$03,$01,$F8
+	db $F0,$03,$02,$F0
+	db $F0,$07,$06,$F0
+	db $E0,$07,$06,$E0
+	db $E0,$0F,$0E,$E0
+	db $E0,$0F,$0C,$C0
+	db $E0,$0F,$06,$60
+	db $F0,$03,$07,$60
+	db $C0,$03,$02,$F8
+	db $C0,$03,$17,$10
+	db $C0,$07,$1D,$30
+	db $C0,$03,$00,$30
+	db $FC,$03,$01,$78
+	db $FC,$03,$01,$C8
 Tom_Masked_3:
-	db $FF,$80,$00,$00
-	db $FF,$00,$00,$2A
-	db $FE,$00,$00,$7E
-	db $FE,$00,$00,$C3
-	db $FC,$00,$00,$BC
-	db $FC,$00,$01,$7E
-	db $FC,$00,$01,$58
-	db $F0,$00,$00,$6F
-	db $E0,$00,$07,$BC
-	db $C0,$01,$0C,$D8
-	db $C0,$01,$1B,$6C
-	db $C0,$01,$17,$60
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$17,$C0
-	db $C0,$0F,$1B,$C0
-	db $C0,$00,$1D,$E0
-	db $C0,$00,$0E,$FB
-	db $C0,$00,$00,$7F
-	db $C0,$00,$1F,$00
-	db $C0,$0F,$1E,$C0
-	db $C0,$0F,$1E,$E0
-	db $C0,$07,$1D,$E0
-	db $C0,$07,$1C,$F0
-	db $C0,$07,$1C,$30
-	db $C1,$07,$1C,$70
-	db $C1,$07,$08,$20
-	db $C1,$07,$1C,$70
-	db $C1,$07,$08,$20
-	db $C3,$87,$18,$30
-	db $80,$01,$18,$30
-	db $80,$01,$3A,$74
-	db $80,$01,$26,$4C
+	db $01,$FF,$00,$00
+	db $00,$FF,$54,$00
+	db $00,$7F,$7E,$00
+	db $00,$7F,$C3,$00
+	db $00,$3F,$3D,$00
+	db $00,$3F,$7E,$80
+	db $00,$3F,$1A,$80
+	db $00,$0F,$F6,$00
+	db $00,$07,$3D,$E0
+	db $80,$03,$1B,$30
+	db $80,$03,$36,$D8
+	db $80,$03,$06,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$03,$E8
+	db $F0,$03,$03,$D8
+	db $00,$03,$07,$B8
+	db $00,$03,$DF,$70
+	db $00,$03,$FE,$00
+	db $00,$03,$00,$F8
+	db $F0,$03,$03,$78
+	db $F0,$03,$07,$78
+	db $E0,$03,$07,$B8
+	db $E0,$03,$0F,$38
+	db $E0,$03,$0C,$38
+	db $E0,$83,$0E,$38
+	db $E0,$83,$04,$10
+	db $E0,$83,$0E,$38
+	db $E0,$83,$04,$10
+	db $E1,$C3,$0C,$18
+	db $80,$01,$0C,$18
+	db $80,$01,$2E,$5C
+	db $80,$01,$32,$64
 Tom_Masked_4:
-	db $FF,$00,$00,$2A
-	db $FE,$00,$00,$7E
-	db $FE,$00,$00,$C3
-	db $FC,$00,$00,$BC
-	db $FC,$00,$01,$7E
-	db $FC,$00,$01,$58
-	db $F0,$00,$00,$6F
-	db $E0,$00,$07,$BC
-	db $C0,$01,$0C,$D8
-	db $C0,$01,$1B,$6C
-	db $C0,$01,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$1B,$C0
-	db $C0,$07,$0D,$E0
-	db $C0,$00,$00,$F0
-	db $C0,$00,$1F,$3E
-	db $C0,$00,$0F,$8E
-	db $E0,$20,$07,$84
-	db $E0,$11,$07,$80
-	db $E0,$1F,$0F,$40
-	db $E0,$1F,$0E,$C0
-	db $C0,$1F,$0E,$C0
-	db $80,$1F,$19,$C0
-	db $80,$0F,$3D,$80
-	db $80,$0F,$13,$E0
-	db $80,$0F,$19,$00
-	db $80,$3F,$39,$80
-	db $80,$0F,$39,$80
-	db $80,$0F,$19,$A0
-	db $C0,$0F,$0D,$60
+	db $00,$FF,$54,$00
+	db $00,$7F,$7E,$00
+	db $00,$7F,$C3,$00
+	db $00,$3F,$3D,$00
+	db $00,$3F,$7E,$80
+	db $00,$3F,$1A,$80
+	db $00,$0F,$F6,$00
+	db $00,$07,$3D,$E0
+	db $80,$03,$1B,$30
+	db $80,$03,$36,$D8
+	db $80,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$03,$D8
+	db $E0,$03,$07,$B0
+	db $00,$03,$0F,$00
+	db $00,$03,$7C,$F8
+	db $00,$03,$71,$F0
+	db $04,$07,$21,$E0
+	db $88,$07,$01,$E0
+	db $F8,$07,$02,$F0
+	db $F8,$07,$03,$70
+	db $F8,$03,$03,$70
+	db $F8,$01,$03,$98
+	db $F0,$01,$01,$BC
+	db $F0,$01,$07,$C8
+	db $F0,$01,$00,$98
+	db $FC,$01,$01,$9C
+	db $F0,$01,$01,$9C
+	db $F0,$01,$05,$98
+	db $F0,$03,$06,$B0
 Tom_Masked_5:
-	db $FF,$00,$00,$2A
-	db $FE,$00,$00,$7E
-	db $FE,$00,$00,$C3
-	db $FC,$00,$00,$BC
-	db $FC,$00,$01,$7E
-	db $FC,$00,$01,$58
-	db $F0,$00,$00,$6F
-	db $E0,$00,$07,$BC
-	db $C0,$01,$0C,$D8
-	db $C0,$01,$1B,$6C
-	db $C0,$01,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$0B,$A0
-	db $C0,$1F,$03,$80
-	db $C0,$0F,$1D,$C0
-	db $C0,$07,$1E,$E0
-	db $C0,$07,$0F,$70
-	db $E0,$07,$07,$B0
-	db $E0,$07,$09,$C0
-	db $E0,$07,$0C,$70
-	db $E0,$07,$0E,$20
-	db $E0,$07,$0E,$F0
-	db $C0,$07,$04,$40
-	db $C0,$03,$1E,$C0
-	db $C0,$03,$09,$E8
-	db $E0,$03,$0D,$38
-	db $C0,$03,$0C,$00
-	db $C0,$3F,$1E,$80
-	db $C0,$3F,$13,$80
+	db $00,$FF,$54,$00
+	db $00,$7F,$7E,$00
+	db $00,$7F,$C3,$00
+	db $00,$3F,$3D,$00
+	db $00,$3F,$7E,$80
+	db $00,$3F,$1A,$80
+	db $00,$0F,$F6,$00
+	db $00,$07,$3D,$E0
+	db $80,$03,$1B,$30
+	db $80,$03,$36,$D8
+	db $80,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$05,$D0
+	db $F8,$03,$01,$C0
+	db $F0,$03,$03,$B8
+	db $E0,$03,$07,$78
+	db $E0,$03,$0E,$F0
+	db $E0,$07,$0D,$E0
+	db $E0,$07,$03,$90
+	db $E0,$07,$0E,$30
+	db $E0,$07,$04,$70
+	db $E0,$07,$0F,$70
+	db $E0,$03,$02,$20
+	db $C0,$03,$03,$78
+	db $C0,$03,$17,$90
+	db $C0,$07,$1C,$B0
+	db $C0,$03,$00,$30
+	db $FC,$03,$01,$78
+	db $FC,$03,$01,$C8
 Tom_Masked_6:
-	db $FF,$00,$00,$2A
-	db $FE,$00,$00,$7E
-	db $FE,$00,$00,$C3
-	db $FC,$00,$00,$BC
-	db $FC,$00,$01,$7E
-	db $FC,$00,$01,$58
-	db $F0,$00,$00,$6F
-	db $E0,$00,$07,$BC
-	db $C0,$01,$0C,$D8
-	db $C0,$01,$1B,$6C
-	db $C0,$01,$17,$A0
-	db $C0,$0F,$17,$A0
-	db $C0,$0F,$17,$C0
-	db $C0,$0F,$1B,$C0
-	db $C0,$03,$1D,$E0
-	db $C0,$00,$0E,$F8
-	db $C0,$00,$00,$3F
-	db $C0,$00,$1F,$8B
-	db $C0,$00,$1F,$80
-	db $C0,$07,$1F,$60
-	db $C0,$07,$0F,$70
-	db $80,$03,$1E,$F0
-	db $80,$03,$3C,$68
-	db $81,$01,$30,$30
-	db $03,$81,$18,$0C
-	db $03,$C0,$60,$18
-	db $0F,$C0,$E0,$0D
-	db $03,$C0,$20,$1F
-	db $83,$C0,$28,$10
-	db $83,$C7,$18,$00
-	db $C3,$FF,$00,$00
+	db $00,$FF,$54,$00
+	db $00,$7F,$7E,$00
+	db $00,$7F,$C3,$00
+	db $00,$3F,$3D,$00
+	db $00,$3F,$7E,$80
+	db $00,$3F,$1A,$80
+	db $00,$0F,$F6,$00
+	db $00,$07,$3D,$E0
+	db $80,$03,$1B,$30
+	db $80,$03,$36,$D8
+	db $80,$03,$05,$E8
+	db $F0,$03,$05,$E8
+	db $F0,$03,$03,$E8
+	db $F0,$03,$03,$D8
+	db $C0,$03,$07,$B8
+	db $00,$03,$1F,$70
+	db $00,$03,$FC,$00
+	db $00,$03,$D1,$F8
+	db $00,$03,$01,$F8
+	db $E0,$03,$06,$F8
+	db $E0,$03,$0E,$F0
+	db $C0,$01,$0F,$78
+	db $C0,$01,$16,$3C
+	db $80,$81,$0C,$0C
+	db $81,$C0,$30,$18
+	db $03,$C0,$18,$06
+	db $03,$F0,$B0,$07
+	db $03,$C0,$F8,$04
+	db $03,$C1,$08,$14
+	db $E3,$C1,$00,$18
+	db $FF,$C3,$00,$00
 	db $FF,$FF,$00,$00
 Tom_Masked_7:
-	db $FF,$00,$00,$2A
-	db $FE,$00,$00,$7E
-	db $FE,$00,$00,$C3
-	db $FC,$00,$00,$BC
-	db $FC,$00,$01,$7E
-	db $FC,$00,$01,$58
-	db $F0,$00,$00,$6F
-	db $E0,$00,$07,$BC
-	db $C0,$01,$0C,$D8
-	db $C0,$00,$1B,$2C
-	db $C0,$00,$17,$C3
-	db $C0,$00,$17,$FF
-	db $C0,$00,$1B,$FF
-	db $C0,$00,$1C,$00
-	db $C0,$0F,$1F,$E0
-	db $C0,$0F,$0F,$C0
+	db $00,$FF,$54,$00
+	db $00,$7F,$7E,$00
+	db $00,$7F,$C3,$00
+	db $00,$3F,$3D,$00
+	db $00,$3F,$7E,$80
+	db $00,$3F,$1A,$80
+	db $00,$0F,$F6,$00
+	db $00,$07,$3D,$E0
+	db $80,$03,$1B,$30
+	db $00,$03,$34,$D8
+	db $00,$03,$C3,$E8
+	db $00,$03,$FF,$E8
+	db $00,$03,$FF,$D8
+	db $00,$03,$00,$38
+	db $F0,$03,$07,$F8
+	db $F0,$03,$03,$F0
 	db $C0,$03,$00,$00
-	db $C0,$01,$1F,$D8
-	db $C0,$01,$1F,$BC
-	db $C0,$01,$0F,$BC
-	db $E0,$01,$07,$AC
-	db $E0,$01,$07,$9C
-	db $00,$01,$0F,$08
-	db $00,$00,$CF,$18
-	db $00,$00,$7E,$3D
-	db $00,$80,$68,$27
-	db $03,$80,$C0,$00
-	db $1F,$FF,$80,$00
-	db $1F,$FF,$C0,$00
-	db $1F,$FF,$00,$00
+	db $80,$03,$1B,$F8
+	db $80,$03,$3D,$F8
+	db $80,$03,$3D,$F0
+	db $80,$07,$35,$E0
+	db $80,$07,$39,$E0
+	db $80,$00,$10,$F0
+	db $00,$00,$18,$F3
+	db $00,$00,$BC,$7E
+	db $01,$00,$E4,$16
+	db $01,$C0,$00,$03
+	db $FF,$F8,$00,$01
+	db $FF,$F8,$00,$03
+	db $FF,$F8,$00,$00
 	db $FF,$FF,$00,$00
 	db $FF,$FF,$00,$00
 Dick_Masked_0:
@@ -12722,273 +12010,273 @@ Harry_Masked_0:
 	db $FF,$FF,$00,$00
 	db $FF,$FF,$00,$00
 	db $FF,$FF,$00,$00
-	db $FF,$07,$00,$00
-	db $FE,$03,$00,$50
-	db $FC,$01,$00,$A8
-	db $FC,$01,$01,$54
-	db $FC,$00,$00,$A8
-	db $F8,$00,$01,$53
-	db $F0,$00,$02,$AE
-	db $F0,$00,$05,$56
-	db $F0,$00,$02,$AC
-	db $F0,$01,$05,$50
-	db $E0,$03,$02,$A8
-	db $C0,$03,$08,$50
-	db $C0,$03,$17,$28
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$16,$C0
-	db $C0,$1F,$16,$C0
-	db $C0,$1F,$06,$00
-	db $80,$1F,$11,$C0
-	db $80,$1F,$2D,$C0
-	db $80,$1F,$2D,$C0
-	db $80,$0F,$33,$C0
-	db $80,$0F,$3F,$E0
-	db $80,$0F,$15,$40
-	db $C0,$07,$0A,$A0
-	db $E0,$07,$07,$B0
-	db $F0,$07,$03,$B0
-	db $E0,$07,$07,$60
-	db $C0,$01,$0C,$60
-	db $C0,$01,$1B,$9C
+	db $E0,$FF,$00,$00
+	db $C0,$7F,$0A,$00
+	db $80,$3F,$15,$00
+	db $80,$3F,$2A,$80
+	db $00,$3F,$15,$00
+	db $00,$1F,$CA,$80
+	db $00,$0F,$75,$40
+	db $00,$0F,$6A,$A0
+	db $00,$0F,$35,$40
+	db $80,$0F,$0A,$A0
+	db $C0,$07,$15,$40
+	db $C0,$03,$0A,$10
+	db $C0,$03,$14,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$03,$68
+	db $F8,$03,$03,$68
+	db $F8,$03,$00,$60
+	db $F8,$01,$03,$88
+	db $F8,$01,$03,$B4
+	db $F8,$01,$03,$B4
+	db $F0,$01,$03,$CC
+	db $F0,$01,$07,$FC
+	db $F0,$01,$02,$A8
+	db $E0,$03,$05,$50
+	db $E0,$07,$0D,$E0
+	db $E0,$0F,$0D,$C0
+	db $E0,$07,$06,$E0
+	db $80,$03,$06,$30
+	db $80,$03,$39,$D8
 Harry_Masked_1:
 	db $FF,$FF,$00,$00
-	db $FF,$07,$00,$00
-	db $FE,$03,$00,$50
-	db $FC,$01,$00,$A8
-	db $FC,$01,$01,$54
-	db $FC,$00,$00,$A8
-	db $F8,$00,$01,$53
-	db $F8,$00,$02,$AE
-	db $F8,$00,$01,$56
-	db $F0,$00,$02,$AC
-	db $F0,$01,$05,$50
-	db $F0,$03,$02,$A8
-	db $E0,$03,$07,$50
-	db $C0,$03,$08,$A8
-	db $C0,$03,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$16,$C0
-	db $C0,$1F,$06,$00
-	db $80,$1F,$19,$C0
-	db $80,$1F,$36,$C0
-	db $80,$1F,$36,$C0
-	db $80,$0F,$39,$C0
-	db $80,$0F,$3F,$E0
-	db $80,$0F,$15,$40
-	db $C0,$0F,$0A,$80
-	db $E0,$0F,$07,$A0
-	db $F0,$0F,$01,$A0
-	db $F0,$0F,$03,$A0
-	db $E0,$0F,$07,$40
-	db $E0,$03,$0E,$00
-	db $E0,$03,$01,$D8
+	db $E0,$FF,$00,$00
+	db $C0,$7F,$0A,$00
+	db $80,$3F,$15,$00
+	db $80,$3F,$2A,$80
+	db $00,$3F,$15,$00
+	db $00,$1F,$CA,$80
+	db $00,$1F,$75,$40
+	db $00,$1F,$6A,$80
+	db $00,$0F,$35,$40
+	db $80,$0F,$0A,$A0
+	db $C0,$0F,$15,$40
+	db $C0,$07,$0A,$E0
+	db $C0,$03,$15,$10
+	db $C0,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$03,$68
+	db $F8,$03,$00,$60
+	db $F8,$01,$03,$98
+	db $F8,$01,$03,$6C
+	db $F8,$01,$03,$6C
+	db $F0,$01,$03,$9C
+	db $F0,$01,$07,$FC
+	db $F0,$01,$02,$A8
+	db $F0,$03,$01,$50
+	db $F0,$07,$05,$E0
+	db $F0,$0F,$05,$80
+	db $F0,$0F,$05,$C0
+	db $F0,$07,$02,$E0
+	db $C0,$07,$00,$70
+	db $C0,$07,$1B,$80
 Harry_Masked_2:
 	db $FF,$FF,$00,$00
-	db $FF,$07,$00,$00
-	db $FE,$03,$00,$50
-	db $FC,$01,$00,$A8
-	db $FC,$01,$01,$54
-	db $FC,$00,$00,$A8
-	db $F8,$00,$01,$53
-	db $F8,$00,$02,$AE
-	db $F8,$00,$01,$56
-	db $F0,$00,$02,$AC
-	db $F0,$01,$05,$50
-	db $F0,$03,$02,$A8
-	db $E0,$03,$07,$50
-	db $C0,$03,$08,$A8
-	db $C0,$03,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$03,$00
-	db $80,$1F,$1C,$C0
-	db $80,$1F,$3B,$40
-	db $80,$1F,$3B,$40
-	db $80,$0F,$3C,$C0
-	db $80,$0F,$3F,$E0
-	db $80,$0F,$15,$40
-	db $C0,$1F,$0A,$80
-	db $E0,$1F,$0B,$C0
-	db $E0,$1F,$0D,$C0
-	db $E0,$1F,$0D,$80
-	db $C0,$3F,$0B,$80
-	db $C0,$0F,$17,$00
-	db $C0,$0F,$0E,$E0
+	db $E0,$FF,$00,$00
+	db $C0,$7F,$0A,$00
+	db $80,$3F,$15,$00
+	db $80,$3F,$2A,$80
+	db $00,$3F,$15,$00
+	db $00,$1F,$CA,$80
+	db $00,$1F,$75,$40
+	db $00,$1F,$6A,$80
+	db $00,$0F,$35,$40
+	db $80,$0F,$0A,$A0
+	db $C0,$0F,$15,$40
+	db $C0,$07,$0A,$E0
+	db $C0,$03,$15,$10
+	db $C0,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$00,$C0
+	db $F8,$01,$03,$38
+	db $F8,$01,$02,$DC
+	db $F8,$01,$02,$DC
+	db $F0,$01,$03,$3C
+	db $F0,$01,$07,$FC
+	db $F0,$01,$02,$A8
+	db $F8,$03,$01,$50
+	db $F8,$07,$03,$D0
+	db $F8,$07,$03,$B0
+	db $F8,$07,$01,$B0
+	db $FC,$03,$01,$D0
+	db $F0,$03,$00,$E8
+	db $F0,$03,$07,$70
 Harry_Masked_3:
 	db $FF,$FF,$00,$00
 	db $FF,$FF,$00,$00
 	db $FF,$FF,$00,$00
-	db $FF,$83,$00,$00
-	db $FF,$01,$00,$28
-	db $FE,$00,$00,$54
-	db $FC,$00,$00,$AA
-	db $FC,$00,$01,$50
-	db $FC,$00,$00,$AB
-	db $F8,$00,$01,$56
-	db $F0,$00,$02,$AC
-	db $F0,$01,$05,$54
-	db $F0,$01,$02,$A8
-	db $E0,$03,$07,$50
-	db $C0,$03,$08,$A8
-	db $C0,$03,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$03,$00
-	db $80,$1F,$1A,$40
-	db $80,$1F,$3D,$80
-	db $80,$1F,$3D,$80
-	db $80,$0F,$3E,$40
-	db $80,$0F,$3F,$E0
+	db $C1,$FF,$00,$00
+	db $80,$FF,$14,$00
+	db $00,$7F,$2A,$00
+	db $00,$3F,$55,$00
+	db $00,$3F,$0A,$80
+	db $00,$3F,$D5,$00
+	db $00,$1F,$6A,$80
+	db $00,$0F,$35,$40
+	db $80,$0F,$2A,$A0
 	db $80,$0F,$15,$40
-	db $C0,$07,$0B,$A0
-	db $E0,$07,$04,$F0
-	db $F0,$07,$07,$70
-	db $F0,$07,$06,$E0
-	db $E0,$01,$06,$E0
-	db $E0,$01,$0D,$DC
+	db $C0,$07,$0A,$E0
+	db $C0,$03,$15,$10
+	db $C0,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$00,$C0
+	db $F8,$01,$02,$58
+	db $F8,$01,$01,$BC
+	db $F8,$01,$01,$BC
+	db $F0,$01,$02,$7C
+	db $F0,$01,$07,$FC
+	db $F0,$01,$02,$A8
+	db $E0,$03,$05,$D0
+	db $E0,$07,$0F,$20
+	db $E0,$0F,$0E,$E0
+	db $E0,$0F,$07,$60
+	db $80,$07,$07,$60
+	db $80,$07,$3B,$B0
 Harry_Masked_4:
 	db $FF,$FF,$00,$00
-	db $FF,$07,$00,$00
-	db $FE,$03,$00,$50
-	db $FC,$01,$00,$A8
-	db $FC,$01,$01,$54
-	db $FC,$00,$00,$A8
-	db $F8,$00,$01,$53
-	db $F8,$00,$02,$AE
-	db $F8,$00,$01,$56
-	db $F0,$00,$02,$AC
-	db $F0,$01,$05,$50
-	db $F0,$03,$02,$A8
-	db $E0,$03,$07,$50
-	db $C0,$03,$08,$A8
-	db $C0,$03,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$07,$00
-	db $80,$1F,$14,$C0
-	db $80,$1F,$3B,$40
-	db $80,$1F,$3B,$40
-	db $80,$0F,$3C,$C0
-	db $80,$0F,$3F,$E0
-	db $80,$0F,$15,$40
-	db $C0,$1F,$0E,$80
-	db $E0,$0F,$03,$C0
-	db $F8,$0F,$01,$E0
-	db $F0,$0F,$02,$E0
-	db $E0,$0F,$05,$C0
-	db $E0,$03,$0D,$C0
-	db $E0,$03,$03,$B8
+	db $E0,$FF,$00,$00
+	db $C0,$7F,$0A,$00
+	db $80,$3F,$15,$00
+	db $80,$3F,$2A,$80
+	db $00,$3F,$15,$00
+	db $00,$1F,$CA,$80
+	db $00,$1F,$75,$40
+	db $00,$1F,$6A,$80
+	db $00,$0F,$35,$40
+	db $80,$0F,$0A,$A0
+	db $C0,$0F,$15,$40
+	db $C0,$07,$0A,$E0
+	db $C0,$03,$15,$10
+	db $C0,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$00,$E0
+	db $F8,$01,$03,$28
+	db $F8,$01,$02,$DC
+	db $F8,$01,$02,$DC
+	db $F0,$01,$03,$3C
+	db $F0,$01,$07,$FC
+	db $F0,$01,$02,$A8
+	db $F8,$03,$01,$70
+	db $F0,$07,$03,$C0
+	db $F0,$1F,$07,$80
+	db $F0,$0F,$07,$40
+	db $F0,$07,$03,$A0
+	db $C0,$07,$03,$B0
+	db $C0,$07,$1D,$C0
 Harry_Masked_5:
 	db $FF,$FF,$00,$00
-	db $FF,$07,$00,$00
-	db $FE,$03,$00,$50
-	db $FC,$01,$00,$A8
-	db $FC,$01,$01,$54
-	db $FC,$00,$00,$A8
-	db $F8,$00,$01,$53
-	db $F8,$00,$02,$AE
-	db $F8,$00,$01,$56
-	db $F0,$00,$02,$AC
-	db $F0,$01,$05,$50
-	db $F0,$03,$02,$A8
-	db $E0,$03,$07,$50
-	db $C0,$03,$08,$A8
-	db $C0,$03,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$17,$40
-	db $C0,$1F,$16,$C0
-	db $C0,$1F,$06,$00
-	db $80,$1F,$12,$C0
-	db $80,$1F,$2D,$C0
-	db $80,$1F,$2D,$C0
-	db $80,$0F,$33,$C0
-	db $80,$0F,$3F,$E0
-	db $80,$0F,$15,$40
-	db $C0,$1F,$0A,$80
-	db $E0,$0F,$07,$40
-	db $F0,$0F,$03,$A0
-	db $F0,$0F,$07,$A0
-	db $E0,$0F,$07,$40
-	db $C0,$03,$0E,$00
-	db $C0,$03,$1D,$D8
+	db $E0,$FF,$00,$00
+	db $C0,$7F,$0A,$00
+	db $80,$3F,$15,$00
+	db $80,$3F,$2A,$80
+	db $00,$3F,$15,$00
+	db $00,$1F,$CA,$80
+	db $00,$1F,$75,$40
+	db $00,$1F,$6A,$80
+	db $00,$0F,$35,$40
+	db $80,$0F,$0A,$A0
+	db $C0,$0F,$15,$40
+	db $C0,$07,$0A,$E0
+	db $C0,$03,$15,$10
+	db $C0,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$02,$E8
+	db $F8,$03,$03,$68
+	db $F8,$03,$00,$60
+	db $F8,$01,$03,$48
+	db $F8,$01,$03,$B4
+	db $F8,$01,$03,$B4
+	db $F0,$01,$03,$CC
+	db $F0,$01,$07,$FC
+	db $F0,$01,$02,$A8
+	db $F8,$03,$01,$50
+	db $F0,$07,$02,$E0
+	db $F0,$0F,$05,$C0
+	db $F0,$0F,$05,$E0
+	db $F0,$07,$02,$E0
+	db $C0,$03,$00,$70
+	db $C0,$03,$1B,$B8
 Harry_Masked_6:
 	db $FF,$FF,$00,$00
-	db $FF,$07,$00,$00
-	db $FE,$03,$00,$50
-	db $FC,$01,$00,$A8
-	db $FC,$01,$01,$54
-	db $FC,$00,$00,$A8
-	db $F8,$00,$01,$53
-	db $F8,$00,$02,$AE
-	db $F8,$00,$01,$56
-	db $F0,$00,$02,$AC
-	db $F0,$01,$05,$50
-	db $F0,$03,$02,$A8
-	db $E0,$03,$07,$50
-	db $C0,$03,$08,$A8
-	db $C0,$03,$17,$40
-	db $C0,$0F,$17,$00
-	db $C0,$03,$17,$D8
+	db $E0,$FF,$00,$00
+	db $C0,$7F,$0A,$00
+	db $80,$3F,$15,$00
+	db $80,$3F,$2A,$80
+	db $00,$3F,$15,$00
+	db $00,$1F,$CA,$80
+	db $00,$1F,$75,$40
+	db $00,$1F,$6A,$80
+	db $00,$0F,$35,$40
+	db $80,$0F,$0A,$A0
+	db $C0,$0F,$15,$40
+	db $C0,$07,$0A,$E0
+	db $C0,$03,$15,$10
+	db $C0,$03,$02,$E8
+	db $F0,$03,$00,$E8
+	db $C0,$03,$1B,$E8
 	db $C0,$03,$1B,$D8
 	db $C0,$03,$00,$00
-	db $C0,$0F,$1F,$C0
-	db $80,$0F,$1F,$E0
-	db $80,$03,$3F,$E0
-	db $80,$01,$3F,$D8
-	db $00,$01,$3F,$DC
-	db $00,$01,$BF,$CC
-	db $00,$01,$D5,$4C
-	db $00,$01,$68,$1C
-	db $01,$C1,$BC,$1C
-	db $01,$80,$B8,$18
-	db $03,$80,$80,$37
-	db $3F,$80,$00,$00
+	db $F0,$03,$03,$F8
+	db $F0,$01,$07,$F8
+	db $C0,$01,$07,$FC
+	db $80,$01,$1B,$FC
+	db $80,$00,$3B,$FC
+	db $80,$00,$33,$FD
+	db $80,$00,$32,$AB
+	db $80,$00,$38,$16
+	db $83,$80,$38,$3D
+	db $01,$80,$18,$1D
+	db $01,$C0,$EC,$01
+	db $01,$FC,$00,$00
 	db $FF,$FF,$00,$00
 Harry_Masked_7:
 	db $FF,$FF,$00,$00
-	db $FF,$07,$00,$00
-	db $FE,$03,$00,$50
-	db $FC,$01,$00,$A8
-	db $FC,$01,$01,$54
-	db $FC,$00,$00,$A8
-	db $F8,$00,$01,$53
-	db $F8,$00,$02,$AE
-	db $F8,$00,$01,$56
-	db $F0,$00,$02,$AC
-	db $F0,$01,$05,$50
-	db $F0,$03,$02,$A8
-	db $E0,$03,$04,$50
-	db $C0,$00,$0B,$80
-	db $C0,$00,$17,$FB
-	db $C0,$00,$17,$FB
-	db $C0,$00,$18,$00
-	db $C0,$1F,$1F,$C0
-	db $C0,$1F,$00,$00
-	db $C0,$0F,$1F,$C0
-	db $80,$07,$1F,$E0
-	db $80,$00,$3F,$D0
-	db $00,$00,$3F,$D9
-	db $00,$00,$BF,$DD
-	db $00,$00,$D5,$5D
-	db $00,$00,$68,$0E
-	db $01,$E0,$BC,$07
-	db $01,$F0,$B8,$01
-	db $03,$FC,$80,$00
-	db $3F,$FF,$00,$00
+	db $E0,$FF,$00,$00
+	db $C0,$7F,$0A,$00
+	db $80,$3F,$15,$00
+	db $80,$3F,$2A,$80
+	db $00,$3F,$15,$00
+	db $00,$1F,$CA,$80
+	db $00,$1F,$75,$40
+	db $00,$1F,$6A,$80
+	db $00,$0F,$35,$40
+	db $80,$0F,$0A,$A0
+	db $C0,$0F,$15,$40
+	db $C0,$07,$0A,$20
+	db $00,$03,$01,$D0
+	db $00,$03,$DF,$E8
+	db $00,$03,$DF,$E8
+	db $00,$03,$00,$18
+	db $F8,$03,$03,$F8
+	db $F8,$03,$00,$00
+	db $F0,$03,$03,$F8
+	db $E0,$01,$07,$F8
+	db $00,$01,$0B,$FC
+	db $00,$00,$9B,$FC
+	db $00,$00,$BB,$FD
+	db $00,$00,$BA,$AB
+	db $00,$00,$70,$16
+	db $07,$80,$E0,$3D
+	db $0F,$80,$80,$1D
+	db $3F,$C0,$00,$01
+	db $FF,$FC,$00,$00
 	db $FF,$FF,$00,$00
 	db $FF,$FF,$00,$00
 ItemXPos:
-	db 55
+	db 22
 ItemYPos:
 	db 168
 	db $00
 SPBackup:
-	dw $FBF4
+	dw $FBF6
 ; DrawItem
 ; A : Item number
 DrawItem:
@@ -13063,7 +12351,7 @@ label_A889:
 	EXX 
 	RET 
 ; A : item number
-function_A8A0:
+DrawMovingObject:
 	EXX 
 	PUSH AF
 	LD   (SPBackup),SP
@@ -13106,7 +12394,7 @@ function_A8A0:
 label_A8DE:
 	POP  DE			; pop 2 pixel lines from item
 operand_A8DF:
-	LD   B,$03
+	LD   B,$02
 	DEC  B
 	JR   Z,label_A8F0
 	SCF
@@ -13131,7 +12419,7 @@ label_A8F0:
 	INC  HL
 	POP  DE
 operand_A8FB:
-	LD   B,$03
+	LD   B,$02
 	DEC  B
 	JR   Z,label_A90A
 	XOR  A
@@ -13169,7 +12457,7 @@ function_A921:
 function_A92C:
 	PUSH IY
 	LD   A,(IY+$0F)
-	LD   (data_B951),A
+	LD   (CurrentScreenNo),A
 	LD   IY,CharacterStates
 	LD   A,(data_B55F)
 	ADD  A,$04
@@ -13251,7 +12539,7 @@ label_A9C4:
 	JR   label_A9BE
 label_A9CA:
 	LD   B,(IY-$0F)
-	CALL function_AA8C
+	CALL GetRoomItem
 	INC  HL
 	LD   A,(HL)
 	PUSH AF
@@ -13282,8 +12570,8 @@ label_A9E3:
 	EX   DE,HL
 	LD   (IY-$05),$00
 label_AA10:
-	LD   E,(HL)
-	CALL function_AE8A
+	LD   E,(HL)			; item number
+	CALL FindRoomItem
 	LD   A,B
 	OR   A
 	JR   NZ,label_AA24
@@ -13301,7 +12589,7 @@ label_AA24:
 	JP   label_A989
 function_AA30:
 	PUSH HL
-	CALL function_AA8C
+	CALL GetRoomItem
 	INC  HL
 	INC  HL
 	INC  HL
@@ -13338,31 +12626,32 @@ label_AA49:
 	CALL function_A921
 	CALL Z,function_E41D
 label_AA74:
-	LD   A,(data_B951)
+	LD   A,(CurrentScreenNo)
 	CP   (IY+$0F)
 	CALL Z,function_AA7F
 	POP  HL
 	RET 
 function_AA7F:
-	LD   BC,BackgroundAttribs+778
+	LD   BC,BackgroundAttribs+266
 	LD   DE,$0114
 	LD   HL,$1401
 	CALL function_E3D3
 	RET 
-function_AA8C:
-	LD   A,(IY+$0F)			; item number
-	LD   HL,data_BCE9			; item list
-	CALL FindItemNo
+; B : ??
+GetRoomItem:
+	LD   A,(IY+$0F)			; screen number
+	LD   HL,RoomItemList			; item list
+	CALL GetVariableLengthItem
 	LD   A,B
 	OR   A
-	JR   Z,label_AA9F
-label_AA99:
+	JR   Z,exit_func_AA9F			; return if B is zero
+item_loop:
+	INC  HL			; 4 bytes per item
 	INC  HL
 	INC  HL
 	INC  HL
-	INC  HL
-	DJNZ label_AA99
-label_AA9F:
+	DJNZ item_loop
+exit_func_AA9F:
 	RET 
 JumpTable_AAA0:
 	dw function_AAB2
@@ -13389,9 +12678,9 @@ function_AAB2:
 label_AACE:
 	LD   (IY+$3C),$FF
 	CALL function_B288
-	LD   A,(IY+$05)
+	LD   A,(IY+$05)			; character x position
 	OR   A
-	JP   Z,label_AE5D
+	JP   Z,NPCChangeScreen
 	RET 
 function_AADD:
 	LD   A,(IY+$0A)
@@ -13408,12 +12697,12 @@ function_AADD:
 label_AAF9:
 	LD   (IY+$3C),$01
 	CALL function_B288
-	LD   A,(IY+$05)
-	CP   $F0
-	JP   Z,label_AE5D
+	LD   A,(IY+$05)			; character x pos
+	CP   $F0			; off right screen edge
+	JP   Z,NPCChangeScreen
 	RET 
 function_AB09:
-	LD   A,(IY+$05)
+	LD   A,(IY+$05)			; character x pos
 	CP   $78
 	JR   NC,label_AB16
 	LD   (IY+$3C),$01
@@ -13422,12 +12711,12 @@ label_AB16:
 	LD   (IY+$3C),$FF
 label_AB1A:
 	CALL function_B288
-	LD   A,(IY+$05)
+	LD   A,(IY+$05)			; character x pos
 	CP   $78
-	JP   Z,label_AE5D
+	JP   Z,NPCChangeScreen
 	RET 
 function_AB26:
-	LD   A,(IY+$05)
+	LD   A,(IY+$05)			; character x pos
 	CP   $30
 	JR   NC,label_AB33
 	LD   (IY+$3C),$01
@@ -13436,12 +12725,12 @@ label_AB33:
 	LD   (IY+$3C),$FF
 label_AB37:
 	CALL function_B288
-	LD   A,(IY+$05)
+	LD   A,(IY+$05)			; character x pos
 	CP   $30
-	JP   Z,label_AE5D
+	JP   Z,NPCChangeScreen
 	RET 
 function_AB43:
-	LD   A,(IY+$05)
+	LD   A,(IY+$05)			; get character X position
 	CP   $C0
 	JR   NC,label_AB50
 	LD   (IY+$3C),$01
@@ -13452,7 +12741,7 @@ label_AB54:
 	CALL function_B288
 	LD   A,(IY+$05)
 	CP   $C0
-	JP   Z,label_AE5D
+	JP   Z,NPCChangeScreen
 	RET 
 function_AB60:
 	LD   A,(IY+$0A)
@@ -13480,7 +12769,7 @@ label_AB88:
 	CALL function_B288
 	LD   A,(IY+$05)
 	OR   A
-	JP   Z,label_AE5D
+	JP   Z,NPCChangeScreen
 	RET 
 function_AB9B:
 	LD   A,(IY+$0A)
@@ -13508,7 +12797,7 @@ label_ABC3:
 	CALL function_B288
 	LD   A,(IY+$05)
 	CP   $F0
-	JP   Z,label_AE5D
+	JP   Z,NPCChangeScreen
 	RET 
 function_ABD7:
 	LD   A,(ControlDevice)
@@ -13552,7 +12841,7 @@ function_AC06:
 	RET  Z
 label_AC15:
 	LD   A,(IY+$0F)
-	CALL function_AC69
+	CALL GetRoomInfoData
 	EX   DE,HL
 label_AC1C:
 	LD   A,(DE)
@@ -13563,7 +12852,7 @@ label_AC1C:
 	LD   A,(DE)
 	INC  DE
 	INC  DE
-	CALL function_AC5F
+	CALL GetExitPosition
 	LD   A,(HL)
 	SUB  (IY+$05)
 	SUB  $08
@@ -13576,7 +12865,7 @@ label_AC1C:
 	DEC  DE
 	LD   (IY+$0F),B
 	LD   A,(DE)
-	CALL function_AC5F
+	CALL GetExitPosition
 	LD   A,(HL)
 	OR   A
 	JR   NZ,label_AC47
@@ -13586,34 +12875,36 @@ label_AC47:
 	JR   NZ,label_AC4D
 	LD   A,$EE
 label_AC4D:
-	LD   (IY+$05),A
+	LD   (IY+$05),A			; set character x pos
 	INC  HL
 	LD   A,(HL)
-	LD   (IY+$0A),A
-	CALL function_B952
+	LD   (IY+$0A),A			; set character y pos
+	CALL DrawScreen
 label_AC58:
 	CALL function_ABD7
 	OR   A
 	JR   NZ,label_AC58
 	RET 
-; A : item number
+; A : exit index
 ; Return pointer in HL
-function_AC5F:
+GetExitPosition:
 	ADD  A,A
-	LD   HL,data_AF10			; base
+	LD   HL,RoomExitPositions			; base
 	ADD  A,L
 	JR   NC,nocarry_AC67
 	INC  H
 nocarry_AC67:
 	LD   L,A
 	RET 
-function_AC69:
-	LD   HL,data_AC7F
-; A: Item Number
+; A : Room number
+; Return info in HL
+GetRoomInfoData:
+	LD   HL,RoomInfoData
+; A: Index
 ; HL: FFh terminated item list
 ; Item pointer returned in HL
-FindItemNo:
-	OR   A			; item number
+GetVariableLengthItem:
+	OR   A			; index
 	RET  Z			; item 0 - quit
 	PUSH BC
 	PUSH DE
@@ -13627,9 +12918,12 @@ search_loop_AC76:
 	POP  DE
 	POP  BC
 	RET 
-data_AC7F:
+; Room info
+; variable length info for each room
+; 0xff terminated list
+RoomInfoData:
 	db $01
-	db $01
+	db $01			; exit?
 	db $00
 	db $18
 	db $00
@@ -13945,14 +13239,14 @@ data_AD78:
 	db $05
 	db $14
 function_ADBA:
-	LD   A,(IY+$0F)
+	LD   A,(IY+$0F)			; character screen number
 	CP   (IY+$5A)
 	JR   NZ,label_ADC7
 	LD   (IY-$14),$01
 	RET 
 label_ADC7:
 	LD   D,$FF
-	CALL function_AC69
+	CALL GetRoomInfoData
 	LD   A,(IY+$0F)
 	CALL function_AE30
 	OR   A
@@ -14067,47 +13361,52 @@ data_AE3C:
 	db $01
 	db $01
 	db $00
-label_AE5D:
-	LD   A,(IY+$0F)
-	LD   (IY+$6E),A
-	LD   A,(IY+$69)
-	LD   (IY+$0F),A
+NPCChangeScreen:
+	LD   A,(IY+$0F)			; character screen number
+	LD   (IY+$6E),A			; store previous screen number
+	LD   A,(IY+$69)			; next screen number?
+	LD   (IY+$0F),A			; set screen number
 	LD   A,(IY+$73)
-	CALL function_AC5F
+	CALL GetExitPosition
 	LD   A,(HL)
-	LD   (IY+$05),A
+	LD   (IY+$05),A			; set character x pos
 	INC  HL
 	LD   A,(HL)
-	LD   (IY+$0A),A
+	LD   (IY+$0A),A			; set character y pos
 	XOR  A
-	LD   (IY+$00),A
+	LD   (IY+$00),A			; anim frame
 	CALL function_ADBA
 	XOR  A
 	LD   (IY+$37),A
 	LD   (IY+$3C),A
 	LD   (IY+$46),A
 	RET 
-function_AE8A:
+; Find an item
+; E : Item number
+; Returns:
+; D : Room number
+; C : Item index in room
+FindRoomItem:
 	LD   D,$00
 	LD   BC,$21FF
-	LD   HL,data_BCE9
-label_AE92:
-	LD   A,(HL)
+	LD   HL,RoomItemList
+room_loop:
+	LD   A,(HL)			; get item number
 	CP   $FF
-	JR   Z,label_AEA0
+	JR   Z,next_room			; terminator for this room
 	INC  HL
 	INC  HL
 	INC  HL
 	INC  HL
 	INC  C
-	CP   E
-	JR   NZ,label_AE92
+	CP   E			; compare item number
+	JR   NZ,room_loop
 	RET 
-label_AEA0:
-	LD   C,$FF
+next_room:
+	LD   C,$FF			; reset counter
 	INC  HL
-	INC  D
-	DJNZ label_AE92
+	INC  D			; inc room number
+	DJNZ room_loop
 	RET 
 	db $1A
 	db $1D
@@ -14156,7 +13455,7 @@ label_AEA0:
 	db $14
 	db $FF
 data_AED5:
-	db $F1
+	db $F4
 	db $AE
 function_AED7:
 	PUSH HL
@@ -14194,36 +13493,36 @@ label_AEE4:
 	db $20
 	db $FF
 data_AF00:
-	db $17
+	db $15
 function_AF01:
 	LD   A,(data_AF00)
 	INC  A
 	CP   $20
 	JR   NZ,label_AF0A
-	db $AF
+	XOR  A
 label_AF0A:
 	LD   (data_AF00),A
 	XOR  $15
 	RET 
-data_AF10:
-	db $00
-	db $98
-	db $F0
-	db $98
-	db $78
-	db $98
-	db $30
-	db $98
+RoomExitPositions:
+	db 0			; xpos?
+	db 152			;  ypos?
+	db 240
+	db 152
+	db 120
+	db 152
+	db 48
+	db 152
 	db $C0
-	db $98
-	db $00
-	db $58
-	db $F0
-	db $58
-	db $F0
-	db $98
-	db $00
-	db $98
+	db 152
+	db 0
+	db 88
+	db 240
+	db 88
+	db 240
+	db 152
+	db 0
+	db 152
 data_AF22:
 	db $FF
 data_AF23:
@@ -14537,7 +13836,7 @@ data_B09D:
 function_B09F:
 	LD   IY,(data_B09D)
 	LD   A,(IY+$0F)
-	LD   (data_B951),A
+	LD   (CurrentScreenNo),A
 	CALL function_AFC4
 	LD   A,(IY+$46)
 	OR   A
@@ -14562,7 +13861,8 @@ label_B0D6:
 	LD   (IY+$3C),$FF
 	LD   (IY+$41),$FF
 	JP   function_B288
-function_B0E6:
+; IY : character state pointer
+DrawCharacterToShadowScreen:
 	EXX 
 	LD   E,(IY+$23)			; get base sprite pointer
 	LD   D,(IY+$28)
@@ -14596,7 +13896,7 @@ function_B0E6:
 	ADD  HL,HL
 	ADD  HL,HL
 	ADD  HL,HL
-	LD   D,$63
+	LD   D,$63			; data_5DE7+1305
 	ADD  HL,DE
 label_B127:
 	POP  DE
@@ -14665,7 +13965,7 @@ label_B170:
 	ADD  HL,HL
 	ADD  HL,HL
 operand_B17A:
-	LD   DE,data_FAEF+30
+	LD   DE,data_FB16+5
 	ADD  HL,DE
 	LD   DE,$001E
 	LD   C,(IY+$1E)
@@ -14736,7 +14036,7 @@ function_B1B9:
 label_B1ED:
 	LD   A,(IY-$3C)
 	OR   A
-	CALL NZ,function_81D4
+	CALL NZ,FlipCharacterSprite
 	LD   A,(IY+$0A)
 	ADD  A,D
 	LD   (IY+$0A),A
@@ -14785,7 +14085,7 @@ label_B21C:
 label_B249:
 	LD   A,(IY-$3C)
 	OR   A
-	CALL Z,function_81D4
+	CALL Z,FlipCharacterSprite
 	LD   A,(IY+$0A)
 	ADD  A,D
 	LD   (IY+$0A),A
@@ -14835,7 +14135,7 @@ data_B264:
 function_B288:
 	CALL function_A921
 	JR   Z,label_B29E
-	LD   A,(data_B951)
+	LD   A,(CurrentScreenNo)
 	CP   (IY+$0F)
 	JR   Z,label_B29E
 	LD   A,(IY+$5F)
@@ -14843,38 +14143,38 @@ function_B288:
 	LD   (IY+$5F),A
 	RET  Z
 label_B29E:
-	LD   A,(IY+$00)
-	INC  A
-	CP   $06
-	JR   C,label_B2A7
-	XOR  A
-label_B2A7:
-	LD   (IY+$00),A
+	LD   A,(IY+$00)			; get animation frame no
+	INC  A			; increment
+	CP   $06			; check for overflow
+	JR   C,set_anim_frame			; jump if less than 6
+	XOR  A			; reset to frame 0
+set_anim_frame:
+	LD   (IY+$00),A			; set animation frame
 	LD   A,(IY+$3C)
 	CP   $01
-	JR   NZ,label_B2C6
+	JR   NZ,move_character_left
 	LD   A,(IY-$3C)
 	OR   A
-	CALL Z,function_81D4
-	LD   A,(IY+$05)
-	ADD  A,$02
-	CP   $F0
-	JR   C,label_B2D5
-	LD   A,$F0
-	JP   label_B2D5
-label_B2C6:
+	CALL Z,FlipCharacterSprite
+	LD   A,(IY+$05)			; get character X
+	ADD  A,$02			; add 2 to X
+	CP   $F0			; check if off screen edge
+	JR   C,write_back_char_x
+	LD   A,$F0			; clip
+	JP   write_back_char_x
+move_character_left:
 	LD   A,(IY-$3C)
 	OR   A
-	CALL NZ,function_81D4
-	LD   A,(IY+$05)
-	SUB  $02
-	JR   NC,label_B2D5
-	db $AF
-label_B2D5:
-	LD   (IY+$05),A
+	CALL NZ,FlipCharacterSprite
+	LD   A,(IY+$05)			; character X position
+	SUB  $02			; reduce X by 2
+	JR   NC,write_back_char_x
+	XOR  A			; clip to 0
+write_back_char_x:
+	LD   (IY+$05),A			; write back X
 	JP   label_E2FC
 ControlDevice:
-	db $02
+	db $00
 SetControlSinclair:
 	LD   A,$02
 	LD   (ControlDevice),A
@@ -14887,21 +14187,22 @@ SetControlKeyboard:
 	XOR  A			; 0 - keyboard
 	LD   (ControlDevice),A
 	RET 
+data_B2ED:
 	db $00
 	db $00
 	db $00
 	db $00
 function_B2F1:
-	CALL function_B8ED
+	CALL ClearScreen
 	LD   DE,$010A
-	LD   HL,$7C1B
+	LD   HL,data_7C1B
 	CALL function_B8C4
 	PUSH IY
 	LD   DE,$0513
 	LD   BC,$0545
-	LD   HL,$B2ED
-	LD   IY,$BC67
-	LD   IX,$B2ED
+	LD   HL,data_B2ED
+	LD   IY,CharacterStates
+	LD   IX,data_B2ED
 	LD   (IX+$02),$00
 	LD   (IX+$03),$00
 label_B318:
@@ -14928,7 +14229,7 @@ label_B318:
 	CALL function_B34C
 	JP   function_B3AB
 data_B34B:
-	db $00
+	db $01
 function_B34C:
 	PUSH HL
 	PUSH BC
@@ -15001,156 +14302,80 @@ label_B3B4:
 	CP   $FF
 	JR   Z,label_B3B4
 	RET 
+data_B3BE:
 	db $B0
 	db $88
 	db $60
 	db $38
 	db $10
 label_B3C3:
-	db $11
-	db $1C
-	db $13
-	db $21
-	db $F2
-	db $CC
-	db $CD
-	db $2B
-	db $B8
-	db $FD
-	db $21
-	db $67
-	db $BC
-	db $21
-	db $BE
-	db $B3
-	db $06
-	db $05
-	db $C5
-	db $FD
-	db $36
-	db $0A
-	db $98
-	db $FD
-	db $7E
-	db $05
-	db $BE
-	db $28
-	db $3D
-	db $F5
-	db $FD
-	db $7E
-	db $0F
-	db $FE
-	db $16
-	db $28
-	db $0B
-	db $FD
-	db $36
-	db $0F
-	db $16
-	db $FD
-	db $36
-	db $05
-	db $00
-	db $F1
-	db $37
-	db $F5
-	db $F1
-	db $E5
-	db $30
-	db $0D
-	db $FD
-	db $36
-	db $3C
-	db $01
-	db $FD
-	db $36
-	db $41
-	db $01
-	db $CD
-	db $88
-	db $B2
-	db $18
-	db $0B
-	db $FD
-	db $36
-	db $3C
-	db $FF
-	db $FD
-	db $36
-	db $41
-	db $FF
-	db $CD
-	db $88
-	db $B2
-	db $E1
-	db $C1
-	db $FD
-	db $21
-	db $67
-	db $BC
-	db $CD
-	db $C1
-	db $EE
-	db $CD
-	db $D6
-	db $B9
-	db $18
-	db $AF
-	db $FD
-	db $7E
-	db $0F
-	db $FE
-	db $16
-	db $20
-	db $BC
-	db $C1
-	db $23
-	db $FD
-	db $23
-	db $10
-	db $AB
-	db $3A
-	db $DB
-	db $F6
-	db $B7
-	db $28
-	db $E1
-	db $11
-	db $00
-	db $04
-	db $21
-	db $68
-	db $7E
-	db $CD
-	db $4B
-	db $B8
-	db $CD
-	db $AB
-	db $B3
-	db $CD
-	db $ED
-	db $B8
-	db $11
-	db $02
-	db $00
-	db $21
-	db $76
-	db $7C
-	db $CD
-	db $C4
-	db $B8
-	db $CD
-	db $AB
-	db $B3
-	db $CD
-	db $F1
-	db $B2
-	db $C3
-	db $84
-	db $81
-label_B451:
-	CALL function_B8ED
+	LD   DE,$131C
+	LD   HL,data_CCF2
+	CALL function_B82B
+label_B3CC:
+	LD   IY,CharacterStates
+	LD   HL,data_B3BE
+	LD   B,$05
+label_B3D5:
+	PUSH BC
+	LD   (IY+$0A),$98
+	LD   A,(IY+$05)
+	CP   (HL)
+	JR   Z,label_B41D
+label_B3E0:
+	PUSH AF
+	LD   A,(IY+$0F)
+	CP   $16
+	JR   Z,label_B3F3
+	LD   (IY+$0F),$16
+	LD   (IY+$05),$00
+	POP  AF
+	SCF
+	PUSH AF
+label_B3F3:
+	POP  AF
+	PUSH HL
+	JR   NC,label_B404
+	LD   (IY+$3C),$01
+	LD   (IY+$41),$01
+	CALL function_B288
+	JR   label_B40F
+label_B404:
+	LD   (IY+$3C),$FF
+	LD   (IY+$41),$FF
+	CALL function_B288
+label_B40F:
+	POP  HL
+	POP  BC
+label_B411:
+	LD   IY,CharacterStates
+	CALL DrawRoomAndItems
+	CALL DrawCharacters
+	JR   label_B3CC
+label_B41D:
+	LD   A,(IY+$0F)
+	CP   $16
+	JR   NZ,label_B3E0
+	POP  BC
+	INC  HL
+	INC  IY
+	DJNZ label_B3D5
+	LD   A,(data_F6DB)
+	OR   A
+	JR   Z,label_B411
+	LD   DE,$0400
+	LD   HL,data_7E68
+	CALL DrawScreenItem
+	CALL function_B3AB
+	CALL ClearScreen
+	LD   DE,$0002
+	LD   HL,data_7C76
+	CALL function_B8C4
+	CALL function_B3AB
+	CALL function_B2F1
+	JP   StartProgram
+DoGameOverScreen:
+	CALL ClearScreen
 	LD   HL,data_ECFE
 	LD   DE,$080A
 	LD   C,$00
@@ -15160,13 +14385,13 @@ label_B451:
 	CALL function_B8C4
 	CALL function_B3AB
 	CALL function_B2F1
-	JP   label_8184
+	JP   StartProgram
 function_B471:
 	DI  
-	LD   HL,$B560
+	LD   HL,data_B560
 	LD   (data_B4E7),HL
 	LD   A,$FF
-	LD   (data_B4E9),A
+	LD   (NumKeyBits),A
 	INC  A
 	LD   (data_B55F),A
 	RET 
@@ -15178,7 +14403,7 @@ label_B482:
 	LD   A,$01
 	LD   (data_B55F),A
 	LD   A,$FF
-	LD   (data_B4E9),A
+	LD   (NumKeyBits),A
 	RET 
 label_B494:
 	INC  HL
@@ -15203,7 +14428,7 @@ label_B4AA:
 	JR   Z,label_B4DB
 	LD   L,A
 	LD   H,$00
-	ADD  HL,HL
+	ADD  HL,HL			; mult by 2
 	LD   DE,data_B537
 	ADD  HL,DE
 	LD   C,(HL)
@@ -15219,44 +14444,44 @@ label_B4C5:
 	JR   NZ,label_B4C5
 	EX   DE,HL
 	CALL function_B505
-	LD   A,(data_B4E9)
+	LD   A,(NumKeyBits)
 	CP   $FF
-	RET  NZ
+	RET  NZ			; return if key was pressed
 label_B4D3:
 	LD   BC,$0320
-	CALL function_B4EB
+	CALL ReadMenuKeys
 	JR   label_B482
 label_B4DB:
 	LD   BC,$19C8
 	POP  AF
 label_B4DF:
-	CALL function_B4EB
+	CALL ReadMenuKeys
 	DEC  A
 	JR   NZ,label_B4DF
 	JR   label_B4D3
 data_B4E7:
-	db $13
-	db $B7
-data_B4E9:
-	db $FF
+	db $6D
+	db $B5
+NumKeyBits:
+	db $F7
 data_B4EA:
 	db $01
-function_B4EB:
+ReadMenuKeys:
 	PUSH AF
 	PUSH BC
 	PUSH DE
-label_B4EE:
-	DEC  BC
+delay_loop_B4EE:
+	DEC  BC			; dec counter
 	LD   A,B
 	OR   C
-	JR   NZ,label_B4EE
+	JR   NZ,delay_loop_B4EE
 	LD   A,$F7
 	IN   A,($FE)
 	OR   $F0
 	LD   E,A
-	LD   A,(data_B4E9)
+	LD   A,(NumKeyBits)
 	AND  E
-	LD   (data_B4E9),A
+	LD   (NumKeyBits),A
 	POP  DE
 	POP  BC
 	POP  AF
@@ -15283,13 +14508,13 @@ label_B50F:
 label_B520:
 	LD   A,$10
 	OUT  ($FE),A
-	CALL function_B4EB
+	CALL ReadMenuKeys
 	XOR  A
 	OUT  ($FE),A
 	PUSH BC
 	LD   B,H
 	LD   C,L
-	CALL function_B4EB
+	CALL ReadMenuKeys
 	POP  BC
 	DEC  DE
 	LD   A,D
@@ -15338,7 +14563,8 @@ data_B537:
 	db $51
 	db $52
 data_B55F:
-	db $01
+	db $00
+data_B560:
 	db $FF
 	db $03
 	db $07
@@ -15810,7 +15036,7 @@ function_B715:
 	ADD  HL,HL
 	ADD  HL,HL
 	ADD  HL,HL
-	LD   DE,$81F8
+	LD   DE,YPosScreenAddrLUT
 	ADD  HL,DE
 	PUSH HL
 	POP  IX
@@ -15819,7 +15045,7 @@ function_B715:
 	ADD  HL,HL
 	ADD  HL,HL
 	ADD  HL,HL
-	LD   DE,$DFDC
+	LD   DE,CharacterSet
 	ADD  HL,DE
 	EX   DE,HL
 	LD   A,$08
@@ -15945,8 +15171,8 @@ DrawCharAt:
 	ADD  HL,HL			; multiply by 8
 	ADD  HL,HL
 	ADD  HL,HL
-operand_B7E8:
-	LD   BC,BackgroundCharacters			; charset base offset
+operand_CharSetPtr:
+	LD   BC,CharacterSet			; charset base offset
 	ADD  HL,BC			; add char offset
 	LD   B,$08			; pixel loop count
 char_pixel_loop:
@@ -15960,6 +15186,7 @@ char_pixel_loop:
 	POP  HL
 	POP  AF
 	RET 
+function_B7F9:
 	PUSH AF
 	PUSH HL
 	PUSH BC
@@ -15978,7 +15205,7 @@ char_pixel_loop:
 	ADD  HL,DE
 	LD   (HL),C
 	POP  HL
-	LD   DE,$5300
+	LD   DE,ScreenPixels+4864
 	ADD  HL,DE
 	EX   DE,HL
 	LD   L,A
@@ -15986,7 +15213,7 @@ char_pixel_loop:
 	ADD  HL,HL
 	ADD  HL,HL
 	ADD  HL,HL
-	LD   BC,(operand_B7E8+1)
+	LD   BC,(operand_CharSetPtr+1)
 	ADD  HL,BC
 label_B81D:
 	LDI
@@ -16002,14 +15229,14 @@ label_B81D:
 	RET 
 function_B82B:
 	PUSH HL
-	LD   HL,$B7F9
+	LD   HL,function_B7F9
 	LD   (draw_char_at_cursor+1),HL
 	LD   (h_span_loop+1),HL
 	LD   (v_span_loop+1),HL
 	POP  HL
 	CALL DrawScreenItem
 	PUSH HL
-	LD   HL,$B7BA
+	LD   HL,DrawCharAt
 	LD   (v_span_loop+1),HL
 	LD   (draw_char_at_cursor+1),HL
 	LD   (h_span_loop+1),HL
@@ -16048,10 +15275,10 @@ label_B86E:
 	CP   $FB			; change char set command
 	JR   NZ,label_B87E
 	LD   A,(HL)			; read char set low byte
-	LD   (operand_B7E8+1),A			; write char set low byte
+	LD   (operand_CharSetPtr+1),A			; write char set low byte
 	INC  HL
 	LD   A,(HL)
-	LD   (operand_B7E8+2),A			; write char set high byte
+	LD   (operand_CharSetPtr+2),A			; write char set high byte
 	INC  HL
 	JR   DrawScreenItem
 label_B87E:
@@ -16137,74 +15364,74 @@ label_B8E7:
 	CALL function_B715
 	INC  E
 	JR   function_B8C4
-function_B8ED:
-	LD   HL,$4000
+ClearScreen:
+	LD   HL,ScreenPixels
 	LD   (HL),$00
-	LD   DE,$4001
+	LD   DE,ScreenPixels+1
 	LD   BC,$1800
-	LDIR
-	LD   (HL),$46
+	LDIR			; clear pixels
+	LD   (HL),$46			; yellow ink
 	LD   BC,$02FF
-	LDIR
+	LDIR			; clear attributes
 	RET 
-function_B902:
+ClearScreenGameRegion:
 	PUSH HL
 	PUSH BC
 	PUSH DE
-	LD   IX,$8248
-	LD   C,$98
-label_B90B:
-	LD   L,(IX+$00)
+	LD   IX,YPosScreenAddrLUT+80			; for Y = 40
+	LD   C,$98			; number of lines to clear
+vertical_clear_loop:
+	LD   L,(IX+$00)			; get screen address
 	LD   H,(IX+$01)
-	LD   B,$20
-label_B913:
+	LD   B,$20			; one line of pixels
+pixel_line_loop:
 	LD   (HL),$00
 	INC  HL
-	DJNZ label_B913
-	INC  IX
+	DJNZ pixel_line_loop
+	INC  IX			; next line
 	INC  IX
 	DEC  C
-	JR   NZ,label_B90B
-	LD   HL,$58A0
-	LD   BC,$0260
-label_B925:
+	JR   NZ,vertical_clear_loop
+	LD   HL,ScreenAttributes_1+160
+	LD   BC,608
+attrib_clear_loop:
 	LD   (HL),$46
 	INC  HL
 	DEC  BC
 	LD   A,B
 	OR   C
-	JR   NZ,label_B925
-label_B92D:
+	JR   NZ,attrib_clear_loop
+exit_func_B92D:
 	POP  DE
 	POP  BC
 	POP  HL
 	RET 
-function_B931:
+ClearHUDArea:
 	PUSH HL
 	PUSH BC
 	PUSH DE
-	LD   IX,$81F8
-	LD   C,$20
-label_B93A:
+	LD   IX,YPosScreenAddrLUT
+	LD   C,$20			; 32 lines
+hud_line_loop:
 	LD   L,(IX+$00)
 	LD   H,(IX+$01)
-	LD   B,$20
-label_B942:
+	LD   B,$20			; line length
+hud_line_pixel_loop:
 	LD   (HL),$00
 	INC  HL
-	DJNZ label_B942
+	DJNZ hud_line_pixel_loop
 	INC  IX
 	INC  IX
 	DEC  C
-	JR   NZ,label_B93A
-	JP   label_B92D
-data_B951:
-	db $01
-function_B952:
+	JR   NZ,hud_line_loop
+	JP   exit_func_B92D
+CurrentScreenNo:
+	db 24
+DrawScreen:
 	LD   A,$B8
 	LD   (data_AF88),A
-	CALL function_B902
-	LD   A,(IY+$0F)
+	CALL ClearScreenGameRegion
+	LD   A,(IY+$0F)			; character screen number
 	ADD  A,A			; mult by 2
 	LD   E,A			; screen no?
 	LD   D,$00
@@ -16275,34 +15502,34 @@ label_B9B6:
 	CALL Copy32Bytes
 	JP   PE,label_B9B6
 	LD   BC,$0200
-	LD   DE,BackgroundAttribs+512
+	LD   DE,BackgroundAttribs
 	LD   HL,ScreenAttributes_1+256
 label_B9CF:
 	CALL Copy32Bytes
 	JP   PE,label_B9CF
 	RET 
-function_B9D6:
+DrawCharacters:
 	LD   A,(IY+$0F)
-	LD   (data_B951),A
-	LD   B,$05
-	PUSH IY
-	LD   IY,$BC6B
-label_B9E4:
+	LD   (CurrentScreenNo),A
+	LD   B,$05			; character loop count
+	PUSH IY			; backup character pointer
+	LD   IY,CharacterStates+4
+char_loc_check_loop:
 	PUSH BC
-	LD   A,(data_B951)
-	CP   (IY+$0F)
-	JR   NZ,label_B9F0
-	CALL function_B0E6
-label_B9F0:
-	DEC  IY
+	LD   A,(CurrentScreenNo)
+	CP   (IY+$0F)			; check if they are on the current screen
+	JR   NZ,char_not_here
+	CALL DrawCharacterToShadowScreen
+char_not_here:
+	DEC  IY			; next(prev) character
 	POP  BC
-	DJNZ label_B9E4
-	POP  IY
-	CALL CopyShadowScreen
+	DJNZ char_loc_check_loop
+	POP  IY			; restore char pointer
+	CALL CopyShadowScreenToPixelScreen			; copy to screen
 	RET 
-CopyShadowScreen:
+CopyShadowScreenToPixelScreen:
 	LD   HL,ShadowScreen
-	LD   IX,YPosScreenAddrLUT+128
+	LD   IX,YPosScreenAddrLUT+128			; y = 64
 	LD   BC,$1000
 copy_pixel_loop:
 	LD   E,(IX+$00)			; get pointer to screen line
@@ -16312,7 +15539,7 @@ copy_pixel_loop:
 	CALL Copy32Bytes
 	JP   PE,copy_pixel_loop
 	LD   BC,$0200
-	LD   HL,BackgroundAttribs
+	LD   HL,ShadowScreenAttribs
 	LD   DE,ScreenAttributes_1+256
 copy_attrib_loop:
 	CALL Copy32Bytes
@@ -16352,128 +15579,88 @@ Copy32Bytes:
 	LDI
 	LDI
 	RET 
-	db $20
-	db $49
-	db $53
-	db $20
-	db $49
-	db $4E
-	db $20
+txt__IS_IN_:
+	db " IS IN "
 	db $FF
 function_BA6E:
-	db $3A
-	db $B3
-	db $BA
-	db $B7
-	db $C0
-	db $21
-	db $DC
-	db $DF
-	db $22
-	db $E9
-	db $B7
-	db $FD
-	db $7E
-	db $0F
-	db $21
-	db $1F
-	db $7F
-	db $CD
-	db $6C
-	db $AC
-	db $E5
-	db $CD
-	db $CE
-	db $BA
-	db $48
-	db $26
-	db $7C
-	db $FD
-	db $6E
-	db $DD
-	db $E5
-	db $CD
-	db $CE
-	db $BA
-	db $3E
-	db $07
-	db $80
-	db $81
-	db $4F
-	db $3E
-	db $20
-	db $91
-	db $CB
-	db $3F
-	db $5F
-	db $16
-	db $04
-	db $E1
-	db $0E
-	db $4E
-	db $CD
-	db $4B
-	db $B8
-	db $21
-	db $66
-	db $BA
-	db $CD
-	db $4B
-	db $B8
-	db $E1
-	db $CD
-	db $4B
-	db $B8
-	db $3E
-	db $1E
-	db $32
-	db $B3
-	db $BA
-	db $C9
+	LD   A,(data_BAB3)
+	OR   A
+	RET  NZ
+	LD   HL,CharacterSet
+	LD   (operand_CharSetPtr+1),HL
+	LD   A,(IY+$0F)			; screen number
+	LD   HL,txt_THE_TOWN_SQUARE			; first text item
+	CALL GetVariableLengthItem
+	PUSH HL
+	CALL function_BACE
+	LD   C,B
+	LD   H,$7C			; txt_WALLY
+	LD   L,(IY-$23)
+	PUSH HL
+	CALL function_BACE
+	LD   A,$07
+	ADD  A,B
+	ADD  A,C
+	LD   C,A
+	LD   A,$20
+	SUB  C
+	SRL  A
+	LD   E,A
+	LD   D,$04
+	POP  HL
+	LD   C,$4E
+	CALL DrawScreenItem
+	LD   HL,txt__IS_IN_
+	CALL DrawScreenItem
+	POP  HL
+	CALL DrawScreenItem
+	LD   A,$1E
+	LD   (data_BAB3),A
+	RET 
+data_BAB3:
 	db $00
 function_BAB4:
-	LD   HL,$BAB3
+	LD   HL,data_BAB3
 	LD   A,(HL)
 	OR   A
 	RET  Z
 	DEC  (HL)
 	RET  NZ
 	LD   C,$42
-	LD   HL,$DFDC
-	LD   (operand_B7E8+1),HL
+	LD   HL,CharacterSet
+	LD   (operand_CharSetPtr+1),HL
 	LD   DE,$0400
 	LD   HL,data_7E68
 	CALL DrawScreenItem
 	RET 
-	db $06
-	db $00
-	db $7E
-	db $FE
-	db $FF
-	db $C8
-	db $04
-	db $23
-	db $18
-	db $F8
-function_BAD8:
+function_BACE:
+	LD   B,$00
+label_BAD0:
+	LD   A,(HL)
+	CP   $FF
+	RET  Z
+	INC  B
+	INC  HL
+	JR   label_BAD0
+SetupInitialGameState:
 	LD   IY,CharacterStates
 	LD   (data_B09D),IY
 	LD   HL,data_BB3E
-	LD   DE,data_BCE9
+	LD   DE,RoomItemList
 	LD   B,$1F
 label_BAE8:
 	PUSH BC
 label_BAE9:
-	LD   A,(DE)
-	CP   $FF
+	LD   A,(DE)			; item number
+	CP   $FF			; terminator
 	JR   NZ,label_BAF1
 	INC  DE
 	JR   label_BAE9
 label_BAF1:
-	LDI
-	INC  DE
-	INC  DE
-	LDI
+	LDI			; copy item number
+	INC  DE			; skip X
+	INC  DE			; skip y
+	LDI			; copy ??
 	POP  BC
 	DJNZ label_BAE8
 	LD   BC,$00AF
@@ -16502,7 +15689,7 @@ label_BB2C:
 	INC  HL
 	INC  HL
 	DJNZ label_BB2C
-	LD   HL,$EC0F
+	LD   HL,data_EC0F
 	LD   B,$0E
 label_BB38:
 	LD   (HL),$00
@@ -16510,7 +15697,7 @@ label_BB38:
 	DJNZ label_BB38
 	RET 
 data_BB3E:
-	db $00
+	db $00			; item number
 	db $1F
 	db $01
 	db $9F
@@ -16748,11 +15935,11 @@ data_BB7C:
 	db $01
 	db $00
 	db $00
-	db $00
-	db $01
 	db $01
 	db $00
-	db $01
+	db $00
+	db $00
+	db $00
 data_BC30:
 	db $1F
 	db $1F
@@ -16784,6 +15971,9 @@ data_BC30:
 	db $00
 	db $00
 	db $00
+	db $00
+	db $00
+	db $00
 	db $01
 	db $00
 	db $00
@@ -16803,41 +15993,41 @@ data_BC30:
 	db $00
 	db $00
 	db $00
+	db $01
 	db $00
-	db $02
-	db $01
-	db $01
-	db $01
-	db $01
+	db $00
 ; It looks like the state is interleaved between the 5 characters
 CharacterStates:
-	db $00			; wally animation frame
-	db $02
-	db $04
-	db $04
-	db $04
+	db 5			; wally animation frame
+	db 1
+	db 2
+	db 3
+	db 1
 ; x positions
-	db $6C			; wally x pos
-	db $40
-	db $44
-	db $10
-	db $D4
+	db 220			; wally x pos
+	db 202
+	db 68
+	db 186
+	db 154
 ; y positions
-	db $98			; wally y pos
-	db $98
-	db $98
-	db $98
-	db $98
-	db $01
-	db $0B
-	db $08
-	db $10
-	db $0A
+	db 152			; wally y pos
+	db 152
+	db 152
+	db 152
+	db 152
+; screen number
+	db 24			; wally screen number
+	db 16
+	db 21
+	db 5			; screen number
+	db 5
+; endurance
+	db 128
 	db $80
 	db $80
 	db $80
 	db $80
-	db $80
+;   
 	db $5B
 	db $5C
 	db $5D
@@ -16855,16 +16045,20 @@ CharacterStates:
 	db $38
 	db $38
 	db $38
+; high byte
 	db $94			; wally base sprite high byte
 	db $98
 	db $9C
 	db $A0
 	db $A4
+; Character Lives
 	db $03
 	db $03
 	db $03
 	db $03
 	db $03
+;  
+	db $00
 	db $00
 	db $00
 	db $00
@@ -16876,65 +16070,64 @@ CharacterStates:
 	db $00
 	db $00
 	db $FF
-	db $01
-	db $01
+	db $FF
+	db $FF
 	db $FF
 	db $01
 	db $01
 	db $01
 	db $01
 	db $01
-	db $01
 	db $00
 	db $00
 	db $00
 	db $00
 	db $00
-	db $0C
 	db $00
 	db $00
 	db $00
 	db $00
-	db $1D
+	db $00
+	db $1F
 	db $21
 	db $15
-	db $10
+	db $25
 	db $27
-	db $11
+	db $20
 	db $22
 	db $23
-	db $25
+	db $26
 	db $28
-	db $02
-	db $0A
-	db $09
-	db $0B
+	db $14
 	db $05
-	db $00
-	db $01
-	db $01
-	db $00
-	db $00
-	db $03
-	db $01
-	db $01
-	db $00
-	db $01
-	db $02
-	db $07
-	db $09
-	db $06
-	db $07
-	db $03
-	db $0D
-	db $07
+	db $0F
 	db $12
-	db $09
+	db $08
+	db $00
+	db $01
+	db $01
+	db $01
 	db $01
 	db $00
 	db $00
+	db $00
+	db $00
+	db $00
+	db $18
+	db $06
+	db $13
+	db $06
+	db $06
 	db $01
-	db $04
+	db $13
+	db $17
+	db $03
+	db $03
+	db $01
+	db $01
+	db $01
+	db $03
+	db $03
 	db $A7
 	db $B0
 	db $B9
@@ -16945,24 +16138,31 @@ CharacterStates:
 	db $AE
 	db $AE
 	db $AE
-data_BCE9:
-	db $FF
-	db $FF
-	db $00
-	db $C8
-	db $90
+; this is a list of variable length items
+; Indexed by screen number
+RoomItemList:
+	db $FF			; screen 0
+; screen 1
+	db $FF			; terminator
+; screen 2
+	db $00			; item no
+	db 200			; item X
+	db 144			; item Y
 	db $1F
-	db $FF
-	db $FF
-	db $01
-	db $18
-	db $88
+	db $FF			; terminator
+; screen 3
+	db $FF			; terminator
+; screen 4
+	db $01			; item no
+	db 24			; x pos
+	db 136			; y pos
 	db $9F
-	db $02
-	db $78
-	db $A8
+	db 2			; item no
+	db 120			; xpos
+	db 168			; ypos
 	db $1F
-	db $FF
+	db $FF			; terminator
+; screen 5
 	db $03
 	db $88
 	db $A8
@@ -16970,6 +16170,7 @@ data_BCE9:
 	db $FF
 	db $FF
 	db $FF
+data_BD01:
 	db $04
 	db $20
 	db $A0
@@ -17028,13 +16229,13 @@ data_BCE9:
 	db $90
 	db $1F
 	db $FF
-	db $26
+	db $10
 	db $78
 	db $A8
 	db $1F
 	db $FF
 	db $FF
-	db $20
+	db $11
 	db $38
 	db $90
 	db $9F
@@ -17068,12 +16269,15 @@ data_BCE9:
 	db $90
 	db $9F
 	db $FF
-	db $FF
+; screen 26
+	db $FF			; terminator
+; screen 27
 	db $18
-	db $08
-	db $A8
+	db 8			; xpos
+	db 168			; ypos
 	db $9F
-	db $FF
+	db $FF			; terminator
+; screen 28
 	db $FF
 	db $19
 	db $B0
@@ -17096,7 +16300,7 @@ data_BD78:
 	db $1F
 	db $FF
 data_BD7D:
-	db $1F
+	db $1D
 	db $00
 	db $98
 	db $9F
@@ -17163,7 +16367,7 @@ ScreenItemPtrs:
 	dw $CC03
 	dw $CC25
 	dw $CCDA
-	dw $CCF2
+	dw data_CCF2
 	dw $C857
 	dw $C27C
 	dw $C92E
@@ -20974,6 +20178,7 @@ data_C37C:
 	db $08
 	db $09
 	db $FF
+data_CCF2:
 	db $FB
 	db $9C
 	db $DA
@@ -22172,6 +21377,7 @@ data_CE37:
 	db $7F
 	db $00
 	db $00
+data_D1BC_1:
 	db $00
 	db $FF
 	db $FE
@@ -22364,6 +21570,7 @@ data_CE37:
 	db $3C
 	db $3C
 	db $3C
+charset_D27C:
 	db $00
 	db $FF
 	db $BF
@@ -26865,7 +26072,7 @@ label_E30B:
 	LD   A,$01
 	LD   (IY-$19),A
 label_E315:
-	LD   A,(data_B951)
+	LD   A,(CurrentScreenNo)
 	CP   (IY+$0F)
 	RET  NZ
 	LD   BC,$0701
@@ -26873,19 +26080,19 @@ label_E315:
 	LD   HL,$0404
 	CALL function_E3D3
 	RET 
-function_E329:
+ItemIntersectionHazard:
 	LD   A,(ItemXPos)
-	SUB  (IY+$05)
+	SUB  (IY+$05)			; character X pos
 	SUB  $0D
 	CP   $E6
-	RET  C
+	RET  C			; no player intersection
 	LD   A,(ItemYPos)
-	SUB  (IY+$0A)
+	SUB  (IY+$0A)			; character y pos
 	SUB  $1C
 	CP   $D6
-	RET  C
-function_E33F:
-	LD   A,(data_B55F)
+	RET  C			; no player intersection
+ApplyDamageToCharacter:
+	LD   A,(data_B55F)			; check invulnerable?
 	OR   A
 	RET  NZ
 	EXX 
@@ -26893,25 +26100,25 @@ function_E33F:
 	LD   DE,$0101
 	LD   HL,$6401
 	CALL function_E3D3
-	LD   A,(data_F26E)
+	LD   A,(DamageAmount)			; damage amount
 	LD   B,A
-	LD   A,(IY+$14)
+	LD   A,(IY+$14)			; endurence
 	SUB  B
-	LD   (IY+$14),A
+	LD   (IY+$14),A			; store back
 	JR   Z,label_E362
 	JR   C,label_E362
 	JR   label_E36C
 label_E362:
-	LD   (IY+$14),$80
-	DEC  (IY+$2D)
-	JP   Z,label_B451
+	LD   (IY+$14),$80			; reset endurance
+	DEC  (IY+$2D)			; dec lives
+	JP   Z,DoGameOverScreen
 label_E36C:
 	EXX 
 function_E36D:
 	EXX 
 	LD   C,$46
 	LD   HL,CharacterSet
-	LD   (operand_B7E8+1),HL
+	LD   (operand_CharSetPtr+1),HL
 	LD   DE,$021C
 	LD   L,(IY+$2D)
 	DEC  L
@@ -27008,7 +26215,7 @@ label_E3F9:
 	POP  BC
 	RET 
 function_E3FD:
-	CALL function_B931
+	CALL ClearHUDArea
 	LD   HL,data_7E3F
 	LD   DE,$0010
 	CALL DrawScreenItem
@@ -27044,7 +26251,7 @@ function_E420:
 	PUSH BC			; push item name pointer
 	EX   DE,HL			; put first item name pointer into HL
 	LD   DE,CharacterSet
-	LD   (operand_B7E8+1),DE
+	LD   (operand_CharSetPtr+1),DE
 	LD   DE,$0003
 	LD   C,$43
 	CALL function_E468
@@ -27424,7 +26631,7 @@ label_E7C0:
 	LD   (data_B09D),IY
 	POP  IY
 	LD   A,B
-	CALL function_AC69
+	CALL GetRoomInfoData
 	LD   A,(HL)
 	LD   (IY+$69),A
 	INC  HL
@@ -28149,9 +27356,9 @@ data_E80F:
 	db $FF
 function_EABF:
 	LD   A,(IY+$0F)
-	LD   (data_B951),A
+	LD   (CurrentScreenNo),A
 	LD   HL,data_E80F
-	CALL FindItemNo
+	CALL GetVariableLengthItem
 label_EACB:
 	LD   A,(HL)
 	INC  HL
@@ -28208,7 +27415,7 @@ function_EB0F:
 	INC  HL
 	PUSH HL
 	PUSH IY
-	CALL function_AA8C
+	CALL GetRoomItem
 	LD   A,(IY+$50)
 	CP   C
 	JR   Z,label_EB2F
@@ -28242,7 +27449,7 @@ data_EB54:
 	db $00
 function_EB55:
 	LD   BC,$0000
-	CALL function_AA8C
+	CALL GetRoomItem
 label_EB5B:
 	LD   A,(HL)
 	CP   $FF
@@ -28296,7 +27503,7 @@ function_EB95:
 	OR   A
 	JR   NZ,label_EBC0
 	LD   (IY-$2D),B
-	CALL function_AA8C
+	CALL GetRoomItem
 	LD   A,(IY+$05)
 	INC  HL
 	SUB  (HL)
@@ -28356,6 +27563,7 @@ function_EBFE:
 	CP   (IY+$55)
 	JP   Z,label_EAE3
 	JP   label_EACB
+data_EC0F:
 	db $00
 	db $00
 	db $00
@@ -28369,13 +27577,14 @@ function_EBFE:
 	db $00
 	db $00
 	db $00
+data_EC1C:
 	db $00
 function_EC1D:
 	PUSH HL
 	PUSH DE
 	LD   E,A
 	LD   D,$00
-	LD   HL,$EC0F
+	LD   HL,data_EC0F
 	ADD  HL,DE
 	LD   A,(HL)
 	POP  DE
@@ -28389,9 +27598,7 @@ function_EC2B:
 function_EC34:
 	CALL function_EC3D
 	JP   NZ,label_EACB
-	db $C3
-	db $E3
-	db $EA
+	JP   label_EAE3
 function_EC3D:
 	LD   B,(HL)
 	INC  HL
@@ -28399,31 +27606,24 @@ function_EC3D:
 	INC  HL
 	PUSH HL
 	PUSH AF
-	CALL function_AA8C
+	CALL GetRoomItem
 	POP  AF
 	CP   (HL)
 	POP  HL
 	RET 
 label_EC4A:
-	db $5E
-	db $23
+	LD   E,(HL)
+	INC  HL
 label_EC4C:
-	db $E5
-	db $16
-	db $00
-	db $21
-	db $0F
-	db $EC
-	db $19
-	db $BE
-	db $77
-	db $C4
-	db $1D
-	db $E4
-	db $E1
-	db $C3
-	db $EB
-	db $EA
+	PUSH HL
+	LD   D,$00
+	LD   HL,data_EC0F
+	ADD  HL,DE
+	CP   (HL)
+	LD   (HL),A
+	CALL NZ,function_E41D
+	POP  HL
+	JP   label_EAEB
 data_EC5C:
 	db $00
 	db $50
@@ -28512,6 +27712,7 @@ data_EC5C:
 	db $00
 	db $60
 	db $00
+data_ECB3:
 	db $00
 	db $00
 	db $01
@@ -28526,7 +27727,7 @@ function_ECBC:
 	INC  HL
 	LD   D,$00
 	PUSH HL
-	LD   HL,$EC5C
+	LD   HL,data_EC5C
 	ADD  HL,DE
 	ADD  HL,DE
 	ADD  HL,DE
@@ -28571,29 +27772,28 @@ data_ECFE:
 	db $00
 data_ECFF:
 	db $00
-	db $71
-	db $7E
-	db $9F
-	db $7E
-	db $CC
-	db $7E
-	db $B0
-	db $58
-	db $02
-	db $FE
-	db $28
-	db $8C
-	db $02
-	db $FE
-	db $80
-	db $74
+data_ED00:
+	dw data_7E71
+	dw data_7E9F
+	dw data_7ECC
+data_ED06:
+	db $CE
+	db $6A
 	db $FE
 	db $02
+	db $6A
+	db $4A
+	db $02
+	db $FE
+	db $3E
+	db $9A
+	db $FE
+	db $FE
 data_ED12:
 	db $7C
-label_ED13:
+Room17_Update:
 	LD   A,$02
-	LD   (data_F26E),A
+	LD   (DamageAmount),A
 	LD   A,(data_ED12)
 	CALL function_ED8A
 	ADD  A,$02
@@ -28616,91 +27816,56 @@ function_ED2A:
 	LD   A,(data_ECFE)
 	SBC  A,(HL)
 	RET  C
-	db $01
-	db $00
-	db $00
-	db $0B
-	db $00
-	db $00
-	db $78
-	db $B1
-	db $20
-	db $F9
-	db $CD
-	db $02
-	db $B9
-	db $21
-	db $00
-	db $ED
-	db $19
-	db $5E
-	db $23
-	db $56
-	db $EB
-	db $11
-	db $00
-	db $00
-	db $CD
-	db $C4
-	db $B8
-	db $CD
-	db $AC
-	db $B9
-	db $CD
-	db $A2
-	db $EE
-	db $3A
-	db $F5
-	db $EC
-	db $87
-	db $C6
-	db $65
-	db $DD
-	db $21
-	db $06
-	db $ED
-	db $06
-	db $03
-	db $C5
-	db $01
-	db $CA
-	db $F5
-	db $CD
-	db $35
-	db $EF
-	db $CD
-	db $A0
-	db $A8
-	db $C1
-	db $10
-	db $F3
-	db $CD
-	db $FB
-	db $B9
-	db $CD
-	db $D7
-	db $AB
-	db $B7
-	db $28
-	db $DB
-	db $21
-	db $F5
-	db $EC
-	db $34
-	db $CD
-	db $52
-	db $B9
+	LD   BC,$0000
+label_ED42:
+	DEC  BC
+	NOP 
+	NOP 
+	LD   A,B
+	OR   C
+	JR   NZ,label_ED42
+	CALL ClearScreenGameRegion
+	LD   HL,data_ED00
+	ADD  HL,DE
+	LD   E,(HL)
+	INC  HL
+	LD   D,(HL)
+	EX   DE,HL
+	LD   DE,$0000
+	CALL function_B8C4
+	CALL CopyScreenToBackground
+label_ED5D:
+	CALL DrawBackgroundToShadowScreen
+	LD   A,(data_ECF5)
+	ADD  A,A
+	ADD  A,$65
+	LD   IX,data_ED06
+	LD   B,$03
+label_ED6C:
+	PUSH BC
+	LD   BC,data_F5CA
+	CALL BounceObjectWithinBounds
+	CALL DrawMovingObject
+	POP  BC
+	DJNZ label_ED6C
+	CALL CopyShadowScreenToPixelScreen
+	CALL function_ABD7
+	OR   A
+	JR   Z,label_ED5D
+	LD   HL,data_ECF5
+	INC  (HL)
+	CALL DrawScreen
 	db $C9
 function_ED8A:
-	LD   IX,$ED06
+	LD   IX,data_ED06
 	LD   B,$03
 label_ED90:
 	PUSH BC
-	LD   BC,$F5CA
-	CALL function_EF35
-	CALL function_A8A0
+	LD   BC,data_F5CA
+	CALL BounceObjectWithinBounds
+	CALL DrawMovingObject
 	PUSH AF
-	CALL function_E329
+	CALL ItemIntersectionHazard
 	POP  AF
 	POP  BC
 	DJNZ label_ED90
@@ -28722,9 +27887,8 @@ function_EDB3:
 	INC  HL
 	CALL function_EC1D
 	JP   Z,label_EAE3
-	db $C3
-	db $CB
-	db $EA
+	JP   label_EACB
+data_EDBE:
 	db $FF
 	db $02
 	db $04
@@ -28736,7 +27900,7 @@ data_EDC5:
 	db $01
 function_EDC6:
 	PUSH HL
-	LD   HL,$EDBE
+	LD   HL,data_EDBE
 	LD   A,(data_EDC5)
 	LD   E,A
 	LD   D,$00
@@ -28755,20 +27919,13 @@ label_EDE5:
 	POP  HL
 	JP   label_EAEB
 label_EDE9:
-	db $2B
-	db $7E
-	db $FD
-	db $BE
-	db $D8
-	db $28
-	db $F5
-	db $3E
-	db $01
-	db $32
-	db $C5
-	db $ED
-	db $18
-	db $EE
+	DEC  HL
+	LD   A,(HL)
+	CP   (IY-$28)
+	JR   Z,label_EDE5
+	LD   A,$01
+	LD   (data_EDC5),A
+	JR   label_EDE5
 function_EDF7:
 	XOR  A
 	LD   (data_FAEF),A
@@ -28782,244 +27939,184 @@ function_EDF7:
 	LD   (IY+$05),$30
 label_EE12:
 	LD   (IY+$0A),$78
-	LD   HL,$F879
-	LD   DE,$80A9
+	LD   HL,data_F879
+	LD   DE,data_80A9
 	LD   BC,$003C
 	LDIR
-	CALL function_B902
-	db $21
-	db $00
-	db $48
-	db $16
-	db $00
-	db $3E
-	db $53
-	db $ED
-	db $4F
-	db $ED
-	db $5F
-	db $5F
-	db $36
-	db $20
-	db $19
-	db $7C
-	db $FE
-	db $58
-	db $20
-	db $F5
-	db $21
-	db $02
-	db $7F
-	db $11
-	db $04
-	db $0F
-	db $CD
-	db $4B
-	db $B8
-	db $CD
-	db $AC
-	db $B9
-	db $CD
-	db $B4
-	db $BA
-	db $CD
-	db $A2
-	db $EE
-	db $CD
-	db $3A
-	db $F9
-	db $CD
-	db $F5
-	db $F9
-	db $CD
-	db $F5
-	db $F9
-	db $CD
-	db $F5
-	db $F9
-	db $CD
-	db $B9
-	db $F8
-	db $CD
-	db $FB
-	db $B9
-	db $FD
-	db $7E
-	db $05
-	db $47
-	db $D6
-	db $24
-	db $FE
-	db $F8
-	db $30
-	db $07
-	db $78
-	db $D6
-	db $D4
-	db $FE
-	db $F8
-	db $38
-	db $D7
-	db $FD
-	db $7E
-	db $0A
-	db $D6
-	db $7C
-	db $FE
-	db $F8
-	db $38
-	db $CE
-	db $78
-	db $FE
-	db $80
-	db $30
-	db $0A
-	db $FD
-	db $36
-	db $05
-	db $04
-	db $FD
-	db $36
-	db $0F
-	db $13
-	db $18
-	db $08
-	db $FD
-	db $36
-	db $05
-	db $DC
-	db $FD
-	db $36
-	db $0F
-	db $01
-	db $CD
-	db $52
-	db $B9
-	db $FD
-	db $36
-	db $0A
-	db $98
-	db $FD
-	db $36
-	db $46
-	db $00
-	db $FD
-	db $36
-	db $00
-	db $00
-	db $31
-	db $00
-	db $FC
-	db $C3
-	db $94
-	db $81
-function_EEA2:
-	LD   DE,$6B00
-	LD   HL,$5B00
+	CALL ClearScreenGameRegion
+	LD   HL,ScreenPixels+2048
+	LD   D,$00
+	LD   A,$53
+	LD   R,A
+label_EE2D:
+	LD   A,R
+	LD   E,A
+	LD   (HL),$20
+	ADD  HL,DE
+	LD   A,H
+	CP   $58
+	JR   NZ,label_EE2D
+	LD   HL,data_7F02
+	LD   DE,$0F04
+	CALL DrawScreenItem
+	CALL CopyScreenToBackground
+label_EE44:
+	CALL function_BAB4
+	CALL DrawBackgroundToShadowScreen
+	CALL function_F93A
+	CALL function_F9F5
+	CALL function_F9F5
+	CALL function_F9F5
+	CALL function_F8B9
+	CALL CopyShadowScreenToPixelScreen
+	LD   A,(IY+$05)
+	LD   B,A
+	SUB  $24
+	CP   $F8
+	JR   NC,label_EE6D
+	LD   A,B
+	SUB  $D4
+	CP   $F8
+	JR   C,label_EE44
+label_EE6D:
+	LD   A,(IY+$0A)
+	SUB  $7C
+	CP   $F8
+	JR   C,label_EE44
+	LD   A,B
+	CP   $80
+	JR   NC,label_EE85
+	LD   (IY+$05),$04
+	LD   (IY+$0F),$13
+	JR   label_EE8D
+label_EE85:
+	LD   (IY+$05),$DC
+	LD   (IY+$0F),$01
+label_EE8D:
+	CALL DrawScreen
+	LD   (IY+$0A),$98
+	LD   (IY+$46),$00
+	LD   (IY+$00),$00
+	LD   SP,ShadowScreenAttribs
+	JP   label_8194
+DrawBackgroundToShadowScreen:
+	LD   DE,ShadowScreen
+	LD   HL,ScreenBackground
 	LD   BC,$1000
 label_EEAB:
 	CALL Copy32Bytes
 	JP   PE,label_EEAB
 	LD   BC,$0200
-	LD   HL,$FE00
-	LD   DE,$FC00
+	LD   HL,BackgroundAttribs
+	LD   DE,ShadowScreenAttribs
 label_EEBA:
 	CALL Copy32Bytes
 	JP   PE,label_EEBA
 	RET 
-function_EEC1:
-	CALL function_EEA2
-	LD   A,(IY+$0F)
-	LD   (data_B951),A
-	LD   B,$00
-	CALL function_AA8C
-label_EECF:
-	LD   A,(HL)
-	CP   $FF
-	JR   Z,label_EEE3
+DrawRoomAndItems:
+	CALL DrawBackgroundToShadowScreen
+	LD   A,(IY+$0F)			; get screen number for character
+	LD   (CurrentScreenNo),A			; store current screen no
+	LD   B,$00			; item number - first item
+	CALL GetRoomItem
+draw_room_item_loop:
+	LD   A,(HL)			; item no
+	CP   $FF			; check for terminator
+	JR   Z,no_items_in_room			; nothing for this screen
 	INC  HL
-	LD   E,(HL)
+	LD   E,(HL)			; item X
 	INC  HL
-	LD   D,(HL)
+	LD   D,(HL)			; item y
 	INC  HL
-	INC  HL
+	INC  HL			; skip last byte
 	LD   (ItemXPos),DE
 	CALL DrawItem
-	JR   label_EECF
-label_EEE3:
-	LD   E,(IY+$0F)
-	SLA  E
+	JR   draw_room_item_loop
+no_items_in_room:
+	LD   E,(IY+$0F)			; get screen number
+	SLA  E			; mult by 2
 	LD   D,$00
-	LD   HL,JumpTable_EEF3
-	ADD  HL,DE
+	LD   HL,RoomUpdateFuncTableLUT
+	ADD  HL,DE			; add offset into LUT
 	LD   E,(HL)
 	INC  HL
 	LD   D,(HL)
 	EX   DE,HL
-	JP   (HL)
-JumpTable_EEF3:
-	dw function_F572
-	dw NullFunction
-	dw function_F24B
-	dw NullFunction
-	dw function_F503
-	dw function_F674
-	dw NullFunction
-	dw NullFunction
-	dw function_F43C
-	dw NullFunction
-	dw function_F49D
-	dw function_F5F1
-	dw function_F773
-	dw NullFunction
-	dw function_F409
-	dw function_F309
-	dw function_F4D3
-	dw label_ED13
-	dw NullFunction
-	dw NullFunction
-	dw NullFunction
-	dw NullFunction
-	dw function_F6EC
-	dw function_F746
-	dw NullFunction
-	dw NullFunction
-	dw NullFunction
-	dw function_F334
-	dw NullFunction
-	dw NullFunction
-	dw function_F37D
-	dw function_F3AB
-	dw function_F54F
-function_EF35:
-	LD   E,(IX+$02)
-	LD   D,(IX+$03)
+	JP   (HL)			; jump to screen function
+; these are update functions for the rooms
+; Indexed by room number
+RoomUpdateFuncTableLUT:
+	dw Room0_Update			; 0
+	dw NullFunction			; 1
+	dw Room2_Update			; 2
+	dw NullFunction			; 3
+	dw Room4_Update			; 4
+	dw Room5_Update			; 5
+	dw NullFunction			; 6
+	dw NullFunction			; 7
+	dw Room8_Update			; 8
+	dw NullFunction			; 9
+	dw Room10_Update			; 10
+	dw Room11_Update			; 11
+	dw Room12_Update			; 12
+	dw NullFunction			; 13
+	dw Room14_Update			; 14
+	dw Room15_Update			; 15
+	dw Room16_Update			; 16
+	dw Room17_Update			; 17
+	dw NullFunction			; 18
+	dw NullFunction			; 19
+	dw NullFunction			; 20
+	dw NullFunction			; 21
+	dw Room22_Update			; 22
+	dw Room23_Update			; 23
+	dw NullFunction			; 24
+	dw NullFunction			; 25
+	dw NullFunction			; 26
+	dw Room27_Update			; 27
+	dw NullFunction			; 28
+	dw NullFunction			; 29
+	dw Room30_Update			; 30
+	dw Room31_Update			; 31
+	dw Room32_Update			; 32
+; This appear to update an object's position
+; IX points to the object:
+; 0 - X pos
+; 1 - Y pos
+; 2 - X vel
+; 3 - Y vel
+; BC points to coordinate ranges to bounce inside
+; XMin,XMax,YMin,YMax
+; IX is advanced to next object
+BounceObjectWithinBounds:
+	LD   E,(IX+$02)			; x vel
+	LD   D,(IX+$03)			; y vel
 	PUSH BC
 	PUSH AF
 	XOR  A
 	LD   (data_F673),A
 	LD   (data_F672),A
-	LD   A,(IX+$00)
-	ADD  A,E
+	LD   A,(IX+$00)			; x pos
+	ADD  A,E			; add xvel
 	LD   L,A
-	LD   A,(BC)
+	LD   A,(BC)			; get x range value
 	INC  BC
 	CP   L
-	JR   NZ,label_EF59
-label_EF4E:
+	JR   NZ,label_EF59			; jump if A!=L
+flip_xvel:
 	LD   A,$01
 	LD   (data_F672),A
-	LD   A,E
+	LD   A,E			; flip X vel
 	NEG  
 	LD   E,A
 	JR   label_EF5D
 label_EF59:
-	LD   A,(BC)
+	LD   A,(BC)			; get x range value
 	CP   L
-	JR   Z,label_EF4E
+	JR   Z,flip_xvel
 label_EF5D:
 	INC  BC
-	LD   A,(IX+$01)
+	LD   A,(IX+$01)			; y pos
 	ADD  A,D
 	LD   H,A
 	LD   A,(BC)
@@ -29032,12 +28129,12 @@ label_EF68:
 	LD   A,D
 	NEG  
 	LD   D,A
-	JR   label_EF77
+	JR   store_new_object_state
 label_EF73:
 	LD   A,(BC)
 	CP   H
 	JR   Z,label_EF68
-label_EF77:
+store_new_object_state:
 	LD   (ItemXPos),HL
 	LD   (IX+$00),L
 	LD   (IX+$01),H
@@ -29045,6 +28142,7 @@ label_EF77:
 	LD   (IX+$03),D
 	POP  AF
 	POP  BC
+NextObject:
 	INC  IX
 	INC  IX
 	INC  IX
@@ -29058,20 +28156,19 @@ function_EF91:
 	LD   A,(ItemYPos)
 	AND  $07
 	JR   Z,label_EFA2
-	db $06
-	db $03
-	db $18
-	db $02
+	LD   B,$03
+	JR   label_EFA4
 label_EFA2:
 	LD   B,$02
+label_EFA4:
 	LD   A,(ItemYPos)
 	AND  $F8
 	LD   H,$00
 	LD   L,A
-	ADD  HL,HL
+	ADD  HL,HL			; mult by 4
 	ADD  HL,HL
 operand_EFAE:
-	LD   DE,$FB0C
+	LD   DE,label_FAF7+9
 	ADD  HL,DE
 	LD   DE,$001E
 label_EFB5:
@@ -29101,7 +28198,7 @@ label_EFD2:
 	SRL  A
 	LD   E,A
 	LD   D,$17
-	LD   HL,$7F16
+	LD   HL,data_7F16
 	CALL function_B82B
 label_EFE1:
 	LD   A,(IY+$0A)
@@ -29118,11 +28215,11 @@ label_EFEC:
 	LD   (IY+$00),$00
 	LD   A,(IY-$3C)
 	OR   A
-	CALL NZ,function_81D4
+	CALL NZ,FlipCharacterSprite
 	LD   A,$F0
 	LD   (data_F0BD),A
 	LD   HL,$F0B7
-	CALL function_B902
+	CALL ClearScreenGameRegion
 	CALL screen_item_loop
 	LD   (IY+$05),$DA
 	LD   (IY+$0A),$3C
@@ -29133,34 +28230,26 @@ label_F01A:
 	ADD  A,$04
 	LD   (IY+$0A),A
 label_F026:
-	CALL function_EEA2
+	CALL DrawBackgroundToShadowScreen
 	CALL function_F057
 	CALL function_F0C0
-	CALL function_B0E6
-	CALL CopyShadowScreen
+	CALL DrawCharacterToShadowScreen
+	CALL CopyShadowScreenToPixelScreen
 	LD   A,(IY+$05)
 	OR   A
 	JR   NZ,label_F01A
-	db $FD
-	db $36
-	db $0F
-	db $1F
-	db $FD
-	db $36
-	db $05
-	db $F0
-	db $C3
-	db $8D
-	db $EE
+	LD   (IY+$0F),$1F
+	LD   (IY+$05),$F0
+	JP   label_EE8D
 data_F046:
-	db $01
+	db $00
 function_F047:
 	EXX 
 	XOR  $01
 	LD   (data_F046),A
-	LD   DE,$88F8
+	LD   DE,MaskedSprites2_0
 	LD   BC,$00C0
-	CALL label_81E3
+	CALL sprite_flip_loop
 	RET 
 function_F057:
 	LD   A,(data_F046)
@@ -29170,20 +28259,20 @@ function_F057:
 	LD   H,$98
 	LD   A,$30
 	LD   (ItemXPos),HL
-	CALL function_A8A0
+	CALL DrawMovingObject
 	LD   H,$A8
 	LD   (ItemXPos),HL
 	LD   A,(data_F3A0)
 	XOR  $02
 	LD   (data_F3A0),A
-	CALL function_A8A0
+	CALL DrawMovingObject
 	LD   A,$0C
-	LD   (data_F26E),A
-	CALL function_E329
+	LD   (DamageAmount),A
+	CALL ItemIntersectionHazard
 	LD   A,(IY+$0A)
 	CP   $98
 	RET  NZ
-	LD   HL,$F0BD
+	LD   HL,data_F0BD
 	LD   A,(HL)
 	SUB  (IY+$05)
 	SUB  $01
@@ -29218,7 +28307,7 @@ label_F0B3:
 	db $7F
 	db $00
 data_F0BD:
-	db $F0
+	db $D1
 data_F0BE:
 	db $04
 data_F0BF:
@@ -29248,7 +28337,7 @@ label_F0E0:
 	OR   A
 	JR   Z,label_F0FB
 operand_F0E3:
-	LD   A,$05
+	LD   A,$04
 	LD   (data_F0BE),A
 	LD   A,(data_F0BF)
 	XOR  $01
@@ -29264,22 +28353,24 @@ label_F0FB:
 	RET  Z
 	DEC  (HL)
 	JR   label_F0F0
-	db $BE
-	db $A6
+data_F104:
+	db $84
+	db $A4
+	db $FE
 	db $02
+	db $00
 	db $02
-	db $02
-	db $02
+data_F10A:
 	db $00
 	db $F0
 	db $A0
 	db $A8
 function_F10E:
 	LD   A,$04
-	LD   (data_F26E),A
-	LD   IX,$F104
-	LD   BC,$F10A
-	CALL function_EF35
+	LD   (DamageAmount),A
+	LD   IX,data_F104
+	LD   BC,data_F10A
+	CALL BounceObjectWithinBounds
 	LD   A,(IX-$04)
 	OR   A
 	JR   NZ,label_F13F
@@ -29302,17 +28393,18 @@ label_F13F:
 	JR   NZ,label_F151
 	LD   A,$4A
 label_F151:
-	CALL function_A8A0
-	CALL function_E329
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
 	RET 
 data_F158:
-	db $00
-	db $00
+	db $06
+	db $EA
 data_F15A:
-	db $00
+	db $02
 data_F15B:
 	db $00
 	db $00
+data_F15D:
 	db $80
 	db $07
 	db $86
@@ -29345,7 +28437,7 @@ function_F177:
 	CP   $80
 	LD   A,$FE
 	JR   C,label_F188
-	LD   HL,$EA06
+	LD   HL,data_E80F+503
 	LD   A,$02
 label_F188:
 	LD   (data_F158),HL
@@ -29353,249 +28445,163 @@ label_F188:
 	LD   HL,$0000
 	LD   (data_F15B),HL
 	LD   (IY+$0A),$98
-	CALL function_B902
-	db $21
-	db $5D
-	db $F1
-	db $CD
-	db $69
-	db $B9
-	db $18
-	db $2F
-	db $CD
-	db $A2
-	db $EE
-	db $CD
-	db $02
-	db $F2
-	db $3E
-	db $04
-	db $32
-	db $6E
-	db $F2
-	db $3A
-	db $5A
-	db $F1
-	db $FE
-	db $02
-	db $3E
-	db $82
-	db $28
-	db $02
-	db $3E
-	db $84
-	db $CD
-	db $8A
-	db $ED
-	db $CD
-	db $9F
-	db $B0
-	db $CD
-	db $E6
-	db $B0
-	db $CD
-	db $FB
-	db $B9
-	db $ED
-	db $4B
-	db $58
-	db $F1
-	db $2A
-	db $5B
-	db $F1
-	db $FD
-	db $7E
-	db $05
-	db $B8
-	db $20
-	db $14
-	db $ED
-	db $4B
-	db $58
-	db $F1
-	db $2A
-	db $5B
-	db $F1
-	db $3A
-	db $5A
-	db $F1
-	db $81
-	db $FD
-	db $77
-	db $05
-	db $23
-	db $22
-	db $5B
-	db $F1
-	db $18
-	db $BD
-	db $B9
-	db $20
-	db $BA
-	db $2B
-	db $22
-	db $5B
-	db $F1
-	db $7C
-	db $B5
-	db $28
-	db $0B
-	db $3A
-	db $5A
-	db $F1
-	db $4F
-	db $78
-	db $91
-	db $FD
-	db $77
-	db $05
-	db $18
-	db $A7
-	db $FD
-	db $70
-	db $05
-	db $C3
-	db $8D
-	db $EE
-	db $2A
-	db $5B
-	db $F1
-	db $01
-	db $DC
-	db $DF
-	db $ED
-	db $43
-	db $E9
-	db $B7
-	db $11
-	db $08
-	db $12
-	db $3E
-	db $2F
-	db $01
-	db $10
-	db $27
-	db $CD
-	db $33
-	db $F2
-	db $01
-	db $E8
-	db $03
-	db $CD
-	db $33
-	db $F2
-	db $01
-	db $64
-	db $00
-	db $CD
-	db $33
-	db $F2
-	db $01
-	db $0A
-	db $00
-	db $CD
-	db $33
-	db $F2
-	db $01
-	db $01
-	db $00
-	db $CD
-	db $33
-	db $F2
-	db $3E
-	db $4D
-	db $18
-	db $07
-	db $3C
-	db $A7
-	db $ED
-	db $42
-	db $30
-	db $FA
-	db $09
-	db $0E
-	db $70
-	db $CD
-	db $F9
-	db $B7
-	db $1C
-	db $3E
-	db $2F
-	db $C9
-	db $20
-	db $44
-	db $04
-	db $02
-	db $98
-	db $A0
-	db $FC
-	db $02
-function_F24B:
+	CALL ClearScreenGameRegion
+	LD   HL,data_F15D
+	CALL screen_item_loop
+	JR   label_F1D2
+label_F1A3:
+	CALL DrawBackgroundToShadowScreen
+	CALL function_F202
 	LD   A,$04
-	LD   (data_F26E),A
-	LD   IX,$F243
-	LD   BC,$F2F7
-	CALL function_EF35
-	LD   A,$7A
-	CALL function_A8A0
-	CALL function_E329
-	LD   A,$7A
-	CALL function_EF35
-	CALL function_A8A0
-	CALL function_E329
+	LD   (DamageAmount),A
+	LD   A,(data_F15A)
+	CP   $02
+	LD   A,$82
+	JR   Z,label_F1B9
+	LD   A,$84
+label_F1B9:
+	CALL function_ED8A
+	CALL function_B09F
+	CALL DrawCharacterToShadowScreen
+	CALL CopyShadowScreenToPixelScreen
+	LD   BC,(data_F158)
+	LD   HL,(data_F15B)
+	LD   A,(IY+$05)
+	CP   B
+	JR   NZ,label_F1E6
+label_F1D2:
+	LD   BC,(data_F158)
+	LD   HL,(data_F15B)
+	LD   A,(data_F15A)
+	ADD  A,C
+	LD   (IY+$05),A
+	INC  HL
+	LD   (data_F15B),HL
+	JR   label_F1A3
+label_F1E6:
+	CP   C
+	JR   NZ,label_F1A3
+	DEC  HL
+	LD   (data_F15B),HL
+	LD   A,H
+	OR   L
+	JR   Z,label_F1FC
+	LD   A,(data_F15A)
+	LD   C,A
+	LD   A,B
+	SUB  C
+	LD   (IY+$05),A
+	JR   label_F1A3
+label_F1FC:
+	LD   (IY+$05),B
+	JP   label_EE8D
+function_F202:
+	LD   HL,(data_F15B)
+	LD   BC,$DFDC
+	LD   (operand_CharSetPtr+1),BC
+	LD   DE,$1208
+	LD   A,$2F
+	LD   BC,$2710
+	CALL function_F233
+	LD   BC,$03E8
+	CALL function_F233
+	LD   BC,$0064
+	CALL function_F233
+	LD   BC,$000A
+	CALL function_F233
+	LD   BC,$0001
+	CALL function_F233
+	LD   A,$4D
+	JR   label_F23A
+function_F233:
+	INC  A
+	AND  A
+	SBC  HL,BC
+	JR   NC,function_F233
+	ADD  HL,BC
+label_F23A:
+	LD   C,$70
+	CALL function_B7F9
+	INC  E
+	LD   A,$2F
 	RET 
-data_F26E:
+Room2_Objects:
+	db 180
+	db 146
+	db 4
+	db 254
+	db 4
+	db 74
+	db 252
+	db 2
+Room2_Update:
+	LD   A,$04
+	LD   (DamageAmount),A
+	LD   IX,Room2_Objects
+	LD   BC,GameAreaBounds
+	CALL BounceObjectWithinBounds
+	LD   A,$7A
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
+	LD   A,$7A
+	CALL BounceObjectWithinBounds
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
+	RET 
+DamageAmount:
 	db $02
 data_F26F:
 	db $46
-data_F270:
-	db $37
-	db $A8
-	db $FF
-	db $00
-	db $03
+BabyState:
+	db 22			; x
+	db 168			; y
+	db 255			; xvel
+	db 0			; yvel
+	db 1			; baby room number
 	db $04
-	db $46
-function_F277:
+	db 68			; baby anim frame
+UpdateBaby:
 	LD   A,$02
-	LD   (data_F26E),A
-	LD   IX,data_F270
-	LD   BC,data_F2F7
-	CALL function_EF35
-	LD   A,(IX+$00)
-	CALL function_AC69
-	INC  HL
+	LD   (DamageAmount),A
+	LD   IX,BabyState
+	LD   BC,GameAreaBounds
+	CALL BounceObjectWithinBounds
+	LD   A,(IX+$00)			; baby room number
+	CALL GetRoomInfoData
+	INC  HL			; skip first byte
+	LD   A,(HL)			; exit index?
+	CALL GetExitPosition
 	LD   A,(HL)
-	CALL function_AC5F
-	LD   A,(HL)
-	CP   (IX-$04)
-	JR   NZ,label_F2C3
-	DEC  (IX+$01)
-	JR   NZ,label_F2C3
-	LD   A,R
+	CP   (IX-$04)			; baby x position
+	JR   NZ,not_at_exit
+	DEC  (IX+$01)			; dec countdown
+	JR   NZ,not_at_exit
+; baby is at room exit
+	LD   A,R			; pseudo random 3-5
 	AND  $03
 	ADD  A,$03
-	LD   (IX+$01),A
+	LD   (IX+$01),A			; store new countdown
 label_F2A5:
 	CALL function_AF01
 	CP   $1F
 	JR   Z,label_F2A5
 	LD   (IX+$00),A
-	CALL function_AC69
+	CALL GetRoomInfoData
 	INC  HL
 	LD   A,(HL)
-	CALL function_AC5F
+	CALL GetExitPosition
 	LD   A,(HL)
 	ADD  A,$02
 	CP   $EE
 	JR   C,label_F2C0
 	LD   A,$EE
 label_F2C0:
-	LD   (IX-$04),A
-label_F2C3:
+	LD   (IX-$04),A			; store new baby x position
+not_at_exit:
 	LD   A,(IX+$00)
-	CP   (IY+$0F)
-	RET  NZ
+	CP   (IY+$0F)			; room number
+	RET  NZ			; not this room
+; the baby is in the current room
 	LD   A,(IX-$02)
 	LD   BC,$4440
 	CP   $01
@@ -29614,79 +28620,84 @@ label_F2E2:
 	JR   C,label_F2DF
 label_F2E5:
 	LD   (IX+$02),A
-	CALL function_A8A0
+	CALL DrawMovingObject
 	LD   A,$46
 	LD   (data_F26F),A
 	CALL function_EF91
-	CALL function_E329
+	CALL ItemIntersectionHazard
 NullFunction:
 	RET 
-data_F2F7:
-	db $00
-	db $F0
-	db $40
-	db $A8
+GameAreaBounds:
+	db 0
+	db 240
+	db 64
+	db 168
+Room15_Bounds:
 	db $20
 	db $D8
-	db $22
-	db $90
-	db $02
-	db $00
-	db $D6
-	db $90
-	db $FE
-	db $00
-	db $78
-	db $90
-	db $04
-	db $00
-function_F309:
+Room15_Objects:
+	db 34
+	db 144
+	db 2
+	db 0
+	db 214
+	db 144
+	db 254
+	db 0
+	db 120
+	db 144
+	db 4
+	db 0
+Room15_Update:
 	LD   A,$06
-	LD   (data_F26E),A
-	LD   IX,$F2FD
+	LD   (DamageAmount),A
+	LD   IX,Room15_Objects
 	LD   B,$03
 label_F314:
 	PUSH BC
 	LD   A,$29
-	LD   BC,$F2FB
-	CALL function_EF35
-	CALL function_A8A0
-	CALL function_E329
+	LD   BC,Room15_Bounds
+	CALL BounceObjectWithinBounds
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
 	POP  BC
 	DJNZ label_F314
 	RET 
-	db $32
-	db $64
-	db $FE
-	db $00
-	db $60
-	db $32
-	db $6E
-	db $00
-	db $02
+Room27_Objects:
+	db 38			; monkey x pos
+	db 100			; monkey y pos
+	db $FE			; monkey x vel
+	db $00			; monkey y vel
+	db $62			; monkey anim frame
+	db $32			; banana x pos
+	db $7A			; banana y pos
+	db $00			; banana x vel
+	db $02			; banana y vel
+Room27_ObjectBounds:
 	db $08
 	db $60
 	db $00
-	db $A8
-function_F334:
+	db 168
+; This room has a monkey and a banana
+Room27_Update:
 	LD   A,$08
-	LD   (data_F26E),A
-	LD   IX,$F327
-	LD   BC,$F330
-	CALL function_EF35
-	LD   A,(IX+$00)
-	INC  A
-	CP   $64
+	LD   (DamageAmount),A
+	LD   IX,Room27_Objects
+	LD   BC,Room27_ObjectBounds
+	CALL BounceObjectWithinBounds
+	LD   A,(IX+$00)			; monkey anim frame
+	INC  A			; inc anim frame
+	CP   $64			; check anim for wrap around
 	JR   NZ,label_F34D
-	LD   A,$60
+	LD   A,$60			; monkey
 label_F34D:
-	LD   (IX+$00),A
+	LD   (IX+$00),A			; write anim frame
 	CALL DrawItem
 	INC  IX
-	CALL function_EF35
+	CALL BounceObjectWithinBounds
 	LD   A,$64
-	CALL DrawItem
-	CALL function_E329
+	CALL DrawItem			; draw banana
+	CALL ItemIntersectionHazard
 	LD   A,(IX-$01)
 	CP   $FE
 	RET  NZ
@@ -29695,44 +28706,47 @@ label_F34D:
 	LD   A,(IX-$09)
 	LD   (IX-$04),A
 	RET 
-	db $78
-	db $A8
-	db $FE
-	db $00
-	db $78
-	db $A8
-	db $02
-	db $00
-function_F37D:
+Room30_Objects:
+	db 186			; xpos
+	db 168			; ypos
+	db 2			; xvel
+	db 0			; yvel
+	db 54			; xpos
+	db 168			; ypos
+	db 254			; xvel
+	db 0			; yvel
+Room30_Update:
 	LD   A,$04
-	LD   (data_F26E),A
-	LD   IX,$F375
-	LD   BC,$F2F7
-	CALL function_EF35
+	LD   (DamageAmount),A
+	LD   IX,Room30_Objects
+	LD   BC,GameAreaBounds
+	CALL BounceObjectWithinBounds
 	LD   A,$78
-	CALL function_A8A0
-	CALL function_E329
-	CALL function_EF35
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
+	CALL BounceObjectWithinBounds
 	LD   A,$78
-	CALL function_A8A0
-	CALL function_E329
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
 	RET 
 data_F3A0:
 	db $2C
+data_F3A1:
 	db $00
 	db $50
-	db $12
+data_F3A3:
+	db $48
 	db $98
 	db $02
 	db $00
-	db $12
+	db $48
 	db $A8
 	db $02
 	db $00
-function_F3AB:
+Room31_Update:
 	LD   A,$40
-	LD   (data_F26E),A
-	LD   IX,$F3A3
+	LD   (DamageAmount),A
+	LD   IX,data_F3A3
 	LD   A,(IX+$02)
 	CP   $02
 	LD   A,(data_F046)
@@ -29745,14 +28759,14 @@ label_F3C4:
 	CALL Z,function_F047
 label_F3C8:
 	LD   A,$30
-	LD   BC,$F3A1
-	CALL function_EF35
-	CALL function_A8A0
+	LD   BC,data_F3A1
+	CALL BounceObjectWithinBounds
+	CALL DrawMovingObject
 	LD   A,(data_F3A0)
 	XOR  $02
 	LD   (data_F3A0),A
-	CALL function_EF35
-	CALL function_A8A0
+	CALL BounceObjectWithinBounds
+	CALL DrawMovingObject
 	LD   A,(data_BD78)
 	CP   $17
 	RET  Z
@@ -29764,12 +28778,14 @@ label_F3C8:
 	LD   A,(ItemYPos)
 	SUB  $10
 	LD   (ItemYPos),A
-	CALL function_E329
+	CALL ItemIntersectionHazard
 	RET 
+data_F3FD:
 	db $00
 	db $F0
 	db $78
 	db $A8
+data_F401:
 	db $00
 	db $80
 	db $02
@@ -29778,130 +28794,72 @@ label_F3C8:
 	db $8C
 	db $02
 	db $04
-function_F409:
+Room14_Update:
 	LD   A,$06
-	LD   (data_F26E),A
-	LD   IX,$F401
+	LD   (DamageAmount),A
+	LD   IX,data_F401
 	LD   B,$02
+label_F414:
 	PUSH BC
-	LD   BC,$F3FD
-	CALL function_EF35
-	db $7B
-	db $FE
-	db $FE
-	db $20
-	db $10
-	db $DD
-	db $36
-	db $FF
-	db $FC
-	db $DD
-	db $36
-	db $FE
-	db $02
-	db $DD
-	db $36
-	db $FD
-	db $80
-	db $DD
-	db $36
-	db $FC
-	db $00
-	db $3E
-	db $32
-	db $CD
-	db $A0
-	db $A8
-	db $CD
-	db $29
-	db $E3
-	db $C1
-	db $10
-	db $D9
-	db $C9
-function_F43C:
+	LD   BC,data_F3FD
+	CALL BounceObjectWithinBounds
+	LD   A,E
+	CP   $FE
+	JR   NZ,label_F430
+	LD   (IX-$01),$FC
+	LD   (IX-$02),$02
+	LD   (IX-$03),$80
+	LD   (IX-$04),$00
+label_F430:
+	LD   A,$32
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
+	POP  BC
+	DJNZ label_F414
+	RET 
+Room8_Update:
 	LD   A,$09
 	CALL function_EC1D
-	db $28
-	db $36
-	db $3E
-	db $06
-	db $CD
-	db $1D
-	db $EC
-	db $28
-	db $2F
-	db $3A
-	db $01
-	db $BD
-	db $FE
-	db $04
-	db $20
-	db $28
-	db $FD
-	db $7E
-	db $05
-	db $D6
-	db $42
-	db $FE
-	db $FC
-	db $38
-	db $1F
-	db $3A
-	db $88
-	db $AF
-	db $FD
-	db $96
-	db $0A
-	db $D6
-	db $22
-	db $FE
-	db $FC
-	db $38
-	db $13
-	db $3A
-	db $88
-	db $AF
-	db $D6
-	db $02
-	db $FE
-	db $78
-	db $30
-	db $02
-	db $3E
-	db $78
-	db $32
-	db $88
-	db $AF
-	db $D6
-	db $20
-	db $FD
-	db $77
-	db $0A
-	db $3A
-	db $88
-	db $AF
-	db $06
-	db $10
-	db $FE
-	db $B8
-	db $28
-	db $02
-	db $06
-	db $0E
-	db $90
-	db $67
-	db $2E
-	db $40
-	db $22
-	db $38
-	db $A8
-	db $3E
-	db $2B
-	db $CD
-	db $3D
-	db $A8
-	db $C9
+	JR   Z,label_F479
+	LD   A,$06
+	CALL function_EC1D
+	JR   Z,label_F479
+	LD   A,(data_BD01)
+	CP   $04
+	JR   NZ,label_F479
+	LD   A,(IY+$05)
+	SUB  $42
+	CP   $FC
+	JR   C,label_F479
+	LD   A,(data_AF88)
+	SUB  (IY+$0A)
+	SUB  $22
+	CP   $FC
+	JR   C,label_F479
+	LD   A,(data_AF88)
+	SUB  $02
+	CP   $78
+	JR   NC,label_F471
+	LD   A,$78
+label_F471:
+	LD   (data_AF88),A
+	SUB  $20
+	LD   (IY+$0A),A
+label_F479:
+	LD   A,(data_AF88)
+	LD   B,$10
+	CP   $B8
+	JR   Z,label_F484
+	LD   B,$0E
+label_F484:
+	SUB  B
+	LD   H,A
+	LD   L,$40
+	LD   (ItemXPos),HL
+	LD   A,$2B
+	CALL DrawItem
+	RET 
+data_F491:
 	db $40
 	db $64
 	db $00
@@ -29914,66 +28872,46 @@ function_F43C:
 	db $78
 	db $00
 	db $02
-function_F49D:
+Room10_Update:
 	LD   A,$06
-	LD   (data_F26E),A
-	LD   IX,$F491
+	LD   (DamageAmount),A
+	LD   IX,data_F491
 	LD   B,$03
+label_F4A8:
 	PUSH BC
-	LD   BC,$F2F7
-	CALL function_EF35
-	db $7A
-	db $FE
-	db $FE
-	db $20
-	db $12
-	db $DD
-	db $36
-	db $FF
-	db $02
-	db $DD
-	db $36
-	db $FD
-	db $40
-	db $ED
-	db $5F
-	db $E6
-	db $3F
-	db $87
-	db $C6
-	db $38
-	db $DD
-	db $77
-	db $FC
-	db $3E
-	db $34
-	db $CD
-	db $A0
-	db $A8
-	db $CD
-	db $29
-	db $E3
-	db $C1
-	db $10
-	db $D7
-	db $C9
+	LD   BC,GameAreaBounds
+	CALL BounceObjectWithinBounds
+	LD   A,D
+	CP   $FE
+	JR   NZ,label_F4C6
+	LD   (IX-$01),$02
+	LD   (IX-$03),$40
+	LD   A,R
+	AND  $3F
+	ADD  A,A
+	ADD  A,$38
+	LD   (IX-$04),A
+label_F4C6:
+	LD   A,$34
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
+	POP  BC
+	DJNZ label_F4A8
+	RET 
 data_F4D2:
 	db $4E
-function_F4D3:
+Room16_Update:
 	LD   A,(data_BD7D)
 	CP   $1D
 	JR   NZ,label_F4E0
-	db $3E
-	db $05
-	db $CD
-	db $1D
-	db $EC
+	LD   A,$05
+	CALL function_EC1D
 	db $C0
 label_F4E0:
 	LD   HL,$A880
 	LD   (ItemXPos),HL
 	LD   A,$04
-	LD   (data_F26E),A
+	LD   (DamageAmount),A
 	LD   A,(data_F4D2)
 	INC  A
 	CP   $50
@@ -29982,84 +28920,47 @@ label_F4E0:
 label_F4F5:
 	LD   (data_F4D2),A
 	CALL DrawItem
-	CALL function_E329
+	CALL ItemIntersectionHazard
 	RET 
+data_F4FF:
 	db $F0
 	db $A8
 	db $FE
 	db $00
-function_F503:
+Room4_Update:
 	LD   A,$FF
 	LD   (data_AF80),A
 	LD   A,$0C
 	CALL function_EC1D
-	db $28
-	db $34
-	db $3E
-	db $06
-	db $32
-	db $6E
-	db $F2
-	db $DD
-	db $21
-	db $FF
-	db $F4
-	db $01
-	db $F7
-	db $F2
-	db $CD
-	db $35
-	db $EF
-	db $3E
-	db $36
-	db $CD
-	db $A0
-	db $A8
-	db $CD
-	db $29
-	db $E3
-	db $FD
-	db $7E
-	db $0A
-	db $FE
-	db $88
-	db $C0
-	db $FD
-	db $7E
-	db $05
-	db $DD
-	db $96
-	db $FC
-	db $D6
-	db $04
-	db $FE
-	db $F8
-	db $D8
-	db $DD
-	db $7E
-	db $FC
-	db $FD
-	db $77
-	db $05
-	db $3E
-	db $A8
-	db $32
-	db $80
-	db $AF
-	db $C9
-	db $21
-	db $F0
-	db $A8
-	db $22
-	db $38
-	db $A8
-	db $3E
-	db $36
-	db $CD
-	db $A0
-	db $A8
-	db $C9
-function_F54F:
+	JR   Z,label_F543
+	LD   A,$06
+	LD   (DamageAmount),A
+	LD   IX,data_F4FF
+	LD   BC,GameAreaBounds
+	CALL BounceObjectWithinBounds
+	LD   A,$36
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
+	LD   A,(IY+$0A)
+	CP   $88
+	RET  NZ
+	LD   A,(IY+$05)
+	SUB  (IX-$04)
+	SUB  $04
+	CP   $F8
+	RET  C
+	LD   A,(IX-$04)
+	LD   (IY+$05),A
+	LD   A,$A8
+	LD   (data_AF80),A
+	RET 
+label_F543:
+	LD   HL,$A8F0
+	LD   (ItemXPos),HL
+	LD   A,$36
+	CALL DrawMovingObject
+	RET 
+Room32_Update:
 	LD   A,(data_BD7D)
 	CP   $1D
 	JR   NZ,label_F55C
@@ -30073,12 +28974,12 @@ label_F55C:
 	CP   (IY+$55)
 	RET  Z
 	LD   A,$04
-	LD   (data_F26E),A
-	CALL function_E33F
-	JP   label_ED13
+	LD   (DamageAmount),A
+	CALL ApplyDamageToCharacter
+	JP   Room17_Update
 data_F571:
-	db $51
-function_F572:
+	db $52
+Room0_Update:
 	LD   A,$08
 	CALL function_EC1D
 	RET  Z
@@ -30125,14 +29026,17 @@ data_F5C6:
 	db $64
 	db $02
 	db $FE
+data_F5CA:
 	db $10
 	db $E0
 	db $40
 	db $A8
+data_F5CE:
 	db $10
 	db $40
 	db $40
 	db $A8
+data_F5D2:
 	db $38
 	db $01
 	db $01
@@ -30164,10 +29068,11 @@ data_F5C6:
 	db $02
 	db $02
 	db $FF
-function_F5F1:
-	LD   HL,$5DE7
+Room11_Update:
+	LD   HL,data_5DE7
 	LD   DE,$0020
-	LD   BC,$F5D3
+	LD   BC,data_F5D2+1
+label_F5FA:
 	LD   (HL),$00
 	ADD  HL,DE
 	LD   (HL),$FF
@@ -30187,60 +29092,34 @@ function_F5F1:
 	ADD  HL,DE
 	JR   label_F61A
 label_F617:
-	db $A7
-	db $ED
-	db $52
+	AND  A
+	SBC  HL,DE
 label_F61A:
-	db $23
-	db $18
-	db $DD
+	INC  HL
+	JR   label_F5FA
 label_F61D:
-	db $3E
-	db $06
-	db $32
-	db $6E
-	db $F2
-	db $DD
-	db $21
-	db $BE
-	db $F5
-	db $06
-	db $03
-	db $C5
-	db $3E
-	db $0D
-	db $CD
-	db $1D
-	db $EC
-	db $01
-	db $CA
-	db $F5
-	db $20
-	db $03
-	db $01
-	db $CE
-	db $F5
-	db $CD
-	db $35
-	db $EF
-	db $3A
-	db $D2
-	db $F5
-	db $EE
-	db $02
-	db $32
-	db $D2
-	db $F5
-	db $CD
-	db $A0
-	db $A8
-	db $CD
-	db $29
-	db $E3
-	db $C1
-	db $10
-	db $DE
-	db $C9
+	LD   A,$06
+	LD   (DamageAmount),A
+	LD   IX,data_F5BE
+	LD   B,$03
+label_F628:
+	PUSH BC
+	LD   A,$0D
+	CALL function_EC1D
+	LD   BC,data_F5CA
+	JR   NZ,label_F636
+	LD   BC,data_F5CE
+label_F636:
+	CALL BounceObjectWithinBounds
+	LD   A,(data_F5D2)
+	XOR  $02
+	LD   (data_F5D2),A
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
+	POP  BC
+	DJNZ label_F628
+	RET 
+data_F64B:
 	db $01
 	db $01
 	db $FF
@@ -30249,51 +29128,52 @@ label_F61D:
 	db $FF
 	db $01
 	db $FF
-	db $1A
-	db $50
-	db $01
-	db $FF
-	db $20
-	db $04
-	db $7C
+data_F653:
 	db $92
-	db $FF
+	db $88
 	db $01
-	db $0F
-	db $02
-	db $7E
-	db $A8
 	db $01
-	db $FF
-	db $03
+	db $1C
 	db $00
-	db $A0
-	db $9E
-	db $FF
-	db $01
-	db $1D
-	db $02
-	db $5C
-	db $4E
+	db $58
+	db $48
 	db $01
 	db $01
-	db $1D
+	db $19
 	db $06
+	db $68
+	db $4A
+	db $01
+	db $01
+	db $01
+	db $06
+	db $6A
+	db $46
+	db $01
+	db $01
+	db $03
+	db $06
+	db $5C
+	db $8A
+	db $FF
+	db $FF
+	db $13
+	db $02
 data_F671:
 	db $3C
 data_F672:
 	db $00
 data_F673:
 	db $01
-function_F674:
+Room5_Update:
 	LD   A,$04
-	LD   (data_F26E),A
+	LD   (DamageAmount),A
 	LD   B,$05
-	LD   IX,$F653
+	LD   IX,data_F653
 label_F67F:
 	PUSH BC
-	LD   BC,$F5CA
-	CALL function_EF35
+	LD   BC,data_F5CA
+	CALL BounceObjectWithinBounds
 	DEC  (IX+$00)
 	JR   NZ,label_F6BB
 	LD   A,(data_F673)
@@ -30314,7 +29194,7 @@ label_F6A8:
 	LD   (IX+$01),A
 	LD   E,A
 	LD   D,$00
-	LD   HL,$F64B
+	LD   HL,data_F64B
 	ADD  HL,DE
 	LD   A,(HL)
 	LD   (IX-$02),A
@@ -30325,8 +29205,8 @@ label_F6BB:
 	LD   A,(data_F671)
 	XOR  $02
 	LD   (data_F671),A
-	CALL function_A8A0
-	CALL function_E329
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
 	INC  IX
 	INC  IX
 	POP  BC
@@ -30344,6 +29224,7 @@ label_F6BB:
 	db $05
 data_F6DB:
 	db $00
+data_F6DC:
 	db $40
 	db $64
 	db $02
@@ -30360,7 +29241,7 @@ data_F6DB:
 	db $78
 	db $02
 	db $FC
-function_F6EC:
+Room22_Update:
 	LD   A,(data_EDC5)
 	CP   $06
 	JR   NZ,label_F6FF
@@ -30375,51 +29256,33 @@ label_F6FF:
 	LD   B,A
 	LD   HL,$F6D1
 	LD   DE,$4800
+label_F709:
 	LD   E,(HL)
 	INC  HL
 	LD   (ItemXPos),DE
 	LD   A,(HL)
 	INC  HL
 	CALL DrawItem
-	db $10
-	db $F3
+	DJNZ label_F709
 label_F716:
-	db $3A
-	db $C5
-	db $ED
-	db $FE
-	db $06
-	db $C8
-	db $3E
-	db $06
-	db $32
-	db $6E
-	db $F2
-	db $DD
-	db $21
-	db $DC
-	db $F6
-	db $06
-	db $04
-	db $C5
-	db $01
-	db $F7
-	db $F2
-	db $CD
-	db $35
-	db $EF
-	db $3E
-	db $76
-	db $CD
-	db $A0
-	db $A8
-	db $CD
-	db $29
-	db $E3
-	db $C1
-	db $10
-	db $EE
-	db $C9
+	LD   A,(data_EDC5)
+	CP   $06
+	RET  Z
+	LD   A,$06
+	LD   (DamageAmount),A
+	LD   IX,data_F6DC
+	LD   B,$04
+label_F727:
+	PUSH BC
+	LD   BC,GameAreaBounds
+	CALL BounceObjectWithinBounds
+	LD   A,$76
+	CALL DrawMovingObject
+	CALL ItemIntersectionHazard
+	POP  BC
+	DJNZ label_F727
+	RET 
+data_F73A:
 	db $34
 	db $40
 	db $00
@@ -30432,44 +29295,30 @@ label_F716:
 	db $A0
 	db $00
 	db $02
-function_F746:
+Room23_Update:
 	LD   A,$08
-	LD   (data_F26E),A
-	LD   IX,$F73A
+	LD   (DamageAmount),A
+	LD   IX,data_F73A
 	LD   B,$03
+label_F751:
 	PUSH BC
-	LD   BC,$F2F7
-	CALL function_EF35
-	db $DD
-	db $7E
-	db $FF
-	db $FE
-	db $02
-	db $28
-	db $08
-	db $DD
-	db $36
-	db $FF
-	db $02
-	db $DD
-	db $36
-	db $FD
-	db $40
-	db $3E
-	db $56
-	db $CD
-	db $3D
-	db $A8
-	db $CD
-	db $29
-	db $E3
-	db $C1
-	db $10
-	db $DF
-	db $C9
-function_F773:
+	LD   BC,GameAreaBounds
+	CALL BounceObjectWithinBounds
+	LD   A,(IX-$01)
+	CP   $02
+	JR   Z,label_F767
+	LD   (IX-$01),$02
+	LD   (IX-$03),$40
+label_F767:
+	LD   A,$56
+	CALL DrawItem
+	CALL ItemIntersectionHazard
+	POP  BC
+	DJNZ label_F751
+	RET 
+Room12_Update:
 	LD   A,$02
-	LD   (data_F26E),A
+	LD   (DamageAmount),A
 	LD   A,(IY+$0A)
 	CP   $98
 	JR   NZ,label_F78D
@@ -30478,89 +29327,52 @@ function_F773:
 	JR   C,label_F78D
 	CP   $E6
 	JR   NC,label_F78D
-	CALL function_E33F
+	CALL ApplyDamageToCharacter
 label_F78D:
-	db $06
-	db $05
-	db $3A
-	db $DE
-	db $F7
-	db $3C
-	db $FE
-	db $5B
-	db $20
-	db $02
-	db $3E
-	db $57
-	db $32
-	db $DE
-	db $F7
-	db $21
-	db $DF
-	db $F7
-	db $16
-	db $98
-	db $5E
-	db $ED
-	db $53
-	db $38
-	db $A8
-	db $23
-	db $35
-	db $20
-	db $02
-	db $36
-	db $28
-	db $7E
-	db $23
-	db $FE
-	db $09
-	db $30
-	db $24
-	db $FD
-	db $7E
-	db $0A
-	db $FE
-	db $80
-	db $20
-	db $18
-	db $3A
-	db $38
-	db $A8
-	db $FD
-	db $96
-	db $05
-	db $D6
-	db $10
-	db $FE
-	db $E0
-	db $38
-	db $0C
-	db $FD
-	db $7E
-	db $0A
-	db $C6
-	db $04
-	db $FD
-	db $77
-	db $0A
-	db $FD
-	db $36
-	db $37
-	db $01
-	db $3A
-	db $DE
-	db $F7
-	db $18
-	db $02
-	db $3E
-	db $57
-	db $CD
-	db $3D
-	db $A8
-	db $10
-	db $C4
-	db $C9
+	LD   B,$05
+	LD   A,(data_F7DE)
+	INC  A
+	CP   $5B
+	JR   NZ,label_F799
+	LD   A,$57
+label_F799:
+	LD   (data_F7DE),A
+	LD   HL,data_F7DE+1
+	LD   D,$98
+label_F7A1:
+	LD   E,(HL)
+	LD   (ItemXPos),DE
+	INC  HL
+	DEC  (HL)
+	JR   NZ,label_F7AC
+	LD   (HL),$28
+label_F7AC:
+	LD   A,(HL)
+	INC  HL
+	CP   $09
+	JR   NC,label_F7D6
+	LD   A,(IY+$0A)
+	CP   $80
+	JR   NZ,label_F7D1
+	LD   A,(ItemXPos)
+	SUB  (IY+$05)
+	SUB  $10
+	CP   $E0
+	JR   C,label_F7D1
+	LD   A,(IY+$0A)
+	ADD  A,$04
+	LD   (IY+$0A),A
+	LD   (IY+$37),$01
+label_F7D1:
+	LD   A,(data_F7DE)
+	JR   label_F7D8
+label_F7D6:
+	LD   A,$57
+label_F7D8:
+	CALL DrawItem
+	DJNZ label_F7A1
+	RET 
+data_F7DE:
 	db $5A
 	db $38
 	db $29
@@ -30572,6 +29384,7 @@ label_F78D:
 	db $11
 	db $D8
 	db $09
+data_F7E9:
 	db $0E
 	db $90
 	db $A0
@@ -30626,92 +29439,54 @@ function_F814:
 	CP   (HL)
 	RET  NZ
 label_F823:
-	db $23
-	db $5E
-	db $23
-	db $56
-	db $23
-	db $7E
-	db $47
-	db $ED
-	db $53
-	db $38
-	db $A8
-	db $CD
-	db $3D
-	db $A8
-	db $FD
-	db $7E
-	db $05
-	db $93
-	db $D6
-	db $04
-	db $FE
-	db $F8
-	db $D8
-	db $FD
-	db $7E
-	db $0A
-	db $92
-	db $C6
-	db $0C
-	db $FE
-	db $F8
-	db $D8
-	db $2A
-	db $12
-	db $F8
-	db $23
-	db $23
-	db $23
-	db $23
-	db $7E
-	db $FE
-	db $FF
-	db $20
-	db $03
-	db $21
-	db $E9
-	db $F7
-	db $22
-	db $12
-	db $F8
-	db $FD
-	db $7E
-	db $19
-	db $B8
-	db $28
-	db $09
-	db $FD
-	db $7E
-	db $14
-	db $C6
-	db $20
-	db $FE
-	db $80
-	db $38
-	db $02
-	db $3E
-	db $80
-	db $FD
-	db $77
-	db $14
-	db $CD
-	db $6D
-	db $E3
-	db $01
-	db $3C
-	db $64
-	db $11
-	db $28
-	db $01
-	db $21
-	db $03
-	db $01
-	db $CD
-	db $D3
-	db $E3
-	db $C9
+	INC  HL
+	LD   E,(HL)
+	INC  HL
+	LD   D,(HL)
+	INC  HL
+	LD   A,(HL)
+	LD   B,A
+	LD   (ItemXPos),DE
+	CALL DrawItem
+	LD   A,(IY+$05)
+	SUB  E
+	SUB  $04
+	CP   $F8
+	RET  C
+	LD   A,(IY+$0A)
+	SUB  D
+	ADD  A,$0C
+	CP   $F8
+	RET  C
+	LD   HL,(data_F812)
+	INC  HL
+	INC  HL
+	INC  HL
+	INC  HL
+	LD   A,(HL)
+	CP   $FF
+	JR   NZ,label_F852
+	LD   HL,data_F7E9
+label_F852:
+	LD   (data_F812),HL
+	LD   A,(IY+$19)
+	CP   B
+	JR   Z,label_F864
+	LD   A,(IY+$14)
+	ADD  A,$20
+	CP   $80
+	JR   C,label_F866
+label_F864:
+	LD   A,$80
+label_F866:
+	LD   (IY+$14),A
+	CALL function_E36D
+	LD   BC,data_5DE7+1621
+	LD   DE,$0128
+	LD   HL,$0103
+	CALL function_E3D3
+	RET 
+data_F879:
 	db $EE
 	db $42
 	db $FE
@@ -30772,259 +29547,140 @@ label_F823:
 	db $00
 	db $00
 	db $00
+data_F8B5:
 	db $00
 	db $F0
 	db $40
 	db $B0
-	db $DD
-	db $21
-	db $A9
-	db $80
-	db $3E
-	db $08
-	db $32
-	db $6E
-	db $F2
-	db $06
-	db $0C
-	db $C5
-	db $01
-	db $B5
-	db $F8
-	db $DD
-	db $7E
-	db $00
-	db $FE
-	db $FF
-	db $20
-	db $07
-	db $CD
-	db $88
-	db $EF
-	db $DD
-	db $23
-	db $18
-	db $60
-	db $CD
-	db $35
-	db $EF
-	db $DD
-	db $7E
-	db $00
-	db $CD
-	db $A0
-	db $A8
-	db $DD
-	db $23
-	db $FD
-	db $7E
-	db $05
-	db $DD
-	db $96
-	db $FB
-	db $D6
-	db $08
-	db $FE
-	db $F0
-	db $38
-	db $0D
-	db $FD
-	db $7E
-	db $0A
-	db $DD
-	db $96
-	db $FC
-	db $D6
-	db $08
-	db $FE
-	db $F0
-	db $D4
-	db $3F
-	db $E3
-	db $3A
-	db $72
-	db $F6
-	db $B7
-	db $28
-	db $18
-	db $DD
-	db $7E
-	db $FB
-	db $FE
-	db $F0
-	db $28
-	db $04
-	db $3E
-	db $EE
-	db $18
-	db $02
-	db $3E
-	db $02
-	db $DD
-	db $77
-	db $FB
-	db $DD
-	db $7E
-	db $FD
-	db $ED
-	db $44
-	db $DD
-	db $77
-	db $FD
-	db $3A
-	db $73
-	db $F6
-	db $B7
-	db $28
-	db $18
-	db $DD
-	db $7E
-	db $FC
-	db $FE
-	db $40
-	db $20
-	db $04
-	db $3E
-	db $AE
-	db $18
-	db $02
-	db $3E
-	db $42
-	db $DD
-	db $77
-	db $FC
-	db $DD
-	db $7E
-	db $FE
-	db $ED
-	db $44
-	db $DD
-	db $77
-	db $FE
-	db $C1
-	db $10
-	db $8B
+function_F8B9:
+	LD   IX,data_80A9
+	LD   A,$08
+	LD   (DamageAmount),A
+	LD   B,$0C
+label_F8C4:
+	PUSH BC
+	LD   BC,data_F8B5
+	LD   A,(IX+$00)
+	CP   $FF
+	JR   NZ,label_F8D6
+	CALL NextObject
+	INC  IX
+	JR   label_F936
+label_F8D6:
+	CALL BounceObjectWithinBounds
+	LD   A,(IX+$00)
+	CALL DrawMovingObject
+	INC  IX
+	LD   A,(IY+$05)
+	SUB  (IX-$05)
+	SUB  $08
+	CP   $F0
+	JR   C,label_F8FA
+	LD   A,(IY+$0A)
+	SUB  (IX-$04)
+	SUB  $08
+	CP   $F0
+	CALL NC,ApplyDamageToCharacter
+label_F8FA:
+	LD   A,(data_F672)
+	OR   A
+	JR   Z,label_F918
+	LD   A,(IX-$05)
+	CP   $F0
+	JR   Z,label_F90B
+	LD   A,$EE
+	JR   label_F90D
+label_F90B:
+	LD   A,$02
+label_F90D:
+	LD   (IX-$05),A
+	LD   A,(IX-$03)
+	NEG  
+	LD   (IX-$03),A
+label_F918:
+	LD   A,(data_F673)
+	OR   A
+	JR   Z,label_F936
+	LD   A,(IX-$04)
+	CP   $40
+	JR   NZ,label_F929
+	LD   A,$AE
+	JR   label_F92B
+label_F929:
+	LD   A,$42
+label_F92B:
+	LD   (IX-$04),A
+	LD   A,(IX-$02)
+	NEG  
+	LD   (IX-$02),A
+label_F936:
+	POP  BC
+	DJNZ label_F8C4
+	RET 
+function_F93A:
+	CALL function_B03C
+	OR   A
+	JR   Z,label_F94E
+	DEC  (IY+$00)
+	LD   A,(IY+$00)
+	CP   $6D
+	JR   NZ,label_F94E
+	LD   (IY+$00),$75
+label_F94E:
+	CALL function_B00B
+	OR   A
+	JR   Z,label_F962
+	INC  (IY+$00)
+	LD   A,(IY+$00)
+	CP   $76
+	JR   NZ,label_F962
+	LD   (IY+$00),$6E
+label_F962:
+	CALL function_ABD7
+	OR   A
+	JR   Z,label_F994
+	CALL function_F9A4
+	LD   A,(IY+$05)
+	ADD  A,(HL)
+	JR   NZ,label_F975
+	LD   A,$EE
+	JR   label_F97B
+label_F975:
+	CP   $F0
+	JR   NZ,label_F97B
+	LD   A,$02
+label_F97B:
+	LD   (IY+$05),A
+	INC  HL
+	LD   A,(IY+$0A)
+	ADD  A,(HL)
+	CP   $40
+	JR   NZ,label_F98B
+	LD   A,$AC
+	JR   label_F991
+label_F98B:
+	CP   $AE
+	JR   NZ,label_F991
+	LD   A,$42
+label_F991:
+	LD   (IY+$0A),A
+label_F994:
+	LD   L,(IY+$05)
+	LD   H,(IY+$0A)
+	LD   (ItemXPos),HL
+	LD   A,(IY+$00)
+	CALL DrawItem
 	db $C9
-	db $CD
-	db $3C
-	db $B0
-	db $B7
-	db $28
-	db $0E
-	db $FD
-	db $35
-	db $00
-	db $FD
-	db $7E
-	db $00
-	db $FE
-	db $6D
-	db $20
-	db $04
-	db $FD
-	db $36
-	db $00
-	db $75
-	db $CD
-	db $0B
-	db $B0
-	db $B7
-	db $28
-	db $0E
-	db $FD
-	db $34
-	db $00
-	db $FD
-	db $7E
-	db $00
-	db $FE
-	db $76
-	db $20
-	db $04
-	db $FD
-	db $36
-	db $00
-	db $6E
-	db $CD
-	db $D7
-	db $AB
-	db $B7
-	db $28
-	db $2C
-	db $CD
-	db $A4
-	db $F9
-	db $FD
-	db $7E
-	db $05
-	db $86
-	db $20
-	db $04
-	db $3E
-	db $EE
-	db $18
-	db $06
-	db $FE
-	db $F0
-	db $20
-	db $02
-	db $3E
-	db $02
-	db $FD
-	db $77
-	db $05
-	db $23
-	db $FD
-	db $7E
-	db $0A
-	db $86
-	db $FE
-	db $40
-	db $20
-	db $04
-	db $3E
-	db $AC
-	db $18
-	db $06
-	db $FE
-	db $AE
-	db $20
-	db $02
-	db $3E
-	db $42
-	db $FD
-	db $77
-	db $0A
-	db $FD
-	db $6E
-	db $05
-	db $FD
-	db $66
-	db $0A
-	db $22
-	db $38
-	db $A8
-	db $FD
-	db $7E
-	db $00
-	db $CD
-	db $3D
-	db $A8
-	db $C9
-	db $FD
-	db $7E
-	db $00
-	db $D6
-	db $6E
-	db $87
-	db $5F
-	db $16
-	db $00
-	db $21
-	db $B2
-	db $F9
-	db $19
-	db $C9
+function_F9A4:
+	LD   A,(IY+$00)
+	SUB  $6E
+	ADD  A,A
+	LD   E,A
+	LD   D,$00
+	LD   HL,data_F9B2
+	ADD  HL,DE
+	RET 
+data_F9B2:
 	db $00
 	db $FE
 	db $02
@@ -31041,370 +29697,216 @@ label_F823:
 	db $00
 	db $FE
 	db $FE
+data_F9C2:
 	db $00
 	db $80
-	db $F5
-	db $C5
-	db $E5
-	db $2A
-	db $C2
-	db $F9
-	db $06
-	db $19
-	db $C5
-	db $46
-	db $23
-	db $3E
-	db $10
-	db $D3
-	db $FE
-	db $C5
-	db $10
-	db $FE
-	db $C1
-	db $46
-	db $23
-	db $3E
-	db $00
-	db $D3
-	db $FE
-	db $10
-	db $FE
-	db $C1
-	db $10
-	db $EA
-	db $7C
-	db $FE
-	db $9C
-	db $20
-	db $02
-	db $26
-	db $80
-	db $22
-	db $C2
-	db $F9
-	db $E1
-	db $C1
-	db $F1
-	db $C9
+function_F9C4:
+	PUSH AF
+	PUSH BC
+	PUSH HL
+	LD   HL,(data_F9C2)
+	LD   B,$19
+label_F9CC:
+	PUSH BC
+	LD   B,(HL)
+	INC  HL
+	LD   A,$10
+	OUT  ($FE),A
+	PUSH BC
+label_F9D4:
+	DJNZ label_F9D4
+	POP  BC
+	LD   B,(HL)
+	INC  HL
+	LD   A,$00
+	OUT  ($FE),A
+label_F9DD:
+	DJNZ label_F9DD
+	POP  BC
+	DJNZ label_F9CC
+	LD   A,H
+	CP   $9C
+	JR   NZ,label_F9E9
+	LD   H,$80
+label_F9E9:
+	LD   (data_F9C2),HL
+	POP  HL
+	POP  BC
+	POP  AF
+	RET 
 data_F9F0:
 	db $FF
+data_F9F1:
 	db $FF
+data_F9F2:
 	db $00
+data_F9F3:
 	db $00
 data_F9F4:
 	db $14
-	db $DD
-	db $21
-	db $F0
-	db $F9
-	db $DD
-	db $7E
-	db $00
-	db $FE
-	db $FF
-	db $20
-	db $2A
-	db $CD
-	db $6D
-	db $B0
-	db $B7
-	db $C8
-	db $FD
-	db $7E
-	db $05
-	db $32
-	db $F0
-	db $F9
-	db $FD
-	db $7E
-	db $0A
-	db $32
-	db $F1
-	db $F9
-	db $CD
-	db $A4
-	db $F9
-	db $7E
-	db $32
-	db $F2
-	db $F9
-	db $23
-	db $7E
-	db $32
-	db $F3
-	db $F9
-	db $01
-	db $0A
-	db $FF
-	db $11
-	db $14
-	db $01
-	db $21
-	db $01
-	db $14
-	db $CD
-	db $D3
-	db $E3
-	db $C9
-	db $01
-	db $B5
-	db $F8
-	db $CD
-	db $35
-	db $EF
-	db $3E
-	db $6D
-	db $CD
-	db $3D
-	db $A8
-	db $3A
-	db $72
-	db $F6
-	db $47
-	db $3A
-	db $73
-	db $F6
-	db $B0
-	db $28
-	db $05
-	db $DD
-	db $36
-	db $FC
-	db $FF
-	db $C9
-	db $06
-	db $0C
-	db $21
-	db $A9
-	db $80
-	db $7E
-	db $FE
-	db $FF
-	db $20
-	db $08
-	db $23
-	db $23
-	db $23
-	db $23
-	db $23
-	db $10
-	db $F4
-	db $C9
-	db $5F
-	db $DD
-	db $96
-	db $FC
-	db $D6
-	db $08
-	db $FE
-	db $F0
-	db $38
-	db $EE
-	db $23
-	db $7E
-	db $57
-	db $2B
-	db $DD
-	db $96
-	db $FD
-	db $D6
-	db $08
-	db $FE
-	db $F0
-	db $38
-	db $E1
-	db $3E
-	db $FF
-	db $77
-	db $32
-	db $F0
-	db $F9
-	db $23
-	db $23
-	db $23
-	db $23
-	db $7E
-	db $FE
-	db $6B
-	db $28
-	db $0A
-	db $3E
-	db $6B
-	db $CD
-	db $F0
-	db $FA
-	db $CD
-	db $F0
-	db $FA
-	db $18
-	db $5D
-	db $3A
-	db $EF
-	db $FA
-	db $EE
-	db $01
-	db $32
-	db $EF
-	db $FA
-	db $20
-	db $53
-	db $11
-	db $EE
-	db $42
-	db $ED
-	db $5F
-	db $E6
-	db $01
-	db $20
-	db $03
-	db $11
-	db $02
-	db $AE
-	db $3E
-	db $38
-	db $CD
-	db $F0
-	db $FA
-	db $21
-	db $F4
-	db $F9
-	db $7E
-	db $B7
-	db $28
-	db $3B
-	db $35
-	db $20
-	db $38
-	db $3E
-	db $01
-	db $32
-	db $1C
-	db $EC
-	db $32
-	db $B3
-	db $EC
-	db $FD
-	db $7E
-	db $E2
-	db $C6
-	db $01
-	db $27
-	db $FD
-	db $77
-	db $E2
-	db $3A
-	db $FE
-	db $EC
-	db $C6
-	db $01
-	db $27
-	db $32
-	db $FE
-	db $EC
-	db $01
-	db $32
-	db $BE
-	db $21
-	db $00
-	db $00
-	db $11
-	db $0A
-	db $0A
-	db $CD
-	db $E7
-	db $FA
-	db $01
-	db $64
-	db $96
-	db $CD
-	db $E7
-	db $FA
-	db $01
-	db $32
-	db $A5
-	db $CD
-	db $E7
-	db $FA
-	db $01
-	db $78
-	db $7D
-	db $CD
-	db $E7
-	db $FA
-	db $CD
-	db $C4
-	db $F9
-	db $C9
-	db $E5
-	db $D5
-	db $CD
-	db $D3
-	db $E3
-	db $D1
-	db $E1
-	db $C9
+function_F9F5:
+	LD   IX,data_F9F0
+	LD   A,(IX+$00)
+	CP   $FF
+	JR   NZ,label_FA2A
+	CALL function_B06D
+	OR   A
+	RET  Z
+	LD   A,(IY+$05)
+	LD   (data_F9F0),A
+	LD   A,(IY+$0A)
+	LD   (data_F9F1),A
+	CALL function_F9A4
+	LD   A,(HL)
+	LD   (data_F9F2),A
+	INC  HL
+	LD   A,(HL)
+	LD   (data_F9F3),A
+	LD   BC,BackgroundAttribs+266
+	LD   DE,$0114
+	LD   HL,$1401
+	CALL function_E3D3
+	RET 
+label_FA2A:
+	LD   BC,data_F8B5
+	CALL BounceObjectWithinBounds
+	LD   A,$6D
+	CALL DrawItem
+	LD   A,(data_F672)
+	LD   B,A
+	LD   A,(data_F673)
+	OR   B
+	JR   Z,label_FA44
+	LD   (IX-$04),$FF
+	RET 
+label_FA44:
+	LD   B,$0C
+	LD   HL,data_80A9
+label_FA49:
+	LD   A,(HL)
+	CP   $FF
+	JR   NZ,label_FA56
+label_FA4E:
+	INC  HL
+	INC  HL
+	INC  HL
+	INC  HL
+	INC  HL
+	DJNZ label_FA49
+	RET 
+label_FA56:
+	LD   E,A
+	SUB  (IX-$04)
+	SUB  $08
+	CP   $F0
+	JR   C,label_FA4E
+	INC  HL
+	LD   A,(HL)
+	LD   D,A
+	DEC  HL
+	SUB  (IX-$03)
+	SUB  $08
+	CP   $F0
+	JR   C,label_FA4E
+	LD   A,$FF
+	LD   (HL),A
+	LD   (data_F9F0),A
+	INC  HL
+	INC  HL
+	INC  HL
+	INC  HL
+	LD   A,(HL)
+	CP   $6B
+	JR   Z,label_FA86
+	LD   A,$6B
+	CALL function_FAF0
+	CALL function_FAF0
+	JR   label_FAE3
+label_FA86:
+	LD   A,(data_FAEF)
+	XOR  $01
+	LD   (data_FAEF),A
+	JR   NZ,label_FAE3
+	LD   DE,$42EE
+	LD   A,R
+	AND  $01
+	JR   NZ,label_FA9C
+	LD   DE,$AE02
+label_FA9C:
+	LD   A,$38
+	CALL function_FAF0
+	LD   HL,$F9F4
+	LD   A,(HL)
+	OR   A
+	JR   Z,label_FAE3
+	DEC  (HL)
+	JR   NZ,label_FAE3
+	LD   A,$01
+	LD   (data_EC1C),A
+	LD   (data_ECB3),A
+	LD   A,(IY-$1E)
+	ADD  A,$01
+	DAA
+	LD   (IY-$1E),A
+	LD   A,(data_ECFE)
+	ADD  A,$01
+	DAA
+	LD   (data_ECFE),A
+	LD   BC,$BE32
+	LD   HL,$0000
+	LD   DE,$0A0A
+	CALL function_FAE7
+	LD   BC,$9664
+	CALL function_FAE7
+	LD   BC,$A532
+	CALL function_FAE7
+	LD   BC,$7D78
+	CALL function_FAE7
+label_FAE3:
+	CALL function_F9C4
+	RET 
+function_FAE7:
+	PUSH HL
+	PUSH DE
+	CALL function_E3D3
+	POP  DE
+	POP  HL
+	RET 
 data_FAEF:
 	db $00
-	db $DD
-	db $E5
-	db $DD
-	db $21
-	db $A9
-	db $80
-	db $F5
-	db $DD
-	db $7E
-	db $00
-	db $FE
-	db $FF
-	db $28
-	db $07
-	db $CD
-	db $88
-	db $EF
-	db $DD
-	db $23
-	db $18
-	db $F2
-	db $DD
-	db $73
-	db $00
-	db $DD
-	db $72
-	db $01
-	db $ED
-	db $5F
-	db $E6
-	db $02
-	db $3D
-	db $87
-	db $DD
-	db $77
-	db $02
-	db $ED
-	db $5F
+function_FAF0:
+	PUSH IX
+	LD   IX,data_80A9
+	PUSH AF
+label_FAF7:
+	LD   A,(IX+$00)
+	CP   $FF
+	JR   Z,label_FB05
+	CALL NextObject
+	INC  IX
+	JR   label_FAF7
+label_FB05:
+	LD   (IX+$00),E
+	LD   (IX+$01),D
+	LD   A,R
+	AND  $02
+	DEC  A
+	ADD  A,A
+	LD   (IX+$02),A
+	LD   A,R
 data_FB16:
-	db $E6
-	db $02
-	db $1F
-	db $4F
-	db $ED
-	db $5F
-	db $E6
-	db $01
-	db $91
-	db $87
-	db $DD
-	db $77
-	db $03
-	db $F1
-	db $DD
-	db $77
-	db $04
-	db $DD
-	db $E1
-	db $C9
+	AND  $02
+	RRA
+	LD   C,A
+	LD   A,R
+	AND  $01
+	SUB  C
+	ADD  A,A
+	LD   (IX+$03),A
+	POP  AF
+	LD   (IX+$04),A
+	POP  IX
+	RET 
 	db $00
 	db $00
 	db $00
@@ -31585,1045 +30087,54 @@ data_FB16:
 	db $00
 	db $00
 	db $00
-	dw $000A
-	dw $0007
-	dw $0307
-	dw $8218
-	dw $0200
-	dw $E507
+	dw $5818
+	dw $5816
+	dw $8348
+	dw $1516
+	dw $0145
+	dw $B2F0
+	dw $0006
 	dw $BC67
-	dw $0700
+	dw $FF67
 	dw $BC6B
 	dw $B28B
-	dw $FE00
-	dw $B9F0
-	dw $BA12
-	dw $B9FA
-	dw $81C3
-	dw $8178
-	dw $818B
+	dw $AAD5
+	dw $A989			; set return address
+	dw $EEBD
+	dw $EEC4
+	dw $81B7
+	dw $81A6
+ShadowScreenAttribs:
+	db $46,$46,$46,$46,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$56,$56,$56,$56,$56,$56,$47,$47,$47,$47,$47,$47,$47,$47,$47,$56,$46,$46,$46,$46,$46,$46,$46,$46,$44,$44,$44,$46
+	db $46,$46,$46,$46,$56,$56,$56,$56,$56,$56,$47,$47,$47,$47,$47,$47,$47,$47,$47,$56,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$56,$47,$47,$47,$47,$56,$47,$47,$46,$47,$47,$47,$46,$47,$47,$56,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $04,$04,$04,$04,$56,$47,$47,$47,$47,$56,$47,$47,$42,$47,$47,$47,$42,$47,$47,$56,$46,$46,$46,$46,$46,$46,$46,$04,$04,$46,$04,$04
+	db $04,$04,$04,$04,$56,$47,$47,$47,$47,$56,$47,$42,$42,$42,$47,$42,$42,$42,$47,$56,$43,$43,$43,$46,$46,$46,$46,$46,$46,$46,$04,$04
+	db $04,$04,$04,$04,$56,$47,$47,$47,$47,$56,$47,$47,$47,$47,$47,$47,$47,$47,$47,$56,$43,$43,$43,$46,$46,$46,$46,$46,$46,$46,$04,$04
+	db $04,$04,$04,$04,$56,$47,$47,$47,$47,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$43,$43,$43,$46,$46,$46,$46,$46,$46,$46,$04,$04
+	db $05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05
 BackgroundAttribs:
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $72
-	db $72
-	db $02
-	db $02
-	db $72
-	db $72
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $42
-	db $56
-	db $56
-	db $56
-	db $42
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $42
-	db $56
-	db $56
-	db $56
-	db $42
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $42
-	db $42
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $42
-	db $42
-	db $46
-	db $46
-	db $72
-	db $43
-	db $43
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $72
-	db $47
-	db $47
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $45
-	db $42
-	db $04
-	db $04
-	db $72
-	db $43
-	db $43
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $72
-	db $72
-	db $72
-	db $46
-	db $46
-	db $46
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $42
-	db $42
-	db $04
-	db $04
-	db $72
-	db $43
-	db $43
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $72
-	db $72
-	db $72
-	db $46
-	db $46
-	db $46
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $42
-	db $42
-	db $04
-	db $04
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $72
-	db $72
-	db $72
-	db $46
-	db $46
-	db $46
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $42
-	db $42
-	db $04
-	db $04
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $72
-	db $72
-	db $02
-	db $02
-	db $72
-	db $72
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $02
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $42
-	db $56
-	db $56
-	db $56
-	db $42
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $42
-	db $56
-	db $56
-	db $56
-	db $42
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $42
-	db $42
-	db $46
-	db $46
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $42
-	db $42
-	db $46
-	db $46
-	db $72
-	db $43
-	db $43
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $45
-	db $42
-	db $04
-	db $04
-	db $72
-	db $43
-	db $43
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $42
-	db $42
-	db $04
-	db $04
-	db $72
-	db $43
-	db $43
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $42
-	db $42
-	db $04
-	db $04
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $47
-	db $47
-	db $47
-	db $47
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $72
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $43
-	db $46
-	db $46
-	db $46
-	db $46
-	db $42
-	db $42
-	db $42
-	db $04
-	db $04
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
-	db $05
+	db $46,$46,$46,$46,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$43,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$4F,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$56,$56,$56,$56,$56,$56,$47,$47,$47,$47,$47,$47,$47,$47,$47,$56,$46,$46,$46,$46,$46,$46,$46,$46,$44,$44,$44,$46
+	db $46,$46,$46,$46,$56,$56,$56,$56,$56,$56,$47,$47,$47,$47,$47,$47,$47,$47,$47,$56,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $46,$46,$46,$46,$56,$47,$47,$47,$47,$56,$47,$47,$46,$47,$47,$47,$46,$47,$47,$56,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46,$46
+	db $04,$04,$04,$04,$56,$47,$47,$47,$47,$56,$47,$47,$42,$47,$47,$47,$42,$47,$47,$56,$46,$46,$46,$46,$46,$46,$46,$04,$04,$46,$04,$04
+	db $04,$04,$04,$04,$56,$47,$47,$47,$47,$56,$47,$42,$42,$42,$47,$42,$42,$42,$47,$56,$43,$43,$43,$46,$46,$46,$46,$04,$04,$46,$04,$04
+	db $04,$04,$04,$04,$56,$47,$47,$47,$47,$56,$47,$47,$47,$47,$47,$47,$47,$47,$47,$56,$43,$43,$43,$46,$46,$46,$46,$04,$04,$46,$04,$04
+	db $04,$04,$04,$04,$56,$47,$47,$47,$47,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$56,$43,$43,$43,$46,$46,$46,$46,$04,$04,$46,$04,$04
+	db $05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05,$05

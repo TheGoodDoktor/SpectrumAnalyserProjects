@@ -14,7 +14,7 @@ end
 
 function DrawScreenItemToView(graphicsView, itemNo, x, y)
 	local itemPtr = ReadWord(globals.ScreenItemPtrs + (itemNo * 2))
-	print(string.format("Drawing screen item %d at %d,%d",itemNo,x,y))
+	--print(string.format("Drawing screen item %d at %d,%d",itemNo,x,y))
 	while true do
 		local dataByte = ReadByte(itemPtr)
 		itemPtr = itemPtr + 1
@@ -110,46 +110,80 @@ function DrawScreenToView(graphicsView, screenNo, x, y)
 	--DrawScreenItemToView(graphicsView,screenNo,x+16,y)	--temp hack
 end
 
-ScreenViewer = 
+
+
+GraphicsViewer = 
 {
-    name = "Screen Viewer",
+    name = "Graphics Viewer",
    	screenNo = 0,
     screenMin = 0,
     screenMax = 100,
 	gameScreen = 0xff,
+	characterNo = 0,
 	
 	onAdd = function(self)
-		self.graphicsView = CreateZXGraphicsView(256,256)
-        ClearGraphicsView(self.graphicsView, 0)
-		DrawScreenToView(self.graphicsView,self.screenNo, 0, 0)
+		--screen viewer
+		self.screenView = CreateZXGraphicsView(256,19 * 8)
+        ClearGraphicsView(self.screenView, 0)
+		DrawScreenToView(self.screenView,self.screenNo, 0, 0)
+		-- character view
+		self.characterView = CreateZXGraphicsView(16,32)
+		ClearGraphicsView(self.characterView, 0)
+		DrawCharacterToView(self.characterView,self.characterNo, 0, 0)
 	end,
 
 	onDrawUI = function(self)
-		local changed = false
-
-        -- Use ImGui widget for setting screen number to draw
-		changed, self.screenNo = imgui.InputInt("screen number",self.screenNo)
-
-		local currentScreen = ReadByte(0x813A)
-		if self.gameScreen ~= currentScreen then
-			self.gameScreen = currentScreen
-			self.screenNo = currentScreen
-			changed = true
-		
-		end
-		if changed == true then
-			ClearGraphicsView(self.graphicsView, 0)
-			DrawScreenToView(self.graphicsView,self.screenNo, 0, 0)
-		end
-
-		
-
-		-- Update and draw to screen
-		DrawGraphicsView(self.graphicsView)
-	end,
-
+		self:DrawScreenView()
+		self:DrawCharacterView()
+	end
 }
 
+GraphicsViewer.DrawScreenView = function(self)
+	local changed = false
+
+	-- Use ImGui widget for setting screen number to draw
+	changed, self.screenNo = imgui.InputInt("screen number",self.screenNo)
+	
+	local currentScreen = ReadByte(0x813A)
+	if self.gameScreen ~= currentScreen then
+		self.gameScreen = currentScreen
+		self.screenNo = currentScreen
+		changed = true
+	
+	end
+	if changed == true then
+		ClearGraphicsView(self.screenView, 0)
+		DrawScreenToView(self.screenView,self.screenNo, 0, 0)
+	end
+	
+	-- Update and draw to screen
+	DrawGraphicsView(self.screenView)
+end
+
+
+function DrawCharacterToView(graphicsView, itemNo, x, y)
+
+	local spriteAddress = globals.Wally_Masked_0 + (itemNo * 128) + 2
+	local characterAttrbute = 0x47
+
+	DrawZXBitImage(graphicsView,GetMemPtr(spriteAddress),x,y,2,4,characterAttrbute,4)
+
+end
+
+GraphicsViewer.DrawCharacterView = function(self)
+	local changed = false
+
+	-- Use ImGui widget for setting screen number to draw
+	changed, self.characterNo = imgui.InputInt("character number",self.characterNo)
+	
+	if changed == true then
+		ClearGraphicsView(self.characterView, 0)
+		DrawCharacterToView(self.characterView,self.characterNo, 0, 0)
+	end
+
+	DrawGraphicsView(self.characterView)
+end
+
 -- Initialise the template viewer
-print("Screen Viewer Initialised")
-AddViewer(ScreenViewer);
+print("Graphics Viewer Initialised")
+AddViewer(GraphicsViewer);
