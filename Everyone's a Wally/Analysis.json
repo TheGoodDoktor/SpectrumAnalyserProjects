@@ -4432,7 +4432,7 @@
                     "Address": 169,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_80A9"
+                    "Name": "Asteroids_LighningBolts"
                 },
                 {
                     "Address": 229,
@@ -30596,7 +30596,8 @@
                 },
                 {
                     "Address": 179,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "character in air?"
                 },
                 {
                     "Address": 182,
@@ -31152,7 +31153,8 @@
                 },
                 {
                     "Address": 407,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "y pos"
                 },
                 {
                     "Address": 410,
@@ -31160,7 +31162,9 @@
                 },
                 {
                     "Address": 412,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "floor height",
+                    "OperandType": 7
                 },
                 {
                     "Address": 414,
@@ -31169,11 +31173,14 @@
                 },
                 {
                     "Address": 416,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "clamp at floor height",
+                    "OperandType": 7
                 },
                 {
                     "Address": 418,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "write Y back"
                 },
                 {
                     "Address": 421,
@@ -31181,7 +31188,8 @@
                 },
                 {
                     "Address": 422,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "character moving?"
                 },
                 {
                     "Address": 425,
@@ -31194,7 +31202,8 @@
                 },
                 {
                     "Address": 428,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "character direction"
                 },
                 {
                     "Address": 431,
@@ -31921,7 +31930,8 @@
                 },
                 {
                     "Address": 832,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 835,
@@ -32284,11 +32294,13 @@
                 },
                 {
                     "Address": 1000,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "room number"
                 },
                 {
                     "Address": 1004,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "x position"
                 },
                 {
                     "Address": 1008,
@@ -32395,6 +32407,22 @@
                 {
                     "Address": 731,
                     "Comment": "0: Keys, 1: Kempston, 2: Sinclair",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 749,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 750,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 751,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 752,
                     "DisplayType": 11
                 }
             ],
@@ -32572,27 +32600,23 @@
                 {
                     "Address": 407,
                     "LabelType": 1,
-                    "Name": "function_B197"
+                    "Name": "ApplyGravityToCharacter"
                 },
                 {
                     "Address": 418,
                     "LabelType": 2,
-                    "Name": "label_B1A2"
+                    "Name": "no_clamp"
                 },
                 {
                     "Address": 422,
-                    "LabelType": 2,
-                    "Name": "jump_presssed"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "CharacterJump"
                 },
                 {
                     "Address": 434,
                     "LabelType": 2,
                     "Name": "label_B1B2"
-                },
-                {
-                    "Address": 441,
-                    "LabelType": 1,
-                    "Name": "function_B1B9"
                 },
                 {
                     "Address": 493,
@@ -32628,7 +32652,7 @@
                 {
                     "Address": 648,
                     "LabelType": 1,
-                    "Name": "function_B288"
+                    "Name": "MoveCharacter"
                 },
                 {
                     "Address": 670,
@@ -32675,12 +32699,12 @@
                     "Address": 749,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_B2ED"
+                    "Name": "EarningsScratchBuffer"
                 },
                 {
                     "Address": 753,
                     "LabelType": 1,
-                    "Name": "function_B2F1"
+                    "Name": "PrintEarningsBreakdown"
                 },
                 {
                     "Address": 792,
@@ -32696,7 +32720,7 @@
                 {
                     "Address": 844,
                     "LabelType": 1,
-                    "Name": "function_B34C"
+                    "Name": "PrintMonetaryValue"
                 },
                 {
                     "Address": 869,
@@ -32731,7 +32755,7 @@
                 {
                     "Address": 939,
                     "LabelType": 1,
-                    "Name": "function_B3AB"
+                    "Name": "WaitForKeypress"
                 },
                 {
                     "Address": 948,
@@ -34254,7 +34278,8 @@
                 },
                 {
                     "Address": 1023,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "#ADDR:0xFD00#"
                 }
             ],
             "CommentBlocks": [
@@ -34362,12 +34387,13 @@
                 {
                     "Address": 113,
                     "LabelType": 1,
-                    "Name": "TitleScreenMusicFunc"
+                    "Name": "InitialiseThemeTuneData"
                 },
                 {
                     "Address": 130,
-                    "LabelType": 2,
-                    "Name": "label_B482"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "PlayNextNoteOfTheme_CheckKey"
                 },
                 {
                     "Address": 148,
@@ -34413,7 +34439,7 @@
                     "Address": 231,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_B4E7"
+                    "Name": "Tune_NextNote"
                 },
                 {
                     "Address": 233,
@@ -34440,7 +34466,7 @@
                 {
                     "Address": 261,
                     "LabelType": 1,
-                    "Name": "function_B505"
+                    "Name": "ThemeTune_PlayNote"
                 },
                 {
                     "Address": 271,
@@ -34456,7 +34482,7 @@
                     "Address": 311,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_B537"
+                    "Name": "NoteFrequencies"
                 },
                 {
                     "Address": 351,
@@ -34483,7 +34509,7 @@
                 {
                     "Address": 891,
                     "LabelType": 1,
-                    "Name": "function_B77B"
+                    "Name": "DrawInventoryGraphic"
                 },
                 {
                     "Address": 927,
@@ -34509,7 +34535,7 @@
                 {
                     "Address": 1017,
                     "LabelType": 1,
-                    "Name": "function_B7F9"
+                    "Name": "DrawRoomGraphicOnScreen"
                 }
             ],
             "PageId": 61
@@ -34518,11 +34544,13 @@
             "CodeInfo": [
                 {
                     "Address": 1,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "x char pos"
                 },
                 {
                     "Address": 2,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "y char pos"
                 },
                 {
                     "Address": 3,
@@ -34530,7 +34558,8 @@
                 },
                 {
                     "Address": 5,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 32"
                 },
                 {
                     "Address": 6,
@@ -34942,9 +34971,8 @@
                 {
                     "Address": 148,
                     "ByteSize": 3,
-                    "Flags": 10,
-                    "OperandType": 2,
-                    "SMC": true
+                    "Flags": 8,
+                    "OperandType": 2
                 },
                 {
                     "Address": 151,
@@ -35041,9 +35069,8 @@
                 {
                     "Address": 180,
                     "ByteSize": 3,
-                    "Flags": 10,
-                    "OperandType": 2,
-                    "SMC": true
+                    "Flags": 8,
+                    "OperandType": 2
                 },
                 {
                     "Address": 183,
@@ -35063,9 +35090,8 @@
                 {
                     "Address": 189,
                     "ByteSize": 3,
-                    "Flags": 10,
-                    "OperandType": 2,
-                    "SMC": true
+                    "Flags": 8,
+                    "OperandType": 2
                 },
                 {
                     "Address": 192,
@@ -36584,51 +36610,6 @@
                     "InstructionAddressRef": 3086942211
                 },
                 {
-                    "Address": 148,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3096707075
-                },
-                {
-                    "Address": 149,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3096707075
-                },
-                {
-                    "Address": 150,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3096707075
-                },
-                {
-                    "Address": 180,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3098804227
-                },
-                {
-                    "Address": 181,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3098804227
-                },
-                {
-                    "Address": 182,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3098804227
-                },
-                {
-                    "Address": 189,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3099394051
-                },
-                {
-                    "Address": 190,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3099394051
-                },
-                {
-                    "Address": 191,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3099394051
-                },
-                {
                     "Address": 337,
                     "DisplayType": 3
                 },
@@ -36668,7 +36649,7 @@
                 {
                     "Address": 43,
                     "LabelType": 1,
-                    "Name": "function_B82B"
+                    "Name": "DrawScreenItemToScreen"
                 },
                 {
                     "Address": 75,
@@ -36891,7 +36872,7 @@
                 {
                     "Address": 718,
                     "LabelType": 1,
-                    "Name": "function_BACE"
+                    "Name": "GetStringLength"
                 },
                 {
                     "Address": 720,
@@ -36988,6 +36969,18 @@
                 {
                     "Address": 153,
                     "Comment": " "
+                },
+                {
+                    "Address": 158,
+                    "Comment": "Character in air"
+                },
+                {
+                    "Address": 163,
+                    "Comment": "character moving?"
+                },
+                {
+                    "Address": 168,
+                    "Comment": "Character Direction"
                 },
                 {
                     "Address": 233,
@@ -37215,6 +37208,21 @@
                 },
                 {
                     "Address": 152,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 158,
+                    "Comment": "Wally",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 163,
+                    "Comment": "Wally",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 168,
+                    "Comment": "Wally",
                     "DisplayType": 11
                 },
                 {
@@ -52306,7 +52314,7 @@
                 {
                     "Address": 877,
                     "LabelType": 1,
-                    "Name": "function_E36D"
+                    "Name": "UpdateEnduranceAndLivesDisplay"
                 },
                 {
                     "Address": 895,
@@ -52371,7 +52379,7 @@
                 {
                     "Address": 1004,
                     "LabelType": 1,
-                    "Name": "function_E3EC"
+                    "Name": "GenerateOneWaveCycleSFX"
                 },
                 {
                     "Address": 1009,
@@ -52702,7 +52710,8 @@
                 },
                 {
                     "Address": 893,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandType": 1
                 },
                 {
                     "Address": 897,
@@ -53958,17 +53967,17 @@
                 {
                     "Address": 29,
                     "LabelType": 1,
-                    "Name": "function_E41D"
+                    "Name": "PrintCharactersInventory"
                 },
                 {
                     "Address": 32,
-                    "LabelType": 1,
-                    "Name": "function_E420"
+                    "LabelType": 2,
+                    "Name": "label_E420"
                 },
                 {
                     "Address": 104,
                     "LabelType": 1,
-                    "Name": "function_E468"
+                    "Name": "DisplayItemInInventory"
                 },
                 {
                     "Address": 132,
@@ -54321,7 +54330,7 @@
                 {
                     "Address": 890,
                     "LabelType": 1,
-                    "Name": "function_E77A"
+                    "Name": "ClearInventoryDisplay"
                 },
                 {
                     "Address": 899,
@@ -54750,8 +54759,7 @@
                 },
                 {
                     "Address": 853,
-                    "ByteSize": 3,
-                    "Flags": 32
+                    "ByteSize": 3
                 },
                 {
                     "Address": 856,
@@ -55452,7 +55460,8 @@
                 },
                 {
                     "Address": 61,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "room item number"
                 },
                 {
                     "Address": 62,
@@ -55460,7 +55469,8 @@
                 },
                 {
                     "Address": 63,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "object id"
                 },
                 {
                     "Address": 64,
@@ -55958,6 +55968,10 @@
                     "ByteSize": 3,
                     "Flags": 8,
                     "OperandType": 2
+                },
+                {
+                    "Address": 393,
+                    "ByteSize": 1
                 },
                 {
                     "Address": 394,
@@ -57162,6 +57176,10 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 29,
+                    "Comment": "A : flag no"
+                },
+                {
                     "Address": 755,
                     "Comment": "these are update functions for the rooms\nIndexed by room number"
                 },
@@ -57228,20 +57246,68 @@
                     "StructByteOffset": 2
                 },
                 {
+                    "Address": 245,
+                    "Comment": "0 = morning, 1 = lunch, 2 = tea",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 246,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 247,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 248,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 249,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 250,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 251,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 252,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 253,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 254,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 255,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 256,
                     "ByteSize": 2,
+                    "Comment": "morning",
                     "DataType": 2,
                     "DisplayType": 1
                 },
                 {
                     "Address": 258,
                     "ByteSize": 2,
+                    "Comment": "lunch",
                     "DataType": 2,
                     "DisplayType": 1
                 },
                 {
                     "Address": 260,
                     "ByteSize": 2,
+                    "Comment": "tea",
                     "DataType": 2,
                     "DisplayType": 1
                 },
@@ -57509,22 +57575,22 @@
                 {
                     "Address": 29,
                     "LabelType": 1,
-                    "Name": "function_EC1D"
+                    "Name": "GetGameStatusFlag"
                 },
                 {
                     "Address": 43,
                     "LabelType": 1,
-                    "Name": "Condition_ObjectCheck"
+                    "Name": "Condition_ItemCheck"
                 },
                 {
                     "Address": 52,
                     "LabelType": 1,
-                    "Name": "Condition_NotObject"
+                    "Name": "Condition_NotItem"
                 },
                 {
                     "Address": 61,
                     "LabelType": 1,
-                    "Name": "function_EC3D"
+                    "Name": "CheckRoomItemMatchesID"
                 },
                 {
                     "Address": 74,
@@ -57562,37 +57628,37 @@
                     "Address": 245,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_ECF5"
+                    "Name": "NextRewardScreenIndex"
                 },
                 {
                     "Address": 246,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_ECF6"
+                    "Name": "RewardValues"
                 },
                 {
                     "Address": 254,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_ECFE"
+                    "Name": "Reward_Hundreds"
                 },
                 {
                     "Address": 255,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_ECFF"
+                    "Name": "Reward_Tens"
                 },
                 {
                     "Address": 256,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_ED00"
+                    "Name": "BreakMessageLUT"
                 },
                 {
                     "Address": 262,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_ED06"
+                    "Name": "RewardScreen_MovementTable"
                 },
                 {
                     "Address": 274,
@@ -57614,7 +57680,7 @@
                 {
                     "Address": 298,
                     "LabelType": 1,
-                    "Name": "function_ED2A"
+                    "Name": "CheckForBreak_DisplayMessage"
                 },
                 {
                     "Address": 322,
@@ -57803,7 +57869,7 @@
                 {
                     "Address": 913,
                     "LabelType": 1,
-                    "Name": "function_EF91"
+                    "Name": "SetFountainAttributes"
                 },
                 {
                     "Address": 930,
@@ -58306,9 +58372,7 @@
                 },
                 {
                     "Address": 227,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 229,
@@ -58785,7 +58849,8 @@
                 },
                 {
                     "Address": 517,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 520,
@@ -58802,7 +58867,9 @@
                 },
                 {
                     "Address": 529,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "10000's",
+                    "OperandType": 3
                 },
                 {
                     "Address": 532,
@@ -58812,7 +58879,9 @@
                 },
                 {
                     "Address": 535,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "1000's",
+                    "OperandType": 3
                 },
                 {
                     "Address": 538,
@@ -58822,7 +58891,9 @@
                 },
                 {
                     "Address": 541,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "100's",
+                    "OperandType": 3
                 },
                 {
                     "Address": 544,
@@ -58832,7 +58903,9 @@
                 },
                 {
                     "Address": 547,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "10's",
+                    "OperandType": 3
                 },
                 {
                     "Address": 550,
@@ -58842,7 +58915,9 @@
                 },
                 {
                     "Address": 553,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "1's",
+                    "OperandType": 3
                 },
                 {
                     "Address": 556,
@@ -59651,7 +59726,7 @@
             "CommentBlocks": [
                 {
                     "Address": 668,
-                    "Comment": "baby is at room exit"
+                    "Comment": "herbert is at room exit"
                 },
                 {
                     "Address": 714,
@@ -59663,16 +59738,6 @@
                 }
             ],
             "DataInfo": [
-                {
-                    "Address": 227,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4041408516
-                },
-                {
-                    "Address": 228,
-                    "DataType": 11,
-                    "InstructionAddressRef": 4041408516
-                },
                 {
                     "Address": 260,
                     "Comment": "x pos",
@@ -59720,6 +59785,12 @@
                     "DisplayType": 3
                 },
                 {
+                    "Address": 347,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 579,
                     "DisplayType": 3
                 },
@@ -59753,6 +59824,10 @@
                 },
                 {
                     "Address": 622,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 623,
                     "DisplayType": 11
                 },
                 {
@@ -59983,12 +60058,12 @@
                 {
                     "Address": 71,
                     "LabelType": 1,
-                    "Name": "function_F047"
+                    "Name": "FlipShark"
                 },
                 {
                     "Address": 87,
                     "LabelType": 1,
-                    "Name": "function_F057"
+                    "Name": "Chase_UpdateShark"
                 },
                 {
                     "Address": 154,
@@ -60026,7 +60101,7 @@
                 {
                     "Address": 192,
                     "LabelType": 1,
-                    "Name": "function_F0C0"
+                    "Name": "Chase_CheckPlayerMovement"
                 },
                 {
                     "Address": 219,
@@ -60097,7 +60172,7 @@
                     "Address": 347,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_F15B"
+                    "Name": "NoMilesOutOfTown"
                 },
                 {
                     "Address": 349,
@@ -60143,12 +60218,12 @@
                 {
                     "Address": 514,
                     "LabelType": 1,
-                    "Name": "function_F202"
+                    "Name": "PrintMilesOutOfTown"
                 },
                 {
                     "Address": 563,
                     "LabelType": 1,
-                    "Name": "function_F233"
+                    "Name": "PrintMilesDigit"
                 },
                 {
                     "Address": 570,
@@ -60176,18 +60251,18 @@
                     "Address": 623,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_F26F"
+                    "Name": "CurrentFountainAttribute"
                 },
                 {
                     "Address": 624,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "BabyState"
+                    "Name": "HerbertState"
                 },
                 {
                     "Address": 631,
                     "LabelType": 1,
-                    "Name": "UpdateBaby"
+                    "Name": "UpdateHerbert"
                 },
                 {
                     "Address": 677,
@@ -62142,8 +62217,8 @@
                 },
                 {
                     "Address": 376,
-                    "LabelType": 1,
-                    "Name": "function_F578"
+                    "LabelType": 2,
+                    "Name": "label_F578"
                 },
                 {
                     "Address": 442,
@@ -63945,6 +64020,7 @@
                 {
                     "Address": 1008,
                     "ByteSize": 2,
+                    "Comment": "put character point in HL",
                     "DataType": 2
                 },
                 {
@@ -63960,16 +64036,19 @@
                 {
                     "Address": 1014,
                     "ByteSize": 2,
+                    "Comment": "set return address",
                     "DataType": 2
                 },
                 {
                     "Address": 1016,
                     "ByteSize": 2,
+                    "Comment": "push loop counter",
                     "DataType": 2
                 },
                 {
                     "Address": 1018,
                     "ByteSize": 2,
+                    "Comment": "backup pointer to player character",
                     "DataType": 2
                 },
                 {
@@ -63988,12 +64067,12 @@
                     "Address": 18,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_F812"
+                    "Name": "NextFoodItem"
                 },
                 {
                     "Address": 20,
                     "LabelType": 1,
-                    "Name": "function_F814"
+                    "Name": "CheckForFoodInRoom"
                 },
                 {
                     "Address": 35,
@@ -64030,7 +64109,7 @@
                 {
                     "Address": 185,
                     "LabelType": 1,
-                    "Name": "function_F8B9"
+                    "Name": "Asteroids_CheckLightningCollision"
                 },
                 {
                     "Address": 196,
@@ -64080,7 +64159,7 @@
                 {
                     "Address": 314,
                     "LabelType": 1,
-                    "Name": "function_F93A"
+                    "Name": "Asteroids_CheckPlayerMovement"
                 },
                 {
                     "Address": 334,
@@ -64120,13 +64199,13 @@
                 {
                     "Address": 420,
                     "LabelType": 1,
-                    "Name": "function_F9A4"
+                    "Name": "Asteroids_GetMovementDelta"
                 },
                 {
                     "Address": 434,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_F9B2"
+                    "Name": "MovementDeltas"
                 },
                 {
                     "Address": 450,
@@ -64137,7 +64216,7 @@
                 {
                     "Address": 452,
                     "LabelType": 1,
-                    "Name": "function_F9C4"
+                    "Name": "Asteroids_GenertateHitLightningSound"
                 },
                 {
                     "Address": 460,
@@ -64192,7 +64271,7 @@
                 {
                     "Address": 501,
                     "LabelType": 1,
-                    "Name": "function_F9F5"
+                    "Name": "Asteroids_CheckFireMissile"
                 },
                 {
                     "Address": 554,
@@ -64237,7 +64316,7 @@
                 {
                     "Address": 743,
                     "LabelType": 1,
-                    "Name": "function_FAE7"
+                    "Name": "Asteroids_PlayNoteOfWonSFX"
                 },
                 {
                     "Address": 751,
@@ -64248,7 +64327,7 @@
                 {
                     "Address": 752,
                     "LabelType": 1,
-                    "Name": "function_FAF0"
+                    "Name": "Asteroids_MoveLightingBolts"
                 },
                 {
                     "Address": 759,
