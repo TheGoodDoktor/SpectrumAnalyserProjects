@@ -163,11 +163,11 @@ end
 
 function DrawCharacterToView(graphicsView, itemNo, x, y)
 
-	local spriteAddress = globals.Wally_Masked_0 + (itemNo * 128) + 2
+	local spriteAddress = globals.Wally_Masked_0 + (itemNo * 128)
 	local characterAttrbute = 0x47
 
-	DrawZXBitImage(graphicsView,GetMemPtr(spriteAddress),x,y,2,4,characterAttrbute,4)
-
+	DrawZXBitImage(graphicsView,GetMemPtr(spriteAddress + 2),x,y,2,4,characterAttrbute,4)
+	DrawZXBitImage(graphicsView,GetMemPtr(spriteAddress),x,y,2,4,0x43,4,1)
 end
 
 GraphicsViewer.DrawCharacterView = function(self)
