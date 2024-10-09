@@ -32619,6 +32619,11 @@
                     "Name": "label_B1B2"
                 },
                 {
+                    "Address": 441,
+                    "LabelType": 1,
+                    "Name": "label_B1B9"
+                },
+                {
                     "Address": 493,
                     "LabelType": 2,
                     "Name": "label_B1ED"
@@ -36975,8 +36980,56 @@
         {
             "CommentBlocks": [
                 {
+                    "Address": 43,
+                    "Comment": "current directions of each sprite"
+                },
+                {
+                    "Address": 48,
+                    "Comment": "flags"
+                },
+                {
+                    "Address": 53,
+                    "Comment": "more flags"
+                },
+                {
+                    "Address": 58,
+                    "Comment": "ID of object character is standing near"
+                },
+                {
+                    "Address": 63,
+                    "Comment": "CharacterID"
+                },
+                {
+                    "Address": 68,
+                    "Comment": "Character Name Offset from #ADDR:0x7C00#"
+                },
+                {
+                    "Address": 73,
+                    "Comment": "Earnings/100"
+                },
+                {
+                    "Address": 78,
+                    "Comment": "Play footstep sound (1 - true)"
+                },
+                {
+                    "Address": 83,
+                    "Comment": "NPC reached destination"
+                },
+                {
+                    "Address": 88,
+                    "Comment": "ID of the next object an NPC can swap with"
+                },
+                {
+                    "Address": 93,
+                    "Comment": "Earnings % 100"
+                },
+                {
+                    "Address": 98,
+                    "Comment": "Next index in character's swap list to use"
+                },
+                {
                     "Address": 103,
-                    "Comment": "It looks like the state is interleaved between the 5 characters:\n0 - Wally\n1 - Wilma\n3 - Punk"
+                    "Comment": "It looks like the state is interleaved between the 5 characters:\n0 - Wally\n1 - Wilma\n2 - Tom (Punk)\n3 - Dick\n4 - Harry (Hippy)"
                 },
                 {
                     "Address": 108,
@@ -36996,7 +37049,7 @@
                 },
                 {
                     "Address": 128,
-                    "Comment": "  "
+                    "Comment": "ID of favourite food item  "
                 },
                 {
                     "Address": 133,
@@ -37024,7 +37077,7 @@
                 },
                 {
                     "Address": 163,
-                    "Comment": "character moving?"
+                    "Comment": "character jump flag 0:No, 1:Jump right, $FF jump left\n\n"
                 },
                 {
                     "Address": 168,
@@ -37068,6 +37121,253 @@
                 }
             ],
             "DataInfo": [
+                {
+                    "Address": 43,
+                    "Comment": "Wally",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 44,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 45,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 46,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 47,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 48,
+                    "Comment": "Wally",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 49,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 50,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 51,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 52,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 53,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 54,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 55,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 56,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 57,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 58,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 59,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 60,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 61,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 62,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 63,
+                    "Comment": "Wally",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 64,
+                    "Comment": "Wilma",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 65,
+                    "Comment": "Tom",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 66,
+                    "Comment": "Dick",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 67,
+                    "Comment": "Harry",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 68,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 69,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 70,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 71,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 72,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 73,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 74,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 75,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 76,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 77,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 78,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 79,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 80,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 81,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 82,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 83,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 84,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 85,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 86,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 87,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 88,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 89,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 90,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 91,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 92,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 93,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 94,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 95,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 96,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 97,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 98,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 99,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 100,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 101,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 102,
+                    "DisplayType": 11
+                },
                 {
                     "Address": 103,
                     "Comment": "Wally animation frame",
@@ -37161,18 +37461,38 @@
                 },
                 {
                     "Address": 124,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 125,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 126,
-                    "DisplayType": 11
+                    "DisplayType": 3
                 },
                 {
                     "Address": 127,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 128,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 129,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 130,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 131,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 132,
                     "DisplayType": 11
                 },
                 {
@@ -37259,8 +37579,44 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 153,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 154,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 155,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 156,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 157,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 158,
                     "Comment": "Wally",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 159,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 160,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 161,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 162,
                     "DisplayType": 11
                 },
                 {
@@ -37269,8 +37625,40 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 164,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 165,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 166,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 167,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 168,
                     "Comment": "Wally",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 169,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 170,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 171,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 172,
                     "DisplayType": 11
                 },
                 {
@@ -51949,11 +52337,13 @@
                 },
                 {
                     "Address": 878,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "attribute for lives display"
                 },
                 {
                     "Address": 880,
                     "ByteSize": 3,
+                    "Comment": "set character set",
                     "OperandType": 1
                 },
                 {
@@ -51963,11 +52353,13 @@
                 },
                 {
                     "Address": 886,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "coordinates"
                 },
                 {
                     "Address": 889,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "character lives"
                 },
                 {
                     "Address": 892,
@@ -51987,7 +52379,9 @@
                 },
                 {
                     "Address": 897,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "life character",
+                    "OperandType": 7
                 },
                 {
                     "Address": 899,
@@ -51996,17 +52390,20 @@
                 },
                 {
                     "Address": 901,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "change to space"
                 },
                 {
                     "Address": 902,
                     "ByteSize": 3,
+                    "Comment": "draw life heart",
                     "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 905,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "inc X by 2"
                 },
                 {
                     "Address": 906,
@@ -52014,7 +52411,9 @@
                 },
                 {
                     "Address": 907,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check if we've gone of the edge of the screen",
+                    "OperandType": 7
                 },
                 {
                     "Address": 909,
@@ -52032,11 +52431,13 @@
                 },
                 {
                     "Address": 914,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "magneta attribute for endurance"
                 },
                 {
                     "Address": 916,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "coordinates"
                 },
                 {
                     "Address": 919,
@@ -52044,7 +52445,8 @@
                 },
                 {
                     "Address": 921,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get character endurance"
                 },
                 {
                     "Address": 924,
@@ -52117,17 +52519,21 @@
                 },
                 {
                     "Address": 948,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "space character",
+                    "OperandType": 11
                 },
                 {
                     "Address": 950,
                     "ByteSize": 3,
+                    "Comment": "draw space",
                     "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 953,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "inc X"
                 },
                 {
                     "Address": 954,
@@ -52367,7 +52773,7 @@
                 {
                     "Address": 895,
                     "LabelType": 2,
-                    "Name": "label_E37F"
+                    "Name": "life_draw_loop"
                 },
                 {
                     "Address": 902,
@@ -52382,7 +52788,7 @@
                 {
                     "Address": 924,
                     "LabelType": 2,
-                    "Name": "label_E39C"
+                    "Name": "endurance_char_draw_loop"
                 },
                 {
                     "Address": 942,
@@ -56751,8 +57157,7 @@
                 {
                     "Address": 821,
                     "ByteSize": 3,
-                    "Comment": "x vel",
-                    "Flags": 32
+                    "Comment": "x vel"
                 },
                 {
                     "Address": 824,
@@ -64096,19 +64501,17 @@
                 {
                     "Address": 1014,
                     "ByteSize": 2,
-                    "Comment": "set return address",
                     "DataType": 2
                 },
                 {
                     "Address": 1016,
                     "ByteSize": 2,
-                    "Comment": "push loop counter",
                     "DataType": 2
                 },
                 {
                     "Address": 1018,
                     "ByteSize": 2,
-                    "Comment": "backup pointer to player character",
+                    "Comment": "copy to screen",
                     "DataType": 2
                 },
                 {
