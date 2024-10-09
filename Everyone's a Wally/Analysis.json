@@ -36972,7 +36972,7 @@
                     "Address": 892,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_BB7C"
+                    "Name": "InitialGameStateData"
                 }
             ],
             "PageId": 62
@@ -37069,7 +37069,7 @@
                 },
                 {
                     "Address": 153,
-                    "Comment": " "
+                    "Comment": "unused "
                 },
                 {
                     "Address": 158,
@@ -37082,6 +37082,54 @@
                 {
                     "Address": 168,
                     "Comment": "Character Direction"
+                },
+                {
+                    "Address": 173,
+                    "Comment": "Character jump direction. $01 - right, $FF - left"
+                },
+                {
+                    "Address": 178,
+                    "Comment": "Jumping animation frame"
+                },
+                {
+                    "Address": 183,
+                    "Comment": "character first item"
+                },
+                {
+                    "Address": 188,
+                    "Comment": "character second item"
+                },
+                {
+                    "Address": 193,
+                    "Comment": "NPC target room"
+                },
+                {
+                    "Address": 198,
+                    "Comment": "NPC in current room"
+                },
+                {
+                    "Address": 203,
+                    "Comment": "Exit coordinates"
+                },
+                {
+                    "Address": 208,
+                    "Comment": "Exit room"
+                },
+                {
+                    "Address": 213,
+                    "Comment": "Previous NPC room"
+                },
+                {
+                    "Address": 218,
+                    "Comment": "Exit coordinates"
+                },
+                {
+                    "Address": 223,
+                    "Comment": "low byte of item swap buffer"
+                },
+                {
+                    "Address": 228,
+                    "Comment": "High byte of item swap buffer"
                 },
                 {
                     "Address": 233,
@@ -37118,6 +37166,22 @@
                 {
                     "Address": 361,
                     "Comment": "screen 28"
+                },
+                {
+                    "Address": 362,
+                    "Comment": "screen 29"
+                },
+                {
+                    "Address": 367,
+                    "Comment": "screen 30"
+                },
+                {
+                    "Address": 376,
+                    "Comment": "screen 31"
+                },
+                {
+                    "Address": 381,
+                    "Comment": "screen 32"
                 }
             ],
             "DataInfo": [
@@ -37662,6 +37726,246 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 173,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 174,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 175,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 176,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 177,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 178,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 179,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 180,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 181,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 182,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 183,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 184,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 185,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 186,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 187,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 188,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 189,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 190,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 191,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 192,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 193,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 194,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 195,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 196,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 197,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 198,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 199,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 200,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 201,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 202,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 203,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 204,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 205,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 206,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 207,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 208,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 209,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 210,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 211,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 212,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 213,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 214,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 215,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 216,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 217,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 218,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 219,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 220,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 221,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 222,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 223,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 224,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 225,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 226,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 227,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 228,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 229,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 230,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 231,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 232,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 233,
                     "Comment": "screen 0",
                     "DisplayType": 11
@@ -37744,6 +38048,43 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 257,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 258,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 259,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 260,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 261,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 262,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 263,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 264,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 265,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
                     "Address": 355,
                     "Comment": "terminator",
                     "DisplayType": 11
@@ -37769,6 +38110,126 @@
                 {
                     "Address": 360,
                     "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 361,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 362,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 363,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 364,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 365,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 366,
+                    "Comment": "treminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 367,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 368,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 369,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 370,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 371,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 372,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 373,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 374,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 375,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 376,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 377,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 378,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 379,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 380,
+                    "Comment": "terminator",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 381,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 382,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 383,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 384,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 385,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 386,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 387,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 388,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 389,
                     "DisplayType": 11
                 },
                 {
@@ -38281,7 +38742,7 @@
                     "Address": 257,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_BD01"
+                    "Name": "ItemsInWallStreet"
                 },
                 {
                     "Address": 376,
