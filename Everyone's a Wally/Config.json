@@ -1,5 +1,6 @@
 {
     "128KGame": false,
+    "AsmExportPath": "C:/Dev/SpectrumNext/projects/WallyNext/src/",
     "LuaSourceFiles": [
         "WallyScreenViewer.lua",
         "Exporter.lua"
@@ -10,7 +11,7 @@
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 48517,
+                "ViewAddress": 43259,
                 "ViewAddressBank": 3
             },
             {
@@ -37,6 +38,11 @@
         "Type": 0
     },
     "StubOutFunctions": [
-        "RunGameFrame"
+        "RunGameFrame",
+        "DrawMovingObject",
+        "EnterRoom",
+        "IntroSequence",
+        "DrawCharacters",
+        "Action_SharkChase"
     ]
 }
