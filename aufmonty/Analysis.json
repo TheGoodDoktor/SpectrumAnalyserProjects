@@ -56,9 +56,9 @@
         },
         {
             "AddressRef": 2147811331,
-            "AttribsAddressRef": 1572667394,
+            "AttribsAddressRef": 2821914627,
             "BitmapFormat": 0,
-            "ColourInfo": 0,
+            "ColourInfo": 2,
             "Dynamic": true,
             "MaskInfo": 0,
             "PaletteNo": -1
@@ -352,7 +352,7 @@
                     "Address": 892,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "charmap_$5B7C"
+                    "Name": "CurRoomCharMap"
                 }
             ],
             "PageId": 38
@@ -459,10 +459,22 @@
             ],
             "LabelInfo": [
                 {
+                    "Address": 10,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C0A"
+                },
+                {
                     "Address": 11,
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5C0B"
+                },
+                {
+                    "Address": 22,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C16"
                 },
                 {
                     "Address": 445,
@@ -30734,7 +30746,7 @@
             "CommentBlocks": [
                 {
                     "Address": 5,
-                    "Comment": "Looks like actual char set starts here?\nThis is potentially a temp char map of all the chars used to draw the current screen."
+                    "Comment": "Looks like actual char set starts here?\nThis is potentially a char map for the current screen."
                 },
                 {
                     "Address": 517,
@@ -34983,7 +34995,9 @@
                 },
                 {
                     "Address": 162,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Set room number to 99",
+                    "OperandType": 3
                 },
                 {
                     "Address": 164,
@@ -36349,6 +36363,7 @@
                 },
                 {
                     "Address": 1,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8401"
                 },
@@ -36370,6 +36385,7 @@
                 },
                 {
                     "Address": 35,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8423"
                 },
@@ -36380,16 +36396,19 @@
                 },
                 {
                     "Address": 57,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8439"
                 },
                 {
                     "Address": 69,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8445"
                 },
                 {
                     "Address": 76,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_844C"
                 },
@@ -36417,6 +36436,7 @@
                 },
                 {
                     "Address": 98,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DoMainMenu"
                 },
@@ -36498,11 +36518,13 @@
                 },
                 {
                     "Address": 430,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_85AE"
                 },
                 {
                     "Address": 442,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_85BA"
                 },
@@ -36561,11 +36583,13 @@
                 },
                 {
                     "Address": 613,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MaybeScrollTextRelated"
                 },
                 {
                     "Address": 627,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MaybeUpdateScrollText"
                 },
@@ -36581,6 +36605,7 @@
                 },
                 {
                     "Address": 703,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_86BF"
                 },
@@ -36602,6 +36627,7 @@
                 },
                 {
                     "Address": 955,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_87BB"
                 },
@@ -38743,6 +38769,7 @@
                 },
                 {
                     "Address": 39,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8827"
                 },
@@ -38753,16 +38780,19 @@
                 },
                 {
                     "Address": 71,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8847"
                 },
                 {
                     "Address": 78,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ClearScreen"
                 },
                 {
                     "Address": 98,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8862"
                 },
@@ -38774,6 +38804,7 @@
                 },
                 {
                     "Address": 126,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_887E"
                 },
@@ -38784,11 +38815,13 @@
                 },
                 {
                     "Address": 191,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MainLoopFunc2"
                 },
                 {
                     "Address": 210,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "UpdateControlsEtc"
                 },
@@ -38799,11 +38832,13 @@
                 },
                 {
                     "Address": 301,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_892D"
                 },
                 {
                     "Address": 326,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8946"
                 },
@@ -38824,11 +38859,13 @@
                 },
                 {
                     "Address": 424,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_89A8"
                 },
                 {
                     "Address": 431,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_89AF"
                 },
@@ -38864,6 +38901,7 @@
                 },
                 {
                     "Address": 540,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "functionCalledWhenLeftIsPressed"
                 },
@@ -38874,6 +38912,7 @@
                 },
                 {
                     "Address": 581,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "functionCalledWhenRightIsPressed"
                 },
@@ -38909,6 +38948,7 @@
                 },
                 {
                     "Address": 703,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8ABF"
                 },
@@ -38944,6 +38984,7 @@
                 },
                 {
                     "Address": 817,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8B31"
                 },
@@ -38959,6 +39000,7 @@
                 },
                 {
                     "Address": 855,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8B57"
                 },
@@ -38974,6 +39016,7 @@
                 },
                 {
                     "Address": 885,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8B75"
                 },
@@ -40090,7 +40133,8 @@
                 },
                 {
                     "Address": 812,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Get x pos"
                 },
                 {
                     "Address": 815,
@@ -40112,29 +40156,35 @@
                 },
                 {
                     "Address": 823,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Get y pos"
                 },
                 {
                     "Address": 826,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 3
                 },
                 {
                     "Address": 828,
                     "ByteSize": 2,
+                    "Comment": "Jump if x pos < 4",
                     "OperandType": 2
                 },
                 {
                     "Address": 830,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 3
                 },
                 {
                     "Address": 832,
                     "ByteSize": 2,
+                    "Comment": "Jump if x pos >= 240",
                     "OperandType": 2
                 },
                 {
                     "Address": 834,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 3
                 },
                 {
                     "Address": 836,
@@ -40147,7 +40197,8 @@
                 },
                 {
                     "Address": 840,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 3
                 },
                 {
                     "Address": 843,
@@ -40163,7 +40214,8 @@
                 },
                 {
                     "Address": 849,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get the next rooom number"
                 },
                 {
                     "Address": 850,
@@ -40242,6 +40294,7 @@
                 {
                     "Address": 891,
                     "ByteSize": 3,
+                    "Comment": "Set next room number",
                     "OperandType": 1
                 },
                 {
@@ -40496,6 +40549,20 @@
                     "ByteSize": 1
                 }
             ],
+            "CommentBlocks": [
+                {
+                    "Address": 837,
+                    "Comment": "Monty exited from the bottom of the screen"
+                },
+                {
+                    "Address": 872,
+                    "Comment": "Monty went off the right hand side of the screen"
+                },
+                {
+                    "Address": 921,
+                    "Comment": "Monty went off the top of the screen"
+                }
+            ],
             "DataInfo": [
                 {
                     "Address": 354,
@@ -40623,17 +40690,18 @@
                 {
                     "Address": 808,
                     "LabelType": 2,
-                    "Name": "label_8F28"
+                    "Name": "checkExitScreen"
                 },
                 {
                     "Address": 856,
+                    "Comment": "Monty went off the left hand side of the screen",
                     "LabelType": 2,
-                    "Name": "label_8F58"
+                    "Name": "montyExitLeft"
                 },
                 {
                     "Address": 872,
                     "LabelType": 2,
-                    "Name": "label_8F68"
+                    "Name": "montyExitRight"
                 },
                 {
                     "Address": 888,
@@ -40643,10 +40711,11 @@
                 {
                     "Address": 921,
                     "LabelType": 2,
-                    "Name": "label_8F99"
+                    "Name": "montyExitTop"
                 },
                 {
                     "Address": 950,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_8FB6"
                 },
@@ -40888,7 +40957,8 @@
                 },
                 {
                     "Address": 196,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Get Monty movement bitfield"
                 },
                 {
                     "Address": 199,
@@ -40906,7 +40976,8 @@
                 },
                 {
                     "Address": 206,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get difference in x pos since last frame"
                 },
                 {
                     "Address": 207,
@@ -40915,7 +40986,8 @@
                 },
                 {
                     "Address": 209,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Reset bit 7 if facing right"
                 },
                 {
                     "Address": 211,
@@ -40924,7 +40996,8 @@
                 },
                 {
                     "Address": 213,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Set bit 7 if facing left"
                 },
                 {
                     "Address": 215,
@@ -41722,6 +41795,7 @@
             "LabelInfo": [
                 {
                     "Address": 115,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_9073"
                 },
@@ -41737,6 +41811,7 @@
                 },
                 {
                     "Address": 188,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_90BC"
                 },
@@ -41797,6 +41872,7 @@
                 },
                 {
                     "Address": 404,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_9194"
                 },
@@ -41882,6 +41958,7 @@
                 },
                 {
                     "Address": 565,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_9235"
                 },
@@ -41893,6 +41970,7 @@
                 },
                 {
                     "Address": 757,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_92F5"
                 },
@@ -41937,6 +42015,7 @@
                 },
                 {
                     "Address": 1005,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_93ED"
                 },
@@ -43300,6 +43379,7 @@
                 },
                 {
                     "Address": 249,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MainLoopFunc8"
                 },
@@ -43326,6 +43406,7 @@
                 },
                 {
                     "Address": 708,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "maybeDrawMontyLifeCounter"
                 },
@@ -43357,6 +43438,7 @@
                 },
                 {
                     "Address": 972,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MainLoopFunc3"
                 }
@@ -43506,6 +43588,7 @@
             "LabelInfo": [
                 {
                     "Address": 190,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_98BE"
                 },
@@ -43541,6 +43624,7 @@
                 },
                 {
                     "Address": 831,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MainLoopFunc10"
                 },
@@ -44024,6 +44108,11 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 139,
+                    "ByteSize": 3,
+                    "OperandType": 2
+                },
+                {
                     "Address": 142,
                     "ByteSize": 1
                 },
@@ -44182,7 +44271,7 @@
                 {
                     "Address": 425,
                     "ByteSize": 3,
-                    "Flags": 40,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
@@ -45686,11 +45775,13 @@
                 },
                 {
                     "Address": 425,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawRoomTitleAndStatusArea"
                 },
                 {
                     "Address": 447,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "UpdateGraphics"
                 },
@@ -45745,6 +45836,7 @@
                 },
                 {
                     "Address": 685,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A2AD"
                 },
@@ -45775,51 +45867,61 @@
                 },
                 {
                     "Address": 823,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A337"
                 },
                 {
                     "Address": 826,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A33A"
                 },
                 {
                     "Address": 829,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A33D"
                 },
                 {
                     "Address": 832,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A340"
                 },
                 {
                     "Address": 835,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A343"
                 },
                 {
                     "Address": 848,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A350"
                 },
                 {
                     "Address": 851,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A353"
                 },
                 {
                     "Address": 854,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A356"
                 },
                 {
                     "Address": 857,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A359"
                 },
                 {
                     "Address": 860,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A35C"
                 },
@@ -45831,6 +45933,7 @@
                 },
                 {
                     "Address": 956,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A3BC"
                 },
@@ -45846,6 +45949,7 @@
                 },
                 {
                     "Address": 1002,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A3EA"
                 }
@@ -46864,7 +46968,8 @@
                 },
                 {
                     "Address": 801,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Test this is room number 0?"
                 },
                 {
                     "Address": 802,
@@ -46915,11 +47020,14 @@
                 },
                 {
                     "Address": 821,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Counter. 15 char set indices",
+                    "OperandType": 7
                 },
                 {
                     "Address": 823,
                     "ByteSize": 3,
+                    "Comment": "Set address of where to write the char set data to.",
                     "OperandType": 1
                 },
                 {
@@ -46932,7 +47040,9 @@
                 },
                 {
                     "Address": 828,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get char set index from level data",
+                    "Flags": 32
                 },
                 {
                     "Address": 829,
@@ -46944,7 +47054,8 @@
                 },
                 {
                     "Address": 831,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Put it in HL"
                 },
                 {
                     "Address": 833,
@@ -46956,11 +47067,13 @@
                 },
                 {
                     "Address": 835,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Multiply by 8"
                 },
                 {
                     "Address": 836,
                     "ByteSize": 3,
+                    "Comment": "Get address of charset data",
                     "OperandType": 1
                 },
                 {
@@ -46969,7 +47082,8 @@
                 },
                 {
                     "Address": 840,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Copy the 8 bytes of bitmap data to the cur room char set."
                 },
                 {
                     "Address": 842,
@@ -47032,7 +47146,8 @@
                 },
                 {
                     "Address": 868,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Copy 30 bytes of the room data"
                 },
                 {
                     "Address": 870,
@@ -47091,7 +47206,8 @@
                 },
                 {
                     "Address": 892,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 894,
@@ -47173,7 +47289,8 @@
                 },
                 {
                     "Address": 921,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 923,
@@ -47273,17 +47390,20 @@
                 },
                 {
                     "Address": 957,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "If E is 0 then we don't read room data or inc room data ptr"
                 },
                 {
                     "Address": 958,
                     "ByteSize": 3,
+                    "Comment": "Parse byte _and_ increment room data ptr",
                     "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 961,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Write character map entry"
                 },
                 {
                     "Address": 962,
@@ -47295,7 +47415,8 @@
                 },
                 {
                     "Address": 964,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Save char map entry in AF'"
                 },
                 {
                     "Address": 965,
@@ -47303,11 +47424,13 @@
                 },
                 {
                     "Address": 966,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Swap to the colour related regs"
                 },
                 {
                     "Address": 967,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Write attribute"
                 },
                 {
                     "Address": 968,
@@ -47323,11 +47446,13 @@
                 },
                 {
                     "Address": 971,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Write to character map CLUT?"
                 },
                 {
                     "Address": 972,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Inc CLUT ptr"
                 },
                 {
                     "Address": 973,
@@ -47386,7 +47511,8 @@
                 },
                 {
                     "Address": 989,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Write attribute"
                 },
                 {
                     "Address": 990,
@@ -47431,15 +47557,19 @@
                 },
                 {
                     "Address": 1003,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Get the bottom nibble",
+                    "OperandType": 5
                 },
                 {
                     "Address": 1005,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Load it into E"
                 },
                 {
                     "Address": 1006,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Read the byte again"
                 },
                 {
                     "Address": 1009,
@@ -47455,19 +47585,24 @@
                 },
                 {
                     "Address": 1012,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Shift it right 4 times"
                 },
                 {
                     "Address": 1013,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Get the top nibble",
+                    "OperandType": 5
                 },
                 {
                     "Address": 1015,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Load it into D"
                 },
                 {
                     "Address": 1016,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Advance room data ptr"
                 },
                 {
                     "Address": 1018,
@@ -47484,10 +47619,19 @@
                 },
                 {
                     "Address": 1023,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Is the top nibble 0?"
                 }
             ],
             "CommentBlocks": [
+                {
+                    "Address": 46,
+                    "Comment": "These bytes are potentially all related to Monty's state"
+                },
+                {
+                    "Address": 55,
+                    "Comment": "If bit 7 is 1 Monty if facing left.\nIf bit 7 is 0 Monty is facing right."
+                },
                 {
                     "Address": 59,
                     "Comment": "Used in the function that checks if Monty has collided with something fatal"
@@ -47503,6 +47647,32 @@
                 {
                     "Address": 782,
                     "Comment": "This coded gets called when monty enters a new room"
+                },
+                {
+                    "Address": 827,
+                    "Comment": "Copy character set bitmap data from the main character set into the room's character set."
+                },
+                {
+                    "Address": 956,
+                    "Comment": "Write a row of the current room's character map.\nB  : counter\nC  : ?\nE  : ? If E is 0\nHL : Ptr to room char map\nIX : Ptr to room data to parse\nDE': Attribute mem write ptr\nHL': Maybe ColourLUT for room char map"
+                },
+                {
+                    "Address": 978,
+                    "Comment": "Same functionality as #ADDR:0xa7bc# except it writes in reverse - right to left."
+                },
+                {
+                    "Address": 1000,
+                    "Comment": "IX : Points to room char map data to parse.\nThe top nibble stores the char index.\nThe bottom nibble stores the char count.\n\nReturns character map value in D.\nReturns char count in E.\n"
+                },
+                {
+                    "Address": 1016,
+                    "Comment": "D contains the top nibble - the char index.\nE contains the bottom nibble - the char count."
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 55,
+                    "DisplayType": 5
                 }
             ],
             "LabelInfo": [
@@ -47534,7 +47704,7 @@
                     "Address": 55,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_A437"
+                    "Name": "montyOrientationFlags"
                 },
                 {
                     "Address": 59,
@@ -47562,6 +47732,7 @@
                 },
                 {
                     "Address": 176,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MainLoopFunc9"
                 },
@@ -47638,6 +47809,7 @@
                 },
                 {
                     "Address": 427,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MainLoopFunc7"
                 },
@@ -47663,6 +47835,7 @@
                 },
                 {
                     "Address": 566,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_A636"
                 },
@@ -47705,7 +47878,7 @@
                     "Address": 782,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "maybeInitRoom"
+                    "Name": "InitRoom"
                 },
                 {
                     "Address": 797,
@@ -47715,17 +47888,17 @@
                 {
                     "Address": 811,
                     "LabelType": 2,
-                    "Name": "label_A72B"
+                    "Name": "findNextRoom"
                 },
                 {
                     "Address": 816,
                     "LabelType": 2,
-                    "Name": "label_A730"
+                    "Name": "skipRoomSearch"
                 },
                 {
                     "Address": 827,
                     "LabelType": 2,
-                    "Name": "label_A73B"
+                    "Name": "copyChar"
                 },
                 {
                     "Address": 887,
@@ -47734,18 +47907,21 @@
                 },
                 {
                     "Address": 956,
+                    "Global": true,
                     "LabelType": 1,
-                    "Name": "function_A7BC"
+                    "Name": "WriteCharMapRow"
                 },
                 {
                     "Address": 978,
+                    "Global": true,
                     "LabelType": 1,
-                    "Name": "function_A7D2"
+                    "Name": "WriteCharMapRowRev"
                 },
                 {
                     "Address": 1000,
+                    "Global": true,
                     "LabelType": 1,
-                    "Name": "function_A7E8"
+                    "Name": "ParseRoomCharMapByte"
                 }
             ],
             "PageId": 57
@@ -47754,11 +47930,13 @@
             "CodeInfo": [
                 {
                     "Address": 0,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Return if so"
                 },
                 {
                     "Address": 1,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Save char map ptr"
                 },
                 {
                     "Address": 2,
@@ -47774,7 +47952,8 @@
                 },
                 {
                     "Address": 5,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "HL now contains top nibble after decrementing"
                 },
                 {
                     "Address": 7,
@@ -47783,19 +47962,24 @@
                 },
                 {
                     "Address": 10,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get the ptr to the char set index"
                 },
                 {
                     "Address": 11,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get the char set byte"
                 },
                 {
                     "Address": 12,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Save it"
                 },
                 {
                     "Address": 13,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Offset by 15 to get the attribute for the char",
+                    "OperandType": 3
                 },
                 {
                     "Address": 16,
@@ -47803,15 +47987,18 @@
                 },
                 {
                     "Address": 17,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get the attribute colour"
                 },
                 {
                     "Address": 18,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Put it in C"
                 },
                 {
                     "Address": 19,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get the char set index"
                 },
                 {
                     "Address": 20,
@@ -47820,6 +48007,7 @@
                 {
                     "Address": 22,
                     "ByteSize": 2,
+                    "Comment": "Jump if less than $d2",
                     "OperandType": 2
                 },
                 {
@@ -47829,6 +48017,7 @@
                 {
                     "Address": 26,
                     "ByteSize": 2,
+                    "Comment": "Jump if >= $dc",
                     "OperandType": 2
                 },
                 {
@@ -47845,7 +48034,8 @@
                 },
                 {
                     "Address": 32,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Restore char map ptr"
                 },
                 {
                     "Address": 33,
@@ -49007,8 +49197,1102 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 37,
+                    "Comment": "The first 30 bytes of room data get copied here.\nThe first 15 bytes are the indices of the current room's char set.\nThese indices index the charset at #ADDR:0xf400#"
+                },
+                {
+                    "Address": 52,
+                    "Comment": "The following 15 bytes are the colour of each char"
+                },
+                {
                     "Address": 67,
                     "Comment": "This is potentially a lookup table for room numbers.\nNot sure how it works yet."
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 52,
+                    "DataType": 10
+                },
+                {
+                    "Address": 53,
+                    "DataType": 10
+                },
+                {
+                    "Address": 54,
+                    "DataType": 10
+                },
+                {
+                    "Address": 55,
+                    "DataType": 10
+                },
+                {
+                    "Address": 56,
+                    "DataType": 10
+                },
+                {
+                    "Address": 57,
+                    "DataType": 10
+                },
+                {
+                    "Address": 58,
+                    "DataType": 10
+                },
+                {
+                    "Address": 59,
+                    "DataType": 10
+                },
+                {
+                    "Address": 60,
+                    "DataType": 10
+                },
+                {
+                    "Address": 61,
+                    "DataType": 10
+                },
+                {
+                    "Address": 62,
+                    "DataType": 10
+                },
+                {
+                    "Address": 63,
+                    "DataType": 10
+                },
+                {
+                    "Address": 64,
+                    "DataType": 10
+                },
+                {
+                    "Address": 65,
+                    "DataType": 10
+                },
+                {
+                    "Address": 66,
+                    "DataType": 10
+                },
+                {
+                    "Address": 67,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 68,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 69,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 70,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 71,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 72,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 73,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 74,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 75,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 76,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 77,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 78,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 79,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 80,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 81,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 82,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 83,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 84,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 85,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 86,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 87,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 88,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 89,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 90,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 91,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 92,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 93,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 94,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 95,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 96,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 97,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 98,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 99,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 100,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 101,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 102,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 103,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 104,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 105,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 106,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 107,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 108,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 109,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 110,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 111,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 112,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 113,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 114,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 115,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 116,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 117,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 118,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 119,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 120,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 121,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 122,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 123,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 124,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 125,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 126,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 127,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 128,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 129,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 130,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 131,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 132,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 133,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 134,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 135,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 136,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 137,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 138,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 139,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 140,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 141,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 142,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 143,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 144,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 145,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 146,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 147,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 148,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 149,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 150,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 151,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 152,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 153,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 154,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 155,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 156,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 157,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 158,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 159,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 160,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 161,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 162,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 163,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 164,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 165,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 166,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 167,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 168,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 169,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 170,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 171,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 172,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 173,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 174,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 175,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 176,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 177,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 178,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 179,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 180,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 181,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 182,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 183,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 184,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 185,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 186,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 187,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 188,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 189,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 190,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 191,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 192,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 193,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 194,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 195,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 196,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 197,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 198,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 199,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 200,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 201,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 202,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 203,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 204,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 205,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 206,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 207,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 208,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 209,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 210,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 211,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 212,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 213,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 214,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 215,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 216,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 217,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 218,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 219,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 220,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 221,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 222,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 223,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 224,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 225,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 226,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 227,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 228,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 229,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 230,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 231,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 232,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 233,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 234,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 235,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 236,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 237,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 238,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 239,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 240,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 241,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 242,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 243,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 244,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 245,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 246,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 247,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 248,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 249,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 250,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 251,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 252,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 253,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 254,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 255,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 256,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 257,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 258,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 259,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 260,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 261,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 262,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 263,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 264,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 265,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 266,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 267,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 268,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 269,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 270,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 271,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 272,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 273,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 274,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 275,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 276,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 277,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 278,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 279,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 280,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 281,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 282,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 283,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 284,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 285,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 286,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 287,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 288,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 289,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 290,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 291,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 292,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 293,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 294,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 295,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 296,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 297,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 298,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 299,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 300,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 301,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 302,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 303,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 304,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 305,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 306,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 307,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 308,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 309,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 310,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 311,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 312,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 313,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 314,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 315,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 316,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 317,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 318,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 319,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 320,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 321,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 322,
+                    "DisplayType": 3
                 }
             ],
             "LabelInfo": [
@@ -49021,7 +50305,7 @@
                     "Address": 37,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "maybeData_A825"
+                    "Name": "CurRoomCharSetData"
                 },
                 {
                     "Address": 67,
@@ -49031,8 +50315,9 @@
                 },
                 {
                     "Address": 323,
+                    "Global": true,
                     "LabelType": 1,
-                    "Name": "InitRoomFunc1_"
+                    "Name": "InitRoomFunc1"
                 },
                 {
                     "Address": 343,
@@ -49090,6 +50375,7 @@
                 },
                 {
                     "Address": 494,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MainLoopFunc1"
                 },
@@ -49126,6 +50412,7 @@
                 },
                 {
                     "Address": 628,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_AA74"
                 },
@@ -49167,11 +50454,13 @@
                 },
                 {
                     "Address": 787,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_AB13"
                 },
                 {
                     "Address": 813,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_AB2D"
                 },
@@ -49655,6 +50944,7 @@
             "LabelInfo": [
                 {
                     "Address": 193,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_ACC1"
                 },
@@ -49770,6 +51060,7 @@
                 {
                     "Address": 666,
                     "ByteSize": 3,
+                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -50260,11 +51551,13 @@
             "LabelInfo": [
                 {
                     "Address": 666,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "roomSetupRelated_B29A"
                 },
                 {
                     "Address": 698,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "InitRoomFunc3"
                 },
@@ -50285,11 +51578,13 @@
                 },
                 {
                     "Address": 765,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawFontCharacter"
                 },
                 {
                     "Address": 781,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawBlob"
                 },
@@ -50305,6 +51600,7 @@
                 },
                 {
                     "Address": 826,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawText"
                 }
@@ -50539,7 +51835,8 @@
                 },
                 {
                     "Address": 337,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Read every 4th byte?"
                 },
                 {
                     "Address": 340,
@@ -50552,7 +51849,8 @@
                 },
                 {
                     "Address": 345,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Does this match the current room number?"
                 },
                 {
                     "Address": 346,
@@ -50570,7 +51868,8 @@
                 },
                 {
                     "Address": 351,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Return if no match was found"
                 },
                 {
                     "Address": 352,
@@ -50622,6 +51921,7 @@
                 {
                     "Address": 369,
                     "ByteSize": 4,
+                    "Comment": "Char map offset",
                     "OperandType": 1
                 },
                 {
@@ -51387,7 +52687,9 @@
                 {
                     "Address": 743,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Flags": 2,
+                    "OperandType": 1,
+                    "SMC": true
                 },
                 {
                     "Address": 746,
@@ -51959,6 +53261,24 @@
                     "ByteSize": 1
                 }
             ],
+            "CommentBlocks": [
+                {
+                    "Address": 328,
+                    "Comment": "This potentially searches through a read-only lookup table for the current room.\nThe rooms in the LUT are potentially special case rooms."
+                },
+                {
+                    "Address": 567,
+                    "Comment": "This is used when setting up a room.\nIt looks like a table of special case rooms, with extra data of unknown use.\nEach entry format: \n0   : Room number\n1   : ?\n2-3 : Offset into cur screen char map. Unknown use."
+                },
+                {
+                    "Address": 678,
+                    "Comment": "Unknown use. Special case for certain rooms"
+                },
+                {
+                    "Address": 681,
+                    "Comment": "Unknown use. Special case for certain rooms"
+                }
+            ],
             "DataInfo": [
                 {
                     "Address": 5,
@@ -52243,6 +53563,130 @@
                     "Flags": 8
                 },
                 {
+                    "Address": 567,
+                    "Comment": "Room number"
+                },
+                {
+                    "Address": 569,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 571,
+                    "Comment": "Room number"
+                },
+                {
+                    "Address": 573,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 575,
+                    "Comment": "Room number"
+                },
+                {
+                    "Address": 577,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 579,
+                    "Comment": "Room number"
+                },
+                {
+                    "Address": 581,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 583,
+                    "Comment": "Room number"
+                },
+                {
+                    "Address": 585,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 587,
+                    "Comment": "Room number"
+                },
+                {
+                    "Address": 589,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 591,
+                    "Comment": "Room number"
+                },
+                {
+                    "Address": 593,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 595,
+                    "Comment": "Room number"
+                },
+                {
+                    "Address": 597,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 599,
+                    "Comment": "Room number"
+                },
+                {
+                    "Address": 601,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 603,
+                    "Comment": "Room number"
+                },
+                {
+                    "Address": 605,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 607,
+                    "Comment": "Room number"
+                },
+                {
+                    "Address": 609,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 678,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 681,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 743,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3135700995
+                },
+                {
+                    "Address": 744,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3135700995
+                },
+                {
+                    "Address": 745,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3135700995
+                },
+                {
                     "Address": 938,
                     "DataType": 11,
                     "InstructionAddressRef": 3148480515
@@ -52282,21 +53726,23 @@
                 },
                 {
                     "Address": 328,
+                    "Global": true,
                     "LabelType": 1,
-                    "Name": "InitRoomFunc4"
+                    "Name": "SetupSpecialCaseRoom"
                 },
                 {
                     "Address": 345,
                     "LabelType": 2,
-                    "Name": "label_B959"
+                    "Name": "search"
                 },
                 {
                     "Address": 352,
                     "LabelType": 2,
-                    "Name": "label_B960"
+                    "Name": "foundMatch"
                 },
                 {
                     "Address": 381,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MainLoopFunc4"
                 },
@@ -52359,10 +53805,11 @@
                     "Address": 567,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_BA37"
+                    "Name": "maybeRoomRelatedLUT_BA37"
                 },
                 {
                     "Address": 611,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MainLoopFunc5"
                 },
@@ -52387,7 +53834,7 @@
                     "Address": 678,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_BAA6"
+                    "Name": "charMapPtr_BAA6"
                 },
                 {
                     "Address": 680,
@@ -52399,10 +53846,11 @@
                     "Address": 681,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_BAA9"
+                    "Name": "charMapOffset_BAA9"
                 },
                 {
                     "Address": 683,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_BAAB"
                 },
@@ -52418,6 +53866,7 @@
                 },
                 {
                     "Address": 711,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_BAC7"
                 },
@@ -52469,6 +53918,7 @@
                 },
                 {
                     "Address": 783,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_BB0F"
                 },
@@ -52499,6 +53949,7 @@
                 },
                 {
                     "Address": 824,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_BB38"
                 },
@@ -52524,11 +53975,13 @@
                 },
                 {
                     "Address": 860,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_BB5C"
                 },
                 {
                     "Address": 869,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_BB65"
                 },
@@ -52546,6 +53999,7 @@
                 },
                 {
                     "Address": 898,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_BB82"
                 },
@@ -52573,6 +54027,7 @@
                 },
                 {
                     "Address": 1001,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "function_BBE9"
                 },
@@ -52588,15 +54043,45 @@
             "CommentBlocks": [
                 {
                     "Address": 0,
-                    "Comment": "This appears to be read-only data that gets read when you enter a new screen.\nIt potentially has variable length data for each room, with a 0 terminating value to separate the data."
+                    "Comment": "This appears to be read-only data that gets read when you enter a new screen.\nIt potentially has variable length data for each room, with 0 as the terminator.\n\nLevel data format:\n\n 0-14 : 15 byte list of char set indices that make up the room's character set.\n15-29 : Unknown 15 bytes\n30-?  : Potentially char map of the room. 5 bits per character. \n        Potentially stored in rows of 32 characters."
                 },
                 {
-                    "Address": 177,
+                    "Address": 178,
                     "Comment": "1"
                 },
                 {
                     "Address": 358,
                     "Comment": "2"
+                },
+                {
+                    "Address": 535,
+                    "Comment": "3"
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 0,
+                    "Comment": "Room 0"
+                },
+                {
+                    "Address": 178,
+                    "Comment": "Room 1"
+                },
+                {
+                    "Address": 359,
+                    "Comment": "Room 2"
+                },
+                {
+                    "Address": 535,
+                    "Comment": "Room 3"
+                },
+                {
+                    "Address": 709,
+                    "Comment": "Room 4"
+                },
+                {
+                    "Address": 904,
+                    "Comment": "Room 5"
                 }
             ],
             "LabelInfo": [
@@ -52604,45 +54089,365 @@
                     "Address": 0,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "maybeLevelData"
+                    "Name": "RoomData"
                 }
             ],
             "PageId": 63
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 53,
+                    "Comment": "Room 6"
+                },
+                {
+                    "Address": 229,
+                    "Comment": "Room 7"
+                },
+                {
+                    "Address": 412,
+                    "Comment": "Room 8"
+                },
+                {
+                    "Address": 565,
+                    "Comment": "Room 9"
+                },
+                {
+                    "Address": 717,
+                    "Comment": "Room 10"
+                },
+                {
+                    "Address": 901,
+                    "Comment": "Room 11"
+                }
+            ],
             "PageId": 64
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 60,
+                    "Comment": "Room 12"
+                },
+                {
+                    "Address": 244,
+                    "Comment": "Room 13"
+                },
+                {
+                    "Address": 424,
+                    "Comment": "Room 14"
+                },
+                {
+                    "Address": 571,
+                    "Comment": "Room 15"
+                },
+                {
+                    "Address": 737,
+                    "Comment": "Room 16"
+                },
+                {
+                    "Address": 910,
+                    "Comment": "Room 17"
+                }
+            ],
             "PageId": 65
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 56,
+                    "Comment": "Room 18"
+                },
+                {
+                    "Address": 187,
+                    "Comment": "Room 19"
+                },
+                {
+                    "Address": 346,
+                    "Comment": "Room 20"
+                },
+                {
+                    "Address": 542,
+                    "Comment": "Room 21"
+                },
+                {
+                    "Address": 728,
+                    "Comment": "Room 22"
+                },
+                {
+                    "Address": 894,
+                    "Comment": "Room 23"
+                }
+            ],
             "PageId": 66
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 29,
+                    "Comment": "Room 24"
+                },
+                {
+                    "Address": 210,
+                    "Comment": "Room 25"
+                },
+                {
+                    "Address": 399,
+                    "Comment": "Room 26"
+                },
+                {
+                    "Address": 572,
+                    "Comment": "Room 27"
+                },
+                {
+                    "Address": 751,
+                    "Comment": "Room 28"
+                },
+                {
+                    "Address": 913,
+                    "Comment": "Room 29"
+                }
+            ],
             "PageId": 67
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 58,
+                    "Comment": "Room 30"
+                },
+                {
+                    "Address": 236,
+                    "Comment": "Room 31"
+                },
+                {
+                    "Address": 458,
+                    "Comment": "Room 32"
+                },
+                {
+                    "Address": 650,
+                    "Comment": "Room 33"
+                },
+                {
+                    "Address": 846,
+                    "Comment": "Room 34"
+                },
+                {
+                    "Address": 1008,
+                    "Comment": "Room 35"
+                }
+            ],
             "PageId": 68
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 134,
+                    "Comment": "Room 36"
+                },
+                {
+                    "Address": 334,
+                    "Comment": "Room 37"
+                },
+                {
+                    "Address": 510,
+                    "Comment": "Room 38"
+                },
+                {
+                    "Address": 658,
+                    "Comment": "Room 39"
+                },
+                {
+                    "Address": 843,
+                    "Comment": "Room 40"
+                },
+                {
+                    "Address": 996,
+                    "Comment": "Room 41"
+                }
+            ],
             "PageId": 69
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 158,
+                    "Comment": "Room 42"
+                },
+                {
+                    "Address": 355,
+                    "Comment": "Room 43"
+                },
+                {
+                    "Address": 529,
+                    "Comment": "Room 44"
+                },
+                {
+                    "Address": 711,
+                    "Comment": "Room 45"
+                },
+                {
+                    "Address": 905,
+                    "Comment": "Room 46"
+                }
+            ],
             "PageId": 70
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 64,
+                    "Comment": "Room 47"
+                },
+                {
+                    "Address": 197,
+                    "Comment": "Room 48"
+                },
+                {
+                    "Address": 362,
+                    "Comment": "Room 49"
+                },
+                {
+                    "Address": 541,
+                    "Comment": "Room 50"
+                },
+                {
+                    "Address": 725,
+                    "Comment": "Room 51"
+                },
+                {
+                    "Address": 933,
+                    "Comment": "Room 52"
+                }
+            ],
             "PageId": 71
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 43,
+                    "Comment": "Room 53"
+                },
+                {
+                    "Address": 229,
+                    "Comment": "Room 54"
+                },
+                {
+                    "Address": 408,
+                    "Comment": "Room 55"
+                },
+                {
+                    "Address": 576,
+                    "Comment": "Room 56"
+                },
+                {
+                    "Address": 748,
+                    "Comment": "Room 57"
+                },
+                {
+                    "Address": 956,
+                    "Comment": "Room 58"
+                }
+            ],
             "PageId": 72
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 146,
+                    "Comment": "Room 59"
+                },
+                {
+                    "Address": 333,
+                    "Comment": "Room 60"
+                },
+                {
+                    "Address": 479,
+                    "Comment": "Room 61"
+                },
+                {
+                    "Address": 612,
+                    "Comment": "Room 62"
+                },
+                {
+                    "Address": 767,
+                    "Comment": "Room 63"
+                },
+                {
+                    "Address": 945,
+                    "Comment": "Room 64"
+                }
+            ],
             "PageId": 73
         },
         {
+            "CommentBlocks": [
+                {
+                    "Address": 95,
+                    "Comment": "room above starting room\n$41?"
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 95,
+                    "Comment": "Room 65"
+                },
+                {
+                    "Address": 109,
+                    "Comment": "room char set end"
+                },
+                {
+                    "Address": 246,
+                    "Comment": "Room 66"
+                },
+                {
+                    "Address": 408,
+                    "Comment": "Room 67"
+                },
+                {
+                    "Address": 539,
+                    "Comment": "Room 68"
+                },
+                {
+                    "Address": 723,
+                    "Comment": "Room 69"
+                }
+            ],
             "PageId": 74
         },
         {
+            "CommentBlocks": [
+                {
+                    "Address": 164,
+                    "Comment": "room 72?"
+                },
+                {
+                    "Address": 180,
+                    "Comment": " "
+                },
+                {
+                    "Address": 194,
+                    "Comment": " "
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 164,
+                    "Comment": "charset index from f400"
+                },
+                {
+                    "Address": 194,
+                    "Comment": "1 x3"
+                },
+                {
+                    "Address": 195,
+                    "Comment": "0 x 13"
+                },
+                {
+                    "Address": 196,
+                    "Comment": "f x 1"
+                }
+            ],
             "PageId": 75
         },
         {
@@ -52653,6 +54458,10 @@
                 }
             ],
             "DataInfo": [
+                {
+                    "Address": 558,
+                    "DisplayType": 3
+                },
                 {
                     "Address": 563,
                     "ByteSize": 2,
@@ -52694,7 +54503,7 @@
                     "Address": 562,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_F232"
+                    "Name": "byteUsedWhenParsingRoomData_F232"
                 },
                 {
                     "Address": 563,
