@@ -120,6 +120,7 @@ GraphicsViewer =
     screenMax = 100,
 	gameScreen = 0xff,
 	characterNo = 0,
+	itemNo = 0,
 	
 	onAdd = function(self)
 		--screen viewer
@@ -130,11 +131,16 @@ GraphicsViewer =
 		self.characterView = CreateZXGraphicsView(16,32)
 		ClearGraphicsView(self.characterView, 0)
 		DrawCharacterToView(self.characterView,self.characterNo, 0, 0)
+--		 item view
+		self.itemView = CreateZXGraphicsView(16,16)
+		ClearGraphicsView(self.itemView, 0)
+		DrawItemToView(self.itemView,self.itemNo, 0, 0)
 	end,
 
 	onDrawUI = function(self)
 		self:DrawScreenView()
 		self:DrawCharacterView()
+		self:DrawItemView()
 	end
 }
 
@@ -182,6 +188,83 @@ GraphicsViewer.DrawCharacterView = function(self)
 	end
 
 	DrawGraphicsView(self.characterView)
+end
+
+MaskedItemNos = {}
+MaskedItemNos[41] = true
+MaskedItemNos[44] = true
+MaskedItemNos[46] = true
+MaskedItemNos[48] = true
+MaskedItemNos[50] = true
+MaskedItemNos[52] = true
+MaskedItemNos[54] = true
+MaskedItemNos[56] = true
+MaskedItemNos[58] = true
+MaskedItemNos[60] = true
+MaskedItemNos[62] = true
+MaskedItemNos[64] = true
+MaskedItemNos[66] = true
+MaskedItemNos[68] = true
+MaskedItemNos[70] = true
+MaskedItemNos[72] = true
+MaskedItemNos[74] = true
+MaskedItemNos[101] = true
+MaskedItemNos[103] = true
+MaskedItemNos[105] = true
+MaskedItemNos[107] = true
+MaskedItemNos[118] = true
+MaskedItemNos[120] = true
+MaskedItemNos[122] = true
+MaskedItemNos[124] = true
+MaskedItemNos[126] = true
+MaskedItemNos[128] = true
+MaskedItemNos[130] = true
+MaskedItemNos[132] = true
+
+
+function IsItemMasked(itemNo)
+
+	if itemNo == 41 then
+		return true
+	elseif itemNo >= 44 and itemNo <= 74 then
+		return true
+	elseif itemNo >= 101 and itemNo <= 107 then 
+		return true
+	elseif itemNo >= 118 and itemNo <= 132 then
+		return true
+	else 
+		return false
+	end
+end
+
+function DrawItemToView(graphicsView, itemNo, x, y)
+
+	local itemAddress = globals.ItemGraphics_0 + (itemNo * 32)
+	local itemAttrbute = 0x47
+
+	if IsItemMasked(itemNo) == true then
+
+		DrawZXBitImage(graphicsView,GetMemPtr(itemAddress + 2),x,y,2,2,itemAttrbute,4)
+		DrawZXBitImage(graphicsView,GetMemPtr(itemAddress),x,y,2,2,0x43,4,1)
+
+	else
+		DrawZXBitImage(graphicsView,GetMemPtr(itemAddress),x,y,2,2,itemAttrbute,2)
+
+	end
+end
+
+GraphicsViewer.DrawItemView = function(self)
+	local changed = false
+
+	-- Use ImGui widget for setting screen number to draw
+	changed, self.itemNo = imgui.InputInt("item number",self.itemNo)
+	
+	if changed == true then
+		ClearGraphicsView(self.itemView, 0)
+		DrawItemToView(self.itemView,self.itemNo, 0, 0)
+	end
+
+	DrawGraphicsView(self.itemView)
 end
 
 -- Initialise the template viewer

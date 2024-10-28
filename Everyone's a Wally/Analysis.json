@@ -237,8 +237,9 @@
             "LabelInfo": [
                 {
                     "Address": 0,
+                    "Global": true,
                     "LabelType": 0,
-                    "Name": "ScreenAttributes_1"
+                    "Name": "ScreenAttributes"
                 },
                 {
                     "Address": 768,
@@ -292,6 +293,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5C51"
+                },
+                {
+                    "Address": 87,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C57"
                 },
                 {
                     "Address": 89,
@@ -352,6 +359,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5C8C"
+                },
+                {
+                    "Address": 141,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C8D"
                 },
                 {
                     "Address": 161,
@@ -1897,6 +1910,45 @@
                     "DataType": 4
                 },
                 {
+                    "Address": 790,
+                    "Comment": "set character set",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 791,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 793,
+                    "Comment": "attrib",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 794,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 795,
+                    "Comment": "horizontal length",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 796,
+                    "Comment": "4 chars",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 797,
+                    "Comment": "space",
+                    "DisplayType": 12
+                },
+                {
+                    "Address": 798,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 799,
                     "ByteSize": 15,
                     "DataType": 4
@@ -2070,7 +2122,7 @@
                     "Address": 790,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_7F16"
+                    "Name": "HoleOpenForChase"
                 },
                 {
                     "Address": 799,
@@ -2295,7 +2347,8 @@
                 },
                 {
                     "Address": 318,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "set number of frames for sequence"
                 },
                 {
                     "Address": 321,
@@ -4473,18 +4526,20 @@
                 },
                 {
                     "Address": 315,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "IntroSequence"
                 },
                 {
                     "Address": 321,
                     "LabelType": 2,
-                    "Name": "label_8141"
+                    "Name": "intro_loop"
                 },
                 {
                     "Address": 341,
-                    "LabelType": 2,
-                    "Name": "start_demo"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "StartDemo"
                 },
                 {
                     "Address": 356,
@@ -4509,16 +4564,19 @@
                 },
                 {
                     "Address": 430,
+                    "Global": true,
                     "LabelType": 1,
-                    "Name": "RunGameFrame"
+                    "Name": "UpdateGameFrame"
                 },
                 {
                     "Address": 452,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CheckForPauseKey"
                 },
                 {
                     "Address": 468,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ChangeCharacterDirection"
                 },
@@ -8997,9 +9055,116 @@
                     "GraphicsSetRef": 2291662851
                 },
                 {
-                    "Address": 247,
-                    "PaletteNo": 1,
-                    "StructByteOffset": 10
+                    "Address": 216,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 218,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 220,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 222,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 224,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 226,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 228,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 230,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 232,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 234,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 236,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 238,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 240,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 242,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 244,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
+                },
+                {
+                    "Address": 246,
+                    "ByteSize": 2,
+                    "DataType": 5,
+                    "DisplayType": 6,
+                    "GraphicsSetRef": 65535
                 },
                 {
                     "Address": 248,
@@ -10390,6 +10555,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "Beer_Masked"
+                },
+                {
+                    "Address": 216,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "bitmap_88D8"
                 },
                 {
                     "Address": 248,
@@ -25507,7 +25678,8 @@
             "CodeInfo": [
                 {
                     "Address": 61,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 62,
@@ -25793,7 +25965,8 @@
                 },
                 {
                     "Address": 160,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 161,
@@ -25841,7 +26014,8 @@
                 },
                 {
                     "Address": 177,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "add to base"
                 },
                 {
                     "Address": 178,
@@ -25877,11 +26051,14 @@
                 },
                 {
                     "Address": 192,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "x pos"
                 },
                 {
                     "Address": 193,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "mask char coords",
+                    "OperandType": 5
                 },
                 {
                     "Address": 195,
@@ -27611,11 +27788,11 @@
             "CommentBlocks": [
                 {
                     "Address": 61,
-                    "Comment": "DrawItem\nA : Item number"
+                    "Comment": "Draw Static Object\nObjects don't have masks\nA : Object number"
                 },
                 {
                     "Address": 160,
-                    "Comment": "A : item number"
+                    "Comment": "Draw Masked Sprite\nA : item number"
                 },
                 {
                     "Address": 289,
@@ -27849,8 +28026,9 @@
                 },
                 {
                     "Address": 61,
+                    "Global": true,
                     "LabelType": 1,
-                    "Name": "DrawItem"
+                    "Name": "DrawStaticObject"
                 },
                 {
                     "Address": 121,
@@ -27859,7 +28037,6 @@
                 },
                 {
                     "Address": 122,
-                    "Global": true,
                     "LabelType": 0,
                     "Name": "operand_A87A"
                 },
@@ -27875,6 +28052,7 @@
                 },
                 {
                     "Address": 160,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawMovingObject"
                 },
@@ -27885,9 +28063,8 @@
                 },
                 {
                     "Address": 223,
-                    "Global": true,
                     "LabelType": 0,
-                    "Name": "operand_A8DF"
+                    "Name": "operand_XPixelShiftA"
                 },
                 {
                     "Address": 231,
@@ -27901,9 +28078,8 @@
                 },
                 {
                     "Address": 251,
-                    "Global": true,
                     "LabelType": 0,
-                    "Name": "operand_A8FB"
+                    "Name": "operand_XPixelShiftB"
                 },
                 {
                     "Address": 257,
@@ -27917,11 +28093,13 @@
                 },
                 {
                     "Address": 289,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "IsCharacterPlayerCharacter"
                 },
                 {
                     "Address": 300,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "UpdateCharacters"
                 },
@@ -28012,6 +28190,7 @@
                 },
                 {
                     "Address": 560,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "SwapItem"
                 },
@@ -28027,11 +28206,13 @@
                 },
                 {
                     "Address": 639,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ItemSwappedSFX"
                 },
                 {
                     "Address": 652,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "GetRoomItem"
                 },
@@ -28091,6 +28272,7 @@
                 },
                 {
                     "Address": 806,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MovementAction_X48"
                 },
@@ -28106,6 +28288,7 @@
                 },
                 {
                     "Address": 835,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MovementAction_X192"
                 },
@@ -28121,6 +28304,7 @@
                 },
                 {
                     "Address": 864,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MovementAction_X102_Y152"
                 },
@@ -28146,6 +28330,7 @@
                 },
                 {
                     "Address": 923,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MovementAction_X138_Y152"
                 },
@@ -28171,6 +28356,7 @@
                 },
                 {
                     "Address": 983,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CheckEnterKeyPressed"
                 },
@@ -29885,6 +30071,7 @@
                 },
                 {
                     "Address": 6,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CheckEnterNewRoom"
                 },
@@ -29915,6 +30102,7 @@
                 },
                 {
                     "Address": 95,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "GetExitPosition"
                 },
@@ -29925,11 +30113,13 @@
                 },
                 {
                     "Address": 105,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "GetRoomExitData"
                 },
                 {
                     "Address": 108,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "GetVariableLengthItem"
                 },
@@ -29952,6 +30142,7 @@
                 },
                 {
                     "Address": 442,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MoveNPCBetweenRooms"
                 },
@@ -30002,6 +30193,7 @@
                 },
                 {
                     "Address": 560,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "GetRoomEnterFlag"
                 },
@@ -30018,11 +30210,13 @@
                 },
                 {
                     "Address": 605,
-                    "LabelType": 2,
+                    "Global": true,
+                    "LabelType": 1,
                     "Name": "NPCChangeScreen"
                 },
                 {
                     "Address": 650,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "FindRoomItem"
                 },
@@ -30044,6 +30238,7 @@
                 },
                 {
                     "Address": 727,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "GetNextRoomForNPCItemSwap"
                 },
@@ -30066,6 +30261,7 @@
                 },
                 {
                     "Address": 769,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "SetNextRoomForHerbertOrJack"
                 },
@@ -30160,6 +30356,7 @@
                 },
                 {
                     "Address": 964,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "HandlePlayerVerticalMovement"
                 },
@@ -32434,6 +32631,7 @@
                 },
                 {
                     "Address": 11,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CheckRightPressed"
                 },
@@ -32459,6 +32657,7 @@
                 },
                 {
                     "Address": 60,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CheckLeftPressed"
                 },
@@ -32484,6 +32683,7 @@
                 },
                 {
                     "Address": 109,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CheckJumpPressed"
                 },
@@ -32515,6 +32715,7 @@
                 },
                 {
                     "Address": 159,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "UpdatePlayerCharacter"
                 },
@@ -32525,6 +32726,7 @@
                 },
                 {
                     "Address": 230,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawCharacterToShadowScreen"
                 },
@@ -32599,6 +32801,7 @@
                 },
                 {
                     "Address": 407,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ApplyGravityToCharacter"
                 },
@@ -32620,6 +32823,7 @@
                 },
                 {
                     "Address": 441,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "label_B1B9"
                 },
@@ -32656,6 +32860,7 @@
                 },
                 {
                     "Address": 648,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "MoveCharacter"
                 },
@@ -32687,16 +32892,19 @@
                 },
                 {
                     "Address": 732,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "SetControlSinclair"
                 },
                 {
                     "Address": 738,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "SetControlKempston"
                 },
                 {
                     "Address": 744,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "SetControlKeyboard"
                 },
@@ -32708,6 +32916,7 @@
                 },
                 {
                     "Address": 753,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "PrintEarningsBreakdown"
                 },
@@ -32724,6 +32933,7 @@
                 },
                 {
                     "Address": 844,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "PrintMonetaryValue"
                 },
@@ -32759,6 +32969,7 @@
                 },
                 {
                     "Address": 939,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "WaitForKeypress"
                 },
@@ -34391,6 +34602,7 @@
                 },
                 {
                     "Address": 113,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "InitialiseThemeTuneData"
                 },
@@ -34460,6 +34672,7 @@
                 },
                 {
                     "Address": 235,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ReadMenuKeys"
                 },
@@ -34470,6 +34683,7 @@
                 },
                 {
                     "Address": 261,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ThemeTune_PlayNote"
                 },
@@ -34503,6 +34717,7 @@
                 },
                 {
                     "Address": 789,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawDoubleHeightChar"
                 },
@@ -34513,6 +34728,7 @@
                 },
                 {
                     "Address": 891,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawInventoryGraphic"
                 },
@@ -34523,6 +34739,7 @@
                 },
                 {
                     "Address": 954,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawCharAt"
                 },
@@ -34539,6 +34756,7 @@
                 },
                 {
                     "Address": 1017,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawRoomGraphicOnScreen"
                 }
@@ -35473,7 +35691,8 @@
                 },
                 {
                     "Address": 338,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 32
                 },
                 {
                     "Address": 340,
@@ -35820,8 +36039,7 @@
                 },
                 {
                     "Address": 470,
-                    "ByteSize": 3,
-                    "Flags": 32
+                    "ByteSize": 3
                 },
                 {
                     "Address": 473,
@@ -36701,11 +36919,13 @@
                 },
                 {
                     "Address": 43,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawScreenItemToScreen"
                 },
                 {
                     "Address": 75,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawScreenItem"
                 },
@@ -36766,6 +36986,7 @@
                 },
                 {
                     "Address": 196,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawDoubleHeightString"
                 },
@@ -36781,11 +37002,13 @@
                 },
                 {
                     "Address": 237,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ClearScreen"
                 },
                 {
                     "Address": 258,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ClearScreenGameRegion"
                 },
@@ -36811,6 +37034,7 @@
                 },
                 {
                     "Address": 305,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ClearHUDArea"
                 },
@@ -36832,13 +37056,15 @@
                 },
                 {
                     "Address": 338,
+                    "Global": true,
                     "LabelType": 1,
-                    "Name": "DrawScreen"
+                    "Name": "EnterRoom"
                 },
                 {
                     "Address": 361,
-                    "LabelType": 2,
-                    "Name": "screen_item_loop"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "ScreenItemLoop"
                 },
                 {
                     "Address": 386,
@@ -36852,6 +37078,7 @@
                 },
                 {
                     "Address": 428,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CopyScreenToBackground"
                 },
@@ -36867,6 +37094,7 @@
                 },
                 {
                     "Address": 470,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawCharacters"
                 },
@@ -36882,6 +37110,7 @@
                 },
                 {
                     "Address": 507,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CopyShadowScreenToPixelScreen"
                 },
@@ -36897,6 +37126,7 @@
                 },
                 {
                     "Address": 549,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Copy32Bytes"
                 },
@@ -36908,6 +37138,7 @@
                 },
                 {
                     "Address": 622,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ReportCharacterLocation"
                 },
@@ -36919,11 +37150,13 @@
                 },
                 {
                     "Address": 692,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "UpdateClearLocationMessage"
                 },
                 {
                     "Address": 718,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "GetStringLength"
                 },
@@ -36934,6 +37167,7 @@
                 },
                 {
                     "Address": 728,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "SetupInitialGameState"
                 },
@@ -39008,7 +39242,7 @@
                     "Address": 437,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "ScreenDataPtrs"
+                    "Name": "RoomDataPtrs"
                 },
                 {
                     "Address": 503,
@@ -53208,11 +53442,13 @@
                 },
                 {
                     "Address": 809,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ItemIntersectionHazard"
                 },
                 {
                     "Address": 831,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ApplyDamageToCharacter"
                 },
@@ -53228,6 +53464,7 @@
                 },
                 {
                     "Address": 877,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "UpdateEnduranceAndLivesDisplay"
                 },
@@ -53278,6 +53515,7 @@
                 },
                 {
                     "Address": 979,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "PlaySound"
                 },
@@ -53293,6 +53531,7 @@
                 },
                 {
                     "Address": 1004,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "GenerateOneWaveCycleSFX"
                 },
@@ -53308,6 +53547,7 @@
                 },
                 {
                     "Address": 1021,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawHUD"
                 }
@@ -54881,6 +55121,7 @@
             "LabelInfo": [
                 {
                     "Address": 29,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "PrintCharactersInventory"
                 },
@@ -54891,6 +55132,7 @@
                 },
                 {
                     "Address": 104,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DisplayItemInInventory"
                 },
@@ -55244,6 +55486,7 @@
                 },
                 {
                     "Address": 890,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ClearInventoryDisplay"
                 },
@@ -55259,6 +55502,7 @@
                 },
                 {
                     "Address": 923,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CheckCharacterSwitch"
                 },
@@ -56169,31 +56413,37 @@
                 },
                 {
                     "Address": 703,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "ProcessLogicForCurrentRoom"
                 },
                 {
                     "Address": 715,
-                    "LabelType": 2,
-                    "Name": "next_logic_item"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "ConditionTrue"
                 },
                 {
                     "Address": 739,
-                    "LabelType": 2,
-                    "Name": "condition_false"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "ConditionFalse"
                 },
                 {
                     "Address": 747,
-                    "LabelType": 2,
-                    "Name": "process_action"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "ProcessAction"
                 },
                 {
                     "Address": 769,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Action_Swap"
                 },
                 {
                     "Address": 783,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Action_SwapFor"
                 },
@@ -56210,6 +56460,7 @@
                 },
                 {
                     "Address": 853,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CheckCollecableItems"
                 },
@@ -56225,11 +56476,13 @@
                 },
                 {
                     "Address": 889,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Action_BuildWall"
                 },
                 {
                     "Address": 917,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Condition_AtObject"
                 },
@@ -56240,6 +56493,7 @@
                 },
                 {
                     "Address": 964,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Condition_AtCoordinates"
                 },
@@ -56255,16 +56509,19 @@
                 },
                 {
                     "Address": 994,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Condition_IsCharacter"
                 },
                 {
                     "Address": 1005,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Condition_Has"
                 },
                 {
                     "Address": 1022,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Condition_DoesntHave"
                 }
@@ -57985,7 +58242,8 @@
                 },
                 {
                     "Address": 967,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "player x pos"
                 },
                 {
                     "Address": 970,
@@ -57993,7 +58251,8 @@
                 },
                 {
                     "Address": 972,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 974,
@@ -58037,7 +58296,8 @@
                 },
                 {
                     "Address": 993,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "player Y"
                 },
                 {
                     "Address": 996,
@@ -58045,7 +58305,8 @@
                 },
                 {
                     "Address": 998,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 1000,
@@ -58054,7 +58315,9 @@
                 },
                 {
                     "Address": 1002,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "clamp y",
+                    "OperandType": 7
                 },
                 {
                     "Address": 1004,
@@ -58488,33 +58751,39 @@
                 },
                 {
                     "Address": 29,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "GetGameStatusFlag"
                 },
                 {
                     "Address": 43,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Condition_ItemCheck"
                 },
                 {
                     "Address": 52,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Condition_NotItem"
                 },
                 {
                     "Address": 61,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CheckRoomItemMatchesID"
                 },
                 {
                     "Address": 74,
-                    "LabelType": 2,
-                    "Name": "fetch_flag_to_set"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "FetchFlagToSet"
                 },
                 {
                     "Address": 76,
-                    "LabelType": 2,
-                    "Name": "set_flag_value"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "SetFlagValue"
                 },
                 {
                     "Address": 92,
@@ -58530,6 +58799,7 @@
                 },
                 {
                     "Address": 188,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Action_PayCharacter"
                 },
@@ -58593,6 +58863,7 @@
                 },
                 {
                     "Address": 298,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CheckForBreak_DisplayMessage"
                 },
@@ -58613,8 +58884,9 @@
                 },
                 {
                     "Address": 394,
+                    "Global": true,
                     "LabelType": 1,
-                    "Name": "function_ED8A"
+                    "Name": "SetUpMovingObjectsInLaboratory"
                 },
                 {
                     "Address": 400,
@@ -58623,21 +58895,25 @@
                 },
                 {
                     "Address": 419,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Action_SetFlag"
                 },
                 {
                     "Address": 424,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Action_ResetFlag"
                 },
                 {
                     "Address": 428,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Action_SetFlagToValue"
                 },
                 {
                     "Address": 435,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Condition_FlagSet"
                 },
@@ -58655,6 +58931,7 @@
                 },
                 {
                     "Address": 454,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Action_Safe"
                 },
@@ -58670,6 +58947,7 @@
                 },
                 {
                     "Address": 503,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Action_PlayAsteroidsGame"
                 },
@@ -58705,6 +58983,7 @@
                 },
                 {
                     "Address": 674,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawBackgroundToShadowScreen"
                 },
@@ -58720,6 +58999,7 @@
                 },
                 {
                     "Address": 705,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "DrawRoomAndItems"
                 },
@@ -58741,6 +59021,7 @@
                 },
                 {
                     "Address": 821,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "BounceObjectWithinBounds"
                 },
@@ -58782,6 +59063,7 @@
                 },
                 {
                     "Address": 913,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "SetFountainAttributes"
                 },
@@ -58797,7 +59079,6 @@
                 },
                 {
                     "Address": 942,
-                    "Global": true,
                     "LabelType": 0,
                     "Name": "operand_EFAE"
                 },
@@ -58813,6 +59094,7 @@
                 },
                 {
                     "Address": 967,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Action_SharkChase"
                 },
@@ -58824,12 +59106,12 @@
                 {
                     "Address": 993,
                     "LabelType": 2,
-                    "Name": "label_EFE1"
+                    "Name": "player_fall_loop"
                 },
                 {
                     "Address": 1004,
                     "LabelType": 2,
-                    "Name": "label_EFEC"
+                    "Name": "no_fall_clamp"
                 }
             ],
             "PageId": 75
@@ -58857,7 +59139,8 @@
                 },
                 {
                     "Address": 9,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 12,
@@ -58873,11 +59156,13 @@
                 },
                 {
                     "Address": 18,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set player x"
                 },
                 {
                     "Address": 22,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set player y"
                 },
                 {
                     "Address": 26,
@@ -58932,11 +59217,13 @@
                 },
                 {
                     "Address": 53,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "wally x pos"
                 },
                 {
                     "Address": 56,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "check if 0"
                 },
                 {
                     "Address": 57,
@@ -58945,11 +59232,15 @@
                 },
                 {
                     "Address": 59,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set room number",
+                    "OperandType": 7
                 },
                 {
                     "Address": 63,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "set X pos",
+                    "OperandType": 7
                 },
                 {
                     "Address": 67,
@@ -60655,6 +60946,30 @@
             ],
             "DataInfo": [
                 {
+                    "Address": 183,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 184,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 185,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 186,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 187,
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 188,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 227,
                     "DataType": 11,
                     "InstructionAddressRef": 4041408516
@@ -60968,7 +61283,7 @@
                 {
                     "Address": 26,
                     "LabelType": 2,
-                    "Name": "label_F01A"
+                    "Name": "chase_update_loop"
                 },
                 {
                     "Address": 38,
@@ -60983,11 +61298,13 @@
                 },
                 {
                     "Address": 71,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "FlipShark"
                 },
                 {
                     "Address": 87,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Chase_UpdateShark"
                 },
@@ -61005,6 +61322,12 @@
                     "Address": 179,
                     "LabelType": 2,
                     "Name": "label_F0B3"
+                },
+                {
+                    "Address": 183,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "ChaseRoomData"
                 },
                 {
                     "Address": 189,
@@ -61026,6 +61349,7 @@
                 },
                 {
                     "Address": 192,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Chase_CheckPlayerMovement"
                 },
@@ -61069,6 +61393,7 @@
                 },
                 {
                     "Address": 270,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "UpdateJumpingJack"
                 },
@@ -61104,10 +61429,11 @@
                     "Address": 349,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_F15D"
+                    "Name": "RoomData_OutOfTown"
                 },
                 {
                     "Address": 375,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Action_GoToOutOfTown"
                 },
@@ -61143,11 +61469,13 @@
                 },
                 {
                     "Address": 514,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "PrintMilesOutOfTown"
                 },
                 {
                     "Address": 563,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "PrintMilesDigit"
                 },
@@ -61164,6 +61492,7 @@
                 },
                 {
                     "Address": 587,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room2_Update"
                 },
@@ -61187,6 +61516,7 @@
                 },
                 {
                     "Address": 631,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "UpdateHerbert"
                 },
@@ -61227,6 +61557,7 @@
                 },
                 {
                     "Address": 758,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "NullFunction"
                 },
@@ -61250,6 +61581,7 @@
                 },
                 {
                     "Address": 777,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room15_Update"
                 },
@@ -61272,6 +61604,7 @@
                 },
                 {
                     "Address": 820,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room27_Update"
                 },
@@ -61288,6 +61621,7 @@
                 },
                 {
                     "Address": 893,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room30_Update"
                 },
@@ -61311,6 +61645,7 @@
                 },
                 {
                     "Address": 939,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room31_Update"
                 },
@@ -63029,6 +63364,7 @@
                 },
                 {
                     "Address": 9,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room14_Update"
                 },
@@ -63044,6 +63380,7 @@
                 },
                 {
                     "Address": 60,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room8_Update"
                 },
@@ -63070,6 +63407,7 @@
                 },
                 {
                     "Address": 157,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room10_Update"
                 },
@@ -63091,6 +63429,7 @@
                 },
                 {
                     "Address": 211,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room16_Update"
                 },
@@ -63112,6 +63451,7 @@
                 },
                 {
                     "Address": 259,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room4_Update"
                 },
@@ -63122,6 +63462,7 @@
                 },
                 {
                     "Address": 335,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room32_Update"
                 },
@@ -63138,13 +63479,15 @@
                 },
                 {
                     "Address": 370,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room0_Update"
                 },
                 {
                     "Address": 376,
-                    "LabelType": 2,
-                    "Name": "label_F578"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "DoFountainSequence"
                 },
                 {
                     "Address": 442,
@@ -63189,6 +63532,7 @@
                 },
                 {
                     "Address": 497,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room11_Update"
                 },
@@ -63254,6 +63598,7 @@
                 },
                 {
                     "Address": 628,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room5_Update"
                 },
@@ -63286,6 +63631,7 @@
                 },
                 {
                     "Address": 748,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room22_Update"
                 },
@@ -63317,6 +63663,7 @@
                 },
                 {
                     "Address": 838,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room23_Update"
                 },
@@ -63332,6 +63679,7 @@
                 },
                 {
                     "Address": 883,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Room12_Update"
                 },
@@ -64946,7 +65294,6 @@
                 {
                     "Address": 1008,
                     "ByteSize": 2,
-                    "Comment": "put character point in HL",
                     "DataType": 2
                 },
                 {
@@ -64972,7 +65319,6 @@
                 {
                     "Address": 1018,
                     "ByteSize": 2,
-                    "Comment": "copy to screen",
                     "DataType": 2
                 },
                 {
@@ -64995,6 +65341,7 @@
                 },
                 {
                     "Address": 20,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "CheckForFoodInRoom"
                 },
@@ -65032,6 +65379,7 @@
                 },
                 {
                     "Address": 185,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Asteroids_CheckLightningCollision"
                 },
@@ -65082,6 +65430,7 @@
                 },
                 {
                     "Address": 314,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Asteroids_CheckPlayerMovement"
                 },
@@ -65122,6 +65471,7 @@
                 },
                 {
                     "Address": 420,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Asteroids_GetMovementDelta"
                 },
@@ -65139,6 +65489,7 @@
                 },
                 {
                     "Address": 452,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Asteroids_GenertateHitLightningSound"
                 },
@@ -65194,6 +65545,7 @@
                 },
                 {
                     "Address": 501,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Asteroids_CheckFireMissile"
                 },
@@ -65239,6 +65591,7 @@
                 },
                 {
                     "Address": 743,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Asteroids_PlayNoteOfWonSFX"
                 },
@@ -65250,6 +65603,7 @@
                 },
                 {
                     "Address": 752,
+                    "Global": true,
                     "LabelType": 1,
                     "Name": "Asteroids_MoveLightingBolts"
                 },

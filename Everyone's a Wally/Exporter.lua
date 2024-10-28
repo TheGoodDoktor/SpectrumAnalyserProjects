@@ -11,8 +11,10 @@ ExporterView =
         -- gets called when view is added
 		self.screenView = CreateZXGraphicsView(256,19 * 8)
 		self.characterView = CreateZXGraphicsView(16,40 * 32)
+		self.itemView = CreateZXGraphicsView(16, 132 * 16)
         ClearGraphicsView(self.screenView, 0)
 		ClearGraphicsView(self.characterView, 0)
+		ClearGraphicsView(self.itemView, 0)
     end,
 
     onDrawUI = function(self)
@@ -33,7 +35,30 @@ ExporterView =
 			SaveGraphicsViewPNG(self.characterView,"Characters.png")
 		end
 
-		DrawGraphicsView(self.screenView)
+		if imgui.Button("Export Item Sprites") then
+			local itemNo = 0
+			local itemIndex = 0
+
+			local indexFile = io.open("itemindices.bin","wb")
+			while itemNo < 133 do
+
+				DrawItemToView(self.itemView,itemNo,0,itemIndex * 16)
+				itemIndex = itemIndex + 1
+				if IsItemMasked(itemNo) then
+					indexFile:write(string.char(itemIndex))	-- write index twice for masked sprite
+					indexFile:write(string.char(itemIndex))
+					itemNo = itemNo + 2
+				else
+					indexFile:write(string.char(itemIndex))
+					itemNo = itemNo + 1
+				end
+			end
+			indexFile:close()
+			SaveGraphicsViewPNG(self.itemView,"Items.png")
+		end
+
+		DrawGraphicsView(self.screenView)		
+		DrawGraphicsView(self.itemView)
     end
 }
 
