@@ -5,8 +5,11 @@ function CommentRoomData()
 	local roomIndex = 0
 	local curDataPtr = globals.RoomData
 
-	while roomIndex < 70 do
-		SetDataItemComment(curDataPtr, "Room " .. tostring(roomIndex))
+	while roomIndex < 79 do
+		SetDataItemComment(curDataPtr, "Room char set [16 bytes]")
+		SetDataItemComment(curDataPtr + 15, "Char set attributes [16 bytes]")
+		SetDataItemComment(curDataPtr + 30, "Room char map data")
+		AddCommentBlock(curDataPtr, "Room " .. tostring(roomIndex))
 		print("Room " .. tostring(roomIndex) .. " address " .. tostring(curDataPtr))
 		repeat 
 			local dataByte = ReadByte(curDataPtr)
