@@ -46857,7 +46857,9 @@
                 },
                 {
                     "Address": 661,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Is this the title screen?",
+                    "OperandType": 7
                 },
                 {
                     "Address": 663,
@@ -46876,12 +46878,41 @@
                 },
                 {
                     "Address": 671,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 673,
                     "ByteSize": 2,
                     "OperandType": 2
+                },
+                {
+                    "Address": 675,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 678,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 680,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 682,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 685,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 687,
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 690,
@@ -46908,7 +46939,8 @@
                 },
                 {
                     "Address": 743,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 745,
@@ -47041,8 +47073,7 @@
                 {
                     "Address": 828,
                     "ByteSize": 1,
-                    "Comment": "Get char set index from level data",
-                    "Flags": 32
+                    "Comment": "Get char set index from level data"
                 },
                 {
                     "Address": 829,
@@ -47643,6 +47674,10 @@
                 {
                     "Address": 300,
                     "Comment": "If we get here I think Monty is fatally wounded"
+                },
+                {
+                    "Address": 675,
+                    "Comment": "???"
                 },
                 {
                     "Address": 782,
@@ -54043,29 +54078,15 @@
             "CommentBlocks": [
                 {
                     "Address": 0,
-                    "Comment": "This appears to be read-only data that gets read when you enter a new screen.\nIt potentially has variable length data for each room, with 0 as the terminator.\n\nLevel data format:\n\n 0-14 : 15 byte list of char set indices that make up the room's character set.\n15-29 : Unknown 15 bytes\n30-?  : Potentially char map of the room. 5 bits per character. \n        Potentially stored in rows of 32 characters."
-                },
-                {
-                    "Address": 178,
-                    "Comment": "1"
-                },
-                {
-                    "Address": 358,
-                    "Comment": "2"
-                },
-                {
-                    "Address": 535,
-                    "Comment": "3"
-                }
-            ],
-            "DataInfo": [
-                {
-                    "Address": 0,
                     "Comment": "Room 0"
                 },
                 {
                     "Address": 178,
                     "Comment": "Room 1"
+                },
+                {
+                    "Address": 358,
+                    "Comment": "2"
                 },
                 {
                     "Address": 359,
@@ -54084,6 +54105,80 @@
                     "Comment": "Room 5"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 0,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 15,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 30,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 178,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 193,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 208,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 359,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 374,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 389,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 535,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 550,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 565,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 709,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 724,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 739,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 904,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 919,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 934,
+                    "Comment": "Room char map data"
+                }
+            ],
             "LabelInfo": [
                 {
                     "Address": 0,
@@ -54095,7 +54190,7 @@
             "PageId": 63
         },
         {
-            "DataInfo": [
+            "CommentBlocks": [
                 {
                     "Address": 53,
                     "Comment": "Room 6"
@@ -54121,10 +54216,84 @@
                     "Comment": "Room 11"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 53,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 68,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 83,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 229,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 244,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 259,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 412,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 427,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 442,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 565,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 580,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 595,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 717,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 732,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 747,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 901,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 916,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 931,
+                    "Comment": "Room char map data"
+                }
+            ],
             "PageId": 64
         },
         {
-            "DataInfo": [
+            "CommentBlocks": [
                 {
                     "Address": 60,
                     "Comment": "Room 12"
@@ -54150,10 +54319,84 @@
                     "Comment": "Room 17"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 60,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 75,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 90,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 244,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 259,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 274,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 424,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 439,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 454,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 571,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 586,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 601,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 737,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 752,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 767,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 910,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 925,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 940,
+                    "Comment": "Room char map data"
+                }
+            ],
             "PageId": 65
         },
         {
-            "DataInfo": [
+            "CommentBlocks": [
                 {
                     "Address": 56,
                     "Comment": "Room 18"
@@ -54179,10 +54422,84 @@
                     "Comment": "Room 23"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 56,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 71,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 86,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 187,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 202,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 217,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 346,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 361,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 376,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 542,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 557,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 572,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 728,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 743,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 758,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 894,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 909,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 924,
+                    "Comment": "Room char map data"
+                }
+            ],
             "PageId": 66
         },
         {
-            "DataInfo": [
+            "CommentBlocks": [
                 {
                     "Address": 29,
                     "Comment": "Room 24"
@@ -54208,10 +54525,84 @@
                     "Comment": "Room 29"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 29,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 44,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 59,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 210,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 225,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 240,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 399,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 414,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 429,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 572,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 587,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 602,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 751,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 766,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 781,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 913,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 928,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 943,
+                    "Comment": "Room char map data"
+                }
+            ],
             "PageId": 67
         },
         {
-            "DataInfo": [
+            "CommentBlocks": [
                 {
                     "Address": 58,
                     "Comment": "Room 30"
@@ -54237,10 +54628,80 @@
                     "Comment": "Room 35"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 58,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 73,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 88,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 236,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 251,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 266,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 458,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 473,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 488,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 650,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 665,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 680,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 846,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 861,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 876,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 1008,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 1023,
+                    "Comment": "Char set attributes [16 bytes]"
+                }
+            ],
             "PageId": 68
         },
         {
-            "DataInfo": [
+            "CommentBlocks": [
                 {
                     "Address": 134,
                     "Comment": "Room 36"
@@ -54266,10 +54727,84 @@
                     "Comment": "Room 41"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 14,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 134,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 149,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 164,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 334,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 349,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 364,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 510,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 525,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 540,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 658,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 673,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 688,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 843,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 858,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 873,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 996,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 1011,
+                    "Comment": "Char set attributes [16 bytes]"
+                }
+            ],
             "PageId": 69
         },
         {
-            "DataInfo": [
+            "CommentBlocks": [
                 {
                     "Address": 158,
                     "Comment": "Room 42"
@@ -54291,10 +54826,76 @@
                     "Comment": "Room 46"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 2,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 158,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 173,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 188,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 355,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 370,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 385,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 529,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 544,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 559,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 711,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 726,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 741,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 905,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 920,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 935,
+                    "Comment": "Room char map data"
+                }
+            ],
             "PageId": 70
         },
         {
-            "DataInfo": [
+            "CommentBlocks": [
                 {
                     "Address": 64,
                     "Comment": "Room 47"
@@ -54320,10 +54921,84 @@
                     "Comment": "Room 52"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 64,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 79,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 94,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 197,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 212,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 227,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 362,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 377,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 392,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 541,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 556,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 571,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 725,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 740,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 755,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 933,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 948,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 963,
+                    "Comment": "Room char map data"
+                }
+            ],
             "PageId": 71
         },
         {
-            "DataInfo": [
+            "CommentBlocks": [
                 {
                     "Address": 43,
                     "Comment": "Room 53"
@@ -54349,10 +55024,84 @@
                     "Comment": "Room 58"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 43,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 58,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 73,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 229,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 244,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 259,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 408,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 423,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 438,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 576,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 591,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 606,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 748,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 763,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 778,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 956,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 971,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 986,
+                    "Comment": "Room char map data"
+                }
+            ],
             "PageId": 72
         },
         {
-            "DataInfo": [
+            "CommentBlocks": [
                 {
                     "Address": 146,
                     "Comment": "Room 59"
@@ -54378,23 +55127,87 @@
                     "Comment": "Room 64"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 146,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 161,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 176,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 333,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 348,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 363,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 479,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 494,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 509,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 612,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 627,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 642,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 767,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 782,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 797,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 945,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 960,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 975,
+                    "Comment": "Room char map data"
+                }
+            ],
             "PageId": 73
         },
         {
             "CommentBlocks": [
                 {
                     "Address": 95,
-                    "Comment": "room above starting room\n$41?"
-                }
-            ],
-            "DataInfo": [
-                {
-                    "Address": 95,
                     "Comment": "Room 65"
-                },
-                {
-                    "Address": 109,
-                    "Comment": "room char set end"
                 },
                 {
                     "Address": 246,
@@ -54411,6 +55224,88 @@
                 {
                     "Address": 723,
                     "Comment": "Room 69"
+                },
+                {
+                    "Address": 881,
+                    "Comment": "Room 70"
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 95,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 109,
+                    "Comment": "room char set end"
+                },
+                {
+                    "Address": 110,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 125,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 246,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 261,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 276,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 408,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 423,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 438,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 539,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 554,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 569,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 723,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 738,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 753,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 881,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 896,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 911,
+                    "Comment": "Room char map data"
                 }
             ],
             "PageId": 74
@@ -54418,8 +55313,12 @@
         {
             "CommentBlocks": [
                 {
+                    "Address": 16,
+                    "Comment": "Room 71"
+                },
+                {
                     "Address": 164,
-                    "Comment": "room 72?"
+                    "Comment": "Room 72"
                 },
                 {
                     "Address": 180,
@@ -54428,16 +55327,48 @@
                 {
                     "Address": 194,
                     "Comment": " "
+                },
+                {
+                    "Address": 373,
+                    "Comment": "Room 73"
+                },
+                {
+                    "Address": 575,
+                    "Comment": "Room 74"
+                },
+                {
+                    "Address": 802,
+                    "Comment": "Room 75"
+                },
+                {
+                    "Address": 978,
+                    "Comment": "Room 76"
                 }
             ],
             "DataInfo": [
                 {
+                    "Address": 16,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 31,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 46,
+                    "Comment": "Room char map data"
+                },
+                {
                     "Address": 164,
-                    "Comment": "charset index from f400"
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 179,
+                    "Comment": "Char set attributes [16 bytes]"
                 },
                 {
                     "Address": 194,
-                    "Comment": "1 x3"
+                    "Comment": "Room char map data"
                 },
                 {
                     "Address": 195,
@@ -54446,6 +55377,54 @@
                 {
                     "Address": 196,
                     "Comment": "f x 1"
+                },
+                {
+                    "Address": 373,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 388,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 403,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 575,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 590,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 605,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 802,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 817,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 832,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 978,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 993,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 1008,
+                    "Comment": "Room char map data"
                 }
             ],
             "PageId": 75
@@ -54453,11 +55432,43 @@
         {
             "CommentBlocks": [
                 {
+                    "Address": 115,
+                    "Comment": "Room 77"
+                },
+                {
+                    "Address": 278,
+                    "Comment": "Room 78"
+                },
+                {
                     "Address": 628,
                     "Comment": "This byte and the following one are compared with each other in the main loop"
                 }
             ],
             "DataInfo": [
+                {
+                    "Address": 115,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 130,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 145,
+                    "Comment": "Room char map data"
+                },
+                {
+                    "Address": 278,
+                    "Comment": "Room char set [16 bytes]"
+                },
+                {
+                    "Address": 293,
+                    "Comment": "Char set attributes [16 bytes]"
+                },
+                {
+                    "Address": 308,
+                    "Comment": "Room char map data"
+                },
                 {
                     "Address": 558,
                     "DisplayType": 3
@@ -54647,7 +55658,7 @@
                     "Address": 870,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_F366"
+                    "Name": "TitleScreenRoomData"
                 }
             ],
             "PageId": 76

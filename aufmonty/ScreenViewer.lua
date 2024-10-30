@@ -7,6 +7,9 @@ end
 
 -- Get the address of a room's data
 function GetRoomAddr(roomIndex)
+	if roomIndex == 99 then
+		return globals.TitleScreenRoomData
+	end
 	local curAddr = globals.RoomData
 	for r = 0, roomIndex-1 do
 		repeat
@@ -32,7 +35,6 @@ function DrawScreenToView(graphicsView, screenNo, x, y)
 		charSet[c] = charIndex
 		attrib[c] = charAttrib 
 		curAddr = curAddr + 1
-		print(tostring(c))
 	end
 
 	-- Room data starts 30 bytes in
@@ -94,8 +96,10 @@ ScreenViewer =
 		imgui.Text(string.format("Room data address: $%x", GetRoomAddr(self.screenNo)))
 
 		if changed == true then
-			if self.screenNo > 78 then
+			if self.screenNo == 98 then
 				self.screenNo = 78
+			elseif self.screenNo > 78 then
+				self.screenNo = 99
 			end
 			if self.screenNo < 0 then
 				self.screenNo = 0
