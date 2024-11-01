@@ -1,18 +1,23 @@
 {
     "128KGame": false,
+    "AsmExportPath": "",
+    "LuaSourceFiles": [
+        "Viewer.lua",
+        "ScreenViewer.lua"
+    ],
     "Machine": "",
     "Name": "aufmonty",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 43075,
+                "ViewAddress": 42766,
                 "ViewAddressBank": 3
             },
             {
-                "Enabled": false,
-                "ViewAddress": 0,
-                "ViewAddressBank": -1
+                "Enabled": true,
+                "ViewAddress": 62310,
+                "ViewAddressBank": 4
             },
             {
                 "Enabled": false,
