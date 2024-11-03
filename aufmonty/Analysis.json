@@ -47852,19 +47852,19 @@
                 },
                 {
                     "Address": 59,
-                    "Comment": "Used in the function that checks if Monty has collided with something fatal.\nThink it's an enemy state table, where each entry is 13 bytes."
+                    "Comment": "Enemy state table, where each entry is 13 bytes.\nThere are 4 entries.\nFormat\n0 :\n1 :\n2 : Attribute value. Colour of enemy.\n3 :\n4 :\n5 :\n6 :\n7 :\n8 :\n9 :\n10:\n11:\n12: "
                 },
                 {
-                    "Address": 71,
-                    "Comment": " "
+                    "Address": 72,
+                    "Comment": " Enemy 1"
                 },
                 {
-                    "Address": 84,
-                    "Comment": " "
+                    "Address": 85,
+                    "Comment": "Enemy 2"
                 },
                 {
-                    "Address": 97,
-                    "Comment": " "
+                    "Address": 98,
+                    "Comment": "Enemy 3"
                 },
                 {
                     "Address": 226,
@@ -47915,6 +47915,11 @@
                 {
                     "Address": 60,
                     "Comment": "Bottom nibble of first byte from enemy def shifted 3 places put here"
+                },
+                {
+                    "Address": 61,
+                    "Comment": "This gets copied from the table at $fc00 using the room number as an index.",
+                    "Flags": 128
                 },
                 {
                     "Address": 66,
@@ -48598,7 +48603,6 @@
                 {
                     "Address": 436,
                     "ByteSize": 2,
-                    "Flags": 32,
                     "OperandType": 2
                 },
                 {
@@ -48620,7 +48624,8 @@
                 },
                 {
                     "Address": 445,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Room number x4"
                 },
                 {
                     "Address": 446,
@@ -48629,7 +48634,8 @@
                 },
                 {
                     "Address": 449,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Offset from table"
                 },
                 {
                     "Address": 450,
@@ -48690,7 +48696,8 @@
                 },
                 {
                     "Address": 478,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Take the byte we got from the table and copy to enemy state table"
                 },
                 {
                     "Address": 481,
@@ -48698,7 +48705,8 @@
                 },
                 {
                     "Address": 482,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 3
                 },
                 {
                     "Address": 485,
@@ -50709,7 +50717,7 @@
                     "Address": 67,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "dataThatGetsSearched_A843"
+                    "Name": "roomNumberRelatedTable"
                 },
                 {
                     "Address": 323,
@@ -51343,8 +51351,778 @@
                     "Comment": "Enemy definitions for each room\nEach enemy is 4 bytes.\nEach room can have 4 enemies.\n\nFormat:\n0 : Two nibbles. Bottom nibble is used shifted 3 places. Top nibble unshifted.\n1 : Bottom 3 bits of the top nibble. Bit 7 is a flag that causes the bits to be flipped.\n2 : Copied whole\n3 : Enemy type\nThis table is read only.\nThese defs are used to setup the enemy state table #ADDR:0xA43B#"
                 },
                 {
+                    "Address": 426,
+                    "Comment": "Room 1"
+                },
+                {
+                    "Address": 442,
+                    "Comment": "Room 2"
+                },
+                {
+                    "Address": 458,
+                    "Comment": "Room 3"
+                },
+                {
+                    "Address": 474,
+                    "Comment": "Room 4"
+                },
+                {
+                    "Address": 490,
+                    "Comment": "Room 5"
+                },
+                {
+                    "Address": 506,
+                    "Comment": "Room 6"
+                },
+                {
+                    "Address": 522,
+                    "Comment": "Room 7"
+                },
+                {
+                    "Address": 538,
+                    "Comment": "Room 8"
+                },
+                {
+                    "Address": 554,
+                    "Comment": "Room 9"
+                },
+                {
+                    "Address": 570,
+                    "Comment": "Room 10"
+                },
+                {
+                    "Address": 586,
+                    "Comment": "Room 11"
+                },
+                {
+                    "Address": 602,
+                    "Comment": "Room 12"
+                },
+                {
+                    "Address": 618,
+                    "Comment": "Room 13"
+                },
+                {
+                    "Address": 634,
+                    "Comment": "Room 14"
+                },
+                {
+                    "Address": 650,
+                    "Comment": "Room 15"
+                },
+                {
+                    "Address": 666,
+                    "Comment": "Room 16"
+                },
+                {
+                    "Address": 682,
+                    "Comment": "Room 17"
+                },
+                {
+                    "Address": 698,
+                    "Comment": "Room 18"
+                },
+                {
+                    "Address": 714,
+                    "Comment": "Room 19"
+                },
+                {
+                    "Address": 730,
+                    "Comment": "Room 20"
+                },
+                {
+                    "Address": 746,
+                    "Comment": "Room 21"
+                },
+                {
+                    "Address": 762,
+                    "Comment": "Room 22"
+                },
+                {
+                    "Address": 778,
+                    "Comment": "Room 23"
+                },
+                {
+                    "Address": 794,
+                    "Comment": "Room 24"
+                },
+                {
+                    "Address": 810,
+                    "Comment": "Room 25"
+                },
+                {
+                    "Address": 826,
+                    "Comment": "Room 26"
+                },
+                {
+                    "Address": 842,
+                    "Comment": "Room 27"
+                },
+                {
+                    "Address": 858,
+                    "Comment": "Room 28"
+                },
+                {
+                    "Address": 874,
+                    "Comment": "Room 29"
+                },
+                {
+                    "Address": 890,
+                    "Comment": "Room 30"
+                },
+                {
+                    "Address": 906,
+                    "Comment": "Room 31"
+                },
+                {
+                    "Address": 922,
+                    "Comment": "Room 32"
+                },
+                {
+                    "Address": 938,
+                    "Comment": "Room 33"
+                },
+                {
+                    "Address": 954,
+                    "Comment": "Room 34"
+                },
+                {
+                    "Address": 970,
+                    "Comment": "Room 35"
+                },
+                {
+                    "Address": 986,
+                    "Comment": "Room 36"
+                },
+                {
+                    "Address": 1002,
+                    "Comment": "Room 37"
+                },
+                {
+                    "Address": 1018,
+                    "Comment": "Room 38"
+                },
+                {
                     "Address": 1022,
                     "Comment": " "
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 410,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 414,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 418,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 422,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 426,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 430,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 434,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 438,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 442,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 446,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 450,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 454,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 458,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 462,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 466,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 470,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 474,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 478,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 482,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 486,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 490,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 494,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 498,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 502,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 506,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 510,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 514,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 518,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 522,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 526,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 530,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 534,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 538,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 542,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 546,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 550,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 554,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 558,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 562,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 566,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 570,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 574,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 578,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 582,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 586,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 590,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 594,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 598,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 602,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 606,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 610,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 614,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 618,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 622,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 626,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 630,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 634,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 638,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 642,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 646,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 650,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 654,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 658,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 662,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 666,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 670,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 674,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 678,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 682,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 686,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 690,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 694,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 698,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 702,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 706,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 710,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 714,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 718,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 722,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 726,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 730,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 734,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 738,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 742,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 746,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 750,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 754,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 758,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 762,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 766,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 770,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 774,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 778,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 782,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 786,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 790,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 794,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 798,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 802,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 806,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 810,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 814,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 818,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 822,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 826,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 830,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 834,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 838,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 842,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 846,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 850,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 854,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 858,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 862,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 866,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 870,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 874,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 878,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 882,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 886,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 890,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 894,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 898,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 902,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 906,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 910,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 914,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 918,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 922,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 926,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 930,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 934,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 938,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 942,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 946,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 950,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 954,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 958,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 962,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 966,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 970,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 974,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 978,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 982,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 986,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 990,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 994,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 998,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 1002,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 1006,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 1010,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 1014,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 1018,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 1022,
+                    "Comment": "Enemy 1"
                 }
             ],
             "LabelInfo": [
@@ -51946,7 +52724,7 @@
                 },
                 {
                     "Address": 10,
-                    "Comment": "Room 39 "
+                    "Comment": "Room 39"
                 },
                 {
                     "Address": 14,
@@ -51961,8 +52739,108 @@
                     "Comment": " "
                 },
                 {
+                    "Address": 26,
+                    "Comment": "Room 40"
+                },
+                {
+                    "Address": 42,
+                    "Comment": "Room 41"
+                },
+                {
+                    "Address": 58,
+                    "Comment": "Room 42"
+                },
+                {
+                    "Address": 74,
+                    "Comment": "Room 43"
+                },
+                {
+                    "Address": 90,
+                    "Comment": "Room 44"
+                },
+                {
+                    "Address": 106,
+                    "Comment": "Room 45"
+                },
+                {
+                    "Address": 122,
+                    "Comment": "Room 46"
+                },
+                {
+                    "Address": 138,
+                    "Comment": "Room 47"
+                },
+                {
+                    "Address": 154,
+                    "Comment": "Room 48"
+                },
+                {
+                    "Address": 170,
+                    "Comment": "Room 49"
+                },
+                {
+                    "Address": 186,
+                    "Comment": "Room 50"
+                },
+                {
+                    "Address": 202,
+                    "Comment": "Room 51"
+                },
+                {
+                    "Address": 218,
+                    "Comment": "Room 52"
+                },
+                {
+                    "Address": 234,
+                    "Comment": "Room 53"
+                },
+                {
+                    "Address": 250,
+                    "Comment": "Room 54"
+                },
+                {
+                    "Address": 266,
+                    "Comment": "Room 55"
+                },
+                {
+                    "Address": 282,
+                    "Comment": "Room 56"
+                },
+                {
+                    "Address": 298,
+                    "Comment": "Room 57"
+                },
+                {
+                    "Address": 314,
+                    "Comment": "Room 58"
+                },
+                {
+                    "Address": 330,
+                    "Comment": "Room 59"
+                },
+                {
+                    "Address": 346,
+                    "Comment": "Room 60"
+                },
+                {
+                    "Address": 362,
+                    "Comment": "Room 61"
+                },
+                {
+                    "Address": 378,
+                    "Comment": "Room 62"
+                },
+                {
+                    "Address": 394,
+                    "Comment": "Room 63"
+                },
+                {
+                    "Address": 410,
+                    "Comment": "Room 64"
+                },
+                {
                     "Address": 426,
-                    "Comment": "Second room"
+                    "Comment": "Room 65"
                 },
                 {
                     "Address": 430,
@@ -51977,8 +52855,32 @@
                     "Comment": " "
                 },
                 {
+                    "Address": 442,
+                    "Comment": "Room 66"
+                },
+                {
+                    "Address": 458,
+                    "Comment": "Room 67"
+                },
+                {
+                    "Address": 474,
+                    "Comment": "Room 68"
+                },
+                {
+                    "Address": 490,
+                    "Comment": "Room 69"
+                },
+                {
+                    "Address": 506,
+                    "Comment": "Room 70"
+                },
+                {
+                    "Address": 522,
+                    "Comment": "Room 71"
+                },
+                {
                     "Address": 538,
-                    "Comment": "First room"
+                    "Comment": "Room 72"
                 },
                 {
                     "Address": 542,
@@ -51991,6 +52893,30 @@
                 {
                     "Address": 550,
                     "Comment": " "
+                },
+                {
+                    "Address": 554,
+                    "Comment": "Room 73"
+                },
+                {
+                    "Address": 570,
+                    "Comment": "Room 74"
+                },
+                {
+                    "Address": 586,
+                    "Comment": "Room 75"
+                },
+                {
+                    "Address": 602,
+                    "Comment": "Room 76"
+                },
+                {
+                    "Address": 618,
+                    "Comment": "Room 77"
+                },
+                {
+                    "Address": 634,
+                    "Comment": "Room 78"
                 },
                 {
                     "Address": 666,
@@ -52011,16 +52937,432 @@
             ],
             "DataInfo": [
                 {
+                    "Address": 2,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 6,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 10,
+                    "Comment": "Enemy 0"
+                },
+                {
                     "Address": 14,
-                    "Comment": "Mouth on legs. Vertical movement"
+                    "Comment": "Enemy 1"
                 },
                 {
                     "Address": 18,
-                    "Comment": "Mouth on legs. Static"
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 22,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 26,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 30,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 34,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 38,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 42,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 46,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 50,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 54,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 58,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 62,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 66,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 70,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 74,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 78,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 82,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 86,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 90,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 94,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 98,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 102,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 106,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 110,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 114,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 118,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 122,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 126,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 130,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 134,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 138,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 142,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 146,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 150,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 154,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 158,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 162,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 166,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 170,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 174,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 178,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 182,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 186,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 190,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 194,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 198,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 202,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 206,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 210,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 214,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 218,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 222,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 226,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 230,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 234,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 238,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 242,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 246,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 250,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 254,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 258,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 262,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 266,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 270,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 274,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 278,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 282,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 286,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 290,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 294,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 298,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 302,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 306,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 310,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 314,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 318,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 322,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 326,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 330,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 334,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 338,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 342,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 346,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 350,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 354,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 358,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 362,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 366,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 370,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 374,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 378,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 382,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 386,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 390,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 394,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 398,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 402,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 406,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 410,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 414,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 418,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 422,
+                    "Comment": "Enemy 3"
                 },
                 {
                     "Address": 426,
-                    "Comment": "Two nibbles. Bottom nibble shifted 3 places. Top nibble unshifted."
+                    "Comment": "Enemy 0"
                 },
                 {
                     "Address": 427,
@@ -52031,12 +53373,232 @@
                     "Comment": "Copied whole"
                 },
                 {
+                    "Address": 430,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 434,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 438,
+                    "Comment": "Enemy 3"
+                },
+                {
                     "Address": 441,
                     "Comment": "Second room end"
                 },
                 {
+                    "Address": 442,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 446,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 450,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 454,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 458,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 462,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 466,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 470,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 474,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 478,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 482,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 486,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 490,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 494,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 498,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 502,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 506,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 510,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 514,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 518,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 522,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 526,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 530,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 534,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 538,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 542,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 546,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 550,
+                    "Comment": "Enemy 3"
+                },
+                {
                     "Address": 553,
                     "Comment": "First room end"
+                },
+                {
+                    "Address": 554,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 558,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 562,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 566,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 570,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 574,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 578,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 582,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 586,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 590,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 594,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 598,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 602,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 606,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 610,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 614,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 618,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 622,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 626,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 630,
+                    "Comment": "Enemy 3"
+                },
+                {
+                    "Address": 634,
+                    "Comment": "Enemy 0"
+                },
+                {
+                    "Address": 638,
+                    "Comment": "Enemy 1"
+                },
+                {
+                    "Address": 642,
+                    "Comment": "Enemy 2"
+                },
+                {
+                    "Address": 646,
+                    "Comment": "Enemy 3"
                 }
             ],
             "LabelInfo": [
@@ -70156,12 +71718,44 @@
                     "ByteSize": 1
                 }
             ],
+            "CommentBlocks": [
+                {
+                    "Address": 0,
+                    "Comment": "Enemy colours per room.\nTable is indexed by room number.\n4 bytes per room.\nEach enemies colour is copied to byte 2 of the enemy entry in the enemy state table."
+                },
+                {
+                    "Address": 288,
+                    "Comment": "Room 72. Starting room"
+                }
+            ],
+            "DataInfo": [
+                {
+                    "Address": 156,
+                    "Comment": "Room 39"
+                },
+                {
+                    "Address": 260,
+                    "DataType": 10
+                },
+                {
+                    "Address": 261,
+                    "DataType": 10
+                },
+                {
+                    "Address": 262,
+                    "DataType": 10
+                },
+                {
+                    "Address": 263,
+                    "DataType": 10
+                }
+            ],
             "LabelInfo": [
                 {
                     "Address": 0,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_FC00"
+                    "Name": "RoomEnemyColours"
                 },
                 {
                     "Address": 132,
