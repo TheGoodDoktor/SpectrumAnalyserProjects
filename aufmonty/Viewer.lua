@@ -52,6 +52,24 @@ function CommentEnemyDefs()
 	end
 end
 
+function CommentRoomNames()
+	local roomIndex = 0
+	local curDataPtr = globals.RoomNames
+
+	if curDataPtr == nil then
+		print("Could not get enemy defs address from globals.RoomNames")
+		return
+	end
+
+	while roomIndex < 80 do
+		if roomIndex > 0 then
+			AddCommentBlock(curDataPtr, string.format("Room %d.", roomIndex))
+		end
+		curDataPtr = curDataPtr + 4
+		roomIndex = roomIndex + 1
+	end
+end
+
 MontyViewer = 
 {
 	name = "Monty Viewer",
@@ -69,6 +87,10 @@ MontyViewer =
 
 		if imgui.Button("Comment enemy defs") then
 			CommentEnemyDefs()
+		end
+
+		if imgui.Button("Comment room names") then
+			CommentRoomNames()
 		end
 	end
 }
