@@ -42228,7 +42228,7 @@
                 {
                     "Address": 808,
                     "LabelType": 2,
-                    "Name": "checkExitScreen"
+                    "Name": "checkExitedScreen"
                 },
                 {
                     "Address": 856,
@@ -47417,7 +47417,8 @@
                 },
                 {
                     "Address": 813,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 3
                 },
                 {
                     "Address": 816,
@@ -47466,11 +47467,14 @@
                 },
                 {
                     "Address": 835,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get byte of bitmap data",
+                    "Flags": 32
                 },
                 {
                     "Address": 836,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "use as high byte of address to read"
                 },
                 {
                     "Address": 837,
@@ -47478,7 +47482,8 @@
                 },
                 {
                     "Address": 838,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get data from table"
                 },
                 {
                     "Address": 839,
@@ -47486,11 +47491,13 @@
                 },
                 {
                     "Address": 840,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get second byte of pixel data"
                 },
                 {
                     "Address": 841,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Use as high byte of address to read"
                 },
                 {
                     "Address": 842,
@@ -47498,11 +47505,14 @@
                 },
                 {
                     "Address": 843,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get data from table"
                 },
                 {
                     "Address": 844,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "HL now contains both bytes looked up using bitmap data",
+                    "Flags": 32
                 },
                 {
                     "Address": 845,
@@ -47650,7 +47660,8 @@
                 },
                 {
                     "Address": 893,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Write to offscreen buffer"
                 },
                 {
                     "Address": 896,
@@ -47686,7 +47697,8 @@
                 },
                 {
                     "Address": 906,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Write to offscreen buffer"
                 },
                 {
                     "Address": 909,
@@ -47722,7 +47734,8 @@
                 },
                 {
                     "Address": 919,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Write to offscreen buffer"
                 },
                 {
                     "Address": 922,
@@ -47859,15 +47872,18 @@
                 },
                 {
                     "Address": 974,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Get the jump offset"
                 },
                 {
                     "Address": 977,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 979,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 982,
@@ -47876,7 +47892,8 @@
                 },
                 {
                     "Address": 984,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Multiply by 2"
                 },
                 {
                     "Address": 985,
@@ -47893,11 +47910,13 @@
                 },
                 {
                     "Address": 991,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Add the jump offset to the base jump addr"
                 },
                 {
                     "Address": 992,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Store the jump address in IX[5] and IX[6]"
                 },
                 {
                     "Address": 995,
@@ -48016,6 +48035,14 @@
                 {
                     "Address": 480,
                     "Comment": "???"
+                },
+                {
+                    "Address": 823,
+                    "Comment": "what the hell do these function calls do?"
+                },
+                {
+                    "Address": 869,
+                    "Comment": "This is a base jump address. \nOffsets are added to this to jump to different parts of the following code"
                 }
             ],
             "DataInfo": [
@@ -48265,7 +48292,22 @@
                     "Address": 869,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_A365"
+                    "Name": "baseJmpAddr_A365"
+                },
+                {
+                    "Address": 877,
+                    "LabelType": 2,
+                    "Name": "label_A36D"
+                },
+                {
+                    "Address": 881,
+                    "LabelType": 2,
+                    "Name": "label_A371"
+                },
+                {
+                    "Address": 926,
+                    "LabelType": 2,
+                    "Name": "label_A39E"
                 },
                 {
                     "Address": 956,
@@ -48296,11 +48338,13 @@
             "CodeInfo": [
                 {
                     "Address": 0,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Get the low byte of the jump address for the graphics code"
                 },
                 {
                     "Address": 3,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Get the high byte of the jump address for the graphics code"
                 },
                 {
                     "Address": 6,
@@ -48308,7 +48352,8 @@
                 },
                 {
                     "Address": 7,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "The jump address is now in IY"
                 },
                 {
                     "Address": 9,
@@ -48742,7 +48787,8 @@
                 },
                 {
                     "Address": 427,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 430,
@@ -50004,7 +50050,7 @@
                 },
                 {
                     "Address": 59,
-                    "Comment": "Enemy state table, where each entry is 13 bytes.\nThere are 4 entries.\nFormat\n0 :\n1 :\n2 : Attribute value. Colour of enemy.\n3 :\n4 :\n5 :\n6 :\n7 :\n8 :\n9 :\n10:\n11:\n12: "
+                    "Comment": "Enemy state table, where each entry is 13 bytes.\nThere are 4 entries.\nFormat\n0 :\n1 :\n2 : Attribute value. Colour of enemy.\n3 :\n4 :\n5 : Low byte of code to jump to in graphics code\n6 : High byte of code to jump to in graphics code\n7 :\n8 :\n9 :\n10:\n11:\n12: "
                 },
                 {
                     "Address": 72,
@@ -50057,6 +50103,12 @@
             ],
             "DataInfo": [
                 {
+                    "Address": 51,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
                     "Address": 55,
                     "DisplayType": 5
                 },
@@ -50072,6 +50124,12 @@
                     "Address": 61,
                     "Comment": "This gets copied from the table at $fc00 using the room number as an index.",
                     "Flags": 128
+                },
+                {
+                    "Address": 64,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 66,
@@ -50096,6 +50154,24 @@
                 {
                     "Address": 71,
                     "Comment": "Fourth byte from enemy def goes here"
+                },
+                {
+                    "Address": 77,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 90,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 103,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
                 }
             ],
             "LabelInfo": [
@@ -58948,6 +59024,14 @@
                 {
                     "Address": 681,
                     "Comment": "Unknown use. Special case for certain rooms"
+                },
+                {
+                    "Address": 971,
+                    "Comment": "???"
+                },
+                {
+                    "Address": 1017,
+                    "Comment": "???"
                 }
             ],
             "DataInfo": [
@@ -75183,7 +75267,8 @@
                 },
                 {
                     "Address": 338,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 3
                 },
                 {
                     "Address": 341,
@@ -75199,7 +75284,8 @@
                 },
                 {
                     "Address": 346,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandType": 1
                 },
                 {
                     "Address": 350,
@@ -75344,6 +75430,14 @@
                 {
                     "Address": 288,
                     "Comment": "Room 72. Starting room"
+                },
+                {
+                    "Address": 414,
+                    "Comment": "9 bytes from the room character map at #ADDR:0x5c00# get copied here.\nNot sure why"
+                },
+                {
+                    "Address": 423,
+                    "Comment": "This table seems to be indexed by bitmap data somehow."
                 }
             ],
             "DataInfo": [
@@ -75411,6 +75505,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "someDataHere_FD9E"
+                },
+                {
+                    "Address": 423,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "unknownTable_fda7"
                 }
             ],
             "PageId": 79
