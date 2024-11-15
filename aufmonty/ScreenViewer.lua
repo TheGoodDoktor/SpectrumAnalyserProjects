@@ -1,6 +1,6 @@
 -- Draw 8x8 character using main character set
 function DrawCharacterToView(graphicsView, charIndex, attrib, x, y)
-
+	print(string.format("%d %d %d", x, y, charIndex))
 	local charPixels = GetMemPtr(globals.CharSet_0 + charIndex * 8)
 	DrawZXBitImage(graphicsView, charPixels, x, y, 1, 1, attrib)
 end
@@ -91,7 +91,7 @@ ScreenViewer =
 		local changed = false
 
 		-- Use ImGui widget for setting screen number to draw
-		changed, self.screenNo = imgui.InputInt("screen number",self.screenNo)
+		changed, self.screenNo = imgui.InputInt("screen number", self.screenNo)
 
 		imgui.Text(string.format("Room data address: $%x", GetRoomAddr(self.screenNo)))
 
@@ -105,7 +105,7 @@ ScreenViewer =
 				self.screenNo = 0
 			end
 			ClearGraphicsView(self.graphicsView, 0)
-			DrawScreenToView(self.graphicsView,self.screenNo, 0, 8)
+			DrawScreenToView(self.graphicsView, self.screenNo, 0, 8)
 		end
 
 		-- Update and draw to screen
