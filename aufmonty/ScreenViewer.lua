@@ -1,6 +1,5 @@
 -- Draw 8x8 character using main character set
 function DrawCharacterToView(graphicsView, charIndex, attrib, x, y)
-	print(string.format("%d %d %d", x, y, charIndex))
 	local charPixels = GetMemPtr(globals.CharSet_0 + charIndex * 8)
 	DrawZXBitImage(graphicsView, charPixels, x, y, 1, 1, attrib)
 end

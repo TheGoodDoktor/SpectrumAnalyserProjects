@@ -3,26 +3,44 @@ function DrawSpriteToView(graphicsView, spriteIndex, attrib, x, y)
 	DrawZXBitImage(graphicsView, spritePixels, x, y, 2, 2, attrib)
 end
 
+-- Draw 8x8 character using current room character set
+function DrawCurRoomCharToView(graphicsView, charIndex, attrib, x, y)
+	--print(string.format("%d %d %d", x, y, charIndex))
+	local charPixels = GetMemPtr(globals.CurScreenCharSet + charIndex * 8)
+	DrawZXBitImage(graphicsView, charPixels, x, y, 1, 1, attrib)
+end
+
+done = false
+
 function DrawCurRoomToView(graphicsView, x, y)
-	curAddr = globals.CurRoomCharMap
+	local curCharMapAddr = globals.CurRoomCharMap
+
+	-- Build attribute lookup table.
+	local attribLUT = {}
+	attribLUT[0] = 0
+	for i = 0, 15 do
+		attribLUT[i + 1] = ReadByte(globals.CurRoomCharSetAttribs + i)
+	end
 
 	for cury = 0, 17 do
 		for curx = 0, 31 do
-			charIndex = ReadByte(curAddr)
-			DrawCharacterToView(graphicsView, charIndex, 0xf, x + curx * 8, y + cury * 8)
-			curAddr = curAddr + 1
+			charIndex = ReadByte(curCharMapAddr)
+			local attrib = attribLUT[charIndex] 
+			DrawCurRoomCharToView(graphicsView, charIndex, attrib, x + curx * 8, y + cury * 8)
+			curCharMapAddr = curCharMapAddr + 1
 		end
 	end
 end
 
+-- Draw the current on-screen enemies.
 function DrawEnemies(graphicsView, x, y)
-	curAddr = globals.EnemyStateTable
+	local curAddr = globals.EnemyStateTable
 
 	for e = 0, 3 do
 		spriteIndex = ReadByte(curAddr + 7)
-		print(string.format("%x %d", curAddr, spriteIndex))
-
-		DrawSpriteToView(graphicsView, spriteIndex, 0xf, x + e * 16, y)
+		--print(string.format("%x %d", curAddr, spriteIndex))
+		local attrib = ReadByte(curAddr + 2)
+		DrawSpriteToView(graphicsView, spriteIndex, attrib, x + e * 16, y)
 		curAddr = curAddr + 13
 	end
 end
@@ -45,6 +63,7 @@ LiveViewer =
 		ClearGraphicsView(self.graphicsView, 0)
 		DrawEnemies(self.graphicsView, 0, 24)
 
+		-- put this in its own viewer?
 		--if changed == true then
 		if true then
 			if self.spriteNo > 255 then
@@ -54,6 +73,8 @@ LiveViewer =
 				self.spriteNo = 0
 			end
 			DrawSpriteToView(self.graphicsView, self.spriteNo, 0xf, 0, 0)
+			--DrawCurRoomCharToView(self.graphicsView, self.spriteNo, 0xf, 0, 48)
+
 			DrawCurRoomToView(self.graphicsView, 0, 48)
 		end
 
