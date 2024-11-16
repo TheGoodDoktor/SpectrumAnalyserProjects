@@ -24,7 +24,7 @@ function DrawCurRoomToView(graphicsView, x, y)
 
 	for cury = 0, 17 do
 		for curx = 0, 31 do
-			charIndex = ReadByte(curCharMapAddr)
+			local charIndex = ReadByte(curCharMapAddr)
 			local attrib = attribLUT[charIndex] 
 			DrawCurRoomCharToView(graphicsView, charIndex, attrib, x + curx * 8, y + cury * 8)
 			curCharMapAddr = curCharMapAddr + 1
@@ -32,18 +32,40 @@ function DrawCurRoomToView(graphicsView, x, y)
 	end
 end
 
--- Draw the current on-screen enemies.
-function DrawEnemies(graphicsView, x, y)
-	local curAddr = globals.EnemyStateTable
+function DrawEntities(graphicsView, x, y)
+	local curAddr = globals.MontyState
 
-	for e = 0, 3 do
-		spriteIndex = ReadByte(curAddr + 7)
+	for e = 0, 4 do
+		local spriteIndex = ReadByte(curAddr + 7)
 		--print(string.format("%x %d", curAddr, spriteIndex))
 		local attrib = ReadByte(curAddr + 2)
 		DrawSpriteToView(graphicsView, spriteIndex, attrib, x + e * 16, y)
 		curAddr = curAddr + 13
 	end
 end
+
+-- Draw the current on-screen enemies.
+-- function DrawEnemies(graphicsView, x, y)
+-- 	local curAddr = globals.EnemyStateTable
+
+-- 	for e = 0, 3 do
+-- 		local spriteIndex = ReadByte(curAddr + 7)
+-- 		--print(string.format("%x %d", curAddr, spriteIndex))
+-- 		local attrib = ReadByte(curAddr + 2)
+-- 		DrawSpriteToView(graphicsView, spriteIndex, attrib, x + e * 16, y)
+-- 		curAddr = curAddr + 13
+-- 	end
+-- end
+
+-- Draw the current on-screen enemies.
+-- function DrawMonty(graphicsView, x, y)
+-- 	local curAddr = globals.MontyState
+
+-- 	local spriteIndex = ReadByte(curAddr + 7)
+-- 	--print(string.format("%x %d", curAddr, spriteIndex))
+-- 	local attrib = ReadByte(curAddr + 2)
+-- 	DrawSpriteToView(graphicsView, spriteIndex, attrib, x, y)
+-- end
 
 LiveViewer = 
 {
@@ -61,8 +83,10 @@ LiveViewer =
 		changed, self.spriteNo = imgui.InputInt("sprite number", self.spriteNo)
 
 		ClearGraphicsView(self.graphicsView, 0)
-		DrawEnemies(self.graphicsView, 0, 24)
-
+		DrawEntities(self.graphicsView, 0, 24)
+		--DrawMonty(self.graphicsView, 0, 24)
+		--DrawEnemies(self.graphicsView, 0, 48)
+		
 		-- put this in its own viewer?
 		--if changed == true then
 		if true then
@@ -75,7 +99,7 @@ LiveViewer =
 			DrawSpriteToView(self.graphicsView, self.spriteNo, 0xf, 0, 0)
 			--DrawCurRoomCharToView(self.graphicsView, self.spriteNo, 0xf, 0, 48)
 
-			DrawCurRoomToView(self.graphicsView, 0, 48)
+			DrawCurRoomToView(self.graphicsView, 0, 72)
 		end
 
 		-- Update and draw to screen

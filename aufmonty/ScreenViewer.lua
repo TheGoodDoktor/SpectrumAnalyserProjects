@@ -74,6 +74,24 @@ function DrawScreenToView(graphicsView, screenNo, x, y)
 		end
 		curAddr = curAddr + 1
 	until dataByte == 0
+
+	-- Draw enemies
+	local roomEnemyPtr = globals.RoomEnemyDefs + screenNo * 16
+	local enemyColPtr = globals.RoomEnemyColours + screenNo * 4
+
+	for e = 0, 3 do
+		local spriteIndex = ReadByte(roomEnemyPtr + 3)
+		if spriteIndex ~= 223 then
+			local positionByte = ReadByte(roomEnemyPtr + 0)
+			local xpos = (positionByte >> 4) * 16
+			local ypos = ((positionByte & 0xf) * 8) + 16
+			--print(string.format("%d %d", xpos, ypos))
+			local attrib = ReadByte(enemyColPtr)
+			DrawSpriteToView(graphicsView, spriteIndex, attrib, x + xpos, y + ypos)
+		end
+		roomEnemyPtr = roomEnemyPtr + 4
+		enemyColPtr = enemyColPtr + 1
+	end
 end
 
 ScreenViewer = 
