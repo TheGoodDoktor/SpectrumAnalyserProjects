@@ -91,6 +91,9 @@ end
 MontyViewer = 
 {
 	name = "Monty Viewer",
+	enemyUpdateType = 0,
+	startingRoom = 72,
+	bInvincibleCheatActive =  0,
 
 	-- add your own viewer members here
 
@@ -106,7 +109,7 @@ MontyViewer =
 		if imgui.Button("Comment enemy defs") then
 			CommentEnemyDefs()
 		end
-		
+
 		if imgui.Button("Comment room enemy colours") then
 			CommentRoomEnemyColours()
 		end
@@ -115,6 +118,28 @@ MontyViewer =
 			CommentRoomNames()
 		end
 
+		local changed = false
+
+		changed, self.enemyUpdateType = imgui.InputInt("Enemy 0 update type", self.enemyUpdateType)
+
+		if changed then
+			SetEditMode(true)
+			WriteByte(0xa443, self.enemyUpdateType)
+		end
+
+		changed, self.startingRoom = imgui.InputInt("Starting room index", self.startingRoom)
+
+		if changed then
+			SetEditMode(true)
+			WriteByte(0x9fc5, self.startingRoom)
+		end
+
+		changed, self.bInvincibleCheatActive = imgui.InputInt("Invincible cheat", self.bInvincibleCheatActive)
+
+		if changed then
+			SetEditMode(true)
+			WriteByte(0xf279, self.bInvincibleCheatActive)
+		end
 	end
 }
 
