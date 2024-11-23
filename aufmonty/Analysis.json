@@ -998,6 +998,12 @@
                     "Name": "dataRom_5C16"
                 },
                 {
+                    "Address": 444,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5DBC"
+                },
+                {
                     "Address": 445,
                     "Global": true,
                     "LabelType": 0,
@@ -31319,13 +31325,6 @@
             ],
             "DataInfo": [
                 {
-                    "Address": 0,
-                    "ByteSize": 2,
-                    "DataType": 5,
-                    "DisplayType": 6,
-                    "GraphicsSetRef": 2145517570
-                },
-                {
                     "Address": 5,
                     "DataType": 5,
                     "DisplayType": 6,
@@ -47046,7 +47045,7 @@
                     "Address": 428,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_95AC"
+                    "Name": "functionCheatRelated_95AC"
                 },
                 {
                     "Address": 439,
@@ -47124,7 +47123,7 @@
                     "Address": 708,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "maybeDrawMontyLifeCounter"
+                    "Name": "DrawLifeCounter"
                 },
                 {
                     "Address": 711,
@@ -47614,7 +47613,7 @@
                 },
                 {
                     "Address": 719,
-                    "Comment": "Each item in the table is 4 bytes"
+                    "Comment": "Each item in the table is 4 bytes.\nMaybe screen address related?"
                 },
                 {
                     "Address": 914,
@@ -48200,7 +48199,8 @@
                 },
                 {
                     "Address": 493,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 3
                 },
                 {
                     "Address": 495,
@@ -60299,7 +60299,8 @@
                 },
                 {
                     "Address": 783,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Flags": 32
                 },
                 {
                     "Address": 786,
@@ -60554,31 +60555,38 @@
                 {
                     "Address": 898,
                     "ByteSize": 3,
+                    "Comment": "Blank 16x16 sprite",
                     "OperandType": 1
                 },
                 {
                     "Address": 901,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 904,
                     "ByteSize": 3,
+                    "Comment": "Erase LHS life counters",
                     "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 907,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 910,
                     "ByteSize": 3,
+                    "Comment": "Erase RHS life counters",
                     "Flags": 8,
                     "OperandType": 2
                 },
                 {
                     "Address": 913,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Monty facing right",
+                    "OperandType": 1
                 },
                 {
                     "Address": 916,
@@ -60587,7 +60595,9 @@
                 },
                 {
                     "Address": 919,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Monty facing left",
+                    "OperandType": 1
                 },
                 {
                     "Address": 922,
@@ -60601,15 +60611,18 @@
                 },
                 {
                     "Address": 928,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 930,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Don't draw anything if we have no lives left"
                 },
                 {
                     "Address": 931,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 933,
@@ -60666,7 +60679,8 @@
                 },
                 {
                     "Address": 952,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Advance x by 16 pixels"
                 },
                 {
                     "Address": 953,
@@ -60682,11 +60696,13 @@
                 },
                 {
                     "Address": 956,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Decrement num lives left to draw"
                 },
                 {
                     "Address": 957,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Return if done"
                 },
                 {
                     "Address": 958,
@@ -60705,14 +60721,79 @@
                     "Address": 963,
                     "ByteSize": 3,
                     "Flags": 2,
+                    "OperandType": 1,
                     "SMC": true
                 },
                 {
                     "Address": 966,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 969,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 971,
+                    "ByteSize": 2,
+                    "Comment": "Draw 6 lives"
+                },
+                {
+                    "Address": 973,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 976,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 979,
+                    "ByteSize": 2,
+                    "OperandType": 5
+                },
+                {
+                    "Address": 981,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 983,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 985,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 987,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 989,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 990,
+                    "ByteSize": 3,
+                    "Comment": "Monty with 2 on",
+                    "OperandType": 1
+                },
+                {
+                    "Address": 993,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 996,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 999,
                     "ByteSize": 2,
                     "OperandType": 2
                 },
@@ -60786,8 +60867,16 @@
                     "Comment": "Unknown use. Special case for certain rooms"
                 },
                 {
+                    "Address": 936,
+                    "Comment": "C = Number of lives to draw"
+                },
+                {
                     "Address": 971,
                     "Comment": "???"
+                },
+                {
+                    "Address": 1001,
+                    "Comment": "Draw set of 3 life counters\nDE = Screen address to write to"
                 },
                 {
                     "Address": 1017,
@@ -61250,6 +61339,11 @@
                     "InstructionAddressRef": 3135700995
                 },
                 {
+                    "Address": 892,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
                     "Address": 938,
                     "DataType": 11,
                     "InstructionAddressRef": 3148480515
@@ -61483,7 +61577,7 @@
                     "Address": 783,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_BB0F"
+                    "Name": "functionThatMaybeDrawsText"
                 },
                 {
                     "Address": 789,
@@ -61569,7 +61663,13 @@
                     "Address": 898,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_BB82"
+                    "Name": "DrawLifeCounters"
+                },
+                {
+                    "Address": 936,
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "DrawLives"
                 },
                 {
                     "Address": 938,
@@ -61580,7 +61680,7 @@
                 {
                     "Address": 944,
                     "LabelType": 2,
-                    "Name": "label_BBB0"
+                    "Name": "drawLife"
                 },
                 {
                     "Address": 963,
@@ -61591,18 +61691,23 @@
                 {
                     "Address": 971,
                     "LabelType": 2,
-                    "Name": "label_BBCB"
+                    "Name": "moreThanSixLives"
+                },
+                {
+                    "Address": 989,
+                    "LabelType": 2,
+                    "Name": "label_BBDD"
                 },
                 {
                     "Address": 1001,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_BBE9"
+                    "Name": "DrawLifeCounterSet"
                 },
                 {
                     "Address": 1003,
                     "LabelType": 2,
-                    "Name": "label_BBEB"
+                    "Name": "drawCounter"
                 }
             ],
             "PageId": 62
@@ -62977,6 +63082,10 @@
                     "Comment": "This is a temporary buffer that holds the char map values for (4,4) to (11,4)"
                 },
                 {
+                    "Address": 596,
+                    "Comment": "Number of lives. Value is obfuscated by having the top bit set."
+                },
+                {
                     "Address": 628,
                     "Comment": "This byte and the following one are compared with each other in the main loop"
                 },
@@ -63132,7 +63241,7 @@
                     "Address": 596,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_F254"
+                    "Name": "NumLives"
                 },
                 {
                     "Address": 597,
