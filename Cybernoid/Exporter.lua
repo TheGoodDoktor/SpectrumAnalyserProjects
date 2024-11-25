@@ -29,7 +29,9 @@ Exporter =
         -- gets called every frame
         imgui.Text("This is for exporting the game graphics")
 
-		
+		if imgui.Button("Import Graphics") then
+			LoadGraphicsViewPNG(self.blockView,"blocks.png")
+		end
 	
 		if imgui.Button("Export Graphics") then
 			SaveGraphicsView2222(self.blockView,"blocks.ag2", false)
