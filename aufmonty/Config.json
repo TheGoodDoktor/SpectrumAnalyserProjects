@@ -3,7 +3,8 @@
     "AsmExportPath": "",
     "LuaSourceFiles": [
         "Viewer.lua",
-        "ScreenViewer.lua"
+        "ScreenViewer.lua",
+        "LiveViewer.lua"
     ],
     "Machine": "",
     "Name": "aufmonty",
@@ -11,23 +12,23 @@
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 46876,
+                "ViewAddress": 47989,
                 "ViewAddressBank": 3
-            },
-            {
-                "Enabled": true,
-                "ViewAddress": 33149,
-                "ViewAddressBank": 3
-            },
-            {
-                "Enabled": true,
-                "ViewAddress": 64644,
-                "ViewAddressBank": 4
             },
             {
                 "Enabled": false,
                 "ViewAddress": 0,
                 "ViewAddressBank": -1
+            },
+            {
+                "Enabled": true,
+                "ViewAddress": 23420,
+                "ViewAddressBank": 2
+            },
+            {
+                "Enabled": true,
+                "ViewAddress": 41523,
+                "ViewAddressBank": 3
             }
         ]
     },
