@@ -1,13 +1,14 @@
 {
     "128KGame": false,
+    "AsmExportPath": "",
     "Machine": "",
     "Name": "Exolon",
     "Options": {
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 0,
-                "ViewAddressBank": -1
+                "ViewAddress": 40623,
+                "ViewAddressBank": 3
             },
             {
                 "Enabled": false,
@@ -26,5 +27,10 @@
             }
         ]
     },
-    "SnapshotFile": "Exolon.z80"
+    "Snapshot": {
+        "DisplayName": "Exolon",
+        "FileName": "Exolon.z80",
+        "ListName": "Snapshot File",
+        "Type": 0
+    }
 }
