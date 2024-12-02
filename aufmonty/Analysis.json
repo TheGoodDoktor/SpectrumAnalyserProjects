@@ -832,7 +832,6 @@
                 {
                     "Address": 890,
                     "ByteSize": 2,
-                    "Comment": "???",
                     "DataType": 2
                 },
                 {
@@ -36768,7 +36767,8 @@
                 },
                 {
                     "Address": 61,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 63,
@@ -36780,7 +36780,8 @@
                 },
                 {
                     "Address": 65,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Multiply by 8"
                 },
                 {
                     "Address": 66,
@@ -37534,6 +37535,7 @@
                 {
                     "Address": 437,
                     "ByteSize": 3,
+                    "Comment": "Reset intro state",
                     "OperandType": 1
                 },
                 {
@@ -38255,6 +38257,10 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 0,
+                    "Comment": "0 = Anthems on\n1 = Music on"
+                },
+                {
                     "Address": 35,
                     "Comment": "A = ?"
                 },
@@ -38384,7 +38390,7 @@
                     "Address": 0,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_8400"
+                    "Name": "bMusicEnabled"
                 },
                 {
                     "Address": 1,
@@ -38423,7 +38429,7 @@
                     "Address": 57,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_8439"
+                    "Name": "maybePlayASound"
                 },
                 {
                     "Address": 69,
@@ -38542,16 +38548,22 @@
                     "Name": "label_857D"
                 },
                 {
+                    "Address": 406,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data24BytesReadOnly"
+                },
+                {
                     "Address": 430,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_85AE"
+                    "Name": "mainMenuIntroRelated"
                 },
                 {
                     "Address": 442,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_85BA"
+                    "Name": "mainMenuIntroRelated2"
                 },
                 {
                     "Address": 476,
@@ -38632,7 +38644,7 @@
                     "Address": 703,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_86BF"
+                    "Name": "mainMenuRelated"
                 },
                 {
                     "Address": 714,
@@ -38808,7 +38820,8 @@
                 },
                 {
                     "Address": 41,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 43,
@@ -38828,7 +38841,8 @@
                 },
                 {
                     "Address": 47,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 49,
@@ -38841,7 +38855,8 @@
                 },
                 {
                     "Address": 52,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 3
                 },
                 {
                     "Address": 54,
@@ -38853,7 +38868,8 @@
                 },
                 {
                     "Address": 56,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 58,
@@ -38901,7 +38917,8 @@
                 },
                 {
                     "Address": 72,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 74,
@@ -38981,7 +38998,8 @@
                 },
                 {
                     "Address": 129,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Read keys H J K L Enter"
                 },
                 {
                     "Address": 131,
@@ -38993,11 +39011,39 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 135,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 136,
+                    "ByteSize": 3,
+                    "Comment": "Set some flag to 0",
+                    "OperandType": 1
+                },
+                {
+                    "Address": 139,
+                    "ByteSize": 1
+                },
+                {
                     "Address": 140,
                     "ByteSize": 2
                 },
                 {
                     "Address": 142,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 143,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 145,
+                    "ByteSize": 3,
+                    "Comment": "Set some flag to 1",
+                    "OperandType": 1
+                },
+                {
+                    "Address": 148,
                     "ByteSize": 1
                 },
                 {
@@ -40568,7 +40614,8 @@
                 },
                 {
                     "Address": 859,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Loop counter"
                 },
                 {
                     "Address": 861,
@@ -40863,7 +40910,27 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 39,
+                    "Comment": "HL = ?\nReturns modified value in HL"
+                },
+                {
+                    "Address": 71,
+                    "Comment": "HL = ?\nReturns modified value in HL.\nUsed in the main menu"
+                },
+                {
                     "Address": 104,
+                    "Comment": "???"
+                },
+                {
+                    "Address": 135,
+                    "Comment": "User pressed K. Turns music anthems on"
+                },
+                {
+                    "Address": 143,
+                    "Comment": "User pressed J. Music on"
+                },
+                {
+                    "Address": 169,
                     "Comment": "???"
                 },
                 {
@@ -40881,6 +40948,10 @@
                 {
                     "Address": 817,
                     "Comment": "Called when Monty is on the ground. "
+                },
+                {
+                    "Address": 855,
+                    "Comment": "L = ?"
                 }
             ],
             "DataInfo": [
@@ -41042,7 +41113,7 @@
                     "Address": 39,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_8827"
+                    "Name": "functionThatModifiesHL_UsedInMainMenu"
                 },
                 {
                     "Address": 60,
@@ -41053,7 +41124,7 @@
                     "Address": 71,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_8847"
+                    "Name": "maybeAdd32ToHL"
                 },
                 {
                     "Address": 78,
@@ -41065,7 +41136,7 @@
                     "Address": 98,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_8862"
+                    "Name": "checkDataByteFlagAndReturnIfSet"
                 },
                 {
                     "Address": 124,
@@ -41077,7 +41148,7 @@
                     "Address": 126,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_887E"
+                    "Name": "ChooseMusicOrAnthems"
                 },
                 {
                     "Address": 140,
@@ -48142,6 +48213,21 @@
                 {
                     "Address": 923,
                     "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 925,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 928,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 931,
+                    "ByteSize": 3,
+                    "Flags": 8,
                     "OperandType": 2
                 },
                 {
