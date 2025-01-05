@@ -101,21 +101,21 @@
             "CodeInfo": [
                 {
                     "Address": 0,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 3,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
                 },
                 {
                     "Address": 6,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
@@ -827,6 +827,7 @@
                 {
                     "Address": 890,
                     "ByteSize": 2,
+                    "Comment": "???",
                     "DataType": 2
                 },
                 {
@@ -39637,11 +39638,12 @@
                 {
                     "Address": 427,
                     "ByteSize": 1,
-                    "Comment": "Get x pos"
+                    "Comment": "Get y pos"
                 },
                 {
                     "Address": 428,
                     "ByteSize": 2,
+                    "Comment": "Query 16 pixels down",
                     "OperandType": 7
                 },
                 {
@@ -39651,11 +39653,12 @@
                 {
                     "Address": 431,
                     "ByteSize": 1,
-                    "Comment": "Get y pos"
+                    "Comment": "Get x pos"
                 },
                 {
                     "Address": 432,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Query 4 pixels to the right"
                 },
                 {
                     "Address": 434,
@@ -41282,18 +41285,18 @@
                     "Comment": "Maybe look at monty position on char map and make decision based on char map value",
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_89A8"
+                    "Name": "doCharMapQuery16PixelsDownAnd4PixelsToTheRight"
                 },
                 {
                     "Address": 431,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_89AF"
+                    "Name": "doCharMapQuery4PixelsToTheRight"
                 },
                 {
                     "Address": 437,
                     "LabelType": 2,
-                    "Name": "label_89B5"
+                    "Name": "doQuery"
                 },
                 {
                     "Address": 492,
@@ -41429,12 +41432,12 @@
                     "Address": 855,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_8B57"
+                    "Name": "maybeQueryCharMap4PixelsToTheRight"
                 },
                 {
                     "Address": 861,
                     "LabelType": 2,
-                    "Name": "label_8B5D"
+                    "Name": "loop"
                 },
                 {
                     "Address": 877,
@@ -41445,7 +41448,7 @@
                     "Address": 885,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_8B75"
+                    "Name": "doCharMapQueryAndCompareResult"
                 },
                 {
                     "Address": 919,
@@ -43082,7 +43085,8 @@
                 },
                 {
                     "Address": 767,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Put result from char map query in A"
                 },
                 {
                     "Address": 768,
@@ -43561,11 +43565,12 @@
                 {
                     "Address": 982,
                     "ByteSize": 2,
-                    "OperandType": 7
+                    "OperandType": 4
                 },
                 {
                     "Address": 984,
                     "ByteSize": 2,
+                    "Comment": "Continue to return char map value if value is >$f (15)",
                     "OperandType": 2
                 },
                 {
@@ -43593,7 +43598,7 @@
                 {
                     "Address": 994,
                     "ByteSize": 2,
-                    "OperandType": 3
+                    "OperandType": 7
                 },
                 {
                     "Address": 996,
@@ -43674,7 +43679,7 @@
                 },
                 {
                     "Address": 950,
-                    "Comment": "Get the screen char map value for a position in screen space. \nH = y position, in screen space.\nL = x position, in screen space.\nReturns char map value in E"
+                    "Comment": "Get the screen char map value for a position in screen space. \nH = y position, in screen space.\nL = x position, in screen space.\nReturns char map value in E.\nNote: this seems to ignore certain char map values."
                 },
                 {
                     "Address": 1006,
@@ -44035,18 +44040,18 @@
                 {
                     "Address": 1003,
                     "LabelType": 2,
-                    "Name": "valueIs<176Or>=180"
+                    "Name": "returnZero"
                 },
                 {
                     "Address": 1006,
                     "LabelType": 2,
-                    "Name": "valueIs>=15"
+                    "Name": "returnValue"
                 },
                 {
                     "Address": 1010,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "LastCharMapQuery"
+                    "Name": "LastCharMapQueryPtr"
                 },
                 {
                     "Address": 1012,
@@ -46015,7 +46020,7 @@
                     "Address": 1004,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "pickupRelatedByte"
+                    "Name": "maybeCurPickupIndex"
                 },
                 {
                     "Address": 1005,
@@ -46778,7 +46783,8 @@
                 },
                 {
                     "Address": 259,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Get result from char map query"
                 },
                 {
                     "Address": 260,
@@ -46847,6 +46853,7 @@
                 {
                     "Address": 283,
                     "ByteSize": 3,
+                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -46907,6 +46914,7 @@
                 {
                     "Address": 304,
                     "ByteSize": 3,
+                    "Comment": "Return address of jump table function",
                     "OperandType": 1
                 },
                 {
@@ -46915,7 +46923,8 @@
                 },
                 {
                     "Address": 308,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Jump to function"
                 },
                 {
                     "Address": 373,
@@ -47807,6 +47816,140 @@
                     "ByteSize": 1
                 },
                 {
+                    "Address": 789,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 791,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 792,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 795,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 796,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 798,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 801,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 802,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 804,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 807,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 808,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 810,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 813,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 815,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 816,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 817,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 818,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 819,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 820,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 821,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 823,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 825,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 827,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 828,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 830,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 831,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 832,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 834,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 835,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 837,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 838,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 840,
+                    "ByteSize": 1
+                },
+                {
                     "Address": 841,
                     "ByteSize": 3,
                     "OperandType": 1
@@ -47986,9 +48129,69 @@
                 {
                     "Address": 1002,
                     "ByteSize": 1
+                },
+                {
+                    "Address": 1003,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 1005,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 1008,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 1009,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 1012,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 1013,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 1015,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 1018,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 1019,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 1020,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 1022,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 1023,
+                    "ByteSize": 3,
+                    "OperandType": 1
                 }
             ],
             "CommentBlocks": [
+                {
+                    "Address": 249,
+                    "Comment": "Check if Monty has picked up an object"
+                },
+                {
+                    "Address": 286,
+                    "Comment": "Call function from pickup jump table.\nUse pickup index as index into table."
+                },
                 {
                     "Address": 491,
                     "Comment": "???"
@@ -48007,11 +48210,15 @@
                 },
                 {
                     "Address": 774,
-                    "Comment": "???"
+                    "Comment": "???\nThe code from here to $9748 is never executed"
                 },
                 {
                     "Address": 876,
                     "Comment": "Each item potentially 4 bytes"
+                },
+                {
+                    "Address": 1003,
+                    "Comment": "???\nThe code from here to $98bd is never executed"
                 }
             ],
             "DataInfo": [
@@ -48039,12 +48246,14 @@
                 {
                     "Address": 311,
                     "ByteSize": 2,
+                    "Comment": "Gun",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 313,
                     "ByteSize": 2,
+                    "Comment": "EC",
                     "DataType": 2,
                     "DisplayType": 2
                 },
@@ -48129,6 +48338,7 @@
                 {
                     "Address": 341,
                     "ByteSize": 2,
+                    "Comment": "Bottle",
                     "DataType": 2,
                     "DisplayType": 2
                 },
@@ -48271,18 +48481,18 @@
                     "Address": 249,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "MainLoopFunc8"
+                    "Name": "UpdatePickups"
                 },
                 {
                     "Address": 282,
                     "LabelType": 2,
-                    "Name": "label_951A"
+                    "Name": "isPickup"
                 },
                 {
                     "Address": 309,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "jumpTable_9535"
+                    "Name": "PickupJumpTable"
                 },
                 {
                     "Address": 373,
@@ -48418,6 +48628,26 @@
                     "Name": "label_9715"
                 },
                 {
+                    "Address": 813,
+                    "LabelType": 2,
+                    "Name": "label_972D"
+                },
+                {
+                    "Address": 815,
+                    "LabelType": 2,
+                    "Name": "label_972F"
+                },
+                {
+                    "Address": 837,
+                    "LabelType": 2,
+                    "Name": "label_9745"
+                },
+                {
+                    "Address": 838,
+                    "LabelType": 2,
+                    "Name": "label_9746"
+                },
+                {
                     "Address": 841,
                     "LabelType": 2,
                     "Name": "label_9749"
@@ -48440,8 +48670,399 @@
         {
             "CodeInfo": [
                 {
-                    "Address": 190,
+                    "Address": 2,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 5,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 6,
                     "ByteSize": 2
+                },
+                {
+                    "Address": 8,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 11,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 14,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 16,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 19,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 22,
+                    "ByteSize": 3,
+                    "OperandType": 7
+                },
+                {
+                    "Address": 25,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 27,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 30,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 31,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 34,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 37,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 39,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 42,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 43,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 45,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 47,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 50,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 53,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 54,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 56,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 57,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 60,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 63,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 66,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 69,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 72,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 75,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 78,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 80,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 83,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 85,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 87,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 89,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 91,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 93,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 95,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 96,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 97,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 98,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 99,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 100,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 101,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 102,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 103,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 105,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 106,
+                    "ByteSize": 3,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 109,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 111,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 112,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 113,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 114,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 115,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 117,
+                    "ByteSize": 3,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 120,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 123,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 124,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 126,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 127,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 130,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 132,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 135,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 137,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 138,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 141,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 144,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 147,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 150,
+                    "ByteSize": 4
+                },
+                {
+                    "Address": 154,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 156,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 159,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 161,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 163,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 166,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 168,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 170,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 171,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 174,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 177,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 180,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 183,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 186,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 189,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 190,
+                    "ByteSize": 2,
+                    "Comment": "Loop counter. 4 enemies"
                 },
                 {
                     "Address": 192,
@@ -48455,11 +49076,13 @@
                 {
                     "Address": 196,
                     "ByteSize": 3,
+                    "Comment": "Get Monty x position",
                     "OperandType": 1
                 },
                 {
                     "Address": 199,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Subtract enemy pos from Monty's"
                 },
                 {
                     "Address": 202,
@@ -48472,7 +49095,8 @@
                 },
                 {
                     "Address": 206,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 208,
@@ -48482,11 +49106,13 @@
                 {
                     "Address": 210,
                     "ByteSize": 3,
+                    "Comment": "Get Monty y position",
                     "OperandType": 1
                 },
                 {
                     "Address": 213,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Subtract enemy pos"
                 },
                 {
                     "Address": 216,
@@ -48499,7 +49125,8 @@
                 },
                 {
                     "Address": 220,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 7
                 },
                 {
                     "Address": 222,
@@ -48508,11 +49135,13 @@
                 },
                 {
                     "Address": 224,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 3
                 },
                 {
                     "Address": 227,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Advance ptr to next enemy"
                 },
                 {
                     "Address": 229,
@@ -48525,11 +49154,13 @@
                 },
                 {
                     "Address": 232,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Get enemy sprite index"
                 },
                 {
                     "Address": 235,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Is this a particular type of enemy"
                 },
                 {
                     "Address": 237,
@@ -48539,6 +49170,7 @@
                 {
                     "Address": 239,
                     "ByteSize": 3,
+                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -48553,6 +49185,262 @@
                     "Address": 245,
                     "ByteSize": 2,
                     "OperandType": 2
+                },
+                {
+                    "Address": 247,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 250,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 251,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 254,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 257,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 260,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 261,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 263,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 265,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 266,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 268,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 270,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 272,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 273,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 275,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 277,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 278,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 280,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 282,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 284,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 285,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 286,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 288,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 290,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 291,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 293,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 295,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 297,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 298,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 300,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 302,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 303,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 305,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 307,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 309,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 310,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 311,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 312,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 314,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 316,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 317,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 319,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 321,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 323,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 324,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 325,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 328,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 330,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 333,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 336,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 339,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 342,
+                    "ByteSize": 3,
+                    "Flags": 8,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 345,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 348,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 350,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 353,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 355,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 358,
+                    "ByteSize": 1
                 },
                 {
                     "Address": 831,
@@ -48726,50 +49614,169 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 190,
+                    "Comment": "IX = EnemyStateTable ptr\nThis function seems to compare Monty's position with all \nenemy positions."
+                },
+                {
                     "Address": 247,
                     "Comment": "???"
+                },
+                {
+                    "Address": 251,
+                    "Comment": "???\nThe code from here to $9966 is never executed."
                 },
                 {
                     "Address": 839,
                     "Comment": "???"
                 }
             ],
+            "DataInfo": [
+                {
+                    "Address": 0,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2550071299
+                },
+                {
+                    "Address": 1,
+                    "DataType": 11,
+                    "InstructionAddressRef": 2550071299
+                }
+            ],
             "LabelInfo": [
+                {
+                    "Address": 42,
+                    "LabelType": 2,
+                    "Name": "label_982A"
+                },
+                {
+                    "Address": 95,
+                    "LabelType": 2,
+                    "Name": "label_985F"
+                },
+                {
+                    "Address": 96,
+                    "LabelType": 2,
+                    "Name": "label_9860"
+                },
+                {
+                    "Address": 97,
+                    "LabelType": 2,
+                    "Name": "label_9861"
+                },
+                {
+                    "Address": 120,
+                    "LabelType": 2,
+                    "Name": "label_9878"
+                },
+                {
+                    "Address": 137,
+                    "LabelType": 2,
+                    "Name": "label_9889"
+                },
+                {
+                    "Address": 138,
+                    "LabelType": 2,
+                    "Name": "label_988A"
+                },
+                {
+                    "Address": 156,
+                    "LabelType": 2,
+                    "Name": "label_989C"
+                },
+                {
+                    "Address": 171,
+                    "LabelType": 2,
+                    "Name": "label_98AB"
+                },
                 {
                     "Address": 190,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_98BE"
+                    "Name": "maybeCompareMontyPosWithEnemies"
                 },
                 {
                     "Address": 196,
                     "LabelType": 2,
-                    "Name": "label_98C4"
+                    "Name": "loop"
                 },
                 {
                     "Address": 206,
                     "LabelType": 2,
-                    "Name": "label_98CE"
+                    "Name": "skipNegForX"
                 },
                 {
                     "Address": 220,
                     "LabelType": 2,
-                    "Name": "label_98DC"
+                    "Name": "skipNegForY"
                 },
                 {
                     "Address": 224,
                     "LabelType": 2,
-                    "Name": "label_98E0"
+                    "Name": "nextEnemy"
                 },
                 {
                     "Address": 232,
                     "LabelType": 2,
-                    "Name": "label_98E8"
+                    "Name": "checkEnemyTypeIsD0"
                 },
                 {
                     "Address": 243,
                     "LabelType": 2,
-                    "Name": "label_98F3"
+                    "Name": "checkEnemyTypeIsD0"
+                },
+                {
+                    "Address": 251,
+                    "LabelType": 2,
+                    "Name": "label_98FB"
+                },
+                {
+                    "Address": 273,
+                    "LabelType": 2,
+                    "Name": "label_9911"
+                },
+                {
+                    "Address": 285,
+                    "LabelType": 2,
+                    "Name": "label_991D"
+                },
+                {
+                    "Address": 298,
+                    "LabelType": 2,
+                    "Name": "label_992A"
+                },
+                {
+                    "Address": 310,
+                    "LabelType": 2,
+                    "Name": "label_9936"
+                },
+                {
+                    "Address": 324,
+                    "LabelType": 2,
+                    "Name": "label_9944"
+                },
+                {
+                    "Address": 359,
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "function_9967"
+                },
+                {
+                    "Address": 441,
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "function_99B9"
+                },
+                {
+                    "Address": 606,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_9A5E"
+                },
+                {
+                    "Address": 828,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_9B3C"
                 },
                 {
                     "Address": 831,
@@ -48796,6 +49803,12 @@
                     "Address": 911,
                     "LabelType": 2,
                     "Name": "checkIsRoom29"
+                },
+                {
+                    "Address": 931,
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "function_9BA3"
                 }
             ],
             "PageId": 54
@@ -49305,6 +50318,18 @@
                 }
             ],
             "LabelInfo": [
+                {
+                    "Address": 8,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_9C08"
+                },
+                {
+                    "Address": 10,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_9C0A"
+                },
                 {
                     "Address": 11,
                     "Global": true,
@@ -51730,6 +52755,12 @@
                     "Name": "GameOverText"
                 },
                 {
+                    "Address": 232,
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "function_A0E8"
+                },
+                {
                     "Address": 359,
                     "Global": true,
                     "LabelType": 1,
@@ -51750,6 +52781,12 @@
                     "Global": true,
                     "LabelType": 1,
                     "Name": "DrawRoomTitleAndStatusArea"
+                },
+                {
+                    "Address": 428,
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "function_A1AC"
                 },
                 {
                     "Address": 447,
@@ -54011,6 +55048,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "EnemyStateTable"
+                },
+                {
+                    "Address": 60,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_A43C"
                 },
                 {
                     "Address": 61,
@@ -65572,6 +66615,12 @@
                     "Name": "MontyStartPos"
                 },
                 {
+                    "Address": 561,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_F231"
+                },
+                {
                     "Address": 562,
                     "Global": true,
                     "LabelType": 0,
@@ -65671,7 +66720,13 @@
                     "Address": 600,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_F258"
+                    "Name": "maybeEnemyTypeMontyHasCollidedWith"
+                },
+                {
+                    "Address": 601,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_F259"
                 },
                 {
                     "Address": 602,
