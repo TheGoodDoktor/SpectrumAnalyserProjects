@@ -3,6 +3,7 @@
         {
             "AddressRef": 2147483651,
             "Format": 0,
+            "LuaHandlerName": "",
             "Name": "FullScreenBuffer",
             "XSizePixels": 256,
             "YSizePixels": 192
@@ -10,13 +11,15 @@
         {
             "AddressRef": 2147483651,
             "Format": 0,
+            "LuaHandlerName": "OffscreenBufferHandler",
             "Name": "CurrentRoomBackground",
-            "XSizePixels": 240,
-            "YSizePixels": 16
+            "XSizePixels": 112,
+            "YSizePixels": 48
         },
         {
             "AddressRef": 2348810243,
             "Format": 0,
+            "LuaHandlerName": "OffscreenBufferHandler",
             "Name": "ActiveRoomDrawBuffer",
             "XSizePixels": 240,
             "YSizePixels": 16
