@@ -45,7 +45,7 @@
         },
         {
             "AddressRef": 1572667394,
-            "CharacterSetRef": 65535,
+            "CharacterSetRef": 2147287042,
             "FlagSet": -1,
             "Height": 18,
             "IgnoreCharacter": 0,
@@ -61,6 +61,7 @@
             "ColourInfo": 0,
             "Dynamic": false,
             "MaskInfo": 0,
+            "Name": "CharSet_0",
             "PaletteNo": -1
         },
         {
@@ -70,6 +71,17 @@
             "ColourInfo": 2,
             "Dynamic": true,
             "MaskInfo": 0,
+            "Name": "CurScreenCharSet",
+            "PaletteNo": -1
+        },
+        {
+            "AddressRef": 2147287042,
+            "AttribsAddressRef": 65535,
+            "BitmapFormat": 0,
+            "ColourInfo": 0,
+            "Dynamic": true,
+            "MaskInfo": 0,
+            "Name": "DynamicCharSet",
             "PaletteNo": -1
         }
     ],
@@ -827,7 +839,6 @@
                 {
                     "Address": 890,
                     "ByteSize": 2,
-                    "Comment": "???",
                     "DataType": 2
                 },
                 {
@@ -989,126 +1000,126 @@
                 {
                     "Address": 445,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 477,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 509,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 541,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 573,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 605,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 637,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 669,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 701,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 733,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 765,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 797,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 829,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 861,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 893,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 925,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 957,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 },
                 {
                     "Address": 989,
                     "ByteSize": 32,
-                    "CharSetAddressRef": 65535,
+                    "CharSetAddressRef": 2147287042,
                     "DataType": 6,
                     "EmptyCharNo": 0
                 }
@@ -31468,6 +31479,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "Bitmap_16x16_255"
+                },
+                {
+                    "Address": 1022,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_7FFE"
                 }
             ],
             "PageId": 47
@@ -31477,9 +31494,7 @@
                 {
                     "Address": 0,
                     "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 2,
-                    "SMC": true
+                    "OperandType": 2
                 }
             ],
             "CommentBlocks": [
@@ -31509,21 +31524,6 @@
                 }
             ],
             "DataInfo": [
-                {
-                    "Address": 0,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2147483651
-                },
-                {
-                    "Address": 1,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2147483651
-                },
-                {
-                    "Address": 2,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2147483651
-                },
                 {
                     "Address": 5,
                     "DataType": 5,
@@ -42239,9 +42239,7 @@
                 {
                     "Address": 354,
                     "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 1,
-                    "SMC": true
+                    "OperandType": 1
                 },
                 {
                     "Address": 357,
@@ -43712,21 +43710,6 @@
                     "Address": 1,
                     "DataType": 11,
                     "InstructionAddressRef": 2348744707
-                },
-                {
-                    "Address": 354,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2372009987
-                },
-                {
-                    "Address": 355,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2372009987
-                },
-                {
-                    "Address": 356,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2372009987
                 },
                 {
                     "Address": 1010,
@@ -45330,9 +45313,7 @@
                 },
                 {
                     "Address": 742,
-                    "ByteSize": 3,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 3
                 },
                 {
                     "Address": 745,
@@ -45340,9 +45321,7 @@
                 },
                 {
                     "Address": 746,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 748,
@@ -45690,31 +45669,6 @@
                     "Address": 594,
                     "ByteSize": 2,
                     "DataType": 2
-                },
-                {
-                    "Address": 742,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2464546819
-                },
-                {
-                    "Address": 743,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2464546819
-                },
-                {
-                    "Address": 744,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2464546819
-                },
-                {
-                    "Address": 746,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2464808963
-                },
-                {
-                    "Address": 747,
-                    "DataType": 11,
-                    "InstructionAddressRef": 2464808963
                 },
                 {
                     "Address": 988,
@@ -61514,6 +61468,10 @@
             ],
             "DataInfo": [
                 {
+                    "Address": 293,
+                    "StructByteOffset": 7
+                },
+                {
                     "Address": 478,
                     "ByteSize": 2,
                     "DataType": 2,
@@ -63557,9 +63515,7 @@
                 {
                     "Address": 743,
                     "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 1,
-                    "SMC": true
+                    "OperandType": 1
                 },
                 {
                     "Address": 746,
@@ -64706,21 +64662,6 @@
                     "Address": 678,
                     "ByteSize": 2,
                     "DataType": 2
-                },
-                {
-                    "Address": 743,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3135700995
-                },
-                {
-                    "Address": 744,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3135700995
-                },
-                {
-                    "Address": 745,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3135700995
                 },
                 {
                     "Address": 892,
@@ -66426,6 +66367,14 @@
                     "Comment": "Room char map data"
                 },
                 {
+                    "Address": 95,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 159,
+                    "StructByteOffset": 2
+                },
+                {
                     "Address": 164,
                     "Comment": "Room char set [16 bytes]"
                 },
@@ -66468,6 +66417,10 @@
                 {
                     "Address": 605,
                     "Comment": "Room char map data"
+                },
+                {
+                    "Address": 799,
+                    "StructByteOffset": 2
                 },
                 {
                     "Address": 802,
