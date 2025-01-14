@@ -122,14 +122,14 @@
                 },
                 {
                     "Address": 9,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 3,
                     "SMC": true
                 },
                 {
                     "Address": 12,
-                    "ByteSize": 3,
+                    "ByteSize": 1,
                     "Flags": 2,
                     "OperandType": 2,
                     "SMC": true
@@ -827,7 +827,6 @@
                 {
                     "Address": 890,
                     "ByteSize": 2,
-                    "Comment": "???",
                     "DataType": 2
                 },
                 {
@@ -31281,7 +31280,7 @@
                     "Address": 0,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "Bitmap_16x16_224"
+                    "Name": "Bitmap_16x16_224_Pickup0"
                 },
                 {
                     "Address": 32,
@@ -40685,7 +40684,7 @@
                 {
                     "Address": 858,
                     "ByteSize": 1,
-                    "Comment": "Add 4 to L"
+                    "Comment": "Add 4 to x position"
                 },
                 {
                     "Address": 859,
@@ -40742,7 +40741,8 @@
                 },
                 {
                     "Address": 878,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Query again 6 pixels to the right"
                 },
                 {
                     "Address": 880,
@@ -41022,11 +41022,15 @@
                 },
                 {
                     "Address": 817,
-                    "Comment": "Called when Monty is on the ground. "
+                    "Comment": "Called when Monty is on the ground or on a ladder.\nIt's possibly setting flags for if he is on solid ground?\nOr maybe it's checking he is near a ledge?\nReturns some flags in C."
                 },
                 {
                     "Address": 855,
                     "Comment": "L = ?"
+                },
+                {
+                    "Address": 963,
+                    "Comment": "A = index into jump table"
                 }
             ],
             "DataInfo": [
@@ -41045,120 +41049,140 @@
                 {
                     "Address": 923,
                     "ByteSize": 2,
+                    "Comment": "0",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 925,
                     "ByteSize": 2,
+                    "Comment": "1",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 927,
                     "ByteSize": 2,
+                    "Comment": "2",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 929,
                     "ByteSize": 2,
+                    "Comment": "3",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 931,
                     "ByteSize": 2,
+                    "Comment": "4",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 933,
                     "ByteSize": 2,
+                    "Comment": "5",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 935,
                     "ByteSize": 2,
+                    "Comment": "6",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 937,
                     "ByteSize": 2,
+                    "Comment": "7",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 939,
                     "ByteSize": 2,
+                    "Comment": "8",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 941,
                     "ByteSize": 2,
+                    "Comment": "9",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 943,
                     "ByteSize": 2,
+                    "Comment": "A",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 945,
                     "ByteSize": 2,
+                    "Comment": "B",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 947,
                     "ByteSize": 2,
+                    "Comment": "C",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 949,
                     "ByteSize": 2,
+                    "Comment": "D",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 951,
                     "ByteSize": 2,
+                    "Comment": "E",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 953,
                     "ByteSize": 2,
+                    "Comment": "F",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 955,
                     "ByteSize": 2,
+                    "Comment": "10",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 957,
                     "ByteSize": 2,
+                    "Comment": "11",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 959,
                     "ByteSize": 2,
+                    "Comment": "12",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 961,
                     "ByteSize": 2,
+                    "Comment": "13",
                     "DataType": 2,
                     "DisplayType": 2
                 }
@@ -41416,7 +41440,7 @@
                     "Address": 817,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "maybeMontyUpdateRelated"
+                    "Name": "queryMontysPosOnCharMapAndReturnFlagsInC"
                 },
                 {
                     "Address": 831,
@@ -41464,7 +41488,7 @@
                 {
                     "Address": 963,
                     "LabelType": 2,
-                    "Name": "label_8BC3"
+                    "Name": "callJumpTable8B9BFunction"
                 },
                 {
                     "Address": 976,
@@ -43695,7 +43719,7 @@
                 },
                 {
                     "Address": 1013,
-                    "Comment": "This potentially stores extra information about Monty's current state. For example, when jumping it stores a counter that is used to determine when the jump ends and the falling begins."
+                    "Comment": "This potentially stores extra information about Monty's current state. \nFor example, when jumping it stores a counter that is used to determine when the jump ends and the falling begins."
                 },
                 {
                     "Address": 1016,
@@ -45670,7 +45694,11 @@
                 },
                 {
                     "Address": 988,
-                    "Comment": "This potentially contains ptrs to all the pickups for the room."
+                    "Comment": "This table stores which pickups the current screen contains.\nThere are a maximum of 4 pickups per screen.\nThe first 4 bytes store the pickup index for each pickup.\n"
+                },
+                {
+                    "Address": 992,
+                    "Comment": "The following 8 bytes are 4 ptrs to the pickup definitions."
                 },
                 {
                     "Address": 1000,
@@ -45678,7 +45706,7 @@
                 },
                 {
                     "Address": 1004,
-                    "Comment": "This seems to be used to index into the room pickup ptr table"
+                    "Comment": "This seems to be used to index into the room pickup ptr table\n0 =\n1 = Bottle\n2 = \n3 =\n"
                 },
                 {
                     "Address": 1005,
@@ -45718,37 +45746,47 @@
                 },
                 {
                     "Address": 988,
-                    "ByteSize": 2,
-                    "DataType": 2,
+                    "Comment": "Pickup 1 index",
                     "DisplayType": 1
                 },
                 {
+                    "Address": 989,
+                    "Comment": "Pickup 2 index"
+                },
+                {
                     "Address": 990,
-                    "ByteSize": 2,
-                    "DataType": 2,
+                    "Comment": "Pickup 3 index",
                     "DisplayType": 1
+                },
+                {
+                    "Address": 991,
+                    "Comment": "Pickup 4 index"
                 },
                 {
                     "Address": 992,
                     "ByteSize": 2,
+                    "Comment": "Pickup 1 ptr",
                     "DataType": 2,
                     "DisplayType": 1
                 },
                 {
                     "Address": 994,
                     "ByteSize": 2,
+                    "Comment": "Pickup 2 ptr",
                     "DataType": 2,
                     "DisplayType": 1
                 },
                 {
                     "Address": 996,
                     "ByteSize": 2,
+                    "Comment": "Pickup 3 ptr",
                     "DataType": 2,
                     "DisplayType": 1
                 },
                 {
                     "Address": 998,
                     "ByteSize": 2,
+                    "Comment": "Pickup 4 ptr",
                     "DataType": 2,
                     "DisplayType": 1
                 }
@@ -45958,6 +45996,16 @@
                     "Name": "function_92CB"
                 },
                 {
+                    "Address": 742,
+                    "LabelType": 0,
+                    "Name": "operand_92E6"
+                },
+                {
+                    "Address": 746,
+                    "LabelType": 0,
+                    "Name": "operand_92EA"
+                },
+                {
                     "Address": 757,
                     "Global": true,
                     "LabelType": 1,
@@ -46008,7 +46056,13 @@
                     "Address": 988,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "RoomPickupTable"
+                    "Name": "RoomPickups"
+                },
+                {
+                    "Address": 992,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "RoomPickupPtrs"
                 },
                 {
                     "Address": 1000,
@@ -46853,7 +46907,6 @@
                 {
                     "Address": 283,
                     "ByteSize": 3,
-                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -46999,7 +47052,8 @@
                 },
                 {
                     "Address": 404,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Multiply by 8"
                 },
                 {
                     "Address": 405,
@@ -47047,7 +47101,8 @@
                 },
                 {
                     "Address": 424,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Multiply by 4"
                 },
                 {
                     "Address": 425,
@@ -48091,8 +48146,7 @@
                 },
                 {
                     "Address": 987,
-                    "ByteSize": 2,
-                    "OperandType": 5
+                    "ByteSize": 2
                 },
                 {
                     "Address": 989,
@@ -48185,12 +48239,28 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 8,
+                    "Comment": "Advance to next pickup entry"
+                },
+                {
+                    "Address": 14,
+                    "Comment": "C = ?\nWrite pickup to room character map.\nWrite pickup info to room pickup table."
+                },
+                {
                     "Address": 249,
                     "Comment": "Check if Monty has picked up an object"
                 },
                 {
                     "Address": 286,
                     "Comment": "Call function from pickup jump table.\nUse pickup index as index into table."
+                },
+                {
+                    "Address": 329,
+                    "Comment": "?"
+                },
+                {
+                    "Address": 373,
+                    "Comment": "Pickup Euro Cheque"
                 },
                 {
                     "Address": 491,
@@ -48240,6 +48310,7 @@
                 {
                     "Address": 309,
                     "ByteSize": 2,
+                    "Comment": "Air",
                     "DataType": 2,
                     "DisplayType": 2
                 },
@@ -48260,42 +48331,49 @@
                 {
                     "Address": 315,
                     "ByteSize": 2,
+                    "Comment": "Mona Lisa",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 317,
                     "ByteSize": 2,
+                    "Comment": "Wine",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 319,
                     "ByteSize": 2,
+                    "Comment": "Toolkit",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 321,
                     "ByteSize": 2,
+                    "Comment": "Clock",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 323,
                     "ByteSize": 2,
+                    "Comment": "Football",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 325,
                     "ByteSize": 2,
+                    "Comment": "Record",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 327,
                     "ByteSize": 2,
+                    "Comment": "Beer",
                     "DataType": 2,
                     "DisplayType": 2
                 },
@@ -48308,30 +48386,35 @@
                 {
                     "Address": 331,
                     "ByteSize": 2,
+                    "Comment": "Bacon",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 333,
                     "ByteSize": 2,
+                    "Comment": "Steering wheel",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 335,
                     "ByteSize": 2,
+                    "Comment": "Ice cream. Extra life",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 337,
                     "ByteSize": 2,
+                    "Comment": "Crown",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 339,
                     "ByteSize": 2,
+                    "Comment": "Cloak",
                     "DataType": 2,
                     "DisplayType": 2
                 },
@@ -48345,6 +48428,7 @@
                 {
                     "Address": 343,
                     "ByteSize": 2,
+                    "Comment": "Cherries. Extra life",
                     "DataType": 2,
                     "DisplayType": 2
                 },
@@ -48357,6 +48441,7 @@
                 {
                     "Address": 347,
                     "ByteSize": 2,
+                    "Comment": "Tulips",
                     "DataType": 2,
                     "DisplayType": 2
                 },
@@ -48369,6 +48454,7 @@
                 {
                     "Address": 351,
                     "ByteSize": 2,
+                    "Comment": "Tennis racket",
                     "DataType": 2,
                     "DisplayType": 2
                 },
@@ -48381,54 +48467,63 @@
                 {
                     "Address": 355,
                     "ByteSize": 2,
+                    "Comment": "Tennis ball",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 357,
                     "ByteSize": 2,
+                    "Comment": "Chefs hat",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 359,
                     "ByteSize": 2,
+                    "Comment": "Parcel?",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 361,
                     "ByteSize": 2,
+                    "Comment": "Pig",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 363,
                     "ByteSize": 2,
+                    "Comment": "Rabbit",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 365,
                     "ByteSize": 2,
+                    "Comment": "Garlic",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 367,
                     "ByteSize": 2,
+                    "Comment": "Cocktail",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 369,
                     "ByteSize": 2,
+                    "Comment": "Cheese",
                     "DataType": 2,
                     "DisplayType": 2
                 },
                 {
                     "Address": 371,
                     "ByteSize": 2,
+                    "Comment": "Beret",
                     "DataType": 2,
                     "DisplayType": 2
                 },
@@ -48453,18 +48548,18 @@
                 {
                     "Address": 1,
                     "LabelType": 2,
-                    "Name": "findNextRoom"
+                    "Name": "compareRoom"
                 },
                 {
                     "Address": 8,
                     "LabelType": 2,
-                    "Name": "roomNotFound"
+                    "Name": "nextPickup"
                 },
                 {
                     "Address": 14,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "bigFunctionMaybeCharMapRelated"
+                    "Name": "PlacePickup"
                 },
                 {
                     "Address": 112,
@@ -48498,13 +48593,13 @@
                     "Address": 373,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_9575"
+                    "Name": "PickupEC"
                 },
                 {
                     "Address": 387,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "pickupRelated_9583"
+                    "Name": "PickupCrownEtc"
                 },
                 {
                     "Address": 408,
@@ -48516,7 +48611,7 @@
                     "Address": 428,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "functionCheatRelated_95AC"
+                    "Name": "PickupGun"
                 },
                 {
                     "Address": 439,
@@ -48549,7 +48644,7 @@
                     "Address": 515,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "loadA3IntoDataByte"
+                    "Name": "maybePickupCloak"
                 },
                 {
                     "Address": 521,
@@ -48573,7 +48668,7 @@
                     "Address": 556,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "maybeTryPickupObject"
+                    "Name": "PickupInventoryObject"
                 },
                 {
                     "Address": 564,
@@ -50209,7 +50304,7 @@
             "CommentBlocks": [
                 {
                     "Address": 11,
-                    "Comment": "This looks like a table of pickups for each screen.\nThere are 236 entries in the table.\nEach entry is 3 bytes.\n\nByte 0: Room number. If bit 7 is set the pickup has been collected.\nByte 1:\nByte 2:\n\nWhen a room is initialised it searches through the table to find the pickups for the room."
+                    "Comment": "This looks like a table of pickups for each screen.\nThere are 236 entries in the table.\nEach entry is 3 bytes.\n\nByte 0: Room number. If bit 7 is set the pickup has been collected.\nByte 1: UUUPPPPP U = ?, P = Pickup index\nByte 2:\n\nWhen a room is initialised it searches through the table to find the pickups for the room."
                 },
                 {
                     "Address": 719,
@@ -50302,6 +50397,42 @@
                 },
                 {
                     "Address": 22,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 23,
+                    "Comment": "(third room)"
+                },
+                {
+                    "Address": 24,
+                    "Comment": "EC",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 26,
+                    "Comment": "(third room)"
+                },
+                {
+                    "Address": 27,
+                    "Comment": "EC",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 29,
+                    "Comment": "(third room)"
+                },
+                {
+                    "Address": 30,
+                    "Comment": "EC",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 32,
+                    "Comment": "(third room)"
+                },
+                {
+                    "Address": 33,
+                    "Comment": "EC",
                     "DisplayType": 5
                 },
                 {
@@ -50498,7 +50629,6 @@
                 {
                     "Address": 55,
                     "ByteSize": 3,
-                    "Comment": "???",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -50517,7 +50647,6 @@
                 {
                     "Address": 64,
                     "ByteSize": 3,
-                    "Comment": "???",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -50734,6 +50863,7 @@
                 {
                     "Address": 183,
                     "ByteSize": 3,
+                    "Comment": "EC",
                     "Flags": 32,
                     "OperandType": 1
                 },
@@ -52548,14 +52678,6 @@
                 {
                     "Address": 46,
                     "Comment": "If I comment this out, Monty's controls dont work"
-                },
-                {
-                    "Address": 52,
-                    "Comment": "If I comment this out stompers stop working"
-                },
-                {
-                    "Address": 58,
-                    "Comment": "If I comment this out all graphics stop updating.\nWhen I enter a new room, this will draw the background and objects."
                 },
                 {
                     "Address": 61,
@@ -56178,6 +56300,10 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 689,
+                    "ByteSize": 2
+                },
+                {
                     "Address": 691,
                     "ByteSize": 2
                 },
@@ -56593,10 +56719,79 @@
                     "ByteSize": 1
                 },
                 {
+                    "Address": 919,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 921,
+                    "ByteSize": 3
+                },
+                {
                     "Address": 924,
                     "ByteSize": 3,
                     "Flags": 8,
                     "OperandType": 2
+                },
+                {
+                    "Address": 927,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 930,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 931,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 932,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 935,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 938,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 940,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 942,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 944,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 948,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 951,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 953,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 956,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 959,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 962,
+                    "ByteSize": 1
                 },
                 {
                     "Address": 963,
@@ -58175,6 +58370,11 @@
                     "Global": true,
                     "LabelType": 1,
                     "Name": "EnemyMovementFunc13"
+                },
+                {
+                    "Address": 948,
+                    "LabelType": 2,
+                    "Name": "label_ABB4"
                 },
                 {
                     "Address": 963,
@@ -62821,7 +63021,8 @@
                 },
                 {
                     "Address": 386,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "Return if no stomper in the room"
                 },
                 {
                     "Address": 387,
@@ -63655,6 +63856,15 @@
                     "OperandType": 2
                 },
                 {
+                    "Address": 775,
+                    "ByteSize": 2
+                },
+                {
+                    "Address": 777,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
                     "Address": 779,
                     "ByteSize": 1
                 },
@@ -64232,6 +64442,10 @@
                     "Comment": "This is used when setting up a room.\nIt looks like a table of special case rooms, with extra data of unknown use.\nEach entry format: \n0   : Room number\n1   : ?\n2-3 : Offset into cur screen char map. Unknown use."
                 },
                 {
+                    "Address": 611,
+                    "Comment": "Detect if Monty has collided with a stomper."
+                },
+                {
                     "Address": 676,
                     "Comment": "Potentially stomper vertical position.\nSome flag stored in top bit?"
                 },
@@ -64241,7 +64455,7 @@
                 },
                 {
                     "Address": 678,
-                    "Comment": "Unknown use. Special case for certain rooms"
+                    "Comment": "Address on character map of stomper location.\nIf no stomper in the room, this will be 0000."
                 },
                 {
                     "Address": 681,
@@ -64705,7 +64919,8 @@
                 {
                     "Address": 678,
                     "ByteSize": 2,
-                    "DataType": 2
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 743,
@@ -64785,7 +65000,7 @@
                     "Address": 381,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "MainLoopFunc4"
+                    "Name": "UpdateStomperMovement"
                 },
                 {
                     "Address": 403,
@@ -64852,7 +65067,7 @@
                     "Address": 611,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "MainLoopFunc5"
+                    "Name": "UpdateStomperCollision"
                 },
                 {
                     "Address": 661,
@@ -64875,7 +65090,7 @@
                     "Address": 678,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "charMapPtr_BAA6"
+                    "Name": "stomperCharMapPtr"
                 },
                 {
                     "Address": 680,
@@ -64951,6 +65166,11 @@
                     "Address": 764,
                     "LabelType": 2,
                     "Name": "greaterEq10"
+                },
+                {
+                    "Address": 768,
+                    "LabelType": 2,
+                    "Name": "label_BB00"
                 },
                 {
                     "Address": 779,
@@ -66532,7 +66752,7 @@
                 },
                 {
                     "Address": 628,
-                    "Comment": "This byte and the following one are compared with each other in the main loop"
+                    "Comment": "This byte and the following one are compared with each other in the main loop.\nIt gets incremented when certain pcikups are collected."
                 },
                 {
                     "Address": 633,
