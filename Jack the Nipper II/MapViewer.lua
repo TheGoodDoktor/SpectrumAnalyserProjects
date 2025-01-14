@@ -14,7 +14,7 @@ function MapViewer:Init()
 
 	ClearGraphicsView(self.graphicsView, 0xff000000)
 	
-for y=0,5 do
+	for y=0,5 do
 		for x=0,31 do
 			local xp = x * 16
 			--ClearGraphicsView(self.screenView, 0)

@@ -1,17 +1,15 @@
--- Basic viewer template
-
--- rename this
-BasicViewer = 
+-- JN2 Exporter routines
+JN2Exporter = 
 {
     name = "Exporter",  -- rename
 
     -- add your own viewer members here
     
     onAdd = function(self)
-        -- gets called when view is added
+		-- gets called when view is added
 		self.blockView = CreateZXGraphicsView(32,32 * 200)
 		ClearGraphicsView(self.blockView,0)
-		for blockNo = 0,200 do
+		for blockNo = 0,199 do
 			DrawBlockToView(self.blockView,blockNo,0,blockNo * 32)
 		end
     end,
@@ -30,4 +28,4 @@ BasicViewer =
 }
 
 -- add viewer when file gets loaded
-AddViewer(BasicViewer);
+AddViewer(JN2Exporter);
