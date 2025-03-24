@@ -1,4 +1,4 @@
-OffscreenBufferHandler = {}
+OffscreenBufferHandler = { name = "RanaramaOSB" }
 
 function OffscreenBufferHandler.Draw(graphicsView, address, xSize, ySize)
     -- Draw logic here
@@ -22,3 +22,4 @@ function OffscreenBufferHandler:GetAddressOffsetFromPos(x, y, xSize, ySize)
 	return (x / 8) + (y * xSizeChars);
 end
 
+RegisterOffscreenBufferHandler(OffscreenBufferHandler)
