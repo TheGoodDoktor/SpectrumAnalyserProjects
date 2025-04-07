@@ -1482,6 +1482,25 @@
                 2983985155
             ],
             "Name": "function_B1CD",
+            "Params": [
+                {
+                    "DisplayType": "XCharPos",
+                    "Name": "X Char Pos",
+                    "Source": 2
+                },
+                {
+                    "DisplayType": "YPos",
+                    "Name": "Y Pixel Pos",
+                    "Source": 1
+                }
+            ],
+            "ReturnValues": [
+                {
+                    "DisplayType": "Address",
+                    "Name": "FlagMapAddr",
+                    "Source": 9
+                }
+            ],
             "StartAddress": 2983002115,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1490,6 +1509,25 @@
             "Description": "",
             "EndAddress": 2984050691,
             "Name": "function_B1DD",
+            "Params": [
+                {
+                    "DisplayType": "XCharPos",
+                    "Name": "X Pos Chars",
+                    "Source": 2
+                },
+                {
+                    "DisplayType": "YPos",
+                    "Name": "Y Pixel Pos",
+                    "Source": 1
+                }
+            ],
+            "ReturnValues": [
+                {
+                    "DisplayType": "Address",
+                    "Name": "AtrribAddress",
+                    "Source": 9
+                }
+            ],
             "StartAddress": 2984050691,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1521,6 +1559,13 @@
                 2987786243
             ],
             "Name": "function_B1F8",
+            "ReturnValues": [
+                {
+                    "DisplayType": "Unknown",
+                    "Name": "NoSolidSquares",
+                    "Source": 0
+                }
+            ],
             "StartAddress": 2985820163,
             "bManualEdit": false,
             "bROMFunction": false
@@ -8241,6 +8286,10 @@
                     "Address": 669,
                     "ByteSize": 2,
                     "DataType": 2
+                },
+                {
+                    "Address": 671,
+                    "Flags": 128
                 },
                 {
                     "Address": 675,
@@ -33567,7 +33616,7 @@
                 {
                     "Address": 206,
                     "ByteSize": 3,
-                    "Flags": 8,
+                    "Flags": 40,
                     "OperandType": 2
                 },
                 {
@@ -34311,7 +34360,8 @@
                 },
                 {
                     "Address": 512,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 513,
@@ -34538,13 +34588,14 @@
                 {
                     "Address": 615,
                     "ByteSize": 2,
+                    "Flags": 32,
                     "OperandType": 2
                 },
                 {
                     "Address": 617,
                     "ByteSize": 3,
                     "Comment": "clear intro text",
-                    "Flags": 8,
+                    "Flags": 40,
                     "OperandType": 2
                 },
                 {
@@ -35735,6 +35786,7 @@
                 {
                     "Address": 97,
                     "ByteSize": 3,
+                    "Flags": 32,
                     "OperandType": 7
                 },
                 {
@@ -37011,7 +37063,8 @@
                 },
                 {
                     "Address": 758,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 32
                 },
                 {
                     "Address": 760,
@@ -37896,7 +37949,8 @@
                 {
                     "Address": 55,
                     "ByteSize": 3,
-                    "Comment": "read player control bits"
+                    "Comment": "read player control bits",
+                    "Flags": 32
                 },
                 {
                     "Address": 58,
@@ -41464,7 +41518,7 @@
                 {
                     "Address": 618,
                     "ByteSize": 3,
-                    "Flags": 8,
+                    "Flags": 40,
                     "OperandType": 2
                 },
                 {
@@ -46449,7 +46503,8 @@
                 {
                     "Address": 726,
                     "ByteSize": 3,
-                    "Comment": "get player state"
+                    "Comment": "get player state",
+                    "Flags": 32
                 },
                 {
                     "Address": 729,
@@ -46461,13 +46516,14 @@
                     "Address": 731,
                     "ByteSize": 3,
                     "Comment": "look up function from function ptr table",
-                    "Flags": 8,
+                    "Flags": 40,
                     "OperandType": 2
                 },
                 {
                     "Address": 734,
                     "ByteSize": 1,
-                    "Comment": "get ptr from LUT"
+                    "Comment": "get ptr from LUT",
+                    "Flags": 32
                 },
                 {
                     "Address": 735,
@@ -47244,11 +47300,11 @@
                 },
                 {
                     "Address": 802,
-                    "Comment": "A : animation index\nReturns:\nDE : ptr to animation sprite \nB : sprite width in chars\nC : sprite height in pixels\n"
+                    "Comment": "A : sprite index\nReturns:\nDE : ptr to animation sprite \nB : sprite width in chars\nC : sprite height in pixels\n"
                 },
                 {
                     "Address": 831,
-                    "Comment": "A - animation index"
+                    "Comment": "A - sprite index"
                 }
             ],
             "DataInfo": [
@@ -48784,11 +48840,13 @@
                 },
                 {
                     "Address": 394,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 395,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get sprite index"
                 },
                 {
                     "Address": 398,
@@ -48802,7 +48860,8 @@
                 },
                 {
                     "Address": 402,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get y pixel pos"
                 },
                 {
                     "Address": 405,
@@ -48818,7 +48877,8 @@
                 },
                 {
                     "Address": 408,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get x char pos"
                 },
                 {
                     "Address": 411,
@@ -48828,7 +48888,8 @@
                 },
                 {
                     "Address": 414,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get sprite index"
                 },
                 {
                     "Address": 417,
@@ -48839,6 +48900,7 @@
                 {
                     "Address": 420,
                     "ByteSize": 3,
+                    "Comment": "store sprite width in operand",
                     "OperandType": 1
                 },
                 {
@@ -48868,12 +48930,14 @@
                 {
                     "Address": 430,
                     "ByteSize": 2,
+                    "Comment": "loop counter",
                     "Flags": 2,
                     "SMC": true
                 },
                 {
                     "Address": 432,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 433,
@@ -48911,7 +48975,7 @@
                 {
                     "Address": 443,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 446,
@@ -48964,7 +49028,8 @@
                 },
                 {
                     "Address": 461,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 462,
@@ -49004,7 +49069,8 @@
                 },
                 {
                     "Address": 473,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set high byte of #ADDR:0x5C00#"
                 },
                 {
                     "Address": 475,
@@ -49016,7 +49082,8 @@
                 },
                 {
                     "Address": 477,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 478,
@@ -49056,7 +49123,8 @@
                 },
                 {
                     "Address": 489,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "set high byte of #ADDR:0x5800#"
                 },
                 {
                     "Address": 491,
@@ -49095,11 +49163,13 @@
                 {
                     "Address": 504,
                     "ByteSize": 3,
-                    "Comment": "get player Y pixel position"
+                    "Comment": "get player Y pixel position",
+                    "Flags": 32
                 },
                 {
                     "Address": 507,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "for line below"
                 },
                 {
                     "Address": 509,
@@ -49133,20 +49203,24 @@
                 },
                 {
                     "Address": 523,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "reset counter"
                 },
                 {
                     "Address": 525,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check bit 6 (solid)"
                 },
                 {
                     "Address": 527,
                     "ByteSize": 2,
+                    "Comment": "jump if not set",
                     "OperandType": 2
                 },
                 {
                     "Address": 529,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "inc counter if it is"
                 },
                 {
                     "Address": 530,
@@ -49167,11 +49241,13 @@
                 },
                 {
                     "Address": 535,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Y pixel Pos"
                 },
                 {
                     "Address": 538,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "X Char Pos"
                 },
                 {
                     "Address": 541,
@@ -49721,7 +49797,8 @@
                 {
                     "Address": 800,
                     "ByteSize": 1,
-                    "Comment": "read offset to next item in BC"
+                    "Comment": "read offset to next item in BC",
+                    "Flags": 32
                 },
                 {
                     "Address": 801,
@@ -49743,6 +49820,7 @@
                     "Address": 805,
                     "ByteSize": 3,
                     "Comment": "read pointer",
+                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -49752,7 +49830,8 @@
                 {
                     "Address": 809,
                     "ByteSize": 1,
-                    "Comment": "return if A is zero"
+                    "Comment": "return if A is zero",
+                    "Flags": 32
                 },
                 {
                     "Address": 810,
@@ -50687,6 +50766,11 @@
                     "Name": "not_foreground"
                 },
                 {
+                    "Address": 383,
+                    "LabelType": 0,
+                    "Name": "operand_B17F"
+                },
+                {
                     "Address": 394,
                     "Global": true,
                     "LabelType": 1,
@@ -50698,9 +50782,14 @@
                     "Name": "label_B1AC"
                 },
                 {
+                    "Address": 430,
+                    "LabelType": 0,
+                    "Name": "operand_SpriteCharWidth"
+                },
+                {
                     "Address": 432,
                     "LabelType": 2,
-                    "Name": "label_B1B0"
+                    "Name": "sprite_char_loop"
                 },
                 {
                     "Address": 451,
@@ -50712,13 +50801,13 @@
                     "Address": 461,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_B1CD"
+                    "Name": "GetRoomFlagMapAddress"
                 },
                 {
                     "Address": 477,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_B1DD"
+                    "Name": "GetAttributeAddress"
                 },
                 {
                     "Address": 493,
@@ -50730,17 +50819,17 @@
                     "Address": 504,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_B1F8"
+                    "Name": "CheckCollisionBelowPlayer"
                 },
                 {
                     "Address": 525,
                     "LabelType": 2,
-                    "Name": "label_B20D"
+                    "Name": "h_loop"
                 },
                 {
                     "Address": 530,
                     "LabelType": 2,
-                    "Name": "label_B212"
+                    "Name": "bit_not_set"
                 },
                 {
                     "Address": 535,
@@ -52343,7 +52432,8 @@
                 },
                 {
                     "Address": 533,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 534,
@@ -52421,7 +52511,8 @@
                 },
                 {
                     "Address": 554,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 555,
@@ -53510,7 +53601,7 @@
                 {
                     "Address": 983,
                     "ByteSize": 3,
-                    "Flags": 8,
+                    "Flags": 40,
                     "OperandType": 2
                 },
                 {
@@ -54161,6 +54252,7 @@
                 {
                     "Address": 20,
                     "ByteSize": 2,
+                    "Flags": 32,
                     "OperandType": 5
                 },
                 {
@@ -54481,7 +54573,8 @@
                 {
                     "Address": 139,
                     "ByteSize": 2,
-                    "Comment": "check if A is ff"
+                    "Comment": "check if A is ff",
+                    "Flags": 32
                 },
                 {
                     "Address": 141,
@@ -55628,7 +55721,8 @@
                 },
                 {
                     "Address": 622,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 623,
@@ -56409,6 +56503,7 @@
                 {
                     "Address": 937,
                     "ByteSize": 4,
+                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -57205,7 +57300,8 @@
                 {
                     "Address": 98,
                     "ByteSize": 3,
-                    "Comment": "get popup state"
+                    "Comment": "get popup state",
+                    "Flags": 32
                 },
                 {
                     "Address": 101,
@@ -57239,7 +57335,8 @@
                 },
                 {
                     "Address": 117,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Flags": 32
                 },
                 {
                     "Address": 120,
@@ -57304,7 +57401,8 @@
                 {
                     "Address": 141,
                     "ByteSize": 1,
-                    "Comment": "fetch byte"
+                    "Comment": "fetch byte",
+                    "Flags": 32
                 },
                 {
                     "Address": 142,
@@ -57351,7 +57449,8 @@
                 },
                 {
                     "Address": 155,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 156,
@@ -62644,6 +62743,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_CF0E"
+                },
+                {
+                    "Address": 783,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_CF0F"
                 },
                 {
                     "Address": 786,
