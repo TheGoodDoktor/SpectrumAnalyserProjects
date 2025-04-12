@@ -576,8 +576,18 @@
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2754019331,
+                    "FunctionAddr": 2734948355,
+                    "ReturnAddr": 2754215939
+                }
+            ],
             "Description": "",
-            "EndAddress": 2753495043,
+            "EndAddress": 2754347011,
+            "ExitPoints": [
+                2754347011
+            ],
             "Name": "function_A41F",
             "StartAddress": 2753495043,
             "bManualEdit": false,
@@ -1334,6 +1344,13 @@
                 2950037507
             ],
             "Name": "function_AF4C",
+            "Params": [
+                {
+                    "DisplayType": "Address",
+                    "Name": "UnknownPtr",
+                    "Source": 10
+                }
+            ],
             "StartAddress": 2940993539,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1392,6 +1409,18 @@
                 2963734531
             ],
             "Name": "function_B050",
+            "Params": [
+                {
+                    "DisplayType": "Address",
+                    "Name": "SpriteAddress",
+                    "Source": 8
+                },
+                {
+                    "DisplayType": "Address",
+                    "Name": "ScreenAddress",
+                    "Source": 9
+                }
+            ],
             "StartAddress": 2958032899,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1403,6 +1432,18 @@
                 2967666691
             ],
             "Name": "function_B0A8",
+            "Params": [
+                {
+                    "DisplayType": "Address",
+                    "Name": "SpriteLinePtr",
+                    "Source": 8
+                },
+                {
+                    "DisplayType": "Address",
+                    "Name": "ScreenDestPtr",
+                    "Source": 9
+                }
+            ],
             "StartAddress": 2963800067,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3427,6 +3468,7 @@
                 {
                     "Address": 1010,
                     "ByteSize": 2,
+                    "Comment": "push screen address",
                     "DataType": 2
                 },
                 {
@@ -3603,7 +3645,7 @@
                     "Address": 711,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_62C7"
+                    "Name": "ForeGCharMaskPtr"
                 },
                 {
                     "Address": 713,
@@ -3615,7 +3657,7 @@
                     "Address": 714,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_62CA"
+                    "Name": "CurrentForeGCharMask"
                 },
                 {
                     "Address": 715,
@@ -46870,7 +46912,8 @@
                 },
                 {
                     "Address": 844,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 32
                 },
                 {
                     "Address": 846,
@@ -46879,7 +46922,8 @@
                 },
                 {
                     "Address": 849,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "IX -> DE"
                 },
                 {
                     "Address": 851,
@@ -46888,11 +46932,12 @@
                 {
                     "Address": 852,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 4
                 },
                 {
                     "Address": 855,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "offset from player state"
                 },
                 {
                     "Address": 856,
@@ -46906,7 +46951,7 @@
                 {
                     "Address": 860,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 3
                 },
                 {
                     "Address": 863,
@@ -47888,7 +47933,8 @@
                 },
                 {
                     "Address": 80,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 81,
@@ -47921,19 +47967,23 @@
                 },
                 {
                     "Address": 92,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read pixel line"
                 },
                 {
                     "Address": 93,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "invert"
                 },
                 {
                     "Address": 94,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "AND with background"
                 },
                 {
                     "Address": 95,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write back"
                 },
                 {
                     "Address": 96,
@@ -48164,11 +48214,13 @@
                 },
                 {
                     "Address": 168,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 169,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "push screen address"
                 },
                 {
                     "Address": 170,
@@ -48189,24 +48241,29 @@
                 },
                 {
                     "Address": 176,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check mask"
                 },
                 {
                     "Address": 178,
                     "ByteSize": 2,
+                    "Comment": "skip if set",
                     "OperandType": 2
                 },
                 {
                     "Address": 180,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch pixel line"
                 },
                 {
                     "Address": 181,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "or with background"
                 },
                 {
                     "Address": 182,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write to screen"
                 },
                 {
                     "Address": 183,
@@ -48227,15 +48284,18 @@
                 },
                 {
                     "Address": 189,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch pixel line"
                 },
                 {
                     "Address": 190,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "or with background"
                 },
                 {
                     "Address": 191,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write to screen"
                 },
                 {
                     "Address": 192,
@@ -48256,11 +48316,13 @@
                 },
                 {
                     "Address": 198,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch pixel line"
                 },
                 {
                     "Address": 199,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "OR with background"
                 },
                 {
                     "Address": 200,
@@ -48318,15 +48380,18 @@
                 },
                 {
                     "Address": 216,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "fetch sprite pixel line"
                 },
                 {
                     "Address": 217,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "OR with screen"
                 },
                 {
                     "Address": 218,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write to screen"
                 },
                 {
                     "Address": 219,
@@ -48338,7 +48403,8 @@
                 },
                 {
                     "Address": 221,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "restore screen ptr"
                 },
                 {
                     "Address": 222,
@@ -48346,7 +48412,8 @@
                 },
                 {
                     "Address": 223,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "inc y pos"
                 },
                 {
                     "Address": 224,
@@ -48354,11 +48421,14 @@
                 },
                 {
                     "Address": 225,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check bottom 3 bits",
+                    "OperandType": 5
                 },
                 {
                     "Address": 227,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "return if not 0"
                 },
                 {
                     "Address": 228,
@@ -50460,6 +50530,14 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 80,
+                    "Comment": "Mask out background for drawing sprite pixels"
+                },
+                {
+                    "Address": 228,
+                    "Comment": "handle crossing char boundary"
+                },
+                {
                     "Address": 351,
                     "Comment": "DE : offset to screen char map\nB : height in chars\nC : width in chars"
                 },
@@ -50608,52 +50686,62 @@
                     "Address": 80,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_B050"
+                    "Name": "MaskOutSpritePixelLine"
                 },
                 {
                     "Address": 86,
                     "LabelType": 0,
-                    "Name": "operand_B056"
+                    "Name": "operand_pixelLineJump"
                 },
                 {
                     "Address": 88,
                     "LabelType": 2,
-                    "Name": "label_B058"
+                    "Name": "pixel_line_1"
                 },
                 {
                     "Address": 96,
                     "LabelType": 2,
-                    "Name": "label_B060"
+                    "Name": "skip_pixel_line_1"
                 },
                 {
                     "Address": 98,
                     "LabelType": 2,
-                    "Name": "label_B062"
+                    "Name": "pixel_line_2"
                 },
                 {
                     "Address": 106,
                     "LabelType": 2,
-                    "Name": "label_B06A"
+                    "Name": "skip_pixel_line_2"
                 },
                 {
                     "Address": 108,
                     "LabelType": 2,
-                    "Name": "label_B06C"
+                    "Name": "pixel_line_3"
                 },
                 {
                     "Address": 116,
                     "LabelType": 2,
-                    "Name": "label_B074"
+                    "Name": "skip_pixel_line_3"
+                },
+                {
+                    "Address": 118,
+                    "LabelType": 2,
+                    "Name": "pixel_line_4"
                 },
                 {
                     "Address": 126,
                     "LabelType": 2,
-                    "Name": "label_B07E"
+                    "Name": "skip_pixel_line_4"
+                },
+                {
+                    "Address": 128,
+                    "LabelType": 2,
+                    "Name": "pixel_line_5"
                 },
                 {
                     "Address": 136,
                     "LabelType": 2,
-                    "Name": "label_B088"
+                    "Name": "skip_pixel_line_5"
                 },
                 {
                     "Address": 157,
@@ -50664,37 +50752,47 @@
                     "Address": 168,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_B0A8"
+                    "Name": "DrawSpritePixelLine"
                 },
                 {
                     "Address": 174,
                     "LabelType": 0,
-                    "Name": "operand_B0AE"
+                    "Name": "operand_pixelLineJump"
                 },
                 {
                     "Address": 176,
                     "LabelType": 2,
-                    "Name": "label_B0B0"
+                    "Name": "pixel_line_1"
                 },
                 {
                     "Address": 183,
                     "LabelType": 2,
-                    "Name": "label_B0B7"
+                    "Name": "skip_pixel_line_1"
+                },
+                {
+                    "Address": 185,
+                    "LabelType": 2,
+                    "Name": "pixel_line_2"
                 },
                 {
                     "Address": 192,
                     "LabelType": 2,
-                    "Name": "label_B0C0"
+                    "Name": "skip_pixel_line_2"
                 },
                 {
                     "Address": 194,
                     "LabelType": 2,
-                    "Name": "label_B0C2"
+                    "Name": "pixel_line_3"
                 },
                 {
                     "Address": 201,
                     "LabelType": 2,
-                    "Name": "skip_pixel_line_1"
+                    "Name": "skip_pixel_line_3"
+                },
+                {
+                    "Address": 203,
+                    "LabelType": 2,
+                    "Name": "pixel_line_4"
                 },
                 {
                     "Address": 210,
@@ -50702,9 +50800,14 @@
                     "Name": "skip_pixel_line2"
                 },
                 {
+                    "Address": 212,
+                    "LabelType": 2,
+                    "Name": "pixel_line_5"
+                },
+                {
                     "Address": 219,
                     "LabelType": 2,
-                    "Name": "label_B0DB"
+                    "Name": "skip_pixel_line_5"
                 },
                 {
                     "Address": 243,
@@ -59968,6 +60071,10 @@
                     "Comment": "Bits 0-5, state enum\n0:\n1: Walking\n4: Jumping\n6: Ducking\n\nBit 6 : Face Left\nBit 7 : ??\n"
                 },
                 {
+                    "Address": 112,
+                    "Comment": "top 6 bits mask the current foreground over the player"
+                },
+                {
                     "Address": 307,
                     "Comment": "These are 4 byte items for each sector"
                 },
@@ -60028,6 +60135,31 @@
                 {
                     "Address": 107,
                     "Comment": "player control bits",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 111,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 112,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 113,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 114,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 115,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 116,
+                    "ByteSize": 2,
                     "DisplayType": 5
                 },
                 {
@@ -60817,6 +60949,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_C06F"
+                },
+                {
+                    "Address": 112,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "PlayerForegroundMask"
                 },
                 {
                     "Address": 139,
