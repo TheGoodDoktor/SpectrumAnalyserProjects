@@ -581,12 +581,18 @@
                     "CallAddr": 2754019331,
                     "FunctionAddr": 2734948355,
                     "ReturnAddr": 2754215939
+                },
+                {
+                    "CallAddr": 2754412547,
+                    "FunctionAddr": 2788950019,
+                    "ReturnAddr": 2754609155
                 }
             ],
             "Description": "",
-            "EndAddress": 2754347011,
+            "EndAddress": 2754674691,
             "ExitPoints": [
-                2754347011
+                2754347011,
+                2754674691
             ],
             "Name": "function_A41F",
             "StartAddress": 2753495043,
@@ -2077,7 +2083,7 @@
         },
         {
             "Description": "",
-            "EndAddress": 3077177347,
+            "EndAddress": 3078946819,
             "ExitPoints": [
                 3074097155
             ],
@@ -2209,10 +2215,18 @@
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 3131047939,
+                    "FunctionAddr": 3132293123,
+                    "ReturnAddr": 3131244547
+                }
+            ],
             "Description": "",
-            "EndAddress": 3128164355,
+            "EndAddress": 3132227587,
             "ExitPoints": [
-                3128164355
+                3128164355,
+                3132227587
             ],
             "Name": "function_BA70",
             "StartAddress": 3127902211,
@@ -2221,7 +2235,10 @@
         },
         {
             "Description": "",
-            "EndAddress": 3132293123,
+            "EndAddress": 3132948483,
+            "ExitPoints": [
+                3132948483
+            ],
             "Name": "function_BAB3",
             "StartAddress": 3132293123,
             "bManualEdit": false,
@@ -3021,12 +3038,20 @@
                     "EmptyCharNo": 0
                 },
                 {
+                    "Address": 612,
+                    "DisplayType": 3
+                },
+                {
                     "Address": 613,
                     "DisplayType": 3
                 },
                 {
                     "Address": 614,
                     "DisplayType": 3
+                },
+                {
+                    "Address": 620,
+                    "DisplayType": 11
                 },
                 {
                     "Address": 622,
@@ -3336,6 +3361,26 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 950,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 952,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 954,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
+                    "Address": 956,
+                    "ByteSize": 2,
+                    "DataType": 2
+                },
+                {
                     "Address": 958,
                     "ByteSize": 2,
                     "DataType": 2
@@ -3463,12 +3508,12 @@
                 {
                     "Address": 1008,
                     "ByteSize": 2,
+                    "Comment": "backup offset count",
                     "DataType": 2
                 },
                 {
                     "Address": 1010,
                     "ByteSize": 2,
-                    "Comment": "push screen address",
                     "DataType": 2
                 },
                 {
@@ -3513,7 +3558,7 @@
                     "Address": 612,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_6264"
+                    "Name": "PlayerIdleCounter"
                 },
                 {
                     "Address": 613,
@@ -3561,7 +3606,7 @@
                     "Address": 620,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_626C"
+                    "Name": "PlayerUsingLift"
                 },
                 {
                     "Address": 622,
@@ -37022,7 +37067,8 @@
                 },
                 {
                     "Address": 715,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 3
                 },
                 {
                     "Address": 717,
@@ -46668,7 +46714,8 @@
                 },
                 {
                     "Address": 768,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 32
                 },
                 {
                     "Address": 770,
@@ -52003,6 +52050,7 @@
                 {
                     "Address": 367,
                     "ByteSize": 3,
+                    "Comment": "clear active item list",
                     "OperandType": 1
                 },
                 {
@@ -52684,6 +52732,7 @@
                 {
                     "Address": 580,
                     "ByteSize": 4,
+                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -52733,11 +52782,13 @@
                 },
                 {
                     "Address": 605,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "item type"
                 },
                 {
                     "Address": 606,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 608,
@@ -52851,7 +52902,7 @@
                 {
                     "Address": 659,
                     "ByteSize": 3,
-                    "Flags": 8,
+                    "Flags": 40,
                     "OperandType": 2
                 },
                 {
@@ -52964,7 +53015,8 @@
                 {
                     "Address": 703,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "Comment": "offset to next attrib line",
+                    "OperandType": 7
                 },
                 {
                     "Address": 706,
@@ -52977,16 +53029,20 @@
                 },
                 {
                     "Address": 711,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read attribute"
                 },
                 {
                     "Address": 712,
                     "ByteSize": 2,
+                    "Comment": "jump if lift is not being used",
+                    "Flags": 32,
                     "OperandType": 2
                 },
                 {
                     "Address": 714,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "flicker lift lights"
                 },
                 {
                     "Address": 716,
@@ -52994,7 +53050,8 @@
                 },
                 {
                     "Address": 718,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write attribute"
                 },
                 {
                     "Address": 719,
@@ -53002,11 +53059,13 @@
                 },
                 {
                     "Address": 721,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "go to next line"
                 },
                 {
                     "Address": 722,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write attribute"
                 },
                 {
                     "Address": 723,
@@ -53036,7 +53095,8 @@
                 },
                 {
                     "Address": 733,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 8"
                 },
                 {
                     "Address": 734,
@@ -53056,15 +53116,18 @@
                 },
                 {
                     "Address": 739,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "get top line"
                 },
                 {
                     "Address": 740,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "push top line"
                 },
                 {
                     "Address": 741,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "7 pixel lines"
                 },
                 {
                     "Address": 743,
@@ -53072,7 +53135,8 @@
                 },
                 {
                     "Address": 744,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read pixel line"
                 },
                 {
                     "Address": 745,
@@ -53080,11 +53144,13 @@
                 },
                 {
                     "Address": 746,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "copy to line above"
                 },
                 {
                     "Address": 747,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "next line"
                 },
                 {
                     "Address": 748,
@@ -53093,11 +53159,13 @@
                 },
                 {
                     "Address": 750,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "pop top line"
                 },
                 {
                     "Address": 751,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "write bottom line"
                 },
                 {
                     "Address": 752,
@@ -53130,7 +53198,8 @@
                 },
                 {
                     "Address": 762,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "bottom char line"
                 },
                 {
                     "Address": 763,
@@ -53138,7 +53207,8 @@
                 },
                 {
                     "Address": 764,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "loop counter"
                 },
                 {
                     "Address": 766,
@@ -53823,6 +53893,18 @@
                     "Comment": "HL : Source 8x8 image\nDE : Screen dest address\nUpon return DE points to next char screen address\n"
                 },
                 {
+                    "Address": 699,
+                    "Comment": "Update the lift activity light"
+                },
+                {
+                    "Address": 732,
+                    "Comment": "scrolling lift 'up' indicator"
+                },
+                {
+                    "Address": 755,
+                    "Comment": "scrolling lift 'down' indicator"
+                },
+                {
                     "Address": 983,
                     "Comment": "A : Room number"
                 }
@@ -54042,6 +54124,11 @@
                     "Name": "char_row_clear_loop"
                 },
                 {
+                    "Address": 399,
+                    "LabelType": 0,
+                    "Name": "operand_B58F"
+                },
+                {
                     "Address": 420,
                     "LabelType": 2,
                     "Name": "skip_carry"
@@ -54154,37 +54241,37 @@
                 {
                     "Address": 699,
                     "LabelType": 2,
-                    "Name": "label_B6BB"
+                    "Name": "lift_activity_light"
                 },
                 {
                     "Address": 721,
                     "LabelType": 2,
-                    "Name": "label_B6D1"
+                    "Name": "do_second_light"
                 },
                 {
                     "Address": 725,
                     "LabelType": 2,
-                    "Name": "label_B6D5"
+                    "Name": "lift_not_being_used"
                 },
                 {
                     "Address": 732,
                     "LabelType": 2,
-                    "Name": "label_B6DC"
+                    "Name": "lift_indicator_scroll_up"
                 },
                 {
                     "Address": 743,
                     "LabelType": 2,
-                    "Name": "label_B6E7"
+                    "Name": "scroll_char_up_loop"
                 },
                 {
                     "Address": 755,
                     "LabelType": 2,
-                    "Name": "label_B6F3"
+                    "Name": "lift_indicator_scroll_down"
                 },
                 {
                     "Address": 766,
                     "LabelType": 2,
-                    "Name": "label_B6FE"
+                    "Name": "scroll_char_down_loop"
                 },
                 {
                     "Address": 778,
@@ -54967,7 +55054,8 @@
                 },
                 {
                     "Address": 218,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "disable interrupts because this sets up data used by the interrupt handler"
                 },
                 {
                     "Address": 219,
@@ -54977,7 +55065,7 @@
                 {
                     "Address": 222,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 225,
@@ -54986,11 +55074,14 @@
                 },
                 {
                     "Address": 229,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "clear items",
+                    "Flags": 32
                 },
                 {
                     "Address": 233,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "read char from room char map"
                 },
                 {
                     "Address": 234,
@@ -54999,6 +55090,7 @@
                 {
                     "Address": 236,
                     "ByteSize": 2,
+                    "Comment": "jump if lower than FC",
                     "OperandType": 2
                 },
                 {
@@ -55007,11 +55099,13 @@
                 },
                 {
                     "Address": 240,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "item type"
                 },
                 {
                     "Address": 243,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "char offset low byte"
                 },
                 {
                     "Address": 246,
@@ -55019,15 +55113,18 @@
                 },
                 {
                     "Address": 247,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "sub page from high byte"
                 },
                 {
                     "Address": 249,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "put in char offset"
                 },
                 {
                     "Address": 252,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "next item"
                 },
                 {
                     "Address": 254,
@@ -55052,7 +55149,9 @@
                 },
                 {
                     "Address": 267,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "re-enable interrupts",
+                    "Flags": 32
                 },
                 {
                     "Address": 268,
@@ -55170,11 +55269,14 @@
                 },
                 {
                     "Address": 322,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 325,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "IX -> DE",
+                    "Flags": 32
                 },
                 {
                     "Address": 327,
@@ -56450,6 +56552,7 @@
                 {
                     "Address": 871,
                     "ByteSize": 2,
+                    "Comment": "any key pressed - reset idle counter",
                     "OperandType": 2
                 },
                 {
@@ -56464,6 +56567,7 @@
                 {
                     "Address": 877,
                     "ByteSize": 2,
+                    "Comment": "jump if high bit was set",
                     "OperandType": 2
                 },
                 {
@@ -56473,7 +56577,9 @@
                 },
                 {
                     "Address": 882,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "has idle counter reached max",
+                    "OperandType": 3
                 },
                 {
                     "Address": 884,
@@ -56482,7 +56588,8 @@
                 },
                 {
                     "Address": 886,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "inc idle counter"
                 },
                 {
                     "Address": 887,
@@ -56491,7 +56598,9 @@
                 },
                 {
                     "Address": 889,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "reset idle counter",
+                    "Flags": 32
                 },
                 {
                     "Address": 890,
@@ -56953,7 +57062,7 @@
                 {
                     "Address": 262,
                     "LabelType": 2,
-                    "Name": "label_B906"
+                    "Name": "next_item"
                 },
                 {
                     "Address": 305,
@@ -57090,17 +57199,17 @@
                 {
                     "Address": 889,
                     "LabelType": 2,
-                    "Name": "label_BB79"
+                    "Name": "reset_idle_counter"
                 },
                 {
                     "Address": 890,
                     "LabelType": 2,
-                    "Name": "label_BB7A"
+                    "Name": "write_idle_counter"
                 },
                 {
                     "Address": 893,
                     "LabelType": 2,
-                    "Name": "label_BB7D"
+                    "Name": "idle_counter_maxxed"
                 },
                 {
                     "Address": 895,
@@ -60081,6 +60190,10 @@
                 {
                     "Address": 387,
                     "Comment": "Functions indexed by player state"
+                },
+                {
+                    "Address": 593,
+                    "Comment": "Some kind of state based LUT"
                 }
             ],
             "DataInfo": [
@@ -60161,6 +60274,10 @@
                     "Address": 116,
                     "ByteSize": 2,
                     "DisplayType": 5
+                },
+                {
+                    "Address": 195,
+                    "DisplayType": 11
                 },
                 {
                     "Address": 327,
@@ -60948,7 +61065,7 @@
                     "Address": 111,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_C06F"
+                    "Name": "Player_C06F"
                 },
                 {
                     "Address": 112,
@@ -61074,7 +61191,7 @@
                     "Address": 593,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_C251"
+                    "Name": "PlayerStateLUT_C251"
                 },
                 {
                     "Address": 613,
@@ -61153,6 +61270,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_C2ED"
+                },
+                {
+                    "Address": 754,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_C2F2"
                 },
                 {
                     "Address": 952,
@@ -64570,6 +64693,10 @@
             ],
             "CommentBlocks": [
                 {
+                    "Address": 1,
+                    "Comment": "List of active room items that are updated by the interrupt handler\nEach item is 3 bytes:\n0 : Item Type (1: Lift up indicator, 2:Lift down indicator, 3:Lift activity light)\n1-2 : Screen address offset"
+                },
+                {
                     "Address": 256,
                     "Comment": "BackgroundChar_0"
                 },
@@ -64956,12 +65083,105 @@
             ],
             "DataInfo": [
                 {
+                    "Address": 1,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 2,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11,
                     "Flags": 128
                 },
                 {
-                    "Address": 3,
-                    "Flags": 128
+                    "Address": 4,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 5,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 7,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 8,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 10,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 11,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 13,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 14,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 16,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 17,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 19,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 20,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 22,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 23,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 25,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 26,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 28,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 29,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
                 },
                 {
                     "Address": 256,
@@ -69577,7 +69797,7 @@
                     "Address": 1,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_E401"
+                    "Name": "ActiveScreenItems"
                 },
                 {
                     "Address": 228,
