@@ -1073,6 +1073,13 @@
             "Description": "",
             "EndAddress": 2925264899,
             "Name": "UpdateSentryGun",
+            "Params": [
+                {
+                    "DisplayType": "Address",
+                    "Name": "SentryGunState",
+                    "Source": 11
+                }
+            ],
             "StartAddress": 2925264899,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1380,6 +1387,13 @@
                 2954035203
             ],
             "Name": "function_AFE0",
+            "Params": [
+                {
+                    "DisplayType": "Address",
+                    "Name": "EntityPtr",
+                    "Source": 10
+                }
+            ],
             "StartAddress": 2950692867,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3508,7 +3522,6 @@
                 {
                     "Address": 1008,
                     "ByteSize": 2,
-                    "Comment": "backup offset count",
                     "DataType": 2
                 },
                 {
@@ -33657,7 +33670,8 @@
                 },
                 {
                     "Address": 178,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandType": 1
                 },
                 {
                     "Address": 182,
@@ -46310,6 +46324,7 @@
                 {
                     "Address": 596,
                     "ByteSize": 3,
+                    "Comment": "offset to next item",
                     "OperandType": 7
                 },
                 {
@@ -46333,6 +46348,7 @@
                 {
                     "Address": 608,
                     "ByteSize": 2,
+                    "Comment": "jump if high bit is zero",
                     "OperandType": 2
                 },
                 {
@@ -47307,7 +47323,8 @@
                 },
                 {
                     "Address": 992,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Flags": 32
                 },
                 {
                     "Address": 993,
@@ -47366,11 +47383,13 @@
                 },
                 {
                     "Address": 1018,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "pop width & height of sprite"
                 },
                 {
                     "Address": 1019,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "5 minus width is number of jump steps"
                 },
                 {
                     "Address": 1020,
@@ -47604,7 +47623,7 @@
                 {
                     "Address": 587,
                     "LabelType": 2,
-                    "Name": "item_loop"
+                    "Name": "sentry_gun_loop"
                 },
                 {
                     "Address": 604,
@@ -47789,7 +47808,8 @@
             "CodeInfo": [
                 {
                     "Address": 0,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 9 as each step is 9 bytes of instructions"
                 },
                 {
                     "Address": 1,
@@ -47810,6 +47830,7 @@
                 {
                     "Address": 5,
                     "ByteSize": 3,
+                    "Comment": "set JR operand",
                     "OperandType": 1
                 },
                 {
@@ -50803,6 +50824,7 @@
                 },
                 {
                     "Address": 174,
+                    "Comment": "this gets modified in steps of 9 for each line",
                     "LabelType": 0,
                     "Name": "operand_pixelLineJump"
                 },
@@ -51191,6 +51213,11 @@
                     "Global": true,
                     "LabelType": 1,
                     "Name": "DrawSingleChar"
+                },
+                {
+                    "Address": 1018,
+                    "LabelType": 0,
+                    "Name": "operand_B3FA"
                 }
             ],
             "PageId": 60
@@ -51274,9 +51301,7 @@
                 },
                 {
                     "Address": 26,
-                    "ByteSize": 2,
-                    "Flags": 2,
-                    "SMC": true
+                    "ByteSize": 2
                 },
                 {
                     "Address": 28,
@@ -53178,7 +53203,8 @@
                 },
                 {
                     "Address": 756,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 8"
                 },
                 {
                     "Address": 757,
@@ -53910,16 +53936,6 @@
                 }
             ],
             "DataInfo": [
-                {
-                    "Address": 26,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3021602819
-                },
-                {
-                    "Address": 27,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3021602819
-                },
                 {
                     "Address": 399,
                     "DataType": 11,
@@ -60252,6 +60268,7 @@
                 },
                 {
                     "Address": 111,
+                    "Comment": "bit 3 is a game over bit",
                     "DisplayType": 5
                 },
                 {
@@ -60274,6 +60291,45 @@
                     "Address": 116,
                     "ByteSize": 2,
                     "DisplayType": 5
+                },
+                {
+                    "Address": 139,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 140,
+                    "Comment": "Y pixel pos",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 141,
+                    "Comment": "X char pos",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 142,
+                    "Comment": "Sprite Index",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 181,
+                    "Comment": "state",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 182,
+                    "Comment": "Y pixel pos",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 183,
+                    "Comment": "X char pos",
+                    "DisplayType": 3
+                },
+                {
+                    "Address": 184,
+                    "Comment": "anim frame",
+                    "DisplayType": 11
                 },
                 {
                     "Address": 195,
@@ -60507,6 +60563,10 @@
                     "Address": 550,
                     "Comment": "item count",
                     "DisplayType": 3
+                },
+                {
+                    "Address": 593,
+                    "DisplayType": 5
                 },
                 {
                     "Address": 597,
@@ -61077,13 +61137,13 @@
                     "Address": 139,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_C08B"
+                    "Name": "Enemy1State"
                 },
                 {
                     "Address": 181,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_C0B5"
+                    "Name": "Enemy2State"
                 },
                 {
                     "Address": 223,
