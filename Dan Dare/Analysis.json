@@ -317,6 +317,16 @@
                     "CallAddr": 2665873411,
                     "FunctionAddr": 2940993539,
                     "ReturnAddr": 2666070019
+                },
+                {
+                    "CallAddr": 2658271235,
+                    "FunctionAddr": 2674851843,
+                    "ReturnAddr": 2658467843
+                },
+                {
+                    "CallAddr": 2657615875,
+                    "FunctionAddr": 2678718467,
+                    "ReturnAddr": 2657812483
                 }
             ],
             "Description": "",
@@ -331,9 +341,10 @@
         },
         {
             "Description": "",
-            "EndAddress": 2673803267,
+            "EndAddress": 2674786307,
             "ExitPoints": [
-                2673803267
+                2673803267,
+                2674786307
             ],
             "Name": "function_9F53",
             "StartAddress": 2673016835,
@@ -341,32 +352,94 @@
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2674982915,
+                    "FunctionAddr": 2968715267,
+                    "ReturnAddr": 2675179523
+                },
+                {
+                    "CallAddr": 2675245059,
+                    "FunctionAddr": 2675900419,
+                    "ReturnAddr": 2675441667
+                }
+            ],
             "Description": "",
-            "EndAddress": 2674851843,
+            "EndAddress": 2675441667,
+            "ExitPoints": [
+                2675179523,
+                2675441667
+            ],
             "Name": "function_9F6F",
             "StartAddress": 2674851843,
             "bManualEdit": false,
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2676097027,
+                    "FunctionAddr": 2934964227,
+                    "ReturnAddr": 2676293635
+                },
+                {
+                    "CallAddr": 2677080067,
+                    "FunctionAddr": 2996633603,
+                    "ReturnAddr": 2677276675
+                }
+            ],
             "Description": "",
-            "EndAddress": 2675900419,
+            "EndAddress": 2677604355,
+            "ExitPoints": [
+                2677014531
+            ],
             "Name": "function_9F7F",
             "StartAddress": 2675900419,
             "bManualEdit": false,
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2678784003,
+                    "FunctionAddr": 2968715267,
+                    "ReturnAddr": 2678980611
+                },
+                {
+                    "CallAddr": 2679046147,
+                    "FunctionAddr": 2679701507,
+                    "ReturnAddr": 2679242755
+                }
+            ],
             "Description": "",
-            "EndAddress": 2678718467,
+            "EndAddress": 2679242755,
+            "ExitPoints": [
+                2678980611,
+                2679242755
+            ],
             "Name": "function_9FAA",
             "StartAddress": 2678718467,
             "bManualEdit": false,
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2679898115,
+                    "FunctionAddr": 2934964227,
+                    "ReturnAddr": 2680094723
+                },
+                {
+                    "CallAddr": 2680881155,
+                    "FunctionAddr": 2999779331,
+                    "ReturnAddr": 2681077763
+                }
+            ],
             "Description": "",
-            "EndAddress": 2679701507,
+            "EndAddress": 2681405443,
+            "ExitPoints": [
+                2680815619
+            ],
             "Name": "function_9FB9",
             "StartAddress": 2679701507,
             "bManualEdit": false,
@@ -695,9 +768,31 @@
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2791112707,
+                    "FunctionAddr": 2837053443,
+                    "ReturnAddr": 2791309315
+                }
+            ],
             "Description": "",
-            "EndAddress": 2790326275,
+            "EndAddress": 2791374851,
+            "ExitPoints": [
+                2791374851
+            ],
             "Name": "label_A651",
+            "Params": [
+                {
+                    "DisplayType": "Unknown",
+                    "Name": "NewParam",
+                    "Source": 0
+                },
+                {
+                    "DisplayType": "Address",
+                    "Name": "EntityPtr",
+                    "Source": 10
+                }
+            ],
             "StartAddress": 2790326275,
             "bManualEdit": false,
             "bROMFunction": false
@@ -787,23 +882,37 @@
         },
         {
             "Description": "",
-            "EndAddress": 2817851395,
+            "EndAddress": 2818113539,
             "Name": "label_A7F5",
             "StartAddress": 2817851395,
             "bManualEdit": false,
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2818506755,
+                    "FunctionAddr": 2970615811,
+                    "ReturnAddr": 2818703363
+                }
+            ],
             "Description": "",
-            "EndAddress": 2818310147,
+            "EndAddress": 2818965507,
             "Name": "label_A7FC",
             "StartAddress": 2818310147,
             "bManualEdit": false,
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2819162115,
+                    "FunctionAddr": 2934964227,
+                    "ReturnAddr": 2819358723
+                }
+            ],
             "Description": "",
-            "EndAddress": 2819162115,
+            "EndAddress": 2819686403,
             "Name": "label_A809",
             "StartAddress": 2819162115,
             "bManualEdit": false,
@@ -1119,7 +1228,7 @@
                 },
                 {
                     "DisplayType": "Address",
-                    "Name": "PlayerInfo",
+                    "Name": "EntityPtr",
                     "Source": 10
                 }
             ],
@@ -1199,8 +1308,18 @@
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2935685123,
+                    "FunctionAddr": 2934243331,
+                    "ReturnAddr": 2935881731
+                }
+            ],
             "Description": "",
-            "EndAddress": 2934964227,
+            "EndAddress": 2935947267,
+            "ExitPoints": [
+                2935947267
+            ],
             "Name": "function_AEF0",
             "StartAddress": 2934964227,
             "bManualEdit": false,
@@ -1469,24 +1588,55 @@
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2969829379,
+                    "FunctionAddr": 2837053443,
+                    "ReturnAddr": 2970025987
+                }
+            ],
             "Description": "",
-            "EndAddress": 2968715267,
+            "EndAddress": 2970550275,
+            "ExitPoints": [
+                2970550275,
+                2969108483
+            ],
             "Name": "function_B0F3",
             "StartAddress": 2968715267,
             "bManualEdit": false,
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2971074563,
+                    "FunctionAddr": 2971533315,
+                    "ReturnAddr": 2971271171
+                }
+            ],
             "Description": "",
-            "EndAddress": 2970615811,
+            "EndAddress": 2971402243,
+            "ExitPoints": [
+                2970812419
+            ],
             "Name": "function_B110",
             "StartAddress": 2970615811,
             "bManualEdit": false,
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2971533315,
+                    "FunctionAddr": 2938241027,
+                    "ReturnAddr": 2971729923
+                }
+            ],
             "Description": "",
-            "EndAddress": 2971533315,
+            "EndAddress": 2975727619,
+            "ExitPoints": [
+                2975727619
+            ],
             "Name": "function_B11E",
             "StartAddress": 2971533315,
             "bManualEdit": false,
@@ -1679,16 +1829,38 @@
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 2997223427,
+                    "FunctionAddr": 2983002115,
+                    "ReturnAddr": 2997420035
+                },
+                {
+                    "CallAddr": 2997616643,
+                    "FunctionAddr": 2939420675,
+                    "ReturnAddr": 2997813251
+                }
+            ],
             "Description": "",
-            "EndAddress": 2996633603,
+            "EndAddress": 2999713795,
+            "ExitPoints": [
+                2999713795
+            ],
             "Name": "function_B29D",
             "StartAddress": 2996633603,
             "bManualEdit": false,
             "bROMFunction": false
         },
         {
+            "CallPoints": [
+                {
+                    "CallAddr": 3000369155,
+                    "FunctionAddr": 2940141571,
+                    "ReturnAddr": 3000565763
+                }
+            ],
             "Description": "",
-            "EndAddress": 2999779331,
+            "EndAddress": 3000893443,
             "Name": "function_B2CD",
             "StartAddress": 2999779331,
             "bManualEdit": false,
@@ -3527,6 +3699,7 @@
                 {
                     "Address": 1010,
                     "ByteSize": 2,
+                    "Comment": "push screen address",
                     "DataType": 2
                 },
                 {
@@ -40511,7 +40684,8 @@
                 },
                 {
                     "Address": 34,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check if player is on right edge"
                 },
                 {
                     "Address": 36,
@@ -40519,7 +40693,8 @@
                 },
                 {
                     "Address": 38,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "exit function if they are"
                 },
                 {
                     "Address": 39,
@@ -41572,7 +41747,9 @@
                 },
                 {
                     "Address": 597,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "mask off bottom 5 bits",
+                    "OperandType": 5
                 },
                 {
                     "Address": 599,
@@ -42313,7 +42490,8 @@
                 },
                 {
                     "Address": 1013,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 1016,
@@ -42369,7 +42547,7 @@
                     "Address": 31,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_A41F"
+                    "Name": "SpawnEnemyFunction"
                 },
                 {
                     "Address": 68,
@@ -42437,7 +42615,7 @@
                     "Address": 280,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_A518"
+                    "Name": "EnemyFunction_A518"
                 },
                 {
                     "Address": 363,
@@ -42550,7 +42728,7 @@
                     "Address": 618,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_A66A"
+                    "Name": "EnemyFunction_A66A"
                 },
                 {
                     "Address": 658,
@@ -42571,7 +42749,7 @@
                     "Address": 678,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_A6A6"
+                    "Name": "EnemyFunction_A6A6"
                 },
                 {
                     "Address": 716,
@@ -42607,7 +42785,7 @@
                     "Address": 780,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_A70C"
+                    "Name": "EnemyFunction_A70C"
                 },
                 {
                     "Address": 810,
@@ -42628,7 +42806,7 @@
                     "Address": 837,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "label_A745"
+                    "Name": "EnemyFunction_A745"
                 },
                 {
                     "Address": 859,
@@ -42654,7 +42832,7 @@
                     "Address": 947,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "label_A7B3"
+                    "Name": "EnemyFunction_A7B3"
                 },
                 {
                     "Address": 959,
@@ -42665,7 +42843,7 @@
                     "Address": 981,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "label_A7D5"
+                    "Name": "EnemyFunction_A7D5"
                 },
                 {
                     "Address": 1003,
@@ -42676,7 +42854,7 @@
                     "Address": 1013,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "label_A7F5"
+                    "Name": "EntityFunction_A7F5"
                 },
                 {
                     "Address": 1020,
@@ -47672,7 +47850,7 @@
                     "Address": 726,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "RunPlayerStateFunction"
+                    "Name": "RunEntityStateFunction"
                 },
                 {
                     "Address": 729,
@@ -50991,7 +51169,7 @@
                     "Address": 504,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "CheckCollisionBelowPlayer"
+                    "Name": "CheckCollisionBelowEntity"
                 },
                 {
                     "Address": 525,
@@ -51301,7 +51479,9 @@
                 },
                 {
                     "Address": 26,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 28,
@@ -53936,6 +54116,16 @@
                 }
             ],
             "DataInfo": [
+                {
+                    "Address": 26,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3021602819
+                },
+                {
+                    "Address": 27,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3021602819
+                },
                 {
                     "Address": 399,
                     "DataType": 11,
@@ -60205,7 +60395,7 @@
                 },
                 {
                     "Address": 387,
-                    "Comment": "Functions indexed by player state"
+                    "Comment": "Functions indexed by enemy state"
                 },
                 {
                     "Address": 593,
@@ -60569,12 +60759,54 @@
                     "DisplayType": 5
                 },
                 {
+                    "Address": 594,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 595,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 596,
+                    "DisplayType": 5
+                },
+                {
                     "Address": 597,
-                    "Comment": "jump"
+                    "Comment": "jump",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 598,
+                    "DisplayType": 5
                 },
                 {
                     "Address": 599,
-                    "Comment": "duck"
+                    "Comment": "duck",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 600,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 601,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 602,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 603,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 604,
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 605,
+                    "DisplayType": 5
                 },
                 {
                     "Address": 613,
@@ -61203,7 +61435,7 @@
                     "Address": 387,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "FunctionTable_C183"
+                    "Name": "EnemyStateFunctionTable"
                 },
                 {
                     "Address": 427,
