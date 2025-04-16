@@ -34270,7 +34270,7 @@
                 {
                     "Address": 429,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 432,
@@ -35114,7 +35114,7 @@
                 {
                     "Address": 808,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 811,
@@ -35809,7 +35809,7 @@
                 {
                     "Address": 61,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 64,
@@ -35836,7 +35836,7 @@
                 {
                     "Address": 73,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 76,
@@ -37941,7 +37941,7 @@
                 {
                     "Address": 13,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 16,
@@ -39608,7 +39608,8 @@
                 },
                 {
                     "Address": 730,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 733,
@@ -39654,11 +39655,13 @@
                 },
                 {
                     "Address": 751,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandType": 1
                 },
                 {
                     "Address": 755,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 758,
@@ -44830,9 +44833,19 @@
                     "Name": "label_A8FC"
                 },
                 {
+                    "Address": 254,
+                    "LabelType": 0,
+                    "Name": "operand_A8FE"
+                },
+                {
                     "Address": 258,
                     "LabelType": 2,
                     "Name": "label_A902"
+                },
+                {
+                    "Address": 265,
+                    "LabelType": 0,
+                    "Name": "operand_A909"
                 },
                 {
                     "Address": 268,
@@ -45633,7 +45646,7 @@
                 {
                     "Address": 260,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 263,
@@ -45768,7 +45781,7 @@
                 {
                     "Address": 331,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 334,
@@ -49515,7 +49528,7 @@
                 {
                     "Address": 586,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 589,
@@ -51220,6 +51233,11 @@
                     "Address": 1018,
                     "LabelType": 0,
                     "Name": "operand_B3FA"
+                },
+                {
+                    "Address": 1021,
+                    "LabelType": 0,
+                    "Name": "operand_B3FD"
                 }
             ],
             "PageId": 60
@@ -53983,6 +54001,11 @@
                     "Address": 19,
                     "LabelType": 2,
                     "Name": "h_draw_loop"
+                },
+                {
+                    "Address": 26,
+                    "LabelType": 0,
+                    "Name": "operand_B41A"
                 },
                 {
                     "Address": 38,
@@ -57069,6 +57092,11 @@
                     "Name": "label_B8B8"
                 },
                 {
+                    "Address": 196,
+                    "LabelType": 0,
+                    "Name": "operand_B8C4"
+                },
+                {
                     "Address": 203,
                     "LabelType": 2,
                     "Name": "process_next_item"
@@ -58689,7 +58717,7 @@
                 {
                     "Address": 569,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 572,
