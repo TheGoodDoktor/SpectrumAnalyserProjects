@@ -36298,7 +36298,8 @@
                 },
                 {
                     "Address": 310,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Flags": 32
                 },
                 {
                     "Address": 313,
@@ -40463,6 +40464,7 @@
                 {
                     "Address": 7,
                     "ByteSize": 2,
+                    "Flags": 32,
                     "OperandType": 2
                 },
                 {
@@ -51301,7 +51303,9 @@
                 },
                 {
                     "Address": 26,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Flags": 2,
+                    "SMC": true
                 },
                 {
                     "Address": 28,
@@ -53936,6 +53940,16 @@
                 }
             ],
             "DataInfo": [
+                {
+                    "Address": 26,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3021602819
+                },
+                {
+                    "Address": 27,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3021602819
+                },
                 {
                     "Address": 399,
                     "DataType": 11,
