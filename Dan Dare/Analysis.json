@@ -394,6 +394,13 @@
                 2677014531
             ],
             "Name": "function_9F7F",
+            "Params": [
+                {
+                    "DisplayType": "Address",
+                    "Name": "CharacterPtr",
+                    "Source": 10
+                }
+            ],
             "StartAddress": 2675900419,
             "bManualEdit": false,
             "bROMFunction": false
@@ -441,6 +448,13 @@
                 2680815619
             ],
             "Name": "function_9FB9",
+            "Params": [
+                {
+                    "DisplayType": "Address",
+                    "Name": "CharacterPtr",
+                    "Source": 10
+                }
+            ],
             "StartAddress": 2679701507,
             "bManualEdit": false,
             "bROMFunction": false
@@ -996,6 +1010,13 @@
                 2838036483
             ],
             "Name": "function_A91A",
+            "Params": [
+                {
+                    "DisplayType": "Address",
+                    "Name": "CharacterPtr",
+                    "Source": 10
+                }
+            ],
             "StartAddress": 2837053443,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3699,7 +3720,6 @@
                 {
                     "Address": 1010,
                     "ByteSize": 2,
-                    "Comment": "push screen address",
                     "DataType": 2
                 },
                 {
@@ -36945,11 +36965,13 @@
                 },
                 {
                     "Address": 529,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "check bit 7 of caps"
                 },
                 {
                     "Address": 533,
                     "ByteSize": 2,
+                    "Comment": "jump if it's set",
                     "OperandType": 2
                 },
                 {
@@ -37069,7 +37091,8 @@
                 },
                 {
                     "Address": 603,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "check if bit disabling LR movement has been set"
                 },
                 {
                     "Address": 607,
@@ -37078,16 +37101,19 @@
                 },
                 {
                     "Address": 609,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get controls"
                 },
                 {
                     "Address": 612,
                     "ByteSize": 2,
+                    "Comment": "mask out left & right bits",
                     "OperandType": 5
                 },
                 {
                     "Address": 614,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check for right pressed"
                 },
                 {
                     "Address": 616,
@@ -37097,15 +37123,18 @@
                 },
                 {
                     "Address": 619,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get controls again"
                 },
                 {
                     "Address": 622,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 624,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "check for left pressed"
                 },
                 {
                     "Address": 626,
@@ -37145,7 +37174,8 @@
                 },
                 {
                     "Address": 645,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "OperandType": 1
                 },
                 {
                     "Address": 649,
@@ -37530,6 +37560,7 @@
                 {
                     "Address": 864,
                     "ByteSize": 3,
+                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -37618,7 +37649,8 @@
                 },
                 {
                     "Address": 909,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "update anim frame"
                 },
                 {
                     "Address": 912,
@@ -37627,7 +37659,7 @@
                 {
                     "Address": 913,
                     "ByteSize": 3,
-                    "Flags": 8,
+                    "Flags": 40,
                     "OperandType": 2
                 },
                 {
@@ -37637,7 +37669,8 @@
                 },
                 {
                     "Address": 918,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "character X char pos"
                 },
                 {
                     "Address": 921,
@@ -37677,7 +37710,8 @@
                 },
                 {
                     "Address": 938,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "OperandType": 1
                 },
                 {
                     "Address": 939,
@@ -37693,7 +37727,7 @@
                     "Address": 943,
                     "ByteSize": 3,
                     "Flags": 8,
-                    "OperandType": 2
+                    "OperandType": 1
                 },
                 {
                     "Address": 946,
@@ -37713,7 +37747,9 @@
                 },
                 {
                     "Address": 953,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "inc animation counter",
+                    "OperandType": 1
                 },
                 {
                     "Address": 956,
@@ -37760,7 +37796,8 @@
                 },
                 {
                     "Address": 976,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "move right one char"
                 },
                 {
                     "Address": 979,
@@ -37957,7 +37994,7 @@
                     "Address": 508,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_9DFC"
+                    "Name": "UpdatePlayer"
                 },
                 {
                     "Address": 559,
@@ -37977,7 +38014,7 @@
                 {
                     "Address": 629,
                     "LabelType": 2,
-                    "Name": "label_9E75"
+                    "Name": "LRDisabled"
                 },
                 {
                     "Address": 687,
@@ -38013,7 +38050,7 @@
                     "Address": 851,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_9F53"
+                    "Name": "ReadPlayerControls"
                 },
                 {
                     "Address": 864,
@@ -38024,13 +38061,13 @@
                     "Address": 879,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_9F6F"
+                    "Name": "LeftPressed"
                 },
                 {
                     "Address": 895,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_9F7F"
+                    "Name": "MoveCharacterLeft"
                 },
                 {
                     "Address": 913,
@@ -38046,13 +38083,13 @@
                     "Address": 938,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_9FAA"
+                    "Name": "RightPressed"
                 },
                 {
                     "Address": 953,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_9FB9"
+                    "Name": "MoveCharacterRight"
                 },
                 {
                     "Address": 971,
@@ -38236,7 +38273,8 @@
                 },
                 {
                     "Address": 60,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "jump out if neither are pressed"
                 },
                 {
                     "Address": 61,
@@ -38250,7 +38288,8 @@
                 },
                 {
                     "Address": 65,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "read player control bits"
                 },
                 {
                     "Address": 68,
@@ -38262,7 +38301,9 @@
                 },
                 {
                     "Address": 70,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "mask out other bits and write back",
+                    "OperandType": 5
                 },
                 {
                     "Address": 72,
@@ -40587,7 +40628,7 @@
                     "Address": 794,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_A31A"
+                    "Name": "UpdateEnemy1"
                 },
                 {
                     "Address": 798,
@@ -41652,7 +41693,8 @@
                 },
                 {
                     "Address": 546,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "HL -> IX"
                 },
                 {
                     "Address": 547,
@@ -41666,7 +41708,7 @@
                 {
                     "Address": 552,
                     "ByteSize": 3,
-                    "OperandType": 7
+                    "OperandType": 3
                 },
                 {
                     "Address": 555,
@@ -41679,7 +41721,8 @@
                 },
                 {
                     "Address": 559,
-                    "ByteSize": 4
+                    "ByteSize": 4,
+                    "Comment": "clear spawn bits in certain room"
                 },
                 {
                     "Address": 563,
@@ -42691,7 +42734,7 @@
                     "Address": 543,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_A61F"
+                    "Name": "ResetRoomEnemySpawnBits"
                 },
                 {
                     "Address": 572,
@@ -43440,7 +43483,7 @@
                 {
                     "Address": 294,
                     "ByteSize": 3,
-                    "Comment": "store in player data"
+                    "Comment": "store capability bits?"
                 },
                 {
                     "Address": 297,
@@ -45034,7 +45077,7 @@
                     "Address": 282,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_A91A"
+                    "Name": "SetupCharacterState"
                 },
                 {
                     "Address": 298,
@@ -46893,7 +46936,8 @@
                 },
                 {
                     "Address": 752,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Flags": 32
                 },
                 {
                     "Address": 755,
@@ -46929,7 +46973,7 @@
                 {
                     "Address": 770,
                     "ByteSize": 1,
-                    "Comment": "de points to player state"
+                    "Comment": "de points to character state"
                 },
                 {
                     "Address": 771,
@@ -47906,7 +47950,7 @@
                     "Address": 768,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_AF00"
+                    "Name": "BackupCharacterState"
                 },
                 {
                     "Address": 781,
@@ -48130,11 +48174,13 @@
                 },
                 {
                     "Address": 52,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "mult by 10 which is number of instructions"
                 },
                 {
                     "Address": 53,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "per pixel line"
                 },
                 {
                     "Address": 54,
@@ -48151,6 +48197,7 @@
                 {
                     "Address": 57,
                     "ByteSize": 3,
+                    "Comment": "set operand",
                     "OperandType": 1
                 },
                 {
@@ -48741,19 +48788,26 @@
                 },
                 {
                     "Address": 250,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "read state"
                 },
                 {
                     "Address": 253,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "mask out state enum bits",
+                    "OperandType": 5
                 },
                 {
                     "Address": 255,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "flip direction bit, set state 10",
+                    "OperandType": 5
                 },
                 {
                     "Address": 257,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "store back",
+                    "OperandType": 1
                 },
                 {
                     "Address": 260,
@@ -49912,7 +49966,7 @@
                 {
                     "Address": 664,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 667,
@@ -49921,11 +49975,13 @@
                 },
                 {
                     "Address": 669,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Y pixel pos"
                 },
                 {
                     "Address": 672,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "X char pos"
                 },
                 {
                     "Address": 675,
@@ -49947,7 +50003,8 @@
                 },
                 {
                     "Address": 681,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "anim index"
                 },
                 {
                     "Address": 684,
@@ -49974,7 +50031,7 @@
                 {
                     "Address": 694,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 697,
@@ -49982,7 +50039,8 @@
                 },
                 {
                     "Address": 699,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "get Y pixel pos"
                 },
                 {
                     "Address": 702,
@@ -50036,15 +50094,18 @@
                 },
                 {
                     "Address": 717,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "Y pixel pos"
                 },
                 {
                     "Address": 720,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "x char pos"
                 },
                 {
                     "Address": 723,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "Comment": "sprite index"
                 },
                 {
                     "Address": 726,
@@ -51370,7 +51431,7 @@
                 {
                     "Address": 931,
                     "LabelType": 2,
-                    "Name": "label_B3A3"
+                    "Name": "menu_item_loop"
                 },
                 {
                     "Address": 939,
@@ -59333,7 +59394,8 @@
                 },
                 {
                     "Address": 739,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "OperandType": 5
                 },
                 {
                     "Address": 741,
@@ -59682,7 +59744,8 @@
                 },
                 {
                     "Address": 926,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 929,
@@ -59695,7 +59758,8 @@
                 },
                 {
                     "Address": 935,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 938,
@@ -60413,7 +60477,11 @@
             "CommentBlocks": [
                 {
                     "Address": 97,
-                    "Comment": "Bits 0-5, state enum\n0:\n1: Walking\n4: Jumping\n6: Ducking\n\nBit 6 : Face Left\nBit 7 : ??\n"
+                    "Comment": "Bits 0-5, state enum\n0:\n1: Walking\n4: Jumping\n5: Riding lift\n6: Ducking\n7: Falling\n8: Landed from fall\n\n\nBit 6 : Face Left\nBit 7 : ??\n"
+                },
+                {
+                    "Address": 111,
+                    "Comment": "bits\n0 : \n1 : \n2 : Control input disabled\n3 : game over?\n4 : ?\n5 : Disable LR movement\n6 : ?\n7 : ?"
                 },
                 {
                     "Address": 112,
@@ -60429,7 +60497,7 @@
                 },
                 {
                     "Address": 593,
-                    "Comment": "Some kind of state based LUT"
+                    "Comment": "Some kind of state based LUT\nAn Array of bit fields that get applied for each state\n0 : ?\n1 : ?\n2 : ?\n3 : ?\n4 : ?\n5 : Disabled LR movement\n6 : ?\n7 : ?\n"
                 }
             ],
             "DataInfo": [
@@ -60452,12 +60520,12 @@
                 {
                     "Address": 98,
                     "Comment": "player Y pixel pos",
-                    "DisplayType": 3
+                    "DisplayType": 14
                 },
                 {
                     "Address": 99,
                     "Comment": "player X char pos",
-                    "DisplayType": 1
+                    "DisplayType": 15
                 },
                 {
                     "Address": 100,
@@ -60465,11 +60533,15 @@
                     "DisplayType": 3
                 },
                 {
-                    "Address": 103,
-                    "DisplayType": 11
+                    "Address": 101,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
-                    "Address": 104,
+                    "Address": 103,
+                    "ByteSize": 2,
+                    "DataType": 2,
                     "DisplayType": 1
                 },
                 {
@@ -60488,7 +60560,7 @@
                 },
                 {
                     "Address": 111,
-                    "Comment": "bit 3 is a game over bit",
+                    "Comment": "bit 3 is a game over bit, bit 5 disables LR movement",
                     "DisplayType": 5
                 },
                 {
@@ -60529,6 +60601,22 @@
                 {
                     "Address": 142,
                     "Comment": "Sprite Index",
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 143,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 145,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
+                },
+                {
+                    "Address": 147,
                     "DisplayType": 11
                 },
                 {
@@ -60786,57 +60874,103 @@
                 },
                 {
                     "Address": 593,
+                    "Comment": "0 : idle?",
                     "DisplayType": 5
                 },
                 {
                     "Address": 594,
+                    "Comment": "1",
                     "DisplayType": 5
                 },
                 {
                     "Address": 595,
+                    "Comment": "2",
                     "DisplayType": 5
                 },
                 {
                     "Address": 596,
+                    "Comment": "3",
                     "DisplayType": 5
                 },
                 {
                     "Address": 597,
-                    "Comment": "jump",
+                    "Comment": "4 : jump",
                     "DisplayType": 5
                 },
                 {
                     "Address": 598,
+                    "Comment": "5 : use lift",
                     "DisplayType": 5
                 },
                 {
                     "Address": 599,
-                    "Comment": "duck",
+                    "Comment": "6 : duck",
                     "DisplayType": 5
                 },
                 {
                     "Address": 600,
+                    "Comment": "7",
                     "DisplayType": 5
                 },
                 {
                     "Address": 601,
+                    "Comment": "8",
                     "DisplayType": 5
                 },
                 {
                     "Address": 602,
-                    "DisplayType": 5
+                    "Comment": "9 : enemy die?",
+                    "DisplayType": 5,
+                    "Flags": 128
                 },
                 {
                     "Address": 603,
+                    "Comment": "10 : turn",
                     "DisplayType": 5
                 },
                 {
                     "Address": 604,
+                    "Comment": "11",
                     "DisplayType": 5
                 },
                 {
                     "Address": 605,
+                    "Comment": "12",
                     "DisplayType": 5
+                },
+                {
+                    "Address": 606,
+                    "Comment": "13",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 607,
+                    "Comment": "14",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 608,
+                    "Comment": "15",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 609,
+                    "Comment": "16",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 610,
+                    "Comment": "17",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 611,
+                    "Comment": "18",
+                    "DisplayType": 5
+                },
+                {
+                    "Address": 612,
+                    "DisplayType": 11
                 },
                 {
                     "Address": 613,
@@ -61513,7 +61647,7 @@
                     "Address": 593,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "PlayerStateLUT_C251"
+                    "Name": "CharacterStateLUT"
                 },
                 {
                     "Address": 613,
@@ -62770,6 +62904,12 @@
                     "Name": "data_C80D"
                 },
                 {
+                    "Address": 79,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_C84F"
+                },
+                {
                     "Address": 99,
                     "Global": true,
                     "LabelType": 0,
@@ -63320,6 +63460,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_CF0A"
+                },
+                {
+                    "Address": 779,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_CF0B"
                 },
                 {
                     "Address": 782,
