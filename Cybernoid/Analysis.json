@@ -379,7 +379,6 @@
             ],
             "Description": "",
             "EndAddress": 1709637634,
-            "Name": "InitialiseProgram",
             "StartAddress": 1694760962,
             "bManualEdit": false,
             "bROMFunction": false
@@ -390,7 +389,6 @@
             "ExitPoints": [
                 1710292994
             ],
-            "Name": "CheckDebugKeyCombo",
             "StartAddress": 1709899778,
             "bManualEdit": false,
             "bROMFunction": false
@@ -401,7 +399,6 @@
             "ExitPoints": [
                 1712390146
             ],
-            "Name": "CheckForResetKeyCombo",
             "StartAddress": 1711996930,
             "bManualEdit": false,
             "bROMFunction": false
@@ -412,7 +409,6 @@
             "ExitPoints": [
                 1715994626
             ],
-            "Name": "GetPressedKeyAscii",
             "StartAddress": 1714094082,
             "bManualEdit": false,
             "bROMFunction": false
@@ -423,7 +419,6 @@
             "ExitPoints": [
                 1719140354
             ],
-            "Name": "CheckForKeyPress",
             "StartAddress": 1718747138,
             "bManualEdit": false,
             "bROMFunction": false
@@ -434,7 +429,6 @@
             "ExitPoints": [
                 1722220546
             ],
-            "Name": "GenerateRandomNumber",
             "StartAddress": 1719205890,
             "bManualEdit": false,
             "bROMFunction": false
@@ -445,7 +439,6 @@
             "ExitPoints": [
                 1723793410
             ],
-            "Name": "ClearScreen",
             "StartAddress": 1722417154,
             "bManualEdit": false,
             "bROMFunction": false
@@ -463,7 +456,6 @@
             "ExitPoints": [
                 1726349314
             ],
-            "Name": "ClearGameplayScreenRegion",
             "StartAddress": 1723858946,
             "bManualEdit": false,
             "bROMFunction": false
@@ -481,7 +473,6 @@
             "ExitPoints": [
                 1729953794
             ],
-            "Name": "SetupGameRegionPixAddrLUT",
             "StartAddress": 1726414850,
             "bManualEdit": false,
             "bROMFunction": false
@@ -504,7 +495,6 @@
             "ExitPoints": [
                 1731854338
             ],
-            "Name": "SetupYValuePixAddrLUT",
             "StartAddress": 1730019330,
             "bManualEdit": false,
             "bROMFunction": false
@@ -515,7 +505,6 @@
             "ExitPoints": [
                 1732968450
             ],
-            "Name": "GetScreenAddressForCoords",
             "StartAddress": 1731919874,
             "bManualEdit": false,
             "bROMFunction": false
@@ -528,7 +517,6 @@
                 1733951490,
                 1733623810
             ],
-            "Name": "MoveScreenPointerDown",
             "StartAddress": 1733033986,
             "bManualEdit": false,
             "bROMFunction": false
@@ -541,7 +529,6 @@
                 1734934530,
                 1734606850
             ],
-            "Name": "MoveScreenPointerUp",
             "StartAddress": 1734017026,
             "bManualEdit": false,
             "bROMFunction": false
@@ -552,7 +539,6 @@
             "ExitPoints": [
                 1735917570
             ],
-            "Name": "ReadWriteAddressRange",
             "StartAddress": 1735000066,
             "bManualEdit": false,
             "bROMFunction": false
@@ -563,7 +549,6 @@
             "ExitPoints": [
                 1737359362
             ],
-            "Name": "GetCharmapAddressOffset",
             "Params": [
                 {
                     "DisplayType": "Unknown",
@@ -593,7 +578,6 @@
             "ExitPoints": [
                 1738014722
             ],
-            "Name": "GetCollisionMapAddress",
             "StartAddress": 1737424898,
             "bManualEdit": false,
             "bROMFunction": false
@@ -616,7 +600,6 @@
             "ExitPoints": [
                 1738670082
             ],
-            "Name": "GetAttribMemoryAddress",
             "Params": [
                 {
                     "DisplayType": "Unknown",
@@ -646,7 +629,6 @@
             "ExitPoints": [
                 1739325442
             ],
-            "Name": "GetBackgroundAttribAddress",
             "StartAddress": 1738735618,
             "bManualEdit": false,
             "bROMFunction": false
@@ -657,7 +639,6 @@
             "ExitPoints": [
                 1740111874
             ],
-            "Name": "StoreBackgroundAttributes",
             "StartAddress": 1739390978,
             "bManualEdit": false,
             "bROMFunction": false
@@ -668,7 +649,6 @@
             "ExitPoints": [
                 1743585282
             ],
-            "Name": "SetupCollisionOverlapSizes",
             "StartAddress": 1740177410,
             "bManualEdit": false,
             "bROMFunction": false
@@ -681,7 +661,6 @@
                 1745485826,
                 1746206722
             ],
-            "Name": "CheckCollisionOverlap",
             "StartAddress": 1744961538,
             "bManualEdit": false,
             "bROMFunction": false
@@ -693,7 +672,6 @@
                 1749155842,
                 1749286914
             ],
-            "Name": "ReadKeyboardControls",
             "StartAddress": 1746272258,
             "bManualEdit": false,
             "bROMFunction": false
@@ -701,7 +679,6 @@
         {
             "Description": "",
             "EndAddress": 1749352450,
-            "Name": "ReadSinclairJoystick",
             "StartAddress": 1749352450,
             "bManualEdit": false,
             "bROMFunction": false
@@ -709,7 +686,6 @@
         {
             "Description": "",
             "EndAddress": 1751777282,
-            "Name": "ReadKempstonJoystick",
             "StartAddress": 1751777282,
             "bManualEdit": false,
             "bROMFunction": false
@@ -717,7 +693,6 @@
         {
             "Description": "",
             "EndAddress": 1753874434,
-            "Name": "ShiftBottomBitFromDToA",
             "StartAddress": 1753874434,
             "bManualEdit": false,
             "bROMFunction": false
@@ -725,7 +700,6 @@
         {
             "Description": "",
             "EndAddress": 1755054082,
-            "Name": "ReadControlDevice",
             "StartAddress": 1754202114,
             "bManualEdit": false,
             "bROMFunction": false
@@ -773,7 +747,6 @@
             "ExitPoints": [
                 1756364802
             ],
-            "Name": "UpdatePlayerMovement",
             "StartAddress": 1756102658,
             "bManualEdit": false,
             "bROMFunction": false
@@ -788,7 +761,6 @@
             ],
             "Description": "",
             "EndAddress": 1768292354,
-            "Name": "DrawPlayerSprites",
             "StartAddress": 1767047170,
             "bManualEdit": false,
             "bROMFunction": false
@@ -806,7 +778,6 @@
             "ExitPoints": [
                 1771765762
             ],
-            "Name": "CheckCollisionRightOfObject",
             "StartAddress": 1769078786,
             "bManualEdit": false,
             "bROMFunction": false
@@ -824,7 +795,6 @@
             "ExitPoints": [
                 1774387202
             ],
-            "Name": "CheckCollisionLeftOfObject",
             "StartAddress": 1771831298,
             "bManualEdit": false,
             "bROMFunction": false
@@ -842,7 +812,6 @@
             "ExitPoints": [
                 1776615426
             ],
-            "Name": "CheckCollisionBelowObject",
             "StartAddress": 1774452738,
             "bManualEdit": false,
             "bROMFunction": false
@@ -891,7 +860,6 @@
                 1793458178,
                 1778843650
             ],
-            "Name": "CheckCollisionAboveObject",
             "StartAddress": 1776680962,
             "bManualEdit": false,
             "bROMFunction": false
@@ -924,7 +892,6 @@
             "ExitPoints": [
                 1814233090
             ],
-            "Name": "DrawStringAt",
             "Params": [
                 {
                     "DisplayType": "Unknown",
@@ -952,7 +919,6 @@
             "ExitPoints": [
                 1820721154
             ],
-            "Name": "DrawCharacter",
             "StartAddress": 1816788994,
             "bManualEdit": false,
             "bROMFunction": false
@@ -960,7 +926,6 @@
         {
             "Description": "",
             "EndAddress": 1820786690,
-            "Name": "NullFunction",
             "StartAddress": 1820786690,
             "bManualEdit": false,
             "bROMFunction": false
@@ -988,7 +953,6 @@
             "ExitPoints": [
                 1821966338
             ],
-            "Name": "GenerateRandomVelocity",
             "StartAddress": 1820852226,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1021,7 +985,6 @@
             "ExitPoints": [
                 1827930114
             ],
-            "Name": "CheckAgainstDestructibleScenery",
             "StartAddress": 1822031874,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1059,7 +1022,6 @@
             "ExitPoints": [
                 1838481410
             ],
-            "Name": "ExplodeDestructibleScenery",
             "StartAddress": 1833762818,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1127,7 +1089,6 @@
             "ExitPoints": [
                 1843331074
             ],
-            "Name": "ExplodeBlock",
             "StartAddress": 1838546946,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1145,7 +1106,6 @@
             "ExitPoints": [
                 1845886978
             ],
-            "Name": "ClearBlockAttribsAndCollision",
             "StartAddress": 1843396610,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1157,7 +1117,6 @@
                 1847590914,
                 1850802178
             ],
-            "Name": "AddDestructibleScenery",
             "StartAddress": 1845952514,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1195,7 +1154,6 @@
             "ExitPoints": [
                 1858273282
             ],
-            "Name": "SpawnDebris",
             "StartAddress": 1854603266,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1228,7 +1186,6 @@
             "ExitPoints": [
                 1886388226
             ],
-            "Name": "UpdateDebris",
             "StartAddress": 1885929474,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1239,7 +1196,6 @@
             "ExitPoints": [
                 1892810754
             ],
-            "Name": "SetupIM2InterruptHandler",
             "StartAddress": 1890844674,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1254,7 +1210,6 @@
             ],
             "Description": "",
             "EndAddress": 1897398274,
-            "Name": "InterruptRoutine",
             "StartAddress": 1892876290,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1265,7 +1220,6 @@
             "ExitPoints": [
                 1909784578
             ],
-            "Name": "HandlePlayerOffScreen",
             "StartAddress": 1907621890,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1390,7 +1344,6 @@
             ],
             "Description": "",
             "EndAddress": 1931935746,
-            "Name": "SetupGameScreen",
             "StartAddress": 1914568706,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1402,7 +1355,6 @@
                 1936457730,
                 1935278082
             ],
-            "Name": "SetupBlockCollisionMap",
             "StartAddress": 1932132354,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1413,7 +1365,6 @@
             "ExitPoints": [
                 1945305090
             ],
-            "Name": "AddItemToScreenList",
             "StartAddress": 1940520962,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1424,7 +1375,6 @@
             "ExitPoints": [
                 1950154754
             ],
-            "Name": "ResetScreenEntityLists",
             "StartAddress": 1949171714,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1435,7 +1385,6 @@
             "ExitPoints": [
                 1951793154
             ],
-            "Name": "GetPointerFromLUT",
             "StartAddress": 1951203330,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1446,7 +1395,6 @@
             "ExitPoints": [
                 1952710658
             ],
-            "Name": "ClearCollisionMap",
             "StartAddress": 1951858690,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1481,7 +1429,6 @@
             ],
             "Description": "",
             "EndAddress": 1959133186,
-            "Name": "StartLevel",
             "StartAddress": 1952776194,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1489,7 +1436,6 @@
         {
             "Description": "",
             "EndAddress": 1961623554,
-            "Name": "CheckBombAgainstDestructibleBlocks",
             "StartAddress": 1960968194,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1500,7 +1446,6 @@
             "ExitPoints": [
                 1962999810
             ],
-            "Name": "CheckAgainstDestructibleBlocks",
             "StartAddress": 1961820162,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1523,7 +1468,6 @@
             "ExitPoints": [
                 1971978242
             ],
-            "Name": "UpdateVolcanoes",
             "StartAddress": 1971585026,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1534,7 +1478,6 @@
             "ExitPoints": [
                 1975451650
             ],
-            "Name": "function_75B8",
             "StartAddress": 1974992898,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1542,7 +1485,6 @@
         {
             "Description": "",
             "EndAddress": 1984364546,
-            "Name": "function_7647",
             "StartAddress": 1984364546,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1577,7 +1519,6 @@
             ],
             "Description": "",
             "EndAddress": 2014380034,
-            "Name": "DrawHUD",
             "StartAddress": 2013200386,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1595,7 +1536,6 @@
             "ExitPoints": [
                 2024669186
             ],
-            "Name": "DrawScore",
             "StartAddress": 2022572034,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1613,7 +1553,6 @@
             "ExitPoints": [
                 2026307586
             ],
-            "Name": "DrawCollectedTreasureScore",
             "StartAddress": 2024734722,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1621,7 +1560,6 @@
         {
             "Description": "",
             "EndAddress": 2026897410,
-            "Name": "DrawPlayerLives",
             "StartAddress": 2026373122,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1632,7 +1570,6 @@
             "ExitPoints": [
                 2029518850
             ],
-            "Name": "AddToCurrentScore",
             "StartAddress": 2027159554,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1643,7 +1580,6 @@
             "ExitPoints": [
                 2036269058
             ],
-            "Name": "GenerateCollectedTreasureString",
             "StartAddress": 2033516546,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1671,7 +1607,6 @@
             "ExitPoints": [
                 2039480322
             ],
-            "Name": "Draw3DigitNumber",
             "StartAddress": 2037841922,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1689,7 +1624,6 @@
             "ExitPoints": [
                 2041053186
             ],
-            "Name": "DrawNumberDigit",
             "StartAddress": 2039545858,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1713,7 +1647,6 @@
                 2041774082,
                 2042429442
             ],
-            "Name": "DrawTimeoutGauge",
             "StartAddress": 2041118722,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1731,7 +1664,6 @@
             "ExitPoints": [
                 2046361602
             ],
-            "Name": "function_79D4",
             "StartAddress": 2043936770,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1742,7 +1674,6 @@
             "ExitPoints": [
                 2047279106
             ],
-            "Name": "UpdatePlayerLifeTimeout",
             "StartAddress": 2046689282,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1760,7 +1691,6 @@
             "ExitPoints": [
                 2051735554
             ],
-            "Name": "DrawBullet",
             "StartAddress": 2048851970,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1781,7 +1711,6 @@
                 2053767170,
                 2052325378
             ],
-            "Name": "UpdatePlayerFiringLogic",
             "StartAddress": 2052063234,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1806,7 +1735,6 @@
             ],
             "Description": "",
             "EndAddress": 2061565954,
-            "Name": "function_7AB5",
             "StartAddress": 2058682370,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1859,7 +1787,6 @@
             "ExitPoints": [
                 2062876674
             ],
-            "Name": "UpdateBullets",
             "StartAddress": 2062155778,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1870,7 +1797,6 @@
             "ExitPoints": [
                 2069364738
             ],
-            "Name": "UpdateWeaponSelection",
             "StartAddress": 2068447234,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1890,7 +1816,6 @@
             ],
             "Description": "",
             "EndAddress": 2074542082,
-            "Name": "DrawHUDWeaponInfo",
             "StartAddress": 2071068674,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1901,7 +1826,6 @@
             "ExitPoints": [
                 2081357826
             ],
-            "Name": "ResetWeaponsToDefaultAmmo",
             "StartAddress": 2080112642,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1914,7 +1838,6 @@
                 2085093378,
                 2081685506
             ],
-            "Name": "WeaponFiringLogic",
             "StartAddress": 2081423362,
             "bManualEdit": false,
             "bROMFunction": false
@@ -1939,7 +1862,6 @@
             ],
             "Description": "",
             "EndAddress": 2093940738,
-            "Name": "WeaponFunc_Bombs",
             "StartAddress": 2086404098,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2022,7 +1944,6 @@
             "ExitPoints": [
                 2095054850
             ],
-            "Name": "UpdateBombs",
             "StartAddress": 2094137346,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2030,7 +1951,6 @@
         {
             "Description": "",
             "EndAddress": 2110652418,
-            "Name": "WeaponFunc_Mines",
             "StartAddress": 2110652418,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2053,7 +1973,6 @@
             "ExitPoints": [
                 2117337090
             ],
-            "Name": "UpdateMines",
             "StartAddress": 2116485122,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2061,7 +1980,6 @@
         {
             "Description": "",
             "EndAddress": 2121662466,
-            "Name": "WeaponFunc_Shield",
             "StartAddress": 2121662466,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2069,7 +1987,6 @@
         {
             "Description": "",
             "EndAddress": 2123694082,
-            "Name": "WeaponFunc_Bounce",
             "StartAddress": 2123694082,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2077,7 +1994,6 @@
         {
             "Description": "",
             "EndAddress": 2128871426,
-            "Name": "function_7EE4",
             "StartAddress": 2128871426,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2095,7 +2011,6 @@
             "ExitPoints": [
                 2133327874
             ],
-            "Name": "UpdateBouncingBombsMovement",
             "StartAddress": 2132606978,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2103,7 +2018,6 @@
         {
             "Description": "",
             "EndAddress": 2140602370,
-            "Name": "BouncingBombImpactEffect",
             "StartAddress": 2140602370,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2111,7 +2025,6 @@
         {
             "Description": "",
             "EndAddress": 2143223810,
-            "Name": "function_7FBF",
             "StartAddress": 2143223810,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2122,7 +2035,6 @@
             "ExitPoints": [
                 2146107394
             ],
-            "Name": "UpdateBouncingBombsLife",
             "StartAddress": 2145845250,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2130,7 +2042,6 @@
         {
             "Description": "",
             "EndAddress": 2148401155,
-            "Name": "WeaponFunc_Seeker",
             "StartAddress": 2148401155,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2141,7 +2052,6 @@
             "ExitPoints": [
                 2154692611
             ],
-            "Name": "UpdateSeeker",
             "StartAddress": 2154168323,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2152,7 +2062,6 @@
             "ExitPoints": [
                 2165571587
             ],
-            "Name": "DrawParticleSpriteXOR",
             "StartAddress": 2159869955,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2160,7 +2069,6 @@
         {
             "Description": "",
             "EndAddress": 2165637123,
-            "Name": "CheckPointBackgroundCollisionPosX",
             "StartAddress": 2165637123,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2168,7 +2076,6 @@
         {
             "Description": "",
             "EndAddress": 2167996419,
-            "Name": "CheckPointBackgroundCollisionNegX",
             "StartAddress": 2167996419,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2186,7 +2093,6 @@
             "ExitPoints": [
                 2172649475
             ],
-            "Name": "function_815D",
             "StartAddress": 2170355715,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2194,7 +2100,6 @@
         {
             "Description": "",
             "EndAddress": 2172715011,
-            "Name": "function_8181",
             "StartAddress": 2172715011,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2262,7 +2167,6 @@
             "ExitPoints": [
                 2179530755
             ],
-            "Name": "EnterTitleScreen",
             "StartAddress": 2175139843,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2335,7 +2239,6 @@
             "ExitPoints": [
                 2198405123
             ],
-            "Name": "HighlightSelectedControlDevice",
             "StartAddress": 2196045827,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2418,7 +2321,6 @@
             "ExitPoints": [
                 2226388995
             ],
-            "Name": "DrawTitleScreenGraphics",
             "StartAddress": 2219769859,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2441,7 +2343,6 @@
             "ExitPoints": [
                 2227503107
             ],
-            "Name": "DrawVerticalTitleBar",
             "StartAddress": 2226454531,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2469,7 +2370,6 @@
             "ExitPoints": [
                 2228617219
             ],
-            "Name": "DrawHorizontalTitleBar",
             "StartAddress": 2227568643,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2507,7 +2407,6 @@
             "ExitPoints": [
                 2241331203
             ],
-            "Name": "ScrollTitleBars",
             "StartAddress": 2230648835,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2518,7 +2417,6 @@
             "ExitPoints": [
                 2243493891
             ],
-            "Name": "function_85B0",
             "StartAddress": 2242904067,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2530,7 +2428,6 @@
                 2265907203,
                 2265579523
             ],
-            "Name": "SFXHandler",
             "StartAddress": 2243559427,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2541,7 +2438,6 @@
             "ExitPoints": [
                 2269577219
             ],
-            "Name": "function_8738",
             "StartAddress": 2268594179,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2559,7 +2455,6 @@
             "ExitPoints": [
                 2276130819
             ],
-            "Name": "AddAnimatedBlock",
             "StartAddress": 2269642755,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2597,7 +2492,6 @@
             "ExitPoints": [
                 2277113859
             ],
-            "Name": "UpdateAnimatedBlocks",
             "StartAddress": 2276196355,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2608,7 +2502,6 @@
             "ExitPoints": [
                 2291793923
             ],
-            "Name": "ClearSystems",
             "StartAddress": 2291269635,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2631,7 +2524,6 @@
             "ExitPoints": [
                 2300706819
             ],
-            "Name": "SpawnExplosion",
             "StartAddress": 2297036803,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2659,7 +2551,6 @@
             "ExitPoints": [
                 2301362179
             ],
-            "Name": "UpdateExplosions",
             "StartAddress": 2300772355,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2670,7 +2561,6 @@
             "ExitPoints": [
                 2312503299
             ],
-            "Name": "StartExplosionSpawner",
             "StartAddress": 2309029891,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2698,7 +2588,6 @@
             "ExitPoints": [
                 2313158659
             ],
-            "Name": "UpdateExplosionSpawners",
             "StartAddress": 2312568835,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2716,7 +2605,6 @@
             "ExitPoints": [
                 2322071555
             ],
-            "Name": "SpawnFlashingBlock",
             "StartAddress": 2319319043,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2739,7 +2627,6 @@
             "ExitPoints": [
                 2322530307
             ],
-            "Name": "UpdateFlashingBlocks",
             "StartAddress": 2322137091,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2750,7 +2637,6 @@
             "ExitPoints": [
                 2329477123
             ],
-            "Name": "SpawnFadingParticle",
             "StartAddress": 2327773187,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2793,7 +2679,6 @@
             "ExitPoints": [
                 2329935875
             ],
-            "Name": "UpdateFadingParticles",
             "StartAddress": 2329542659,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2804,7 +2689,6 @@
             "ExitPoints": [
                 2345205763
             ],
-            "Name": "CalculateTrajectory",
             "StartAddress": 2339438595,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2815,7 +2699,6 @@
             "ExitPoints": [
                 2349465603
             ],
-            "Name": "UpdateProjectilePosition",
             "StartAddress": 2345271299,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2838,7 +2721,6 @@
             "ExitPoints": [
                 2362834947
             ],
-            "Name": "SpawnProjectile",
             "StartAddress": 2358771715,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2906,7 +2788,6 @@
             "ExitPoints": [
                 2363490307
             ],
-            "Name": "UpdateProjectiles",
             "StartAddress": 2362900483,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2929,7 +2810,6 @@
             "ExitPoints": [
                 2369912835
             ],
-            "Name": "UpdateProjectileFirers",
             "StartAddress": 2369519619,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2959,7 +2839,6 @@
             ],
             "Description": "",
             "EndAddress": 2378498051,
-            "Name": "routine_8D95",
             "StartAddress": 2375352323,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2967,7 +2846,6 @@
         {
             "Description": "",
             "EndAddress": 2378694659,
-            "Name": "routine_8DC8",
             "StartAddress": 2378694659,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2987,7 +2865,6 @@
             ],
             "Description": "",
             "EndAddress": 2383151107,
-            "Name": "RandomIntervalProjectileL",
             "StartAddress": 2381774851,
             "bManualEdit": false,
             "bROMFunction": false
@@ -2995,7 +2872,6 @@
         {
             "Description": "",
             "EndAddress": 2383347715,
-            "Name": "RandomIntervalProjectileR",
             "StartAddress": 2383347715,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3006,7 +2882,6 @@
             "ExitPoints": [
                 2386624515
             ],
-            "Name": "AddDynamicHazard",
             "StartAddress": 2385575939,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3071,7 +2946,6 @@
                 2405171203,
                 2398420995
             ],
-            "Name": "UpdatePlayerDeath",
             "StartAddress": 2396717059,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3111,7 +2985,6 @@
             ],
             "Description": "",
             "EndAddress": 2412183555,
-            "Name": "DoGameOver",
             "StartAddress": 2408906755,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3122,7 +2995,6 @@
             "ExitPoints": [
                 2413297667
             ],
-            "Name": "SpawnUpDownEnemyPair",
             "StartAddress": 2413166595,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3133,7 +3005,6 @@
             "ExitPoints": [
                 2420703235
             ],
-            "Name": "UpdateUpDownMovingEnemies",
             "StartAddress": 2420113411,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3141,7 +3012,6 @@
         {
             "Description": "",
             "EndAddress": 2436300803,
-            "Name": "ChangeUpDownEnemyDirection",
             "StartAddress": 2436300803,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3152,7 +3022,6 @@
             "ExitPoints": [
                 2444427267
             ],
-            "Name": "Spawn_F8h_To_FFh",
             "StartAddress": 2444296195,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3163,7 +3032,6 @@
             "ExitPoints": [
                 2456813571
             ],
-            "Name": "function_9267",
             "StartAddress": 2456223747,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3171,7 +3039,6 @@
         {
             "Description": "",
             "EndAddress": 2479882243,
-            "Name": "function_93D0",
             "StartAddress": 2479882243,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3179,7 +3046,6 @@
         {
             "Description": "",
             "EndAddress": 2481586179,
-            "Name": "function_93EA",
             "StartAddress": 2481586179,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3187,7 +3053,6 @@
         {
             "Description": "",
             "EndAddress": 2482765827,
-            "Name": "function_93FC",
             "StartAddress": 2482765827,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3195,7 +3060,6 @@
         {
             "Description": "",
             "EndAddress": 2484011011,
-            "Name": "function_940F",
             "StartAddress": 2484011011,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3203,7 +3067,6 @@
         {
             "Description": "",
             "EndAddress": 2485190659,
-            "Name": "function_9421",
             "StartAddress": 2485190659,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3251,7 +3114,6 @@
             "ExitPoints": [
                 2490957827
             ],
-            "Name": "DisplayHighScores",
             "StartAddress": 2486370307,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3271,7 +3133,6 @@
             ],
             "Description": "",
             "EndAddress": 2522742787,
-            "Name": "EnterHighScore",
             "StartAddress": 2504982531,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3282,7 +3143,6 @@
             "ExitPoints": [
                 2534277123
             ],
-            "Name": "LaunchMissile",
             "StartAddress": 2530738179,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3330,7 +3190,6 @@
             "ExitPoints": [
                 2534932483
             ],
-            "Name": "UpdateLaunchedMissiles",
             "StartAddress": 2534342659,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3353,7 +3212,6 @@
             "ExitPoints": [
                 2549481475
             ],
-            "Name": "UpdateMissiles",
             "StartAddress": 2549088259,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3383,7 +3241,6 @@
             ],
             "Description": "",
             "EndAddress": 2555510787,
-            "Name": "UpwardsMissileFunction",
             "StartAddress": 2553348099,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3391,7 +3248,6 @@
         {
             "Description": "",
             "EndAddress": 2555707395,
-            "Name": "DownwardsMissileFunction",
             "StartAddress": 2555707395,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3402,7 +3258,6 @@
             "ExitPoints": [
                 2561867779
             ],
-            "Name": "ClearDestructableSceneryAt",
             "StartAddress": 2559442947,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3441,7 +3296,6 @@
                 2562523139,
                 2591293443
             ],
-            "Name": "UpdateEnemyEntities",
             "StartAddress": 2561933315,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3494,7 +3348,6 @@
             "ExitPoints": [
                 2596667395
             ],
-            "Name": "CheckWeaponEnemyImpact",
             "StartAddress": 2591358979,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3502,7 +3355,6 @@
         {
             "Description": "",
             "EndAddress": 2596732931,
-            "Name": "function_9AC7",
             "StartAddress": 2596732931,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3510,7 +3362,6 @@
         {
             "Description": "",
             "EndAddress": 2598830083,
-            "Name": "function_9AE7",
             "StartAddress": 2598830083,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3518,7 +3369,6 @@
         {
             "Description": "",
             "EndAddress": 2600927235,
-            "Name": "function_9B07",
             "StartAddress": 2600927235,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3536,7 +3386,6 @@
             "ExitPoints": [
                 2607218691
             ],
-            "Name": "function_9B48",
             "StartAddress": 2605187075,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3560,7 +3409,6 @@
                 2607415299,
                 2612920323
             ],
-            "Name": "SpawnEnemySpawner",
             "StartAddress": 2607284227,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3571,7 +3419,6 @@
             "ExitPoints": [
                 2614951939
             ],
-            "Name": "function_9BD8",
             "StartAddress": 2614624259,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3591,7 +3438,6 @@
                 2616197123,
                 2622160899
             ],
-            "Name": "UpdateEnemySpawnLogic",
             "StartAddress": 2615279619,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3614,7 +3460,6 @@
             "ExitPoints": [
                 2684420099
             ],
-            "Name": "SpawnItemInClearSpace",
             "StartAddress": 2678194179,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3625,7 +3470,6 @@
             "ExitPoints": [
                 2689400835
             ],
-            "Name": "GetItemInfoPointer",
             "StartAddress": 2688483331,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3648,7 +3492,6 @@
             "ExitPoints": [
                 2689859587
             ],
-            "Name": "UpdateItemMovement",
             "StartAddress": 2689466371,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3701,7 +3544,6 @@
             "ExitPoints": [
                 2694053891
             ],
-            "Name": "UpdateItemPickupBehaviour",
             "StartAddress": 2693136387,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3709,7 +3551,6 @@
         {
             "Description": "",
             "EndAddress": 2702311427,
-            "Name": "CollectRearShooterUpgrade",
             "StartAddress": 2702311427,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3717,7 +3558,6 @@
         {
             "Description": "",
             "EndAddress": 2703884291,
-            "Name": "CollectAmmo",
             "StartAddress": 2703884291,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3725,7 +3565,6 @@
         {
             "Description": "",
             "EndAddress": 2707030019,
-            "Name": "CollectMace",
             "StartAddress": 2706243587,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3744,7 +3583,6 @@
                 2715287555,
                 2717188099
             ],
-            "Name": "SpawnWeaponUpgrade",
             "StartAddress": 2715156483,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3757,7 +3595,6 @@
                 2741370883,
                 2755985411
             ],
-            "Name": "DrawMovingSpriteXOR",
             "StartAddress": 2717712387,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3775,7 +3612,6 @@
             "ExitPoints": [
                 2759458819
             ],
-            "Name": "WriteSpriteAttrbiutes",
             "StartAddress": 2756050947,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3793,7 +3629,6 @@
             "ExitPoints": [
                 2762735619
             ],
-            "Name": "WriteObjectAttributes",
             "Params": [
                 {
                     "DisplayType": "Unknown",
@@ -3833,7 +3668,6 @@
             "ExitPoints": [
                 2765750275
             ],
-            "Name": "WriteAttrib2x2",
             "StartAddress": 2762801155,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3844,7 +3678,6 @@
             "ExitPoints": [
                 2771910659
             ],
-            "Name": "DrawBlockXOR",
             "StartAddress": 2765815811,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3855,7 +3688,6 @@
             "ExitPoints": [
                 2772893699
             ],
-            "Name": "GetBlockAddress",
             "StartAddress": 2771976195,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3867,7 +3699,6 @@
                 2776498179,
                 2773090307
             ],
-            "Name": "DrawBackgroundBlockPixels",
             "StartAddress": 2772959235,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3886,7 +3717,6 @@
                 2779316227,
                 2776694787
             ],
-            "Name": "DrawBackgroundBlockAttributes",
             "StartAddress": 2776563715,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3894,7 +3724,6 @@
         {
             "Description": "",
             "EndAddress": 4013424644,
-            "Name": "NullFunction_EF38",
             "StartAddress": 4013424644,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3905,7 +3734,6 @@
             "ExitPoints": [
                 4013621252
             ],
-            "Name": "NullFunction_EF3B",
             "StartAddress": 4013621252,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3916,7 +3744,6 @@
             "ExitPoints": [
                 4014080004
             ],
-            "Name": "NullFunction_EF42_1",
             "StartAddress": 4014080004,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3924,7 +3751,6 @@
         {
             "Description": "",
             "EndAddress": 4020961284,
-            "Name": "function_EFAB",
             "StartAddress": 4020961284,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3932,7 +3758,6 @@
         {
             "Description": "",
             "EndAddress": 4022403076,
-            "Name": "function_EFC1",
             "StartAddress": 4022403076,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3940,7 +3765,6 @@
         {
             "Description": "",
             "EndAddress": 4023517188,
-            "Name": "function_EFD2",
             "StartAddress": 4023517188,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3948,7 +3772,6 @@
         {
             "Description": "",
             "EndAddress": 4028301316,
-            "Name": "function_F01B",
             "StartAddress": 4028301316,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3956,7 +3779,6 @@
         {
             "Description": "",
             "EndAddress": 4053860356,
-            "Name": "function_F1A1",
             "StartAddress": 4053860356,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3964,7 +3786,6 @@
         {
             "Description": "",
             "EndAddress": 4056481796,
-            "Name": "function_F1C9",
             "StartAddress": 4056481796,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3975,7 +3796,6 @@
             "ExitPoints": [
                 4220256260
             ],
-            "Name": "function_FB86",
             "StartAddress": 4219863044,
             "bManualEdit": false,
             "bROMFunction": false
@@ -3983,7 +3803,6 @@
         {
             "Description": "",
             "EndAddress": 4220321796,
-            "Name": "PlayTitleTuneLoop",
             "StartAddress": 4220321796,
             "bManualEdit": false,
             "bROMFunction": false
@@ -4038,7 +3857,6 @@
                 4222746628,
                 4222287876
             ],
-            "Name": "CheckPortInput",
             "StartAddress": 4220518404,
             "bManualEdit": false,
             "bROMFunction": false
@@ -4056,6 +3874,7 @@
             "LabelInfo": [
                 {
                     "Address": 0,
+                    "Global": true,
                     "LabelType": 0,
                     "Name": "ScreenPixels"
                 }
@@ -4072,31 +3891,9 @@
             "PageId": 35
         },
         {
-            "LabelInfo": [
-                {
-                    "Address": 477,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_51DD"
-                },
-                {
-                    "Address": 962,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_53C2"
-                }
-            ],
             "PageId": 36
         },
         {
-            "LabelInfo": [
-                {
-                    "Address": 958,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_57BE"
-                }
-            ],
             "PageId": 37
         },
         {
@@ -4281,20 +4078,9 @@
             "LabelInfo": [
                 {
                     "Address": 0,
+                    "Global": true,
                     "LabelType": 0,
                     "Name": "ScreenAttributes"
-                },
-                {
-                    "Address": 128,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_5880"
-                },
-                {
-                    "Address": 704,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_5AC0"
                 },
                 {
                     "Address": 768,
@@ -14777,24 +14563,6 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "RoomPointersLUT"
-                },
-                {
-                    "Address": 434,
-                    "Comment": "player dies when this hits 0, gets reset on new screen",
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "PlayerDeathTimer"
-                },
-                {
-                    "Address": 436,
-                    "Global": true,
-                    "LabelType": 1,
-                    "Name": "HandlePlayerOffScreen"
-                },
-                {
-                    "Address": 454,
-                    "LabelType": 2,
-                    "Name": "off_horizontal_edge"
                 },
                 {
                     "Address": 461,
@@ -43956,8 +43724,7 @@
                 },
                 {
                     "Address": 123,
-                    "ByteSize": 1,
-                    "Flags": 32
+                    "ByteSize": 1
                 },
                 {
                     "Address": 124,
@@ -48290,12 +48057,6 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "room_0_data"
-                },
-                {
-                    "Address": 549,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "room_1_data"
                 },
                 {
                     "Address": 642,
@@ -53454,12 +53215,6 @@
                 }
             ],
             "LabelInfo": [
-                {
-                    "Address": 45,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "room_7_data"
-                },
                 {
                     "Address": 169,
                     "Global": true,
@@ -120885,7 +120640,6 @@
                 {
                     "Address": 1008,
                     "ByteSize": 2,
-                    "Comment": "push character address",
                     "DataType": 2
                 },
                 {

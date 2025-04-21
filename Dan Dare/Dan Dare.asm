@@ -8,7 +8,6 @@ START_NEW: 	equ $11CB
 ScreenPixels: 	equ $4000
 label_4C46: 	equ $4C46
 ScreenAttributes: 	equ $5800
-data_5A5C: 	equ $5A5C
 
 	org $5B00
 	db $00
@@ -268,108 +267,106 @@ data_5A5C: 	equ $5A5C
 	db $00
 	db $00
 RoomFlagsCharMap:
-	db $00,$00,$00,$00,$00,$00,$00,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$00,$00,$00,$00,$00,$00,$00
-data_5C5D:
-data_5C5F:
-	db $00,$00,$00,$00,$00,$00,$00,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
+	db $80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80
+	db $80,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$40,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$80,$80,$80,$80
+	db $80,$C0,$C0,$C0,$C0,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$00,$00,$80,$00,$00,$00,$00,$00,$00,$00,$C0,$80,$80,$80,$80
+	db $80,$C0,$C0,$C0,$C0,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$80,$80,$80,$00,$00,$00,$00,$00,$00,$00,$C0,$C0,$C0,$C0,$80
+	db $80,$C0,$C0,$C0,$C0,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$80,$80,$80,$00,$00,$00,$00,$00,$00,$00,$C0,$C0,$C0,$C0,$80
+	db $80,$C0,$C0,$C0,$C0,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$00,$00,$80,$00,$00,$00,$00,$00,$00,$00,$C0,$C0,$C0,$C0,$80
+	db $80,$C0,$C0,$C0,$C0,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$00,$00,$80,$00,$00,$00,$00,$00,$00,$00,$C0,$C0,$C0,$C0,$80
+	db $80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80
+	db $80,$80,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$80,$80
+	db $80,$80,$80,$80,$C0,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$00,$00,$80,$00,$00,$80,$00,$00,$00,$00,$C0,$80,$80,$80,$80
+	db $80,$80,$80,$80,$C0,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$00,$00,$80,$00,$00,$80,$00,$00,$00,$00,$C0,$80,$80,$80,$80
+	db $80,$80,$80,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$80,$80,$80,$00,$00,$80,$00,$00,$00,$00,$00,$00,$80,$80,$80
+	db $80,$80,$80,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$80,$80,$80,$00,$00,$80,$00,$00,$00,$00,$00,$00,$80,$80,$80
+	db $80,$80,$80,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$00,$00,$80,$00,$00,$80,$00,$00,$00,$00,$00,$00,$80,$80,$80
+	db $80,$80,$80,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$00,$00,$80,$00,$00,$80,$00,$00,$00,$00,$00,$00,$80,$80,$80
+	db $80,$80,$80,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$80,$00,$00,$80,$00,$00,$80,$00,$00,$00,$00,$00,$00,$80,$80,$80
+	db $80,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$C0,$80
+	db $80,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$C0
+	db $C0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$D0,$C0
+	db $C0,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$E0,$E0,$E0,$E0,$E0,$E0
 	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 RoomCharMap:
 	db $83,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$88
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $A5,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$82
-	db $83,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$88
+	db $A5,$A4,$2F,$30,$31,$46,$46,$46,$46,$46,$46,$46,$46,$0F,$10,$02,$A8,$12,$11,$A8,$46,$46,$46,$46,$46,$46,$46,$0C,$0D,$0E,$A4,$82
+	db $A5,$A4,$2B,$0B,$29,$01,$01,$01,$01,$01,$01,$01,$01,$02,$02,$02,$C3,$01,$01,$89,$01,$01,$01,$01,$01,$01,$02,$2B,$0B,$29,$A4,$82
+	db $A5,$A4,$2B,$0B,$29,$01,$01,$01,$01,$01,$01,$01,$01,$02,$02,$02,$FD,$B0,$8D,$8E,$01,$01,$01,$01,$01,$01,$02,$2B,$0B,$29,$A4,$82
+	db $A5,$A4,$2B,$0B,$29,$01,$01,$01,$01,$01,$01,$01,$01,$02,$02,$02,$B1,$FE,$AD,$AE,$01,$01,$01,$01,$01,$01,$02,$2B,$0B,$29,$A4,$82
+	db $A5,$A4,$2B,$0B,$29,$01,$01,$01,$01,$01,$01,$01,$01,$02,$02,$02,$81,$01,$01,$A9,$01,$01,$01,$01,$01,$01,$02,$2B,$0B,$29,$A4,$82
+	db $A5,$A4,$2B,$0B,$29,$01,$01,$01,$01,$01,$01,$01,$01,$02,$02,$02,$89,$01,$01,$89,$01,$01,$01,$01,$01,$01,$02,$2B,$0B,$29,$A4,$82
+	db $A5,$A4,$D0,$D1,$D0,$D1,$D0,$D1,$D0,$D1,$D0,$D1,$D0,$D1,$D0,$D1,$D0,$D1,$D0,$D1,$D0,$D1,$D0,$D1,$D0,$D1,$D0,$D1,$D0,$D1,$A4,$82
+	db $A5,$A4,$E6,$E5,$E6,$E5,$E6,$E5,$E6,$E5,$E6,$E5,$E6,$E5,$E6,$E5,$E6,$E5,$E6,$E5,$E6,$E5,$E6,$E5,$E6,$E5,$E6,$E5,$E6,$E5,$A4,$82
+	db $A5,$A4,$2B,$0B,$29,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$02,$A9,$02,$02,$A9,$02,$02,$A8,$02,$02,$02,$02,$2B,$0B,$29,$A4,$82
+	db $A5,$A4,$2B,$43,$42,$01,$01,$01,$01,$01,$01,$01,$01,$02,$02,$02,$89,$01,$01,$89,$02,$01,$A9,$01,$01,$01,$02,$68,$69,$29,$A4,$82
+	db $A5,$A4,$2B,$01,$02,$01,$01,$01,$01,$01,$01,$01,$01,$02,$02,$02,$91,$FF,$8D,$8E,$02,$01,$A9,$01,$01,$01,$02,$02,$01,$29,$A4,$82
+	db $A5,$A4,$2B,$01,$02,$01,$01,$01,$01,$01,$01,$01,$01,$02,$02,$02,$91,$F8,$AD,$AE,$02,$01,$A9,$01,$01,$01,$02,$02,$01,$29,$A4,$82
+	db $A5,$A4,$2B,$01,$02,$01,$01,$01,$01,$01,$01,$01,$01,$02,$02,$02,$A9,$01,$01,$A9,$02,$01,$A9,$01,$01,$01,$00,$02,$01,$29,$A4,$82
+	db $A5,$A4,$2B,$01,$02,$01,$01,$01,$01,$01,$01,$01,$01,$02,$02,$02,$89,$01,$01,$89,$02,$01,$A9,$01,$01,$01,$00,$02,$01,$29,$A4,$82
+	db $A5,$A4,$B7,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$A9,$00,$00,$A9,$02,$00,$A9,$02,$02,$02,$00,$02,$00,$2E,$A4,$82
+	db $A5,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$27,$82
+	db $A5,$4F,$4F,$50,$4C,$4F,$4F,$50,$4C,$4F,$4F,$50,$4C,$4F,$4F,$50,$4C,$4F,$4F,$50,$4C,$4F,$4F,$50,$4C,$4F,$4F,$50,$4C,$4F,$4F,$82
+	db $A5,$6F,$6F,$70,$6C,$6F,$6F,$70,$6C,$6F,$6F,$70,$6C,$6F,$6F,$70,$6C,$6F,$6F,$70,$6C,$6F,$6F,$70,$6C,$6F,$6F,$70,$6C,$6F,$6F,$82
+	db $83,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$22,$11,$12,$12,$12,$12,$13
 	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 	db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 ; 10 10 byte items
 data_6200:
-	db $22
-	db $22
-	db $22
-	db $22
-	db $22
-	db $22
-	db $22
-	db $22
-	db $62
-	db $0A
 	db $00
 	db $80
-	db $4A
-	db $81
-	db $81
-	db $81
-	db $81
-	db $05
-	db $62
-	db $05
-	db $00
-	db $80
-	db $4A
-	db $81
-	db $81
-	db $81
-	db $81
+	db $4D
+	db $87
+	db $87
+	db $87
+	db $87
 	db $07
-	db $62
-	db $04
+	db $65
+	db $06
 	db $00
 	db $80
-	db $4A
-	db $9E
-	db $9E
-	db $9E
-	db $9E
+	db $4D
+	db $95
+	db $95
+	db $95
+	db $95
 	db $05
-	db $62
-	db $01
+	db $65
+	db $07
 	db $00
 	db $80
-	db $4A
-	db $9B
-	db $9B
-	db $9B
-	db $9B
+	db $4D
+	db $8C
+	db $8C
+	db $8C
+	db $8C
+	db $05
+	db $65
+	db $02
+	db $00
+	db $80
+	db $45
+	db $89
+	db $89
+	db $89
+	db $89
+	db $05
+	db $25
+	db $FF
+	db $00
+	db $80
+	db $4D
+	db $92
+	db $92
+	db $92
+	db $92
 	db $07
-	db $62
+	db $65
 	db $FF
 	db $00
 	db $80
@@ -384,23 +381,23 @@ data_6200:
 	db $00
 	db $80
 	db $4A
-	db $9D
-	db $9D
-	db $9D
-	db $9D
+	db $88
+	db $88
+	db $88
+	db $88
 	db $07
 	db $62
+	db $FF
+	db $00
+	db $80
+	db $4A
+	db $81
+	db $81
+	db $81
+	db $81
 	db $05
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
+	db $62
+	db $01
 	db $00
 	db $00
 	db $00
@@ -422,30 +419,30 @@ data_6200:
 	db $00
 	db $00
 PlayerIdleCounter:
-	db 0
+	db 99
 PreviousRoomNumber:
-	db 85
+	db 115
 CurrentRoomNumber:
-	db 86
+	db 114
 data_6267:
-	db $19
+	db $00
 data_6268:
 	db $00
 data_6269:
-	db $01
-data_626A:
-	db $85
-data_626B:
 	db $00
+data_626A:
+	db $00
+data_626B:
+	db $03
 PlayerUsingLift:
-	db $01
-	db $A4
+	db $00
+	db $A0
 ScrollTextPointer:
-	dw $CD73
+	dw $0900
 data_6270:
 	db $00
 data_6271:
-	db $0D
+	db $00
 data_6272:
 	db $80
 ; This looks like a bitfield indexed by room number
@@ -453,7 +450,7 @@ data_6272:
 SpawnEnemiesInRoomBitField:
 	db %11111111
 	db %11111100
-	db %11111111
+	db %01111111
 	db %11111111
 	db %11111111
 	db %11111100
@@ -461,15 +458,15 @@ SpawnEnemiesInRoomBitField:
 	db %11111111
 	db %11111111
 	db %11111111
-	db %11100111
+	db %11111111
 	db %11111111
 	db %11111111
 	db %11111100
-	db %00001111
+	db %00011111
 	db %11111111
 	db %11111111
-	db %11111110
-	db %00001111
+	db %11111111
+	db %11111111
 	db %11111111
 	db %11111111
 	db %11111111
@@ -484,41 +481,41 @@ SpawnEnemiesInRoomBitField:
 	db %10111111
 	db %11111111
 data_6293:
-	db $FE
+	db $FA
 	db $63
 data_6295:
-	db 128
+	db 148
 data_6296:
 	db $FF
 NextRoomNumber:
-	db 86
+	db 114
 data_6298:
 	db $01
 ; 3 4 byte items
 SentryGunStates:
 	db %00000000			; item 0
+	db $80
+	db $08
+	db $04			; direction
+	db %00000000			; item 1
 	db $68
 	db $0E
-	db $05			; direction
-	db %00000000			; item 1
-	db $80
-	db $1D
 	db $03			; direction
 	db %00000000			; item 2
 	db $80
-	db $0B
+	db $FF
 	db $05			; direction
 data_62A5:
 	db $FF
 	db $FF
-	db $F8
-	db $83
-	db $38
-	db $12
-	db $FB
-	db $83
+	db $00
+	db $00
 	db $FF
 	db $FF
+	db $00
+	db $00
+	db $00
+	db $00
 	db $00
 	db $00
 	db $00
@@ -542,13 +539,13 @@ data_62A5:
 	db $00
 	db $00
 data_62C5:
-	dw $C0DD
+	dw $C089
 ForeGCharMaskPtr:
-	dw $C0C8
+	dw $C074
 data_62C9:
-	db %11100010
+	db %00000001
 CurrentForeGCharMask:
-	db %01100010
+	db %00000001
 data_62CB:
 	db $00
 data_62CC:
@@ -566,21 +563,21 @@ RoomDefinitionsPtr:
 data_62D6:
 	db $00
 GameState:
-	db $80			; 80h - on title screen, FFh - in game, 00h - ??
+	db $FF			; 80h - on title screen, FFh - in game, 00h - ??
 GameFrameCounter:
-	db 4			; updated by interrupt routine when in game
+	db 63			; updated by interrupt routine when in game
 MainLoopCounter:
-	db $85
+	db $3E
 GameTimer_Hours:
-	db $10
+	db $01
 GameTimer_Minutes:
-	db $17
+	db $31
 GameTimer_Seconds:
-	db $00
+	db $25
 GameTimer_Frames:
-	db 12
+	db 30
 AmmoAmount:
-	db 3
+	db 23
 data_62DF:
 	db $00
 data_62E0:
@@ -603,7 +600,7 @@ data_62E4:
 data_62EC:
 	db $07
 data_62ED:
-	db $0A
+	db $00
 data_62EE:
 	db $10
 	db $00
@@ -807,40 +804,40 @@ data_62EE:
 	db $00
 	dw $0000
 	dw $0000
-	dw $0000
-	dw $0000
-	dw $0000
-	dw $0000
-	dw $B692
-	dw $B686
-	dw $62A5
-	dw $5F1C
+	dw $B3E2
 	dw $B692
 	dw $B692
 	dw $B686
 	dw $62A5
+	dw $5C17
+	dw $661A
+	dw $0071
+	dw $220A
 	dw $0000
 	dw $0000
 	dw $B3E2
-	dw $CE86
-	dw $0710
-	dw $B63E
-	dw $C3B8
-	dw $CE86
-	dw $0710
-	dw $B63E
-	dw $C3B8
-	dw $005C
-	dw $01D1
-	dw $CE86
-	dw $0710
-	dw $B63E
-	dw $C3B8
-	dw $58C1
-	dw $0283
-	dw $000F
-	dw $0410
-	dw $9992
+	dw $0000
+	dw $0289
+	dw $62DC
+	dw $3025
+	dw $0000
+	dw $0000
+	dw $B3E2
+	dw $0000
+	dw $0289
+	dw $62DC
+	dw $3525
+	dw $B692
+	dw $B692
+	dw $5E0A
+	dw $800A
+	dw $B239
+	dw $A08C
+	dw $A090
+	dw $9E1E
+	dw $9D06
+	dw $99EC
+	dw $99EC
 	dw $99EC
 BitMirrorTable:
 	db %00000000
@@ -7900,7 +7897,7 @@ RoomDefinitions:
 	dw $807A			; char map offset
 	db 255			; item number
 	dw $0033			; char map offset
-	db 213			; item number
+	db 212			; item number
 	dw $41C5			; char map offset
 ; Room 84 Definition
 	dw 18			; Room size (18 bytes)
@@ -11849,7 +11846,7 @@ RoomDefinitions:
 	LD   (MainLoopCounter),A
 	AND  %01111111
 	JR   Z,.enter_pressed
-	LD   HL,CHARSET.ScreenAttributes+193
+	LD   HL,ScreenAttributes+193
 	LD   C,$0F			; write 15 lines
 	HALT			; wait 2 frames?
 	HALT
@@ -11882,7 +11879,7 @@ RoomDefinitions:
 	RRA
 	JR   NC,.key_release_loop
 .options_screen_loop:
-	LD   HL,CHARSET.ScreenAttributes+289
+	LD   HL,ScreenAttributes+289
 	LD   C,$00			; control config no
 	LD   DE,34			; offset to next attribute
 .control_config_highlight_loop:
@@ -11935,7 +11932,7 @@ RoomDefinitions:
 	XOR  A
 	LD   (GameState),A
 	LD   B,$11
-	LD   HL,CHARSET.ScreenPixels+194
+	LD   HL,ScreenPixels+194
 .label_99A3:
 	PUSH BC
 	LD   B,$1C
@@ -11993,6 +11990,7 @@ RoomDefinitions:
 	LD   HL,$FF58
 	EXX 
 	JP   SET_DE.START_NEW
+; Function Name: PlayGameIntro
 PlayGameIntro:
 	PUSH BC
 	CALL function_B53B
@@ -12044,9 +12042,10 @@ PlayGameIntro:
 	CALL function_BD07			; clear intro text
 	CALL ClearScreenRegion_Black
 	RET 
+; Function Name: ScrollIntroGround
 ScrollIntroGround:
 	PUSH BC
-	LD   HL,CHARSET.label_4C46+987
+	LD   HL,ScreenPixels.label_4C46+987
 	LD   BC,$101D
 .label_9A77:
 	PUSH BC
@@ -12060,8 +12059,8 @@ ScrollIntroGround:
 	CALL function_9AB5
 	POP  BC
 	DJNZ .label_9A77
-	LD   HL,CHARSET.ScreenAttributes+546
-	LD   DE,CHARSET.ScreenAttributes+545
+	LD   HL,ScreenAttributes+546
+	LD   DE,ScreenAttributes+545
 	LD   BC,29			; count
 	LDIR			; scroll attrib line
 	LD   L,$42			; point to line below
@@ -12082,6 +12081,7 @@ ScrollIntroGround:
 	CALL DrawSingleChar
 	POP  BC
 	RET 
+; Function Name: function_9AB5
 function_9AB5:
 	INC  H
 	LD   A,H
@@ -12095,6 +12095,7 @@ function_9AB5:
 	SUB  $08
 	LD   H,A
 	RET 
+; Function Name: function_9AC4
 function_9AC4:
 	LD   (data_6293),SP
 	XOR  A			; clear A
@@ -12140,7 +12141,7 @@ function_9AC4:
 	LD   BC,$031E
 	LD   A,$47
 	CALL function_BD07.label_BD35
-	LD   HL,CHARSET.ScreenAttributes+641
+	LD   HL,ScreenAttributes+641
 	LD   C,$03
 	LD   A,L
 .label_9B39:
@@ -12159,7 +12160,7 @@ function_9AC4:
 	CALL function_BD57
 	LD   HL,UnknownScreenData			; not sure what this screen is
 	CALL DrawMenuScreen
-	CALL function_A61F
+	CALL ResetRoomEnemySpawnBits
 	CALL function_B798
 	CALL function_B35A
 	CALL DrawAmmoCounterBackground
@@ -12253,7 +12254,7 @@ function_9AC4:
 	RES  7,(IX+$15)
 	LD   A,(CurrentRoomNumber)
 	CP   $3F
-	CALL Z,function_A61F
+	CALL Z,ResetRoomEnemySpawnBits
 	XOR  A
 	LD   HL,data_6200
 	LD   DE,$000A
@@ -12340,17 +12341,17 @@ function_9AC4:
 	CALL function_AD8F
 	CALL UpdateSentryGuns
 	CALL function_B951
-	CALL function_9DFC
+	CALL UpdatePlayer
 	CALL function_AA35
 	CALL function_BA70
 	HALT
-	CALL function_A31A
+	CALL UpdateEnemy1
 	CALL function_BBA9
 	CALL function_AA35
 	HALT
 	CALL function_BEDC
 	LD   IX,PlayerState
-	CALL function_A91A
+	CALL SetupCharacterState
 	BIT  3,(IX+$0E)
 	JR   NZ,.FrameLoop
 	LD   HL,data_6267
@@ -12374,7 +12375,7 @@ function_9AC4:
 	HALT
 	HALT
 	HALT
-	LD   HL,CHARSET.ScreenAttributes+33
+	LD   HL,ScreenAttributes+33
 	LD   C,$12
 	XOR  A
 	EX   AF,AF'
@@ -12467,15 +12468,16 @@ function_9AC4:
 	CALL function_AEF0
 	LD   (IX+$03),A
 	JP   .label_9B7E
-function_9DFC:
+; Function Name: UpdatePlayer
+UpdatePlayer:
 	LD   IX,PlayerState
 	LD   IY,data_C1E7
 	LD   (IX+$0C),$00
-	CALL function_AF00
-	CALL function_A91A
-	CALL function_9F53
-	BIT  7,(IX+$0E)
-	JR   NZ,.label_9E5B
+	CALL BackupCharacterState
+	CALL SetupCharacterState
+	CALL ReadPlayerControls
+	BIT  7,(IX+$0E)			; check bit 7 of caps
+	JR   NZ,.label_9E5B			; jump if it's set
 	LD   (IX+$09),$00
 	CALL function_A08D
 	JR   C,.label_9E2F
@@ -12488,7 +12490,7 @@ function_9DFC:
 .label_9E2F:
 	BIT  7,(IX+$0E)
 	JR   NZ,.label_9E5B
-	CALL CheckCollisionBelowPlayer
+	CALL CheckCollisionBelowEntity
 	CP   $03
 	JR   NC,.label_9E5B
 	LD   A,(IX+$0A)
@@ -12503,24 +12505,24 @@ function_9DFC:
 	SET  1,(IX+$0A)
 	RES  0,(IX+$0A)
 .label_9E5B:
-	BIT  5,(IX+$0E)
-	JR   NZ,.label_9E75
-	LD   A,(IX+$0A)
+	BIT  5,(IX+$0E)			; check if bit disabling LR movement has been set
+	JR   NZ,.LRDisabled
+	LD   A,(IX+$0A)			; get controls
+	AND  %00000011			; mask out left & right bits
+	CP   $01			; check for right pressed
+	CALL Z,RightPressed
+	LD   A,(IX+$0A)			; get controls again
 	AND  %00000011
-	CP   $01
-	CALL Z,function_9FAA
-	LD   A,(IX+$0A)
-	AND  $03
-	CP   $02
-	CALL Z,function_9F6F
-.label_9E75:
+	CP   $02			; check for left pressed
+	CALL Z,LeftPressed
+.LRDisabled:
 	BIT  3,(IX+$0E)
 	JR   NZ,.label_9EB5
 	CALL function_AD45
 	CALL function_ACFE
 	JR   NC,.label_9EB5
 	PUSH IX
-	LD   IX,$C84F
+	LD   IX,data_C84F
 	CALL function_C02C
 	POP  IX
 	LD   A,(IX+$00)
@@ -12540,7 +12542,7 @@ function_9DFC:
 	LD   (IX+$07),H
 .label_9EB5:
 	LD   HL,PlayerStateFunctionTable
-	CALL RunPlayerStateFunction
+	CALL RunEntityStateFunction
 	BIT  6,(IX+$0E)
 	CALL Z,function_A92A
 	BIT  7,(IX+$0E)
@@ -12606,7 +12608,8 @@ function_9DFC:
 	OR   $03
 	LD   (IX+$01),A
 	JP   function_9AC4.label_9B7E
-function_9F53:
+; Function Name: ReadPlayerControls
+ReadPlayerControls:
 	BIT  2,(IX+$0E)
 	JR   NZ,.label_9F60
 	LD   A,(CurrentControls)
@@ -12619,29 +12622,33 @@ function_9F53:
 	XOR  (IX+$0A)
 	LD   (IX+$0A),A
 	RET 
-function_9F6F:
+; Function Name: LeftPressed
+LeftPressed:
 	LD   A,$FF
 	CALL function_B0F3
 	RET  NC
-	CALL function_9F7F
+	CALL MoveCharacterLeft
 	RET  C
 	RET  NZ
 	LD   (IX+$0C),$04
 	RET 
-function_9F7F:
+; Function Name: MoveCharacterLeft
+; Parameters:
+; 	IX : CharacterPtr
+MoveCharacterLeft:
 	INC  (IX+$08)
 	CALL function_AEF0
 	AND  A
-	JP   M,function_9F7F
+	JP   M,MoveCharacterLeft
 	CP   $40
 	JR   NC,.label_9F91
-	LD   (IX+$03),A
+	LD   (IX+$03),A			; update anim frame
 	RET 
 .label_9F91:
 	CALL function_B29D
 	JR   NC,.label_9F9B
-	DEC  (IX+$02)
-	JR   function_9F7F
+	DEC  (IX+$02)			; character X char pos
+	JR   MoveCharacterLeft
 .label_9F9B:
 	DEC  (IX+$08)
 	CALL function_AEF0
@@ -12650,20 +12657,24 @@ function_9F7F:
 	LD   A,(IX+$02)
 	AND  A
 	RET 
-function_9FAA:
+; Function Name: RightPressed
+RightPressed:
 	XOR  A
 	CALL function_B0F3
 	RET  NC
-	CALL function_9FB9
+	CALL MoveCharacterRight
 	RET  C
 	RET  NZ
 	LD   (IX+$0C),$05
 	RET 
-function_9FB9:
-	INC  (IX+$08)
+; Function Name: MoveCharacterRight
+; Parameters:
+; 	IX : CharacterPtr
+MoveCharacterRight:
+	INC  (IX+$08)			; inc animation counter
 	CALL function_AEF0
 	AND  A
-	JP   M,function_9FB9
+	JP   M,MoveCharacterRight
 	CP   $40
 	JR   NC,.label_9FCB
 	LD   (IX+$03),A
@@ -12671,8 +12682,8 @@ function_9FB9:
 .label_9FCB:
 	CALL function_B2CD
 	JR   NC,.label_9FD5
-	INC  (IX+$02)
-	JR   function_9FB9
+	INC  (IX+$02)			; move right one char
+	JR   MoveCharacterRight
 .label_9FD5:
 	DEC  (IX+$08)
 	CALL function_AEF0
@@ -12684,6 +12695,7 @@ function_9FB9:
 	CPL
 	AND  $1F
 	RET 
+; Function Name: function_9FEA
 function_9FEA:
 	LD   A,(IX+$03)
 	CALL GetAnimSprite
@@ -12715,6 +12727,7 @@ function_9FEA:
 	XOR  A
 	CP   C
 	RET 
+; Function Name: function_A01D
 function_A01D:
 	CP   $FF
 	JR   NZ,.label_A024
@@ -12725,6 +12738,7 @@ function_A01D:
 	RET  NZ
 	SET  7,C
 	RET 
+; Function Name: function_A02A
 function_A02A:
 	CP   $FE
 	JR   NZ,.label_A031
@@ -12735,25 +12749,27 @@ function_A02A:
 	RET  NZ
 	SET  6,C
 	RET 
+; Function Name: function_A037
 function_A037:
 	LD   A,(IX+$0A)			; read player control bits
 	AND  %00001100			; check for jump or duck
-	RET  Z
+	RET  Z			; jump out if neither are pressed
 	CALL function_9FEA
 	RET  NC
-	LD   A,(IX+$0A)
+	LD   A,(IX+$0A)			; read player control bits
 	AND  C
 	RET  Z
-	AND  $0C
+	AND  %00001100			; mask out other bits and write back
 	LD   (IX+$0A),A
 	SCF
 	LD   A,$05
 	JP   function_A651
+; Function Name: function_A051
 function_A051:
 	LD   A,(IX+$0A)			; read control bits
 	AND  %00001000			; check for jump
 	RET  Z			; return if no jump
-	CALL CheckCollisionBelowPlayer
+	CALL CheckCollisionBelowEntity
 	CP   $02
 	JR   NC,.label_A064
 	LD   A,(IX+$0A)			; read control bits
@@ -12763,17 +12779,19 @@ function_A051:
 	SCF
 	LD   A,$04
 	JP   function_A651
+; Function Name: function_A06A
 function_A06A:
 	LD   A,(IX+$0A)			; read control bits
 	AND  %00000100			; check for duck
 	RET  Z			; return if no jump
-	CALL CheckCollisionBelowPlayer
+	CALL CheckCollisionBelowEntity
 	CP   $03
 	RET  C
 	LD   (IX+$0B),$00
 	SCF
 	LD   A,$06
 	JP   function_A651
+; Function Name: function_A080
 function_A080:
 	LD   A,(IX+$01)
 	CP   $93
@@ -12782,11 +12800,13 @@ function_A080:
 	LD   E,$01
 	CALL function_B217
 	RET 
+; Function Name: function_A08D
 function_A08D:
 	CALL function_A080
 	RET  NC
 	LD   A,$07
 	JP   function_A651
+; Function Name: function_A096
 function_A096:
 	LD   A,$F7
 	IN   A,($FE)
@@ -12838,6 +12858,7 @@ function_A096:
 	POP  BC
 	DJNZ .label_A0E1
 	JR   function_A0F0.label_A0FE
+; Function Name: function_A0F0
 function_A0F0:
 	CALL function_AC72
 	CALL GenerateRandomNo
@@ -13031,6 +13052,7 @@ function_A0F0:
 	CALL function_A270
 	LD   (HL),$2E
 	JP   .label_A1DB
+; Function Name: function_A256
 function_A256:
 	CALL ReadControls
 	LD   HL,$62DA
@@ -13052,6 +13074,7 @@ function_A256:
 	DEC  HL
 	LD   A,(HL)
 	RET 
+; Function Name: function_A270
 function_A270:
 	PUSH IX
 	POP  HL
@@ -13074,12 +13097,14 @@ function_A270:
 	AND  $1F
 	LD   (data_62ED),A
 	JP   function_A0F0.label_A1E6
+; Function Name: function_A296
 function_A296:
 	LD   A,(data_62EE)
 	LD   HL,$5908
 	ADD  A,L
 	LD   L,A
 	RET 
+; Function Name: function_A29F
 function_A29F:
 	LD   C,$00
 .label_A2A1:
@@ -13105,6 +13130,7 @@ function_A29F:
 	CP   $05
 	JR   NZ,.label_A2A1
 	RET 
+; Function Name: function_A2C5
 function_A2C5:
 	LD   A,$04
 	SUB  C
@@ -13141,6 +13167,7 @@ function_A2C5:
 	CALL NZ,function_B110
 	LD   SP,(data_6293)
 	JP   RoomDefinitions.label_988C
+; Function Name: GenerateRandomNo
 GenerateRandomNo:
 	PUSH DE
 	PUSH HL
@@ -13160,15 +13187,16 @@ GenerateRandomNo:
 	POP  HL
 	POP  DE
 	RET 
-function_A31A:
+; Function Name: UpdateEnemy1
+UpdateEnemy1:
 	LD   IX,Enemy1State
 .label_A31E:
 	LD   A,(SectorNumberAscii)
 	CP   $34
 	JP   Z,function_BEDC.in_sector_4
-	CALL function_AF00
+	CALL BackupCharacterState
 	LD   IY,data_C1F8
-	CALL function_A91A
+	CALL SetupCharacterState
 	LD   (IX+$0C),$00
 	LD   A,(IX+$00)
 	AND  $1F
@@ -13186,7 +13214,7 @@ function_A31A:
 	AND  $1F
 	CP   $08
 	JR   C,.label_A37A
-	CALL CheckCollisionBelowPlayer
+	CALL CheckCollisionBelowEntity
 	CP   $01
 	JR   NZ,.label_A37A
 	LD   A,R
@@ -13244,7 +13272,7 @@ function_A31A:
 	LD   BC,$0050
 	CALL function_B340
 	PUSH IX
-	LD   IX,data_C80D+81
+	LD   IX,data_C84F+15
 	CALL function_C02C
 	POP  IX
 	LD   HL,data_C16F
@@ -13255,8 +13283,8 @@ function_A31A:
 	LD   (IX+$06),L
 	LD   (IX+$07),H
 .label_A3FC:
-	LD   HL,FunctionTable_C183
-	CALL RunPlayerStateFunction
+	LD   HL,EnemyStateFunctionTable
+	CALL RunEntityStateFunction
 .label_A402:
 	LD   A,(IX+$0C)
 	AND  $FC
@@ -13270,11 +13298,12 @@ function_A31A:
 	XOR  A
 	CALL function_A651
 	JP   GetSpriteWidth.label_AF49
-function_A41F:
+; Function Name: SpawnEnemyFunction
+SpawnEnemyFunction:
 	LD   A,(PlayerXCharPos)
-	SUB  $05
+	SUB  $05			; check if player is on right edge
 	CP   $16
-	RET  NC
+	RET  NC			; exit function if they are
 	CALL GenerateRandomNo
 	AND  $0F
 	RET  NZ
@@ -13297,6 +13326,7 @@ function_A41F:
 .label_A44C:
 	CALL function_BEAA
 	JR   .label_A444
+; Function Name: function_A451
 function_A451:
 	LD   A,(PlayerYPixelPos)
 	SUB  (IX+$01)
@@ -13310,7 +13340,7 @@ function_A451:
 	JR   NC,.label_A492
 	PUSH IX
 	LD   IX,$C061
-	CALL function_A91A
+	CALL SetupCharacterState
 	BIT  3,(IX+$0E)
 	POP  IX
 	JR   NZ,.label_A492
@@ -13332,7 +13362,7 @@ function_A451:
 	JR   Z,.label_A4D6
 	CP   $01
 	RET  NZ
-	CALL function_9FB9
+	CALL MoveCharacterRight
 	RET  C
 	LD   A,$05
 	JR   Z,.label_A4EF
@@ -13357,7 +13387,7 @@ function_A451:
 	LD   (IX+$03),A
 	RET 
 .label_A4D6:
-	CALL function_9F7F
+	CALL MoveCharacterLeft
 	RET  C
 	LD   A,$04
 	JR   Z,.label_A4EF
@@ -13375,6 +13405,7 @@ function_A451:
 	AND  $E0
 	LD   (IX+$00),A
 	RET 
+; Function Name: function_A4FB
 function_A4FB:
 	LD   B,(IX+$01)
 	LD   C,(IX+$02)
@@ -13394,7 +13425,8 @@ function_A4FB:
 	DJNZ .label_A50F
 	AND  $40
 	RET 
-function_A518:
+; Function Name: EnemyFunction_A518
+EnemyFunction_A518:
 	CALL function_A59F
 	LD   A,R
 	AND  $3C
@@ -13415,7 +13447,7 @@ function_A518:
 	LD   A,(IX+$03)
 	CP   (IY+$00)
 	RET  Z
-	CALL CheckCollisionBelowPlayer
+	CALL CheckCollisionBelowEntity
 	LD   A,(IX+$03)
 	CALL GetSpriteWidth
 	CP   C
@@ -13453,6 +13485,7 @@ function_A518:
 	LD   A,R
 	CALL function_A5EA
 	RET 
+; Function Name: function_A59F
 function_A59F:
 	BIT  6,(IX+$00)
 	JR   NZ,.label_A5B9
@@ -13476,10 +13509,12 @@ function_A59F:
 	AND  $07
 	RET  NZ
 	JP   function_A451.label_A4EA
+; Function Name: function_A5CB
 function_A5CB:
 	BIT  6,(IX+$00)
 	JP   NZ,function_A451.label_A4EA
 	JP   function_A451.label_A4B6
+; Function Name: function_A5D5
 function_A5D5:
 	BIT  6,(IX+$00)
 	JR   NZ,.label_A5E2
@@ -13491,6 +13526,7 @@ function_A5D5:
 	SUB  (IX+$02)
 	CCF
 	RET 
+; Function Name: function_A5EA
 function_A5EA:
 	XOR  (IX+$00)
 	AND  $40
@@ -13498,6 +13534,7 @@ function_A5EA:
 	LD   (IX+$00),A
 	CALL function_A5F9
 	RET 
+; Function Name: function_A5F9
 function_A5F9:
 	RES  1,(IX+$0A)
 	SET  0,(IX+$0A)
@@ -13514,18 +13551,20 @@ function_A5F9:
 	LD   (IX+$08),$00
 	RET 
 ; this sets all the bits in the room bit fields
-function_A61F:
+; Function Name: ResetRoomEnemySpawnBits
+ResetRoomEnemySpawnBits:
 	LD   HL,SpawnEnemiesInRoomBitField
-	PUSH HL
+	PUSH HL			; HL -> IX
 	POP  IX
 	LD   DE,SpawnEnemiesInRoomBitField+1
-	LD   BC,$001F
+	LD   BC,31
 	LD   (HL),$FF			; set all bits
 	LDIR
-	RES  5,(IX+$06)
+	RES  5,(IX+$06)			; clear spawn bits in certain room
 	RES  2,(IX+$06)
 	RES  6,(IX+$1E)
 	RET 
+; Function Name: GetCurrentRoomEnemiesBitField
 GetCurrentRoomEnemiesBitField:
 	LD   A,(CurrentRoomNumber)
 	LD   B,A
@@ -13537,25 +13576,34 @@ GetCurrentRoomEnemiesBitField:
 	LD   A,B			; room number
 	CALL CreateMaskForBitIndexLToR
 	RET 
+; Function Name: function_A651
+; Parameters:
+; 	A : NewParam
+; 	IX : EntityPtr
 function_A651:
 	PUSH AF
 	XOR  (IX+$00)
-	AND  $1F
+	AND  %00011111			; mask off bottom 5 bits
 	XOR  (IX+$00)
 	LD   (IX+$00),A
-	CALL function_A91A
+	CALL SetupCharacterState
 	POP  AF
 	RET 
+; Function Name: label_A662
 label_A662:
 	LD   A,$01
 	JP   function_A651
+; Function Name: NullFunction_A667
 NullFunction_A667:
 	RET 
+; Function Name: NullFunction_A668
 NullFunction_A668:
 	RET 
+; Function Name: NullFunction_A669
 NullFunction_A669:
 	RET 
-function_A66A:
+; Function Name: EnemyFunction_A66A
+EnemyFunction_A66A:
 	CALL function_AEF0
 	LD   (IX+$03),A
 	LD   A,(IX+$09)
@@ -13583,7 +13631,8 @@ function_A66A:
 	JR   C,.label_A692
 	LD   A,$01
 	JR   .label_A698
-function_A6A6:
+; Function Name: EnemyFunction_A6A6
+EnemyFunction_A6A6:
 	LD   A,(PlayerUsingLift)
 	OR   $01
 	LD   (PlayerUsingLift),A
@@ -13630,7 +13679,8 @@ function_A6A6:
 .label_A706:
 	LD   (IX+$0C),$07
 	JR   .label_A6CC
-function_A70C:
+; Function Name: EnemyFunction_A70C
+EnemyFunction_A70C:
 	LD   A,(IX+$0B)
 	INC  (IX+$0B)
 	LD   HL,data_C161
@@ -13660,7 +13710,8 @@ function_A70C:
 	CALL function_AEF0
 	LD   (IX+$03),A
 	RET 
-label_A745:
+; Function Name: EnemyFunction_A745
+EnemyFunction_A745:
 	INC  (IX+$09)
 	LD   A,(IX+$09)
 	CP   $07
@@ -13678,7 +13729,7 @@ label_A745:
 	RET  C
 	LD   A,B
 	CP   $93
-	JP   NC,function_A6A6.label_A706
+	JP   NC,EnemyFunction_A6A6.label_A706
 	CALL function_AB5E
 	LD   A,(IX+$09)
 	CP   $0D
@@ -13690,7 +13741,7 @@ label_A745:
 	LD   (IX+$09),$00
 	RET 
 .label_A787:
-	CALL CheckCollisionBelowPlayer
+	CALL CheckCollisionBelowEntity
 	CP   $02
 	LD   A,$01
 	JP   C,function_A651
@@ -13707,7 +13758,8 @@ label_A745:
 	LD   (IX+$09),$00
 	LD   A,$08
 	JP   function_A651
-label_A7B3:
+; Function Name: EnemyFunction_A7B3
+EnemyFunction_A7B3:
 	LD   A,(IY+$0B)
 	BIT  6,(IX+$00)
 	JR   NZ,.label_A7BF
@@ -13721,7 +13773,8 @@ label_A7B3:
 	LD   (IX+$03),A
 	LD   A,$01
 	JP   function_A651
-label_A7D5:
+; Function Name: EnemyFunction_A7D5
+EnemyFunction_A7D5:
 	LD   L,(IX+$06)
 	LD   H,(IX+$07)
 	LD   A,(HL)
@@ -13736,27 +13789,32 @@ label_A7D5:
 	LD   (IX+$0C),$08
 	LD   A,(IX+$0D)
 	JP   function_A651
-label_A7F5:
+; Function Name: EntityFunction_A7F5
+EntityFunction_A7F5:
 	LD   A,(IX+$00)
 	INC  A
 	JP   function_A651
+; Function Name: label_A7FC
 label_A7FC:
 	LD   HL,data_C1AB
 	CALL function_B110
 	LD   A,(IX+$00)
 	INC  A
 	JP   function_A651
+; Function Name: label_A809
 label_A809:
 	CALL function_AEF0
 	LD   (IX+$03),A
 	LD   A,$01
 	JP   function_A651
+; Function Name: function_A814
 function_A814:
 	INC  (IX+$09)
 	BIT  2,(IX+$09)
 	RET  Z
 	LD   A,$0E
 	JP   function_A651
+; Function Name: function_A821
 function_A821:
 	LD   (IX+$0A),$10
 	CALL function_A92A.label_A946
@@ -13769,6 +13827,7 @@ function_A821:
 	LD   (IX+$09),$00
 	LD   A,$0F
 	JP   function_A651
+; Function Name: function_A83D
 function_A83D:
 	INC  (IX+$09)
 	BIT  3,(IX+$09)
@@ -13777,15 +13836,17 @@ function_A83D:
 	LD   (IX+$09),$00
 	LD   A,$01
 	JP   function_A651
+; Function Name: function_A851
 function_A851:
 	INC  (IX+$09)
 	BIT  1,(IX+$09)
 	RET  Z
 	LD   A,$11
 	JP   function_A651
+; Function Name: function_A85E
 function_A85E:
 	SET  2,(IX+$0A)
-	CALL function_A70C
+	CALL EnemyFunction_A70C
 	LD   A,(IX+$03)
 	CP   (IY+$06)
 	JR   Z,.label_A871
@@ -13796,6 +13857,7 @@ function_A85E:
 	SET  4,(IX+$0A)
 	LD   A,$12
 	JP   function_A651
+; Function Name: function_A87E
 function_A87E:
 	LD   A,(IX+$09)
 	CP   $05
@@ -13806,6 +13868,7 @@ function_A87E:
 	RES  2,(IX+$0A)
 	LD   A,$06
 	JP   function_A651
+; Function Name: function_A897
 function_A897:
 	LD   A,(IX+$09)
 	SUB  $04
@@ -13814,6 +13877,7 @@ function_A897:
 	LD   (IX+$09),$63
 	LD   A,(IX+$0D)
 	JP   function_A651
+; Function Name: function_A8AA
 function_A8AA:
 	LD   HL,data_C209
 	CALL FindByteInSequence
@@ -13881,14 +13945,18 @@ function_A8AA:
 	POP  BC
 	DJNZ .label_A8FC
 	RET 
-function_A91A:
-	LD   HL,PlayerStateLUT_C251
+; Function Name: SetupCharacterState
+; Parameters:
+; 	IX : CharacterPtr
+SetupCharacterState:
+	LD   HL,CharacterStateLUT
 	LD   A,(IX+$00)			; read player state
 	AND  %00011111			; mask off state enum
 	CALL AddAToHLWithCarry			; apply offset
 	LD   A,(HL)			; get byte from offset
-	LD   (IX+$0E),A			; store in player data
+	LD   (IX+$0E),A			; store capability bits?
 	RET 
+; Function Name: function_A92A
 function_A92A:
 	LD   A,(IX+$0A)
 	AND  $10
@@ -13935,6 +14003,7 @@ function_A92A:
 ; Returns: 
 ; If found: HL points to item after found byte, Z is set
 ; Not found : Z is unset
+; Function Name: FindByteInSequence
 FindByteInSequence:
 	LD   C,(HL)			; item count
 	INC  HL			; inc to start of list
@@ -14025,6 +14094,7 @@ FindByteInSequence:
 	LD   (IY+$09),A
 	POP  IY
 	RET 
+; Function Name: function_AA35
 function_AA35:
 	LD   IY,data_6200
 	LD   B,10			; loop count
@@ -14038,6 +14108,7 @@ function_AA35:
 	POP  BC
 	DJNZ .label_AA3B
 	RET 
+; Function Name: function_AA4C
 function_AA4C:
 	LD   A,(IY+$05)
 	LD   (IY+$06),A
@@ -14170,6 +14241,7 @@ function_AA4C:
 	INC  IX
 	INC  IX
 	JP   .label_AB0C
+; Function Name: function_AB51
 function_AB51:
 	PUSH DE
 	LD   DE,PlayerState
@@ -14180,9 +14252,11 @@ function_AB51:
 	POP  HL
 	POP  DE
 	RET 
+; Function Name: function_AB5E
 function_AB5E:
 	CALL function_AB51
 	RET  NZ
+; Function Name: function_AB62
 function_AB62:
 	PUSH IX
 	PUSH IY
@@ -14305,6 +14379,7 @@ function_AB62:
 	LD   A,$01
 	CALL function_BDD7
 	JP   .label_ABB7
+; Function Name: function_AC64
 function_AC64:
 	LD   HL,$5800
 .label_AC67:
@@ -14316,6 +14391,7 @@ function_AC64:
 	CP   $5B
 	JR   NZ,.label_AC67
 	RET 
+; Function Name: function_AC72
 function_AC72:
 	LD   HL,$5821
 	LD   C,$12
@@ -14330,6 +14406,7 @@ function_AC72:
 	DEC  C
 	JR   NZ,.label_AC77
 	RET 
+; Function Name: function_AC83
 function_AC83:
 	PUSH IX
 	CALL GetRoomFlagMapAddress
@@ -14414,6 +14491,7 @@ function_AC83:
 	JR   NZ,.label_ACEC
 	POP  IX
 	RET 
+; Function Name: function_ACFE
 function_ACFE:
 	PUSH IY
 	LD   IY,data_6200
@@ -14448,6 +14526,7 @@ function_ACFE:
 	DJNZ .label_AD17
 	POP  IY
 	RET 
+; Function Name: function_AD45
 function_AD45:
 	PUSH IY
 	LD   IY,SentryGunStates
@@ -14479,6 +14558,7 @@ function_AD45:
 	DJNZ .label_AD5E
 	POP  IY
 	RET 
+; Function Name: function_AD85
 function_AD85:
 	LD   A,H
 	RRA
@@ -14488,6 +14568,7 @@ function_AD85:
 	OR   $50
 	LD   H,A
 	RET 
+; Function Name: function_AD8F
 function_AD8F:
 	CALL GenerateRandomNo
 	AND  $03
@@ -14581,6 +14662,7 @@ function_AD8F:
 ; B: number of items
 ; C: empty slot value
 ; Returns slot ptr in IY & zero flag is set
+; Function Name: FindFreeSlot
 FindFreeSlot:
 	LD   A,(IY+$00)
 	CP   C
@@ -14588,6 +14670,7 @@ FindFreeSlot:
 	ADD  IY,DE
 	DJNZ FindFreeSlot
 	RET 
+; Function Name: UpdateSentryGuns
 UpdateSentryGuns:
 	LD   IY,SentryGunStates
 	LD   B,$03			; loop count
@@ -14601,6 +14684,9 @@ UpdateSentryGuns:
 	ADD  IY,DE			; point to next item
 	DJNZ .sentry_gun_loop
 	RET 
+; Function Name: UpdateSentryGun
+; Parameters:
+; 	IY : SentryGunState
 UpdateSentryGun:
 	BIT  7,(IY+$00)
 	JR   Z,.label_AE71			; jump if high bit is zero
@@ -14642,6 +14728,7 @@ UpdateSentryGun:
 	DJNZ .label_AE97
 	SET  7,(IY+$00)
 	RET 
+; Function Name: ApplySentryLaserVel
 ApplySentryLaserVel:
 	LD   HL,SentryGunLaserVelLUT
 	LD   A,(IY+$03)
@@ -14654,6 +14741,7 @@ ApplySentryLaserVel:
 	ADD  A,(IY+$02)
 	LD   (IY+$02),A
 	RET 
+; Function Name: function_AEBC
 function_AEBC:
 	LD   HL,SentryLaserCharLUT
 	LD   A,(IY+$03)			; get byte containg direction
@@ -14667,7 +14755,11 @@ function_AEBC:
 	CALL function_AF0D
 	LD   B,$08
 	RET 
-RunPlayerStateFunction:
+; Function Name: RunEntityStateFunction
+; Parameters:
+; 	HL : FunctionTable
+; 	IX : EntityPtr
+RunEntityStateFunction:
 	LD   A,(IX+$00)			; get player state
 .label_AED9:
 	AND  %00011111			; mask bottom 5 bits
@@ -14677,10 +14769,22 @@ RunPlayerStateFunction:
 	LD   H,(HL)
 	LD   L,A
 	JP   (HL)			; jump to function ptr
+; Function Name: AddAToHLAsDWordOffset
+; Parameters:
+; 	A : DWordOffset
+; 	HL : Base
 AddAToHLAsDWordOffset:
 	ADD  A,A			; mult by 4
+; Function Name: AddAToHLAsWordOffset
+; Parameters:
+; 	A : WordOffset
+; 	HL : Base
 AddAToHLAsWordOffset:
 	ADD  A,A			; mult A by 2
+; Function Name: AddAToHLWithCarry
+; Parameters:
+; 	A : Index
+; 	HL : BaseAddress
 AddAToHLWithCarry:
 	ADD  A,L			; add A to HL with carry
 	LD   L,A
@@ -14688,11 +14792,13 @@ AddAToHLWithCarry:
 	SUB  L
 	LD   H,A
 	RET 
+; Function Name: function_AEEB
 function_AEEB:
 	LD   (HL),C
 	INC  HL
 	DJNZ function_AEEB
 	RET 
+; Function Name: function_AEF0
 function_AEF0:
 	LD   L,(IX+$04)
 	LD   H,(IX+$05)
@@ -14702,9 +14808,10 @@ function_AEF0:
 	LD   A,(HL)
 	RET 
 ; This copies 21 bytes from IX to a slot 21 bytes after IX
-function_AF00:
+; Function Name: BackupCharacterState
+BackupCharacterState:
 	PUSH IX
-	POP  DE			; de points to player state
+	POP  DE			; de points to character state
 	LD   HL,21
 	LD   B,H
 	LD   C,L
@@ -14712,6 +14819,7 @@ function_AF00:
 	EX   DE,HL
 	LDIR
 	RET 
+; Function Name: function_AF0D
 function_AF0D:
 	LD   A,B
 	SRL  A
@@ -14730,11 +14838,13 @@ function_AF0D:
 	XOR  C
 	LD   L,A
 	RET 
-; A : sprite index
+; Function Name: GetAnimSprite
+; Parameters:
+; 	A : SpriteIndex
 ; Returns:
-; DE : ptr to animation sprite 
-; B : sprite width in chars
-; C : sprite height in pixels
+; 	DE : SpritePtr
+; 	B : WidthChars
+; 	C : HeightPixels
 GetAnimSprite:
 	PUSH HL
 	ADD  A,A			; mult by 4
@@ -14752,26 +14862,39 @@ GetAnimSprite:
 	LD   C,(HL)
 	POP  HL
 	RET 
+; Function Name: GetSpriteHeight
+; Parameters:
+; 	A : SpriteIndex
+; Returns:
+; 	A : Height
 GetSpriteHeight:
 	ADD  A,A
 	ADD  A,A
 	ADD  A,$03
 	LD   (.operand_spriteLUTaddr+1),A
 .operand_spriteLUTaddr:
-	LD   A,(data_CF6B)			; read height value from sprite LUT
+	LD   A,(data_CF3B)			; read height value from sprite LUT
 	RET 
-; A - sprite index
+; Function Name: GetSpriteWidth
+; Description: Gets the width of the sprite in chars
+; Parameters:
+; 	A : SpriteIndex
+; Returns:
+; 	A : WidthChars
 GetSpriteWidth:
 	ADD  A,A
 	INC  A
 	ADD  A,A
 	LD   (.operand_spriteLUTaddr+1),A
 .operand_spriteLUTaddr:
-	LD   A,(data_CF6E)
+	LD   A,(data_CF3A)
 	RET 
 .label_AF49:
 	XOR  A
 	JR   function_AF4C.label_AF4E
+; Function Name: function_AF4C
+; Parameters:
+; 	IX : Entity Ptr
 function_AF4C:
 	LD   A,$FF
 .label_AF4E:
@@ -14785,7 +14908,7 @@ function_AF4C:
 	LD   HL,21
 	ADD  HL,DE
 	LD   (data_62C5),HL
-	CALL function_B18A
+	CALL SetupCharacterForegroundMask
 	LD   HL,(data_62C5)
 	LD   A,(HL)
 	LD   (data_62C9),A
@@ -14856,6 +14979,9 @@ function_AF4C:
 	LD   (data_62CB),A
 	LD   (data_62CC),A
 	JR   .label_AFB2
+; Function Name: function_AFE0
+; Parameters:
+; 	IX : EntityPtr
 function_AFE0:
 	EXX 
 	LD   A,(data_6296)
@@ -14891,6 +15017,7 @@ function_AFE0:
 	LD   (data_62CB),A
 	EXX 
 	RET 
+; Function Name: function_B01A
 function_B01A:
 	LD   A,(IX+$18)
 	CALL GetAnimSprite
@@ -14906,12 +15033,12 @@ function_B01A:
 	SUB  $05
 	NEG  
 	LD   B,A
-	ADD  A,A
-	ADD  A,A
+	ADD  A,A			; mult by 10 which is number of instructions
+	ADD  A,A			; per pixel line
 	ADD  A,A
 	ADD  A,B
 	ADD  A,B
-	LD   (MaskOutSpritePixelLine.operand_pixelLineJump+1),A
+	LD   (MaskOutSpritePixelLine.operand_pixelLineJump+1),A			; set operand
 	LD   A,C
 	LD   (data_62CC),A
 	XOR  A
@@ -14923,6 +15050,10 @@ function_B01A:
 	RES  7,(IX+$00)
 	RET 
 ; Mask out background for drawing sprite pixels
+; Function Name: MaskOutSpritePixelLine
+; Parameters:
+; 	DE : SpriteAddress
+; 	HL : ScreenAddress
 MaskOutSpritePixelLine:
 	PUSH BC
 	PUSH HL
@@ -15002,6 +15133,10 @@ MaskOutSpritePixelLine:
 	SUB  $08
 	LD   H,A
 	RET 
+; Function Name: DrawSpritePixelLine
+; Parameters:
+; 	DE : SpriteLinePtr
+; 	HL : ScreenDestPtr
 DrawSpritePixelLine:
 	PUSH BC
 	PUSH HL			; push screen address
@@ -15068,20 +15203,22 @@ DrawSpritePixelLine:
 	LD   A,(HL)
 	LD   (CurrentForeGCharMask),A
 	JP   MaskOutSpritePixelLine.label_B09D
+; Function Name: function_B0F3
 function_B0F3:
 	XOR  (IX+$00)
 	AND  $40
 	SCF
 	RET  Z
-	LD   A,(IX+$00)
-	AND  $E0
-	XOR  $4A
-	LD   (IX+$00),A
-	CALL function_A91A
+	LD   A,(IX+$00)			; read state
+	AND  %11100000			; mask out state enum bits
+	XOR  %01001010			; flip direction bit, set state 10
+	LD   (IX+$00),A			; store back
+	CALL SetupCharacterState
 	LD   (IX+$03),$05
 	XOR  A
 	LD   (IX+$0A),A
 	RET 
+; Function Name: function_B110
 function_B110:
 	LD   A,(HL)
 	CP   $FF
@@ -15092,6 +15229,7 @@ function_B110:
 	POP  HL
 	INC  HL
 	JR   function_B110
+; Function Name: function_B11E
 function_B11E:
 	CALL GetAnimSprite
 	PUSH BC
@@ -15153,6 +15291,7 @@ function_B11E:
 ; DE : offset to screen char map
 ; B : height in chars
 ; C : width in chars
+; Function Name: SetRoomForegroundBits
 SetRoomForegroundBits:
 	LD   HL,RoomCharMap
 	ADD  HL,DE
@@ -15178,7 +15317,7 @@ SetRoomForegroundBits:
 	INC  DE
 	DJNZ .horizontal_loop
 .operand_B17F:
-	LD   BC,$0002
+	LD   BC,$0000
 	ADD  HL,BC			; offset both pointers to next line
 	EX   DE,HL
 	ADD  HL,BC
@@ -15186,15 +15325,18 @@ SetRoomForegroundBits:
 	POP  BC
 	DJNZ .vertical_loop
 	RET 
-function_B18A:
+; Function Name: SetupCharacterForegroundMask
+; Parameters:
+; 	IX : CharacterPtr
+SetupCharacterForegroundMask:
 	PUSH DE
 	LD   A,(IX+$03)			; get sprite index
 	CALL GetAnimSprite
 	POP  DE
 	LD   A,(IX+$01)			; get y pixel pos
 	INC  A
-	SUB  C
-	LD   B,A
+	SUB  C			; subtract sprite height
+	LD   B,A			; result in B
 	LD   C,(IX+$02)			; get x char pos
 	CALL GetRoomFlagMapAddress
 	LD   A,(IX+$03)			; get sprite index
@@ -15203,27 +15345,28 @@ function_B18A:
 	DEC  A
 	ADD  A,L
 	LD   L,A
-	LD   B,$06
-.label_B1AC:
+	LD   B,$06			; y loop counter
+.sprite_char_loop_y:
 	PUSH BC
 	PUSH HL
 .operand_SpriteCharWidth:
-	LD   B,$03			; loop counter
-.sprite_char_loop:
-	LD   A,(HL)
-	RLA
-	RR   C
+	LD   B,$03			; x loop counter
+.sprite_char_loop_x:
+	LD   A,(HL)			; get flags for char
+	RLA			; move high bit into the C flag
+	RR   C			; put carry flag in top bit of C
 	DEC  L
-	DJNZ .sprite_char_loop
+	DJNZ .sprite_char_loop_x
 	LD   A,C
-	LD   (DE),A
+	LD   (DE),A			; write to entity foreground mask
 	INC  DE
 	POP  HL
-	LD   BC,$0020
+	LD   BC,$0020			; move char map pointer to next line
 	ADD  HL,BC
-	POP  BC
-	DJNZ .label_B1AC
+	POP  BC			; restore vertical counter
+	DJNZ .sprite_char_loop_y
 	RET 
+; Function Name: function_B1C3
 function_B1C3:
 	LD   A,H
 	RRCA
@@ -15233,6 +15376,12 @@ function_B1C3:
 	ADD  A,$5C
 	LD   H,A
 	RET 
+; Function Name: GetRoomFlagMapAddress
+; Parameters:
+; 	C : X Char Pos
+; 	B : Y Pixel Pos
+; Returns:
+; 	HL : FlagMapAddr
 GetRoomFlagMapAddress:
 	LD   A,B
 	RLCA
@@ -15247,6 +15396,12 @@ GetRoomFlagMapAddress:
 	ADD  A,$5C			; set high byte of RoomFlagsCharMap
 	LD   H,A
 	RET 
+; Function Name: GetAttributeAddress
+; Parameters:
+; 	C : X Pos Chars
+; 	B : Y Pixel Pos
+; Returns:
+; 	HL : AtrribAddress
 GetAttributeAddress:
 	LD   A,B
 	RLCA
@@ -15261,16 +15416,20 @@ GetAttributeAddress:
 	ADD  A,$58			; set high byte of ScreenAttributes
 	LD   H,A
 	RET 
+; Function Name: function_B1ED
 function_B1ED:
 	LD   E,A
 	AND  A
 	JP   P,function_B217
 	NEG  
 	LD   E,A
-	JP   function_B249.label_B25C
+	JP   label_B25C
 ; returns:
 ; A : ??
-CheckCollisionBelowPlayer:
+; Function Name: CheckCollisionBelowEntity
+; Returns:
+; 	A : NoSolidSquares
+CheckCollisionBelowEntity:
 	LD   A,(IX+$01)			; get player Y pixel position
 	ADD  A,$08			; for line below
 	LD   B,A
@@ -15289,6 +15448,7 @@ CheckCollisionBelowPlayer:
 	DJNZ .h_loop
 	LD   A,C
 	RET 
+; Function Name: function_B217
 function_B217:
 	LD   B,(IX+$01)			; Y pixel Pos
 	LD   C,(IX+$02)			; X Char Pos
@@ -15307,7 +15467,7 @@ function_B217:
 	LD   A,B
 	AND  $07
 	JR   NZ,.label_B243
-	CALL function_B249
+	CALL CheckRoomCollisionRow
 	JR   C,.label_B243
 	DEC  B
 .label_B23C:
@@ -15322,25 +15482,27 @@ function_B217:
 	JR   NZ,.label_B22B
 	SCF
 	JR   .label_B23C
-function_B249:
+; Function Name: CheckRoomCollisionRow
+CheckRoomCollisionRow:
 	PUSH BC
 	LD   BC,$0020
-.label_B24D:
-	ADD  HL,BC
+.check_line:
+	ADD  HL,BC			; go to next line
 	PUSH HL
-	LD   B,D
+	LD   B,D			; width
 	AND  A
-.label_B251:
-	BIT  6,(HL)
-	JR   NZ,.label_B259
+.solid_check_x_loop:
+	BIT  6,(HL)			; check bit 6 - solid
+	JR   NZ,.exit_func			; exit if solid
 	INC  HL
-	DJNZ .label_B251
+	DJNZ .solid_check_x_loop
 	SCF
-.label_B259:
+.exit_func:
 	POP  HL
 	POP  BC
 	RET 
-.label_B25C:
+; Function Name: label_B25C
+label_B25C:
 	LD   A,(IX+$03)
 	CALL GetSpriteHeight
 	LD   (data_62CD),A
@@ -15377,27 +15539,29 @@ function_B249:
 	JR   NZ,.label_B279
 	SCF
 	JR   .label_B288
+; Function Name: function_B297
 function_B297:
 	PUSH BC
-	LD   BC,data_FFC5+27
-	JR   function_B249.label_B24D
+	LD   BC,$FFE0
+	JR   CheckRoomCollisionRow.check_line
+; Function Name: function_B29D
 function_B29D:
-	LD   B,(IX+$01)
-	LD   C,(IX+$02)
+	LD   B,(IX+$01)			; Y pixel pos
+	LD   C,(IX+$02)			; X char pos
 	AND  A
 	DEC  C
 	RET  M
 .label_B2A6:
 	CALL GetRoomFlagMapAddress
-	LD   A,(IX+$03)
+	LD   A,(IX+$03)			; anim index
 	CALL GetSpriteHeight
 	SRL  A
 	SRL  A
 	SRL  A
 	LD   D,A
-	LD   BC,data_FFC5+27
+	LD   BC,$FFE0
 	LD   E,$40
-	LD   A,(IX+$01)
+	LD   A,(IX+$01)			; get Y pixel pos
 	INC  A
 	AND  $07
 	JR   Z,.label_B2C4
@@ -15411,20 +15575,22 @@ function_B29D:
 	JR   NZ,.label_B2C4
 	SCF
 	RET 
+; Function Name: function_B2CD
 function_B2CD:
-	LD   B,(IX+$01)
-	LD   C,(IX+$02)
-	LD   A,(IX+$03)
+	LD   B,(IX+$01)			; Y pixel pos
+	LD   C,(IX+$02)			; x char pos
+	LD   A,(IX+$03)			; sprite index
 	CALL GetSpriteWidth
 	ADD  A,C
 	LD   C,A
 	CP   $20
 	RET  NC
 	JR   function_B29D.label_B2A6
-; Creates a bit mask for a bit number from left to right
-; Index 0 is far left (0x80), Index 7 is far right (0x01)
-; A contains bit number
-; Returns mask in A
+; Function Name: CreateMaskForBitIndexLToR
+; Parameters:
+; 	A : BitIndex
+; Returns:
+; 	A : BitMask
 CreateMaskForBitIndexLToR:
 	AND  %00000111			; mask out bottom 3 bits
 	RLCA			; multiply by 8
@@ -15434,7 +15600,7 @@ CreateMaskForBitIndexLToR:
 	LD   (.operand_bitset+1),A			; change which bit to set
 	XOR  A			; clear A
 .operand_bitset:
-	SET  4,A
+	SET  5,A
 	RET 
 	db $21
 	db $00
@@ -15484,10 +15650,12 @@ CreateMaskForBitIndexLToR:
 	db $20
 	db $F4
 	db $C9
-; A : room instance number
-; returns:
-; BC : Size
-; HL : instance data pointer
+; Function Name: GetRoomInstanceFromIndex
+; Parameters:
+; 	A : Room Instance No
+; Returns:
+; 	BC : Size
+; 	HL : Instance Ptr
 GetRoomInstanceFromIndex:
 	CALL GetRoomInstancePtr
 	LD   C,(HL)			; read offset to next item in BC
@@ -15495,8 +15663,11 @@ GetRoomInstanceFromIndex:
 	LD   B,(HL)
 	INC  HL
 	RET 
-; A is the item number
-; pointer is returned in HL
+; Function Name: GetRoomInstancePtr
+; Parameters:
+; 	A : Room Instance No
+; Returns:
+; 	HL : Room Instance Ptr
 GetRoomInstancePtr:
 	LD   HL,(RoomInstancesPtr)			; read pointer
 	AND  A
@@ -15509,10 +15680,12 @@ GetRoomInstancePtr:
 	ADD  HL,BC			; add offset
 	DEC  A			; decrement a
 	JR   .search_loop
-; A : room number
-; returns:
-; BC : size of room definition
-; HL : pointer to room definition data
+; Function Name: GetRoomDefinitionFromIndex
+; Parameters:
+; 	A : Room Number
+; Returns:
+; 	BC : Size of Room Definition
+; 	HL : Ptr to Room Definition
 GetRoomDefinitionFromIndex:
 	CALL GetRoomDefinitionPtr
 	LD   C,(HL)			; read 2 bytes into BC
@@ -15522,10 +15695,12 @@ GetRoomDefinitionFromIndex:
 	RET 
 ; A : item number
 ; pointer is returned in HL
+; Function Name: GetRoomDefinitionPtr
 GetRoomDefinitionPtr:
 	LD   HL,(RoomDefinitionsPtr)			; read pointer
 	AND  A
 	JR   GetRoomInstancePtr.search_loop
+; Function Name: function_B340
 function_B340:
 	PUSH DE
 	PUSH HL
@@ -15548,8 +15723,10 @@ function_B340:
 	POP  HL
 	POP  DE
 	RET 
+; Function Name: function_B35A
 function_B35A:
 	LD   DE,$0293
+; Function Name: function_B35D
 function_B35D:
 	LD   A,$FF
 	LD   (data_62D6),A
@@ -15566,6 +15743,7 @@ function_B35D:
 	LD   (data_62D6),A
 	POP  AF
 	JR   DrawNumber.label_B398
+; Function Name: function_B37D
 function_B37D:
 	LD   A,$30
 	RLD
@@ -15579,6 +15757,7 @@ function_B37D:
 	RLD
 	INC  HL
 	RET 
+; Function Name: DrawNumber
 DrawNumber:
 	LD   A,$30
 	RLD
@@ -15590,15 +15769,17 @@ DrawNumber:
 	INC  HL
 	RET 
 ; HL points to menu screen data
+; Function Name: DrawMenuScreen
 DrawMenuScreen:
 	LD   B,(HL)			; fetch item count
 	INC  HL
-.label_B3A3:
+.menu_item_loop:
 	PUSH BC
 	CALL DrawMenuScreenItem
 	POP  BC
-	DJNZ .label_B3A3
+	DJNZ .menu_item_loop
 	RET 
+; Function Name: DrawHighScoreName
 DrawHighScoreName:
 	LD   A,(HL)
 	INC  HL
@@ -15606,6 +15787,7 @@ DrawHighScoreName:
 	RET  NC
 	DJNZ DrawHighScoreName
 	RET 
+; Function Name: DrawMenuScreenItem
 DrawMenuScreenItem:
 	LD   E,(HL)			; get draw offset
 	INC  HL
@@ -15621,6 +15803,7 @@ DrawMenuScreenItem:
 	JR   .string_loop
 ; A : Character Code
 ; DE : char offset from screen start
+; Function Name: DrawCharacterAt
 DrawCharacterAt:			; A contains character code
 	PUSH AF
 	PUSH HL
@@ -15646,7 +15829,7 @@ DrawCharacterAt:			; A contains character code
 	CALL DrawCharacter
 	POP  BC
 	POP  DE
-	LD   HL,CHARSET.ScreenAttributes
+	LD   HL,ScreenAttributes
 	ADD  HL,DE			; add attrib offset
 	LD   (DrawSingleChar.operand_B3FD+1),HL			; set attribute address
 	POP  HL
@@ -15663,18 +15846,21 @@ DrawCharacterAt:			; A contains character code
 	RET 
 ; A : Character code
 ; DE : Screen char offset
+; Function Name: DrawSingleChar
 DrawSingleChar:
 	CALL DrawCharacterAt
 	PUSH AF
 .operand_B3FA:
-	LD   A,(data_FF30)
+	LD   A,(data_FF35)
 .operand_B3FD:
-	LD   (data_5A5C),A
+	LD   (ScreenAttributes+649),A
 	POP  AF
 	RET 
+; Function Name: DrawDansRocketGFX
 DrawDansRocketGFX:
 	LD   DE,$018C
 	LD   HL,DansRocketGFX
+; Function Name: DrawCharMapGFX
 DrawCharMapGFX:
 	LD   B,(HL)			; width
 	INC  HL
@@ -15701,14 +15887,17 @@ DrawCharMapGFX:
 	DEC  C			; dec height counter
 	JR   NZ,.v_draw_loop
 	RET 
+; Function Name: DrawAmmoCounterBackground
 DrawAmmoCounterBackground:
 	LD   DE,$02A2
 	LD   HL,DansAmmoCounterGFX
 	JR   DrawCharMapGFX
+; Function Name: function_B42E
 function_B42E:
 	LD   A,(data_62DF)
 	LD   HL,FunctionPtrTable
-	JP   RunPlayerStateFunction.label_AED9
+	JP   RunEntityStateFunction.label_AED9
+; Function Name: label_B437
 label_B437:
 	LD   A,(data_62E1)
 	INC  A
@@ -15724,7 +15913,7 @@ label_B437:
 .label_B44B:
 	LD   A,$1E
 	LD   (data_62E0),A
-	LD   HL,data_5A5C+63			; dest ptr
+	LD   HL,ScreenAttributes+667			; dest ptr
 	LD   DE,$001D			; offset to next line
 	LD   BC,$0347			; vertical counter & attribute
 .attrib_vloop:
@@ -15738,6 +15927,7 @@ label_B437:
 	ADD  HL,DE
 	DJNZ .attrib_vloop
 	RET 
+; Function Name: label_B464
 label_B464:
 	CALL function_B4BD
 	LD   HL,data_62E0
@@ -15749,6 +15939,7 @@ label_B464:
 	LD   A,(data_62E1)
 	CALL function_BDA9
 	JR   DrawMekonGFX
+; Function Name: label_B47B
 label_B47B:
 	CALL function_B4E9
 	LD   HL,$62E0
@@ -15758,6 +15949,7 @@ label_B47B:
 	LD   (data_62DF),A
 	LD   (HL),$19
 	RET 
+; Function Name: label_B48B
 label_B48B:
 	LD   HL,data_62E0
 	DEC  (HL)
@@ -15765,6 +15957,7 @@ label_B48B:
 	LD   A,$04
 	LD   (data_62DF),A
 	JP   label_B437.label_B44B
+; Function Name: label_B498
 label_B498:
 	CALL function_B4BD
 	LD   HL,$62E0
@@ -15775,14 +15968,17 @@ label_B498:
 	LD   A,$FF
 	LD   (data_62E1),A
 	JR   DrawPlanetsGFX
+; Function Name: DrawMekonGFX
 DrawMekonGFX:
 	LD   DE,$029B
 	LD   HL,MekonGFX
 	JP   DrawCharMapGFX
+; Function Name: DrawPlanetsGFX
 DrawPlanetsGFX:
 	LD   DE,$029B
 	LD   HL,PlanetsGFX
 	JP   DrawCharMapGFX
+; Function Name: function_B4BD
 function_B4BD:
 	LD   A,(MainLoopCounter)
 	LD   E,A
@@ -15814,6 +16010,7 @@ function_B4BD:
 	CALL function_9AB5
 	DJNZ .label_B4D7
 	RET 
+; Function Name: function_B4E9
 function_B4E9:
 	LD   DE,$02DC
 	LD   HL,$C2E1
@@ -15822,6 +16019,7 @@ function_B4E9:
 	JP   NZ,DrawMenuScreenItem.string_loop
 	LD   HL,$C2E4
 	JP   DrawMenuScreenItem.string_loop
+; Function Name: function_B4FD
 function_B4FD:
 	AND  A
 	EX   AF,AF'
@@ -15836,6 +16034,7 @@ function_B4FD:
 	LD   A,L
 	ADD  A,$30
 	JP   DrawCharacterAt
+; Function Name: function_B51C
 function_B51C:
 	LD   A,$2F
 .label_B51E:
@@ -15843,6 +16042,7 @@ function_B51C:
 	ADD  HL,BC
 	JR   C,.label_B51E
 	SBC  HL,BC
+; Function Name: function_B524
 function_B524:
 	CP   $30
 	JR   Z,.label_B52E
@@ -15861,9 +16061,11 @@ function_B524:
 	RET  NZ
 	LD   A,$20
 	JR   .label_B52B
+; Function Name: function_B53B
 function_B53B:
 	CALL function_BD07
 	CALL ClearRoomCharMaps
+; Function Name: function_B541
 function_B541:
 	LD   DE,$0000
 	LD   BC,$1820
@@ -15873,6 +16075,7 @@ function_B541:
 	OUT  ($FE),A
 	RET 
 ; Clear both character maps for the room
+; Function Name: ClearRoomCharMaps
 ClearRoomCharMaps:
 	LD   HL,RoomFlagsCharMap
 	LD   DE,RoomFlagsCharMap+1
@@ -15880,11 +16083,13 @@ ClearRoomCharMaps:
 	LD   (HL),$00
 	LDIR
 	RET 
+; Function Name: ClearScreenRegion_White
 ClearScreenRegion_White:
 	LD   A,$47
 	LD   DE,193			; number of chars from screen start (1,6 in char coords)
 	LD   BC,$0F1E			; clear area size B:Height C:Width in chars
 	JR   ClearScreenRegion_Black.label_B572
+; Function Name: ClearScreenRegion_Black
 ClearScreenRegion_Black:
 	LD   DE,33			; number of chars from screen start (1,1 in char coords)
 	LD   BC,$121E
@@ -15917,7 +16122,7 @@ ClearScreenRegion_Black:
 	SUB  $08
 	LD   H,A
 .operand_B58F:
-	LD   A,$47
+	LD   A,$00
 	LD   (DE),A			; clear attribute
 	INC  L
 	INC  E
@@ -15943,6 +16148,7 @@ ClearScreenRegion_Black:
 	DJNZ .clear_loop_vertical
 	RET 
 ; This functions draw the room to the screen using the room char map and the room flag map
+; Function Name: DrawRoomFromCharMaps
 DrawRoomFromCharMaps:
 	DI  
 	PUSH DE			; backup offset
@@ -16025,6 +16231,7 @@ DrawRoomFromCharMaps:
 ; HL : Source 8x8 image
 ; DE : Screen dest address
 ; Upon return DE points to next char screen address
+; Function Name: DrawCharacter
 DrawCharacter:
 	PUSH BC
 	LD   B,$08			; loop count
@@ -16041,6 +16248,7 @@ DrawCharacter:
 	SUB  $08
 	LD   D,A
 	RET 
+; Function Name: InterruptRoutine
 InterruptRoutine:
 	PUSH AF
 	LD   A,(GameState)
@@ -16066,22 +16274,22 @@ InterruptRoutine:
 	LD   A,(GameFrameCounter)
 	XOR  C
 	AND  $03
-	JR   NZ,.label_B679
+	JR   NZ,.process_next_item
 	LD   L,(IX+$01)
 	LD   H,(IX+$02)
 	LD   A,C			; item type
 	AND  %00011111
 	CP   $03
-	JP   Z,function_B6AC.lift_activity_light
+	JP   Z,UpdateLiftActivityLight
 	CP   $01
-	JP   Z,function_B6AC.lift_indicator_scroll_up
+	JP   Z,UpdateLiftScrollingUpInidicator
 	CP   $02
-	JP   Z,function_B6AC.lift_indicator_scroll_down
+	JP   Z,UpdateLiftScrollingDownInidicator
 	CP   $04
-	JP   Z,function_B6AC.label_B70A
+	JP   Z,UpdateLiftScrollingDownInidicator.label_B70A
 	CP   $05
-	JP   Z,function_B6AC.label_B715
-.label_B679:
+	JP   Z,UpdateLiftScrollingDownInidicator.label_B715
+.process_next_item:
 	LD   DE,$0003
 	ADD  IX,DE
 	JR   .label_B648
@@ -16097,6 +16305,7 @@ InterruptRoutine:
 	POP  AF
 	EI  
 	RETI
+; Function Name: function_B68F
 function_B68F:
 	CALL function_B6AC
 	RET  Z
@@ -16116,6 +16325,7 @@ function_B68F:
 	CALL function_B6AC
 	JR   NZ,.label_B6A6
 	RET 
+; Function Name: function_B6AC
 function_B6AC:
 	LD   A,$7F
 	IN   A,($FE)
@@ -16128,7 +16338,8 @@ function_B6AC:
 	AND  $01
 	RET 
 ; Update the lift activity light
-.lift_activity_light:
+; Function Name: UpdateLiftActivityLight
+UpdateLiftActivityLight:
 	LD   A,H
 	OR   $58
 	LD   H,A
@@ -16144,14 +16355,15 @@ function_B6AC:
 .do_second_light:
 	ADD  HL,DE			; go to next line
 	LD   (HL),A			; write attribute
-	JR   InterruptRoutine.label_B679
+	JR   InterruptRoutine.process_next_item
 .lift_not_being_used:
 	AND  $F8
 	OR   $01
 	LD   (HL),A
 	JR   .do_second_light
 ; scrolling lift 'up' indicator
-.lift_indicator_scroll_up:
+; Function Name: UpdateLiftScrollingUpInidicator
+UpdateLiftScrollingUpInidicator:
 	LD   A,H
 	ADD  A,A			; mult by 8
 	ADD  A,A
@@ -16170,9 +16382,10 @@ function_B6AC:
 	DJNZ .scroll_char_up_loop
 	POP  AF			; pop top line
 	LD   (HL),A			; write bottom line
-	JP   InterruptRoutine.label_B679
+	JP   InterruptRoutine.process_next_item
 ; scrolling lift 'down' indicator
-.lift_indicator_scroll_down:
+; Function Name: UpdateLiftScrollingDownInidicator
+UpdateLiftScrollingDownInidicator:
 	LD   A,H
 	ADD  A,A			; mult by 8
 	ADD  A,A
@@ -16191,7 +16404,7 @@ function_B6AC:
 	DJNZ .scroll_char_down_loop
 	POP  AF
 	LD   (HL),A
-	JP   InterruptRoutine.label_B679
+	JP   InterruptRoutine.process_next_item
 .label_B70A:
 	LD   A,H
 	OR   $58
@@ -16199,7 +16412,7 @@ function_B6AC:
 	LD   A,(HL)
 	XOR  $02
 	LD   (HL),A
-	JP   InterruptRoutine.label_B679
+	JP   InterruptRoutine.process_next_item
 .label_B715:
 	LD   A,H
 	OR   $58
@@ -16223,7 +16436,8 @@ function_B6AC:
 	LD   (HL),A
 	DEC  HL
 	LD   (HL),A
-	JP   InterruptRoutine.label_B679
+	JP   InterruptRoutine.process_next_item
+; Function Name: UpdateGameTimer
 UpdateGameTimer:
 	LD   HL,GameTimer_Frames
 	DEC  (HL)			; dec frame counter
@@ -16272,6 +16486,7 @@ UpdateGameTimer:
 .label_B783:
 	LD   A,$59
 	JR   .label_B767
+; Function Name: DrawGameTimer
 DrawGameTimer:
 	LD   HL,GameTimer_Hours
 	LD   DE,$0282
@@ -16280,6 +16495,7 @@ DrawGameTimer:
 	CALL DrawNumber
 	INC  DE			; space
 	JP   DrawNumber			; do ret
+; Function Name: function_B798
 function_B798:
 	LD   HL,(RoomDefinitionsPtr)
 	LD   E,$00
@@ -16317,6 +16533,7 @@ function_B798:
 	DEC  E
 	JR   NZ,.label_B79D
 	RET 
+; Function Name: function_B7C6
 function_B7C6:
 	PUSH AF
 	CALL function_B9D4
@@ -16324,7 +16541,9 @@ function_B7C6:
 	LD   IX,data_62A5
 	LD   (IX+$00),$FF
 	LD   (IX+$01),$FF
-; A : Room number
+; Function Name: DrawRoomInRoom
+; Parameters:
+; 	A : Room Number
 DrawRoomInRoom:
 	CALL GetRoomDefinitionFromIndex
 .instance_place_loop:
@@ -16347,13 +16566,16 @@ DrawRoomInRoom:
 	LD   DE,RoomCharMap+634			; top frame position
 	LD   BC,$0006
 	LDIR
-	LD   HL,data_5C5F+539			; set flags to E0h for top frame
-	LD   DE,data_5C5F+540
+	LD   HL,RoomFlagsCharMap+634			; set flags to E0h for top frame
+	LD   DE,RoomFlagsCharMap+635
 	LD   C,$05
 	LD   (HL),$E0
 	LDIR
 	RET 
-; A is item number
+; Function Name: function_B806
+; Parameters:
+; 	A : Item Number
+; 	IX : Ptr to ?
 function_B806:
 	CP   $C8
 	JR   C,.label_B84F			; item number less than C8 - jump out
@@ -16430,7 +16652,9 @@ function_B806:
 	INC  SP			; what is this doing with the stack?
 	INC  SP
 	RET 
-; HL points to instance placement
+; Function Name: FetchAndDrawCharMapInstance
+; Parameters:
+; 	HL : InstancePtr
 FetchAndDrawCharMapInstance:
 	LD   A,(HL)			; item number
 	INC  HL
@@ -16447,9 +16671,11 @@ FetchAndDrawCharMapInstance:
 	LD   A,E			; get room number from E
 	CALL DrawRoomInRoom
 	RET 
-; A : item number
-; DE : dest offset
 ; Collidable & alt char set are stored in the high bits of D somehow
+; Function Name: DrawBackgroundItem
+; Parameters:
+; 	A : Item Number
+; 	DE : Dest offset
 DrawBackgroundItem:
 	CP   $FF			; check if A is ff
 	JR   Z,FetchAndDrawCharMapInstance.RoomItemOtherRoom			; room within room
@@ -16516,6 +16742,7 @@ DrawBackgroundItem:
 	POP  BC			; restore offset count
 	DEC  BC
 	JR   .process_next_item
+; Function Name: function_B8DA
 function_B8DA:
 	DI  			; disable interrupts because this sets up data used by the interrupt handler
 	LD   HL,RoomCharMap
@@ -16575,6 +16802,7 @@ function_B8DA:
 .label_B94C:
 	LD   A,$05
 	JP   function_BDD7
+; Function Name: function_B951
 function_B951:
 	LD   A,(CurrentRoomNumber)
 	ADD  A,$71
@@ -16644,6 +16872,7 @@ function_B951:
 	ADD  HL,DE
 	DJNZ .label_B9C8
 	RET 
+; Function Name: function_B9D4
 function_B9D4:
 	LD   B,$00
 	LD   HL,data_C2F2+75
@@ -16691,11 +16920,13 @@ function_B9D4:
 	LD   (DE),A
 	DJNZ .label_BA2B
 	RET 
+; Function Name: function_BA33
 function_BA33:
 	LD   C,(HL)
 	INC  HL
 	CPIR
 	RET 
+; Function Name: DrawAmmoIndicator
 DrawAmmoIndicator:
 	LD   A,(MainLoopCounter)
 	AND  %00000011
@@ -16729,6 +16960,7 @@ DrawAmmoIndicator:
 	INC  H
 	LD   (HL),A
 	RET 
+; Function Name: function_BA70
 function_BA70:
 	LD   A,(data_6271)
 	AND  A
@@ -16748,7 +16980,7 @@ function_BA70:
 	LD   (data_6271),A
 	RET 
 .label_BA93:
-	LD   HL,CHARSET.label_4C46+1660
+	LD   HL,ScreenPixels.label_4C46+1660
 	LD   A,(data_626B)
 	ADD  A,L
 	LD   L,A
@@ -16763,6 +16995,7 @@ function_BA70:
 	SBC  A,$00
 	LD   (data_626B),A
 	RET 
+; Function Name: function_BAB3
 function_BAB3:
 	LD   (HL),A
 	INC  H
@@ -16786,7 +17019,7 @@ function_BAB3:
 	LD   (data_6271),A
 	RET 
 .label_BAD1:
-	LD   HL,CHARSET.label_4C46+1660
+	LD   HL,ScreenPixels.label_4C46+1660
 	LD   A,(data_626B)
 	ADD  A,L
 	LD   L,A
@@ -16800,6 +17033,7 @@ function_BAB3:
 	ADC  A,$00
 	LD   (data_626B),A
 	RET 
+; Function Name: ReadControls
 ReadControls:
 	LD   HL,CurrentControls
 	LD   A,(ControlSelection)
@@ -16924,10 +17158,12 @@ ReadControls:
 	RL   C
 	OR   C
 	JR   .write_control_values
+; Function Name: function_BBA9
 function_BBA9:
 	LD   IX,PopupState
 	CALL function_BBB4
 	LD   IX,data_C3C0
+; Function Name: function_BBB4
 function_BBB4:
 	LD   A,(IX+$00)
 	AND  A
@@ -16936,6 +17172,7 @@ function_BBB4:
 	LD   A,B
 	INC  A
 	RET  Z
+; Function Name: function_BBC1
 function_BBC1:
 	LD   A,(GameFrameCounter)
 	AND  $01
@@ -16947,6 +17184,7 @@ function_BBC1:
 	INC  HL
 	LD   D,(HL)
 ; B : Item index
+; Function Name: SetTextPopup
 SetTextPopup:
 	LD   (IX+$06),C
 	PUSH DE
@@ -17123,6 +17361,7 @@ SetTextPopup:
 	LD   A,$03
 	LD   (IX+$00),A
 	RET 
+; Function Name: function_BCE6
 function_BCE6:
 	XOR  A
 	LD   (IX+$00),A
@@ -17143,6 +17382,7 @@ function_BCE6:
 	POP  DE
 	POP  BC
 	JP   DrawRoomFromCharMaps
+; Function Name: function_BD07
 function_BD07:
 	PUSH IX
 	LD   IX,PopupState
@@ -17183,7 +17423,7 @@ function_BD07:
 	INC  C
 	INC  B
 	INC  B
-	LD   HL,CHARSET.ScreenAttributes
+	LD   HL,ScreenAttributes
 	ADD  HL,DE
 	LD   A,$20
 	SUB  C
@@ -17191,7 +17431,7 @@ function_BD07:
 	LD   D,$00
 	LD   A,C
 .label_BD4A:
-	LD   (HL),$29
+	LD   (HL),$38
 	INC  HL
 	DEC  C
 	JR   NZ,.label_BD4A
@@ -17201,6 +17441,7 @@ function_BD07:
 	POP  HL
 	POP  DE
 	POP  BC
+; Function Name: function_BD57
 function_BD57:
 	PUSH BC
 	PUSH DE
@@ -17233,6 +17474,7 @@ function_BD57:
 	ADD  A,$10
 	LD   L,A
 	JP   function_BD8C
+; Function Name: function_BD85
 function_BD85:
 	LD   A,E
 	ADD  A,$20
@@ -17240,6 +17482,7 @@ function_BD85:
 	RET  NC
 	INC  D
 	RET 
+; Function Name: function_BD8C
 function_BD8C:
 	PUSH DE
 	LD   B,C
@@ -17261,6 +17504,7 @@ function_BD8C:
 	CALL DrawCharacter
 	POP  DE
 	RET 
+; Function Name: function_BDA9
 function_BDA9:
 	LD   HL,data_C80D
 	LD   C,A
@@ -17277,10 +17521,12 @@ function_BDA9:
 	DEC  HL
 	LD   (HL),C
 	RET 
+; Function Name: function_BDBC
 function_BDBC:
 	CALL function_BDC2
 	LD   C,$78
 	RET 
+; Function Name: function_BDC2
 function_BDC2:
 	LD   DE,data_C80D
 	LD   HL,data_C80D+1
@@ -17297,6 +17543,7 @@ function_BDC2:
 	LD   A,B
 	RET  Z
 	JR   .label_BDCF
+; Function Name: function_BDD7
 function_BDD7:
 	PUSH BC
 	PUSH HL
@@ -17304,6 +17551,7 @@ function_BDD7:
 	POP  HL
 	POP  BC
 	RET 
+; Function Name: function_BDDF
 function_BDDF:
 	LD   C,A
 	CALL CreateMaskForBitIndexLToR
@@ -17319,6 +17567,7 @@ function_BDDF:
 	ADD  HL,BC
 	LD   A,(HL)
 	JP   function_BDA9
+; Function Name: function_BDF6
 function_BDF6:
 	LD   HL,data_62E4
 	LD   B,$08
@@ -17329,7 +17578,7 @@ function_BDF6:
 	LD   IX,data_62E4
 	LD   A,$FE
 	LD   (data_62EC),A
-	LD   HL,data_5C5F+35
+	LD   HL,RoomFlagsCharMap+130
 	CALL function_BE34
 	INC  IX
 	INC  IX
@@ -17340,7 +17589,7 @@ function_BDF6:
 	INC  IX
 	LD   A,$07
 	LD   (data_62EC),A
-	LD   HL,data_5C5F+57
+	LD   HL,RoomFlagsCharMap+152
 	CALL function_BE34
 	INC  IX
 	INC  IX
@@ -17349,8 +17598,10 @@ function_BDF6:
 .label_BE30:
 	LD   BC,data_62E4
 	RET 
+; Function Name: function_BE34
 function_BE34:
 	LD   B,$0E
+; Function Name: function_BE36
 function_BE36:
 	LD   C,$00
 .label_BE38:
@@ -17406,6 +17657,7 @@ function_BE36:
 	DJNZ .label_BE38
 	XOR  A
 	RET 
+; Function Name: function_BE85
 function_BE85:
 	LD   HL,data_62E4
 	LD   A,$FF
@@ -17433,6 +17685,7 @@ function_BE85:
 	INC  HL
 	LD   A,(HL)
 	JR   function_BEAA.label_BED6
+; Function Name: function_BEAA
 function_BEAA:
 	LD   HL,data_62E4+4
 	LD   A,$FF
@@ -17468,11 +17721,12 @@ function_BEAA:
 	LD   (IX+$02),A
 	OR   $FF
 	RET 
+; Function Name: function_BEDC
 function_BEDC:
 	LD   IX,Enemy2State
 .in_sector_4:
 	LD   A,(SectorNumberAscii)
-	AND  $07
+	AND  %00000111
 	SUB  $03
 	SUB  $02
 	JP   NC,function_BFB7.label_BFEF
@@ -17499,7 +17753,7 @@ function_BEDC:
 	CALL function_BEAA
 	JR   .label_BF10
 .label_BF1D:
-	CALL function_AF00
+	CALL BackupCharacterState
 	LD   A,(IX+$0B)
 	AND  A
 	JR   Z,.label_BF2B
@@ -17508,7 +17762,7 @@ function_BEDC:
 .label_BF2B:
 	BIT  6,(IX+$00)
 	JR   NZ,.label_BF95
-	CALL function_9FB9
+	CALL MoveCharacterRight
 	JR   C,.label_BF43
 	JR   Z,.label_BF8E
 .label_BF38:
@@ -17556,21 +17810,23 @@ function_BEDC:
 	LD   (IX+$00),$00
 	JP   GetSpriteWidth.label_AF49
 .label_BF95:
-	CALL function_9F7F
+	CALL MoveCharacterLeft
 	JR   C,.label_BF43
 	JR   Z,.label_BF8E
 	JR   .label_BF38
+; Function Name: function_BF9E
 function_BF9E:
-	LD   HL,$C81D
+	LD   HL,data_C80D+16
 	BIT  6,(IX+$00)
 	JR   Z,.label_BFAA
-	LD   HL,$C825
+	LD   HL,data_C80D+24
 .label_BFAA:
 	LD   (IX+$04),L
 	LD   (IX+$05),H
 	CALL function_AEF0
 	LD   (IX+$03),A
 	RET 
+; Function Name: function_BFB7
 function_BFB7:
 	LD   A,(IX+$09)
 	LD   HL,$C82D
@@ -17603,7 +17859,7 @@ function_BFB7:
 .label_BFEF:
 	LD   A,(CurrentRoomNumber)
 	CP   $3F
-	JP   NZ,function_A31A.label_A31E
+	JP   NZ,UpdateEnemy1.label_A31E
 	LD   A,(IX+$00)
 	AND  $1F
 	JR   NZ,.label_C01B
@@ -17617,12 +17873,13 @@ function_BFB7:
 	LD   (IX+$03),A
 	LD   (IX+$08),$00
 .label_C01B:
-	CALL function_AF00
+	CALL BackupCharacterState
 	INC  (IX+$0B)
 	LD   A,(IX+$0B)
 	AND  $03
-	CALL Z,function_9FB9
+	CALL Z,MoveCharacterRight
 	JP   function_AF4C
+; Function Name: function_C02C
 function_C02C:
 	PUSH AF
 	PUSH BC
@@ -17664,232 +17921,240 @@ function_C02C:
 ; 0:
 ; 1: Walking
 ; 4: Jumping
+; 5: Riding lift
 ; 6: Ducking
+; 7: Falling
+; 8: Landed from fall
 ; Bit 6 : Face Left
 ; Bit 7 : ??
 PlayerState:
-	db $80			; bottom 5 bits : state enum
+	db $C1			; bottom 5 bits : state enum
 PlayerYPixelPos:
-	db 114			; player Y pixel pos
+	db $7B			; player Y pixel pos
 PlayerXCharPos:
-	db $0C			; player X char pos
+	db $0A			; player X char pos
 PlayerAnimationIndex:
-	db 0			; player animation frame?
+	db 14			; player animation frame?
 data_C065:
-	db $CF
-	db $C1
-	db $C5
-	db $C1
-	db 32			; animation counter?
-	db $03
+	dw $C1CF
+	dw $C1C5
+	db 237			; animation counter?
+	db $00
 PlayerControl:
-	db %00001000			; player control bits
+	db %00000000			; player control bits
 	db $04
 	db $00
-	db $84
+	db $81
+; bits
+; 0 : 
+; 1 : 
+; 2 : Control input disabled
+; 3 : game over?
+; 4 : ?
+; 5 : Disable LR movement
+; 6 : ?
+; 7 : ?
 Player_C06F:
-	db %10000110			; bit 3 is a game over bit
+	db %00000010			; bit 3 is a game over bit, bit 5 disables LR movement
 ; top 6 bits mask the current foreground over the player
 PlayerForegroundMask:
-	db %01000001
-	db %01100001
-	db %01100001
-	db %01000001
-	db %01000001,%01000001
-	db $84
-	db $74
-	db $0C
-	db $00
+	db %00000001
+	db %00000001
+	db %00000001
+	db %00000001
+	db %00000001,%11100001
+	db $C1
+	db $7B
+	db $0A
+	db $0E
 	db $CF
 	db $C1
 	db $C5
 	db $C1
-	db $20
-	db $02
-	db $08
+	db $ED
+	db $00
+	db $00
 	db $04
 	db $00
-	db $84
-	db $86
-	db $41
-	db $61
-	db $61
-	db $41
-	db $41
-	db $41
+	db $81
+	db $02
+	db $01
+	db $01
+	db $01
+	db $01
+	db $01
+	db $E1
 Enemy1State:
-	db $C5
-	db 111			; Y pixel pos
-	db $0A			; X char pos
-	db $19			; Sprite Index
-	db $DF
-	db $C1
-	db $78
-	db $C1
-	db $0F
-	db $03
-	db $08
-	db $05
-	db $00
-	db $00
-	db $EE
-	db $01
-	db $01
-	db $01
-	db $01
-	db $01
-	db $01
-	db $C5
-	db $73
-	db $0A
-	db $19
-	db $DF
-	db $C1
-	db $78
-	db $C1
-	db $0F
-	db $02
-	db $08
-	db $05
-	db $00
-	db $00
-	db $EE
-	db $01
-	db $01
-	db $01
-	db $01
-	db $01
-	db $01
-Enemy2State:
-	db $C1			; state
+	db $40
 	db 123			; Y pixel pos
-	db 19			; X char pos
-	db $1B			; anim frame
-	db $DF
-	db $C1
-	db $78
-	db $C1
+	db $09			; X char pos
+	db $27			; Sprite Index
+	dw $C1DF
+	dw $C178
+	db $10
+	db $00
 	db $1A
-	db $00
-	db $0A
-	db $0C
+	db $05
 	db $00
 	db $00
-	db $02
-	db $62
-	db $62
-	db $62
-	db $62
-	db $62
-	db $E2
-	db $C1
+	db $03
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $E0
+	db $40
 	db $7B
-	db $14
-	db $1A
+	db $09
+	db $27
 	db $DF
 	db $C1
 	db $78
 	db $C1
-	db $18
+	db $10
 	db $00
-	db $0A
-	db $0C
+	db $1A
+	db $05
 	db $00
 	db $00
+	db $03
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $E0
+Enemy2State:
+	db $00			; state
+	db 123			; Y pixel pos
+	db 22			; X char pos
+	db $27			; anim frame
+	db $DF
+	db $C1
+	db $78
+	db $C1
+	db $12
+	db $00
+	db $0E
+	db $04
+	db $00
+	db $00
+	db $03
+	db $02
+	db $02
+	db $02
+	db $02
 	db $02
 	db $E2
-	db $E2
-	db $E2
-	db $E2
-	db $E2
+	db $00
+	db $7B
+	db $16
+	db $27
+	db $DF
+	db $C1
+	db $78
+	db $C1
+	db $12
+	db $00
+	db $0E
+	db $04
+	db $00
+	db $00
+	db $03
+	db $02
+	db $02
+	db $02
+	db $02
+	db $02
 	db $E2
 data_C0DF:
 	db $00
 	db $7B
 data_C0E1:
-	db $1D
-	db $17
+	db $0A
+	db $29
 	db $D7
 	db $C1
-	db $78
+	db $82
 	db $C1
-	db $45
+	db $35
 	db $00
 data_C0E9:
+	db $01
 	db $09
-	db $0C
 	db $00
 	db $00
 	db $03
-	db $23
-	db $23
-	db $23
-	db $23
-	db $23
-	db $E3
+	db $02
+	db $02
+	db $02
+	db $02
+	db $02
+	db $E2
 	db $00
 	db $7B
-	db $1D
-	db $17
+	db $0A
+	db $29
 	db $D7
+	db $C1
+	db $82
+	db $C1
+	db $35
+	db $00
+	db $01
+	db $09
+	db $00
+	db $00
+	db $03
+	db $02
+	db $02
+	db $02
+	db $02
+	db $02
+	db $E2
+	db $00
+	db $7B
+	db $12
+	db $27
+	db $DF
 	db $C1
 	db $78
 	db $C1
 	db $45
 	db $00
-	db $09
-	db $0C
+	db $1E
+	db $08
 	db $00
 	db $00
 	db $03
-	db $23
-	db $23
-	db $23
-	db $23
-	db $23
-	db $E3
+	db $C2
+	db $C2
+	db $42
+	db $42
+	db $42
+	db $E2
 	db $00
 	db $7B
-	db $1D
-	db $17
-	db $D7
+	db $12
+	db $27
+	db $DF
 	db $C1
 	db $78
 	db $C1
-	db $4D
+	db $45
 	db $00
-	db $19
-	db $06
-	db $00
-	db $00
-	db $03
-	db $23
-	db $23
-	db $23
-	db $23
-	db $23
-	db $E3
-	db $00
-	db $7B
-	db $1D
-	db $17
-	db $D7
-	db $C1
-	db $78
-	db $C1
-	db $4D
-	db $00
-	db $19
-	db $06
+	db $1E
+	db $08
 	db $00
 	db $00
 	db $03
-	db $23
-	db $23
-	db $23
-	db $23
-	db $23
-	db $E3
+	db $C2
+	db $C2
+	db $42
+	db $42
+	db $42
+	db $E2
 ; These are 4 byte items for each sector
 data_C133:
 	db $40
@@ -17917,13 +18182,13 @@ PlayerStateFunctionTable:
 	dw NullFunction_A667
 	dw NullFunction_A668
 	dw NullFunction_A669
-	dw function_A66A
-	dw function_A6A6
-	dw function_A70C
-	dw label_A745
-	dw label_A7B3
-	dw label_A7D5
-	dw label_A7F5
+	dw EnemyFunction_A66A
+	dw EnemyFunction_A6A6
+	dw EnemyFunction_A70C
+	dw EnemyFunction_A745
+	dw EnemyFunction_A7B3
+	dw EnemyFunction_A7D5
+	dw EntityFunction_A7F5
 	dw label_A7FC
 	dw label_A809
 data_C161:
@@ -17939,7 +18204,7 @@ data_C161:
 	db $21
 	db $FE
 data_C16D:
-	dw $5B30
+	dw $EB54
 data_C16F:
 	db $28
 	db $27
@@ -17962,19 +18227,19 @@ data_C179:
 	db $29
 	db $FF
 	db $00
-; Functions indexed by player state
-FunctionTable_C183:
-	dw function_A41F
-	dw function_A518
+; Functions indexed by enemy state
+EnemyStateFunctionTable:
+	dw SpawnEnemyFunction
+	dw EnemyFunction_A518
 	dw NullFunction_A668
 	dw NullFunction_A669
-	dw function_A66A
-	dw function_A6A6
-	dw function_A70C
-	dw label_A745
-	dw label_A7B3
-	dw label_A7D5
-	dw label_A7F5
+	dw EnemyFunction_A66A
+	dw EnemyFunction_A6A6
+	dw EnemyFunction_A70C
+	dw EnemyFunction_A745
+	dw EnemyFunction_A7B3
+	dw EnemyFunction_A7D5
+	dw EntityFunction_A7F5
 	dw label_A7FC
 	dw label_A809
 	dw function_A814
@@ -18158,26 +18423,35 @@ data_C226:
 	db $24
 	db $8B
 ; Some kind of state based LUT
-PlayerStateLUT_C251:
-	db %00000011
-	db $02
-	db $02
-	db $02
-	db $86			; jump
-	db $EE
-	db $B2			; duck
-	db $A2
-	db $FE
-	db $FC
-	db $FE
-	db $FE
-	db $FE
-	db $F2
-	db $B6
-	db $F2
-	db $F2
-	db $F6
-	db $B6
+; An Array of bit fields that get applied for each state
+; 0 : ?
+; 1 : ?
+; 2 : ?
+; 3 : ?
+; 4 : ?
+; 5 : Disabled LR movement
+; 6 : ?
+; 7 : ?
+CharacterStateLUT:
+	db %00000011			; 0 : idle?
+	db %00000010			; 1
+	db %00000010			; 2
+	db %00000010			; 3
+	db %10000110			; 4 : jump
+	db %11101110			; 5 : use lift
+	db %10110010			; 6 : duck
+	db %10100010			; 7
+	db %11111110			; 8
+	db %11111100			; 9 : enemy die?
+	db %11111110			; 10 : turn
+	db %11111110			; 11
+	db %11111110			; 12
+	db %11110010			; 13
+	db %10110110			; 14
+	db %11110010			; 15
+	db %11110010			; 16
+	db %11110110			; 17
+	db %10110110			; 18
 	db $FF
 SentryLaserChar_EW:
 	db $FF
@@ -18479,21 +18753,21 @@ data_C2F2:
 	db $5A
 	db $7A
 PopupState:
-	db $02			; state (0 - inactive, 1 - ??, 2 - visible)
-	db 61			; timeout?
-	db $07			; popup position x
+	db $00			; state (0 - inactive, 1 - ??, 2 - visible)
+	db 0			; timeout?
+	db $10			; popup position x
 	db $00			; popup position y
-	dw data_C526			; pointer to text popup
-	db $E9
+	dw data_C580			; pointer to text popup
+	db $78
 	db $00
 data_C3C0:
 	db $00
 	db $00
-	db $0E
-	db $02
-	db $D8
-	db $C4
-	db $78
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
 	db $02
 DanFellTooFar_Popup:
 	db 8
@@ -18514,7 +18788,7 @@ data_C412:
 	db $01
 	db "DAN IS NOW IN SECTOR "
 SectorNumberAscii:
-	db '2'
+	db '1'
 data_C42A:
 	db 4
 	db 2
@@ -18670,7 +18944,7 @@ data_C7EB:
 	db $3F
 	db $02
 data_C80D:
-	db $05
+	db $FF
 	db $FF
 	db $FF
 	db $FF
@@ -18736,6 +19010,7 @@ data_C80D:
 	db $01
 	db $03
 	db $54
+data_C84F:
 	db $FA
 	db $0A
 	db $90
@@ -18847,10 +19122,14 @@ BestScoresItem:
 	db $72
 	db $24
 HighScoreTable:
-	db "ADDDDKKKKKKKKKKK...."
+	db "MARK            ...."
 	db $00
-	db $48
-	db $50
+	db $11
+	db $00
+	db "AAAAAAAAAAAAAAAA...."
+	db $00
+	db $08
+	db $00
 	db "AAAARRRRGGHH........"
 	db $00
 	db $05
@@ -18862,10 +19141,6 @@ HighScoreTable:
 	db "..OUT..............."
 	db $00
 	db $03
-	db $00
-	db "...OF..............."
-	db $00
-	db $02
 	db $00
 TitleScreenData:
 	db $05			; number of items
@@ -18913,6 +19188,7 @@ UnknownScreenData:
 	dw $028F
 	db "йклм"
 	db $24			; terminator
+; Function Name: function_CA77
 function_CA77:
 	db $21
 	db $00
@@ -19904,6 +20180,7 @@ function_CA77:
 	db $20
 	db $20
 	db $24
+; Function Name: UpdateScrollText
 UpdateScrollText:
 	LD   A,(data_6270)
 	AND  A
@@ -19936,7 +20213,7 @@ UpdateScrollText:
 	LD   HL,data_6200
 	CALL AddAToHLWithCarry
 	RLD
-	LD   HL,CHARSET.label_4C46+1176
+	LD   HL,ScreenPixels.label_4C46+1176
 	LD   E,$00
 	ADD  HL,DE
 	LD   B,$1E
@@ -20061,6 +20338,7 @@ data_CF07:
 	dw $00C0
 data_CF0A:
 	db $03
+data_CF0B:
 	db $20
 	dw $0120
 data_CF0E:
@@ -20593,169 +20871,169 @@ data_CFAB:
 	db $00
 DanRunSprite_0:
 	db $00,$00,$00
-	db $00,$1E,$00
-	db $00,$FE,$00
-	db $01,$FC,$00
-	db $00,$0E,$00
-	db $00,$41,$00
-	db $00,$B8,$00
-	db $00,$5E,$00
-	db $01,$9C,$00
-	db $00,$6E,$00
-	db $01,$90,$00
-	db $03,$E8,$00
-	db $07,$DC,$00
-	db $07,$80,$00
-	db $0E,$3F,$FC
-	db $0F,$9F,$E0
-	db $07,$E3,$00
-	db $01,$DD,$60
-	db $06,$3B,$40
-	db $07,$80,$00
-	db $07,$D0,$00
-	db $00,$38,$00
-	db $02,$F8,$00
-	db $03,$7C,$00
-	db $6F,$BC,$00
-	db $6F,$9E,$00
-	db $DE,$1E,$00
-	db $80,$0F,$00
-	db $00,$0F,$00
-	db $00,$06,$E0
-	db $00,$01,$C0
-	db $00,$03,$00
+	db $00,$78,$00
+	db $00,$7F,$00
+	db $00,$3F,$80
+	db $00,$70,$00
+	db $00,$82,$00
+	db $00,$1D,$00
+	db $00,$7A,$00
+	db $00,$39,$80
+	db $00,$76,$00
+	db $00,$09,$80
+	db $00,$17,$C0
+	db $00,$3B,$E0
+	db $00,$01,$E0
+	db $3F,$FC,$70
+	db $07,$F9,$F0
+	db $00,$C7,$E0
+	db $06,$BB,$80
+	db $02,$DC,$60
+	db $00,$01,$E0
+	db $00,$0B,$E0
+	db $00,$1C,$00
+	db $00,$1F,$40
+	db $00,$3E,$C0
+	db $00,$3D,$F6
+	db $00,$79,$F6
+	db $00,$78,$7B
+	db $00,$F0,$01
+	db $00,$F0,$00
+	db $07,$60,$00
+	db $03,$80,$00
+	db $00,$C0,$00
 DanRunSprite_1:
 	db $00,$3C,$00
-	db $01,$FC,$00
-	db $03,$F8,$00
-	db $00,$1C,$00
-	db $00,$A2,$00
-	db $01,$70,$00
-	db $00,$BC,$00
-	db $03,$38,$00
-	db $00,$DC,$00
-	db $03,$20,$00
-	db $07,$D0,$00
-	db $0F,$B8,$00
-	db $0F,$00,$00
-	db $1C,$7F,$F8
-	db $1F,$BF,$C0
-	db $0F,$C6,$00
-	db $11,$BA,$C0
-	db $1E,$36,$80
-	db $1F,$C0,$00
-	db $1E,$00,$00
-	db $01,$40,$00
-	db $0F,$40,$00
-	db $0F,$60,$00
-	db $0F,$60,$00
-	db $0E,$C0,$00
-	db $2E,$80,$00
-	db $5E,$00,$00
-	db $5E,$00,$00
-	db $1E,$00,$00
-	db $18,$00,$00
-	db $06,$00,$00
-	db $1F,$00,$00
+	db $00,$3F,$80
+	db $00,$1F,$C0
+	db $00,$38,$00
+	db $00,$45,$00
+	db $00,$0E,$80
+	db $00,$3D,$00
+	db $00,$1C,$C0
+	db $00,$3B,$00
+	db $00,$04,$C0
+	db $00,$0B,$E0
+	db $00,$1D,$F0
+	db $00,$00,$F0
+	db $1F,$FE,$38
+	db $03,$FD,$F8
+	db $00,$63,$F0
+	db $03,$5D,$88
+	db $01,$6C,$78
+	db $00,$03,$F8
+	db $00,$00,$78
+	db $00,$02,$80
+	db $00,$02,$F0
+	db $00,$06,$F0
+	db $00,$06,$F0
+	db $00,$03,$70
+	db $00,$01,$74
+	db $00,$00,$7A
+	db $00,$00,$7A
+	db $00,$00,$78
+	db $00,$00,$18
+	db $00,$00,$60
+	db $00,$00,$F8
 DanRunSprite_2:
 	db $00,$00,$00
-	db $00,$07,$80
-	db $00,$3F,$80
-	db $00,$7F,$00
-	db $00,$03,$80
-	db $00,$14,$40
-	db $00,$2E,$00
-	db $00,$17,$80
-	db $00,$67,$00
-	db $00,$1B,$80
-	db $00,$64,$00
-	db $00,$F2,$00
-	db $01,$E7,$00
 	db $01,$E0,$00
-	db $03,$8F,$FE
-	db $03,$E7,$F0
-	db $01,$F9,$80
-	db $00,$76,$B0
-	db $01,$85,$A0
-	db $01,$F8,$00
-	db $01,$E0,$00
-	db $00,$14,$00
-	db $00,$F6,$00
-	db $01,$F7,$00
-	db $01,$EF,$00
-	db $03,$EE,$00
-	db $07,$DC,$00
-	db $0F,$B0,$00
-	db $1F,$00,$00
-	db $24,$00,$00
-	db $38,$00,$00
-	db $1C,$00,$00
-DanRunSprite_3:
-	db $00,$1E,$00
-	db $00,$FE,$00
 	db $01,$FC,$00
-	db $00,$0E,$00
-	db $00,$51,$00
-	db $00,$B8,$00
-	db $00,$5E,$00
-	db $01,$9C,$00
-	db $00,$6E,$00
-	db $03,$90,$00
-	db $07,$C8,$00
-	db $07,$9C,$00
-	db $0F,$80,$00
-	db $0E,$3F,$FC
-	db $0F,$8F,$E0
-	db $07,$E3,$00
-	db $00,$ED,$60
-	db $07,$1B,$40
-	db $07,$E0,$00
-	db $07,$80,$00
-	db $00,$68,$00
-	db $03,$EC,$00
-	db $03,$DC,$00
-	db $BF,$DE,$00
-	db $BF,$8E,$00
-	db $DC,$0F,$00
-	db $C0,$07,$00
-	db $80,$07,$80
-	db $00,$03,$60
-	db $00,$00,$E0
-	db $00,$01,$80
+	db $00,$FE,$00
+	db $01,$C0,$00
+	db $02,$28,$00
+	db $00,$74,$00
+	db $01,$E8,$00
+	db $00,$E6,$00
+	db $01,$D8,$00
+	db $00,$26,$00
+	db $00,$4F,$00
+	db $00,$E7,$80
+	db $00,$07,$80
+	db $7F,$F1,$C0
+	db $0F,$E7,$C0
+	db $01,$9F,$80
+	db $0D,$6E,$00
+	db $05,$A1,$80
+	db $00,$1F,$80
+	db $00,$07,$80
+	db $00,$28,$00
+	db $00,$6F,$00
+	db $00,$EF,$80
+	db $00,$F7,$80
+	db $00,$77,$C0
+	db $00,$3B,$E0
+	db $00,$0D,$F0
+	db $00,$00,$F8
+	db $00,$00,$24
+	db $00,$00,$1C
+	db $00,$00,$38
+DanRunSprite_3:
+	db $00,$78,$00
+	db $00,$7F,$00
+	db $00,$3F,$80
+	db $00,$70,$00
+	db $00,$8A,$00
+	db $00,$1D,$00
+	db $00,$7A,$00
+	db $00,$39,$80
+	db $00,$76,$00
+	db $00,$09,$C0
+	db $00,$13,$E0
+	db $00,$39,$E0
+	db $00,$01,$F0
+	db $3F,$FC,$70
+	db $07,$F1,$F0
+	db $00,$C7,$E0
+	db $06,$B7,$00
+	db $02,$D8,$E0
+	db $00,$07,$E0
+	db $00,$01,$E0
+	db $00,$16,$00
+	db $00,$37,$C0
+	db $00,$3B,$C0
+	db $00,$7B,$FD
+	db $00,$71,$FD
+	db $00,$F0,$3B
+	db $00,$E0,$03
+	db $01,$E0,$01
+	db $06,$C0,$00
+	db $07,$00,$00
+	db $01,$80,$00
 	db $00,$00,$00
 DanRunSprite_4:
-	db $03,$C0,$00
-	db $1F,$C0,$00
-	db $3F,$00,$00
-	db $01,$C0,$00
-	db $0A,$20,$00
-	db $17,$00,$00
-	db $0B,$C0,$00
-	db $07,$80,$00
-	db $19,$C0,$00
-	db $06,$00,$00
-	db $39,$00,$00
-	db $7C,$80,$00
-	db $79,$C0,$00
-	db $70,$00,$00
-	db $F7,$FF,$C0
-	db $E1,$FE,$00
-	db $FC,$30,$00
-	db $7E,$D6,$00
-	db $0D,$B4,$00
-	db $60,$00,$00
-	db $79,$00,$00
-	db $07,$80,$00
-	db $2F,$C0,$00
-	db $13,$C0,$00
-	db $0F,$80,$00
-	db $3F,$00,$00
-	db $3C,$00,$00
-	db $D3,$00,$00
-	db $6E,$00,$00
-	db $28,$00,$00
-	db $06,$00,$00
-	db $1F,$00,$00
+	db $00,$03,$C0
+	db $00,$03,$F8
+	db $00,$00,$FC
+	db $00,$03,$80
+	db $00,$04,$50
+	db $00,$00,$E8
+	db $00,$03,$D0
+	db $00,$01,$E0
+	db $00,$03,$98
+	db $00,$00,$60
+	db $00,$00,$9C
+	db $00,$01,$3E
+	db $00,$03,$9E
+	db $00,$00,$0E
+	db $03,$FF,$EF
+	db $00,$7F,$87
+	db $00,$0C,$3F
+	db $00,$6B,$7E
+	db $00,$2D,$B0
+	db $00,$00,$06
+	db $00,$00,$9E
+	db $00,$01,$E0
+	db $00,$03,$F4
+	db $00,$03,$C8
+	db $00,$01,$F0
+	db $00,$00,$FC
+	db $00,$00,$3C
+	db $00,$00,$CB
+	db $00,$00,$76
+	db $00,$00,$14
+	db $00,$00,$60
+	db $00,$00,$F8
 	db $00
 	db $38
 	db $00
@@ -20853,830 +21131,830 @@ DanRunSprite_4:
 	db $01
 	db $C0
 	db $00
-	db $F0
-	db $00
 	db $0F
-	db $10
 	db $00
-	db $10
-	db $10
-	db $00
-	db $20
-	db $20
-	db $00
-	db $1F
-	db $10
-	db $C0
-	db $0A
-	db $C9
-	db $20
-	db $14
-	db $79
-	db $10
-	db $0A
-	db $12
-	db $A0
-	db $0C
-	db $24
-	db $40
-	db $13
-	db $1C
-	db $40
-	db $18
-	db $F0
-	db $80
-	db $20
-	db $41
-	db $00
-	db $43
-	db $22
-	db $00
-	db $43
-	db $FF
-	db $F0
-	db $46
 	db $00
 	db $08
-	db $84
-	db $00
-	db $70
-	db $8F
-	db $E7
-	db $80
-	db $80
-	db $94
-	db $00
-	db $40
-	db $A4
-	db $00
-	db $3F
-	db $58
-	db $00
-	db $20
-	db $60
-	db $00
-	db $21
-	db $90
-	db $00
-	db $1E
-	db $08
-	db $00
-	db $10
-	db $C4
-	db $00
-	db $10
-	db $82
+	db $F0
 	db $00
 	db $08
-	db $42
-	db $00
 	db $08
-	db $61
-	db $00
-	db $10
-	db $51
-	db $00
-	db $20
-	db $90
-	db $80
-	db $31
-	db $08
-	db $E0
-	db $4A
-	db $0B
-	db $10
-	db $FC
-	db $07
-	db $E0
-	db $00
-	db $F0
-	db $00
-	db $07
-	db $F0
-	db $00
-	db $0F
-	db $E0
-	db $00
-	db $00
-	db $70
-	db $00
-	db $02
-	db $88
-	db $80
-	db $05
-	db $C0
-	db $C0
-	db $02
-	db $F1
-	db $40
-	db $01
-	db $E1
-	db $80
-	db $06
-	db $73
-	db $80
-	db $03
-	db $87
-	db $80
-	db $0F
-	db $DF
-	db $00
-	db $1E
-	db $6E
-	db $00
-	db $1E
-	db $00
-	db $00
-	db $1C
-	db $FF
-	db $F0
-	db $3D
-	db $FF
-	db $80
-	db $38
-	db $0C
-	db $00
-	db $3F
-	db $B4
-	db $00
-	db $1F
-	db $AC
-	db $00
-	db $00
-	db $40
-	db $00
-	db $0F
-	db $C0
-	db $00
-	db $0F
-	db $30
-	db $00
-	db $00
-	db $F8
-	db $00
-	db $07
-	db $9C
-	db $00
-	db $07
-	db $BE
-	db $00
-	db $03
-	db $DE
-	db $00
-	db $03
-	db $CF
-	db $00
-	db $07
-	db $C7
-	db $00
-	db $0F
-	db $87
-	db $80
-	db $07
-	db $03
-	db $80
-	db $1A
-	db $02
-	db $70
-	db $3C
-	db $01
-	db $E0
-	db $0E
-	db $00
-	db $80
-	db $00
-	db $3C
-	db $00
-	db $01
-	db $FC
-	db $00
-	db $03
-	db $F8
-	db $00
-	db $00
-	db $1C
-	db $00
-	db $00
-	db $A2
-	db $00
-	db $01
-	db $70
-	db $00
-	db $00
-	db $BC
-	db $00
-	db $00
-	db $78
-	db $00
-	db $01
-	db $80
-	db $00
-	db $0E
-	db $FF
-	db $F8
-	db $3F
-	db $0F
-	db $C0
-	db $78
-	db $76
-	db $00
-	db $E7
-	db $26
-	db $C0
-	db $FF
-	db $86
-	db $80
-	db $7C
-	db $30
-	db $00
-	db $03
-	db $F0
-	db $00
-	db $1F
-	db $E0
-	db $00
-	db $1F
-	db $A0
-	db $00
-	db $18
-	db $E0
-	db $00
-	db $1F
-	db $E0
-	db $00
-	db $1F
-	db $80
-	db $00
-	db $00
-	db $40
-	db $00
-	db $0F
-	db $40
-	db $00
-	db $0F
-	db $40
-	db $00
-	db $0E
-	db $80
-	db $00
-	db $0E
-	db $80
-	db $00
-	db $1E
-	db $80
-	db $00
-	db $1E
-	db $80
-	db $00
-	db $1E
-	db $80
-	db $00
-	db $18
-	db $00
-	db $00
-	db $06
-	db $80
-	db $00
-	db $1F
-	db $40
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $1E
-	db $00
-	db $00
-	db $FE
-	db $00
-	db $01
-	db $FC
-	db $00
-	db $00
-	db $0E
-	db $00
-	db $00
-	db $51
-	db $00
-	db $00
-	db $B8
-	db $00
-	db $00
-	db $5E
-	db $00
-	db $00
-	db $3C
-	db $00
-	db $01
-	db $DE
-	db $00
-	db $00
-	db $E0
-	db $00
-	db $03
-	db $F0
-	db $00
-	db $03
-	db $D8
-	db $00
-	db $07
-	db $96
-	db $00
-	db $07
-	db $80
-	db $00
-	db $0F
-	db $3F
-	db $FE
-	db $0F
-	db $CF
-	db $F0
-	db $07
-	db $F1
-	db $80
-	db $00
-	db $F6
-	db $B0
-	db $07
-	db $0D
-	db $A0
-	db $07
-	db $F0
-	db $00
-	db $07
-	db $80
-	db $00
-	db $00
-	db $5C
-	db $00
-	db $03
-	db $CF
-	db $00
-	db $03
-	db $EF
-	db $80
-	db $68
-	db $E3
-	db $80
-	db $6F
-	db $77
-	db $80
-	db $DF
-	db $F7
-	db $00
-	db $83
-	db $F0
-	db $80
-	db $00
-	db $67
-	db $C0
-	db $00
-	db $F0
-	db $00
-	db $07
-	db $F0
-	db $00
-	db $0F
-	db $E0
-	db $00
-	db $00
-	db $70
-	db $00
-	db $02
-	db $88
-	db $00
-	db $05
-	db $C0
-	db $00
-	db $02
-	db $F0
-	db $00
-	db $01
-	db $E0
-	db $00
-	db $02
-	db $F0
-	db $00
-	db $0F
-	db $00
-	db $00
-	db $1F
-	db $C0
-	db $00
-	db $1C
-	db $00
-	db $00
-	db $3C
-	db $FF
-	db $F0
-	db $38
-	db $0F
-	db $80
-	db $3F
-	db $B4
-	db $00
-	db $3F
-	db $AD
-	db $80
-	db $1C
-	db $05
-	db $00
-	db $01
-	db $E2
-	db $80
-	db $0F
-	db $FB
-	db $80
-	db $07
-	db $1D
-	db $C0
-	db $00
-	db $7D
-	db $C0
-	db $05
-	db $F9
-	db $80
-	db $0D
-	db $E0
-	db $60
-	db $0E
-	db $01
-	db $F0
-	db $00
-	db $7C
-	db $00
-	db $03
-	db $84
 	db $00
 	db $04
 	db $04
-	db $00
-	db $08
-	db $08
-	db $00
-	db $07
-	db $C4
-	db $00
-	db $02
-	db $BA
-	db $00
-	db $05
-	db $1C
-	db $06
-	db $02
-	db $84
-	db $05
-	db $01
-	db $08
-	db $1A
-	db $06
-	db $84
-	db $2C
-	db $08
-	db $78
-	db $C8
-	db $10
-	db $17
-	db $00
-	db $11
-	db $FF
-	db $F8
-	db $21
-	db $80
-	db $04
-	db $23
-	db $F8
-	db $F8
-	db $20
-	db $25
-	db $00
-	db $20
-	db $29
-	db $00
-	db $11
-	db $FD
-	db $40
-	db $0F
-	db $0E
-	db $20
-	db $08
-	db $02
-	db $20
-	db $04
-	db $71
-	db $10
-	db $07
-	db $C1
-	db $10
-	db $05
 	db $03
-	db $30
-	db $0F
-	db $FC
+	db $08
 	db $F8
-	db $00
-	db $F0
-	db $00
-	db $07
-	db $F0
-	db $00
-	db $0F
-	db $E0
-	db $00
-	db $00
-	db $70
-	db $00
-	db $02
-	db $88
-	db $00
+	db $04
+	db $93
+	db $50
+	db $08
+	db $9E
+	db $28
 	db $05
-	db $C0
-	db $10
-	db $02
-	db $F0
-	db $38
-	db $01
-	db $E0
+	db $48
 	db $50
 	db $02
-	db $F0
-	db $E0
-	db $0F
-	db $03
-	db $C0
-	db $1F
-	db $EF
-	db $80
-	db $1C
-	db $00
-	db $00
-	db $3C
-	db $FF
-	db $F0
+	db $24
+	db $30
+	db $02
 	db $38
-	db $0F
-	db $80
-	db $3F
-	db $B4
-	db $00
-	db $3F
-	db $AC
-	db $00
-	db $1C
-	db $05
-	db $00
+	db $C8
 	db $01
-	db $E3
-	db $80
 	db $0F
-	db $FB
-	db $80
-	db $07
-	db $1D
-	db $C0
+	db $18
 	db $00
-	db $7D
-	db $C0
-	db $05
-	db $F9
-	db $80
-	db $0D
-	db $E0
-	db $60
+	db $82
+	db $04
+	db $00
+	db $44
+	db $C2
+	db $0F
+	db $FF
+	db $C2
+	db $10
+	db $00
+	db $62
 	db $0E
+	db $00
+	db $21
 	db $01
-	db $F0
+	db $E7
+	db $F1
 	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $00
-	db $3C
-	db $00
+	db $29
 	db $01
+	db $00
+	db $25
+	db $02
+	db $00
+	db $1A
 	db $FC
 	db $00
+	db $06
+	db $04
+	db $00
+	db $09
+	db $84
+	db $00
+	db $10
+	db $78
+	db $00
+	db $23
+	db $08
+	db $00
+	db $41
+	db $08
+	db $00
+	db $42
+	db $10
+	db $00
+	db $86
+	db $10
+	db $00
+	db $8A
+	db $08
+	db $01
+	db $09
+	db $04
+	db $07
+	db $10
+	db $8C
+	db $08
+	db $D0
+	db $52
+	db $07
+	db $E0
+	db $3F
+	db $00
+	db $0F
+	db $00
+	db $00
+	db $0F
+	db $E0
+	db $00
+	db $07
+	db $F0
+	db $00
+	db $0E
+	db $00
+	db $01
+	db $11
+	db $40
 	db $03
-	db $F8
+	db $03
+	db $A0
+	db $02
+	db $8F
+	db $40
+	db $01
+	db $87
+	db $80
+	db $01
+	db $CE
+	db $60
+	db $01
+	db $E1
+	db $C0
+	db $00
+	db $FB
+	db $F0
+	db $00
+	db $76
+	db $78
 	db $00
 	db $00
+	db $78
+	db $0F
+	db $FF
+	db $38
+	db $01
+	db $FF
+	db $BC
+	db $00
+	db $30
 	db $1C
 	db $00
+	db $2D
+	db $FC
 	db $00
-	db $A2
+	db $35
+	db $F8
+	db $00
+	db $02
+	db $00
+	db $00
+	db $03
+	db $F0
+	db $00
+	db $0C
+	db $F0
+	db $00
+	db $1F
+	db $00
+	db $00
+	db $39
+	db $E0
+	db $00
+	db $7D
+	db $E0
+	db $00
+	db $7B
+	db $C0
+	db $00
+	db $F3
+	db $C0
+	db $00
+	db $E3
+	db $E0
+	db $01
+	db $E1
+	db $F0
+	db $01
+	db $C0
+	db $E0
+	db $0E
+	db $40
+	db $58
+	db $07
+	db $80
+	db $3C
+	db $01
+	db $00
+	db $70
+	db $00
+	db $3C
+	db $00
+	db $00
+	db $3F
+	db $80
+	db $00
+	db $1F
+	db $C0
+	db $00
+	db $38
+	db $00
+	db $00
+	db $45
+	db $00
+	db $00
+	db $0E
+	db $80
+	db $00
+	db $3D
+	db $00
+	db $00
+	db $1E
+	db $00
+	db $00
+	db $01
+	db $80
+	db $1F
+	db $FF
+	db $70
+	db $03
+	db $F0
+	db $FC
+	db $00
+	db $6E
+	db $1E
+	db $03
+	db $64
+	db $E7
+	db $01
+	db $61
+	db $FF
+	db $00
+	db $0C
+	db $3E
+	db $00
+	db $0F
+	db $C0
+	db $00
+	db $07
+	db $F8
+	db $00
+	db $05
+	db $F8
+	db $00
+	db $07
+	db $18
+	db $00
+	db $07
+	db $F8
+	db $00
+	db $01
+	db $F8
+	db $00
+	db $02
+	db $00
+	db $00
+	db $02
+	db $F0
+	db $00
+	db $02
+	db $F0
 	db $00
 	db $01
 	db $70
 	db $00
+	db $01
+	db $70
 	db $00
-	db $BC
+	db $01
+	db $78
+	db $00
+	db $01
+	db $78
+	db $00
+	db $01
+	db $78
+	db $00
+	db $00
+	db $18
+	db $00
+	db $01
+	db $60
+	db $00
+	db $02
+	db $F8
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
 	db $00
 	db $00
 	db $78
 	db $00
-	db $01
-	db $9C
 	db $00
-	db $03
-	db $E0
-	db $00
-	db $07
-	db $F0
-	db $00
-	db $0F
-	db $90
-	db $00
-	db $0F
-	db $38
-	db $00
-	db $1E
+	db $7F
 	db $00
 	db $00
-	db $1F
 	db $3F
-	db $F8
-	db $0F
-	db $C7
-	db $C0
-	db $07
-	db $DA
-	db $00
-	db $01
-	db $B6
-	db $C0
-	db $06
-	db $06
 	db $80
-	db $07
-	db $88
+	db $00
+	db $70
+	db $00
+	db $00
+	db $8A
+	db $00
+	db $00
+	db $1D
+	db $00
+	db $00
+	db $7A
 	db $00
 	db $00
 	db $3C
 	db $00
-	db $04
-	db $FC
 	db $00
-	db $02
-	db $3E
-	db $00
-	db $01
-	db $5E
-	db $00
-	db $02
-	db $FC
-	db $00
-	db $05
-	db $F0
-	db $00
-	db $0A
-	db $C0
+	db $7B
+	db $80
 	db $00
 	db $07
 	db $00
 	db $00
-	db $03
+	db $0F
 	db $C0
 	db $00
-data_D5F8:
-	db $00,$0F,$00
-	db $00,$7F,$00
-	db $00,$FE,$00
-	db $00,$07,$00
-	db $00,$28,$80
-	db $00,$5C,$00
-	db $00,$2F,$00
-	db $00,$CE,$00
-	db $00,$37,$06
-	db $00,$C8,$18
-	db $01,$E6,$70
-	db $03,$C9,$E0
-	db $03,$C7,$F0
-	db $07,$1F,$38
-	db $07,$CC,$D0
-	db $03,$F1,$80
-	db $00,$EC,$00
-	db $03,$08,$00
-	db $03,$F0,$00
-	db $03,$C8,$00
-	db $00,$28,$00
-	db $01,$E8,$00
-	db $01,$E8,$00
-	db $01,$E8,$00
-	db $01,$D0,$00
-	db $03,$D0,$00
-	db $03,$D0,$00
-	db $03,$D0,$00
-	db $03,$A0,$00
-	db $03,$A0,$00
-	db $00,$58,$00
-	db $03,$F0,$00
+	db $1B
+	db $C0
 	db $00
-	db $38
-	db $00
-	db $00
-	db $FE
-	db $00
-	db $01
-	db $EF
-	db $00
-	db $00
-	db $FE
-	db $00
-	db $00
-	db $38
-	db $00
-	db $00
-	db $82
-	db $00
-	db $00
-	db $C6
-	db $00
-	db $00
-	db $7C
-	db $00
-	db $01
-	db $6C
-	db $06
-	db $00
-	db $B8
-	db $18
-	db $03
-	db $46
-	db $70
-	db $0F
-	db $A9
+	db $69
 	db $E0
-	db $1E
-	db $C7
+	db $00
+	db $01
+	db $E0
+	db $7F
+	db $FC
 	db $F0
-	db $1F
-	db $1F
-	db $38
 	db $0F
-	db $CC
-	db $D0
+	db $F3
+	db $F0
+	db $01
+	db $8F
+	db $E0
+	db $0D
+	db $6F
+	db $00
+	db $05
+	db $B0
+	db $E0
+	db $00
+	db $0F
+	db $E0
+	db $00
+	db $01
+	db $E0
+	db $00
+	db $3A
+	db $00
+	db $00
+	db $F3
+	db $C0
+	db $01
+	db $F7
+	db $C0
+	db $01
+	db $C7
+	db $16
+	db $01
+	db $EE
+	db $F6
+	db $00
+	db $EF
+	db $FB
+	db $01
+	db $0F
+	db $C1
 	db $03
-	db $E1
+	db $E6
+	db $00
+	db $00
+	db $0F
+	db $00
+	db $00
+	db $0F
+	db $E0
+	db $00
+	db $07
+	db $F0
+	db $00
+	db $0E
+	db $00
+	db $00
+	db $11
+	db $40
+	db $00
+	db $03
+	db $A0
+	db $00
+	db $0F
+	db $40
+	db $00
+	db $07
 	db $80
 	db $00
-	db $D8
+	db $0F
+	db $40
+	db $00
+	db $00
+	db $F0
 	db $00
 	db $03
+	db $F8
+	db $00
+	db $00
+	db $38
+	db $0F
+	db $FF
+	db $3C
+	db $01
+	db $F0
+	db $1C
+	db $00
+	db $2D
+	db $FC
+	db $01
+	db $B5
+	db $FC
+	db $00
+	db $A0
+	db $38
+	db $01
+	db $47
+	db $80
+	db $01
+	db $DF
+	db $F0
+	db $03
+	db $B8
+	db $E0
+	db $03
+	db $BE
+	db $00
+	db $01
+	db $9F
+	db $A0
+	db $06
+	db $07
+	db $B0
+	db $0F
+	db $80
+	db $70
+	db $00
+	db $3E
+	db $00
+	db $00
+	db $21
+	db $C0
+	db $00
+	db $20
+	db $20
+	db $00
+	db $10
 	db $10
 	db $00
+	db $23
+	db $E0
+	db $00
+	db $5D
+	db $40
+	db $60
+	db $38
+	db $A0
+	db $A0
+	db $21
+	db $40
+	db $58
+	db $10
+	db $80
+	db $34
+	db $21
+	db $60
+	db $13
+	db $1E
+	db $10
+	db $00
+	db $E8
+	db $08
+	db $1F
+	db $FF
+	db $88
+	db $20
+	db $01
+	db $84
+	db $1F
+	db $1F
+	db $C4
+	db $00
+	db $A4
+	db $04
+	db $00
+	db $94
+	db $04
+	db $02
+	db $BF
+	db $88
+	db $04
+	db $70
+	db $F0
+	db $04
+	db $40
+	db $10
+	db $08
+	db $8E
+	db $20
+	db $08
+	db $83
+	db $E0
+	db $0C
+	db $C0
+	db $A0
+	db $1F
+	db $3F
+	db $F0
+	db $00
+	db $0F
+	db $00
+	db $00
+	db $0F
+	db $E0
+	db $00
+	db $07
+	db $F0
+	db $00
+	db $0E
+	db $00
+	db $00
+	db $11
+	db $40
+	db $08
 	db $03
+	db $A0
+	db $1C
+	db $0F
+	db $40
+	db $0A
+	db $07
+	db $80
+	db $07
+	db $0F
+	db $40
+	db $03
+	db $C0
+	db $F0
+	db $01
+	db $F7
+	db $F8
+	db $00
+	db $00
+	db $38
+	db $0F
+	db $FF
+	db $3C
+	db $01
+	db $F0
+	db $1C
+	db $00
+	db $2D
+	db $FC
+	db $00
+	db $35
+	db $FC
+	db $00
+	db $A0
+	db $38
+	db $01
+	db $C7
+	db $80
+	db $01
+	db $DF
+	db $F0
+	db $03
+	db $B8
+	db $E0
+	db $03
+	db $BE
+	db $00
+	db $01
+	db $9F
+	db $A0
+	db $06
+	db $07
+	db $B0
+	db $0F
+	db $80
+	db $70
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $00
+	db $3C
+	db $00
+	db $00
+	db $3F
+	db $80
+	db $00
+	db $1F
+	db $C0
+	db $00
+	db $38
+	db $00
+	db $00
+	db $45
+	db $00
+	db $00
+	db $0E
+	db $80
+	db $00
+	db $3D
+	db $00
+	db $00
+	db $1E
+	db $00
+	db $00
+	db $39
+	db $80
+	db $00
+	db $07
+	db $C0
+	db $00
+	db $0F
+	db $E0
+	db $00
+	db $09
+	db $F0
+	db $00
+	db $1C
+	db $F0
+	db $00
+	db $00
+	db $78
+	db $1F
+	db $FC
+	db $F8
+	db $03
+	db $E3
+	db $F0
+	db $00
+	db $5B
+	db $E0
+	db $03
+	db $6D
+	db $80
+	db $01
+	db $60
+	db $60
+	db $00
+	db $11
+	db $E0
+	db $00
+	db $3C
+	db $00
+	db $00
+	db $3F
+	db $20
+	db $00
+	db $7C
+	db $40
+	db $00
+	db $7A
+	db $80
+	db $00
+	db $3F
+	db $40
+	db $00
+	db $0F
+	db $A0
+	db $00
+	db $03
+	db $50
+	db $00
+	db $00
 	db $E0
 	db $00
 	db $03
-	db $C8
+	db $C0
+data_D5F8:
+	db $00,$F0,$00
+	db $00,$FE,$00
+	db $00,$7F,$00
+	db $00,$E0,$00
+	db $01,$14,$00
+	db $00,$3A,$00
+	db $00,$F4,$00
+	db $00,$73,$00
+	db $60,$EC,$00
+	db $18,$13,$00
+	db $0E,$67,$80
+	db $07,$93,$C0
+	db $0F,$E3,$C0
+	db $1C,$F8,$E0
+	db $0B,$33,$E0
+	db $01,$8F,$C0
+	db $00,$37,$00
+	db $00,$10,$C0
+	db $00,$0F,$C0
+	db $00,$13,$C0
+	db $00,$14,$00
+	db $00,$17,$80
+	db $00,$17,$80
+	db $00,$17,$80
+	db $00,$0B,$80
+	db $00,$0B,$C0
+	db $00,$0B,$C0
+	db $00,$0B,$C0
+	db $00,$05,$C0
+	db $00,$05,$C0
+	db $00,$1A,$00
+	db $00,$0F,$C0
+	db $00
+	db $1C
 	db $00
 	db $00
-	db $28
-	db $00
-	db $01
-	db $E8
-	db $00
-	db $01
-	db $E8
-	db $00
-	db $01
-	db $E8
-	db $00
-	db $01
-	db $D0
-	db $00
-	db $03
-	db $D0
-	db $00
-	db $03
-	db $D0
-	db $00
-	db $03
-	db $D0
-	db $00
-	db $03
-	db $A0
-	db $00
-	db $03
-	db $A0
+	db $7F
 	db $00
 	db $00
-	db $58
+	db $F7
+	db $80
 	db $00
-	db $03
+	db $7F
+	db $00
+	db $00
+	db $1C
+	db $00
+	db $00
+	db $41
+	db $00
+	db $00
+	db $63
+	db $00
+	db $00
+	db $3E
+	db $00
+	db $60
+	db $36
+	db $80
+	db $18
+	db $1D
+	db $00
+	db $0E
+	db $62
+	db $C0
+	db $07
+	db $95
 	db $F0
+	db $0F
+	db $E3
+	db $78
+	db $1C
+	db $F8
+	db $F8
+	db $0B
+	db $33
+	db $F0
+	db $01
+	db $87
+	db $C0
 	db $00
+	db $1B
+	db $00
+	db $00
+	db $08
+	db $C0
+	db $00
+	db $07
+	db $C0
+	db $00
+	db $13
+	db $C0
+	db $00
+	db $14
+	db $00
+	db $00
+	db $17
+	db $80
+	db $00
+	db $17
+	db $80
+	db $00
+	db $17
+	db $80
+	db $00
+	db $0B
+	db $80
+	db $00
+	db $0B
+	db $C0
+	db $00
+	db $0B
+	db $C0
+	db $00
+	db $0B
+	db $C0
+	db $00
+	db $05
+	db $C0
+	db $00
+	db $05
+	db $C0
+	db $00
+	db $1A
+	db $00
+	db $00
+	db $0F
+	db $C0
 	db $00
 	db $00
 	db $00
@@ -25085,12 +25363,12 @@ data_D8F8:
 ; 0 : Item Type (1: Lift up indicator, 2:Lift down indicator, 3:Lift activity light)
 ; 1-2 : Screen address offset
 ActiveScreenItems:
-	db $00
-	dw $00C8
 	db $03
-	dw $00CF
+	dw $0070
+	db $02
+	dw $0091
 	db $01
-	dw $016E
+	dw $0171
 	db $00
 	dw $00D8
 	db $01
@@ -25098,14 +25376,13 @@ ActiveScreenItems:
 	db $02
 	dw $0197
 	db $00
-	dw $00F8
-	db $00
 	dw $0000
 	db $00
 	dw $0000
 	db $00
 	dw $0000
 	db $00
+	dw $0000
 	db $00
 	db $00
 	db $00
@@ -25302,6 +25579,8 @@ ActiveScreenItems:
 	db $00
 	db $00
 	db $00
+	db $00
+; Function Name: interrupt_handler
 interrupt_handler:
 	JP   InterruptRoutine
 	db $00
@@ -30273,11 +30552,11 @@ BackgroundChars2_Attributes:
 	db $01
 	db $04
 	db $47
-	db $46
+	db $47
 	db $45
 	db $05
-	db $6F
-	db $46
+	db $5F
+	db $47
 	db $04
 	db $04
 	db $46
@@ -30305,11 +30584,11 @@ BackgroundChars2_Attributes:
 	db $48
 	db $00
 	db $77
-	db $04
 	db $05
 	db $05
-	db $04
-	db $04
+	db $05
+	db $02
+	db $05
 	db $41
 	db $05
 	db $05
