@@ -1,5 +1,6 @@
 {
     "128KGame": false,
+    "AsmExportPath": "",
     "LuaSourceFiles": [
         "RoomViewer.lua",
         "RoomDrawCommands.lua"
@@ -10,8 +11,8 @@
         "ViewConfigs": [
             {
                 "Enabled": true,
-                "ViewAddress": 34973,
-                "ViewAddressBank": 3
+                "ViewAddress": 57,
+                "ViewAddressBank": 0
             },
             {
                 "Enabled": false,
@@ -30,5 +31,10 @@
             }
         ]
     },
-    "SnapshotFile": "Saboteur.z80"
+    "Snapshot": {
+        "DisplayName": "Saboteur",
+        "FileName": "Saboteur.z80",
+        "ListName": "Snapshot File",
+        "Type": 0
+    }
 }
