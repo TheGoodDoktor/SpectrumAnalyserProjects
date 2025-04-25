@@ -3529,7 +3529,8 @@
                 },
                 {
                     "Address": 783,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "5 keys per row"
                 },
                 {
                     "Address": 785,
@@ -4134,8 +4135,98 @@
                     "DataType": 4
                 },
                 {
+                    "Address": 518,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 519,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 520,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 521,
+                    "ByteSize": 6,
+                    "DataType": 4
+                },
+                {
+                    "Address": 527,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 534,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 535,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 536,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 537,
+                    "ByteSize": 6,
+                    "DataType": 4
+                },
+                {
+                    "Address": 543,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 668,
                     "DisplayType": 11
+                },
+                {
+                    "Address": 723,
+                    "ByteSize": 5,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 728,
+                    "ByteSize": 5,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 733,
+                    "ByteSize": 5,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 738,
+                    "ByteSize": 5,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 743,
+                    "ByteSize": 5,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 748,
+                    "ByteSize": 5,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 753,
+                    "ByteSize": 5,
+                    "DataType": 4,
+                    "Flags": 8
+                },
+                {
+                    "Address": 758,
+                    "ByteSize": 5,
+                    "DataType": 4,
+                    "Flags": 8
                 },
                 {
                     "Address": 763,
@@ -4214,6 +4305,12 @@
                     "Address": 159,
                     "LabelType": 2,
                     "Name": "label_609F"
+                },
+                {
+                    "Address": 265,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_6109"
                 },
                 {
                     "Address": 305,
@@ -4378,7 +4475,7 @@
                     "Address": 723,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_62D3"
+                    "Name": "KeyboardRowsAscii"
                 },
                 {
                     "Address": 763,
@@ -4400,12 +4497,12 @@
                 {
                     "Address": 785,
                     "LabelType": 2,
-                    "Name": "label_6311"
+                    "Name": "keybaord_row_loop"
                 },
                 {
                     "Address": 802,
                     "LabelType": 2,
-                    "Name": "label_6322"
+                    "Name": "found_key"
                 },
                 {
                     "Address": 833,
