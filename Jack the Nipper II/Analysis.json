@@ -149,6 +149,20 @@
     "FunctionInfo": [
         {
             "Description": "",
+            "EndAddress": 2243952643,
+            "StartAddress": 2243952643,
+            "bManualEdit": false,
+            "bROMFunction": false
+        },
+        {
+            "Description": "",
+            "EndAddress": 2244935683,
+            "StartAddress": 2244935683,
+            "bManualEdit": false,
+            "bROMFunction": false
+        },
+        {
+            "Description": "",
             "EndAddress": 2261319683,
             "ExitPoints": [
                 2260795395,
@@ -3094,6 +3108,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5C78"
+                },
+                {
+                    "Address": 128,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C80"
                 },
                 {
                     "Address": 136,
@@ -15056,8 +15076,35 @@
         {
             "CodeInfo": [
                 {
-                    "Address": 463,
+                    "Address": 448,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 449,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 452,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 455,
+                    "ByteSize": 3,
+                    "OperandType": 1
+                },
+                {
+                    "Address": 458,
+                    "ByteSize": 3
+                },
+                {
+                    "Address": 461,
                     "ByteSize": 2
+                },
+                {
+                    "Address": 463,
+                    "ByteSize": 2,
+                    "Flags": 32
                 },
                 {
                     "Address": 465,
@@ -17051,9 +17098,16 @@
             ],
             "LabelInfo": [
                 {
+                    "Address": 448,
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "StartProgram"
+                },
+                {
                     "Address": 463,
-                    "LabelType": 2,
-                    "Name": "label_85CF"
+                    "Global": true,
+                    "LabelType": 1,
+                    "Name": "StartScreen"
                 },
                 {
                     "Address": 477,
@@ -22218,7 +22272,7 @@
                 {
                     "Address": 329,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 332,
@@ -22310,7 +22364,7 @@
                 {
                     "Address": 389,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 392,
@@ -23371,6 +23425,7 @@
                 {
                     "Address": 862,
                     "ByteSize": 3,
+                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -29452,7 +29507,7 @@
                 {
                     "Address": 993,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 996,
@@ -30771,7 +30826,7 @@
                 {
                     "Address": 803,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 806,
@@ -34352,7 +34407,7 @@
                 {
                     "Address": 113,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 116,
@@ -34392,7 +34447,7 @@
                 {
                     "Address": 132,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 135,
@@ -34559,7 +34614,7 @@
                 {
                     "Address": 214,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 217,
@@ -38028,7 +38083,7 @@
                 {
                     "Address": 580,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 583,
@@ -38075,7 +38130,7 @@
                 {
                     "Address": 598,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 601,
@@ -38357,7 +38412,7 @@
                 {
                     "Address": 695,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 698,
@@ -38434,7 +38489,7 @@
                 {
                     "Address": 726,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 729,
@@ -39395,7 +39450,7 @@
                 {
                     "Address": 640,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 643,
@@ -48223,6 +48278,7 @@
                 {
                     "Address": 6,
                     "ByteSize": 4,
+                    "Flags": 32,
                     "OperandType": 1
                 },
                 {
@@ -48400,7 +48456,8 @@
                 },
                 {
                     "Address": 110,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 113,
@@ -48435,7 +48492,8 @@
                 },
                 {
                     "Address": 125,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 128,
@@ -48470,7 +48528,8 @@
                 },
                 {
                     "Address": 141,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 144,
@@ -48505,7 +48564,8 @@
                 },
                 {
                     "Address": 157,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 160,
@@ -49139,7 +49199,7 @@
                 {
                     "Address": 554,
                     "ByteSize": 3,
-                    "OperandType": 1
+                    "OperandType": 7
                 },
                 {
                     "Address": 557,
@@ -83899,6 +83959,7 @@
                 {
                     "Address": 1016,
                     "ByteSize": 2,
+                    "Comment": "string to write",
                     "DataType": 2
                 },
                 {
