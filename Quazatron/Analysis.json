@@ -48,7 +48,7 @@
     "DataTypes": {
         "Enums": null,
         "Flags": null,
-        "NextItemId": 3,
+        "NextItemId": 0,
         "Structs": null
     },
     "FunctionInfo": [
@@ -64,13 +64,6 @@
             "EndAddress": 2984443907,
             "ExitPoints": [
                 2978545667
-            ],
-            "Params": [
-                {
-                    "DisplayType": "Address",
-                    "Name": "Ptr to Draw List",
-                    "Source": 9
-                }
             ],
             "StartAddress": 2960982019,
             "bManualEdit": false,
@@ -150,7 +143,7 @@
             "bROMFunction": false
         },
         {
-            "Description": "This function appears to write one of the composite buffers to the screen",
+            "Description": "",
             "EndAddress": 3035627523,
             "ExitPoints": [
                 3035627523
@@ -162,20 +155,6 @@
         {
             "Description": "",
             "EndAddress": 3035693059,
-            "Params": [
-                {
-                    "DisplayType": "Unknown",
-                    "Name": "Index",
-                    "Source": 0
-                }
-            ],
-            "ReturnValues": [
-                {
-                    "DisplayType": "Address",
-                    "Name": "Draw list Ptr Address",
-                    "Source": 9
-                }
-            ],
             "StartAddress": 3035693059,
             "bManualEdit": false,
             "bROMFunction": false
@@ -185,6 +164,13 @@
             "EndAddress": 3048669187,
             "ExitPoints": [
                 3048669187
+            ],
+            "ReturnValues": [
+                {
+                    "DisplayType": "Hex",
+                    "Name": "RandomNumber",
+                    "Source": 0
+                }
             ],
             "StartAddress": 3047358467,
             "bManualEdit": false,
@@ -478,14 +464,14 @@
                     "ReturnAddr": 3281780740
                 },
                 {
-                    "CallAddr": 3308978180,
-                    "FunctionAddr": 3047358467,
-                    "ReturnAddr": 3309174788
-                },
-                {
                     "CallAddr": 3310354436,
                     "FunctionAddr": 3047358467,
                     "ReturnAddr": 3310551044
+                },
+                {
+                    "CallAddr": 3308978180,
+                    "FunctionAddr": 3047358467,
+                    "ReturnAddr": 3309174788
                 }
             ],
             "Description": "",
@@ -651,6 +637,11 @@
         {
             "CallPoints": [
                 {
+                    "CallAddr": 3715694596,
+                    "FunctionAddr": 3078422531,
+                    "ReturnAddr": 3715891204
+                },
+                {
                     "CallAddr": 3591176196,
                     "FunctionAddr": 3271557124,
                     "ReturnAddr": 3591372804
@@ -731,9 +722,9 @@
                     "ReturnAddr": 3709730820
                 },
                 {
-                    "CallAddr": 3715694596,
-                    "FunctionAddr": 3078422531,
-                    "ReturnAddr": 3715891204
+                    "CallAddr": 3604217860,
+                    "FunctionAddr": 3047358467,
+                    "ReturnAddr": 3604414468
                 }
             ],
             "Description": "",
@@ -750,18 +741,6 @@
             "EndAddress": 3719102468,
             "ExitPoints": [
                 3719102468
-            ],
-            "Params": [
-                {
-                    "DisplayType": "Hex",
-                    "Name": "CharCode",
-                    "Source": 6
-                },
-                {
-                    "DisplayType": "Address",
-                    "Name": "DestPtr",
-                    "Source": 8
-                }
             ],
             "StartAddress": 3718119428,
             "bManualEdit": false,
@@ -801,6 +780,11 @@
         {
             "CallPoints": [
                 {
+                    "CallAddr": 3772710916,
+                    "FunctionAddr": 3864395780,
+                    "ReturnAddr": 3772907524
+                },
+                {
                     "CallAddr": 3813343236,
                     "FunctionAddr": 3871211524,
                     "ReturnAddr": 3813539844
@@ -811,9 +795,9 @@
                     "ReturnAddr": 3772710916
                 },
                 {
-                    "CallAddr": 3772710916,
-                    "FunctionAddr": 3864395780,
-                    "ReturnAddr": 3772907524
+                    "CallAddr": 3818586116,
+                    "FunctionAddr": 3871211524,
+                    "ReturnAddr": 3818782724
                 }
             ],
             "Description": "",
@@ -830,7 +814,7 @@
                     "ReturnAddr": 3866230788
                 }
             ],
-            "Description": "This draw the composite sprite buffer list",
+            "Description": "",
             "EndAddress": 3866820612,
             "ExitPoints": [
                 3866820612
@@ -1082,10 +1066,40 @@
                     "Name": "data_5C3D"
                 },
                 {
+                    "Address": 72,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C48"
+                },
+                {
                     "Address": 73,
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5C49"
+                },
+                {
+                    "Address": 75,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C4B"
+                },
+                {
+                    "Address": 81,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C51"
+                },
+                {
+                    "Address": 83,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C53"
+                },
+                {
+                    "Address": 89,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C59"
                 },
                 {
                     "Address": 93,
@@ -1118,6 +1132,12 @@
                     "Name": "data_5C78"
                 },
                 {
+                    "Address": 126,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C7E"
+                },
+                {
                     "Address": 130,
                     "Global": true,
                     "LabelType": 0,
@@ -1148,6 +1168,18 @@
                     "Name": "data_5C8A"
                 },
                 {
+                    "Address": 140,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C8C"
+                },
+                {
+                    "Address": 141,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C8D"
+                },
+                {
                     "Address": 143,
                     "Global": true,
                     "LabelType": 0,
@@ -1164,6 +1196,12 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5CB0"
+                },
+                {
+                    "Address": 178,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5CB2"
                 },
                 {
                     "Address": 180,
@@ -9621,7 +9659,8 @@
                 },
                 {
                     "Address": 435,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "must be RNG"
                 },
                 {
                     "Address": 436,
@@ -10745,6 +10784,18 @@
                     "Address": 211,
                     "DataType": 11,
                     "InstructionAddressRef": 3033661443
+                },
+                {
+                    "Address": 440,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
+                },
+                {
+                    "Address": 442,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 11
                 }
             ],
             "LabelInfo": [
@@ -10929,19 +10980,19 @@
                     "Address": 419,
                     "Global": true,
                     "LabelType": 1,
-                    "Name": "function_B5A3"
+                    "Name": "GenerateRandomNumber"
                 },
                 {
                     "Address": 440,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_B5B8"
+                    "Name": "HLBackup"
                 },
                 {
                     "Address": 442,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_B5BA"
+                    "Name": "Counter_B5BA"
                 },
                 {
                     "Address": 444,
@@ -13695,7 +13746,8 @@
                 },
                 {
                     "Address": 335,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 338,
@@ -13794,7 +13846,8 @@
                 },
                 {
                     "Address": 382,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 385,
@@ -13887,7 +13940,8 @@
                 },
                 {
                     "Address": 422,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 425,
@@ -13900,7 +13954,8 @@
                 },
                 {
                     "Address": 429,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 432,
@@ -36998,7 +37053,7 @@
                     "Address": 742,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_E6E6"
+                    "Name": "InterruptHandler"
                 },
                 {
                     "Address": 768,
