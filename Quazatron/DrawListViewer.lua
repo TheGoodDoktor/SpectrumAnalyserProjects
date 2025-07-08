@@ -1,7 +1,12 @@
 
 function DrawDrawListToView(view,drawListAddress)
 
+	imgui.Text("Drawlist at: ")
+	DrawAddressLabel(drawListAddress)
+
+	-- draw list items
 	local noDrawListItems = ReadByte(drawListAddress)
+	imgui.Text(string.format("No of items: %d",noDrawListItems))
 	drawListAddress = drawListAddress + 1
 
 	local yPos = 0
@@ -11,7 +16,9 @@ function DrawDrawListToView(view,drawListAddress)
 		local byte1 = ReadByte(drawListAddress)
 		local byte2 = ReadByte(drawListAddress + 1)
 		local byte3 = ReadByte(drawListAddress + 2)
-		local noPixelLines = byte3 & 3F
+		imgui.Text(string.format("Item %d $%02X,$%02X,$%02X",i,byte1,byte2,byte3))
+		
+		local noPixelLines = byte3 & 0x3F
 		local itemPixels = GetMemPtr(drawListAddress + 3)
 
 		DrawZXBitImageFineY(view, itemPixels, xPos, yPos, 1, noPixelLines)
@@ -40,7 +47,7 @@ function DrawListViewer:Update()
 end
 
 function DrawListViewer:DrawUI()
-
+	DrawDrawListToView(self.graphicsView,globals.DrawList_9EF1)
 end
 
 -- add viewer when file gets loaded
