@@ -36,7 +36,7 @@
     "DataTypes": {
         "Enums": null,
         "Flags": null,
-        "NextItemId": 2,
+        "NextItemId": 0,
         "Structs": null
     },
     "Pages": [
@@ -51,6 +51,7 @@
             "LabelInfo": [
                 {
                     "Address": 0,
+                    "Global": true,
                     "LabelType": 0,
                     "Name": "ScreenPixels"
                 }
@@ -193,11 +194,28 @@
                     "Address": 736,
                     "ByteSize": 32,
                     "DataType": 10
+                },
+                {
+                    "Address": 768,
+                    "StructByteOffset": 255
+                },
+                {
+                    "Address": 800,
+                    "StructByteOffset": 255
+                },
+                {
+                    "Address": 832,
+                    "StructByteOffset": 255
+                },
+                {
+                    "Address": 864,
+                    "StructByteOffset": 255
                 }
             ],
             "LabelInfo": [
                 {
                     "Address": 0,
+                    "Global": true,
                     "LabelType": 0,
                     "Name": "ScreenAttributes"
                 }
@@ -205,24 +223,24 @@
             "PageId": 38
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 0,
+                    "StructByteOffset": 255
+                }
+            ],
             "LabelInfo": [
                 {
-                    "Address": 56,
+                    "Address": 93,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_5C38"
+                    "Name": "data_5C5D"
                 },
                 {
-                    "Address": 123,
+                    "Address": 95,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_5C7B"
-                },
-                {
-                    "Address": 180,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_5CB4"
+                    "Name": "data_5C5F"
                 }
             ],
             "PageId": 39
@@ -258,38 +276,6 @@
             "PageId": 49
         },
         {
-            "DataInfo": [
-                {
-                    "Address": 266,
-                    "PaletteNo": 1,
-                    "StructByteOffset": 7
-                },
-                {
-                    "Address": 267,
-                    "PaletteNo": 1,
-                    "StructByteOffset": 8
-                },
-                {
-                    "Address": 278,
-                    "PaletteNo": 1,
-                    "StructByteOffset": 8
-                },
-                {
-                    "Address": 279,
-                    "PaletteNo": 1,
-                    "StructByteOffset": 9
-                },
-                {
-                    "Address": 286,
-                    "PaletteNo": 1,
-                    "StructByteOffset": 5
-                },
-                {
-                    "Address": 287,
-                    "PaletteNo": 1,
-                    "StructByteOffset": 6
-                }
-            ],
             "PageId": 50
         },
         {
@@ -323,6 +309,12 @@
             "PageId": 60
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 293,
+                    "StructByteOffset": 7
+                }
+            ],
             "PageId": 61
         },
         {
@@ -362,12 +354,110 @@
             "PageId": 73
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 671,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 735,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 799,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 863,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 927,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 991,
+                    "StructByteOffset": 2
+                }
+            ],
             "PageId": 74
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 31,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 95,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 159,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 223,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 351,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 415,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 479,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 543,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 607,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 671,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 735,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 799,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 863,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 927,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 991,
+                    "StructByteOffset": 2
+                }
+            ],
             "PageId": 75
         },
         {
+            "DataInfo": [
+                {
+                    "Address": 31,
+                    "StructByteOffset": 2
+                },
+                {
+                    "Address": 95,
+                    "StructByteOffset": 2
+                }
+            ],
             "PageId": 76
         },
         {

@@ -37,7 +37,7 @@ function DrawDrawListToView(view,drawListAddress)
         local itemPixels = GetMemPtr(drawListAddress + 3)
 
         -- Apply offsets from center position
-        local drawX = baseX + xOffset+ (flags * 16)
+        local drawX = baseX + xOffset + (flags * 16)
 		local drawY = (baseY + yOffset) --+ (flags * 16)
 
 		local attrib = 0x00 
@@ -47,7 +47,7 @@ function DrawDrawListToView(view,drawListAddress)
 		elseif(flags == 0x01) then
 			attrib = 0x43 -- XOR - Cyan on black
 		elseif(flags == 0x02) then
-			attrib = 0x43 -- Mask - Magenta on black
+			attrib = 0x68 -- Mask - Magenta on black
 		end
 
 		DrawZXBitImageFineY(view, itemPixels, drawX, drawY, 1, noPixelLines, attrib)
