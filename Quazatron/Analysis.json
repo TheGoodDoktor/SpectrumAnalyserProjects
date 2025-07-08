@@ -5293,12 +5293,13 @@
                 {
                     "Address": 178,
                     "ByteSize": 2,
-                    "Comment": "check if bit 7 is set",
+                    "Comment": "check if bit 7 is set - AND mask",
                     "OperandType": 5
                 },
                 {
                     "Address": 180,
                     "ByteSize": 2,
+                    "Comment": "jump if not set",
                     "OperandType": 2
                 },
                 {
