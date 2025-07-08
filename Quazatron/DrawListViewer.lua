@@ -1,29 +1,57 @@
+-- Helper function to convert 8-bit value to signed
+local function ToSigned8(value)
+    if value >= 128 then
+        return value - 256
+    end
+    return value
+end
 
 function DrawDrawListToView(view,drawListAddress)
 
 	imgui.Text("Drawlist at: ")
 	DrawAddressLabel(drawListAddress)
 
-	-- draw list items
-	local noDrawListItems = ReadByte(drawListAddress)
-	imgui.Text(string.format("No of items: %d",noDrawListItems))
-	drawListAddress = drawListAddress + 1
+	-- draw list items  
+    local noDrawListItems = ReadByte(drawListAddress)
+    imgui.Text(string.format("No of items: %d",noDrawListItems))
+    drawListAddress = drawListAddress + 1
 
-	local yPos = 0
-	local xPos = 0
+    local baseX = 128  -- Center of screen
+    local baseY = 128
 
-	for i = 0, noDrawListItems - 1 do
-		local byte1 = ReadByte(drawListAddress)
-		local byte2 = ReadByte(drawListAddress + 1)
-		local byte3 = ReadByte(drawListAddress + 2)
-		imgui.Text(string.format("Item %d $%02X,$%02X,$%02X",i,byte1,byte2,byte3))
-		
-		local noPixelLines = byte3 & 0x3F
-		local itemPixels = GetMemPtr(drawListAddress + 3)
+    for i = 0, noDrawListItems - 1 do
+        local xOffset = ToSigned8(ReadByte(drawListAddress))
+        local yOffset = ToSigned8(ReadByte(drawListAddress + 1)) 
+        local heightAndFlags = ReadByte(drawListAddress + 2)
+		local flags = heightAndFlags >> 6  -- Get flags (upper 2 bits)
+        
+        imgui.Text(string.format("Item %d X:%d Y:%d H:%d F:%d",
+            i, 
+            xOffset, 
+            yOffset, 
+            heightAndFlags & 0x3F,
+            heightAndFlags >> 6
+        ))
+        
+        local noPixelLines = heightAndFlags & 0x3F
+        local itemPixels = GetMemPtr(drawListAddress + 3)
 
-		DrawZXBitImageFineY(view, itemPixels, xPos, yPos, 1, noPixelLines)
+        -- Apply offsets from center position
+        local drawX = baseX + xOffset+ (flags * 16)
+		local drawY = (baseY + yOffset) --+ (flags * 16)
 
-		drawListAddress = drawListAddress + 4 + noPixelLines
+		local attrib = 0x00 
+
+		if(flags == 0x00) then
+			attrib = 0x47 -- OR - White on black
+		elseif(flags == 0x01) then
+			attrib = 0x43 -- XOR - Cyan on black
+		elseif(flags == 0x02) then
+			attrib = 0x43 -- Mask - Magenta on black
+		end
+
+		DrawZXBitImageFineY(view, itemPixels, drawX, drawY, 1, noPixelLines, attrib)
+        drawListAddress = drawListAddress + 3 + noPixelLines
 	end
 end
 
@@ -34,6 +62,7 @@ DrawListViewer = ZXViewerBase:new(
 	width = 256,
 	height = 256,
 	drawListAddress = 0,
+	drawListNo = 0
 })
 
 function DrawListViewer:Init()
@@ -47,7 +76,17 @@ function DrawListViewer:Update()
 end
 
 function DrawListViewer:DrawUI()
-	DrawDrawListToView(self.graphicsView,globals.DrawList_9EF1)
+
+	local changed = false
+
+	changed, self.drawListNo = imgui.InputInt("drawlist number", self.drawListNo)
+	local drawList = ReadWord(globals.DrawListLUT_A42B + (self.drawListNo * 2))
+
+	if changed then
+		ClearGraphicsView(self.graphicsView, 0)
+	end
+	DrawDrawListToView(self.graphicsView,drawList)
+	--DrawDrawListToView(self.graphicsView,globals.DrawList_9EF1)
 end
 
 -- add viewer when file gets loaded
