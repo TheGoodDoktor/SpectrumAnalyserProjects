@@ -80,13 +80,15 @@ function DrawListViewer:DrawUI()
 	local changed = false
 
 	changed, self.drawListNo = imgui.InputInt("drawlist number", self.drawListNo)
-	local drawList = ReadWord(globals.DrawListLUT_A42B + (self.drawListNo * 2))
+	--local drawListLUTPtr = ReadWord(globals.DrawListLUTPtr_AF7F)
+
+	local drawList = ReadWord(0xA457 + (self.drawListNo * 2))
 
 	if changed then
 		ClearGraphicsView(self.graphicsView, 0)
 	end
 	DrawDrawListToView(self.graphicsView,drawList)
-	--DrawDrawListToView(self.graphicsView,globals.DrawList_9EF1)
+	--DrawDrawListToView(self.graphicsView,globals.data_9EC8)
 end
 
 -- add viewer when file gets loaded

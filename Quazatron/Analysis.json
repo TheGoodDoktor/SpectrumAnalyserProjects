@@ -875,6 +875,12 @@
                     "Name": "data_5C53"
                 },
                 {
+                    "Address": 87,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C57"
+                },
+                {
                     "Address": 89,
                     "Global": true,
                     "LabelType": 0,
@@ -1975,11 +1981,9 @@
                 },
                 {
                     "Address": 712,
-                    "DisplayType": 11
-                },
-                {
-                    "Address": 713,
-                    "DisplayType": 11
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 1
                 },
                 {
                     "Address": 714,
@@ -2454,13 +2458,13 @@
                     "Address": 673,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_9EA1"
+                    "Name": "DrawList_RotateHead4"
                 },
                 {
                     "Address": 712,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_9EC8"
+                    "Name": "DrawList_RotateHead3"
                 },
                 {
                     "Address": 753,
@@ -2595,6 +2599,10 @@
         },
         {
             "DataInfo": [
+                {
+                    "Address": 1,
+                    "DisplayType": 1
+                },
                 {
                     "Address": 3,
                     "ByteSize": 2,
@@ -3646,6 +3654,12 @@
                     "Name": "DrawListLUT_A42B"
                 },
                 {
+                    "Address": 87,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "DrawListLUT_EnemyRobotTopBottom"
+                },
+                {
                     "Address": 95,
                     "Global": true,
                     "LabelType": 0,
@@ -3661,7 +3675,7 @@
                     "Address": 169,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "DrawListLUT_A4A9"
+                    "Name": "DrawListLUT_RotateHead"
                 },
                 {
                     "Address": 196,
@@ -4183,6 +4197,10 @@
                     "DisplayType": 1
                 },
                 {
+                    "Address": 897,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 924,
                     "ByteSize": 2,
                     "DataType": 2,
@@ -4326,13 +4344,13 @@
                     "Address": 559,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_AE2F"
+                    "Name": "DrawList_RotateHead1"
                 },
                 {
                     "Address": 598,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_AE56"
+                    "Name": "DrawList_RotateHead2"
                 },
                 {
                     "Address": 768,
@@ -25748,7 +25766,8 @@
                 },
                 {
                     "Address": 446,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 449,
@@ -25761,7 +25780,8 @@
                 },
                 {
                     "Address": 454,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 457,
@@ -25828,7 +25848,8 @@
                 },
                 {
                     "Address": 486,
-                    "ByteSize": 3
+                    "ByteSize": 3,
+                    "OperandType": 1
                 },
                 {
                     "Address": 489,
@@ -36155,7 +36176,9 @@
                 {
                     "Address": 742,
                     "ByteSize": 3,
-                    "OperandType": 2
+                    "Flags": 2,
+                    "OperandType": 2,
+                    "SMC": true
                 }
             ],
             "DataInfo": [
@@ -36168,6 +36191,21 @@
                     "Address": 1,
                     "DataType": 11,
                     "InstructionAddressRef": 3825139716
+                },
+                {
+                    "Address": 742,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3873832964
+                },
+                {
+                    "Address": 743,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3873832964
+                },
+                {
+                    "Address": 744,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3873832964
                 },
                 {
                     "Address": 768,
