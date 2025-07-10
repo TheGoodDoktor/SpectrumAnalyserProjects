@@ -905,6 +905,24 @@
                     "Name": "data_5C61"
                 },
                 {
+                    "Address": 101,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C65"
+                },
+                {
+                    "Address": 103,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C67"
+                },
+                {
+                    "Address": 104,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C68"
+                },
+                {
                     "Address": 116,
                     "Global": true,
                     "LabelType": 0,
@@ -915,6 +933,18 @@
                     "Global": true,
                     "LabelType": 0,
                     "Name": "data_5C78"
+                },
+                {
+                    "Address": 123,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C7B"
+                },
+                {
+                    "Address": 125,
+                    "Global": true,
+                    "LabelType": 0,
+                    "Name": "data_5C7D"
                 },
                 {
                     "Address": 126,
@@ -4188,6 +4218,7 @@
                 },
                 {
                     "Address": 893,
+                    "Comment": "bottom 4 bits is 2 byte offset into DrawList LUT",
                     "DisplayType": 11
                 },
                 {
@@ -4710,7 +4741,7 @@
                     "Address": 893,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_AF7D"
+                    "Name": "AnimCounter_AF7D"
                 },
                 {
                     "Address": 894,
@@ -17110,16 +17141,19 @@
                 },
                 {
                     "Address": 687,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "sub 1 from high nybble"
                 },
                 {
                     "Address": 689,
                     "ByteSize": 3,
+                    "Comment": "write back",
                     "OperandType": 1
                 },
                 {
                     "Address": 692,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "store in C"
                 },
                 {
                     "Address": 693,
@@ -17249,11 +17283,13 @@
                 },
                 {
                     "Address": 742,
-                    "ByteSize": 2
+                    "ByteSize": 2,
+                    "Comment": "Set LUT index to 0"
                 },
                 {
                     "Address": 744,
                     "ByteSize": 3,
+                    "Comment": "write index",
                     "OperandType": 1
                 },
                 {
@@ -17311,6 +17347,7 @@
                 {
                     "Address": 764,
                     "ByteSize": 3,
+                    "Comment": "set as drawlist pointer",
                     "OperandType": 1
                 },
                 {
@@ -18200,12 +18237,12 @@
                 {
                     "Address": 742,
                     "LabelType": 2,
-                    "Name": "label_C2E6"
+                    "Name": "clear_LUT_index"
                 },
                 {
                     "Address": 744,
                     "LabelType": 2,
-                    "Name": "label_C2E8"
+                    "Name": "skip_clear"
                 },
                 {
                     "Address": 747,
@@ -36176,9 +36213,7 @@
                 {
                     "Address": 742,
                     "ByteSize": 3,
-                    "Flags": 2,
-                    "OperandType": 2,
-                    "SMC": true
+                    "OperandType": 2
                 }
             ],
             "DataInfo": [
@@ -36191,21 +36226,6 @@
                     "Address": 1,
                     "DataType": 11,
                     "InstructionAddressRef": 3825139716
-                },
-                {
-                    "Address": 742,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3873832964
-                },
-                {
-                    "Address": 743,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3873832964
-                },
-                {
-                    "Address": 744,
-                    "DataType": 11,
-                    "InstructionAddressRef": 3873832964
                 },
                 {
                     "Address": 768,

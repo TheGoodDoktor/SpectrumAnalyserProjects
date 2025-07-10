@@ -6,7 +6,7 @@ local function ToSigned8(value)
     return value
 end
 
-function DrawDrawListToView(view,drawListAddress)
+function DrawDrawListToView(view,drawListAddress,baseX,baseY)
 
 	imgui.Text("Drawlist at: ")
 	DrawAddressLabel(drawListAddress)
@@ -15,9 +15,6 @@ function DrawDrawListToView(view,drawListAddress)
     local noDrawListItems = ReadByte(drawListAddress)
     imgui.Text(string.format("No of items: %d",noDrawListItems))
     drawListAddress = drawListAddress + 1
-
-    local baseX = 128  -- Center of screen
-    local baseY = 128
 
     for i = 0, noDrawListItems - 1 do
         local xOffset = ToSigned8(ReadByte(drawListAddress))
@@ -61,7 +58,8 @@ DrawListViewer = ZXViewerBase:new(
 	name = "DrawList Viewer",
 	width = 256,
 	height = 256,
-	drawListAddress = 0,
+	drawListAddress = globals.DrawList_RotateHead3, -- default to RotateHead3
+	drawListLUTAddress = globals.DrawListLUT_A403,
 	drawListNo = 0
 })
 
@@ -75,19 +73,42 @@ function DrawListViewer:Update()
 
 end
 
+function FormatByteAt(address, comment)
+	SetDataItemTypeAndComment(address, EDataItemDisplayType.Byte, comment)
+end
+
 function DrawListViewer:DrawUI()
 
 	local changed = false
 
 	changed, self.drawListNo = imgui.InputInt("drawlist number", self.drawListNo)
+	changed, self.drawListLUTAddress = imgui.InputInt("drawlist LUT address", self.drawListLUTAddress, 2, 8, imgui.constant.InputTextFlags.CharsHexadecimal)
+	changed, self.drawListAddress = imgui.InputInt("drawlist address", self.drawListAddress, 1, 8, imgui.constant.InputTextFlags.CharsHexadecimal)
+	DrawAddressLabel(self.drawListLUTAddress)
 	--local drawListLUTPtr = ReadWord(globals.DrawListLUTPtr_AF7F)
 
-	local drawList = ReadWord(0xA457 + (self.drawListNo * 2))
+	local drawList = ReadWord(self.drawListLUTAddress + (self.drawListNo * 2))
 
-	if changed then
+	--if changed then
 		ClearGraphicsView(self.graphicsView, 0)
+	--end
+	DrawDrawListToView(self.graphicsView,drawList,64,64)
+	DrawDrawListToView(self.graphicsView,self.drawListAddress,128,64)
+	if imgui.Button("Format Drawlist") then
+		-- TODO: format in code analysis
+		SetDataItemTypeAndComment(self.drawListAddress, EDataItemDisplayType.Byte, "Number of items in drawlist")
+		local noDrawListItems = ReadByte(self.drawListAddress)
+		local itemAddress = self.drawListAddress + 1
+		for i = 0, noDrawListItems - 1 do
+			FormatByteAt(itemAddress, "X offset for item " .. i)
+			FormatByteAt(itemAddress + 1, "Y offset for item " .. i)
+			FormatByteAt(itemAddress + 2, "Height and flags for item " .. i)
+			local heightAndFlags = ReadByte(itemAddress + 2)
+			local noPixelLines = heightAndFlags & 0x3F
+			FormatMemoryAsBitmap(itemAddress + 3, 8, noPixelLines, 1)
+			itemAddress = itemAddress + 3 + noPixelLines
+		end
 	end
-	DrawDrawListToView(self.graphicsView,drawList)
 	--DrawDrawListToView(self.graphicsView,globals.data_9EC8)
 end
 
