@@ -77,6 +77,21 @@ function FormatByteAt(address, comment)
 	SetDataItemTypeAndComment(address, EDataItemDisplayType.Byte, comment)
 end
 
+function FormatDrawlist(address)
+	SetDataItemTypeAndComment(address, EDataItemDisplayType.Byte, "Number of items in drawlist")
+	local noDrawListItems = ReadByte(address)
+	local itemAddress = address + 1
+	for i = 0, noDrawListItems - 1 do
+		FormatByteAt(itemAddress, "X offset for item " .. i)
+		FormatByteAt(itemAddress + 1, "Y offset for item " .. i)
+		FormatByteAt(itemAddress + 2, "Height and flags for item " .. i)
+		local heightAndFlags = ReadByte(itemAddress + 2)
+		local noPixelLines = heightAndFlags & 0x3F
+		FormatMemoryAsBitmap(itemAddress + 3, 8, noPixelLines, 1)
+		itemAddress = itemAddress + 3 + noPixelLines
+	end
+end
+
 function DrawListViewer:DrawUI()
 
 	local changed = false
@@ -95,19 +110,8 @@ function DrawListViewer:DrawUI()
 	DrawDrawListToView(self.graphicsView,drawList,64,64)
 	DrawDrawListToView(self.graphicsView,self.drawListAddress,128,64)
 	if imgui.Button("Format Drawlist") then
-		-- TODO: format in code analysis
-		SetDataItemTypeAndComment(self.drawListAddress, EDataItemDisplayType.Byte, "Number of items in drawlist")
-		local noDrawListItems = ReadByte(self.drawListAddress)
-		local itemAddress = self.drawListAddress + 1
-		for i = 0, noDrawListItems - 1 do
-			FormatByteAt(itemAddress, "X offset for item " .. i)
-			FormatByteAt(itemAddress + 1, "Y offset for item " .. i)
-			FormatByteAt(itemAddress + 2, "Height and flags for item " .. i)
-			local heightAndFlags = ReadByte(itemAddress + 2)
-			local noPixelLines = heightAndFlags & 0x3F
-			FormatMemoryAsBitmap(itemAddress + 3, 8, noPixelLines, 1)
-			itemAddress = itemAddress + 3 + noPixelLines
-		end
+		-- Format in code analysis
+		FormatDrawlist(self.drawListAddress)
 	end
 	--DrawDrawListToView(self.graphicsView,globals.data_9EC8)
 end
