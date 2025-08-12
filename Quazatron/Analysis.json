@@ -5241,6 +5241,10 @@
                     "DisplayType": 11
                 },
                 {
+                    "Address": 773,
+                    "DisplayType": 11
+                },
+                {
                     "Address": 774,
                     "DisplayType": 3
                 },
@@ -5254,11 +5258,15 @@
                 },
                 {
                     "Address": 782,
+                    "ByteSize": 2,
+                    "DataType": 2,
                     "DisplayType": 13
                 },
                 {
-                    "Address": 783,
-                    "DisplayType": 11
+                    "Address": 784,
+                    "ByteSize": 2,
+                    "DataType": 2,
+                    "DisplayType": 14
                 },
                 {
                     "Address": 786,
@@ -5479,7 +5487,7 @@
                     "Address": 772,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "BlockCounter"
+                    "Name": "DrawListBlockCounter"
                 },
                 {
                     "Address": 773,
@@ -5539,19 +5547,13 @@
                     "Address": 782,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_AF0E"
-                },
-                {
-                    "Address": 783,
-                    "Global": true,
-                    "LabelType": 0,
-                    "Name": "data_AF0F"
+                    "Name": "XDrawPos"
                 },
                 {
                     "Address": 784,
                     "Global": true,
                     "LabelType": 0,
-                    "Name": "data_AF10"
+                    "Name": "YDrawPos"
                 },
                 {
                     "Address": 786,
@@ -6267,7 +6269,8 @@
                 {
                     "Address": 125,
                     "ByteSize": 1,
-                    "Comment": "first byte : number of draw items"
+                    "Comment": "first byte : number of draw items",
+                    "Flags": 32
                 },
                 {
                     "Address": 126,
@@ -6281,7 +6284,7 @@
                 {
                     "Address": 130,
                     "ByteSize": 1,
-                    "Comment": "read second byte"
+                    "Comment": "read second byte - x offset"
                 },
                 {
                     "Address": 131,
@@ -6300,12 +6303,12 @@
                 {
                     "Address": 136,
                     "ByteSize": 1,
-                    "Comment": "second byte"
+                    "Comment": "x offset in A"
                 },
                 {
                     "Address": 137,
                     "ByteSize": 1,
-                    "Comment": "bit 7 goes to carry bit"
+                    "Comment": "bit 7 goes to carry bit - set for negative offset"
                 },
                 {
                     "Address": 138,
@@ -7119,7 +7122,8 @@
                 },
                 {
                     "Address": 411,
-                    "ByteSize": 1
+                    "ByteSize": 1,
+                    "Comment": "put high byte in A"
                 },
                 {
                     "Address": 412,
@@ -7348,6 +7352,7 @@
                 {
                     "Address": 473,
                     "ByteSize": 1,
+                    "Comment": "this is either NOP or CPL",
                     "Flags": 2,
                     "SMC": true
                 },
@@ -15159,6 +15164,7 @@
                 {
                     "Address": 558,
                     "ByteSize": 3,
+                    "Comment": "draw map item",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -19240,6 +19246,11 @@
                     "Address": 476,
                     "LabelType": 2,
                     "Name": "single_strip_loop"
+                },
+                {
+                    "Address": 495,
+                    "LabelType": 2,
+                    "Name": "label_C1EF"
                 },
                 {
                     "Address": 496,
@@ -31386,7 +31397,8 @@
                 {
                     "Address": 246,
                     "ByteSize": 3,
-                    "Flags": 8,
+                    "Comment": "draw player body",
+                    "Flags": 40,
                     "OperandType": 2
                 },
                 {
@@ -31413,6 +31425,7 @@
                 {
                     "Address": 256,
                     "ByteSize": 3,
+                    "Comment": "draw player mouth",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -31474,6 +31487,7 @@
                 {
                     "Address": 283,
                     "ByteSize": 3,
+                    "Comment": "draw player hat",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -31528,6 +31542,7 @@
                 {
                     "Address": 305,
                     "ByteSize": 3,
+                    "Comment": "enemy robot body",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -31651,6 +31666,7 @@
                 {
                     "Address": 354,
                     "ByteSize": 3,
+                    "Comment": "enemy robot numbers",
                     "Flags": 8,
                     "OperandType": 2
                 },
@@ -37312,7 +37328,9 @@
                 {
                     "Address": 742,
                     "ByteSize": 3,
-                    "OperandType": 2
+                    "Flags": 2,
+                    "OperandType": 2,
+                    "SMC": true
                 }
             ],
             "DataInfo": [
@@ -37325,6 +37343,21 @@
                     "Address": 1,
                     "DataType": 11,
                     "InstructionAddressRef": 3825139716
+                },
+                {
+                    "Address": 742,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3873832964
+                },
+                {
+                    "Address": 743,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3873832964
+                },
+                {
+                    "Address": 744,
+                    "DataType": 11,
+                    "InstructionAddressRef": 3873832964
                 },
                 {
                     "Address": 768,
