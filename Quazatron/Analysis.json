@@ -2,35 +2,43 @@
     "Banks": [
         {
             "Description": "",
-            "Id": 2
+            "Id": 2,
+            "Name": "RAM 0"
         },
         {
             "Description": "",
-            "Id": 3
+            "Id": 3,
+            "Name": "RAM 1"
         },
         {
             "Description": "",
-            "Id": 4
+            "Id": 4,
+            "Name": "RAM 2"
         },
         {
             "Description": "",
-            "Id": 5
+            "Id": 5,
+            "Name": "RAM 3"
         },
         {
             "Description": "",
-            "Id": 6
+            "Id": 6,
+            "Name": "RAM 4"
         },
         {
             "Description": "",
-            "Id": 7
+            "Id": 7,
+            "Name": "RAM 5"
         },
         {
             "Description": "",
-            "Id": 8
+            "Id": 8,
+            "Name": "RAM 6"
         },
         {
             "Description": "",
-            "Id": 9
+            "Id": 9,
+            "Name": "RAM 7"
         }
     ],
     "CharacterSets": [
@@ -7353,8 +7361,7 @@
                 {
                     "Address": 475,
                     "ByteSize": 1,
-                    "Comment": "write pixel line",
-                    "Flags": 32
+                    "Comment": "write pixel line"
                 },
                 {
                     "Address": 476,
@@ -16718,8 +16725,7 @@
                 },
                 {
                     "Address": 89,
-                    "ByteSize": 1,
-                    "Flags": 32
+                    "ByteSize": 1
                 },
                 {
                     "Address": 90,
@@ -26797,6 +26803,19 @@
                 },
                 {
                     "Address": 369,
+                    "ByteSize": 2,
+                    "OperandType": 2
+                },
+                {
+                    "Address": 371,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 372,
+                    "ByteSize": 1
+                },
+                {
+                    "Address": 373,
                     "ByteSize": 2,
                     "OperandType": 2
                 },
