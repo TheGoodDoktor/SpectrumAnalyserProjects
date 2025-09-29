@@ -35,6 +35,7 @@ Exporter =
 	
 		if imgui.Button("Export Graphics") then
 			SaveGraphicsView2222(self.blockView,"blocks.ag2", false)
+			SaveGraphicsView332(self.blockView,"blocks.l2", false)
 			SaveGraphicsViewPNG(self.blockView,"blocks.png")
 			SaveGraphicsView2222(self.spriteView,"sprites.ag2", true)
 			SaveGraphicsViewPNG(self.spriteView,"sprites.png")
