@@ -10,6 +10,7 @@ ExporterView =
     onAdd = function(self)
         -- gets called when view is added
 		self.screenView = CreateZXGraphicsView(256,19 * 8)
+		self.screenCharsView = CreateZXGraphicsView(128,128)
 		self.characterView = CreateZXGraphicsView(16,40 * 32)
 		self.itemView = CreateZXGraphicsView(16, 132 * 16)
         ClearGraphicsView(self.screenView, 0)
@@ -25,6 +26,15 @@ ExporterView =
 				ClearGraphicsView(self.screenView, 0xff000000)
 				DrawScreenToView(self.screenView,screenNo,0,0)
 				SaveGraphicsViewPNG(self.screenView,string.format("WallyScreen_%d.png",screenNo))
+			end
+		end
+
+		if imgui.Button("Export Char Sets") then
+			ClearGraphicsView(self.screenCharsView, 0xff000000)
+			for charNo = 0,255 do
+				local x = (charNo % 16)
+				local y = (charNo / 16)
+				DrawCharAt(self.screenCharsView,charNo,x,0)
 			end
 		end
 
@@ -58,6 +68,8 @@ ExporterView =
 		end
 
 		DrawGraphicsView(self.screenView)		
+		imgui.SameLine()
+		DrawGraphicsView(self.screenCharsView)
 		DrawGraphicsView(self.itemView)
     end
 }
