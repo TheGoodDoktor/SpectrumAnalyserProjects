@@ -12,7 +12,13 @@ JN2Exporter =
 		for blockNo = 0,199 do
 			DrawBlockToView(self.blockView,blockNo,0,blockNo * 32)
 		end
-    end,
+		-- characters
+		self.characterView = CreateZXGraphicsView(16 * 8,16 * 8)
+		ClearGraphicsView(self.characterView,0)
+		for charNo = 0,255 do
+			DrawCharacterToView(self.characterView,charNo,(charNo % 16) * 8,math.floor(charNo / 16) * 8)
+		end
+	end,
 
     onDrawUI = function(self)
         -- gets called every frame
@@ -20,7 +26,11 @@ JN2Exporter =
 		if imgui.Button("Export") then
 			SaveGraphicsView2222(self.blockView,"blocks.ag2", false)
 			SaveGraphicsViewPNG(self.blockView,"blocks.png")
+			SaveGraphicsViewPNG(self.characterView,"characters.png")
 		end
+		imgui.Text("Characters")
+		imgui.SameLine()
+		DrawGraphicsView(self.characterView)
 		imgui.Text("Blocks")
 		imgui.SameLine()
 		DrawGraphicsView(self.blockView)
