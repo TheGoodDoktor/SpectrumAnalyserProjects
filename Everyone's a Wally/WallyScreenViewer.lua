@@ -36,7 +36,7 @@ function DrawScreenItemToView(graphicsView, itemNo, x, y)
 			x = x + (dataByte - 200)
 			local deltaY = ReadByte(itemPtr)
 			if deltaY > 24 then
-				print(string.format("Y delta %d",deltaY))
+				--print(string.format("Y delta %d",deltaY))
 				y = y + (deltaY - 256)
 			else
 				y = y + deltaY
@@ -44,7 +44,9 @@ function DrawScreenItemToView(graphicsView, itemNo, x, y)
 			itemPtr = itemPtr + 1
 		elseif dataByte == 0xFB then	-- new char set
 			--print("set char set")
+
 			currentCharSet = ReadWord(itemPtr)
+			print(string.format("set char set 0x%04X",currentCharSet))
 			itemPtr = itemPtr + 2
 		elseif dataByte == 0xF1 then	-- space
 			x = x + 1
